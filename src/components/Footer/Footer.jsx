@@ -16,7 +16,7 @@ const Footer = () => {
     let year = date.getFullYear();
     return (
         <div className="copyright" style={{ color: 'gainsboro',backgroundColor: "black",paddingBottom: "20px" }}>
-        <p>© Copyright 2024. All rights Reserved. {home.name}</p>
+        <p>© Copyright 2025. All rights Reserved. {home.name}</p>
       </div>
      
     );  

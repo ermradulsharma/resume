@@ -1,16 +1,16 @@
 {
   "home": {
-    "name": "Sachin Kumar",
-    "jobPositions": ["Software Engineer", "DevOps Engineer", "API Developer"],
+    "name": "Sauryadeep Roy",
+    "jobPositions": ["Software Engineer", "React developer","Java developer","Springboot developer", "Full-stack developer"],
     "compactAbout": "An experienced developer and designer dedicated to crafting innovative software solutions for businesses.",
-    "location": "Bengaluru, IN"
+    "location": "Kolkata"
   },
   "about": {
-    "expandedAbout": "I'm Sachin Kumar, an experienced developer and designer dedicated to crafting innovative software solutions for businesses. With a year of hands-on experience, I specialize in creating functional and visually captivating experiences tailored to your unique needs. Committed to excellence, I prioritize your satisfaction and refine my work until it exceeds your expectations. Let's collaborate to elevate your business through cutting-edge technology and design innovation. Contact me to bring your ideas to life!",
+    "expandedAbout": "I'm Sauryadeep Roy, an experienced developer and designer dedicated to crafting innovative software solutions for businesses. With a year of hands-on experience, I specialize in creating functional and visually captivating experiences tailored to your unique needs. Committed to excellence, I prioritize your satisfaction and refine my work until it exceeds your expectations. Let's collaborate to elevate your business through cutting-edge technology and design innovation. Contact me to bring your ideas to life!",
     "experience": [
       {
-        "role": "DevOps Engineer",
-        "place": "Sysco",
+        "role": "Full-stack web developer",
+        "place": "Kolkata",
         "duration": "2023-current",
         "location": "Houston, Texas, US · Remote"
       },
@@ -106,15 +106,15 @@
       }
     ],
     "socialmedia": [
-      { "name": "Linkdein" },
-      { "name": "Github" },
-      { "name": "Twitter" },
-      { "name": "Facebook" },
-      { "name": "Instagram" }
+      { "name": "Linkdein","link":"https://www.linkedin.com/in/sauryadeep-roy-252461229" },
+      { "name": "Github","link":"https://github.com/Sauryadeep200" },
+      { "name": "Twitter", "link":"#"},
+      { "name": "Facebook","link":"#" },
+      { "name": "Instagram" ,"link":"#"}
 
   ],
   "contacts":[
-    { "name": "mail" ,"value":"sauryadeeproufcc60@gmail.com"},
+    { "name": "mail" ,"value":"f48.sauryadeep@gmail.com"},
     { "name": "phone","value":"7044624591" }
   ]
   },
@@ -124,61 +124,46 @@
     "searchPlaceholder": "Search project...",
     "projectsList": [
       {
-        "title": "Project Alpha",
-        "description": "An innovative project focused on developing a cutting-edge solution for e-commerce.",
-        "technologies": ["Java", "Spring Boot", "AWS"],
+        "title": "StreamFlix",
+        "description": "An innovative project focused on developing a cutting-edge solution for this video streaming platform.",
+        "technologies": ["React js", "Redux", "Tailwind","Firebase"],
         "link": "#",
         "image": "rng_latest.png",
         "category": "WEB APPLICATION"
       },
       {
-        "title": "Project Beta",
+        "title": "RideWave",
         "description": "A comprehensive tool designed for automating business processes.",
-        "technologies": ["JavaScript", "React", "Node.js"],
+        "technologies": ["Springboot", "Mysql"],
         "link": "#",
         "image": "tic_thumb.png",
         "category": "WEB APPLICATION"
       },
       {
-        "title": "Project Gamma",
-        "description": "A mobile application aimed at improving user engagement.",
-        "technologies": ["Android", "Kotlin", "Firebase"],
+        "title": "Billing system",
+        "description": "This software application designed for tracking inventory quantities and generating invoices efficiently. It provides a streamlined solution for managing stock levels, monitoring product availability, and creating detailed billing statements. The application ensures accuracy, enhances productivity, and simplifies inventory management for businesses.",
+        "technologies": ["Java", "Mysql", "Swing"],
         "link": "#",
         "image": "wallet.png",
-        "category": "WEB APPLICATION"
+        "category": "DESKTOP APPLICATION"
       },
       {
-        "title": "Project Beta",
-        "description": "A comprehensive tool designed for automating business processes.",
-        "technologies": ["JavaScript", "React", "Node.js"],
+        "title": "Salary prediction",
+        "description": "A machine learning software developed using Python, incorporating Matplotlib, Pandas, and NumPy to predict expected salaries based on experience and skillset. The application analyzes input data and provides accurate salary predictions, helping users make informed career decisions.",
+        "technologies": ["Python", "Matplotlib", "Numpy","Pandas"],
         "link": "#",
         "image": "tic_thumb.png",
         "category": "WEB APPLICATION"
       },
       {
-        "title": "Project Gamma",
-        "description": "A mobile application aimed at improving user engagement.",
-        "technologies": ["Android", "Kotlin", "Firebase"],
-        "link": "#",
-        "image": "wallet.png",
-        "category": "WEB APPLICATION"
-      },
-      {
-        "title": "Project Beta",
-        "description": "A comprehensive tool designed for automating business processes.",
-        "technologies": ["JavaScript", "React", "Node.js"],
-        "link": "#",
-        "image": "tic_thumb.png",
-        "category": "WEB APPLICATION"
-      },
-      {
-        "title": "Project Gamma",
-        "description": "A mobile application aimed at improving user engagement.",
-        "technologies": ["Android", "Kotlin", "Firebase"],
+        "title": "Racism detection",
+        "description": "This software utilizes Natural Language Processing (NLP) to detect racism in comments. It analyzes textual data to identify and quantify racist words, providing a detailed report on the number of offensive terms detected. This tool is designed to promote responsible communication and assist in moderating online content effectively.",
+        "technologies": ["Java EE","Servlet", "JSP", "Mysql"],
         "link": "#",
         "image": "wallet.png",
         "category": "WEB APPLICATION"
       }
+      
     ]
   },
   "achievements": {

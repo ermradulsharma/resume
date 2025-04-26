@@ -24,7 +24,7 @@ const Contact = () => {
   // </Grid>
   return (
     <Container style={{width:'100%',backgroundColor:"black"}}>
-      <Particle />
+      {/* <Particle /> */}
       <Container style={{paddingTop:'10%'}}>
         <Row>
         <Col md={12} className="c-left" style={{backgroundColor: "#000"}}>
@@ -38,7 +38,7 @@ const Contact = () => {
           <Col md={6}>
           <Box sx={{marginLeft:'0%',alignItems: "center"}} ><ContactForm/></Box>
           </Col>
-          <Col md={6}>
+          <Col md={6} style={{backgroundColor:'black'}}>
           <SocialNew />
           </Col>
 

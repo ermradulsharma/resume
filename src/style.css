@@ -117,6 +117,7 @@ html {
     border-radius: 50px;
     margin-top: 28px;
     cursor: pointer;
+    z-index: 20000000000;
 }
 
 /* .achieve{

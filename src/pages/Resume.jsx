@@ -13,6 +13,8 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
 import data from '../components/database/localDB.json';
 import ResumeLink from "../assets/Resume/ResumeLink.pdf"
+import Leetcode from "../components/Skillset/Leetcode";
+import Github from "../components/Skillset/Github";
 pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 // const resumeLink = `https://raw.githubusercontent.com/19sajib/portfolio/main/src/assets/sajib.pdf`
@@ -36,9 +38,10 @@ const Resume = () => {
         <Row className="resume" >
         <Col md={6} className="achieve">
 
-        <h5>Certifications</h5>
         <div style={{ overflowX: 'auto', color: 'white' }}>
-      <Table bordered responsive>
+                 <Leetcode />
+                  <Github />
+      {/* <Table bordered responsive>
         <thead>
           <tr>
             <th>Title</th>
@@ -59,7 +62,7 @@ const Resume = () => {
             </tr>
           ))}
         </tbody>
-      </Table>
+      </Table> */}
     </div>
           
           </Col>

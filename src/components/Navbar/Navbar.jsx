@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../../assets/images/profile_img.png";
 // import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 // import { CgGitFork } from "react-icons/cg";
 import {
   // AiFillStar,
@@ -19,6 +19,7 @@ import { CgFileDocument } from "react-icons/cg";
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const navigate = useNavigate();
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -38,10 +39,10 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="d-flex brand">
-          <img src={logo} className="img-fluid logo" alt="brand" /><span style={{marginLeft: "5px"}}>Sa.</span>
-        </Navbar.Brand>
-        <Navbar.Toggle
+        <div onClick={()=>{navigate("/")}} style={{cursor:'pointer'}}   className="d-flex brand">
+          <img src={logo} className="img-fluid logo" alt="brand" /><span style={{marginLeft: "5px"}}></span>
+        </div>
+        {/* <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
             updateExpanded(expand ? false : "expanded");
@@ -50,7 +51,8 @@ function NavBar() {
           <span></span>
           <span></span>
           <span></span>
-        </Navbar.Toggle>
+        </Navbar.Toggle> */}
+
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>

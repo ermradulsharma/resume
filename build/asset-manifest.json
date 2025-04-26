@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.eb207315.css",
+    "main.js": "/static/js/main.fc1c8da0.js",
+    "static/media/kickstart.png": "/static/media/kickstart.e27936ec3fc35c1b6808.png",
+    "static/media/abt_img.png": "/static/media/abt_img.4c98da0084cf33b9defd.png",
+    "static/media/bg_blur.png": "/static/media/bg_blur.def2279f52bf6506f916.png",
+    "static/media/krypto.png": "/static/media/krypto.ca0e8bf963cc76cfe26c.png",
+    "static/media/profile_img.png": "/static/media/profile_img.92c9ff79ec08193880cb.png",
+    "static/media/project.jpeg": "/static/media/project.7063238598429f9a1f79.jpeg",
+    "static/media/ResumeLink.pdf": "/static/media/ResumeLink.e81fd8b5244ff9bf1e9a.pdf",
+    "static/media/main_img_grey.png": "/static/media/main_img_grey.c0858097e918451476cc.png",
+    "static/media/home-main.svg": "/static/media/home-main.541f8179af8209ce03ccf2178fe62dbf.svg",
+    "static/media/lift.png": "/static/media/lift.37d5e75bcb0994102a34.png",
+    "static/media/pg.png": "/static/media/pg.0d0d8ff689849d3d367c.png",
+    "static/media/sLogo.png": "/static/media/sLogo.fbf5685094ecde30a712.png",
+    "static/media/pre.svg": "/static/media/pre.d4812f51c8c80976eaab.svg",
+    "static/media/linkdin_ic.svg": "/static/media/linkdin_ic.9bc6871e15a832290d84f60db2c6a755.svg",
+    "index.html": "/index.html",
+    "main.eb207315.css.map": "/static/css/main.eb207315.css.map",
+    "main.fc1c8da0.js.map": "/static/js/main.fc1c8da0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eb207315.css",
+    "static/js/main.fc1c8da0.js"
+  ]
+}

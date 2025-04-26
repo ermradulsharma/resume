@@ -13,14 +13,17 @@ import insta from "../assets/icons/insta_ic.png";
 import down_ic from "../assets/icons/down_ic.png";
 import LetsConnect from '../components/LetsConnect';
 import { MdBusinessCenter } from "react-icons/md";
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+
+  const navigate = useNavigate();
   const home = data.home;
   return (
-    <section>
+    <section >
       <Container fluid className="home-section" id="home">
-      <img src={bgBlur} alt="" srcset="" className='test'/>
-        <Particle />
+      {/* <img src={bgBlur} alt="" srcset="" className='test'/> */}
+     
         <Container className="home-content" >
           <Row>
             <Col md={7} className="home-header">
@@ -41,15 +44,20 @@ const Home = () => {
               <p style={{color: "#B8B8B8", paddingTop: 5 }}>{home.compactAbout}</p>
               </div>
 
-              <div className="downBtn">
+              <div 
+              className="downBtn"
+              style={{cursor:'pointer'}}
+              >
               <MdBusinessCenter />
-                <span style={{marginLeft: '5px'}}>Hire Me</span>
+                <span style={{marginLeft: '5px',cursor:'pointer'}}
+                onClick={()=>{navigate("/contact")}}
+                >Hire Me</span>
             </div>
     
             <div className="social_icons">
-                <img src={linkdin} alt=""/>
+               {/* <a href="https://www.linkedin.com/in/sauryadeep-roy-252461229"><img src={linkdin} alt={""} /></a> 
                 <img src={twitter} alt=""/>
-                <img src={insta} alt=""/>
+                <img src={insta} alt=""/> */}
             </div>
      
               
@@ -67,6 +75,7 @@ const Home = () => {
             </Col>
           </Row>
         </Container>
+        <Particle />
       </Container>
       <About />
       <LetsConnect />

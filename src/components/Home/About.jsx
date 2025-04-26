@@ -22,7 +22,7 @@ const About = () => {
             <Row>
             <Col md={4} className="myAvtar">
                 <Tilt>
-                  <img src={myImage} className="img-fluid" alt="avatar" />
+                  <img src={myImage} className="img-fluid" alt="avatar" style={{scale:0.6}}/>
                 </Tilt>
               </Col>
               <Col md={8} className="home-about-description">
