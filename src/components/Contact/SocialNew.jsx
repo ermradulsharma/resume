@@ -8,7 +8,6 @@ import {
 import React from "react";
 import { Stack } from "react-bootstrap";
 import database from "../database/localDB.json";
-import SendIcon from "@mui/icons-material/Send";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import TwitterIcon from "@mui/icons-material/Twitter";

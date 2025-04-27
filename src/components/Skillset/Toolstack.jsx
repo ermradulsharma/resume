@@ -9,7 +9,8 @@ const Toolstack = () => {
  
     return  <>
     <Col xs={6} md={2} className="tech-icons">
-      {obj?.icon} <br></br>{obj?.name}
+      <div className="icon-data">{obj?.icon}</div>
+      <div className="icon-label">{obj?.name}</div>
     </Col>
      {/* <Col xs={2} md={2} className="tech-icons">
      {obj?.name}

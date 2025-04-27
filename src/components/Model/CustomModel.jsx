@@ -1,92 +1,118 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import { IoClose } from "react-icons/io5";
-import { Card, Grid } from '@mui/material';
-import { Col, Container, Row } from "react-bootstrap";
+import { Chip } from '@mui/material';
 
 const style = {
   position: 'absolute',
   top: '50%',
   left: '50%',
-  transform: 'translate(-50%, -50%)',
-  maxWidth: '100vw',
-  // height:'60vh',
-  border:'none',
+  transform: 'translate(-50%, -50%) scale(0.8)',
+  opacity: 0,
+  width: '90vw',
+  maxWidth: '600px',
+  bgcolor: 'rgba(255, 255, 255, 0.1)',
+  boxShadow: 24,
+  backdropFilter: 'blur(20px)',
+  borderRadius: '20px',
+  p: 3,
+  color: '#fff',
   outline: 'none',
-  // bgcolor: '#1b1b1b',
-  // border: '2px solid #000',
-
-  p: 4,
+  border: '1px solid rgba(255, 255, 255, 0.2)',
+  transition: 'all 0.5s ease',
 };
 
 const showStyle = {
-  transform: 'translate(-50%, -50%) scale(1)', // Pop-in effect
-  opacity: 1, // Fully visible
+  transform: 'translate(-50%, -50%) scale(1)',
+  opacity: 1,
 };
 
-export default function CustomModel({open,setOpen,project}) {
-
+export default function CustomModal({ open, setOpen, project }) {
   const [showAnimation, setShowAnimation] = React.useState(false);
 
-  const handleOpen = () => {
-    setOpen(true);
-    setTimeout(() => setShowAnimation(true), 10); // Slight delay for smooth pop-in
-  };
+  React.useEffect(() => {
+    if (open) {
+      setTimeout(() => setShowAnimation(true), 10);
+    } else {
+      setShowAnimation(false);
+    }
+  }, [open]);
 
   const handleClose = () => {
-    setShowAnimation(false); // Start pop-out animation
-    setTimeout(() => setOpen(false), 500); // Close modal after animation ends
+    setShowAnimation(false);
+    setTimeout(() => setOpen(false), 400);
   };
-  
-  // const handleOpen = () => setOpen(true);
-  // const handleClose = () => setOpen(false);
-  // console.log("dessss",project);
-  
 
   return (
-    <div>
-      {/* <Button onClick={handleOpen}>Open modal</Button> */}
-      <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-      >
-     <Box sx={{ ...style, ...(showAnimation ? showStyle : {}) }}>
-     <div class="card2"  style={{cursor:'pointer'}}>
-     <div className='heading-bar'>
-      
-      <h3>{project.title}</h3>
-      <div className="close-btn" onClick={()=>{setOpen(false)}}>
-        <IoClose /> <span>Close</span>
-      </div>
-     </div>
-     <img src={"../../assets/" + project.image}  alt="TicTacToe"/>
-     
-
-            
-            <div class="card-footer">
-                
-                <div class="card-subtitle">{project.category}</div>
-
-                <h5 className='mt-2'>Description</h5>
-                
-                <div class="card-description">{project.description}</div>
-
-                <h5 className='mt-2'>Technology used</h5>
-                <ul>
-                  {project.technologies.map((skill, index) => (
-                    <li key={index}>{skill}</li>
-                  ))}
-                </ul>
-
-            </div>
+    <Modal
+      open={open}
+      onClose={handleClose}
+      aria-labelledby="modal-title"
+      aria-describedby="modal-description"
+    >
+      <Box sx={{ ...style, ...(showAnimation ? showStyle : {}) }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
+          <h2 style={{ margin: 0, fontSize: '1.5rem' }}>{project.title}</h2>
+          <button
+            onClick={handleClose}
+            style={{
+              background: 'transparent',
+              border: 'none',
+              color: '#fff',
+              fontSize: '1.5rem',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '5px'
+            }}
+          >
+            <IoClose /> <span style={{ fontSize: '0.9rem' }}>Close</span>
+          </button>
         </div>
-     </Box>
-      </Modal>
-    </div>
+
+        <img
+          src={"../../assets/" + project.image}
+          alt={project.title}
+          style={{
+            width: '100%',
+            height: 'auto',
+            borderRadius: '15px',
+            marginBottom: '1rem',
+            objectFit: 'cover',
+          }}
+        />
+
+        <div style={{ marginBottom: '1rem', fontSize: '1rem', color: '#ccc' }}>
+          {project.category}
+        </div>
+
+        <div>
+          <h4 style={{ margin: '10px 0', fontSize: '1.2rem' }}>Description</h4>
+          <p style={{ color: '#eee', fontSize: '0.95rem' }}>
+            {project.description}
+          </p>
+        </div>
+
+        <div style={{ marginTop: '1.5rem' }}>
+          <h4 style={{ margin: '10px 0', fontSize: '1.2rem' }}>Technology Used</h4>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
+            {project.technologies.map((tech, idx) => (
+              <Chip 
+                key={idx}
+                label={tech}
+                style={{
+                  background: 'rgba(255, 255, 255, 0.2)',
+                  color: '#fff',
+                  fontWeight: 500,
+                  backdropFilter: 'blur(10px)',
+                  border: '1px solid rgba(255,255,255,0.3)',
+                }}
+              />
+            ))}
+          </div>
+        </div>
+      </Box>
+    </Modal>
   );
 }

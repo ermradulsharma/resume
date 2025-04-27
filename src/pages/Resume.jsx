@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row ,Col, Table} from "react-bootstrap";
+import { Container, Row ,Col} from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import { AiOutlineDownload } from "react-icons/ai";
 
@@ -11,7 +11,6 @@ import LetsConnect from '../components/LetsConnect';
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
-import data from '../components/database/localDB.json';
 import ResumeLink from "../assets/Resume/ResumeLink.pdf"
 import Leetcode from "../components/Skillset/Leetcode";
 import Github from "../components/Skillset/Github";
@@ -22,7 +21,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pd
 
 const Resume = () => {
   const [width, setWidth] = useState(700);
-  const achievements = data.achievements;
+  // const achievements = data.achievements;
 
   useEffect(() => {
     

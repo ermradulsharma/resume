@@ -15,6 +15,13 @@ const ProjectCard = (props) => {
         flexDirection: "column",
         justifyContent: "space-between",
         alignContent: "space-between",
+        borderRadius: "10%",
+        padding: "10px",
+        margin: "10px",
+        width: "100%",
+        border: "1px solid red",
+        boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
+        transition: "transform 0.2s",
       }}
     >
       <Card.Img

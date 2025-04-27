@@ -1,30 +1,17 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiGit,
-} from "react-icons/di";
-import {
-  SiMaterialui,
-  SiGraphql,
-  SiSolidity,
-  SiRedux,
-  SiMongodb,
-  SiHtml5
-} from "react-icons/si";
 import {skillData} from "../../components/database/SkillDb"
 
 const Techstack = () => {
   
-   return <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+   return <Row style={{alignItems: "center", justifyContent: "center", paddingBottom: "50px" }}>
     {
      skillData?.map((obj)=>{
    
       return  <>
       <Col xs={6} md={2} className="tech-icons">
-        {obj?.icon} <br></br>{obj?.name}
+      <div className="icon-data">{obj?.icon}</div>
+      <div className="icon-label">{obj?.name}</div>
       </Col>
        {/* <Col xs={2} md={2} className="tech-icons">
        {obj?.name}

@@ -1,16 +1,11 @@
 import React from 'react'
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from '../assets/main_img_grey.png'
-import bgBlur from '../assets/images/bg_blur.png'
+import homeLogo from '../assets/main_img_grey.png';
 import Particle from '../components/Particle';
 import About from '../components/Home/About';
 
 import Type from '../components/Home/Type';
 import data from "../components/database/localDB.json";
-import linkdin from "../assets/icons/linkdin_ic.svg";
-import twitter from "../assets/icons/twitter_ic.png";
-import insta from "../assets/icons/insta_ic.png";
-import down_ic from "../assets/icons/down_ic.png";
 import LetsConnect from '../components/LetsConnect';
 import { MdBusinessCenter } from "react-icons/md";
 import { useNavigate } from 'react-router-dom';

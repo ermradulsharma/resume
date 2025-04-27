@@ -1,27 +1,11 @@
 import React from 'react'
 import { Col, Container, Row } from "react-bootstrap";
-import Particle from '../components/Particle';
 import ContactForm from '../components/Contact/Contact';
-import Social from '../components/Contact/Social';
-import { Box, Grid } from '@mui/material';
-import ContactFormNew from '../components/Contact/ContactFormNew';
+import { Box } from '@mui/material';
 import SocialNew from '../components/Contact/SocialNew';
 
 const Contact = () => {
 
-
-
-
-  // return <Grid container>
-  //   <Grid item xs={6}>
-  //     <ContactFormNew/>
-  //     </Grid>
-  //   <Grid item xs={6}>
-  //     <Box sx={{height:'40vh',width:'20vh',color:'red'}}>Heeeeeeeeeee</Box>
-
-  //   </Grid>
-
-  // </Grid>
   return (
     <Container style={{width:'100%',backgroundColor:"black"}}>
       {/* <Particle /> */}

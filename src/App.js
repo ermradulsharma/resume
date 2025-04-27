@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 
 import Home from './pages/Home'
-import LetsConnect from './components/LetsConnect';
 import Skill from './pages/Skillset'
 import Project from './pages/Projects'
 import Resume from './pages/Resume'

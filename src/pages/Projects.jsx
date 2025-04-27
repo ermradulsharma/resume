@@ -1,16 +1,9 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import ProjectCardNew from "../components/Projects/ProjectCardNew";
 import Particle from "../components/Particle";
-import pg from "../assets/projects/pg.png";
 import data from '../components/database/localDB.json';
-import project from "../assets/projects/project.jpeg";
-import lift from "../assets/projects/lift.png";
-import krypto from "../assets/projects/krypto.png";
-import kickstart from "../assets/projects/kickstart.png";
 import LetsConnect from '../components/LetsConnect';
-import CustomModel from "../components/Model/CustomModel";
-import { Button } from "@mui/material";
 
 const Projects = () => {
  

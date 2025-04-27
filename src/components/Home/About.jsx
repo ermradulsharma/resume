@@ -1,20 +1,13 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import LaptopImg from "../../assets/home-main.svg";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
-import { SiLeetcode } from "react-icons/si";
+
 import data from "../database/localDB.json"
 import myImage from "../../assets/images/abt_img.png"
 
 
 
 const About = () => {
-  const home = data.home;
   const about = data.about;
     return (
         <Container fluid className="home-about-section" id="about">

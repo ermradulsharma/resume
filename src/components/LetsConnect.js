@@ -1,8 +1,7 @@
 import React from 'react';
-import data from './database/localDB.json';
 
 export default function LetsConnect() {
-    const home = data.home;
+    // const home = data.home;
   return (
     <div style={{border: "1px solid black", backgroundColor: "#000"}}>
         <div className="connect mt-4 mb-4">
