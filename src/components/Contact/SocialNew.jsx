@@ -15,8 +15,9 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
+
 function SocialNew() {
-  let iconObj = {
+  const iconObj = {
     Linkdein: <LinkedInIcon />,
     Github: <GitHubIcon />,
     Twitter: <TwitterIcon />,
@@ -27,58 +28,107 @@ function SocialNew() {
   };
 
   return (
-    <Box>
-      <Stack>
-        <Box>
-          <Typography
-            align="left"
-            variant="h5"
-            style={{ color: "#D9D9D9", marginTop: "20px" }}
-          >
-            Contacts
-          </Typography>
-          {database.contact.contacts?.map((obj) => {
-            return (
-              <ListItemButton key={obj.value}>
-                <ListItemIcon sx={{ color: "green" }}>
-                  {iconObj[obj?.name]}
-                  {/* <TwitterIcon/> */}
-                </ListItemIcon>
-                <ListItemText primary={obj.value} sx={{ color: "#B8B8B8" }} />
-              </ListItemButton>
-            );
-          })}
-        </Box>
-      </Stack>
-      <Stack>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        gap: 4,
+        padding: { xs: 2, sm: 4 },
+      }}
+    >
+      {/* Contacts Section */}
+      <Box>
         <Typography
           align="left"
           variant="h5"
-          style={{ color: "#D9D9D9", marginTop: "10px" }}
+          sx={{
+            color: "#E0E0E0",
+            marginBottom: "16px",
+            fontWeight: "600",
+          }}
+        >
+          Contacts
+        </Typography>
+
+        <Stack spacing={2}>
+          {database.contact.contacts?.map((obj) => (
+            <ListItemButton
+              key={obj.value}
+              sx={{
+                borderRadius: "12px",
+                transition: "all 0.3s ease",
+              }}
+            >
+              <ListItemIcon sx={{ color: "#4CAF50", minWidth: "40px" }}>
+                {iconObj[obj?.name]}
+              </ListItemIcon>
+              <ListItemText
+                primary={obj.value}
+                primaryTypographyProps={{
+                  sx: { color: "#B8B8B8", fontSize: "1rem" },
+                }}
+              />
+            </ListItemButton>
+          ))}
+        </Stack>
+      </Box>
+
+      {/* Social Media Section */}
+      <Box>
+        <Typography
+          align="left"
+          variant="h5"
+          sx={{
+            color: "#E0E0E0",
+            marginBottom: "16px",
+            fontWeight: "600",
+          }}
         >
           Social Media
         </Typography>
-        <Box sx={{ height: "10em", overflow: "auto", scrollbarColor: "red" }}>
-          {database.contact.socialmedia?.map((obj) => {
-            return (
-              <a
-                key={obj.name}
-                href={obj.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ textDecoration: "none" }}
+
+        <Box
+          sx={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: 2,
+            justifyContent: "flex-start",
+          }}
+        >
+          {database.contact.socialmedia?.map((obj) => (
+            <a
+              key={obj.name}
+              href={obj.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "none" }}
+            >
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  textAlign: "center",
+                  width: "60px",
+                  height: "60px",
+                  background: "rgba(255,255,255,0.04)",
+                  backdropFilter: "blur(8px)",
+                  borderRadius: "50%",
+                  transition: "all 0.3s ease",
+                  "&:hover": {
+                    background: "rgba(255,255,255,0.08)",
+                    transform: "scale(1.1)",
+                  },
+                }}
               >
-                <ListItemButton>
-                  <ListItemIcon sx={{ color: "green" }}>
-                    {iconObj[obj?.name]}
-                  </ListItemIcon>
-                  <ListItemText primary={obj.name} sx={{ color: "#B8B8B8" }} />
-                </ListItemButton>
-              </a>
-            );
-          })}
+                <ListItemIcon sx={{ color: "#4CAF50", textAlign: "center",justifyContent: "center" }}>
+                  {iconObj[obj?.name]}
+                </ListItemIcon>
+              </Box>
+            </a>
+          ))}
         </Box>
-      </Stack>
+      </Box>
     </Box>
   );
 }

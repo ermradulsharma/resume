@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import "./Contact.css";
 
-const Contact = () => {
+const ContactForm = () => {
   const form = useRef();
   const [done, setDone] = useState(false);
   const [notDone, setNotDone] = useState(false);
@@ -22,8 +22,6 @@ const Contact = () => {
     if (!formData.from_name || !formData.reply_to || !formData.message) {
       setNotDone(true);
     } else {
-      //  Please use your own credentials from emailjs or i will recive your email
-
       emailjs
         .sendForm(
           "service_niilndo",
@@ -44,45 +42,56 @@ const Contact = () => {
   };
 
   return (
-    <Container style={{ paddingTop: "30px",width:"100%" }}>
-      
+    <Container style={{ paddingTop: "20px", width: "100%" }}>
       <Row>
-      
-        {/* <Col md={6} className="c-left"> */}
-          {/* <h1 className="yellow">Contact me</h1> */}
-        {/* </Col> */}
         <Col className="c-right">
-          <form ref={form} onSubmit={sendEmail}>
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              gap: "1.2rem",
+            }}
+          >
             <input
               type="text"
               name="from_name"
-              className="user textWidth"
               placeholder="Name"
+              className="glass-input"
               onChange={handleChange}
             />
             <input
               type="email"
               name="reply_to"
-              className="user "
               placeholder="Email"
+              className="glass-input"
               onChange={handleChange}
             />
             <textarea
               name="message"
-              className="user "
               placeholder="Message"
+              className="glass-input"
+              rows="5"
               onChange={handleChange}
             />
-            <span className="not-done">
-              {notDone && "Please, fill all the input field"}
-            </span>
-            <Button type="submit" className="button user" disabled={done} >
+            {notDone && (
+              <span style={{ color: "#ff4d4d", fontSize: "0.9rem" }}>
+                Please, fill all the fields.
+              </span>
+            )}
+            <Button
+              type="submit"
+              className="glass-button-1"
+              disabled={done}
+            >
               Send
             </Button>
-            <span className="done">
-              {done &&
-                "Thanks for contacting me and be sure i have recieved your mail. If you are testing this functionality then i am confirming this thing working perfectly fine. If you have any serious query then i will reply. Also if you need me, you can conatct me on Linkedin."}
-            </span>
+            {done && (
+              <span style={{ color: "#4dff88", fontSize: "0.9rem" }}>
+                Thanks for contacting me! I've received your message.
+              </span>
+            )}
           </form>
         </Col>
       </Row>
@@ -90,4 +99,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactForm;

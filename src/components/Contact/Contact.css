@@ -1,84 +1,38 @@
-.contact-form{
-    padding: 0 3rem 0 3rem;
-    display: flex;
-    height: 80vh;
-    margin-top: 4rem;
-      /* scroll */
-  padding-top: 3rem;
-}
+/* Contact.css */
 
-.c-left{
-    text-align: start !important;
-    padding-top: 25px;
-    /* color: rgb(1, 4, 39) !important; */
-}
-
-.c-right{
-    
-    display: flex;
-    justify-content: center;
-    position: relative;
-    flex: 1;
-}
-
-.c-right>form
-{
-    display: flex;
-    flex-direction: column;
-    gap: 1.3rem;
-    align-items: center;
-    
-}
-
-.c-right .user{
-    width: 25rem;
-    height: 3.5rem;
-    padding-left: 20px;
-    outline: none;
-    /* border: 2px solid #0f0654; */
-    border-radius: 15px;
+.glass-input {
+    width: 100%;
+    padding: 0.9rem 1.2rem;
+    background: rgba(255, 255, 255, 0.06);
     border: none;
-    font-size: 16px;
-    color: white;
-}
-
-/* .c-right .user:hover{
-    box-shadow: 0 0 9px #1b0895;
-} */
-
-input{
-    background-color: #121214;
-}
-textarea{
-    padding-top: 10px;
-    height: 5rem!important;
-    background-color: #121214;
-}
-
-.done{
-    font-size: 11px;
-    color: green;
-}
-.not-done{
-    font-size: 11px;
-    color: red;
-}
-
-.c-blur1{
-    top: 1rem;
-    left: 8rem;
-}
-
-@media screen and (max-width: 480px) {
-    .contact-form{
-        padding: 0;
-        flex-direction: column;
-        gap: 5rem;
-        height: 40rem;
-    }
-    .c-right .user{
-        width: 16rem;
-    }
-    
-
-}
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 1rem;
+    outline: none;
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+  }
+  
+  .glass-input::placeholder {
+    color: #cccccc;
+    opacity: 0.8;
+  }
+  
+  .glass-input:focus {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .glass-button-1:hover {
+    background: rgba(0, 47, 7, 0.709) !important;
+  }
+  
+.glass-button-1 {
+    background-color: #286f2a !important;
+    border: none;
+    border-radius: 12px;
+    color: #ffffff !important;
+    font-size: 1rem;
+    padding: 0.9rem 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
