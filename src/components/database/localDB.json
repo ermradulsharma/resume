@@ -127,7 +127,7 @@
         "title": "AlgoSpectra : Algorithm visualizer",
         "description": "Developed a scalable full-stack platform to support interactive visualization of over five core data structures, crafting real-time animated flow diagrams using React Flow to deliver an intuitive and engaging user experience for algorithmic learning. Implemented a high-performance Spring Boot backend with PostgreSQL on Supabase, capable of handling secure authentications with advanced features, and deployed more than five secure RESTful API endpoints for user management, API health monitoring, and authentication control. Additionally, Streamlined the CI/CD pipeline via Firebase Hosting and GitHub Actions.",
         "technologies": ["ReactJS", "Spring Boot", "PostgreSQL", "Supabase", "Firebase", "JSON", "React Flow", "Git", "GitHub", "Render"],
-        "link": "#",
+        "link": "https://algospectra.web.app",
         "image": "algo-data.png",
         "category": "FULL STACK APPLICATION"
       },
