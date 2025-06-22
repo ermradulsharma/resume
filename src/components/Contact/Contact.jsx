@@ -19,15 +19,15 @@ const ContactForm = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    if (!formData.from_name || !formData.reply_to || !formData.message) {
+    if (!formData.from_name || !formData.reply_to || !formData.phone || !formData.message) {
       setNotDone(true);
     } else {
       emailjs
         .sendForm(
-          "service_niilndo",
-          "template_6z5idye",
+          "service_mradul",
+          "template_hzio3hj",
           form.current,
-          "VOBt6Akm1LhI5CZG-"
+          "OWljxBdzr02unWI2z"
         )
         .then(
           (result) => {
@@ -68,6 +68,13 @@ const ContactForm = () => {
               className="glass-input"
               onChange={handleChange}
             />
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Phone Number"
+              className="glass-input"
+              onChange={handleChange}
+            />
             <textarea
               name="message"
               placeholder="Message"
@@ -80,11 +87,7 @@ const ContactForm = () => {
                 Please, fill all the fields.
               </span>
             )}
-            <Button
-              type="submit"
-              className="glass-button-1"
-              disabled={done}
-            >
+            <Button type="submit" className="glass-button-1" disabled={done}>
               Send
             </Button>
             {done && (

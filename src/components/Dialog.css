@@ -6,21 +6,21 @@
     max-width: 600px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     -webkit-mask-image: -webkit-radial-gradient(white, black);
-  }
-  
-  .header {
+}
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-  }
-  
-  .header h1 {
+}
+
+.header h1 {
     font-size: 24px;
     margin: 0;
-  }
-  
-  .header .close-btn {
+}
+
+.header .close-btn {
     background-color: #3a3a3a;
     border: none;
     border-radius: 50%;
@@ -30,85 +30,85 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-  }
-  
-  .header .close-btn i {
+}
+
+.header .close-btn i {
     color: white;
     font-size: 16px;
-  }
-  
-  .image-container {
+}
+
+.image-container {
     text-align: center;
     margin-bottom: 20px;
-  }
-  
-  .image-container img {
+}
+
+.image-container img {
     width: 100%;
     border-radius: 10px;
-  }
-  
-  .image-container p {
+}
+
+.image-container p {
     font-size: 18px;
     margin: 10px 0 0;
-  }
-  
-  .description {
+}
+
+.description {
     margin-bottom: 20px;
-  }
-  
-  .description h2 {
+}
+
+.description h2 {
     font-size: 18px;
     margin: 0 0 10px;
-  }
-  
-  .description p {
+}
+
+.description p {
     font-size: 14px;
     line-height: 1.6;
     margin: 0;
-  }
-  
-  .technology {
+}
+
+.technology {
     margin-bottom: 20px;
-  }
-  
-  .technology h2 {
+}
+
+.technology h2 {
     font-size: 18px;
     margin: 0 0 10px;
-  }
-  
-  .technology ul {
+}
+
+.technology ul {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-  
-  .technology ul li {
+}
+
+.technology ul li {
     font-size: 14px;
     margin: 5px 0;
-  }
-  
-  @media (max-width: 600px) {
+}
+
+@media (max-width: 600px) {
     .header h1 {
-      font-size: 20px;
+        font-size: 20px;
     }
-  
+
     .image-container p {
-      font-size: 16px;
+        font-size: 16px;
     }
-  
+
     .description h2,
     .technology h2 {
-      font-size: 16px;
+        font-size: 16px;
     }
-  
+
     .description p,
     .technology ul li {
-      font-size: 12px;
+        font-size: 12px;
     }
-  }
+}
 
 
-  .modal-overlay {
+.modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -119,10 +119,10 @@
     justify-content: center;
     align-items: center;
     z-index: 9999;
-  }
-  
-  /* Center the modal content */
-  .modal-content {
+}
+
+/* Center the modal content */
+.modal-content {
     position: relative;
     background-color: #2a2a2a;
     border-radius: 20px;
@@ -130,9 +130,9 @@
     width: 90%;
     max-width: 600px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  }
-  
-  .close-btn {
+}
+
+.close-btn {
     background-color: #3a3a3a;
     border: none;
     border-radius: 50%;
@@ -142,10 +142,10 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-  }
-  
-  /* Button to open the popup */
-  .open-popup-btn {
+}
+
+/* Button to open the popup */
+.open-popup-btn {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
@@ -154,9 +154,9 @@
     border: none;
     border-radius: 5px;
     margin: 20px;
-  }
-  
-  /* Example styles for better visualization */
-  .open-popup-btn:hover {
+}
+
+/* Example styles for better visualization */
+.open-popup-btn:hover {
     background-color: #45a049;
-  }
+}
