@@ -1,201 +1,233 @@
 {
-  "home": {
-    "name": "Sauryadeep Roy",
-    "jobPositions": ["Software Engineer", "React developer","Java developer","Springboot developer", "Full-stack developer"],
-    "compactAbout": "An experienced developer and designer dedicated to crafting innovative software solutions for businesses.",
-    "location": "Kolkata"
-  },
-  "about": {
-    "expandedAbout": "I'm Sauryadeep Roy, an experienced developer and designer dedicated to crafting innovative software solutions for businesses. With a year of hands-on experience, I specialize in creating functional and visually captivating experiences tailored to your unique needs. Committed to excellence, I prioritize your satisfaction and refine my work until it exceeds your expectations. Let's collaborate to elevate your business through cutting-edge technology and design innovation. Contact me to bring your ideas to life!",
-    "experience": [
-      {
-        "role": "Full-stack web developer",
-        "place": "Kolkata",
-        "duration": "2023-current",
-        "location": "Houston, Texas, US · Remote"
-      },
-      {
-        "role": "Digital Specialist Engineer",
-        "place": "Infosys",
-        "duration": "2023-current",
-        "location": "Bengaluru, IN"
-      },
-      {
-        "role": "Systems Engineer",
-        "place": "Infosys",
-        "duration": "2022-2023",
-        "location": "Bengaluru, IN"
-      },
-      {
-        "role": "Freelancing",
-        "place": "",
-        "duration": "2019-current",
-        "location": "Remote"
-      }
-    ],
-    "skill": {
-      "description": "My technical skill includes proficiency in JAVA, MuleSoft, HTML, CSS, JavaScript, Spring Boot. I'm also well-versed in creating APIs, AWS Cloud, and Azure DevOps.",
-      "skills": [
-        { "logo": "./assets/images/logos/java.png", "tag": "Java" },
-        { "logo": "./assets/images/logos/html-5.png", "tag": "HTML" },
-        { "logo": "./assets/images/logos/css-3.png", "tag": "CSS" },
-        { "logo": "./assets/images/logos/js.png", "tag": "JavaScript" },
-        { "logo": "./assets/images/logos/sboot.png", "tag": "Spring Boot" },
-        { "logo": "./assets/images/logos/mule.webp", "tag": "Mulesoft" },
-        { "logo": "./assets/images/logos/azure.png", "tag": "Azure Devops" },
-        { "logo": "./assets/images/logos/figma.png", "tag": "Figma" },
-        { "logo": "./assets/images/logos/social.png", "tag": "AWS Cloud" },
-        {
-          "logo": "./assets/images/logos/android.png",
-          "tag": "Android Development"
-        },
-        { "logo": "./assets/images/logos/apple.png", "tag": "IOS Development" },
-        { "logo": "./assets/images/logos/dbms.png", "tag": "DBMS" },
-        { "logo": "./assets/images/logos/google.png", "tag": "Google Cloud" }
-      ]
+    "home": {
+        "name": "Mradul Sharma",
+        "jobPositions": [
+            "Senior FullStack Developer",
+            "Laravel Developer",
+            "React Developer",
+            "Node.js Developer",
+            "DevOps Enthusiast",
+            "Next.js Developer"
+        ],
+        "compactAbout": "Results-driven Full-Stack Developer with over 5 years of experience in scalable web application development using Laravel, React, and AWS.",
+        "location": "Etah, Uttar Pradesh, India"
     },
-    "education": [
-      {
-        "role": "Bachelor's Degree in Civil Engineering",
-        "place": "Bakhtiyarpur College of Engineering",
-        "duration": "2018-2022",
-        "location": "Bakhtiyarpur"
-      },
-      {
-        "role": "Intermediate (10+2)",
-        "place": "Shantiniketan Jubilee School,Motihari",
-        "duration": "2016-2018",
-        "location": "Motihari"
-      },
-      {
-        "role": "Matriculation",
-        "place": "Delhi Public School",
-        "duration": "2014 - 2016",
-        "location": "Motihari"
-      }
-    ]
-  },
-  "achievements": {
-    "title": "Achievements",
-    "description": "Here are some of my notable achievements and recognitions.",
-    "list": [
-      "Certified Java Developer",
-      "AWS Certified Solutions Architect",
-      "Winner of the 2023 Developer Hackathon"
-    ]
-  },
-  "contact": {
-    "title": "Contact Me",
-    "description": "Have any questions or want to collaborate? Feel free to reach out!",
-    "formFields": [
-      {
-        "type": "text",
-        "name": "name",
-        "placeholder": "Your Name"
-      },
-      {
-        "type": "email",
-        "name": "email",
-        "placeholder": "Your Email"
-      },
-      {
-        "type": "textarea",
-        "name": "message",
-        "placeholder": "Your Message",
-        "rows": 4
-      }
-    ],
-    "socialmedia": [
-      { "name": "Linkdein","link":"https://www.linkedin.com/in/sauryadeep-roy-252461229" },
-      { "name": "Github","link":"https://github.com/Sauryadeep200" },
-      { "name": "Twitter", "link":"#"},
-      { "name": "Facebook","link":"#" },
-      { "name": "Instagram" ,"link":"#"}
-
-  ],
-  "contacts":[
-    { "name": "mail" ,"value":"f48.sauryadeep@gmail.com"},
-    { "name": "phone","value":"7044624591" }
-  ]
-  },
-  "projects": {
-    "title": "My Projects",
-    "description": "Explore the details of each project to learn more about my approach, the technologies used, and the results achieved.",
-    "searchPlaceholder": "Search project...",
-    "projectsList": [
-      {
-        "title": "AlgoSpectra : Algorithm visualizer",
-        "description": "Developed a scalable full-stack platform to support interactive visualization of over five core data structures, crafting real-time animated flow diagrams using React Flow to deliver an intuitive and engaging user experience for algorithmic learning. Implemented a high-performance Spring Boot backend with PostgreSQL on Supabase, capable of handling secure authentications with advanced features, and deployed more than five secure RESTful API endpoints for user management, API health monitoring, and authentication control. Additionally, Streamlined the CI/CD pipeline via Firebase Hosting and GitHub Actions.",
-        "technologies": ["ReactJS", "Spring Boot", "PostgreSQL", "Supabase", "Firebase", "JSON", "React Flow", "Git", "GitHub", "Render"],
-        "link": "https://algospectra.web.app",
-        "image": "algo-data.png",
-        "category": "FULL STACK APPLICATION"
-      },
-      {
-        "title": "StreamFlix",
-        "description": "An innovative project focused on developing a cutting-edge solution for this video streaming platform.",
-        "technologies": ["React js", "Redux", "Tailwind","Firebase"],
-        "link": "#",
-        "image": "rng_latest.png",
-        "category": "WEB APPLICATION"
-      },
-      {
-        "title": "RideWave",
-        "description": "A comprehensive tool designed for automating business processes.",
-        "technologies": ["Springboot", "Mysql"],
-        "link": "#",
-        "image": "tic_thumb.png",
-        "category": "WEB APPLICATION"
-      },
-      {
-        "title": "Billing system",
-        "description": "This software application designed for tracking inventory quantities and generating invoices efficiently. It provides a streamlined solution for managing stock levels, monitoring product availability, and creating detailed billing statements. The application ensures accuracy, enhances productivity, and simplifies inventory management for businesses.",
-        "technologies": ["Java", "Mysql", "Swing"],
-        "link": "#",
-        "image": "wallet.png",
-        "category": "DESKTOP APPLICATION"
-      },
-      {
-        "title": "Salary prediction",
-        "description": "A machine learning software developed using Python, incorporating Matplotlib, Pandas, and NumPy to predict expected salaries based on experience and skillset. The application analyzes input data and provides accurate salary predictions, helping users make informed career decisions.",
-        "technologies": ["Python", "Matplotlib", "Numpy","Pandas"],
-        "link": "#",
-        "image": "tic_thumb.png",
-        "category": "WEB APPLICATION"
-      },
-      {
-        "title": "Racism detection",
-        "description": "This software utilizes Natural Language Processing (NLP) to detect racism in comments. It analyzes textual data to identify and quantify racist words, providing a detailed report on the number of offensive terms detected. This tool is designed to promote responsible communication and assist in moderating online content effectively.",
-        "technologies": ["Java EE","Servlet", "JSP", "Mysql"],
-        "link": "#",
-        "image": "wallet.png",
-        "category": "WEB APPLICATION"
-      }
-      
-    ]
-  },
-  "achievements": {
-    "achievementsList": [
-      {
-        "title": "Infosys DevOps Professional certification",
-        "link": "#",
-        "company": "Infosys"
-      },
-      {
-        "title": "Infosys DevOps Professional certification",
-        "link": "#",
-        "company": "Infosys"
-      },
-      {
-        "title": "Infosys DevOps Professional certification",
-        "link": "#",
-        "company": "Infosys"
-      },
-      {
-        "title": "Infosys DevOps Professional certification",
-        "link": "#",
-        "company": "Infosys"
-      }
-    ]
-  }
+    "about": {
+        "expandedAbout": "I'm Mradul Sharma, a Senior Full-Stack Developer passionate about building efficient, secure, and scalable web applications. With 5+ years of professional experience, I bring deep expertise in full-stack development, cloud infrastructure, and API integrations. I lead development teams, manage deployment pipelines, and consistently deliver enterprise-grade solutions using Laravel, React, Node.js, and AWS. My commitment lies in clean code, architectural excellence, and continuous innovation.",
+        "experience": [
+            {
+                "role": "Senior Full-Stack Developer",
+                "place": "W3 Info Solutions, Lucknow",
+                "duration": "March 2022 – Present",
+                "location": "Remote"
+            },
+            {
+                "role": "Laravel Developer",
+                "place": "Zaiba InfoTech, Agra",
+                "duration": "March 2020 – February 2022",
+                "location": "Agra, India"
+            },
+            {
+                "role": "PHP Developer (Internship & Full-Time)",
+                "place": "Programming Park InfoTech, Agra",
+                "duration": "December 2018 – February 2020",
+                "location": "Agra, India"
+            }
+        ],
+        "skill": {
+            "description": "Proficient in full-stack development, REST API design, DevOps, and cloud deployment with Laravel, React, Node.js, Docker, and AWS.",
+            "skills": [
+                {
+                    "logo": "./assets/images/logos/laravel.png",
+                    "tag": "Laravel"
+                },
+                {
+                    "logo": "./assets/images/logos/react.png",
+                    "tag": "React.js"
+                },
+                {
+                    "logo": "./assets/images/logos/node.png",
+                    "tag": "Node.js"
+                },
+                {
+                    "logo": "./assets/images/logos/express.png",
+                    "tag": "Express.js"
+                },
+                {
+                    "logo": "./assets/images/logos/postgresql.png",
+                    "tag": "PostgreSQL"
+                },
+                {
+                    "logo": "./assets/images/logos/mongodb.png",
+                    "tag": "MongoDB"
+                },
+                {
+                    "logo": "./assets/images/logos/docker.png",
+                    "tag": "Docker"
+                },
+                {
+                    "logo": "./assets/images/logos/aws.png",
+                    "tag": "AWS"
+                },
+                {
+                    "logo": "./assets/images/logos/git.png",
+                    "tag": "Git"
+                },
+                {
+                    "logo": "./assets/images/logos/html-5.png",
+                    "tag": "HTML"
+                },
+                {
+                    "logo": "./assets/images/logos/css-3.png",
+                    "tag": "CSS"
+                },
+                {
+                    "logo": "./assets/images/logos/javascript.png",
+                    "tag": "JavaScript"
+                },
+                {
+                    "logo": "./assets/images/logos/mysql.png",
+                    "tag": "MySQL"
+                }
+            ]
+        },
+        "achievements": {
+            "title": "Achievements",
+            "description": "Here are some of my notable achievements and recognitions.",
+            "list": [
+                "Certified Java Developer",
+                "AWS Certified Solutions Architect",
+                "Winner of the 2023 Developer Hackathon"
+            ]
+        },
+        "education": [
+            {
+                "role": "B.Tech in Engineering",
+                "place": "Kanpur Institute of Technology",
+                "duration": "2012 – 2016",
+                "location": "Kanpur, Uttar Pradesh"
+            },
+            {
+                "role": "Intermediate",
+                "place": "RBS College, Dadupur Asagrpur",
+                "duration": "2010 – 2012",
+                "location": "Etah, Uttar Pradesh"
+            },
+            {
+                "role": "High School",
+                "place": "Saraswati Vidya Mandir",
+                "duration": "2008 – 2010",
+                "location": "Etah, Uttar Pradesh"
+            }
+        ]
+    },
+    "achievements": {
+        "title": "Achievements",
+        "description": "Key milestones and recognitions throughout my career.",
+        "list": [
+            "Team Lead for PayStubx Payroll System",
+            "Lead Developer for Storytellers CMS",
+            "Architected Wealth Mark Cryptocurrency Trading Platform"
+        ]
+    },
+    "contact": {
+        "title": "Contact Me",
+        "description": "Interested in collaborating or have any queries? Let's connect.",
+        "formFields": [
+            {
+                "type": "text",
+                "name": "name",
+                "placeholder": "Your Name"
+            },
+            {
+                "type": "email",
+                "name": "email",
+                "placeholder": "Your Email"
+            },
+            {
+                "type": "textarea",
+                "name": "message",
+                "placeholder": "Your Message",
+                "rows": 4
+            }
+        ],
+        "socialmedia": [
+            {
+                "name": "LinkedIn",
+                "link": "https://www.linkedin.com/in/mradulsharma"
+            },
+            {
+                "name": "GitHub",
+                "link": "https://github.com/ermradulsharma"
+            },
+            {
+                "name": "Twitter",
+                "link": "#"
+            },
+            {
+                "name": "Facebook",
+                "link": "#"
+            },
+            {
+                "name": "Instagram",
+                "link": "#"
+            }
+        ],
+        "contacts": [
+            {
+                "name": "mail",
+                "value": "mradulsharma786@gmail.com"
+            },
+            {
+                "name": "phone",
+                "value": "7252933077"
+            }
+        ]
+    },
+    "projects": {
+        "title": "My Projects",
+        "description": "Dive into some of my major projects showcasing problem-solving and architecture design skills.",
+        "searchPlaceholder": "Search project...",
+        "projectsList": [
+            {
+                "title": "PayStubx (Payroll Management System)",
+                "description": "Led the design and development of a comprehensive payroll system using Laravel 9, deployed on AWS with secure API integrations and PostgreSQL optimization.",
+                "technologies": [
+                    "Laravel",
+                    "JavaScript",
+                    "AWS",
+                    "PostgreSQL"
+                ],
+                "link": "https://paystubx.com/",
+                "image": "paystubx.png",
+                "category": "FULL STACK APPLICATION"
+            },
+            {
+                "title": "Storytellers (Content Management Platform)",
+                "description": "Built a scalable CMS using Laravel and PostgreSQL, deployed on AWS cloud with integrated secure backend APIs for content delivery and admin management.",
+                "technologies": [
+                    "Laravel",
+                    "JavaScript",
+                    "PostgreSQL",
+                    "AWS"
+                ],
+                "link": "#",
+                "image": "storytellers.png",
+                "category": "WEB APPLICATION"
+            },
+            {
+                "title": "Wealth Mark (Cryptocurrency Trading Platform)",
+                "description": "Architected a secure and scalable cryptocurrency trading system using Laravel and WebSockets, enabling real-time data updates and wallet integrations.",
+                "technologies": [
+                    "Laravel",
+                    "MySQL",
+                    "JavaScript",
+                    "WebSocket"
+                ],
+                "link": "https://wealthmark.io/en",
+                "image": "wealthmark.png",
+                "category": "FULL STACK APPLICATION"
+            }
+        ]
+    }
 }

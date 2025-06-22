@@ -1,107 +1,72 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row ,Col} from "react-bootstrap";
-import Button from "react-bootstrap/Button";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import { AiOutlineDownload } from "react-icons/ai";
-
-import './Resume.css';
-import Particle from '../components/Particle'
-import pdf from "../assets/Resume/ResumeLink.pdf"
-import LetsConnect from '../components/LetsConnect';
-
 import { Document, Page, pdfjs } from "react-pdf";
-import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-import "react-pdf/dist/esm/Page/TextLayer.css";
-import ResumeLink from "../assets/Resume/ResumeLink.pdf"
+
+import "./Resume.css";
+import Particle from "../components/Particle";
+import ResumePDF from "../assets/Resume/ResumeLink.pdf";
+import LetsConnect from "../components/LetsConnect";
 import Leetcode from "../components/Skillset/Leetcode";
 import Github from "../components/Skillset/Github";
-pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
-// const resumeLink = `https://raw.githubusercontent.com/19sajib/portfolio/main/src/assets/sajib.pdf`
-
+// Set up PDF.js worker
+pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const Resume = () => {
-  const [width, setWidth] = useState(700);
-  // const achievements = data.achievements;
+  const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    
-    setWidth(701);
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
-    <div>
-      <Container fluid className="resume-section">
-    
-       
-
-        <Row className="resume" >
-        <Col md={6} className="achieve">
-
-        <div style={{ overflowX: 'auto', color: 'white' }}>
-                 <Leetcode />
-                  <Github />
-      {/* <Table bordered responsive>
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Company</th>
-            <th>Link</th>
-          </tr>
-        </thead>
-        <tbody>
-          {achievements.achievementsList.map((achievement, index) => (
-            <tr key={index}>
-              <td>{achievement.title}</td>
-              <td>{achievement.company}</td>
-              <td>
-                <a href={achievement.link} target="_blank" rel="noopener noreferrer">
-                  View
-                </a>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </Table> */}
-    </div>
-          
-          </Col>
-          <Col md={6}>
-          <Document file={ResumeLink} className="d-flex justify-content-center pdf-preview">
-            <Page  pageNumber={1} scale={width > 786 ? 1.7 : 0.6}  />
-          </Document>
-
-          <Button
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px",color: "#4CE6A6",
-              border: "1px solid #024429",marginTop: '5px', background: 'black' }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download Resume
-          </Button>
-          </Col>
-          
-          
-        </Row>
-
-        {/* <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px",color: "#4CE6A6",
-              border: "1px solid #024429" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download Resume
-          </Button>
-        </Row> */}
-      </Container>
-      <LetsConnect />
-
+    <div className="resume-wrapper">
       <Particle />
-    </div>
-  )
-}
 
-export default Resume
+      <Container fluid className="resume-section py-5">
+        <Row className="resume">
+          {/* Left: Achievements & GitHub/Leetcode */}
+          <Col md={6} className="achieve mb-4">
+            <div style={{ overflowX: "auto", color: "white" }}>
+              <Leetcode />
+              <Github />
+            </div>
+          </Col>
+
+          {/* Right: Resume Viewer */}
+          <Col md={6} className="d-flex flex-column align-items-center">
+            <Document
+              file={ResumePDF}
+              className="d-flex justify-content-center pdf-preview"
+            >
+              <Page pageNumber={1} scale={width > 786 ? 1.5 : 0.7} />
+            </Document>
+
+            <Button
+              href={ResumePDF}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3"
+              style={{
+                maxWidth: "250px",
+                color: "#4CE6A6",
+                border: "1px solid #024429",
+                background: "black",
+              }}
+            >
+              <AiOutlineDownload />
+              &nbsp;Download Resume
+            </Button>
+          </Col>
+        </Row>
+      </Container>
+
+      <LetsConnect />
+    </div>
+  );
+};
+
+export default Resume;

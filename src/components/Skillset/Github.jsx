@@ -10,7 +10,7 @@ const Github = () => {
       </h1>
       <div style={{width:'35em'}}>
       <GitHubCalendar
-        username="Sauryadeep200"
+        username="ermradulsharma"
         blockSize={15}
         blockMargin={5}
         color="#4CE6A6"
