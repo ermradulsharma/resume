@@ -1,45 +1,67 @@
-.App {
-  text-align: center;
-  background-color: #0b0c10;
-  height: 100vh;
-  width: 100vw;
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+html {
+  /* Primary Theme Colors */
+  --primary-color: #4CE6A6;
+  --secondary-color: #0c0513;
+  --background-dark: #000000;
+  --background-light: #0c0d0f;
+  --text-light: #f5f5f5;
+  --text-muted: #cccccc;
+
+  /* Typography Colors */
+  --imp-text-color: #4CE6A6;
+  --imp-bold-text-color: #4CE6A6;
+  --heading-color: #ffffff;
+  --subheading-color: #b0b0b0;
+
+  /* Button Colors */
+  --btn-bg: #4CE6A6;
+  --btn-text: #000000;
+  --btn-hover-bg: #3bd094;
+  --btn-hover-text: #ffffff;
+
+  /* Border Colors */
+  --border-color: rgba(255, 255, 255, 0.1);
+  --highlight-border: #4CE6A6;
+
+  /* Shadows & Effects */
+  --shadow-default: 0 4px 6px rgba(0, 0, 0, 0.3);
+  --shadow-hover: 0 6px 10px rgba(0, 0, 0, 0.5);
+  --blur-effect: blur(15px);
+
+  /* Gradient Examples */
+  --section-background-gradient: linear-gradient(to bottom left, rgb(5, 8, 40), rgb(1, 4, 39));
+  --image-overlay-gradient: linear-gradient(to bottom left, rgba(5, 8, 40, 0.87), rgba(1, 4, 39, 0.925));
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+  --spacing-xl: 64px;
+
+  /* Font Sizes */
+  --font-xs: 0.75rem;
+  --font-sm: 0.875rem;
+  --font-md: 1rem;
+  --font-lg: 1.25rem;
+  --font-xl: 1.5rem;
+  --font-xxl: 2rem;
+
+  /* Z-Index Levels */
+  --z-nav: 1000;
+  --z-dropdown: 1050;
+  --z-overlay: 1100;
+  --z-modal: 1200;
+  --z-tooltip: 1300;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: var(--background-light) !important;
 }
 
-body{
-  background-color: #0b0c10;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #0b0c10;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  color: var(--primary-color) !important;
+  text-decoration: none;
 }
