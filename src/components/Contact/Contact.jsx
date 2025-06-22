@@ -8,37 +8,54 @@ const ContactForm = () => {
   const form = useRef();
   const [done, setDone] = useState(false);
   const [notDone, setNotDone] = useState(false);
-  const [formData, setFormData] = useState({});
+  const [formData, setFormData] = useState({
+    from_name: "",
+    reply_to: "",
+    phone: "",
+    message: ""
+  });
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
-    setDone(false);
-    setNotDone(false);
   };
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    if (!formData.from_name || !formData.reply_to || !formData.phone || !formData.message) {
+    const { from_name, reply_to, phone, message } = formData;
+
+    if (!from_name || !reply_to || !phone || !message) {
       setNotDone(true);
-    } else {
-      emailjs
-        .sendForm(
-          "service_mradul",
-          "template_hzio3hj",
-          form.current,
-          "OWljxBdzr02unWI2z"
-        )
-        .then(
-          (result) => {
-            console.log(result.text);
-            setDone(true);
-          },
-          (error) => {
-            console.log(error.text);
-          }
-        );
+      setDone(false);
+      return;
     }
+
+    emailjs
+      .sendForm(
+        "service_mradul",
+        "template_hzio3hj",
+        form.current,
+        "OWljxBdzr02unWI2z"
+      )
+      .then(
+        (result) => {
+          console.log("Email sent:", result.text);
+          setDone(true);
+          setNotDone(false);
+          // Reset form data
+          setFormData({
+            from_name: "",
+            reply_to: "",
+            phone: "",
+            message: ""
+          });
+        },
+        (error) => {
+          console.error("Email error:", error.text);
+          setDone(false);
+          setNotDone(true);
+        }
+      );
   };
 
   return (
@@ -59,6 +76,7 @@ const ContactForm = () => {
               name="from_name"
               placeholder="Name"
               className="glass-input"
+              value={formData.from_name}
               onChange={handleChange}
             />
             <input
@@ -66,6 +84,7 @@ const ContactForm = () => {
               name="reply_to"
               placeholder="Email"
               className="glass-input"
+              value={formData.reply_to}
               onChange={handleChange}
             />
             <input
@@ -73,6 +92,7 @@ const ContactForm = () => {
               name="phone"
               placeholder="Phone Number"
               className="glass-input"
+              value={formData.phone}
               onChange={handleChange}
             />
             <textarea
@@ -80,11 +100,12 @@ const ContactForm = () => {
               placeholder="Message"
               className="glass-input"
               rows="5"
+              value={formData.message}
               onChange={handleChange}
             />
             {notDone && (
               <span style={{ color: "#ff4d4d", fontSize: "0.9rem" }}>
-                Please, fill all the fields.
+                Please, fill all the fields correctly.
               </span>
             )}
             <Button type="submit" className="glass-button-1" disabled={done}>
