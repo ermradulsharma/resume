@@ -4,7 +4,7 @@ import { categorizedSkills } from "../database/categorizedSkills";
 
 const Techstack = () => {
     return (
-        <Container>
+        <Container className="mt-4">
             {Object.entries(categorizedSkills).map(([category, skills]) => (
                 <div key={category} style={{ marginBottom: "40px" }}>
                     <h4 className="text-center mb-4" style={{ fontWeight: "bold" }}>{category}</h4>
