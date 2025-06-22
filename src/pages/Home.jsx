@@ -4,7 +4,7 @@ import { MdBusinessCenter } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import { FaLinkedin, FaGithub, FaTwitter, FaEnvelope, FaPhone } from "react-icons/fa";
 
-import homeLogo from "../assets/main_img_grey.png";
+import homeLogo from "../assets/mradulsharma.png";
 import Particle from "../components/Particle";
 import About from "../components/Home/About";
 import Type from "../components/Home/Type";

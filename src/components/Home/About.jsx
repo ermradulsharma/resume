@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Tilt from "react-parallax-tilt";
 
 import data from "../database/localDB.json"
-import myImage from "../../assets/images/abt_img.png"
+import myImage from "../../assets/images/mradulsharma_1.png"
 
 
 
