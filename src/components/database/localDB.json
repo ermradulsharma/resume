@@ -148,6 +148,11 @@
                 "placeholder": "Your Email"
             },
             {
+                "type": "tel",
+                "name": "phone",
+                "placeholder": "Your Phone"
+            },
+            {
                 "type": "textarea",
                 "name": "message",
                 "placeholder": "Your Message",
@@ -158,52 +163,68 @@
             {
                 "name": "LinkedIn",
                 "link": "https://www.linkedin.com/in/mradulsharma",
-                "icon": "FaLinkedin"
+                "icon": "FaLinkedin",
+                "status": true
             },
             {
                 "name": "GitHub",
                 "link": "https://github.com/ermradulsharma",
-                "icon": "FaGithub"
+                "icon": "FaGithub",
+                "status": true
             },
             {
-                "name": "X (Twitter)",
-                "link": "https://twitter.com/ermradulsharma",
-                "icon": "FaTwitter"
-            },
-            {
-                "name": "Facebook",
-                "link": "https://www.facebook.com/mradulsharma786",
-                "icon": "FaFacebook"
-            },
-            {
-                "name": "Instagram",
-                "link": "https://www.instagram.com/rudra_sharma_",
-                "icon": "FaInstagram"
-            },
-            {
-                "name": "YouTube",
-                "link": "https://www.youtube.com/@mradulsharma6721",
-                "icon": "FaYoutube"
+                "name": "GitLab",
+                "link": "https://gitlab.com/mradulsharma",
+                "icon": "FaGitlab",
+                "status": true
             },
             {
                 "name": "Stack Overflow",
                 "link": "https://stackoverflow.com/users/8425184/mradul-sharma",
-                "icon": "FaStackOverflow"
+                "icon": "FaStackOverflow",
+                "status": true
             },
             {
                 "name": "Dev.to",
                 "link": "https://dev.to/mradul_sharma",
-                "icon": "FaDev"
+                "icon": "FaDev",
+                "status": true
             },
             {
                 "name": "Medium",
                 "link": "https://medium.com/@ermradulsharma",
-                "icon": "FaMedium"
+                "icon": "FaMedium",
+                "status": true
+            },
+            {
+                "name": "X (Twitter)",
+                "link": "https://twitter.com/ermradulsharma",
+                "icon": "FaTwitter",
+                "status": true
+            },
+            {
+                "name": "Facebook",
+                "link": "https://www.facebook.com/mradulsharma786",
+                "icon": "FaFacebook",
+                "status": true
+            },
+            {
+                "name": "Instagram",
+                "link": "https://www.instagram.com/rudra_sharma_",
+                "icon": "FaInstagram",
+                "status": true
+            },
+            {
+                "name": "YouTube",
+                "link": "https://www.youtube.com/@mradulsharma6721",
+                "icon": "FaYoutube",
+                "status": true
             },
             {
                 "name": "Telegram",
-                "link": "https://t.me/mradulsharma",
-                "icon": "FaTelegram"
+                "link": "https://t.me/ermradulsharma",
+                "icon": "FaTelegram",
+                "status": true
             }
         ],
         "contacts": [

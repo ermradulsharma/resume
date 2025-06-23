@@ -39,10 +39,10 @@ const Home = () => {
                 <a href="https://github.com/ermradulsharma" target="_blank" rel="noreferrer" title="GitHub">
                     <FaGithubSquare size={35} />
                 </a>
-                <a href="https://github.com/ermradulsharma" target="_blank" rel="noreferrer" title="GitHub">
+                <a href="https://gitlab.com/mradulsharma" target="_blank" rel="noreferrer" title="GitHub">
                     <FaGitlab size={35} />
                 </a>
-                <a href="https://x.com/" target="_blank" rel="noreferrer" title="X">
+                <a href="https://x.com/ermradulsharma" target="_blank" rel="noreferrer" title="X">
                     <FaTwitterSquare size={35} />
                 </a>
                 <a href="mailto:mradulsharma786@gmail.com" title="Email">

@@ -35,7 +35,7 @@ A modern, responsive portfolio template built with React, Bootstrap, and modern 
 
 ## 🚀 Demo
 
-Coming soon...
+Live [Demo](https://mradulsharma.vercel.app/)
 
 ---
 
@@ -63,5 +63,5 @@ Coming soon...
 Clone the repository:
 
 ```bash
-git clone https://github.com/sachinaryan912/modern_portfolio.git
+git clone https://github.com/ermradulsharma/resume.git
 cd modern_portfolio
