@@ -283,19 +283,6 @@
                 "category": "FULL STACK APPLICATION"
             },
             {
-                "title": "Wealth Mark (Cryptocurrency Trading Platform)",
-                "description": "Architected a secure and scalable cryptocurrency trading system using Laravel and WebSockets, enabling real-time data updates and wallet integrations.",
-                "technologies": [
-                    "Laravel",
-                    "MySQL",
-                    "JavaScript",
-                    "WebSocket"
-                ],
-                "link": "https://wealthmark.io/en",
-                "image": "wealthmark.png",
-                "category": "FULL STACK APPLICATION"
-            },
-            {
                 "title": "AFT (Agra Fort Taxi Service)",
                 "description": "Developed a robust and user-friendly taxi booking platform using Laravel, enabling real-time ride management, fare calculations, driver tracking, and booking history. Integrated location-based services and secure admin dashboards for operations management.",
                 "technologies": [
@@ -306,7 +293,7 @@
                     "AJAX"
                 ],
                 "link": "https://agraforttaxiservice.com",
-                "image": "aft.png",
+                "image": "aft.PNG",
                 "category": "FULL STACK APPLICATION"
             },
             {
@@ -320,7 +307,7 @@
                     "jQuery"
                 ],
                 "link": "https://gnganpatilogistic.com",
-                "image": "gnganpati.png",
+                "image": "gnganpati.PNG",
                 "category": "FULL STACK APPLICATION"
             },
             {
@@ -335,7 +322,7 @@
                     "AJAX"
                 ],
                 "link": "https://kefishine.com",
-                "image": "kefishine.png",
+                "image": "kefishine.PNG",
                 "category": "FULL STACK APPLICATION"
             },
             {
@@ -350,7 +337,7 @@
                     "jQuery"
                 ],
                 "link": "https://zaibainfotech.com",
-                "image": "zaibainfo.png",
+                "image": "zaibainfo.PNG",
                 "category": "FULL STACK APPLICATION"
             }
         ]
