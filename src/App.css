@@ -65,6 +65,7 @@ a {
   color: var(--primary-color) !important;
   text-decoration: none;
 }
-.css-1wt4o4o-MuiListItemIcon-root {
+.css-1wt4o4o-MuiListItemIcon-root, .MuiListItemIcon-root .css-s8s1gl {
   justify-content: center;
+  align-items: center;
 }
