@@ -9,11 +9,14 @@
             "DevOps Enthusiast",
             "Next.js Developer"
         ],
-        "compactAbout": "Results-driven Full-Stack Developer with over 5 years of experience in scalable web application development using Laravel, React, and AWS.",
+        "compactAbout": "Accomplished Full Stack Developer with 5+ years of experience in Laravel, React, and Node.js. Skilled in building secure, scalable web applications using modern technologies. Strong background in API integration, responsive design, and performance optimization. Adept at leading development teams, writing clean code, and delivering projects efficiently. Passionate about innovation and continuous learning.",
         "location": "Etah, Uttar Pradesh, India"
     },
     "about": {
-        "expandedAbout": "I'm Mradul Sharma, a Senior Full-Stack Developer passionate about building efficient, secure, and scalable web applications. With 5+ years of professional experience, I bring deep expertise in full-stack development, cloud infrastructure, and API integrations. I lead development teams, manage deployment pipelines, and consistently deliver enterprise-grade solutions using Laravel, React, Node.js, and AWS. My commitment lies in clean code, architectural excellence, and continuous innovation.",
+        "expandedAbout": "I am an accomplished Full Stack Developer with expertise in Laravel and a strong command of modern web development technologies and frameworks. With a comprehensive skill set spanning both front-end and back-end development, I specialize in creating custom web applications tailored to meet clients' unique needs. My technical toolkit includes HTML, CSS, JavaScript, PHP, and databases like Postgres, MySQL, MongoDB, and SQLite.",
+        "expandedAbout2": "I am adept at delivering scalable, high-quality solutions by focusing on clean, sustainable code and staying current with the latest industry trends. My core competencies include responsive design, user authentication, third-party API integration, and performance optimization, ensuring seamless and efficient user experiences.",
+        "expandedAbout3": "In addition to my technical abilities, I thrive in collaborative environments, leveraging strong communication skills to contribute to team-oriented success and client satisfaction. My commitment to excellence has consistently enabled me to deliver projects on time and within budget.",
+        "expandedAbout4": "Passionate about clean, efficient coding, I am always looking to expand my skill set and embrace new challenges. If you're seeking a dedicated developer to bring value to your team or organization, let's connect!",
         "experience": [
             {
                 "role": "Senior Full-Stack Developer",
@@ -154,23 +157,53 @@
         "socialmedia": [
             {
                 "name": "LinkedIn",
-                "link": "https://www.linkedin.com/in/mradulsharma"
+                "link": "https://www.linkedin.com/in/mradulsharma",
+                "icon": "FaLinkedin"
             },
             {
                 "name": "GitHub",
-                "link": "https://github.com/ermradulsharma"
+                "link": "https://github.com/ermradulsharma",
+                "icon": "FaGithub"
             },
             {
-                "name": "Twitter",
-                "link": "#"
+                "name": "X (Twitter)",
+                "link": "https://twitter.com/ermradulsharma",
+                "icon": "FaTwitter"
             },
             {
                 "name": "Facebook",
-                "link": "#"
+                "link": "https://www.facebook.com/mradulsharma786",
+                "icon": "FaFacebook"
             },
             {
                 "name": "Instagram",
-                "link": "#"
+                "link": "https://www.instagram.com/rudra_sharma_",
+                "icon": "FaInstagram"
+            },
+            {
+                "name": "YouTube",
+                "link": "https://www.youtube.com/@mradulsharma6721",
+                "icon": "FaYoutube"
+            },
+            {
+                "name": "Stack Overflow",
+                "link": "https://stackoverflow.com/users/8425184/mradul-sharma",
+                "icon": "FaStackOverflow"
+            },
+            {
+                "name": "Dev.to",
+                "link": "https://dev.to/mradul_sharma",
+                "icon": "FaDev"
+            },
+            {
+                "name": "Medium",
+                "link": "https://medium.com/@ermradulsharma",
+                "icon": "FaMedium"
+            },
+            {
+                "name": "Telegram",
+                "link": "https://t.me/mradulsharma",
+                "icon": "FaTelegram"
             }
         ],
         "contacts": [

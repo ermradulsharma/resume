@@ -14,6 +14,7 @@ import {
 
 const About = () => {
   const about = data.about;
+  const name = data.home.name;
   return (
     <Row>
         <Col md={5} className="myAvtar">
@@ -24,6 +25,10 @@ const About = () => {
         <Col md={7} className="home-about-description">
             <h1 style={{ fontSize: "2.5em", fontWeight: "600" }}>About me</h1>
             <p style={{ color: "#B8B8B8" }}>{about.expandedAbout}</p>
+            <p style={{ color: "#B8B8B8" }}>{about.expandedAbout2}</p>
+            <p style={{ color: "#B8B8B8" }}>{about.expandedAbout3}</p>
+            <p style={{ color: "#B8B8B8" }}>{about.expandedAbout4}</p>
+            <div className="text-end"><h1 className="fs-4 yellow jobPos">-- {name}</h1></div>
         </Col>
         <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>

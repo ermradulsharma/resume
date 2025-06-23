@@ -59,7 +59,7 @@ const ContactForm = () => {
   };
 
   return (
-    <Container style={{ paddingTop: "20px", width: "100%" }}>
+    <Container>
       <Row>
         <Col className="c-right">
           <form

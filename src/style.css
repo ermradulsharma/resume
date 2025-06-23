@@ -1,6 +1,3 @@
-
-
-
 .yellow {
   color: var(--imp-bold-text-color) !important;
 }
@@ -181,22 +178,6 @@ a {
   height: 100%;
 }
 
-/* .home-header {
-  padding-top: 80px !important;
-}
-
-.home-section {
-  position: relative;
-  padding-bottom: 30px !important;
-  padding-top: 30px !important;
-} */
-
-/* .home-content {
-  padding: 6rem 0 2rem !important;
-  color: whitesmoke;
-  text-align: left;
-} */
-
 .connect {
   width: 100%;
   height: 200px;
@@ -237,12 +218,7 @@ a {
 }
 
 .connect:hover .arrows {
-
   background: linear-gradient(90deg, #000000d5, #20202039, #000000d5);
-
-
-
-
 }
 
 .connect:hover .arrows i {

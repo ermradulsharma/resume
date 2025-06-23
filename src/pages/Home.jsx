@@ -27,7 +27,7 @@ const Home = () => {
             <Col md={7} className="p-lg-5 p-3">
             <h1 className="fw-bolder text-white">Hello ! I'm {home.name}.{" "}</h1>
             <div className="jobPos text-start"><Type /></div>
-            <p className="fs-5 text-white">{home.compactAbout}</p>
+            <p className="fs-6 text-white">{home.compactAbout}</p>
             <Button variant="outline-success" className="d-flex align-items-center gap-2 rounded-pill px-4 py-2" onClick={() => navigate("/contact")}>
                 <MdBusinessCenter size={20} />
                 Hire Me

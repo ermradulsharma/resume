@@ -8,23 +8,23 @@ import {
 import React from "react";
 import { Stack } from "react-bootstrap";
 import database from "../database/localDB.json";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
+
+// MUI icons for contacts
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 
+// React Icons for social media
+import * as FaIcons from "react-icons/fa";
+
 function SocialNew() {
-  const iconObj = {
-    Linkdein: <LinkedInIcon />,
-    Github: <GitHubIcon />,
-    Twitter: <TwitterIcon />,
-    Facebook: <FacebookIcon />,
-    Instagram: <InstagramIcon />,
+  const contactIconMap = {
     mail: <EmailIcon />,
     phone: <PhoneAndroidIcon />,
+  };
+
+  const getSocialIcon = (iconName) => {
+    const IconComponent = FaIcons[iconName];
+    return IconComponent ? <IconComponent size={24} /> : null;
   };
 
   return (
@@ -60,7 +60,7 @@ function SocialNew() {
               }}
             >
               <ListItemIcon sx={{ color: "#4CAF50", minWidth: "40px" }}>
-                {iconObj[obj?.name]}
+                {contactIconMap[obj?.name]}
               </ListItemIcon>
               <ListItemText
                 primary={obj.value}
@@ -102,6 +102,7 @@ function SocialNew() {
               target="_blank"
               rel="noopener noreferrer"
               style={{ textDecoration: "none" }}
+              title={obj.name}
             >
               <Box
                 sx={{
@@ -121,8 +122,8 @@ function SocialNew() {
                   },
                 }}
               >
-                <ListItemIcon sx={{ color: "#4CAF50", textAlign: "center",justifyContent: "center" }}>
-                  {iconObj[obj?.name]}
+                <ListItemIcon sx={{ color: "#4CAF50" }}>
+                  {getSocialIcon(obj.icon)}
                 </ListItemIcon>
               </Box>
             </a>
