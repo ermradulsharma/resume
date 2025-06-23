@@ -19,8 +19,8 @@ function NavBar() {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ms-auto gap-4 fw-medium fs-6">
                         <Nav.Item><Nav.Link href="/" className={isActive('/')}>Home</Nav.Link></Nav.Item>
-                        <Nav.Item><Nav.Link href="/Skills" className={isActive('/Skills')}>Skills</Nav.Link></Nav.Item>
-                        <Nav.Item><Nav.Link href="/Project" className={isActive('/Project')}>Project</Nav.Link></Nav.Item>
+                        <Nav.Item><Nav.Link href="/tech-stack" className={isActive('/tech-stack')}>Tech Stack</Nav.Link></Nav.Item>
+                        <Nav.Item><Nav.Link href="/projects" className={isActive('/projects')}>Project</Nav.Link></Nav.Item>
                         <Nav.Item><Nav.Link href="/resume" className={isActive('/resume')}>Resume</Nav.Link></Nav.Item>
                         <Nav.Item><Nav.Link href="/contact" className={isActive('/contact')}>Contact Me</Nav.Link></Nav.Item>                   
                     </Nav>
