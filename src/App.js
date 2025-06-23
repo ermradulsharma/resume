@@ -18,7 +18,6 @@ import Preloader from "./components/PreLoader"
 import ScrollToTop from "./components/ScrollToTop"
 
 import "./App.css";
-import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {

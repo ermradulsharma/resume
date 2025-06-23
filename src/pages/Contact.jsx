@@ -3,6 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import ContactForm from "../components/Contact/Contact";
 import { Box } from "@mui/material";
 import SocialNew from "../components/Contact/SocialNew";
+import '../App.css';
 
 const Contact = () => {
   return (
