@@ -291,10 +291,6 @@ a {
   display: none;
 }
 
-.connect:hover .arrows {
-  background: linear-gradient(90deg, #000000d5, #20202039, #000000d5);
-}
-
 .connect:hover .arrows i {
   opacity: 1;
   display: block;

@@ -281,6 +281,77 @@
                 "link": "https://wealthmark.io/en",
                 "image": "wealthmark.png",
                 "category": "FULL STACK APPLICATION"
+            },
+            {
+                "title": "Wealth Mark (Cryptocurrency Trading Platform)",
+                "description": "Architected a secure and scalable cryptocurrency trading system using Laravel and WebSockets, enabling real-time data updates and wallet integrations.",
+                "technologies": [
+                    "Laravel",
+                    "MySQL",
+                    "JavaScript",
+                    "WebSocket"
+                ],
+                "link": "https://wealthmark.io/en",
+                "image": "wealthmark.png",
+                "category": "FULL STACK APPLICATION"
+            },
+            {
+                "title": "AFT (Agra Fort Taxi Service)",
+                "description": "Developed a robust and user-friendly taxi booking platform using Laravel, enabling real-time ride management, fare calculations, driver tracking, and booking history. Integrated location-based services and secure admin dashboards for operations management.",
+                "technologies": [
+                    "Laravel",
+                    "MySQL",
+                    "JavaScript",
+                    "Bootstrap",
+                    "AJAX"
+                ],
+                "link": "https://agraforttaxiservice.com",
+                "image": "aft.png",
+                "category": "FULL STACK APPLICATION"
+            },
+            {
+                "title": "GNganpati Logistic",
+                "description": "Built a logistics management platform using Laravel to streamline freight booking, vehicle assignments, route tracking, and delivery confirmations. The system supports multi-user access with secure authentication and role-based dashboards for admins, drivers, and clients.",
+                "technologies": [
+                    "Laravel",
+                    "MySQL",
+                    "JavaScript",
+                    "Bootstrap",
+                    "jQuery"
+                ],
+                "link": "https://gnganpatilogistic.com",
+                "image": "gnganpati.png",
+                "category": "FULL STACK APPLICATION"
+            },
+            {
+                "title": "Kefishine (E-commerce Trial & Shop Platform)",
+                "description": "Designed and developed a dynamic Laravel-based e-commerce platform for skincare and cosmetic trials. Features include trial point systems, real-time product availability, cart management, responsive sliders, and category-based product showcases. Admin panel enables product uploads, price updates, and order management.",
+                "technologies": [
+                    "Laravel",
+                    "MySQL",
+                    "JavaScript",
+                    "Bootstrap",
+                    "jQuery",
+                    "AJAX"
+                ],
+                "link": "https://kefishine.com",
+                "image": "kefishine.png",
+                "category": "FULL STACK APPLICATION"
+            },
+            {
+                "title": "ZaibaInfo Tech (IT Company Website)",
+                "description": "Developed a corporate website for ZaibaInfo Tech using Laravel, focused on IT service offerings, technology consulting, and business solutions. The platform includes dynamic service listings, contact forms, career module, and content-managed admin panel for managing client portfolios, blogs, and inquiry handling.",
+                "technologies": [
+                    "Laravel",
+                    "MySQL",
+                    "JavaScript",
+                    "Bootstrap",
+                    "Blade",
+                    "jQuery"
+                ],
+                "link": "https://zaibainfotech.com",
+                "image": "zaibainfo.png",
+                "category": "FULL STACK APPLICATION"
             }
         ]
     }

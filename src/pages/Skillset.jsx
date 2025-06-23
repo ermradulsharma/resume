@@ -6,16 +6,16 @@ import Techstack from "../components/Skillset/Techstack";
 import LetsConnect from "../components/LetsConnect";
 
 const Skillset = () => {
-    return (
-        <Container fluid className="about-section">
-            <Particle />
-        <Container>
-            <h1 className="project-heading">Technical <strong className="yellow">Expertise</strong> & Development <strong className="yellow">Infrastructure</strong></h1>
-            <Techstack />
-        </Container>
-        <LetsConnect />
-        </Container>
-    );
+  return (
+    <Container className="p-lg-5 p-3">
+      <h1 className="text-center text-white">
+        Technical <strong className="yellow">Expertise</strong> & Development{" "}
+        <strong className="yellow">Infrastructure</strong>
+      </h1>
+      <Techstack />
+      <LetsConnect />
+    </Container>
+  );
 };
 
 export default Skillset;

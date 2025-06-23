@@ -1,24 +1,24 @@
 import React from "react";
-import { Container, Row } from "react-bootstrap";
-import ProjectCardNew from "../components/Projects/ProjectCardNew";
+import { Container, Row, Col } from "react-bootstrap";
+import ProjectCard from "../components/Projects/ProjectCard";
 import Particle from "../components/Particle";
 import data from "../components/database/localDB.json";
 import LetsConnect from "../components/LetsConnect";
 
 const Projects = () => {
-    const projects = data.projects;
+    const projects = data.projects.projectsList;
+
     return (
-        <Container fluid className="project-section">
-            <Container>
-                <h1 className="project-heading">Recent Top <strong className="yellow">Works </strong></h1>
-                <p style={{ color: "white" }}>Here are a few projects I've worked on recently.</p>
-                <Row style={{ justifyContent: "center" }} className="pro_data">{projects.projectsList.map((project, index) => (
-                    <div key={index} className="col-md-4 mb-4">
-                        <ProjectCardNew image={project.image} title={project.title} category={project.category} project={project} />
-                    </div>
+        <Container className="p-lg-5 p-3">
+            <h1 className="text-center text-white">Recent Top <strong className="yellow">Works</strong></h1>
+            <p className="text-center text-white">Here are a few projects I've worked on recently</p>
+            <Row>
+                {projects.map((project, index) => (
+                    <Col md={4} key={index} className="mb-4">
+                        <ProjectCard imgPath={project.image} title={project.title} description={project.description} ghLink={project.ghLink} demoLink={project.demoLink} isBlog={project.isBlog} />
+                    </Col>
                 ))}
-                </Row>
-            </Container>
+            </Row>
             <Particle />
             <LetsConnect />
         </Container>

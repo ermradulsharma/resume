@@ -1,102 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
+import { FaBlog } from "react-icons/fa";
 
 const ProjectCard = (props) => {
-  const [isVisible, setIsVisible] = useState(false);
-  return (
-    <Card
-      onClick={() => {
-        setIsVisible(!isVisible);
-      }}
-      className="project-card-view"
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "space-between",
-        alignContent: "space-between",
-        borderRadius: "10%",
-        padding: "10px",
-        margin: "10px",
-        width: "100%",
-        border: "1px solid red",
-        boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
-        transition: "transform 0.2s",
-      }}
-    >
-      <Card.Img
-        variant="top"
-        src={props.imgPath}
-        alt="card-img"
-        style={{
-          height: "200px",
-          objectFit: "contain",
-          alignSelf: "flex-start",
-          borderRadius: "10%",
-        }}
-      />
-      <Card.Body
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-between",
-          alignContent: "space-between",
-        }}
-      >
-        <Card.Title>{props.title}</Card.Title>
-        {isVisible && (
-          <div className="project-desc">
-            <Card.Text style={{ textAlign: "justify", fontSize: "15px" }}>
-              {props.description}
-            </Card.Text>
-            <Button
-              variant="primary"
-              href={props.ghLink}
-              target="_blank"
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                alignContent: "flex-end",
-                textAlign: "center",
-                position: "relative",
-                bottom: "0px",
-              }}
-            >
-              <BsGithub /> &nbsp;
-              {props.isBlog ? "Blog" : "GitHub"}
-            </Button>
-          </div>
-        )}
-        {"\n"}
-        {"\n"}
-
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-
-        {!props.isBlog && props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            style={{
-              marginTop: "10px",
-              display: "flex",
-              justifyContent: "center",
-              alignContent: "flex-end",
-              alignItems: "center",
-              textAlign: "center",
-              position: "static",
-              bottom: "0px",
-            }}
-          >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
-          </Button>
-        )}
-      </Card.Body>
-    </Card>
-  );
+    return (
+        <Card>
+            <Card.Img variant="top" src={"../../assets/projects/" + props.imgPath} alt="card-img" style={{ minHeight: 250, }}/>
+            <Card.Body>
+                <Card.Title style={{ minHeight: 48}}>{props.title}</Card.Title>
+                <Card.Text style={{ minHeight: 96 }}>{props.description.slice(0, 165)}{props.description.length > 165 && "..."}</Card.Text>
+                <div className="d-flex align-items-center justify-content-center gap-3">
+                    <Button variant="primary" className="d-inline-flex gap-2 align-items-center justify-content-center" href={props.ghLink} target="_blank" ><BsGithub />Github</Button>
+                    <Button variant="primary" className="d-inline-flex gap-2 align-items-center justify-content-center" href={props.ghLink} target="_blank" ><FaBlog />Blog</Button>
+                    <Button variant="primary" className="d-inline-flex gap-2 align-items-center justify-content-center" href={props.demoLink} target="_blank" ><CgWebsite />Website</Button>
+                </div>
+                
+            </Card.Body>
+        </Card>
+    );
 };
 export default ProjectCard;
