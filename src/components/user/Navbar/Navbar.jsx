@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
-import logo from '../../assets/images/mradulsharma.png';
+import logo from '../../../assets/mradulsharma.png';
 import { useLocation } from 'react-router-dom';
 
 function NavBar() {

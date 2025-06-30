@@ -1,5 +1,5 @@
 import React from "react";
-import data from "../database/localDB.json";
+import data from "../../database/localDB.json";
 const Footer = () => {
     const home = data.home;
     return (

@@ -339,6 +339,23 @@
                 "link": "https://zaibainfotech.com",
                 "image": "zaibainfo.PNG",
                 "category": "FULL STACK APPLICATION"
+            },
+            {
+                "title": "Marketing Analytics Report Dashboard",
+                "description": "Developed a custom analytics dashboard within Mautic to visualize and manage multi-channel marketing data, including Meta, Shopify, WhatsApp, Email, and Cohort analysis. Integrated multiple APIs and rendered dynamic, interactive charts using Chart.js.",
+                "technologies": [
+                    "Mautic",
+                    "JavaScript",
+                    "Chart.js",
+                    "REST API",
+                    "MySQL",
+                    "BigQuery",
+                    "PostgreSQL",
+                    "WSL"
+                ],
+                "link": "#",
+                "image": "expedify.png",
+                "category": "MARKETING ANALYTICS PLATFORM"
             }
         ]
     }
