@@ -35,7 +35,7 @@ const About = () => {
                     <Col lg={8} data-aos="fade-left" data-aos-delay="300">
                         <div className="about-content">
                             <div className="intro">
-                                <h2>Hi, I'm Mradul Sharma – Full-Stack Developer</h2>
+                                <h2 className='d-none d-lg-block'>Hi, I'm Mradul Sharma – Full-Stack Developer</h2>
                                 <p>I’m a Senior Full-Stack Developer with 5+ years of experience designing, developing, and deploying secure, high-performance web applications. I specialize in Laravel, React.js, and Node.js, and work extensively with AWS, Docker, and CI/CD automation. Currently, I lead full-cycle engineering at W3 Info Solutions, building cloud-native, API-driven applications that scale.</p>
                             </div>
 

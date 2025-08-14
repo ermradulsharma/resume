@@ -68,8 +68,8 @@ const ContactSection = () => {
             <Container data-aos="fade-up" data-aos-delay="100">
                 <Row className="g-4 g-lg-5">
                     {/* Contact Info */}
-                    <Col lg={5} className="px-0">
-                        <div className="info-box" data-aos="fade-up" data-aos-delay="200">
+                    <Col lg={5}>
+                        <div className="info-box p-5" data-aos="fade-up" data-aos-delay="200">
                             <h3>Contact Info</h3>
                             <p>I’m always open to discussing new opportunities, freelance work, or helping with your project. Let’s connect!</p>
                             <div className="info-item" data-aos="fade-up" data-aos-delay="400">
@@ -90,7 +90,7 @@ const ContactSection = () => {
                                     <p>mradulsharma786@gmail.com</p>
                                 </div>
                             </div>
-                            <SocialLinks withNames platforms={['GitHub', 'LinkedIn', 'X (Twitter)', 'GitLab', 'Telegram']} />
+                            <SocialLinks withNames platforms={['GitHub', 'LinkedIn', 'X', 'GitLab', 'Telegram']} />
                         </div>
                     </Col>
 
