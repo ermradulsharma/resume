@@ -1,0 +1,246 @@
+.skills .skills-grid .skill-card {
+    background: linear-gradient(135deg, var(--surface-color) 0%, color-mix(in srgb, var(--surface-color), var(--accent-color) 5%) 100%);
+    border-radius: 15px;
+    padding: 30px;
+    /* height: 100%; */
+    position: relative;
+    overflow: hidden;
+    border: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%);
+    transition: all 0.3s ease;
+}
+
+.skills .skills-grid .skill-card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent-color), color-mix(in srgb, var(--accent-color), var(--heading-color) 30%));
+}
+
+.skills .skills-grid .skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px color-mix(in srgb, var(--accent-color), transparent 80%);
+    border-color: color-mix(in srgb, var(--accent-color), transparent 60%);
+}
+
+.skills .skills-grid .skill-card .skill-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    gap: 15px;
+}
+
+.skills .skills-grid .skill-card .skill-header i {
+    font-size: 28px;
+    color: var(--accent-color);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: color-mix(in srgb, var(--accent-color), transparent 90%);
+    border-radius: 12px;
+}
+
+.skills .skills-grid .skill-card .skill-header h3 {
+    font-size: 20px;
+    margin: 0;
+    color: var(--heading-color);
+}
+
+.skills .skills-grid .skill-card .skill-item {
+    margin-bottom: 20px;
+}
+
+.skills .skills-grid .skill-card .skill-item:last-child {
+    margin-bottom: 0;
+}
+
+.skills .skills-grid .skill-card .skill-item .skill-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.skills .skills-grid .skill-card .skill-item .skill-info .skill-name {
+    font-weight: 600;
+    color: var(--heading-color);
+    font-size: 15px;
+}
+
+.skills .skills-grid .skill-card .skill-item .skill-info .skill-percentage {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.skills .skills-grid .skill-card .skill-item .skill-bar {
+    height: 6px;
+    background: color-mix(in srgb, var(--default-color), transparent 92%);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.skills .skills-grid .skill-card .skill-item .skill-bar .progress-bar {
+    height: 100%;
+    background: linear-gradient(45deg, var(--accent-color), color-mix(in srgb, var(--accent-color), var(--heading-color) 20%));
+    border-radius: 10px;
+    width: 0;
+    transition: width 1.8s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+.skills .skills-grid .skill-card .skill-item .skill-bar .progress-bar:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    animation: shimmer 2s infinite;
+}
+
+.skills .skills-summary {
+    background: var(--surface-color);
+    padding: 40px 30px;
+    border-radius: 15px;
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+    box-shadow: 0 10px 30px color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.skills .skills-summary h3 {
+    color: var(--heading-color);
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.skills .skills-summary p {
+    color: color-mix(in srgb, var(--default-color), transparent 20%);
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.skills .skills-summary .summary-stats {
+    margin-bottom: 30px;
+}
+
+.skills .skills-summary .summary-stats .stat-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.skills .skills-summary .summary-stats .stat-item:last-child {
+    margin-bottom: 0;
+}
+
+.skills .skills-summary .summary-stats .stat-item .stat-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), var(--heading-color) 30%));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.skills .skills-summary .summary-stats .stat-item .stat-circle i {
+    color: var(--contrast-color);
+    font-size: 20px;
+}
+
+.skills .skills-summary .summary-stats .stat-item .stat-info .stat-number {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--heading-color);
+    line-height: 1;
+}
+
+.skills .skills-summary .summary-stats .stat-item .stat-info .stat-label {
+    font-size: 14px;
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+.skills .skills-summary .skills-badges h4 {
+    color: var(--heading-color);
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.skills .skills-summary .skills-badges .badge-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills .skills-summary .skills-badges .badge-list .skill-badge {
+    background: linear-gradient(45deg, var(--accent-color), color-mix(in srgb, var(--accent-color), var(--heading-color) 20%));
+    color: var(--contrast-color);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@media (max-width: 991px) {
+    .skills .skills-summary {
+        margin-top: 30px;
+        position: relative;
+        top: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .skills .skills-grid .skill-card {
+        padding: 25px 20px;
+    }
+
+    .skills .skills-grid .skill-card .skill-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .skills .skills-grid .skill-card .skill-header h3 {
+        font-size: 18px;
+    }
+
+    .skills .skills-summary {
+        padding: 30px 20px;
+    }
+
+    .skills .skills-summary .summary-stats .stat-item .stat-circle {
+        width: 45px;
+        height: 45px;
+    }
+
+    .skills .skills-summary .summary-stats .stat-item .stat-circle i {
+        font-size: 18px;
+    }
+
+    .skills .skills-summary .summary-stats .stat-item .stat-info .stat-number {
+        font-size: 20px;
+    }
+}

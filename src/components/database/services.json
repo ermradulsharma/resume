@@ -1,0 +1,148 @@
+{
+    "services": [
+        {
+            "title": "Full-Stack Development",
+            "description": "End-to-end web application development using React, Node.js, Laravel, and modern RESTful APIs with scalable architecture.",
+            "icon": "bi-code-slash",
+            "content": "FullStackDevelopment"
+        },
+        {
+            "title": "Custom API Integrations",
+            "description": "Secure and scalable API development & integration, including payment gateways, third-party services, and internal microservices.",
+            "icon": "bi-plug",
+            "content": ""
+        },
+        {
+            "title": "Cloud & DevOps",
+            "description": "Infrastructure setup, CI/CD pipelines, automated deployments, and scaling on AWS, DigitalOcean, and Firebase for high availability.",
+            "icon": "bi-cloud-upload",
+            "content": ""
+        },
+        {
+            "title": "Custom CMS & Dashboards",
+            "description": "Design and development of intuitive content management systems and analytics dashboards tailored to your business logic.",
+            "icon": "bi-kanban",
+            "content": ""
+        },
+        {
+            "title": "SaaS Development",
+            "description": "Building scalable Software-as-a-Service platforms with secure multi-tenant architecture, billing systems, and user access control.",
+            "icon": "bi-boxes",
+            "content": ""
+        },
+        {
+            "title": "Performance Optimization",
+            "description": "Audit and enhance application speed, scalability, and codebase quality with caching, lazy loading, and query optimization techniques.",
+            "icon": "bi-speedometer2",
+            "content": ""
+        },
+        {
+            "title": "Enterprise Web Solutions",
+            "description": "Custom web applications built with React, Laravel, and Node.js — designed for high availability, clean architecture, and business logic automation.",
+            "icon": "bi-globe",
+            "content": ""
+        },
+        {
+            "title": "Secure System Architecture",
+            "description": "Security-first system design with token-based authentication, role-based access control, data validation, and protection against common vulnerabilities.",
+            "icon": "bi-shield-lock",
+            "content": ""
+        },
+        {
+            "title": "Tech-Driven Growth Strategy",
+            "description": "Scalable backend solutions and frontend performance optimization to ensure your applications are fast, efficient, and ready for growth.",
+            "icon": "bi-graph-up",
+            "content": ""
+        },
+        {
+            "title": "AI & LLM Integrations",
+            "description": "Incorporate AI/LLM models like WebLLM or OpenAI into your web applications for intelligent features such as chatbots, automation, and NLP tasks.",
+            "icon": "bi-cpu",
+            "content": ""
+        },
+        {
+            "title": "Cloud Infrastructure & Deployment",
+            "description": "CI/CD pipelines, auto-scaling, monitoring, and serverless architecture setup using AWS, Firebase, and DigitalOcean for modern DevOps workflows.",
+            "icon": "bi-cloud-check",
+            "content": ""
+        },
+        {
+            "title": "Workflow & Process Automation",
+            "description": "Automate repetitive business tasks and backend processes through cron jobs, event-driven logic, and API orchestration using Laravel Queues or Node Workers.",
+            "icon": "bi-gear",
+            "content": ""
+        },
+        {
+            "title": "Progressive Web App (PWA) Development",
+            "description": "Build installable, offline-ready PWAs using React, service workers, and Web App Manifest to deliver native-like mobile experiences.",
+            "icon": "bi-phone",
+            "content": ""
+        },
+        {
+            "title": "Third-Party Integrations",
+            "description": "Seamless integration with CRMs, analytics, marketing platforms (e.g. Mautic, Stripe, Twilio, Zapier) for automated workflows and enhanced capabilities.",
+            "icon": "bi-link",
+            "content": ""
+        },
+        {
+            "title": "Admin Panel & Backoffice Systems",
+            "description": "Custom dashboards and admin panels with role-based access, data insights, and CRUD operations for internal business management.",
+            "icon": "bi-hdd-rack",
+            "content": ""
+        },
+        {
+            "title": "Serverless & Microservices Architecture",
+            "description": "Design and deployment of scalable, decoupled systems using Lambda, S3, API Gateway, Docker, and container orchestration strategies.",
+            "icon": "bi-diagram-3",
+            "content": ""
+        },
+        {
+            "title": "Technical SEO Optimization",
+            "description": "Backend and frontend performance tuning, structured data, Open Graph, meta handling, and routing optimization for better indexability.",
+            "icon": "bi-search",
+            "content": ""
+        },
+        {
+            "title": "CI/CD & Deployment Automation",
+            "description": "GitHub Actions, Bitbucket Pipelines, or custom CI workflows to automate builds, testing, and secure deployment with rollback strategies.",
+            "icon": "bi-lightning-charge",
+            "content": ""
+        },
+        {
+            "title": "Web Security Auditing",
+            "description": "Comprehensive audits for XSS, CSRF, SQLi, and other OWASP Top 10 vulnerabilities, with secure-by-design development practices.",
+            "icon": "bi-shield-shaded",
+            "content": ""
+        },
+        {
+            "title": "Real-Time Applications",
+            "description": "Development of real-time apps using WebSockets, Socket.IO, Laravel Echo, or Firebase for features like chat, notifications, and dashboards.",
+            "icon": "bi-broadcast-pin",
+            "content": ""
+        },
+        {
+            "title": "Freelance & Client Portal Solutions",
+            "description": "Custom lightweight platforms to manage proposals, invoices, communication, and assets for freelancers or SMEs.",
+            "icon": "bi-person-badge",
+            "content": ""
+        },
+        {
+            "title": "Code Refactoring & Legacy Migration",
+            "description": "Upgrade legacy PHP, jQuery, or monolithic codebases to modern stacks (React, Laravel 10+, Node.js) with better maintainability and modularity.",
+            "icon": "bi-arrow-repeat",
+            "content": ""
+        },
+        {
+            "title": "",
+            "description": "",
+            "icon": "",
+            "content": ""
+        },
+        {
+            "title": "",
+            "description": "",
+            "icon": "",
+            "content": ""
+        }
+    ]
+}

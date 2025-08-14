@@ -1,0 +1,167 @@
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+.contact .info-box {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+    padding: 3rem;
+    border-radius: 1rem;
+    height: 100%;
+}
+
+.contact .info-box h3 {
+    color: var(--contrast-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 767.98px) {
+    .contact .info-box h3 {
+        font-size: 1.75rem;
+    }
+}
+
+.contact .info-box p {
+    color: var(--surface-color);
+}
+
+.contact .info-box a {
+    color: var(--contrast-color);
+}
+
+.contact .info-box .social-links {
+    display: flex;
+    gap: 0.6rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact .info-box .social-links a {
+    padding: 0.5rem 1.2rem;
+    background: #ffffff;
+    color: var(--accent-color);
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+@media (max-width: 992px) {
+    .contact .info-box {
+        padding: 1.5rem;
+    }
+}
+
+.contact .info-item {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.contact .info-item:last-child {
+    margin-bottom: 0;
+}
+
+.contact .info-item .icon-box {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: color-mix(in srgb, var(--contrast-color), transparent 85%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: 0.3s;
+}
+
+.contact .info-item .icon-box i {
+    font-size: 1.5rem;
+    color: var(--contrast-color);
+}
+
+.contact .info-item:hover .icon-box {
+    background-color: color-mix(in srgb, var(--contrast-color), transparent 70%);
+}
+
+.contact .info-item .content h4 {
+    color: var(--contrast-color);
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.contact .info-item .content p {
+    margin-bottom: 0.25rem;
+    font-size: 0.95rem;
+}
+
+.contact .info-item .content p:last-child {
+    margin-bottom: 0;
+}
+
+.contact .contact-form {
+    background-color: var(--surface-color);
+    padding: 3rem;
+    border-radius: 1rem;
+    height: 100%;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 992px) {
+    .contact .contact-form {
+        padding: 1.5rem;
+    }
+}
+
+.contact .contact-form h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .contact .contact-form h3 {
+        font-size: 1.75rem;
+    }
+}
+
+.contact .contact-form p {
+    color: color-mix(in srgb, var(--default-color), transparent 25%);
+    margin-bottom: 2rem;
+}
+
+.contact .contact-form .form-control,
+.contact .contact-form .form-select {
+    padding: 0.5rem;
+    border-color: color-mix(in srgb, var(--default-color), transparent 90%);
+    border-radius: 0.5rem;
+    background-color: color-mix(in srgb, var(--surface-color) 90%, white 5%);
+    color: var(--default-color);
+}
+
+.contact .contact-form .form-control:focus,
+.contact .contact-form .form-select:focus {
+    box-shadow: none;
+    border-color: var(--accent-color);
+}
+
+.contact .contact-form .form-control::placeholder,
+.contact .contact-form .form-select::placeholder {
+    color: color-mix(in srgb, var(--default-color), transparent 50%);
+}
+
+.contact .contact-form .btn {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+    transition: 0.3s;
+}
+
+.contact .contact-form .btn i {
+    font-size: 1.25rem;
+}
+
+.contact .contact-form .btn:hover {
+    background-color: color-mix(in srgb, var(--accent-color), var(--contrast-color) 20%);
+}

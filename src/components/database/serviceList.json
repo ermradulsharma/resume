@@ -1,0 +1,165 @@
+[
+    {
+        "label": "Frontend Development",
+        "options": [
+            {
+                "value": "HTML/CSS & Responsive Design",
+                "label": "HTML/CSS & Responsive Design"
+            },
+            {
+                "value": "JavaScript / TypeScript Development",
+                "label": "JavaScript / TypeScript Development"
+            },
+            {
+                "value": "React.js Development",
+                "label": "React.js Development"
+            },
+            {
+                "value": "React Bootstrap / Tailwind CSS UI Development",
+                "label": "React Bootstrap / Tailwind CSS UI Development"
+            },
+            {
+                "value": "Cross-Browser Compatibility",
+                "label": "Cross-Browser Compatibility"
+            }
+        ]
+    },
+    {
+        "label": "Backend Development",
+        "options": [
+            {
+                "value": "Laravel (PHP) Application Development",
+                "label": "Laravel (PHP) Application Development"
+            },
+            {
+                "value": "Node.js API Development",
+                "label": "Node.js API Development"
+            },
+            {
+                "value": "RESTful API Design & Integration",
+                "label": "RESTful API Design & Integration"
+            },
+            {
+                "value": "GraphQL API Integration",
+                "label": "GraphQL API Integration"
+            },
+            {
+                "value": "Authentication (JWT, OAuth, Passport)",
+                "label": "Authentication (JWT, OAuth, Passport)"
+            }
+        ]
+    },
+    {
+        "label": "Database Services",
+        "options": [
+            {
+                "value": "PostgreSQL Architecture & Optimization",
+                "label": "PostgreSQL Architecture & Optimization"
+            },
+            {
+                "value": "MySQL/MariaDB Management",
+                "label": "MySQL/MariaDB Management"
+            },
+            {
+                "value": "MongoDB Design & Indexing",
+                "label": "MongoDB Design & Indexing"
+            },
+            {
+                "value": "SQLite for Lightweight Apps",
+                "label": "SQLite for Lightweight Apps"
+            },
+            {
+                "value": "Database Migration & Seeding",
+                "label": "Database Migration & Seeding"
+            }
+        ]
+    },
+    {
+        "label": "Cloud & DevOps",
+        "options": [
+            {
+                "value": "AWS EC2 / S3 / Route53 Setup & Management",
+                "label": "AWS EC2 / S3 / Route53 Setup & Management"
+            },
+            {
+                "value": "Cloud Deployment (Laravel Forge, Vercel, Netlify, PM2)",
+                "label": "Cloud Deployment (Laravel Forge, Vercel, Netlify, PM2)"
+            },
+            {
+                "value": "CI/CD Pipelines (GitHub Actions, GitLab CI)",
+                "label": "CI/CD Pipelines (GitHub Actions, GitLab CI)"
+            },
+            {
+                "value": "Docker & Containerized Environments",
+                "label": "Docker & Containerized Environments"
+            },
+            {
+                "value": "Domain Configuration & SSL Setup",
+                "label": "Domain Configuration & SSL Setup"
+            }
+        ]
+    },
+    {
+        "label": "CMS & Dashboard Development",
+        "options": [
+            {
+                "value": "Custom Admin Panel Development",
+                "label": "Custom Admin Panel Development"
+            },
+            {
+                "value": "CMS Integration (Strapi, Directus, Storyblok)",
+                "label": "CMS Integration (Strapi, Directus, Storyblok)"
+            },
+            {
+                "value": "Headless CMS Setup",
+                "label": "Headless CMS Setup"
+            },
+            {
+                "value": "Role-Based Access Control",
+                "label": "Role-Based Access Control"
+            }
+        ]
+    },
+    {
+        "label": "Automation & Analytics",
+        "options": [
+            {
+                "value": "Mautic Automation Dashboard Setup",
+                "label": "Mautic Automation Dashboard Setup"
+            },
+            {
+                "value": "Third-Party API Integration (Razorpay, Stripe, PayPal)",
+                "label": "Third-Party API Integration (Razorpay, Stripe, PayPal)"
+            },
+            {
+                "value": "Google Analytics / Mautic Integration",
+                "label": "Google Analytics / Mautic Integration"
+            },
+            {
+                "value": "Scheduled Jobs / CRON Optimization",
+                "label": "Scheduled Jobs / CRON Optimization"
+            }
+        ]
+    },
+    {
+        "label": "Consulting & Freelance Services",
+        "options": [
+            {
+                "value": "Project Architecture Consulting",
+                "label": "Project Architecture Consulting"
+            },
+            {
+                "value": "Performance Optimization & Code Audits",
+                "label": "Performance Optimization & Code Audits"
+            },
+            {
+                "value": "Migration from Legacy Stack to Modern Stack",
+                "label": "Migration from Legacy Stack to Modern Stack"
+            },
+            {
+                "value": "Freelance Development & Technical Mentorship",
+                "label": "Freelance Development & Technical Mentorship"
+            }
+        ]
+    }
+]

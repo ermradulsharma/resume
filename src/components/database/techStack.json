@@ -1,0 +1,56 @@
+{
+    "techStack": {
+        "name": "Tech Stack",
+        "description": "Comprehensive expertise across the full web development lifecycle — from elegant frontend interfaces to scalable backend APIs and DevOps automation.",
+        "technology": {
+            "frontend": [
+                { "name": "HTML/CSS", "valueNow": 95 },
+                { "name": "JavaScript", "valueNow": 90 },
+                { "name": "Bootstrap", "valueNow": 95 },
+                { "name": "jQuery", "valueNow": 85 },
+                { "name": "React.js", "valueNow": 90 }
+            ],
+            "backend": [
+                { "name": "PHP", "valueNow": 90 },
+                { "name": "Node.js", "valueNow": 85 },
+                { "name": "RESTful API", "valueNow": 85 },      
+                { "name": "SOAP API", "valueNow": 85 },
+                { "name": "GraphQL", "valueNow": 70 }    
+            ],
+            "frameworks": [
+                { "name": "Laravel", "valueNow": 92 },
+                { "name": "CodeIgniter", "valueNow": 85 },
+                { "name": "Next.js", "valueNow": 80 },
+                { "name": "Vue.js", "valueNow": 70 },
+                { "name": "Mautic", "valueNow": 75 }
+            ],
+            "database": [
+                { "name": "MySQL", "valueNow": 90 },
+                { "name": "PostgreSQL", "valueNow": 85 },
+                { "name": "MongoDB", "valueNow": 80 },
+                { "name": "SQLite", "valueNow": 75 },
+                { "name": "Redis", "valueNow": 80 }
+            ],
+            "paymentGateway": [
+                { "name": "Stripe", "valueNow": 90 },
+                { "name": "Paypal", "valueNow": 85 },
+                { "name": "Authorize.Net", "valueNow": 80 },
+                { "name": "Razorpay", "valueNow": 75 }
+            ],
+            "cloudsAndDevOps": [
+                { "name": "AWS", "valueNow": 90 },
+                { "name": "Docker", "valueNow": 90 },
+                { "name": "Apache", "valueNow": 70 },
+                { "name": "GitLab CI/CD", "valueNow": 85 },
+                { "name": "GitHub Actions", "valueNow": 80 }
+            ],
+            "tools": [
+                { "name": "VS Code", "valueNow": 95 },
+                { "name": "Postman", "valueNow": 95 },
+                { "name": "GIT", "valueNow": 85 },
+                { "name": "Slack", "valueNow": 95 },
+                { "name": "Trello", "valueNow": 90 }
+            ]          
+        }
+    }
+}

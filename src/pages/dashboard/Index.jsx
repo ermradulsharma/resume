@@ -5,7 +5,7 @@ export const Index = () => {
     return (
         <>
             <Row>
-                <Col lg={8} className="mb-4 order-0">
+                <Col lg={8} md={8}>
                     <Card>
                         <Card.Body>
                             <Row className="align-items-end">
@@ -21,7 +21,7 @@ export const Index = () => {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col lg={4} md={4} className="order-1">
+                <Col lg={4} md={4}>
                     <Row>
                         <Col lg={6} md={12} xs={6} className="mb-4">
                             <Card>

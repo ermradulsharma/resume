@@ -1,0 +1,414 @@
+:root {
+    --background-color: #ffffff;
+    --default-color: #314862;
+    --heading-color: #13447f;
+    --accent-color: #065cc2;
+    --surface-color: #ffffff;
+    --contrast-color: #ffffff;
+
+    --heading-font: "math"
+}
+
+/*--------------------------------------------------------------
+# Global Section Titles
+--------------------------------------------------------------*/
+.section-title {
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    padding: 0;
+    line-height: 1px;
+    margin: 0;
+    letter-spacing: 0.5px;
+    position: relative;
+}
+
+.section-title h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: var(--accent-color);
+    margin: 10px 10px;
+}
+
+.section-title p {
+    color: color-mix(in srgb, var(--default-color), transparent 50%);
+    margin: 5px 0 0 0;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--heading-font);
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+    /* padding: 120px 0; */
+    position: relative;
+    overflow: hidden;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("../../../assets/abstract-bg-1.webp") no-repeat center center;
+    background-size: cover;
+    opacity: 0.08;
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+@media (max-width: 991px) {
+    .hero .hero-content {
+        padding: 60px 30px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero .hero-content {
+        padding: 40px 20px;
+    }
+}
+
+.hero .content-wrapper {
+    max-width: 600px;
+}
+
+.hero .hero-title {
+    /* font-size: 3.5rem; */
+    /* font-weight: 700; */
+    /* margin-bottom: 1.5rem; */
+    /* line-height: 1.2; */
+}
+
+@media (max-width: 768px) {
+    .hero .hero-title {
+        /* font-size: 2.8rem; */
+    }
+}
+
+@media (max-width: 576px) {
+    .hero .hero-title {
+        /* font-size: 2.2rem; */
+    }
+}
+
+.hero .hero-title .typed {
+    color: var(--accent-color);
+    position: relative;
+}
+
+.hero .lead {
+    /* font-size: 1.2rem; */
+    color: color-mix(in srgb, var(--default-color), transparent 20%);
+    /* margin-bottom: 3rem;
+    line-height: 1.6; */
+}
+
+@media (max-width: 768px) {
+    .hero .lead {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.hero .hero-stats {
+    display: flex;
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .hero .hero-stats {
+        justify-content: center;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero .hero-stats {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+.hero .hero-stats .stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero .hero-stats .stat-item .purecounter {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    line-height: 1;
+}
+
+.hero .hero-stats .stat-item .stat-label {
+    font-size: 0.9rem;
+    color: color-mix(in srgb, var(--default-color), transparent 40%);
+    margin-top: 0.25rem;
+}
+
+.hero .hero-actions {
+    display: flex;
+    gap: 1rem;
+    /* margin-bottom: 3rem; */
+}
+
+.social-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    font-size: 32px;
+}
+
+@media (max-width: 768px) {
+    .hero .hero-actions {
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero .hero-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.hero .hero-actions .btn {
+    /* padding: 12px 30px;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none; */
+    transition: all 0.3s ease;
+}
+
+.hero .hero-actions .btn.btn-primary {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+    border: 2px solid var(--accent-color);
+}
+
+.hero .hero-actions .btn.btn-primary:hover {
+    background-color: transparent;
+    color: var(--accent-color);
+}
+
+.hero .hero-actions .btn.btn-outline {
+    background-color: transparent;
+    color: var(--default-color);
+    border: 2px solid color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+.hero .hero-actions .btn.btn-outline:hover {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+    border-color: var(--accent-color);
+}
+
+.hero .social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .hero .social-links {
+        justify-content: center;
+    }
+}
+
+.hero .social-links a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--surface-color);
+    color: var(--default-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.hero .social-links a:hover {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+    transform: translateY(-3px);
+}
+
+.hero .social-links a i {
+    font-size: 1.2rem;
+}
+
+.hero .hero-image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 30px;
+}
+
+@media (max-width: 991px) {
+    .hero .hero-image {
+        min-height: auto;
+        padding: 40px 30px;
+    }
+}
+
+.hero .image-container {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+}
+
+.hero .hero-main-image {
+    border-radius: 20px;
+    box-shadow: 0 20px 60px color-mix(in srgb, var(--default-color), transparent 85%);
+    position: relative;
+    z-index: 2;
+}
+
+.hero .image-overlay {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: -20px;
+    bottom: -20px;
+    background: linear-gradient(45deg, var(--accent-color), color-mix(in srgb, var(--accent-color), transparent 30%));
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.hero .floating-elements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.hero .floating-card {
+    position: absolute;
+    background-color: var(--surface-color);
+    padding: 15px 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px color-mix(in srgb, var(--default-color), transparent 90%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+    animation: float 6s ease-in-out infinite;
+}
+
+@media (max-width: 768px) {
+    .hero .floating-card {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+.hero .floating-card i {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+    .hero .floating-card i {
+        font-size: 1.2rem;
+    }
+}
+
+.hero .floating-card span {
+    font-weight: 600;
+    color: var(--default-color);
+}
+
+.hero .floating-card.card-1 {
+    top: 15%;
+    left: -10%;
+    animation-delay: 0s;
+}
+
+.hero .floating-card.card-2 {
+    top: 100%;
+    right: -15%;
+    animation-delay: 2s;
+}
+
+.hero .floating-card.card-3 {
+    bottom: 0;
+    left: -5%;
+    animation-delay: 4s;
+}
+
+.hero .floating-card.card-4 {
+    top: 0%;
+    right: -15%;
+    animation-delay: 2s;
+}
+
+.hero .floating-card.card-5 {
+    top: 50%;
+    right: -15%;
+    animation-delay: 2s;
+}
+
+@media (max-width: 768px) {
+    .hero .floating-card.card-1 {
+        top: 5%;
+        left: -5%;
+    }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .hero .floating-card.card-2 {
+        top: 70%;
+        right: -10%;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .hero .floating-card.card-3 {
+        bottom: 10%;
+        left: 0%;
+    }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}

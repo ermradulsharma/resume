@@ -2,7 +2,7 @@
     "home": {
         "name": "Mradul Sharma",
         "jobPositions": [
-            "Senior FullStack Developer",
+            "Full Stack Developer",
             "Laravel Developer",
             "React Developer",
             "Node.js Developer",
@@ -358,5 +358,127 @@
                 "category": "MARKETING ANALYTICS PLATFORM"
             }
         ]
+    },
+    "social": [
+        {
+            "name": "LinkedIn",
+            "link": "https://www.linkedin.com/in/mradulsharma",
+            "icon": "BsLinkedin",
+            "status": true
+        },
+        {
+            "name": "GitHub",
+            "link": "https://github.com/ermradulsharma",
+            "icon": "BsGithub",
+            "status": true
+        },
+        {
+            "name": "GitLab",
+            "link": "https://gitlab.com/mradulsharma",
+            "icon": "BsGitlab",
+            "status": true
+        },
+        {
+            "name": "Stack Overflow",
+            "link": "https://stackoverflow.com/users/8425184/mradul-sharma",
+            "icon": "BsStackOverflow",
+            "status": true
+        },
+        {
+            "name": "Dev.to",
+            "link": "https://dev.to/mradul_sharma",
+            "icon": "FaDev",
+            "status": true
+        },
+        {
+            "name": "Medium",
+            "link": "https://medium.com/@ermradulsharma",
+            "icon": "BsMedium",
+            "status": true
+        },
+        {
+            "name": "X (Twitter)",
+            "link": "https://twitter.com/ermradulsharma",
+            "icon": "BsTwitterX",
+            "status": true
+        },
+        {
+            "name": "Facebook",
+            "link": "https://www.facebook.com/mradulsharma786",
+            "icon": "BsFacebook",
+            "status": true
+        },
+        {
+            "name": "Instagram",
+            "link": "https://www.instagram.com/rudra_sharma_",
+            "icon": "BsInstagram",
+            "status": true
+        },
+        {
+            "name": "YouTube",
+            "link": "https://www.youtube.com/@mradulsharma6721",
+            "icon": "BsYoutube",
+            "status": true
+        },
+        {
+            "name": "Telegram",
+            "link": "https://t.me/ermradulsharma",
+            "icon": "BsTelegram",
+            "status": true
+        }
+    ],
+    "techStack": {
+        "name": "Tech Stack",
+        "description": "Comprehensive expertise across the full web development lifecycle — from elegant frontend interfaces to scalable backend APIs and DevOps automation.",
+        "technology": {
+            "frontend": [
+                { "name": "HTML/CSS", "valueNow": 95 },
+                { "name": "JavaScript", "valueNow": 90 },
+                { "name": "Bootstrap", "valueNow": 95 },
+                { "name": "jQuery", "valueNow": 85 },
+                { "name": "React.js", "valueNow": 90 }
+            ],
+            "backend": [
+                { "name": "PHP", "valueNow": 90 },
+                { "name": "Node.js", "valueNow": 85 },
+                { "name": "RESTful API", "valueNow": 85 },      
+                { "name": "SOAP API", "valueNow": 85 },
+                { "name": "GraphQL", "valueNow": 70 }    
+            ],
+            "frameworks": [
+                { "name": "Laravel", "valueNow": 92 },
+                { "name": "CodeIgniter", "valueNow": 85 },
+                { "name": "Next.js", "valueNow": 80 },
+                { "name": "Vue.js", "valueNow": 70 },
+                { "name": "Mautic", "valueNow": 75 }
+            ],
+            "database": [
+                { "name": "MySQL", "valueNow": 90 },
+                { "name": "PostgreSQL", "valueNow": 85 },
+                { "name": "MongoDB", "valueNow": 80 },
+                { "name": "SQLite", "valueNow": 75 },
+                { "name": "Redis", "valueNow": 80 }
+            ],
+            "paymentGateway": [
+                { "name": "Stripe", "valueNow": 90 },
+                { "name": "Paypal", "valueNow": 85 },
+                { "name": "Authorize.Net", "valueNow": 80 },
+                { "name": "Razorpay", "valueNow": 75 }
+            ],
+            "cloudsAndDevOps": [
+                { "name": "AWS", "valueNow": 90 },
+                { "name": "Docker", "valueNow": 90 },
+                { "name": "Apache", "valueNow": 70 },
+                { "name": "GitLab CI/CD", "valueNow": 85 },
+                { "name": "GitHub Actions", "valueNow": 80 }
+            ],
+            "tools": [
+                { "name": "VS Code", "valueNow": 95 },
+                { "name": "Postman", "valueNow": 95 },
+                { "name": "GIT", "valueNow": 85 },
+                { "name": "Slack", "valueNow": 95 },
+                { "name": "Trello", "valueNow": 90 }
+            ]          
+        }
     }
 }

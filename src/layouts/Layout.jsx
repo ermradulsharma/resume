@@ -14,11 +14,10 @@ const DashboardLayout = () => {
             {/* Main Page Content */}
             <div className="layout-page d-flex flex-column flex-grow-1">
                 <Navbar />
-
                 {/* Main Content Area */}
                 <main className="flex-grow-1">
                     <div className="container py-3">
-                    <Outlet />
+                      <Outlet />
                     </div>
                 </main>
 

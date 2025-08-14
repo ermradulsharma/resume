@@ -1,20 +1,19 @@
 import { Routes, Route, Navigate, Outlet } from "react-router-dom";
-import Navbar from "../components/user/Navbar/Navbar";
-import Footer from "../components/user/Footer/Footer";
-
-import Home from "../pages/Home";
-import Skill from "../pages/Skillset";
-import Projects from "../pages/Projects";
-import Resume from "../pages/Resume";
-import Contact from "../pages/Contact";
+import Navbar from "../components/frontend/Navbar/Navbar";
+import Footer from "../components/frontend/Footer/Footer";
 import "../App.css";
+import About from "../pages/frontend/About/About";
+import Portfolio from "../pages/frontend/Portfolio/Portfolio";
+import Services from "../pages/frontend/Services/Services";
+import Home from "../pages/frontend/Home";
+import Blogs from "../pages/frontend/Blogs/Blogs";
 
 const PublicLayout = () => (
-  <>
-    <Navbar />
-    <Outlet />
-    <Footer />
-  </>
+    <>
+        <Navbar />
+          <Outlet />
+        <Footer />
+    </>
 );
 
 const WebRoutes = () => {
@@ -22,10 +21,10 @@ const WebRoutes = () => {
     <Routes>
       <Route path="/" element={<PublicLayout />}>
         <Route index element={<Home />} />
-        <Route path="tech-stack" element={<Skill />} />
-        <Route path="projects" element={<Projects />} />
-        <Route path="resume" element={<Resume />} />
-        <Route path="contact" element={<Contact />} />
+        <Route path="portfolio" element={<Portfolio />} />
+        <Route path="services" element={<Services />} />
+        <Route path="blogs" element={<Blogs />} />
+        <Route path="about" element={<About />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
     </Routes>

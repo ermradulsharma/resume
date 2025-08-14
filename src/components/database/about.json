@@ -1,0 +1,69 @@
+{
+    "about": {
+        "expandedAbout": "I am an accomplished Full Stack Developer with expertise in Laravel and a strong command of modern web development technologies and frameworks. With a comprehensive skill set spanning both front-end and back-end development, I specialize in creating custom web applications tailored to meet clients' unique needs. My technical toolkit includes HTML, CSS, JavaScript, PHP, and databases like Postgres, MySQL, MongoDB, and SQLite.",
+        "expandedAbout2": "I am adept at delivering scalable, high-quality solutions by focusing on clean, sustainable code and staying current with the latest industry trends. My core competencies include responsive design, user authentication, third-party API integration, and performance optimization, ensuring seamless and efficient user experiences.",
+        "expandedAbout3": "In addition to my technical abilities, I thrive in collaborative environments, leveraging strong communication skills to contribute to team-oriented success and client satisfaction. My commitment to excellence has consistently enabled me to deliver projects on time and within budget.",
+        "expandedAbout4": "Passionate about clean, efficient coding, I am always looking to expand my skill set and embrace new challenges. If you're seeking a dedicated developer to bring value to your team or organization, let's connect!",
+        "experience": [
+            {
+                "role": "Senior Full-Stack Developer",
+                "place": "W3 Info Solutions, Lucknow",
+                "duration": "Mar 2022 – Present",
+                "location": "Remote",
+                "description": "Leading architecture, development, and DevOps for complex web systems using Laravel, React, Node.js, and AWS cloud. Driving performance, security, and CI/CD efficiency across projects.",
+                "achievements": [
+                    "Spearheaded the design and deployment of PayStubx, a payroll platform serving 10,000+ users with role-based access and real-time reports",
+                    "Optimized PostgreSQL and API response times by 40% through query tuning and cache strategies",
+                    "Established containerized deployment pipelines using Docker and GitLab CI/CD"
+                ]
+            },
+            {
+                "role": "Laravel Developer",
+                "place": "Zaiba InfoTech, Agra",
+                "duration": "Mar 2020 – Feb 2022",
+                "location": "Agra, India",
+                "description": "Delivered enterprise-grade solutions for internal portals and client applications using Laravel, jQuery, Bootstrap, and MySQL.",
+                "achievements": [
+                    "Developed and maintained ZaibaInfo’s internal CMS with integrated job, inquiry, and portfolio modules",
+                    "Implemented custom Blade components and reusable service layers for multiple client projects",
+                    "Enhanced system performance and security through request validation, middleware, and access control"
+                ]
+            },
+            {
+                "role": "PHP Developer (Internship & Full-Time)",
+                "place": "Programming Park InfoTech, Agra",
+                "duration": "Dec 2018 – Feb 2020",
+                "location": "Agra, India",
+                "description": "Started as a trainee and evolved into a core contributor on custom PHP projects, learning real-world SDLC and backend logic.",
+                "achievements": [
+                    "Contributed to small-scale ERP modules using raw PHP and MySQL",
+                    "Handled bug fixes, basic security implementations, and feature enhancements",
+                    "Built foundational skills in MVC, database schema design, and backend workflows"
+                ]
+            }
+        ],
+        "education": [
+            {
+                "role": "B.Tech in Computer Science &bEngineering",
+                "place": "Kanpur Institute of Technology",
+                "duration": "2012 – 2016",
+                "location": "Kanpur, Uttar Pradesh",
+                "description": "Focused on core computer science concepts such as algorithms, OOP, data structures, software engineering, and project-based learning in web development."
+            },
+            {
+                "role": "Intermediate",
+                "place": "RBS College, Dadupur Asagrpur",
+                "duration": "2011 – 2012",
+                "location": "Etah, Uttar Pradesh",
+                "description": "Specialized in Physics, Chemistry, and Mathematics, laying the foundation for engineering and analytical problem-solving."
+            },
+            {
+                "role": "High School",
+                "place": "Saraswati Vidya Mandir",
+                "duration": "2008 – 2009",
+                "location": "Etah, Uttar Pradesh",
+                "description": "Completed secondary education with distinction, with strong emphasis on mathematics and science."
+            }
+        ]
+    }
+}

@@ -1,0 +1,70 @@
+{
+    "social": [
+        {
+            "name": "LinkedIn",
+            "link": "https://www.linkedin.com/in/mradulsharma",
+            "icon": "BsLinkedin",
+            "status": true
+        },
+        {
+            "name": "GitHub",
+            "link": "https://github.com/ermradulsharma",
+            "icon": "BsGithub",
+            "status": true
+        },
+        {
+            "name": "GitLab",
+            "link": "https://gitlab.com/mradulsharma",
+            "icon": "BsGitlab",
+            "status": true
+        },
+        {
+            "name": "Stack Overflow",
+            "link": "https://stackoverflow.com/users/8425184/mradul-sharma",
+            "icon": "BsStackOverflow",
+            "status": true
+        },
+        {
+            "name": "Dev.to",
+            "link": "https://dev.to/mradul_sharma",
+            "icon": "FaDev",
+            "status": true
+        },
+        {
+            "name": "Medium",
+            "link": "https://medium.com/@ermradulsharma",
+            "icon": "BsMedium",
+            "status": true
+        },
+        {
+            "name": "X (Twitter)",
+            "link": "https://twitter.com/ermradulsharma",
+            "icon": "BsTwitterX",
+            "status": true
+        },
+        {
+            "name": "Facebook",
+            "link": "https://www.facebook.com/mradulsharma786",
+            "icon": "BsFacebook",
+            "status": true
+        },
+        {
+            "name": "Instagram",
+            "link": "https://www.instagram.com/rudra_sharma_",
+            "icon": "BsInstagram",
+            "status": true
+        },
+        {
+            "name": "YouTube",
+            "link": "https://www.youtube.com/@mradulsharma6721",
+            "icon": "BsYoutube",
+            "status": true
+        },
+        {
+            "name": "Telegram",
+            "link": "https://t.me/ermradulsharma",
+            "icon": "BsTelegram",
+            "status": true
+        }
+    ]
+}

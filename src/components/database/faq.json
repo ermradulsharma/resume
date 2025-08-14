@@ -1,0 +1,28 @@
+{
+    "faqs": [
+        {
+            "question": "What technologies are you most proficient in?",
+            "answer": "I specialize in Laravel, React.js, Node.js, and AWS. I have extensive experience across full-stack development including REST APIs, DevOps pipelines, and scalable backend systems."
+        },
+        {
+            "question": "What types of projects have you led or contributed to?",
+            "answer": "I've led enterprise projects such as PayStubx (payroll system), Storytellers CMS, and Wealth Mark (crypto platform), handling full architecture, deployment, and feature implementation."
+        },
+        {
+            "question": "Do you have experience working remotely or with distributed teams?",
+            "answer": "Yes, I’ve worked remotely with cross-functional teams at W3 Info Solutions and managed seamless project deliveries using Agile/Scrum practices and tools like Trello, Slack, and GitLab."
+        },
+        {
+            "question": "Are you involved in DevOps and cloud infrastructure management?",
+            "answer": "Absolutely. I manage CI/CD pipelines using GitHub Actions and GitLab CI/CD, and handle deployments on AWS (EC2, S3, RDS). I also work with Docker, Nginx, and cron jobs."
+        },
+        {
+            "question": "What is your approach to frontend development?",
+            "answer": "I follow component-based architecture using React.js, apply best practices in responsive design, and work with Tailwind CSS, Bootstrap, and client-side routing for seamless UX."
+        },
+        {
+            "question": "Do you contribute to open source or write technical content?",
+            "answer": "Yes, I contribute to GitHub and write technical blogs on Medium and Dev.to. I believe in knowledge sharing and continuous learning through open collaboration."
+        }
+    ]
+}
