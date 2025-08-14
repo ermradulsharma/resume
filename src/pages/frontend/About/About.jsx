@@ -24,10 +24,10 @@ const About = () => {
             </div>
 
             {/* About Content Section */}
-            <section className="about-section py-5">
+            <section className="about-section py-4">
                 <Container>
                     <Row className="align-items-start">
-                        <Col lg={4} data-aos="fade-right">
+                        <Col lg={4} data-aos="fade-right" className="d-lg-block d-none">
                             <img src={image} alt="Mradul Sharma" className="img-fluid rounded-4 shadow" style={{ minHeight: "80vh"}}/>
                         </Col>
                         <Col lg={8} data-aos="fade-left" className="about-details">

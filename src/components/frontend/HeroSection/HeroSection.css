@@ -21,7 +21,7 @@
     font-size: 36px;
     font-weight: 700;
     padding: 0;
-    line-height: 1px;
+    /* line-height: 1px; */
     margin: 0;
     letter-spacing: 0.5px;
     position: relative;

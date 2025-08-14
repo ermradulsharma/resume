@@ -217,12 +217,6 @@
         padding: 25px 20px;
     }
 
-    .skills .skills-grid .skill-card .skill-header {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-    }
-
     .skills .skills-grid .skill-card .skill-header h3 {
         font-size: 18px;
     }
