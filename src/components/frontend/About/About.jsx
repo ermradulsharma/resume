@@ -85,12 +85,12 @@ const About = () => {
                             </div>
 
                             {/* Call to Action */}
-                            <div className="cta-section d-flex gap-3 justify-content-center" data-aos="fade-up" data-aos-delay="400">
-                                <div className="fun-fact w-75">
+                            <div className="cta-section" data-aos="fade-up" data-aos-delay="400">
+                                <div className="fun-fact px-0 px-lg-5">
                                     <span className="emoji">⚡</span>
                                     <span className="text">Always exploring cloud, code, and clean architecture.</span>
                                 </div>
-                                <Button variant="primary" className='rounded-5 px-5 w-25' href='/about'>View More</Button>
+                                {/* <Button variant="primary" className='rounded-5 px-5 wm-auto w-lg-25' href='/about'>View More</Button> */}
                             </div>
                         </div>
                     </Col>

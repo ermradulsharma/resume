@@ -178,6 +178,7 @@
     background: color-mix(in srgb, var(--accent-color), transparent 94%);
     border-radius: 50px;
     border: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%);
+    width: 100%;
 }
 
 .about .about-content .cta-section .fun-fact .emoji {
