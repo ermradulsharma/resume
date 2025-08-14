@@ -30,15 +30,16 @@
 }
 
 .contact .info-box .social-links {
-    display: flex;
-    gap: 0.6rem;
-    justify-content: center;
+    display: grid;
+    gap: 0.25rem;
+    /* justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
+    grid-template-columns: 3fr 3fr 3fr;
 }
 
 .contact .info-box .social-links a {
-    padding: 0.5rem 1.2rem;
+    padding: 0.5rem;
     background: #ffffff;
     color: var(--accent-color);
     border-radius: 5%;

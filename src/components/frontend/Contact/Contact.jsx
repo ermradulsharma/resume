@@ -68,7 +68,7 @@ const ContactSection = () => {
             <Container data-aos="fade-up" data-aos-delay="100">
                 <Row className="g-4 g-lg-5">
                     {/* Contact Info */}
-                    <Col lg={5}>
+                    <Col lg={5} className="px-0">
                         <div className="info-box" data-aos="fade-up" data-aos-delay="200">
                             <h3>Contact Info</h3>
                             <p>I’m always open to discussing new opportunities, freelance work, or helping with your project. Let’s connect!</p>
