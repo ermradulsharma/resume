@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
-import { BsTelephone, BsEnvelope } from "react-icons/bs";
+import { BsClock, BsWhatsapp, BsPhoneVibrateFill, BsMailbox2Flag } from "react-icons/bs";
 import "../../../components/frontend/Contact/Contact.css"
 import SocialLinks from "../SocialLinks/SocialLinks";
 import emailjs from "@emailjs/browser";
@@ -73,24 +73,64 @@ const ContactSection = () => {
                             <h3>Contact Info</h3>
                             <p>I’m always open to discussing new opportunities, freelance work, or helping with your project. Let’s connect!</p>
                             <div className="info-item" data-aos="fade-up" data-aos-delay="400">
-                                <div className="icon-box">
-                                    <BsTelephone />
-                                </div>
+                                <div className="icon-box"><BsPhoneVibrateFill /></div>
                                 <div className="content">
                                     <h4>Phone</h4>
-                                    <p>+91 72529 33077</p>
+                                    <p><a href="tel:+917252933077" className="text-white text-decoration-none">+91 72529 33077</a></p>
                                 </div>
                             </div>
                             <div className="info-item" data-aos="fade-up" data-aos-delay="500">
                                 <div className="icon-box">
-                                    <BsEnvelope />
+                                    <BsMailbox2Flag />
                                 </div>
                                 <div className="content">
                                     <h4>Email</h4>
-                                    <p>mradulsharma786@gmail.com</p>
+                                    <p><a href="mailto:mradulsharma786@gmail.com" className="text-white text-decoration-none">mradulsharma786@gmail.com</a></p>
                                 </div>
                             </div>
+
+                            {/* WhatsApp */}
+                            <div className="info-item" data-aos="fade-up" data-aos-delay="450">
+                                <div className="icon-box">< BsWhatsapp /></div>
+                                <div className="content">
+                                    <h4>WhatsApp</h4>
+                                    <p><a href="https://wa.me/917252933077" target="_blank" rel="noopener noreferrer" className="text-white text-decoration-none">Chat on WhatsApp</a></p>
+                                </div>
+                            </div>
+
+                            {/* Working Hours */}
+                            <div className="info-item" data-aos="fade-up" data-aos-delay="500">
+                                <div className="icon-box">< BsClock /></div>
+                                <div className="content">
+                                    <h4>Working Hours</h4>
+                                    <p>Mon – Sat: 10:00 AM – 7:00 PM IST</p>
+                                </div>
+                            </div>
+
+                            {/* Timezone */}
+                            {/* <div className="info-item" data-aos="fade-up" data-aos-delay="550">
+                                <div className="icon-box">
+                                    🌍
+                                </div>
+                                <div className="content">
+                                    <h4>Timezone</h4>
+                                    <p>GMT+5:30 (India Standard Time)</p>
+                                </div>
+                            </div> */}
+
+                            {/* Schedule a Call */}
+                            {/* <div className="info-item" data-aos="fade-up" data-aos-delay="600">
+                                <div className="icon-box">
+                                    📅
+                                </div>
+                                <div className="content">
+                                    <h4>Schedule a Call</h4>
+                                    <p><a href="https://calendly.com/your-link" target="_blank" rel="noopener noreferrer" className="btn btn-outline-light btn-sm rounded-5 px-3">Book Now</a></p>
+                                </div>
+                            </div> */}
                             <SocialLinks withNames platforms={['GitHub', 'LinkedIn', 'X', 'GitLab', 'Telegram']} />
+                            {/* Personal Tagline */}
+                            <p className="mt-4 small fst-italic text-white-50 text-center">Currently coding from ☕ Coffee-powered desk.</p>
                         </div>
                     </Col>
 
