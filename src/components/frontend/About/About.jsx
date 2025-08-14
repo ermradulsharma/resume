@@ -5,15 +5,17 @@ import about from '../../../assets/mradulsharma_another.JPG'
 import signature from '../../../assets/signature.png'
 import { FaCodepen, FaPalette } from 'react-icons/fa';
 import { BsCloudCheck } from 'react-icons/bs';
+import data from "../../../components/database/about.json"
 import resume from '../../../assets/Resume/mradulsharma.pdf'
 
 const About = () => {
+    const { expandedAbout5 } = data.about;
     return (
         <section id="about" className="about section my-5">
             {/* Section Title */}
             <Container className="section-title">
                 <h2>About</h2>
-                <p>A quick overview of who I am, what I do, and what I’ve built.</p>
+                <p>{expandedAbout5}</p>
             </Container>
             <Container data-aos="fade-up" data-aos-delay="100">
                 <Row className="align-items-center">
@@ -34,7 +36,7 @@ const About = () => {
                     {/* About Content */}
                     <Col lg={8} data-aos="fade-left" data-aos-delay="300">
                         <div className="about-content">
-                            <div className="intro">
+                            <div className="intro d-none">
                                 <h2 className='d-none d-lg-block'>Hi, I'm Mradul Sharma – Full-Stack Developer</h2>
                                 <p>I’m a Senior Full-Stack Developer with 5+ years of experience designing, developing, and deploying secure, high-performance web applications. I specialize in Laravel, React.js, and Node.js, and work extensively with AWS, Docker, and CI/CD automation. Currently, I lead full-cycle engineering at W3 Info Solutions, building cloud-native, API-driven applications that scale.</p>
                             </div>

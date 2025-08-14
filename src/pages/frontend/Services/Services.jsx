@@ -34,7 +34,7 @@ const Services = () => {
             </div>
             <Container className="section-title py-4 px-3">
                 <h2>Services</h2>
-                <p>I offer scalable and secure development solutions tailored to modern digital businesses.</p>
+                <p>I offer end-to-end development solutions that are scalable, secure, and tailored to meet the evolving needs of modern digital businesses. With expertise spanning full-stack development, cloud-native architectures, and database optimization, I design and implement systems capable of handling growth without compromising performance or security. My approach combines technical precision with strategic planning, ensuring each solution is optimized for speed, stability, and long-term maintainability. Whether building custom applications, architecting APIs, or deploying cloud infrastructure, I prioritize user experience, operational efficiency, and data protection. Every project is crafted to align with business goals, adapt to future demands, and deliver measurable value in an increasingly competitive digital landscape.</p>
             </Container>
             <Container data-aos="fade-up" data-aos-delay="100" className="mb-3">
                 <Row className="g-4">

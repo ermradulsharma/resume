@@ -11,7 +11,7 @@ import Faqs from "../../../components/frontend/Faqs/Faqs";
 import LetsConnect from "../../../components/LetsConnect";
 
 const About = () => {
-    const { expandedAbout, expandedAbout2, expandedAbout3, expandedAbout4 } = data.about;
+    const { expandedAbout, expandedAbout2, expandedAbout3, expandedAbout4, expandedAbout5, expandedAbout6, expandedAbout7, expandedAbout8 } = data.about;
     return (
         <div className="about-page">
             {/* Hero Section */}
@@ -19,7 +19,7 @@ const About = () => {
                 <div className="overlay"></div>
                 <div className="hero-content">
                     <h1 className="display-4 fw-bold">About Me</h1>
-                    <p className="lead">Crafting secure, scalable, and high-performance web applications using Laravel, React, and cloud-native technologies.</p>
+                    <p className="lead text-white">Crafting secure, scalable, and high-performance web applications using Laravel, React, and cloud-native technologies.</p>
                 </div>
             </div>
 
@@ -31,11 +31,11 @@ const About = () => {
                             <img src={image} alt="Mradul Sharma" className="img-fluid rounded-4 shadow" style={{ minHeight: "80vh"}}/>
                         </Col>
                         <Col lg={8} data-aos="fade-left" className="about-details">
-                            <h2 className="fw-bold mb-4">I'm Mradul Sharma – Full-Stack Developer</h2>
+                            {/* <h2 className="fw-bold mb-4">I'm Mradul Sharma – Full-Stack Developer</h2> */}
                             <p style={{ color: "#B8B8B8" }}>{expandedAbout}</p>
-                            <p style={{ color: "#B8B8B8" }}>{expandedAbout2}</p>
-                            <p style={{ color: "#B8B8B8" }}>{expandedAbout3}</p>
-                            <p style={{ color: "#B8B8B8" }}>{expandedAbout4}</p>
+                            <p style={{ color: "#B8B8B8" }}>{expandedAbout6}</p>
+                            <p style={{ color: "#B8B8B8" }}>{expandedAbout7}</p>
+                            <p style={{ color: "#B8B8B8" }}>{expandedAbout8}</p>
                             <SocialLinks withNames platforms={['GitHub', 'LinkedIn', 'X (Twitter)', 'GitLab', 'Telegram']} />
                             {/* <Button variant="primary" href="/Mradul_Sharma_Resume.pdf" className="mt-3">Download Resume <BsArrowRight className="ms-2" /> </Button> */}
                         </Col>

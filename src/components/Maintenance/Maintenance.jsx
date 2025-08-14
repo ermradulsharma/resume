@@ -7,7 +7,7 @@ const Maintenance = () => {
     return (
         <section id="maintenances" className="maintenance section position-relative">
             <div className="watermark-overlay">© Mradul Sharma</div>
-            <Container className="text-center p-2">
+            <Container className="text-center p-3">
                 <Image fluid src={soon} width={1006} />
             </Container>
         </section>

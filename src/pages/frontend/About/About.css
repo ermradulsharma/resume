@@ -1,8 +1,9 @@
 .about-hero {
     position: relative;
-    height: 88vh;
-    background: url('../../../assets/mradulsharma_banner_2.jpg') center/cover no-repeat;
+    height: calc(100vh - 77px);
+    background: url('../../../assets/mradulsharma_banner_2.jpg') 65% 30% /cover no-repeat;
 }
+
 .about-hero .overlay {
     position: absolute;
     top: 0;
@@ -40,4 +41,15 @@
 .about-hero p.lead {
     width: 70%;
     margin: auto;
+}
+
+@media (max-width: 767px) {
+    .about-hero {
+        height: 20rem;
+        background: url('../../../assets/mradulsharma_banner_2.jpg') 50% 30% /cover no-repeat;
+    }
+
+    .about-hero p.lead {
+        width: 90%;
+    }
 }

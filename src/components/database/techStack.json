@@ -1,7 +1,8 @@
 {
     "techStack": {
         "name": "Tech Stack",
-        "description": "Comprehensive expertise across the full web development lifecycle — from elegant frontend interfaces to scalable backend APIs and DevOps automation.",
+        "description1": "Comprehensive expertise across the full web development lifecycle — from elegant frontend interfaces to scalable backend APIs and DevOps automation.",
+        "description": "Proficient in a versatile and industry-leading technology stack covering the full web development lifecycle — from crafting responsive, user-friendly front-end interfaces with HTML5, CSS3, JavaScript, React.js, and Bootstrap, to building secure, high-performance backend systems with PHP, Laravel, Node.js, and RESTful APIs. Experienced in relational and NoSQL databases like MySQL, PostgreSQL, and MongoDB, as well as modern DevOps practices with AWS, Docker, CI/CD pipelines, and cloud-native deployments. Skilled in integrating payment gateways, optimizing database performance, and delivering scalable solutions for enterprise-grade applications.",
         "technology": {
             "frontend": [
                 { "name": "HTML/CSS", "valueNow": 95 },

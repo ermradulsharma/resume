@@ -18,7 +18,7 @@ const TechStack = () => {
         <section id="skills" className="skills section my-5">
             <Container className="section-title">
                 <Row>
-                    <Col lg={8}>
+                    <Col lg={12}>
                         <h2>{data.techStack.name}</h2>
                         <p>{data.techStack.description}</p>
                     </Col>
