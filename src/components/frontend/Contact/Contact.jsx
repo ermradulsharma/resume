@@ -126,7 +126,7 @@ const ContactSection = () => {
                                 {done && <span className="text-success mt-1 fs-6">Message sent successfully!</span>}
                                 {notDone && <span className="text-danger mt-1 fs-6">Please fill out all fields correctly.</span>}
                                 <Col md={12} className="text-center">
-                                    <Button type="submit" className='rounded-5 px-5 w-50 text-center py-2'>Send Message</Button>
+                                    <Button type="submit" className='rounded-5 px-5 w-75 text-center py-2'>Send Message</Button>
                                 </Col>
                             </Row>
                         </Form>
