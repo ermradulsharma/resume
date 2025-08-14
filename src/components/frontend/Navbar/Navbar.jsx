@@ -2,18 +2,17 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
-import logo from '../../../assets/mradulsharma.jpeg';
+import logo from '../../../assets/logo.png';
 import { useLocation } from 'react-router-dom';
 
 function NavBar() {
     const location = useLocation();
-    const isActive = (path) => location.pathname === path ? 'active text-success fw-medium fs-6' : 'text-white fw-medium fs-6';
+    const isActive = (path) => location.pathname === path ? 'active text-success fw-bold fs-6' : 'text-dark fw-bold fs-6';
     return (
-        <Navbar sticky="top" expand="lg" collapseOnSelect bg="dark" className='p-3' data-bs-theme="dark">
+        <Navbar sticky="top" expand="lg" collapseOnSelect bg="light" className='p-3' data-bs-theme="light">
             <Container>
-                <Navbar.Brand href="/">
-                    <img alt="" src={logo} width="45" height="45" className="d-inline-block align-center rounded-circle" />{' '}
-                    Mradul Sharma
+                <Navbar.Brand href="/" className='p-0 m-0'>
+                    <img alt="" src={logo} height={45} />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
