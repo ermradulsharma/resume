@@ -6,7 +6,7 @@ import data from "../../../components/database/portfolio.json";
 const TechBadges = ({ items }) => (
     <div className="d-flex flex-wrap gap-2 mt-2">
         {items.map((t) => (
-            <Badge key={t} bg="secondary" className="fw-normal">
+            <Badge key={t} bg="success-subtle" text="dark" className="fw-normal">
                 {t}
             </Badge>
         ))}
@@ -44,24 +44,26 @@ export default function Portfolio() {
                         {["All", "Laravel", "Bootstrap", "JavaScript", "JQuery", "Mautic"].map((btn) => (<Button key={btn} variant={filter === btn ? "primary" : "outline-secondary"} size="sm" onClick={() => setFilter(btn)}>{btn}</Button>))}
                     </div>
                 </header>
-                <Row xs={1} md={2} lg={4} className="g-4">
+                <Row xs={1} md={2} lg={4} className="g-4 portfolio-project">
                     {filteredProjects.map((p, index) => (
                         <Col key={index}>
                             <Card className="h-100 shadow-sm border-0 project-card p-0">
                                 <div className="ratio ratio-21x9 overflow-hidden rounded-top">
-                                    <Card.Img src={require(`../../../assets/projects/${p.image}`)} alt={p.title} className="object-fit-cover" />
+                                    <Card.Img src={require(`../../../assets/projects/${p.image}`)} alt={p.title} className="object-fit-cover rounded-0" />
                                 </div>
                                 <Card.Body>
                                     <div className="d-flex justify-content-between align-items-start">
                                         <Card.Title className="fs-6 fw-semibold mb-1 my-min-height-38">{p.title}</Card.Title>
-                                        <Badge bg="light" text="dark">{p.period}</Badge>
+                                        <Badge bg="info" text="light">{p.period}</Badge>
                                     </div>
                                     <Card.Text className="text-muted mb-2">{truncateText(p.description, 155)}</Card.Text>
                                     <TechBadges items={p.technologies} />
                                 </Card.Body>
-                                <Card.Footer className="bg-white border-0 pt-0 pb-3 px-3">
-                                    <div className="d-flex gap-2">
+                                <Card.Footer className="border-0">
+                                    <div className="d-flex align-items-center justify-content-between">
                                         <Button as="a" href={p.link} target="_blank" rel="noreferrer" variant="primary" size="sm">Live Demo</Button>
+                                        <Button as="a" href={p.link} target="_blank" rel="noreferrer" variant="danger" size="sm">Case Study</Button>
+                                        <Button as="a" href={p.link} target="_blank" rel="noreferrer" variant="success" size="sm">Gallary</Button>
                                     </div>
                                 </Card.Footer>
                             </Card>

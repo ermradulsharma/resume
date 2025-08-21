@@ -19,5 +19,13 @@
 
 .my-min-height-38 {
     min-height: 38px;
-    /* Or 38rem, etc. */
+}
+
+.portfolio-project .card-body,
+.portfolio-project .card-footer {
+    background: color-mix(in srgb, var(--accent-color), #0000 94%);
+}
+
+.portfolio-project .card-body .card-title {
+    color: var(--heading-color);
 }
