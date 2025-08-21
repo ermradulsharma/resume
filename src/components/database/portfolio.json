@@ -15,7 +15,8 @@
                 ],
                 "link": "https://paystubx.com/",
                 "image": "paystubx.png",
-                "category": "FULL STACK APPLICATION"
+                "category": "FULL STACK APPLICATION",
+                "period": "2025"
             },
             {
                 "title": "Storytellers (Content Management Platform)",
@@ -28,7 +29,8 @@
                 ],
                 "link": "#",
                 "image": "storytellers.png",
-                "category": "WEB APPLICATION"
+                "category": "WEB APPLICATION",
+                "period": "2025"
             },
             {
                 "title": "Wealth Mark (Cryptocurrency Trading Platform)",
@@ -41,7 +43,8 @@
                 ],
                 "link": "https://wealthmark.io/en",
                 "image": "wealthmark.png",
-                "category": "FULL STACK APPLICATION"
+                "category": "FULL STACK APPLICATION",
+                "period": "2025"
             },
             {
                 "title": "AFT (Agra Fort Taxi Service)",
@@ -55,7 +58,8 @@
                 ],
                 "link": "https://agraforttaxiservice.com",
                 "image": "aft.PNG",
-                "category": "FULL STACK APPLICATION"
+                "category": "FULL STACK APPLICATION",
+                "period": "2025"
             },
             {
                 "title": "GNganpati Logistic",
@@ -69,7 +73,8 @@
                 ],
                 "link": "https://gnganpatilogistic.com",
                 "image": "gnganpati.PNG",
-                "category": "FULL STACK APPLICATION"
+                "category": "FULL STACK APPLICATION",
+                "period": "2025"
             },
             {
                 "title": "Kefishine (E-commerce Trial & Shop Platform)",
@@ -84,7 +89,8 @@
                 ],
                 "link": "https://kefishine.com",
                 "image": "kefishine.PNG",
-                "category": "FULL STACK APPLICATION"
+                "category": "FULL STACK APPLICATION",
+                "period": "2025"
             },
             {
                 "title": "ZaibaInfo Tech (IT Company Website)",
@@ -99,7 +105,8 @@
                 ],
                 "link": "https://zaibainfotech.com",
                 "image": "zaibainfo.PNG",
-                "category": "FULL STACK APPLICATION"
+                "category": "FULL STACK APPLICATION",
+                "period": "2025"
             },
             {
                 "title": "Marketing Analytics Report Dashboard",
@@ -116,7 +123,8 @@
                 ],
                 "link": "#",
                 "image": "expedify.png",
-                "category": "MARKETING ANALYTICS PLATFORM"
+                "category": "MARKETING ANALYTICS PLATFORM",
+                "period": "2025"
             }
         ]
     }

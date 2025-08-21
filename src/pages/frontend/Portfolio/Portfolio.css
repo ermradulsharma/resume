@@ -1,0 +1,23 @@
+.portfolio-hero {
+    position: relative;
+    height: 50vh;
+    background: url('../../../assets/portfolio_section.png') 0% 0% /cover no-repeat;
+}
+
+.portfolio-hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.hero-content {
+    z-index: 2;
+}
+
+.my-min-height-38 {
+    min-height: 38px;
+    /* Or 38rem, etc. */
+}

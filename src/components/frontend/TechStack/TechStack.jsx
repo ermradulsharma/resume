@@ -3,6 +3,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import "../../../components/frontend/TechStack/TechStack.css";
 import data from "../../database/techStack.json";
 import TechStackCard from "./TechStackCard";
+// import DrilldownPolarChart from "./DrilldownPolarChart";
+// import DrilldownRadarChart from "./DrilldownRadarChart";
+
 const TechStack = () => {
     const techData = data.techStack.technology;
     const iconMap = {
@@ -40,8 +43,8 @@ const TechStack = () => {
                         <div className="skills-summary" data-aos="fade-left" data-aos-delay="200">
                             <h3>Professional Expertise</h3>
                             <p>Proven expertise in full-stack development, DevOps, cloud infrastructure, API design, and building scalable web applications using Laravel, React, and Node.js. Experienced in leading teams and delivering high-quality enterprise-grade solutions.</p>
-                            <div className="summary-stats">
-                                <div className="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                            <div className="summary-stats m-0 d-lg-block d-flex align-items-center gap-3">
+                                <div className="stat-item mb-lg-3" data-aos="zoom-in" data-aos-delay="300">
                                     <div className="stat-circle"><i className="bi bi-trophy"></i></div>
                                     <div className="stat-info">
                                         <span className="stat-number">5+</span>

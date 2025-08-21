@@ -68,8 +68,6 @@
 
 .services .service-item .icon i,
 .modal-title i {
-    /* font-size: 2.5rem; */
-    /* color: color-mix(in srgb, var(--accent-color), transparent 15%); */
     transition: all 0.3s ease-in-out;
     font-size: 28px;
     color: var(--accent-color);
