@@ -1,10 +1,6 @@
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-/* .about .profile-image-wrapper {
-    position: relative;
-} */
-
 .about .profile-image-wrapper .profile-image {
     position: relative;
     width: 280px;
@@ -21,7 +17,6 @@
     height: 100%;
     object-fit: cover;
     object-position: top;
-    /* transform: rotateY(180deg); */
 }
 
 @media (max-width: 768px) {
@@ -38,7 +33,6 @@
 .about .profile-image-wrapper .signature-section .signature {
     max-width: 100%;
     height: auto;
-    /* margin-bottom: 15px; */
     opacity: 0.8;
 }
 
@@ -65,12 +59,6 @@
     .about .about-content .intro h2 {
         font-size: 2rem;
         text-align: center;
-    }
-}
-
-@media (max-width: 768px) {
-    .about .about-content .intro p {
-        /* text-align: center; */
     }
 }
 
@@ -243,10 +231,4 @@
     background: var(--accent-color);
     color: var(--contrast-color);
     transform: translateY(-2px);
-}
-
-@media (max-width: 992px) {
-    .about .profile-image-wrapper {
-        /* margin-bottom: 40px; */
-    }
 }

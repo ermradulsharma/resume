@@ -2,7 +2,7 @@ import { Row, Col, Button, Container } from 'react-bootstrap';
 import logo from '../../../assets/mradulsharma.jpeg';
 import '../../frontend/HeroSection/HeroSection.css'
 import data from "../../database/localDB.json";
-import Type from '../../Home/Type';
+import Type from '../Type/Type';
 import SocialLinks from '../SocialLinks/SocialLinks';
 import { FaCode, FaDocker, FaLaravel, FaNodeJs, FaReact } from 'react-icons/fa';
 

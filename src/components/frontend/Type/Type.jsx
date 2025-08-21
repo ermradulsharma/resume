@@ -1,6 +1,6 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-import data from "../database/localDB.json"
+import data from "../../database/localDB.json"
 
 const Type = () => {
     const home = data.home;
