@@ -68,6 +68,15 @@
                 "location": "Etah, Uttar Pradesh",
                 "description": "Completed secondary education with distinction, with strong emphasis on mathematics and science."
             }
-        ]
+        ],
+        "achievements": {
+            "title": "Achievements",
+            "description": "Here are some of my notable achievements and recognitions.",
+            "list": [
+                "Team Lead for PayStubx Payroll System",
+                "Lead Developer for Storytellers CMS",
+                "Architected Wealth Mark Cryptocurrency Trading Platform"
+            ]
+        }
     }
 }
