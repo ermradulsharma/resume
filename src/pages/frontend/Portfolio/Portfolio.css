@@ -29,3 +29,25 @@
 .portfolio-project .card-body .card-title {
     color: var(--heading-color);
 }
+
+.project-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover .overlay {
+    opacity: 1;
+}
+
+table tbody tr td {
+    font-size: 1rem;
+    font-family: math;
+    line-height: 1;
+    color: color-mix(in srgb, var(--default-color), transparent 25%) !important;
+}

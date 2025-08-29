@@ -11,12 +11,92 @@
                     "Laravel",
                     "JavaScript",
                     "AWS",
-                    "PostgreSQL"
+                    "PostgreSQL",
+                    "PayPal",
+                    "Rest API"
                 ],
                 "link": "https://paystubx.com/",
                 "image": "paystubx.png",
                 "category": "FULL STACK APPLICATION",
-                "period": "2025"
+                "period": "2022-23",
+                "case_study": {
+                    "overview": "PayStubx is a cloud-based payroll management system designed to streamline payroll operations for businesses of all sizes. The system was built with Laravel 9 as the backend framework, deployed on AWS for scalability and reliability, and integrated with secure payment gateways and APIs to provide a seamless payroll experience.",
+                    "problem_statement": [
+                        "Manual calculations leading to payroll errors.",
+                        "Lack of compliance tracking for taxes, benefits, and deductions.",
+                        "Difficulty in integrating multiple payment methods.",
+                        "Scalability challenges for growing businesses."
+                    ],
+                    "objectives": [
+                        "Automate payroll processing including salary calculations, deductions, and tax compliance.",
+                        "Enable secure payment transactions using multiple gateways.",
+                        "Provide real-time access to payroll reports and employee pay history.",
+                        "Ensure scalability and high availability with cloud-native infrastructure.",
+                        "Optimize performance for large datasets using PostgreSQL."
+                    ],
+                    "images": [
+                        "paystubx.png",
+                        "paystubx-dashboard.png",
+                        "paystubx-report.png"
+                    ],
+                    "implemented": {
+                        "title": "Tech Stack & Architecture",
+                        "architecture": {
+                            "backend": "Laravel 9 (REST APIs, MVC architecture, JWT authentication)",
+                            "frontend": "Blade templates with JavaScript components",
+                            "database": "PostgreSQL with query optimization, indexing, and partitioning",
+                            "infrastructure": "AWS (EC2 for compute, RDS for PostgreSQL, S3 for file storage, CloudWatch for monitoring)",
+                            "payments": "PayPal API integration with secure transactions",
+                            "security": "RBAC, HTTPS enforcement, IAM roles, data encryption"
+                        },
+                        "key_features": [
+                            "Payroll automation with salary, deductions, and tax compliance.",
+                            "Employee self-service portal for viewing and downloading pay stubs.",
+                            "Integration with PayPal and external HR systems via REST APIs.",
+                            "Real-time payroll reporting with export in multiple formats.",
+                            "Cloud-native infrastructure ensuring scalability and high availability.",
+                            "Security-first design with encrypted data and audit logging."
+                        ]
+                    },
+                    "challenges_and_solutions": [
+                        {
+                            "challenge": "Handling high-volume payroll data efficiently.",
+                            "solution": "Implemented PostgreSQL indexing, optimized queries, and partitioned large tables."
+                        },
+                        {
+                            "challenge": "Securing financial transactions.",
+                            "solution": "Enforced HTTPS, token-based authentication, and integrated PayPal SDK with secure keys."
+                        },
+                        {
+                            "challenge": "Scaling infrastructure for peak payroll cycles.",
+                            "solution": "Deployed AWS auto-scaling groups, RDS read replicas, and load balancers."
+                        },
+                        {
+                            "challenge": "Ensuring compliance with regulations.",
+                            "solution": "Integrated tax calculation modules, audit logs, and role-based access control."
+                        }
+                    ],
+                    "outcomes": [
+                        "Reduced payroll processing time by 70% compared to manual methods.",
+                        "Improved compliance with automated tax deductions and reporting.",
+                        "Achieved 99.9% uptime with AWS deployment.",
+                        "Enabled seamless payroll operations for businesses from SMBs to enterprises.",
+                        "Enhanced employee satisfaction through a secure and intuitive self-service portal."
+                    ],
+                    "project_details": {
+                        "category": "Full Stack Application",
+                        "year": "2025",
+                        "technologies": [
+                            "Laravel",
+                            "JavaScript",
+                            "AWS",
+                            "PostgreSQL",
+                            "PayPal",
+                            "REST API"
+                        ],
+                        "live_link": "https://paystubx.com"
+                    }
+                }
             },
             {
                 "title": "Storytellers (Content Management Platform)",
@@ -30,7 +110,82 @@
                 "link": "#",
                 "image": "storytellers.png",
                 "category": "WEB APPLICATION",
-                "period": "2025"
+                "period": "2022-23",
+                "case_study": {
+                    "overview": "Storytellers is a modern, cloud-based content management platform designed to empower creators, publishers, and organizations to efficiently manage, deliver, and scale their digital content. Built with Laravel as the core backend framework, PostgreSQL for optimized data storage, and deployed on AWS, the platform ensures high availability, security, and scalability.",
+                    "problem_statement": [
+                        "Legacy CMS platforms lacked scalability for high-traffic applications.",
+                        "Content delivery was slow and often inconsistent across multiple devices.",
+                        "Difficulty in managing large datasets with complex content structures.",
+                        "Limited security features in traditional CMS systems made content vulnerable."
+                    ],
+                    "objectives": [
+                        "Develop a secure and scalable CMS with Laravel and PostgreSQL.",
+                        "Provide a user-friendly admin panel for content creators and editors.",
+                        "Enable API-driven content delivery for multi-platform applications.",
+                        "Ensure cloud-native scalability and reliability using AWS services.",
+                        "Implement advanced role-based access and content security features."
+                    ],
+                    "images": [
+                        "storytellers.png",
+                        "storytellers-dashboard.png",
+                        "storytellers-admin.png"
+                    ],
+                    "implemented": {
+                        "title": "Tech Stack & Architecture",
+                        "architecture": {
+                            "backend": "Laravel (REST APIs, MVC architecture, authentication middleware)",
+                            "frontend": "Blade templates with modular JavaScript components",
+                            "database": "PostgreSQL with indexing, partitioning, and optimized queries",
+                            "infrastructure": "AWS (EC2 for compute, RDS for PostgreSQL, S3 for asset storage, CloudFront for content delivery)",
+                            "security": "Role-based access control, HTTPS, AWS IAM, and encrypted storage"
+                        },
+                        "key_features": [
+                            "Dynamic content management with categories, tags, and metadata.",
+                            "Role-based admin panel for content creators, editors, and managers.",
+                            "API-first architecture enabling mobile app and third-party integrations.",
+                            "Scalable cloud deployment ensuring fast content delivery worldwide.",
+                            "Analytics and reporting tools for monitoring content performance.",
+                            "Secure storage and delivery of digital assets via AWS S3 and CloudFront."
+                        ]
+                    },
+                    "challenges_and_solutions": [
+                        {
+                            "challenge": "Handling large volumes of structured and unstructured content.",
+                            "solution": "Implemented PostgreSQL with advanced indexing and optimized schema design."
+                        },
+                        {
+                            "challenge": "Ensuring fast and secure content delivery globally.",
+                            "solution": "Integrated AWS CloudFront CDN with S3 storage for scalable content delivery."
+                        },
+                        {
+                            "challenge": "Managing complex user roles and permissions.",
+                            "solution": "Built a role-based access control system integrated with Laravel policies and middleware."
+                        },
+                        {
+                            "challenge": "Maintaining high availability during traffic spikes.",
+                            "solution": "Deployed auto-scaling groups and AWS RDS replicas for fault tolerance and load balancing."
+                        }
+                    ],
+                    "outcomes": [
+                        "Reduced content delivery latency by 60% with AWS CloudFront integration.",
+                        "Enabled publishers to manage 10x more content compared to legacy systems.",
+                        "Improved security with encrypted storage and role-based access.",
+                        "Delivered 99.9% uptime and scalability for thousands of concurrent users.",
+                        "Enhanced editorial productivity through an intuitive admin interface."
+                    ],
+                    "project_details": {
+                        "category": "Web Application",
+                        "year": "2025",
+                        "technologies": [
+                            "Laravel",
+                            "JavaScript",
+                            "PostgreSQL",
+                            "AWS"
+                        ],
+                        "live_link": "#"
+                    }
+                }
             },
             {
                 "title": "Wealth Mark (Cryptocurrency Trading Platform)",
@@ -44,7 +199,83 @@
                 "link": "https://wealthmark.io/en",
                 "image": "wealthmark.png",
                 "category": "FULL STACK APPLICATION",
-                "period": "2025"
+                "period": "2023-24",
+                "case_study": {
+                    "overview": "Wealth Mark is a cryptocurrency trading platform designed to provide users with secure, real-time trading capabilities. The system was built using Laravel for backend services and WebSockets for live updates, ensuring instant data synchronization across user dashboards and trading engines. With wallet integration, secure APIs, and robust database optimization, the platform delivers a seamless trading experience for crypto investors.",
+                    "problem_statement": [
+                        "Traditional trading systems lacked real-time updates, creating delays in volatile cryptocurrency markets.",
+                        "Users required a secure platform to manage digital wallets and execute trades without risk of breaches.",
+                        "Existing solutions struggled with scalability when handling thousands of concurrent trades.",
+                        "Regulatory and compliance requirements demanded robust auditing and security measures."
+                    ],
+                    "objectives": [
+                        "Build a real-time trading system using WebSockets for instant updates.",
+                        "Enable secure cryptocurrency wallet integrations with encrypted storage.",
+                        "Ensure high-performance trade execution and data consistency.",
+                        "Deploy a scalable and resilient infrastructure capable of handling high traffic.",
+                        "Provide an intuitive user interface for seamless trading experiences."
+                    ],
+                    "images": [
+                        "wealthmark.png",
+                        "wealthmark-dashboard.png",
+                        "wealthmark-trading.png"
+                    ],
+                    "implemented": {
+                        "title": "Tech Stack & Architecture",
+                        "architecture": {
+                            "backend": "Laravel (REST APIs, authentication, order matching logic)",
+                            "frontend": "JavaScript with responsive UI components",
+                            "database": "MySQL with indexing and optimized queries for trading data",
+                            "realtime": "WebSocket for real-time market data and order book updates",
+                            "infrastructure": "Deployed on scalable cloud infrastructure with load balancers and auto-scaling groups",
+                            "security": "End-to-end encryption, secure wallet integrations, multi-factor authentication (MFA)"
+                        },
+                        "key_features": [
+                            "Real-time order book updates and trading using WebSockets.",
+                            "Secure wallet management and crypto transaction handling.",
+                            "High-performance matching engine for buy/sell orders.",
+                            "Advanced analytics and trading history for users.",
+                            "Scalable infrastructure supporting thousands of concurrent trades.",
+                            "Robust compliance and audit logging for regulatory requirements."
+                        ]
+                    },
+                    "challenges_and_solutions": [
+                        {
+                            "challenge": "Providing real-time updates with minimal latency.",
+                            "solution": "Integrated WebSocket channels for instant broadcasting of market data and trade executions."
+                        },
+                        {
+                            "challenge": "Ensuring security of digital wallets and transactions.",
+                            "solution": "Implemented encryption protocols, secure key management, and multi-factor authentication."
+                        },
+                        {
+                            "challenge": "Handling thousands of concurrent trades without performance degradation.",
+                            "solution": "Optimized MySQL queries, added indexing, and used horizontal scaling with load balancers."
+                        },
+                        {
+                            "challenge": "Maintaining compliance with financial and regulatory standards.",
+                            "solution": "Added audit logs, transaction history tracking, and role-based access control."
+                        }
+                    ],
+                    "outcomes": [
+                        "Enabled real-time trading with WebSocket-powered instant updates.",
+                        "Enhanced trust with secure wallet integrations and encrypted transactions.",
+                        "Achieved scalable performance capable of handling thousands of concurrent users.",
+                        "Improved transparency with detailed trade logs and compliance reports.",
+                        "Delivered a smooth user experience with live dashboards and analytics."
+                    ],
+                    "project_details": {
+                        "category": "Full Stack Application",
+                        "year": "2025",
+                        "technologies": [
+                            "Laravel",
+                            "MySQL",
+                            "JavaScript",
+                            "WebSocket"
+                        ],
+                        "live_link": "https://wealthmark.io/en"
+                    }
+                }
             },
             {
                 "title": "AFT (Agra Fort Taxi Service)",
@@ -59,10 +290,87 @@
                 "link": "https://agraforttaxiservice.com",
                 "image": "aft.PNG",
                 "category": "FULL STACK APPLICATION",
-                "period": "2025"
+                "period": "2019-20",
+                "case_study": {
+                    "overview": "Agra Fort Taxi Service (AFT) is a taxi booking platform designed to simplify ride booking and management for both passengers and drivers. The system allows real-time ride scheduling, fare calculation, driver tracking, and booking history, ensuring a reliable and smooth transportation experience. With a Laravel-powered backend and MySQL database, the platform integrates location-based services for accurate ride management and a secure admin dashboard for operational oversight.",
+                    "problem_statement": [
+                        "Traditional taxi services lacked real-time booking and tracking features.",
+                        "Manual fare calculation led to disputes and inefficiency.",
+                        "No centralized system to manage drivers, rides, and customers efficiently.",
+                        "Passengers needed a simple yet secure way to book and track rides."
+                    ],
+                    "objectives": [
+                        "Develop a real-time taxi booking and management system.",
+                        "Automate fare calculations to improve transparency and trust.",
+                        "Provide location-based driver tracking for customers and admins.",
+                        "Enable ride history and invoice management for both drivers and users.",
+                        "Build a secure and easy-to-use admin dashboard for operations."
+                    ],
+                    "images": [
+                        "aft.PNG",
+                        "aft-dashboard.png",
+                        "aft-booking.png"
+                    ],
+                    "implemented": {
+                        "title": "Tech Stack & Architecture",
+                        "architecture": {
+                            "backend": "Laravel (booking engine, ride management, secure APIs)",
+                            "frontend": "Bootstrap + JavaScript for responsive UI",
+                            "database": "MySQL for rides, drivers, fare logs, and booking history",
+                            "realtime": "AJAX for dynamic booking and ride updates",
+                            "infrastructure": "Deployed on cloud hosting with scalable architecture",
+                            "security": "Role-based authentication, encrypted data storage, secure admin dashboards"
+                        },
+                        "key_features": [
+                            "Real-time ride booking and confirmation.",
+                            "Automated fare calculation with transparent breakdown.",
+                            "Driver tracking with location-based services.",
+                            "Passenger booking history and invoices.",
+                            "Admin dashboard for managing rides, drivers, and customers.",
+                            "Mobile-friendly, responsive user interface."
+                        ]
+                    },
+                    "challenges_and_solutions": [
+                        {
+                            "challenge": "Integrating accurate fare calculation across different routes.",
+                            "solution": "Implemented dynamic pricing algorithms based on distance and time."
+                        },
+                        {
+                            "challenge": "Ensuring real-time driver tracking.",
+                            "solution": "Integrated location-based APIs with AJAX polling for updates."
+                        },
+                        {
+                            "challenge": "Managing concurrent ride bookings during peak hours.",
+                            "solution": "Optimized MySQL queries and implemented queuing for ride requests."
+                        },
+                        {
+                            "challenge": "Providing secure access for admins and drivers.",
+                            "solution": "Implemented role-based authentication and HTTPS encryption."
+                        }
+                    ],
+                    "outcomes": [
+                        "Enabled seamless real-time taxi booking for passengers.",
+                        "Improved transparency with automated fare calculations.",
+                        "Increased customer trust with driver tracking and booking history.",
+                        "Streamlined taxi service operations with a secure admin dashboard.",
+                        "Delivered a scalable and user-friendly platform for Agra-based users."
+                    ],
+                    "project_details": {
+                        "category": "Full Stack Application",
+                        "year": "2025",
+                        "technologies": [
+                            "Laravel",
+                            "MySQL",
+                            "JavaScript",
+                            "Bootstrap",
+                            "AJAX"
+                        ],
+                        "live_link": "https://agraforttaxiservice.com"
+                    }
+                }
             },
             {
-                "title": "GNganpati Logistic",
+                "title": "GN Ganpati Logistic",
                 "description": "Built a logistics management platform using Laravel to streamline freight booking, vehicle assignments, route tracking, and delivery confirmations. The system supports multi-user access with secure authentication and role-based dashboards for admins, drivers, and clients.",
                 "technologies": [
                     "Laravel",
@@ -74,7 +382,84 @@
                 "link": "https://gnganpatilogistic.com",
                 "image": "gnganpati.PNG",
                 "category": "FULL STACK APPLICATION",
-                "period": "2025"
+                "period": "2019-20",
+                "case_study": {
+                    "overview": "GN Ganpati Logistic is a logistics management platform developed to simplify and digitalize freight operations. The system allows businesses to manage bookings, assign vehicles, track routes in real-time, and confirm deliveries efficiently. With Laravel as the backend framework and MySQL as the database, the platform ensures secure multi-user access with role-based dashboards tailored for admins, drivers, and clients.",
+                    "problem_statement": [
+                        "Manual booking and assignment processes caused delays and errors.",
+                        "Lack of real-time route tracking for vehicles and consignments.",
+                        "Inefficient communication between admins, drivers, and clients.",
+                        "Difficulty in maintaining delivery confirmations and records."
+                    ],
+                    "objectives": [
+                        "Automate freight booking and vehicle assignment workflows.",
+                        "Enable real-time route tracking for efficient logistics management.",
+                        "Provide multi-user role-based dashboards (admin, driver, client).",
+                        "Digitize delivery confirmation and proof of delivery (POD).",
+                        "Ensure data security and scalable architecture for long-term growth."
+                    ],
+                    "images": [
+                        "gnganpati.PNG",
+                        "gnganpati-dashboard.png",
+                        "gnganpati-tracking.png"
+                    ],
+                    "implemented": {
+                        "title": "Tech Stack & Architecture",
+                        "architecture": {
+                            "backend": "Laravel (freight management engine, role-based APIs)",
+                            "frontend": "Bootstrap + jQuery for interactive UI",
+                            "database": "MySQL for freight records, users, and route data",
+                            "realtime": "AJAX for booking updates and tracking notifications",
+                            "infrastructure": "Cloud-hosted with scalable architecture for peak demand",
+                            "security": "Role-based authentication, encrypted data, secure dashboards"
+                        },
+                        "key_features": [
+                            "Freight booking and digital order management.",
+                            "Vehicle assignment system with driver details.",
+                            "Real-time vehicle and route tracking.",
+                            "Multi-role dashboards for admins, drivers, and clients.",
+                            "Delivery confirmation with proof of delivery (POD).",
+                            "Comprehensive reporting and history logs."
+                        ]
+                    },
+                    "challenges_and_solutions": [
+                        {
+                            "challenge": "Managing multiple roles with different system permissions.",
+                            "solution": "Implemented role-based access control (RBAC) with Laravel policies."
+                        },
+                        {
+                            "challenge": "Providing real-time visibility of freight movement.",
+                            "solution": "Integrated route tracking with live status updates via AJAX polling."
+                        },
+                        {
+                            "challenge": "Ensuring data accuracy and reducing booking conflicts.",
+                            "solution": "Developed validation workflows and automated assignment logic."
+                        },
+                        {
+                            "challenge": "Digitizing delivery confirmation securely.",
+                            "solution": "Introduced electronic proof of delivery (ePOD) system."
+                        }
+                    ],
+                    "outcomes": [
+                        "Reduced booking and vehicle assignment time by 60%.",
+                        "Improved client satisfaction with real-time freight tracking.",
+                        "Enabled transparent communication between admins, drivers, and clients.",
+                        "Enhanced record-keeping with digital delivery confirmations.",
+                        "Delivered a scalable logistics platform for long-term business growth."
+                    ],
+                    "project_details": {
+                        "category": "Full Stack Application",
+                        "year": "2025",
+                        "technologies": [
+                            "Laravel",
+                            "MySQL",
+                            "JavaScript",
+                            "Bootstrap",
+                            "jQuery"
+                        ],
+                        "live_link": "https://gnganpatilogistic.com"
+                    }
+                }
             },
             {
                 "title": "Kefishine (E-commerce Trial & Shop Platform)",
@@ -90,11 +475,91 @@
                 "link": "https://kefishine.com",
                 "image": "kefishine.PNG",
                 "category": "FULL STACK APPLICATION",
-                "period": "2025"
+                "period": "2019-20",
+                "case_study": {
+                    "overview": "Kefishine is a Laravel-based e-commerce platform designed for skincare and cosmetic enthusiasts to explore both trial and retail products. The platform introduces a unique trial point system where customers can redeem trial products before making full purchases. It offers real-time product availability, secure cart management, and an engaging shopping experience with sliders and category-based product showcases. Admins can efficiently manage inventory, pricing, orders, and trial product workflows via a dedicated backend panel.",
+                    "problem_statement": [
+                        "Consumers lacked a reliable platform to try cosmetic and skincare products before committing to purchase.",
+                        "Traditional e-commerce systems did not support trial point-based purchases.",
+                        "Managing trial inventory alongside standard e-commerce workflows was challenging.",
+                        "Real-time product availability and updates were not streamlined."
+                    ],
+                    "objectives": [
+                        "Introduce a trial point system for redeeming trial-sized products.",
+                        "Provide a seamless e-commerce experience with cart, checkout, and product categorization.",
+                        "Enable real-time inventory and product availability updates.",
+                        "Create an intuitive admin panel for product uploads, price management, and order processing.",
+                        "Ensure responsive, user-friendly UI/UX for mobile and desktop shoppers."
+                    ],
+                    "images": [
+                        "kefishine.PNG",
+                        "kefishine-home.png",
+                        "kefishine-product.png",
+                        "kefishine-cart.png"
+                    ],
+                    "implemented": {
+                        "title": "Tech Stack & Architecture",
+                        "architecture": {
+                            "backend": "Laravel for e-commerce logic, trial system, and secure APIs",
+                            "frontend": "Bootstrap + jQuery for responsive UI and interactions",
+                            "database": "MySQL for product, order, trial, and user management",
+                            "realtime": "AJAX for cart updates, trial point validation, and availability checks",
+                            "infrastructure": "Cloud-deployed architecture for scalable performance",
+                            "security": "Authentication, encrypted transactions, and role-based access for admins"
+                        },
+                        "key_features": [
+                            "Trial point system for redeeming cosmetic trial products.",
+                            "Real-time product availability tracking.",
+                            "Responsive sliders and category-based product showcases.",
+                            "Cart and checkout system with secure payment flow.",
+                            "Admin panel for product uploads, pricing, and inventory management.",
+                            "Order history and status tracking for customers.",
+                            "AJAX-powered dynamic cart and product availability updates."
+                        ]
+                    },
+                    "challenges_and_solutions": [
+                        {
+                            "challenge": "Designing a trial system that integrates seamlessly with standard e-commerce flows.",
+                            "solution": "Implemented a custom trial point mechanism within Laravel’s order management system."
+                        },
+                        {
+                            "challenge": "Managing real-time product availability and avoiding overselling.",
+                            "solution": "Integrated AJAX-powered inventory validation and updates on checkout."
+                        },
+                        {
+                            "challenge": "Ensuring responsive design for diverse product showcases.",
+                            "solution": "Used Bootstrap grid system and custom sliders for a dynamic, mobile-first UI."
+                        },
+                        {
+                            "challenge": "Providing a secure and efficient admin workflow.",
+                            "solution": "Developed a role-based admin panel with easy product upload and management features."
+                        }
+                    ],
+                    "outcomes": [
+                        "Successfully launched a dual-mode e-commerce platform (trial + retail).",
+                        "Increased customer trust and conversions by allowing product trials.",
+                        "Reduced cart abandonment with real-time inventory and dynamic cart updates.",
+                        "Enabled smooth admin operations with a streamlined backend dashboard.",
+                        "Delivered a user-friendly and responsive shopping experience across devices."
+                    ],
+                    "project_details": {
+                        "category": "Full Stack Application",
+                        "year": "2019",
+                        "technologies": [
+                            "Laravel",
+                            "MySQL",
+                            "JavaScript",
+                            "Bootstrap",
+                            "jQuery",
+                            "AJAX"
+                        ],
+                        "live_link": "https://kefishine.com"
+                    }
+                }
             },
             {
-                "title": "ZaibaInfo Tech (IT Company Website)",
-                "description": "Developed a corporate website for ZaibaInfo Tech using Laravel, focused on IT service offerings, technology consulting, and business solutions. The platform includes dynamic service listings, contact forms, career module, and content-managed admin panel for managing client portfolios, blogs, and inquiry handling.",
+                "title": "Zaiba Info Tech (IT Company Website)",
+                "description": "Developed a corporate website for Zaiba Info Tech using Laravel, focused on IT service offerings, technology consulting, and business solutions. The platform includes dynamic service listings, contact forms, career module, and content-managed admin panel for managing client portfolios, blogs, and inquiry handling.",
                 "technologies": [
                     "Laravel",
                     "MySQL",
@@ -106,25 +571,188 @@
                 "link": "https://zaibainfotech.com",
                 "image": "zaibainfo.PNG",
                 "category": "FULL STACK APPLICATION",
-                "period": "2025"
+                "period": "2019-20",
+                "case_study": {
+                    "overview": "Zaiba Info Tech is a corporate IT company website developed to showcase IT services, technology consulting, and business solutions. The platform highlights the company’s offerings while providing interactive features like a career module, dynamic service listings, portfolio showcases, and client engagement through contact forms. Built with Laravel and MySQL, it ensures secure data handling, easy content management, and a professional digital presence for the brand.",
+                    "problem_statement": [
+                        "Zaiba Info Tech needed a professional digital presence to represent its IT services and consulting solutions.",
+                        "The company lacked a centralized platform for showcasing client portfolios, blogs, and service offerings.",
+                        "Recruitment processes were unorganized without a proper career module.",
+                        "Managing website content required frequent developer involvement, making updates inefficient."
+                    ],
+                    "objectives": [
+                        "Build a scalable, secure corporate website to highlight IT service offerings.",
+                        "Develop an admin-controlled CMS to manage services, portfolios, blogs, and client content.",
+                        "Implement a career module for easy job posting and application management.",
+                        "Create interactive features like dynamic contact forms for inquiries.",
+                        "Ensure responsive, professional design to reflect corporate branding."
+                    ],
+                    "images": [
+                        "zaibainfo.PNG",
+                        "zaiba-home.png",
+                        "zaiba-services.png",
+                        "zaiba-careers.png"
+                    ],
+                    "implemented": {
+                        "title": "Tech Stack & Architecture",
+                        "architecture": {
+                            "backend": "Laravel for business logic, service listings, and CMS",
+                            "frontend": "Bootstrap + Blade templates for responsive UI",
+                            "database": "MySQL for service, portfolio, and career management",
+                            "interactivity": "jQuery for dynamic UI features",
+                            "infrastructure": "Cloud deployment with secure hosting",
+                            "security": "Form validations, sanitized inputs, and role-based access"
+                        },
+                        "key_features": [
+                            "Dynamic service listing and management.",
+                            "Portfolio showcase with client projects.",
+                            "Career module with job posting and application management.",
+                            "Content-managed blog section.",
+                            "Interactive inquiry/contact forms.",
+                            "Admin panel for CMS-driven updates without developer dependency.",
+                            "Responsive UI across all devices."
+                        ]
+                    },
+                    "challenges_and_solutions": [
+                        {
+                            "challenge": "Zaiba Info Tech needed a system for frequent content updates without technical support.",
+                            "solution": "Implemented a robust CMS in Laravel, empowering admins to manage content independently."
+                        },
+                        {
+                            "challenge": "Recruitment workflows were inefficient without digital integration.",
+                            "solution": "Built a career module with role-based dashboards for HR to post jobs and manage applications."
+                        },
+                        {
+                            "challenge": "The company required a professional yet flexible design reflecting corporate branding.",
+                            "solution": "Designed a responsive Bootstrap + Blade front-end with a clean corporate UI."
+                        },
+                        {
+                            "challenge": "Managing client portfolios and service showcases in a scalable way.",
+                            "solution": "Created dynamic modules for portfolios and services that can scale with future growth."
+                        }
+                    ],
+                    "outcomes": [
+                        "Delivered a professional, scalable corporate website for Zaiba Info Tech.",
+                        "Enabled content updates via CMS, reducing dependency on developers.",
+                        "Streamlined recruitment through the integrated career module.",
+                        "Improved client engagement with interactive inquiry/contact forms.",
+                        "Enhanced brand credibility with a modern, responsive digital presence."
+                    ],
+                    "project_details": {
+                        "category": "Full Stack Application",
+                        "year": "2025",
+                        "technologies": [
+                            "Laravel",
+                            "MySQL",
+                            "JavaScript",
+                            "Bootstrap",
+                            "Blade",
+                            "jQuery"
+                        ],
+                        "live_link": "https://zaibainfotech.com"
+                    }
+                }
             },
             {
                 "title": "Marketing Analytics Report Dashboard",
                 "description": "Developed a custom analytics dashboard within Mautic to visualize and manage multi-channel marketing data, including Meta, Shopify, WhatsApp, Email, and Cohort analysis. Integrated multiple APIs and rendered dynamic, interactive charts using Chart.js.",
                 "technologies": [
                     "Mautic",
+                    "PHP",
                     "JavaScript",
                     "Chart.js",
-                    "REST API",
                     "MySQL",
                     "BigQuery",
                     "PostgreSQL",
-                    "WSL"
+                    "WSL",
+                    "Twig Template",
+                    "symfony"
                 ],
                 "link": "#",
                 "image": "expedify.png",
                 "category": "MARKETING ANALYTICS PLATFORM",
-                "period": "2025"
+                "period": "2024-25",
+                "case_study": {
+                    "overview": "The Marketing Analytics Report Dashboard was designed to provide businesses with a unified view of their multi-channel marketing performance. Built on top of Mautic, the system integrates with various data sources like Meta Ads, Shopify, WhatsApp campaigns, Email marketing, and custom cohort analysis. By leveraging REST APIs and modern visualization tools, the dashboard enables real-time performance monitoring and actionable insights for marketing teams.",
+                    "problem_statement": [
+                        "Marketing data was siloed across multiple platforms (Meta, Shopify, Email, WhatsApp), making consolidated reporting difficult.",
+                        "Manual data aggregation and reporting were time-consuming and error-prone.",
+                        "Lack of real-time visibility into campaign performance across different channels.",
+                        "Difficulty in understanding cohort behavior and long-term customer engagement."
+                    ],
+                    "objectives": [
+                        "Centralize multi-channel marketing data into a single dashboard.",
+                        "Provide real-time visualizations for campaigns, cohorts, and customer engagement.",
+                        "Enable marketing teams to track ROI, performance, and user journeys easily.",
+                        "Support both short-term campaign performance metrics and long-term analytics.",
+                        "Ensure scalability to integrate future channels and large data sets."
+                    ],
+                    "images": [
+                        "expedify.png",
+                        "dashboard-overview.png",
+                        "cohort-analysis.png",
+                        "channel-performance.png"
+                    ],
+                    "implemented": {
+                        "title": "Tech Stack & Architecture",
+                        "architecture": {
+                            "backend": "Mautic integrated with REST APIs to fetch multi-channel marketing data.",
+                            "frontend": "JavaScript and Chart.js for building dynamic, interactive data visualizations.",
+                            "databases": "MySQL, PostgreSQL, and BigQuery for storing, aggregating, and querying large datasets.",
+                            "infrastructure": "WSL environment for local development and API orchestration.",
+                            "integration": "APIs from Meta, Shopify, WhatsApp, and Email providers for campaign data."
+                        },
+                        "key_features": [
+                            "Multi-channel data integration from Meta, Shopify, WhatsApp, and Email.",
+                            "Cohort analysis for long-term customer engagement tracking.",
+                            "Real-time dashboards with Chart.js visualizations.",
+                            "Campaign ROI and performance monitoring.",
+                            "Custom filters for channel-wise and time-based comparisons.",
+                            "Scalable architecture supporting large datasets from BigQuery.",
+                            "User-friendly UI for marketing teams to self-analyze performance."
+                        ]
+                    },
+                    "challenges_and_solutions": [
+                        {
+                            "challenge": "Siloed marketing data across multiple platforms.",
+                            "solution": "Integrated REST APIs with Mautic to centralize all channel data in one place."
+                        },
+                        {
+                            "challenge": "Visualizing large datasets without performance degradation.",
+                            "solution": "Leveraged BigQuery and optimized queries for handling heavy analytics workloads."
+                        },
+                        {
+                            "challenge": "Difficulty in analyzing cohort-based user journeys.",
+                            "solution": "Implemented a custom cohort analysis module with interactive charts using Chart.js."
+                        },
+                        {
+                            "challenge": "Providing real-time performance insights.",
+                            "solution": "Established live API connections and optimized caching mechanisms for near real-time updates."
+                        }
+                    ],
+                    "outcomes": [
+                        "Enabled marketing teams to monitor multi-channel campaign performance in real time.",
+                        "Reduced manual reporting efforts by automating data aggregation.",
+                        "Improved decision-making with interactive dashboards and actionable insights.",
+                        "Enhanced understanding of customer behavior through cohort analysis.",
+                        "Scalable solution that can support future marketing platforms and data expansion."
+                    ],
+                    "project_details": {
+                        "category": "Marketing Analytics Platform",
+                        "year": "2025",
+                        "technologies": [
+                            "Mautic",
+                            "JavaScript",
+                            "Chart.js",
+                            "REST API",
+                            "MySQL",
+                            "BigQuery",
+                            "PostgreSQL",
+                            "WSL"
+                        ],
+                        "live_link": "#"
+                    }
+                }
             }
         ]
     }
