@@ -3,6 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![React Version](https://img.shields.io/badge/React-19.1.0-blue.svg)](https://reactjs.org/)
 [![Figma](https://img.shields.io/badge/Figma-Design-blue?logo=figma)](https://www.figma.com/)
+[![Deploy on Vercel](https://img.shields.io/badge/Deploy-Vercel-black?logo=vercel)](https://vercel.com)
 
 A modern, responsive portfolio template built with **React**, **Bootstrap**, and modern web technologies — designed to professionally showcase your work, skills, and contact information.
 
@@ -23,20 +24,38 @@ A modern, responsive portfolio template built with **React**, **Bootstrap**, and
 
 ## 📚 Table of Contents
 
-- [Demo](#-demo)
-- [Features](#-features)
-- [Installation](#-installation)
-- [Usage](#-usage)
-- [Contributing](#-contributing)
-- [Contributors](#-contributors)
-- [License](#-license)
-- [Contact](#-contact)
+- [🚀 Demo](#-demo)  
+- [👀 Preview](#-preview)  
+- [✅ Features](#-features)  
+- [🛠 Tech Stack](#-tech-stack)  
+- [🧩 Installation](#-installation)  
+  - [Prerequisites](#prerequisites)  
+  - [Setup](#setup)  
+- [💻 Usage](#-usage)  
+- [📂 Folder Structure](#-folder-structure)  
+- [⚙️ Configuration](#️-configuration)  
+- [🎨 Theming](#-theming)  
+- [🚀 Deployment](#-deployment)  
+  - [Deploy on Vercel](#deploy-on-vercel)  
+  - [Deploy on Other Platforms](#deploy-on-other-platforms)  
+- [🤝 Contributing](#-contributing)  
+- [👨‍💻 Contributors](#-contributors)  
+- [📜 License](#-license)  
+- [📬 Contact](#-contact)  
 
 ---
 
 ## 🚀 Demo
 
-Live Demo 👉 [mradulsharma.vercel.app](https://mradulsharma.vercel.app/)
+👉 Live Demo: [mradulsharma.vercel.app](https://mradulsharma.vercel.app/)
+
+---
+
+## 👀 Preview
+
+Here’s how the portfolio looks in action:
+
+![Preview](https://github.com/user-attachments/assets/f873090b-7475-4687-8f82-34c9d05e4527)
 
 ---
 
@@ -45,10 +64,21 @@ Live Demo 👉 [mradulsharma.vercel.app](https://mradulsharma.vercel.app/)
 - Fully **responsive** layout across devices
 - **Modern & clean UI** with smooth animations
 - **Dark/Light mode** support
-- Interactive **project showcase** section
+- Interactive **project showcase**
 - Dedicated **About, Resume, and Contact** pages
 - Integrated **social media links**
-- Figma-based **design-to-code** workflow
+- **Figma-based** design-to-code workflow
+
+---
+
+## 🛠 Tech Stack
+
+- **React 19.1.0** – Frontend framework
+- **Bootstrap 5** – Responsive UI components
+- **React Router** – Routing
+- **React Bootstrap** – UI integration
+- **Vercel** – Deployment & Hosting
+- **Figma** – UI/UX design
 
 ---
 
@@ -57,6 +87,7 @@ Live Demo 👉 [mradulsharma.vercel.app](https://mradulsharma.vercel.app/)
 ### Prerequisites
 
 - Node.js ≥ v18.x
+- npm ≥ v9.x (or yarn/pnpm)
 - A modern browser (Chrome, Firefox, Safari)
 
 ### Setup
