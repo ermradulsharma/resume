@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Container, Card, Button, Badge, Modal, Pagination } from "react-bootstrap";
 import "../../frontend/Portfolio/Portfolio.css";
 import data from "../../../components/database/portfolio.json";
+import LetsConnect from "../../../components/LetsConnect";
 
 const TechBadges = ({ items }) => (
     <div className="d-flex flex-wrap gap-2 mt-2">
@@ -62,8 +63,8 @@ export default function Portfolio() {
             <Container className="pb-5">
                 {/* Filters */}
                 <header className="d-flex flex-column flex-md-row align-items-md-center justify-content-end mb-4 gap-2">
-                    <div className="d-flex gap-2 flex-wrap">
-                        {["All", "PHP", "Laravel", "CodeIgniter", "Vue.js", "React.js", "Next.js", "Mautic"].map((btn) => (<Button key={btn} variant={filter === btn ? "primary" : "outline-secondary"} size="sm" onClick={() => setFilter(btn)}>{btn}</Button>))}
+                    <div className="d-flex gap-1 flex-wrap">
+                        {["All", "PHP", "Laravel", "CodeIgniter", "Vue.js", "React.js", "Next.js", "Mautic"].map((btn) => (<Button key={btn} variant={filter === btn ? "success" : "outline-success"} size="sm" style={{ minWidth: "100px" }} onClick={() => setFilter(btn)}>{btn}</Button>))}
                     </div>
                 </header>
 
@@ -131,11 +132,7 @@ export default function Portfolio() {
                     {activeProject?.case_study?.problem_statement?.length > 0 && (
                         <>
                             <h6 className="fw-bold mt-3">Problem Statement</h6>
-                            <ul>
-                                {activeProject.case_study.problem_statement.map((problem, idx) => (
-                                    <li key={idx}>{problem}</li>
-                                ))}
-                            </ul>
+                            <ul>{activeProject.case_study.problem_statement.map((problem, idx) => (<li key={idx}>{problem}</li>))}</ul>
                         </>
                     )}
 
@@ -216,6 +213,7 @@ export default function Portfolio() {
                     <Button variant="danger" size="sm" className="m-0 px-4" onClick={handleClose}>Close</Button>
                 </Modal.Footer>
             </Modal>
+            <LetsConnect />
         </section>
     );
 }
