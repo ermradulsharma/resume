@@ -21,7 +21,7 @@ function NavBar() {
                         <Nav.Item><Nav.Link href="/portfolio" className={isActive('/portfolio')}>Portfolio</Nav.Link></Nav.Item>
                         <Nav.Item><Nav.Link href="/services" className={isActive('/services')}>Service</Nav.Link></Nav.Item>                  
                         <Nav.Item><Nav.Link href="/blogs" className={isActive('/blogs')}>Blogs</Nav.Link></Nav.Item>                  
-                        <Nav.Item><Nav.Link href="/about" className={isActive('/about')}>About</Nav.Link></Nav.Item>                  
+                        <Nav.Item><Nav.Link href="/about" className={isActive('/about')}>About</Nav.Link></Nav.Item>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

@@ -51,3 +51,15 @@ table tbody tr td {
     line-height: 1;
     color: color-mix(in srgb, var(--default-color), transparent 25%) !important;
 }
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1rem;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}

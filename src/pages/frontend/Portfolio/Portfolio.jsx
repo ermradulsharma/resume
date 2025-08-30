@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { Container, Row, Col, Card, Button, Badge, Modal, Pagination } from "react-bootstrap";
+import { Container, Card, Button, Badge, Modal, Pagination } from "react-bootstrap";
 import "../../frontend/Portfolio/Portfolio.css";
 import data from "../../../components/database/portfolio.json";
 
 const TechBadges = ({ items }) => (
     <div className="d-flex flex-wrap gap-2 mt-2">
-        {items.map((t) => ( <Badge key={t} bg="success-subtle" text="dark" className="fw-normal"> {t} </Badge> ))}
+        {items.map((t) => (<Badge key={t} bg="success-subtle" text="dark" className="fw-normal"> {t} </Badge>))}
     </div>
 );
 
@@ -63,90 +63,53 @@ export default function Portfolio() {
                 {/* Filters */}
                 <header className="d-flex flex-column flex-md-row align-items-md-center justify-content-end mb-4 gap-2">
                     <div className="d-flex gap-2 flex-wrap">
-                        {["All", "PHP", "Laravel", "CodeIgniter", "Vue.js", "React.js", "Next.js", "Mautic"].map(
-                            (btn) => (
-                                <Button
-                                    key={btn}
-                                    variant={filter === btn ? "primary" : "outline-secondary"}
-                                    size="sm"
-                                    onClick={() => setFilter(btn)}>{btn}</Button>
-                            )
-                        )}
+                        {["All", "PHP", "Laravel", "CodeIgniter", "Vue.js", "React.js", "Next.js", "Mautic"].map((btn) => (<Button key={btn} variant={filter === btn ? "primary" : "outline-secondary"} size="sm" onClick={() => setFilter(btn)}>{btn}</Button>))}
                     </div>
                 </header>
 
-                {/* Project Grid */}
-                <Row xs={1} md={2} lg={4} className="g-4 portfolio-project">
+                {/* Project Grid with CSS Grid */}
+                <div className="project-grid">
                     {currentProjects.map((p, index) => (
-                        <Col key={index} className="rounded">
-                            <Card className="h-100 shadow-lg border-0 project-card p-0 rounded">
-                                <div className="overflow-hidden rounded-top">
-                                    <Card.Img
-                                        src={require(`../../../assets/projects/${p.image}`)}
-                                        alt={p.title}
-                                        className="object-fit-cover rounded-0"
-                                        height={147}
-                                    />
-                                    <div className="overlay d-flex justify-content-center align-items-center">
-                                        <Button
-                                            variant="success"
-                                            onClick={() => handleShow(p)}
-                                            size="sm"
-                                        >
-                                            Case Study
-                                        </Button>
-                                    </div>
+                        <Card key={index} className="h-100 shadow-lg border-0 project-card p-0 rounded">
+                            <div className="overflow-hidden rounded-top">
+                                <Card.Img
+                                    src={require(`../../../assets/projects/${p.image}`)}
+                                    alt={p.title}
+                                    className="object-fit-cover rounded-0"
+                                    height={147}
+                                />
+                                <div className="overlay d-flex justify-content-center align-items-center">
+                                    <Button variant="success" onClick={() => handleShow(p)} size="sm">
+                                        Case Study
+                                    </Button>
                                 </div>
-                                <Card.Body>
-                                    <div className="d-flex justify-content-between align-items-start">
-                                        <Card.Title className="fs-6 fw-semibold mb-1 my-min-height-38">
-                                            {p.title}
-                                        </Card.Title>
-                                        <Badge bg="info" text="light">
-                                            {p.period}
-                                        </Badge>
-                                    </div>
-                                    <Card.Text className="text-muted mb-2">
-                                        {truncateText(p.description, 155)}
-                                    </Card.Text>
-                                    <TechBadges items={p.technologies} />
-                                </Card.Body>
-                            </Card>
-                        </Col>
+                            </div>
+                            <Card.Body>
+                                <div className="d-flex justify-content-between align-items-start">
+                                    <Card.Title className="fs-6 fw-semibold mb-1 my-min-height-38">
+                                        {p.title}
+                                    </Card.Title>
+                                    <Badge bg="info" text="light">{p.period}</Badge>
+                                </div>
+                                <Card.Text className="text-muted mb-2">
+                                    {truncateText(p.description, 155)}
+                                </Card.Text>
+                                <TechBadges items={p.technologies} />
+                            </Card.Body>
+                        </Card>
                     ))}
-                </Row>
+                </div>
+
 
                 {/* Pagination Controls */}
                 {totalPages > 1 && (
                     <div className="d-flex justify-content-center mt-4">
                         <Pagination>
-                            <Pagination.First
-                                onClick={() => setCurrentPage(1)}
-                                disabled={currentPage === 1}
-                            />
-                            <Pagination.Prev
-                                onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
-                                disabled={currentPage === 1}
-                            />
-                            {Array.from({ length: totalPages }, (_, i) => (
-                                <Pagination.Item
-                                    key={i + 1}
-                                    active={i + 1 === currentPage}
-                                    onClick={() => setCurrentPage(i + 1)}
-                                >
-                                    {i + 1}
-                                </Pagination.Item>
-                            ))}
-                            <Pagination.Next
-                                onClick={() =>
-                                    setCurrentPage((prev) => Math.min(prev + 1, totalPages))
-                                }
-                                disabled={currentPage === totalPages}
-                            />
-                            <Pagination.Last
-                                onClick={() => setCurrentPage(totalPages)}
-                                disabled={currentPage === totalPages}
-                            />
+                            <Pagination.First onClick={() => setCurrentPage(1)} disabled={currentPage === 1} />
+                            <Pagination.Prev onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))} disabled={currentPage === 1} />
+                            {Array.from({ length: totalPages }, (_, i) => (<Pagination.Item key={i + 1} active={i + 1 === currentPage} onClick={() => setCurrentPage(i + 1)}>{i + 1}</Pagination.Item>))}
+                            <Pagination.Next onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))} disabled={currentPage === totalPages} />
+                            <Pagination.Last onClick={() => setCurrentPage(totalPages)} disabled={currentPage === totalPages} />
                         </Pagination>
                     </div>
                 )}
@@ -244,27 +207,13 @@ export default function Portfolio() {
                     {activeProject?.technologies?.length > 0 && (
                         <div className="mt-3 d-flex flex-wrap gap-2">
                             {activeProject.technologies.map((tech, i) => (
-                                <Badge
-                                    bg="success-subtle"
-                                    text="dark"
-                                    className="fw-normal"
-                                    key={i}
-                                >
-                                    {tech}{" "}
-                                </Badge>
+                                <Badge bg="success-subtle" text="dark" className="fw-normal" key={i} > {tech}{" "} </Badge>
                             ))}
                         </div>
                     )}
                 </Modal.Body>
                 <Modal.Footer className="p-2 border-0">
-                    <Button
-                        variant="danger"
-                        size="sm"
-                        className="m-0 px-4"
-                        onClick={handleClose}
-                    >
-                        Close
-                    </Button>
+                    <Button variant="danger" size="sm" className="m-0 px-4" onClick={handleClose}>Close</Button>
                 </Modal.Footer>
             </Modal>
         </section>

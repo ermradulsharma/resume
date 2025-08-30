@@ -11,24 +11,24 @@ import Blogs from "../pages/frontend/Blogs/Blogs";
 const PublicLayout = () => (
     <>
         <Navbar />
-          <Outlet />
+        <Outlet />
         <Footer />
     </>
 );
 
 const WebRoutes = () => {
-  return (
-    <Routes>
-      <Route path="/" element={<PublicLayout />}>
-        <Route index element={<Home />} />
-        <Route path="portfolio" element={<Portfolio />} />
-        <Route path="services" element={<Services />} />
-        <Route path="blogs" element={<Blogs />} />
-        <Route path="about" element={<About />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Route>
-    </Routes>
-  );
+    return (
+        <Routes>
+            <Route path="/" element={<PublicLayout />}>
+                <Route index element={<Home />} />
+                <Route path="portfolio" element={<Portfolio />} />
+                <Route path="services" element={<Services />} />
+                <Route path="blogs" element={<Blogs />} />
+                <Route path="about" element={<About />} />
+                <Route path="*" element={<Navigate to="/" replace />} />
+            </Route>
+        </Routes>
+    );
 };
 
 export default WebRoutes;

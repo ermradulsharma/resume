@@ -4,7 +4,7 @@
 [![React Version](https://img.shields.io/badge/React-19.1.0-blue.svg)](https://reactjs.org/)
 [![Figma](https://img.shields.io/badge/Figma-Design-blue?logo=figma)](https://www.figma.com/)
 
-A modern, responsive portfolio template built with React, Bootstrap, and modern web technologies — designed to professionally showcase your work, skills, and contact information.
+A modern, responsive portfolio template built with **React**, **Bootstrap**, and modern web technologies — designed to professionally showcase your work, skills, and contact information.
 
 ---
 
@@ -23,31 +23,32 @@ A modern, responsive portfolio template built with React, Bootstrap, and modern 
 
 ## 📚 Table of Contents
 
-- [Demo](https://mradulsharma.vercel.app/)
-- [Features](#features)
-- [Installation](#installation)
-- [Contributing](#contributing)
-- [Contributors](#contributors)
-- [License](#license)
-- [Contact](#contact)
+- [Demo](#-demo)
+- [Features](#-features)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Contributing](#-contributing)
+- [Contributors](#-contributors)
+- [License](#-license)
+- [Contact](#-contact)
 
 ---
 
 ## 🚀 Demo
 
-Live [Demo](https://mradulsharma.vercel.app/)
+Live Demo 👉 [mradulsharma.vercel.app](https://mradulsharma.vercel.app/)
 
 ---
 
 ## ✅ Features
 
-- Fully responsive layout
-- Modern and clean user interface
-- Smooth scroll and subtle animations
-- Interactive project showcase
-- About, resume, and contact sections
-- Integrated social links
-- Figma-based design structure
+- Fully **responsive** layout across devices
+- **Modern & clean UI** with smooth animations
+- **Dark/Light mode** support
+- Interactive **project showcase** section
+- Dedicated **About, Resume, and Contact** pages
+- Integrated **social media links**
+- Figma-based **design-to-code** workflow
 
 ---
 
