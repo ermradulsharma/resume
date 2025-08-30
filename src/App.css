@@ -387,16 +387,6 @@ button:focus {
 }
 
 @media (max-width: 767px) {
-    .Typewriter__wrapper {
-        /* font-size: 1.4em !important; */
-        /* font-weight: 500 !important; */
-        /* position: absolute !important; */
-    }
-
-    .Typewriter__cursor {
-        /* display: none !important; */
-    }
-
     .myAvtar {
         padding-top: 2em !important;
         padding-bottom: 2em !important;
