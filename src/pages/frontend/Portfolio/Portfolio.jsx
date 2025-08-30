@@ -46,8 +46,8 @@ export default function Portfolio() {
 
             {/* Project Cards Section */}
             <Container className="section-title py-4 px-3">
-                <h2>Projects & Case Studies</h2>
-                <p>I offer end-to-end development solutions that are scalable, secure, and tailored to meet the evolving needs of modern digital businesses. With expertise spanning full-stack development, cloud-native architectures, and database optimization, I design and implement systems capable of handling growth without compromising performance or security. My approach combines technical precision with strategic planning, ensuring each solution is optimized for speed, stability, and long-term maintainability. Whether building custom applications, architecting APIs, or deploying cloud infrastructure, I prioritize user experience, operational efficiency, and data protection. Every project is crafted to align with business goals, adapt to future demands, and deliver measurable value in an increasingly competitive digital landscape.</p>
+                <h2>{title}</h2>
+                <p>{description}</p>
             </Container>
             <Container className="pb-5">
                 <header className="d-flex flex-column flex-md-row align-items-md-center justify-content-end mb-4 gap-2">

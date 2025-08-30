@@ -1,7 +1,7 @@
 {
     "projects": {
-        "title": "My Projects",
-        "description": "Dive into some of my major projects showcasing problem-solving and architecture design skills.",
+        "title": "Projects & Case Studies",
+        "description": "I offer end-to-end development solutions that are scalable, secure, and tailored to meet the evolving needs of modern digital businesses. With expertise spanning full-stack development, cloud-native architectures, and database optimization, I design and implement systems capable of handling growth without compromising performance or security. My approach combines technical precision with strategic planning, ensuring each solution is optimized for speed, stability, and long-term maintainability. Whether building custom applications, architecting APIs, or deploying cloud infrastructure, I prioritize user experience, operational efficiency, and data protection. Every project is crafted to align with business goals, adapt to future demands, and deliver measurable value in an increasingly competitive digital landscape.",
         "searchPlaceholder": "Search project...",
         "projectsList": [
             {
@@ -749,6 +749,485 @@
                             "BigQuery",
                             "PostgreSQL",
                             "WSL"
+                        ],
+                        "live_link": "#"
+                    }
+                }
+            },
+            {
+                "title": "Caumit (Community Volunteering Platform)",
+                "description": "Developed a community-driven platform to connect volunteers with local organizations and community groups. Caumit enables individuals to find volunteering opportunities, collaborate with NGOs, and track their social impact, making it easier to strengthen local communities.",
+                "technologies": [
+                    "Laravel",
+                    "MySQL",
+                    "JavaScript",
+                    "Bootstrap",
+                    "jQuery",
+                    "AJAX"
+                ],
+                "link": "https://caumit.com",
+                "image": "caumit.png",
+                "category": "COMMUNITY PLATFORM",
+                "period": "2025",
+                "case_study": {
+                    "overview": "Caumit is designed to bridge the gap between individuals willing to volunteer and organizations in need of support. The platform fosters community collaboration by simplifying how volunteers discover, join, and participate in local initiatives. Organizations benefit from role-based dashboards, making it easy to post opportunities, manage volunteers, and track activities, while volunteers gain visibility into causes they care about.",
+                    "problem_statement": [
+                        "Volunteers lacked a centralized platform to discover local community opportunities.",
+                        "Organizations faced challenges in reaching and managing volunteers effectively.",
+                        "Tracking volunteer contributions and community impact was fragmented.",
+                        "There was limited trust and transparency between volunteers and organizations."
+                    ],
+                    "objectives": [
+                        "Provide a unified platform to connect volunteers and community organizations.",
+                        "Enable organizations to post opportunities and manage volunteer activities.",
+                        "Offer role-based dashboards for volunteers and admins.",
+                        "Ensure transparency and trust with verified profiles and activity tracking.",
+                        "Encourage measurable social impact through engagement reports."
+                    ],
+                    "images": [
+                        "caumit.png",
+                        "volunteer-dashboard.png",
+                        "organization-dashboard.png",
+                        "community-impact.png"
+                    ],
+                    "implemented": {
+                        "title": "Tech Stack & Architecture",
+                        "architecture": {
+                            "backend": "Laravel for secure authentication, role-based dashboards, and volunteer-organization workflows.",
+                            "frontend": "Bootstrap, jQuery, and AJAX for responsive and dynamic user experience.",
+                            "database": "MySQL for managing users, organizations, events, and volunteering records.",
+                            "infrastructure": "Cloud-based deployment for scalability, accessibility, and uptime.",
+                            "integration": "Location-based services for discovering nearby opportunities."
+                        },
+                        "key_features": [
+                            "Volunteer registration and opportunity search by category or location.",
+                            "Organization dashboards to post events and manage volunteers.",
+                            "Verified profiles to ensure trust between volunteers and groups.",
+                            "Activity tracking and history for volunteers.",
+                            "Impact measurement reports for organizations.",
+                            "Responsive design for mobile and web accessibility."
+                        ]
+                    },
+                    "challenges_and_solutions": [
+                        {
+                            "challenge": "Volunteers had difficulty discovering relevant local opportunities.",
+                            "solution": "Introduced searchable and filterable event listings with location and category-based filters."
+                        },
+                        {
+                            "challenge": "Organizations struggled to manage volunteers and activities.",
+                            "solution": "Implemented role-based dashboards for admins and organizations to post and monitor events."
+                        },
+                        {
+                            "challenge": "Trust and transparency between volunteers and organizations were limited.",
+                            "solution": "Added verification processes, transparent tracking, and activity history for all users."
+                        }
+                    ],
+                    "outcomes": [
+                        "Increased volunteer engagement by centralizing community opportunities.",
+                        "Simplified event and volunteer management for organizations.",
+                        "Improved transparency and accountability in community initiatives.",
+                        "Strengthened collaboration between individuals and organizations for social impact."
+                    ],
+                    "project_details": {
+                        "category": "Community Platform",
+                        "year": "2025",
+                        "technologies": [
+                            "Laravel",
+                            "MySQL",
+                            "JavaScript",
+                            "Bootstrap",
+                            "jQuery",
+                            "AJAX"
+                        ],
+                        "live_link": "https://caumit.com"
+                    }
+                }
+            },
+            {
+                "title": "Gokleen Car (Subscription-based Car Washing Platform)",
+                "description": "Gokleen Car Wash offers subscription-based eco-friendly detailing and washing services in Ernakulam. With a focus on perfection in details, GoKlean provides doorstep car cleaning services that emphasize hassle-free booking, high-quality workmanship, and ecological sustainability.",
+                "technologies": [
+                    "Laravel",
+                    "MySQL",
+                    "Vue.js",
+                    "PrimeVue.js",
+                    "JavaScript",
+                    "AJAX",
+                    "Razorpay",
+                    "Wallet"
+                ],
+                "link": "https://gokleencar.com",
+                "image": "gokleencar.png",
+                "category": "SUBSCRIPTION SERVICE PLATFORM",
+                "period": "2025",
+                "case_study": {
+                    "overview": "Gokleen Car was developed as a subscription-based car cleaning platform that combines premium workmanship with eco-friendly practices. Customers can subscribe to interior and exterior wash services, manage their schedules, and enjoy professional detailing at their doorstep. The platform simplifies recurring service management, payments, and customer interactions through an intuitive web interface and upcoming mobile app.",
+                    "problem_statement": [
+                        "Car owners needed reliable, regular, and eco-friendly washing services at their doorstep.",
+                        "Traditional car wash services often used poor techniques that damaged vehicle finishes.",
+                        "Customers lacked an easy-to-use subscription model for hassle-free scheduling.",
+                        "There was a need to reduce water wastage and adopt eco-conscious washing practices."
+                    ],
+                    "objectives": [
+                        "Introduce a subscription-based car washing and detailing model.",
+                        "Deliver professional-grade workmanship at customers’ doorsteps.",
+                        "Ensure eco-friendly processes, minimizing water usage and promoting recyclability.",
+                        "Provide flexible scheduling, real-time management, and seamless payments.",
+                        "Launch a mobile app to enhance accessibility and customer engagement."
+                    ],
+                    "images": [
+                        "gokleencar.png",
+                        "customer-dashboard.png",
+                        "subscription-plans.png",
+                        "booking-management.png",
+                        "eco-friendly-service.png"
+                    ],
+                    "implemented": {
+                        "title": "Tech Stack & Architecture",
+                        "architecture": {
+                            "backend": "Laravel managing subscriptions, bookings, and service records.",
+                            "frontend": "Vue.js with PrimeVue.js for building a responsive and interactive customer dashboard.",
+                            "database": "MySQL to manage customers, subscriptions, booking schedules, and payments.",
+                            "infrastructure": "Cloud-hosted deployment for scalability and reliability.",
+                            "integration": "Secure payment gateway integration for subscription management and service payments."
+                        },
+                        "key_features": [
+                            "Subscription-based car washing services (interior & exterior).",
+                            "Hassle-free scheduling and doorstep service delivery.",
+                            "Eco-friendly washing techniques with minimal water usage.",
+                            "Customer dashboard with PrimeVue components for managing bookings and service history.",
+                            "Service provider dashboard to manage workloads, schedules, and customer details.",
+                            "Automated notifications and reminders for upcoming services.",
+                            "Mobile app (upcoming) for enhanced user convenience."
+                        ]
+                    },
+                    "challenges_and_solutions": [
+                        {
+                            "challenge": "Customers experienced poor workmanship and harmful washing techniques with traditional services.",
+                            "solution": "Implemented premium detailing methods with microfiber towels and eco-friendly mitts that protect car paint."
+                        },
+                        {
+                            "challenge": "Difficulty in offering flexible, recurring services with traditional business models.",
+                            "solution": "Developed a subscription-based model with automated renewals and customer-controlled scheduling."
+                        },
+                        {
+                            "challenge": "Ensuring eco-conscious service delivery with minimal water wastage.",
+                            "solution": "Introduced an ecological system that dislodges dirt without damaging paint and ensured recyclable waste disposal."
+                        },
+                        {
+                            "challenge": "Lack of digital convenience for customers.",
+                            "solution": "Created a Vue.js + PrimeVue.js powered customer dashboard and planned a mobile app for future scalability."
+                        }
+                    ],
+                    "outcomes": [
+                        "Delivered premium-quality car wash services with hassle-free subscription plans.",
+                        "Reduced water wastage and promoted eco-friendly detailing practices.",
+                        "Improved customer convenience with doorstep services and digital management tools.",
+                        "Increased customer retention with transparent subscriptions and recurring service models.",
+                        "Enhanced service provider efficiency with structured dashboards and workload management."
+                    ],
+                    "project_details": {
+                        "category": "Subscription Service Platform",
+                        "year": "2025",
+                        "technologies": [
+                            "Laravel",
+                            "MySQL",
+                            "Vue.js",
+                            "PrimeVue.js",
+                            "JavaScript",
+                            "AJAX",
+                            "Payment Gateway Integration"
+                        ],
+                        "live_link": "https://goklean.com"
+                    }
+                }
+            },
+            {
+                "title": "CLEW Pouches Management Platform",
+                "description": "A Laravel-based platform developed for CLEW to manage product catalogs, subscription services, distributors, and customer engagement. The system provides streamlined product management, regulatory compliance tracking, and order handling. Built to scale with enterprise needs, it ensures transparency, sustainability, and premium product delivery.",
+                "technologies": [
+                    "Laravel",
+                    "PHP",
+                    "MySQL",
+                    "Vue.js",
+                    "PrimeVue",
+                    "REST API",
+                    "AWS"
+                ],
+                "link": "#",
+                "image": "clew.png",
+                "category": "PRODUCT MANAGEMENT & SUBSCRIPTION PLATFORM",
+                "period": "2025",
+                "case_study": {
+                    "overview": "The CLEW Pouches Management Platform was built to digitize and automate CLEW’s operations, including product management, distributor network coordination, subscription services, and compliance monitoring. By leveraging Laravel and Vue.js, the system offers a secure and scalable solution to handle high-volume product distribution while ensuring regulatory standards and quality assurance.",
+                    "problem_statement": [
+                        "Managing large-scale product catalogs and subscriptions manually was inefficient.",
+                        "Difficulty in tracking distributor performance and maintaining compliance.",
+                        "Consumers lacked a digital portal to subscribe, manage, and reorder products seamlessly.",
+                        "Limited visibility into sales, operations, and regulatory reporting."
+                    ],
+                    "objectives": [
+                        "Develop a centralized platform to manage CLEW’s product catalog and subscriptions.",
+                        "Enable distributors and retailers to access inventory and place orders efficiently.",
+                        "Provide a customer-facing subscription portal with seamless reordering.",
+                        "Ensure compliance with nicotine regulatory standards and age-verification.",
+                        "Implement a scalable solution capable of handling global expansion."
+                    ],
+                    "images": [
+                        "clew.png",
+                        "subscription-dashboard.png",
+                        "distributor-management.png",
+                        "compliance-monitoring.png"
+                    ],
+                    "implemented": {
+                        "title": "Tech Stack & Architecture",
+                        "architecture": {
+                            "backend": "Laravel with REST APIs for subscription, compliance, and distributor modules.",
+                            "frontend": "Vue.js + PrimeVue for interactive dashboards and subscription flows.",
+                            "database": "MySQL for transactional data and compliance records.",
+                            "infrastructure": "Deployed on AWS with scalable architecture to handle high traffic.",
+                            "integration": "Payment gateway integration for subscriptions, and compliance APIs for age-verification."
+                        },
+                        "key_features": [
+                            "Product catalog and subscription management.",
+                            "Distributor and retailer network coordination.",
+                            "Regulatory compliance and age-verification tracking.",
+                            "Customer subscription portal with recurring billing.",
+                            "Real-time dashboards for operations and compliance monitoring.",
+                            "Automated notifications for renewals and compliance alerts.",
+                            "Scalable AWS infrastructure for global expansion."
+                        ]
+                    },
+                    "challenges_and_solutions": [
+                        {
+                            "challenge": "Managing subscriptions and compliance tracking manually.",
+                            "solution": "Built automated modules in Laravel to handle subscription cycles and regulatory requirements."
+                        },
+                        {
+                            "challenge": "Distributor visibility and coordination.",
+                            "solution": "Developed a distributor management module with real-time inventory and reporting."
+                        },
+                        {
+                            "challenge": "Ensuring legal compliance and preventing underage access.",
+                            "solution": "Integrated third-party age-verification APIs and compliance monitoring tools."
+                        },
+                        {
+                            "challenge": "Scaling operations globally with high transaction volumes.",
+                            "solution": "Deployed on AWS with auto-scaling and optimized database queries."
+                        }
+                    ],
+                    "outcomes": [
+                        "Reduced manual operational overhead through automation.",
+                        "Improved distributor efficiency and transparency.",
+                        "Provided customers with an easy subscription and reordering system.",
+                        "Strengthened compliance tracking and reporting.",
+                        "Established a scalable foundation for CLEW’s global expansion."
+                    ],
+                    "project_details": {
+                        "category": "Product Management & Subscription Platform",
+                        "year": "2025",
+                        "technologies": [
+                            "Laravel",
+                            "PHP",
+                            "MySQL",
+                            "Vue.js",
+                            "PrimeVue",
+                            "REST API",
+                            "AWS"
+                        ],
+                        "live_link": "#"
+                    }
+                }
+            },
+            {
+                "title": "ForRentCentral",
+                "description": "A Laravel-based subscription application designed for property management, enabling property owners, managers, and agents to list, manage, and rent properties efficiently. The platform supports rental applications, PMA (Property Management Agreements), tenant onboarding, and subscription-based access for stakeholders.",
+                "technologies": [
+                    "Laravel",
+                    "PHP",
+                    "MySQL",
+                    "Vue.js",
+                    "PrimeVue",
+                    "REST API",
+                    "AWS"
+                ],
+                "link": "#",
+                "image": "forrentcentral.png",
+                "category": "PROPERTY MANAGEMENT & RENTAL PLATFORM",
+                "period": "2025",
+                "case_study": {
+                    "overview": "ForRentCentral is a subscription-based property management application developed in Laravel to simplify rental operations for property owners, tenants, agents, and managers. The system allows owners to list their properties, agents to manage them, and tenants to apply online through rental applications and PMA agreements. With integrated notifications, compliance tracking, and subscription billing, it provides a complete ecosystem for property rentals.",
+                    "problem_statement": [
+                        "Owners and agents lacked a centralized system to manage property listings and rental applications.",
+                        "Manual processing of PMA agreements and tenant rental applications was inefficient and error-prone.",
+                        "No streamlined way for tenants to apply for rental properties online.",
+                        "Subscription and billing management for property managers and agents was missing."
+                    ],
+                    "objectives": [
+                        "Develop a centralized system for property listing and rental management.",
+                        "Automate PMA and rental application workflows between tenants, property managers, and owners.",
+                        "Provide a subscription-based business model for agents and property managers.",
+                        "Enable tenants to submit online rental applications and track their status.",
+                        "Ensure scalability and compliance for property management operations."
+                    ],
+                    "images": [
+                        "forrentcentral.png",
+                        "property-dashboard.png",
+                        "rental-application.png",
+                        "subscription-management.png"
+                    ],
+                    "implemented": {
+                        "title": "Tech Stack & Architecture",
+                        "architecture": {
+                            "backend": "Laravel powering subscription, property management, and rental workflows.",
+                            "frontend": "Vue.js + PrimeVue for dynamic dashboards, property listings, and rental forms.",
+                            "database": "MySQL for managing tenants, properties, subscriptions, and PMA records.",
+                            "infrastructure": "AWS hosting with secure deployment and auto-scaling.",
+                            "integration": "Payment gateways for subscription management and email/SMS notifications."
+                        },
+                        "key_features": [
+                            "Property listing and rental management system.",
+                            "Automated rental application and PMA workflows.",
+                            "Subscription-based access for property managers and agents.",
+                            "Tenant portal for applying and tracking rental applications.",
+                            "Notifications and reminders for agreements and renewals.",
+                            "Role-based dashboards for owners, agents, managers, and tenants.",
+                            "Scalable AWS infrastructure for high availability."
+                        ]
+                    },
+                    "challenges_and_solutions": [
+                        {
+                            "challenge": "Manual handling of PMA agreements and rental applications.",
+                            "solution": "Automated workflow modules for digital PMA and tenant rental applications."
+                        },
+                        {
+                            "challenge": "Lack of subscription billing and user role segregation.",
+                            "solution": "Implemented Laravel Cashier with role-based access control for owners, managers, and tenants."
+                        },
+                        {
+                            "challenge": "Tenants lacked visibility into rental application status.",
+                            "solution": "Developed a tenant portal with application tracking and notifications."
+                        },
+                        {
+                            "challenge": "Scalability and secure multi-tenant property management.",
+                            "solution": "Deployed on AWS with auto-scaling and optimized database schemas."
+                        }
+                    ],
+                    "outcomes": [
+                        "Streamlined rental application process for tenants and property managers.",
+                        "Reduced manual paperwork with automated PMA and rental workflows.",
+                        "Improved transparency between owners, agents, and tenants.",
+                        "Introduced a sustainable subscription-based business model.",
+                        "Enhanced operational efficiency and compliance tracking."
+                    ],
+                    "project_details": {
+                        "category": "Property Management & Rental Platform",
+                        "year": "2025",
+                        "technologies": [
+                            "Laravel",
+                            "PHP",
+                            "MySQL",
+                            "Vue.js",
+                            "PrimeVue",
+                            "REST API",
+                            "AWS"
+                        ],
+                        "live_link": "#"
+                    }
+                }
+            },
+            {
+                "title": "Bolld PM",
+                "description": "A Laravel-powered subscription-based property management application developed for the Vancouver real estate market. The platform streamlines rental listings, tenant applications, PMA (Property Management Agreements), and subscription workflows for owners, agents, and property managers.",
+                "technologies": [
+                    "Laravel",
+                    "PHP",
+                    "MySQL",
+                    "Vue.js",
+                    "PrimeVue",
+                    "REST API",
+                    "AWS"
+                ],
+                "link": "#",
+                "image": "bolldpm.png",
+                "category": "PROPERTY MANAGEMENT & RENTAL PLATFORM",
+                "period": "2025",
+                "case_study": {
+                    "overview": "Bolld PM is a subscription-based property management solution built on Laravel for the Vancouver market. It provides property owners, managers, and agents with tools to list properties, manage tenant applications, handle PMA agreements, and automate rental workflows. Designed for scalability and compliance, the platform offers role-based dashboards and subscription billing for agents and managers.",
+                    "problem_statement": [
+                        "Property managers and agents in Vancouver lacked a centralized digital platform for managing rental listings.",
+                        "Manual PMA agreement handling created inefficiencies and compliance risks.",
+                        "Tenants faced limited transparency and cumbersome processes for applying to rental properties.",
+                        "No streamlined subscription model to sustain operational workflows for agents and managers."
+                    ],
+                    "objectives": [
+                        "Build a digital-first subscription platform for property management in Vancouver.",
+                        "Automate PMA agreements and tenant rental applications for efficiency and compliance.",
+                        "Enable property owners, managers, and agents to manage properties via role-based dashboards.",
+                        "Offer subscription billing for property managers and agents.",
+                        "Provide tenants with a self-service portal for applications and updates."
+                    ],
+                    "images": [
+                        "bolldpm.png",
+                        "property-listing.png",
+                        "tenant-portal.png",
+                        "subscription-billing.png"
+                    ],
+                    "implemented": {
+                        "title": "Tech Stack & Architecture",
+                        "architecture": {
+                            "backend": "Laravel backend handling subscription, property workflows, and agreement management.",
+                            "frontend": "Vue.js + PrimeVue for property dashboards, listing interfaces, and tenant forms.",
+                            "database": "MySQL powering tenant data, property details, agreements, and subscription records.",
+                            "infrastructure": "AWS for secure deployment, scalability, and cloud storage.",
+                            "integration": "Payment gateways for subscription billing, email/SMS for application notifications."
+                        },
+                        "key_features": [
+                            "Property listing and rental management for Vancouver-based owners and agents.",
+                            "Digital PMA agreement generation and approval workflows.",
+                            "Subscription model for agents and property managers.",
+                            "Tenant self-service portal with application tracking.",
+                            "Automated notifications for agreements, renewals, and tenant status.",
+                            "Role-based dashboards for owners, agents, managers, and tenants.",
+                            "AWS-backed scalable infrastructure ensuring compliance and reliability."
+                        ]
+                    },
+                    "challenges_and_solutions": [
+                        {
+                            "challenge": "Manual PMA and rental workflows created inefficiencies.",
+                            "solution": "Automated agreements and tenant applications with digital workflows."
+                        },
+                        {
+                            "challenge": "Subscription billing and role management was difficult to scale.",
+                            "solution": "Implemented Laravel Cashier for subscription management with RBAC."
+                        },
+                        {
+                            "challenge": "Tenants lacked transparency in application status.",
+                            "solution": "Tenant portal providing real-time application tracking and notifications."
+                        },
+                        {
+                            "challenge": "Scalability required for Vancouver’s large property market.",
+                            "solution": "Deployed the platform on AWS with auto-scaling and optimized database design."
+                        }
+                    ],
+                    "outcomes": [
+                        "Digitized property management workflows for Vancouver real estate.",
+                        "Improved efficiency with automated PMA and tenant applications.",
+                        "Enhanced transparency for tenants, owners, and agents.",
+                        "Sustainable subscription revenue model for property managers.",
+                        "Scalable, cloud-native infrastructure for long-term growth."
+                    ],
+                    "project_details": {
+                        "category": "Property Management & Rental Platform",
+                        "year": "2025",
+                        "technologies": [
+                            "Laravel",
+                            "PHP",
+                            "MySQL",
+                            "Vue.js",
+                            "PrimeVue",
+                            "REST API",
+                            "AWS"
                         ],
                         "live_link": "#"
                     }
