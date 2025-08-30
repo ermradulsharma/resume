@@ -1232,6 +1232,384 @@
                         "live_link": "#"
                     }
                 }
+            },
+            {
+                "title": "FlexTaxis",
+                "description": "FlexTaxis is a robust taxi booking platform developed using CodeIgniter, designed to provide a seamless experience for both passengers and drivers. It offers real-time ride tracking, dynamic fare calculation, and a secure admin dashboard for fleet management.",
+                "technologies": [
+                    "CodeIgniter",
+                    "PHP",
+                    "MySQL",
+                    "MariaDB",
+                    "HTML5",
+                    "CSS3",
+                    "JavaScript",
+                    "Bootstrap",
+                    "Google Maps API"
+                ],
+                "link": "#",
+                "image": "flextaxis.png",
+                "category": "TRANSPORTATION & RIDE-HAILING PLATFORM",
+                "period": "2025",
+                "case_study": {
+                    "overview": "FlexTaxis is a scalable and secure taxi booking solution designed to meet the demands of modern transportation services. The platform caters to passengers, drivers, and fleet administrators by offering real-time ride tracking, fare calculation, and comprehensive dashboards. With mobile-responsive interfaces and integration with mapping services, FlexTaxis ensures smooth ride management for both users and operators.",
+                    "problem_statement": [
+                        "Passengers faced challenges in tracking rides and estimating accurate fares.",
+                        "Drivers lacked a centralized system for managing bookings efficiently.",
+                        "Fleet owners required real-time insights into operations, earnings, and driver performance.",
+                        "Existing taxi solutions did not provide scalable and customizable features for local businesses."
+                    ],
+                    "objectives": [
+                        "Provide a user-friendly ride-hailing solution with real-time ride tracking.",
+                        "Enable dynamic fare calculation and booking history for transparency.",
+                        "Offer secure admin dashboards for fleet owners and operators.",
+                        "Ensure a responsive, mobile-friendly experience for passengers and drivers.",
+                        "Integrate with maps and location services for seamless ride management."
+                    ],
+                    "images": [
+                        "flextaxis.png",
+                        "ride-tracking.png",
+                        "driver-dashboard.png",
+                        "fleet-management.png"
+                    ],
+                    "implemented": {
+                        "title": "Tech Stack & Architecture",
+                        "architecture": {
+                            "backend": "CodeIgniter framework handling core booking logic, fare calculation, and driver-passenger matching.",
+                            "frontend": "HTML5, CSS3, JavaScript, and Bootstrap for responsive UI for both drivers and passengers.",
+                            "database": "MySQL / MariaDB for managing rides, users, payments, and fleet data.",
+                            "integration": "Google Maps API for real-time ride tracking, distance calculation, and navigation."
+                        },
+                        "key_features": [
+                            "Real-time ride tracking and driver-passenger matching.",
+                            "Dynamic fare calculation with distance and time-based parameters.",
+                            "Booking history for passengers and earning reports for drivers.",
+                            "Admin dashboards for fleet management and monitoring.",
+                            "Responsive UI compatible with mobile devices.",
+                            "Integration with Google Maps for location accuracy."
+                        ]
+                    },
+                    "challenges_and_solutions": [
+                        {
+                            "challenge": "Ensuring accurate real-time ride tracking.",
+                            "solution": "Integrated Google Maps API with optimized location polling and updates."
+                        },
+                        {
+                            "challenge": "Dynamic fare calculation based on distance and time.",
+                            "solution": "Implemented custom algorithms for calculating fares in real time."
+                        },
+                        {
+                            "challenge": "Scalability for multiple fleets and high-volume ride requests.",
+                            "solution": "Optimized database design in MySQL/MariaDB with indexing and caching strategies."
+                        },
+                        {
+                            "challenge": "Responsive user experience across devices.",
+                            "solution": "Developed front-end with Bootstrap ensuring cross-platform compatibility."
+                        }
+                    ],
+                    "outcomes": [
+                        "Delivered a modern and efficient taxi booking platform.",
+                        "Enhanced passenger experience with real-time ride updates and fare transparency.",
+                        "Increased driver productivity through optimized booking and reporting tools.",
+                        "Provided fleet owners with actionable insights via admin dashboards.",
+                        "Created a scalable solution adaptable for local and regional transportation businesses."
+                    ],
+                    "project_details": {
+                        "category": "Transportation & Ride-Hailing Platform",
+                        "year": "2025",
+                        "technologies": [
+                            "CodeIgniter",
+                            "PHP",
+                            "MySQL",
+                            "MariaDB",
+                            "HTML5",
+                            "CSS3",
+                            "JavaScript",
+                            "Bootstrap",
+                            "Google Maps API"
+                        ],
+                        "live_link": "#"
+                    }
+                }
+            },
+            {
+                "title": "Konnifel",
+                "description": "Konnifel is a non-profit research and internship platform developed in CodeIgniter. It connects professors, researchers, scientists, and institutions with aspiring students by providing structured, standardized, and transparent research internship opportunities. With built-in assessment mechanisms, recommendations, and the Research Readiness Standard, Konnifel simplifies and streamlines the process of applying to research opportunities.",
+                "technologies": [
+                    "CodeIgniter",
+                    "PHP",
+                    "MySQL",
+                    "HTML5",
+                    "CSS3",
+                    "JavaScript",
+                    "Bootstrap"
+                ],
+                "link": "https://konnifel.com",
+                "image": "konnifel.png",
+                "category": "RESEARCH & EDUCATION PLATFORM",
+                "period": "2025",
+                "case_study": {
+                    "overview": "Konnifel was established to foster research and structured learning by bridging the gap between experienced researchers and students. It enables institutions, professors, and scientists to post internships, fellowships, and research assistantships while offering students a standardized application process and tailored opportunities. Konnifel empowers research-driven growth through its Research Readiness and Aptitude Test (RRAT) and recommendation mechanisms.",
+                    "problem_statement": [
+                        "Lack of structured and standardized research internship processes for students.",
+                        "Aspiring researchers faced difficulty in finding credible opportunities across disciplines.",
+                        "Professors and institutions lacked a centralized platform to post research internships.",
+                        "Limited mechanisms existed to assess students’ readiness for research roles."
+                    ],
+                    "objectives": [
+                        "Develop a unified platform connecting researchers and students for internships and fellowships.",
+                        "Introduce a standardized application system to replace fragmented, repetitive application processes.",
+                        "Implement assessment tools like the Research Readiness and Aptitude Test (RRAT).",
+                        "Enable recommendation systems to match candidates with suitable research opportunities.",
+                        "Promote inclusivity and safe academic engagement through structured mentorship."
+                    ],
+                    "images": [
+                        "konnifel.png",
+                        "internship-listings.png",
+                        "researcher-dashboard.png",
+                        "student-profile.png"
+                    ],
+                    "implemented": {
+                        "title": "Tech Stack & Architecture",
+                        "architecture": {
+                            "backend": "CodeIgniter PHP framework managing users, applications, and research postings.",
+                            "frontend": "HTML5, CSS3, Bootstrap, and JavaScript for responsive and user-friendly design.",
+                            "database": "MySQL for structured storage of users, research opportunities, applications, and assessments."
+                        },
+                        "key_features": [
+                            "Centralized research internship postings by professors, researchers, and institutions.",
+                            "Standardized application system eliminating repetitive individual applications.",
+                            "Research Readiness and Aptitude Test (RRAT) integration.",
+                            "Automated recommendations to match candidates with suitable opportunities.",
+                            "Structured enrollment and onboarding processes.",
+                            "Secure, mobile-friendly platform ensuring inclusivity and accessibility."
+                        ]
+                    },
+                    "challenges_and_solutions": [
+                        {
+                            "challenge": "Unstructured and fragmented application process for research internships.",
+                            "solution": "Built a unified and standardized application module streamlining all research applications."
+                        },
+                        {
+                            "challenge": "Lack of mechanisms to evaluate research readiness of students.",
+                            "solution": "Developed the Research Readiness and Aptitude Test (RRAT) as a standardized assessment tool."
+                        },
+                        {
+                            "challenge": "Difficulty in matching candidates with the right opportunities.",
+                            "solution": "Implemented recommendation algorithms to suggest relevant internships based on candidates’ profiles and RRAT performance."
+                        },
+                        {
+                            "challenge": "Need for inclusivity and academic safety for students.",
+                            "solution": "Designed platform with strict moderation, academic guidelines, and safe onboarding processes."
+                        }
+                    ],
+                    "outcomes": [
+                        "Created a structured platform for research opportunities accessible to students and researchers globally.",
+                        "Reduced fragmentation in internship applications by introducing a standardized process.",
+                        "Helped professors and institutions reach a wider pool of aspiring interns.",
+                        "Enhanced student preparedness for research through RRAT assessments.",
+                        "Received recognition from TDR Global (WHO initiative) for advancing research mentorship."
+                    ],
+                    "project_details": {
+                        "category": "Research & Education Platform",
+                        "year": "2025",
+                        "technologies": [
+                            "CodeIgniter",
+                            "PHP",
+                            "MySQL",
+                            "HTML5",
+                            "CSS3",
+                            "JavaScript",
+                            "Bootstrap"
+                        ],
+                        "live_link": "https://konnifel.com"
+                    }
+                }
+            },
+            {
+                "title": "NGO Career",
+                "description": "NGO Career is a UK-based employment search service built on CodeIgniter, designed to connect NGOs with ideal recruits while supporting job seekers looking for meaningful careers in the NGO sector. It serves as a specialized job board dedicated to bridging the gap between organizations with humanitarian missions and skilled individuals ready to contribute.",
+                "technologies": [
+                    "CodeIgniter",
+                    "PHP",
+                    "MySQL",
+                    "HTML5",
+                    "CSS3",
+                    "JavaScript",
+                    "Bootstrap"
+                ],
+                "link": "https://ngocareer.com",
+                "image": "ngocareer.png",
+                "category": "EMPLOYMENT & JOB PORTAL",
+                "period": "2025",
+                "case_study": {
+                    "overview": "NGO Career is an international NGO job board created to streamline recruitment in the non-profit sector. With NGOs often facing unique recruitment challenges—limited resources, international talent pools, and the need for precise candidate matching—NGO Career provides a dedicated digital solution to match skilled job seekers with organizations worldwide. The platform supports both NGOs seeking talent and individuals seeking meaningful careers in the non-profit sector.",
+                    "problem_statement": [
+                        "NGOs face challenges in recruitment due to limited budgets and resources.",
+                        "International job markets make it difficult to match suitable candidates efficiently.",
+                        "Job seekers lacked a specialized, centralized platform for NGO-specific opportunities.",
+                        "General job boards failed to meet the unique requirements of NGO recruitment."
+                    ],
+                    "objectives": [
+                        "Create a dedicated digital job board tailored for NGOs and humanitarian organizations.",
+                        "Provide an easy-to-use platform for NGOs to post job openings globally.",
+                        "Offer a seamless search and application process for job seekers in the NGO sector.",
+                        "Support fair and efficient recruitment practices despite limited NGO resources.",
+                        "Build a bridge between NGOs and skilled candidates for better mutual empowerment."
+                    ],
+                    "images": [
+                        "ngocareer.png",
+                        "job-listings.png",
+                        "employer-dashboard.png",
+                        "candidate-profile.png"
+                    ],
+                    "implemented": {
+                        "title": "Tech Stack & Architecture",
+                        "architecture": {
+                            "backend": "CodeIgniter PHP framework managing job postings, applications, and candidate profiles.",
+                            "frontend": "HTML5, CSS3, Bootstrap, and JavaScript for responsive UI design.",
+                            "database": "MySQL storing job postings, employer profiles, candidate resumes, and applications."
+                        },
+                        "key_features": [
+                            "Dedicated NGO-focused job board with global reach.",
+                            "Employer dashboards for NGOs to post and manage opportunities.",
+                            "Candidate search and filtering mechanisms for precise matches.",
+                            "Job seeker profiles with skills, experience, and CV upload.",
+                            "Advanced search and recommendation engine for tailored results.",
+                            "Responsive design for accessibility on mobile and desktop."
+                        ]
+                    },
+                    "challenges_and_solutions": [
+                        {
+                            "challenge": "Limited recruitment resources within NGOs.",
+                            "solution": "Created a cost-effective and user-friendly job posting and candidate management platform."
+                        },
+                        {
+                            "challenge": "Global nature of NGO recruitment complicates candidate matching.",
+                            "solution": "Implemented advanced search and recommendation filters to ensure relevant matches between NGOs and candidates."
+                        },
+                        {
+                            "challenge": "Lack of dedicated platforms for NGO job seekers.",
+                            "solution": "Developed a centralized platform exclusively for NGO opportunities worldwide."
+                        },
+                        {
+                            "challenge": "Ensuring accessibility and usability for diverse international users.",
+                            "solution": "Designed a responsive, multilingual-ready interface optimized for global accessibility."
+                        }
+                    ],
+                    "outcomes": [
+                        "Enabled NGOs to find suitable recruits quickly and cost-effectively.",
+                        "Provided job seekers with a specialized platform focused on meaningful careers in the NGO sector.",
+                        "Improved global reach of NGO recruitment through international accessibility.",
+                        "Empowered both organizations and candidates, strengthening humanitarian efforts worldwide."
+                    ],
+                    "project_details": {
+                        "category": "Employment & Job Portal",
+                        "year": "2025",
+                        "technologies": [
+                            "CodeIgniter",
+                            "PHP",
+                            "MySQL",
+                            "HTML5",
+                            "CSS3",
+                            "JavaScript",
+                            "Bootstrap"
+                        ],
+                        "live_link": "https://ngocareer.com"
+                    }
+                }
+            },
+            {
+                "title": "Long Distance Taxis",
+                "description": "Long Distance Taxis Ltd is a UK-based taxi booking platform built with CodeIgniter. It specializes in reliable and affordable long-distance taxi services, offering nationwide coverage for airport transfers, business trips, holidays, and bespoke UK travel tours. With transparent pricing, professional drivers, and seamless online booking, it has established itself as one of the most trusted long-distance taxi services in the UK.",
+                "technologies": [
+                    "CodeIgniter",
+                    "PHP",
+                    "MySQL",
+                    "HTML5",
+                    "CSS3",
+                    "JavaScript",
+                    "Bootstrap"
+                ],
+                "link": "https://longdistancetaxis.com",
+                "image": "longdistancetaxis.png",
+                "category": "TRANSPORTATION & TAXI BOOKING",
+                "period": "2025",
+                "case_study": {
+                    "overview": "Long Distance Taxis Ltd offers nationwide taxi services across the UK, ensuring reliable, safe, and affordable travel for long-distance journeys. From airport transfers to bespoke UK tours, the platform simplifies long-distance taxi booking with an easy-to-use system, transparent pricing, and professional licensed drivers. Built on CodeIgniter, the solution is designed for scalability, efficiency, and a seamless booking experience for both passengers and administrators.",
+                    "problem_statement": [
+                        "Customers in the UK lacked a reliable and affordable platform for booking long-distance taxis.",
+                        "General taxi services did not provide transparency in pricing for long journeys.",
+                        "Booking for airport transfers and holiday travel often required multiple third-party services, complicating the process.",
+                        "Businesses and families needed a single solution for safe, professional, and long-distance transport."
+                    ],
+                    "objectives": [
+                        "Provide a centralized platform for booking long-distance taxis across the UK.",
+                        "Ensure transparent pricing with instant online fare calculation.",
+                        "Offer reliable and safe transportation for airports, holidays, and private tours.",
+                        "Establish trust through licensed drivers, affordability, and professional services."
+                    ],
+                    "images": [
+                        "longdistancetaxis.png",
+                        "booking-dashboard.png",
+                        "ride-tracking.png",
+                        "fare-calculation.png"
+                    ],
+                    "implemented": {
+                        "title": "Tech Stack & Architecture",
+                        "architecture": {
+                            "backend": "CodeIgniter PHP framework powering booking, pricing, and ride management systems.",
+                            "frontend": "HTML5, CSS3, Bootstrap, and JavaScript for responsive and user-friendly booking experience.",
+                            "database": "MySQL storing customer bookings, driver details, ride history, and pricing models."
+                        },
+                        "key_features": [
+                            "Nationwide coverage for long-distance taxi bookings across the UK.",
+                            "Instant fare calculator for transparent and affordable pricing.",
+                            "Airport and holiday transfer booking with pre-scheduled rides.",
+                            "User-friendly online booking system with responsive UI.",
+                            "Admin dashboard for managing bookings, drivers, and fare models.",
+                            "Licensed, professional driver profiles for safety and reliability."
+                        ]
+                    },
+                    "challenges_and_solutions": [
+                        {
+                            "challenge": "Customers needed transparent and affordable long-distance fare estimates.",
+                            "solution": "Implemented a real-time fare calculator that provides instant, clear pricing without hidden costs."
+                        },
+                        {
+                            "challenge": "Managing nationwide coverage for bookings across multiple UK regions.",
+                            "solution": "Developed scalable booking and driver assignment modules integrated with location-based services."
+                        },
+                        {
+                            "challenge": "Ensuring a safe and professional travel experience for long journeys.",
+                            "solution": "Onboarded licensed drivers and integrated verification systems to maintain high service quality."
+                        },
+                        {
+                            "challenge": "Complex booking needs for airports, business trips, and holiday tours.",
+                            "solution": "Built a flexible booking system allowing users to schedule rides for various travel needs in advance."
+                        }
+                    ],
+                    "outcomes": [
+                        "Became one of the most trusted long-distance taxi services in the UK.",
+                        "Simplified airport, holiday, and long-distance transfers with reliable online booking.",
+                        "Improved customer confidence with transparent pricing and professional drivers.",
+                        "Enabled nationwide accessibility, covering all major UK cities and destinations."
+                    ],
+                    "project_details": {
+                        "category": "Transportation & Taxi Booking",
+                        "year": "2025",
+                        "technologies": [
+                            "CodeIgniter",
+                            "PHP",
+                            "MySQL",
+                            "HTML5",
+                            "CSS3",
+                            "JavaScript",
+                            "Bootstrap"
+                        ],
+                        "live_link": "https://longdistancetaxis.com"
+                    }
+                }
             }
         ]
     }
