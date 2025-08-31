@@ -771,6 +771,106 @@
                 }
             },
             {
+                "title": "StackFood (Restaurant & Delivery Management System)",
+                "description": "Developed a full-featured food delivery and restaurant management platform, enabling order management, POS, restaurant listings, and delivery tracking for restaurants and hotels.",
+                "technologies": [
+                    "Laravel",
+                    "JavaScript",
+                    "MySQL",
+                    "REST API",
+                    "Stripe",
+                    "PayPal",
+                    "Razorpay",
+                    "Flutterwave",
+                    "AWS"
+                ],
+                "link": "https://stackfood.example.com/",
+                "image": "stackfood.png",
+                "category": "FULL STACK APPLICATION",
+                "period": "2022",
+                "case_study": {
+                    "overview": "StackFood is a comprehensive delivery service and restaurant management system designed to streamline food ordering, delivery, and POS operations for restaurants and hotels. It provides both customer-facing and admin-facing features, integrating multiple payment gateways and ensuring scalability for high transaction volumes.",
+                    "problem_statement": [
+                        "Restaurants struggle with managing online orders and in-house POS simultaneously.",
+                        "Lack of unified systems for handling delivery, payments, and restaurant listings.",
+                        "Difficulty in integrating multiple payment methods across regions.",
+                        "Challenges in scaling to support multiple restaurants and delivery staff."
+                    ],
+                    "objectives": [
+                        "Provide a seamless food ordering and delivery experience for customers.",
+                        "Offer restaurants a complete POS and order management solution.",
+                        "Integrate multiple payment gateways to support global operations.",
+                        "Enable real-time tracking for orders and deliveries.",
+                        "Ensure scalability and reliability for high traffic and large order volumes."
+                    ],
+                    "images": [
+                        "stackfood.png",
+                        "stackfood-dashboard.png",
+                        "stackfood-pos.png"
+                    ],
+                    "implemented": {
+                        "title": "Tech Stack & Architecture",
+                        "architecture": {
+                            "backend": "Laravel (REST APIs, role-based access, modular architecture)",
+                            "frontend": "React (customer and admin dashboards)",
+                            "database": "MySQL with optimized indexing and caching",
+                            "infrastructure": "AWS (EC2, RDS, S3, CloudFront, CloudWatch for monitoring)",
+                            "payments": "Stripe, PayPal, Razorpay, Flutterwave, Paystack, MercadoPago",
+                            "security": "RBAC, HTTPS, JWT authentication, encryption at rest & transit"
+                        },
+                        "key_features": [
+                            "Restaurant listing and registration system.",
+                            "Multi-restaurant POS management with in-house ordering.",
+                            "Customer app for browsing restaurants, menus, and placing orders.",
+                            "Delivery management system with real-time tracking.",
+                            "Multi-payment gateway support (Stripe, PayPal, Razorpay, etc.).",
+                            "Admin dashboard for managing restaurants, orders, and users.",
+                            "Scalable architecture supporting thousands of orders per minute."
+                        ]
+                    },
+                    "challenges_and_solutions": [
+                        {
+                            "challenge": "Managing high volumes of concurrent orders.",
+                            "solution": "Implemented database query optimization, caching, and load balancing on AWS."
+                        },
+                        {
+                            "challenge": "Providing real-time delivery tracking.",
+                            "solution": "Integrated Google Maps API with WebSocket-based live tracking for orders."
+                        },
+                        {
+                            "challenge": "Supporting multiple global payment gateways.",
+                            "solution": "Developed a modular payment system supporting Stripe, PayPal, Razorpay, Flutterwave, and more."
+                        },
+                        {
+                            "challenge": "Ensuring smooth operations for both small restaurants and hotel chains.",
+                            "solution": "Designed a scalable multi-tenant architecture with separate restaurant modules."
+                        }
+                    ],
+                    "outcomes": [
+                        "Enabled 100+ restaurants to manage online and offline orders in one system.",
+                        "Reduced order processing time by 60% with integrated POS.",
+                        "Achieved 99.9% uptime with AWS scaling solutions.",
+                        "Improved customer experience with faster deliveries and multiple payment options.",
+                        "Provided hotels and restaurants with a complete ecosystem for food delivery and in-house management."
+                    ],
+                    "project_details": {
+                        "category": "Full Stack Application",
+                        "year": "2022",
+                        "technologies": [
+                            "Laravel",
+                            "React",
+                            "MySQL",
+                            "AWS",
+                            "Stripe",
+                            "PayPal",
+                            "Razorpay",
+                            "REST API"
+                        ],
+                        "live_link": "https://stackfood.example.com/"
+                    }
+                }
+            },
+            {
                 "title": "PayStubx (Payroll Management System)",
                 "description": "Led the design and development of a comprehensive payroll system using Laravel 9, deployed on AWS with secure API integrations and PostgreSQL optimization.",
                 "technologies": [
@@ -1237,6 +1337,200 @@
                 }
             },
             {
+                "title": "Chariot (Food & Parcel Delivery App)",
+                "description": "Developed a scalable food and parcel delivery platform with real-time tracking, secure payments, and seamless customer-driver interactions, deployed on AWS with microservices architecture.",
+                "technologies": [
+                    "Laravel",
+                    "React Native",
+                    "Node.js",
+                    "AWS",
+                    "MySQL",
+                    "Google Maps API",
+                    "Stripe",
+                    "REST API"
+                ],
+                "link": "https://chariot-app.com/",
+                "image": "chariot.png",
+                "category": "FULL STACK APPLICATION",
+                "period": "2020",
+                "case_study": {
+                    "overview": "Chariot is a cloud-native delivery application enabling customers to order food and send parcels with real-time tracking and secure transactions. The app connects customers, delivery partners, and merchants through an optimized and scalable microservices-based platform.",
+                    "problem_statement": [
+                        "Customers lacked a unified platform to order food and schedule parcel deliveries.",
+                        "No real-time tracking system for deliveries.",
+                        "Merchants faced challenges integrating multiple payment methods.",
+                        "Difficulty scaling during high-demand periods (e.g., peak lunch hours)."
+                    ],
+                    "objectives": [
+                        "Provide a seamless platform for ordering food and scheduling parcel deliveries.",
+                        "Implement real-time GPS tracking for orders.",
+                        "Enable secure transactions with multiple payment gateways.",
+                        "Ensure high scalability and reliability through cloud deployment.",
+                        "Enhance customer experience with user-friendly mobile and web apps."
+                    ],
+                    "images": [
+                        "chariot.png",
+                        "chariot-tracking.png",
+                        "chariot-order.png"
+                    ],
+                    "implemented": {
+                        "title": "Tech Stack & Architecture",
+                        "architecture": {
+                            "backend": "Laravel (API services, authentication, order management)",
+                            "frontend": "React Native (customer & driver apps), React.js (merchant dashboard)",
+                            "database": "MySQL with indexing and optimized queries",
+                            "infrastructure": "AWS (EC2, RDS for MySQL, S3 for media storage, CloudWatch for monitoring)",
+                            "maps": "Google Maps API for location services and real-time tracking",
+                            "payments": "Stripe API for secure payments",
+                            "security": "JWT authentication, HTTPS, IAM roles, and encrypted data storage"
+                        },
+                        "key_features": [
+                            "Food ordering system with restaurant and menu management.",
+                            "Parcel delivery scheduling with pickup & drop locations.",
+                            "Real-time GPS tracking of delivery partners.",
+                            "Push notifications for order updates.",
+                            "Secure payments via Stripe and multiple gateways.",
+                            "Merchant dashboard for order management and analytics.",
+                            "Scalable cloud-native architecture for peak demand handling."
+                        ]
+                    },
+                    "challenges_and_solutions": [
+                        {
+                            "challenge": "Real-time location tracking with thousands of concurrent users.",
+                            "solution": "Integrated Google Maps API with WebSockets for live updates."
+                        },
+                        {
+                            "challenge": "Handling peak traffic during lunch/dinner hours.",
+                            "solution": "Implemented AWS auto-scaling and load balancing with caching strategies."
+                        },
+                        {
+                            "challenge": "Ensuring payment security and compliance.",
+                            "solution": "Integrated PCI-compliant Stripe API with tokenized transactions."
+                        },
+                        {
+                            "challenge": "Driver-partner onboarding and performance monitoring.",
+                            "solution": "Developed an automated verification system with driver performance analytics."
+                        }
+                    ],
+                    "outcomes": [
+                        "Reduced delivery times with optimized routing and real-time tracking.",
+                        "Boosted customer satisfaction through instant notifications and live updates.",
+                        "Enabled 24/7 availability with AWS high-availability deployment.",
+                        "Provided merchants with detailed analytics to improve business decisions.",
+                        "Achieved scalability to handle 50k+ daily orders seamlessly."
+                    ],
+                    "project_details": {
+                        "category": "Full Stack Application",
+                        "year": "2020",
+                        "technologies": [
+                            "Laravel",
+                            "React Native",
+                            "Node.js",
+                            "AWS",
+                            "MySQL",
+                            "Google Maps API",
+                            "Stripe",
+                            "REST API"
+                        ],
+                        "live_link": "https://chariot-app.com"
+                    }
+                }
+            },
+            {
+                "title": "Nirvia - Smart Way to Buy Best Insurance",
+                "description": "Developed a modern insurance comparison and purchase platform with a seamless user interface, real-time policy recommendations, and secure transactions.",
+                "technologies": [
+                    "Laravel",
+                    "React.js",
+                    "MySQL",
+                    "Tailwind CSS",
+                    "REST API",
+                    "Razorpay"
+                ],
+                "link": "https://nirvia.com/",
+                "image": "nirvia.png",
+                "category": "FULL STACK APPLICATION",
+                "period": "2020",
+                "case_study": {
+                    "overview": "Nirvia is a digital-first insurance platform designed to simplify the process of comparing, selecting, and purchasing insurance policies. It leverages modern technologies to deliver personalized recommendations, secure transactions, and a transparent experience for customers.",
+                    "problem_statement": [
+                        "Users faced difficulty in comparing multiple insurance providers in one place.",
+                        "Lack of personalized policy recommendations based on customer needs.",
+                        "Manual processes for premium calculation and document verification.",
+                        "Low customer trust due to unclear terms and lack of transparency."
+                    ],
+                    "objectives": [
+                        "Provide a centralized platform to compare multiple insurance providers.",
+                        "Offer AI-driven personalized policy suggestions based on user profiles.",
+                        "Enable secure online purchase and premium payment.",
+                        "Automate document verification and policy generation.",
+                        "Enhance transparency through clear information and intuitive UI."
+                    ],
+                    "images": [
+                        "nirvia-home.png",
+                        "nirvia-compare.png",
+                        "nirvia-policy.png"
+                    ],
+                    "implemented": {
+                        "title": "Tech Stack & Architecture",
+                        "architecture": {
+                            "backend": "Laravel 10 (REST APIs, authentication, policy engine)",
+                            "frontend": "React.js with Tailwind CSS for responsive UI",
+                            "database": "MySQL with optimized queries and indexing",
+                            "infrastructure": "Deployed on AWS EC2 with S3 for document storage and CloudFront for CDN",
+                            "payments": "Razorpay integration for secure premium payments",
+                            "security": "JWT authentication, HTTPS enforcement, encrypted document storage"
+                        },
+                        "key_features": [
+                            "Real-time insurance comparison across multiple providers.",
+                            "AI-driven personalized policy recommendations.",
+                            "Premium calculator with instant quotes.",
+                            "Secure document upload and automated verification.",
+                            "Razorpay payment gateway integration for premium collection.",
+                            "Policy management dashboard with history and renewal reminders."
+                        ]
+                    },
+                    "challenges_and_solutions": [
+                        {
+                            "challenge": "Providing real-time insurance comparisons with multiple providers.",
+                            "solution": "Integrated third-party APIs and built a caching layer for optimized performance."
+                        },
+                        {
+                            "challenge": "Ensuring customer trust with transparent policies.",
+                            "solution": "Implemented clear UI design with side-by-side policy comparison and digital signatures."
+                        },
+                        {
+                            "challenge": "Automating policy generation and verification.",
+                            "solution": "Developed document verification workflows and automated PDF policy generation."
+                        },
+                        {
+                            "challenge": "Securing sensitive user data and documents.",
+                            "solution": "Encrypted data at rest, enforced role-based access, and implemented AWS KMS for key management."
+                        }
+                    ],
+                    "outcomes": [
+                        "Reduced insurance purchase process time by 60%.",
+                        "Increased customer trust and engagement through transparent comparisons.",
+                        "Automated policy generation improved operational efficiency by 50%.",
+                        "Secured 99.9% uptime and scalability with AWS infrastructure.",
+                        "Boosted sales conversions by 40% through AI-driven policy recommendations."
+                    ],
+                    "project_details": {
+                        "category": "Full Stack Application",
+                        "year": "2020",
+                        "technologies": [
+                            "Laravel",
+                            "React.js",
+                            "MySQL",
+                            "Tailwind CSS",
+                            "REST API",
+                            "Razorpay"
+                        ],
+                        "live_link": "https://nirvia.com/"
+                    }
+                }
+            },
+            {
                 "title": "AFT (Agra Fort Taxi Service)",
                 "description": "Developed a robust and user-friendly taxi booking platform using Laravel, enabling real-time ride management, fare calculations, driver tracking, and booking history. Integrated location-based services and secure admin dashboards for operations management.",
                 "technologies": [
@@ -1249,7 +1543,7 @@
                 "link": "https://agraforttaxiservice.com",
                 "image": "aft.PNG",
                 "category": "FULL STACK APPLICATION",
-                "period": "2020",
+                "period": "2019",
                 "case_study": {
                     "overview": "Agra Fort Taxi Service (AFT) is a taxi booking platform designed to simplify ride booking and management for both passengers and drivers. The system allows real-time ride scheduling, fare calculation, driver tracking, and booking history, ensuring a reliable and smooth transportation experience. With a Laravel-powered backend and MySQL database, the platform integrates location-based services for accurate ride management and a secure admin dashboard for operational oversight.",
                     "problem_statement": [
@@ -1316,7 +1610,7 @@
                     ],
                     "project_details": {
                         "category": "Full Stack Application",
-                        "year": "2020",
+                        "year": "2019",
                         "technologies": [
                             "Laravel",
                             "MySQL",
@@ -1341,7 +1635,7 @@
                 "link": "https://gnganpatilogistic.com",
                 "image": "gnganpati.PNG",
                 "category": "FULL STACK APPLICATION",
-                "period": "2020",
+                "period": "2019",
                 "case_study": {
                     "overview": "GN Ganpati Logistic is a logistics management platform developed to simplify and digitalize freight operations. The system allows businesses to manage bookings, assign vehicles, track routes in real-time, and confirm deliveries efficiently. With Laravel as the backend framework and MySQL as the database, the platform ensures secure multi-user access with role-based dashboards tailored for admins, drivers, and clients.",
                     "problem_statement": [
@@ -1408,7 +1702,7 @@
                     ],
                     "project_details": {
                         "category": "Full Stack Application",
-                        "year": "2020",
+                        "year": "2019",
                         "technologies": [
                             "Laravel",
                             "MySQL",
