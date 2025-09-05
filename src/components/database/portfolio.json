@@ -1054,6 +1054,99 @@
                 }
             },
             {
+                "title": "WhealthConnect (Fitness & Gym Management Platform)",
+                "description": "Developed the backend dashboard and REST APIs for WhealthConnect, a mobile application that allows fitness centers to register, manage trainers, and publish daily tutorials, built with Laravel and PostgreSQL for scalability.",
+                "technologies": [
+                    "Laravel",
+                    "JavaScript",
+                    "PostgreSQL",
+                    "REST API",
+                    "JWT Authentication",
+                    "AWS"
+                ],
+                "link": "https://whealthconnect.com/",
+                "image": "whealthconnect.png",
+                "category": "FULL STACK APPLICATION",
+                "period": "2022",
+                "case_study": {
+                    "overview": "WhealthConnect is a mobile-first fitness platform designed to connect gyms, fitness centers, and trainers with users seeking personalized training and daily workout tutorials. The backend dashboard and APIs were developed using Laravel, ensuring secure authentication, efficient data handling, and seamless integration with the mobile app.",
+                    "problem_statement": [
+                        "Lack of centralized platforms for gyms to manage their trainers and training content.",
+                        "Difficulty for users to discover authentic fitness centers and trainers.",
+                        "Absence of a structured system for publishing daily tutorials and engaging users.",
+                        "Challenges in managing membership data and trainer schedules efficiently."
+                    ],
+                    "objectives": [
+                        "Enable fitness centers to register and manage their gym profiles.",
+                        "Provide a dashboard for admins to manage trainers, tutorials, and user activity.",
+                        "Deliver secure APIs for the mobile app to fetch tutorials and trainer data.",
+                        "Support real-time tutorial updates and trainer-user interactions.",
+                        "Ensure scalability to handle growing gyms and trainer networks."
+                    ],
+                    "images": [
+                        "whealthconnect.png",
+                        "whealthconnect-dashboard.png",
+                        "whealthconnect-api.png"
+                    ],
+                    "implemented": {
+                        "title": "Tech Stack & Architecture",
+                        "architecture": {
+                            "backend": "Laravel 10 (REST APIs, JWT authentication, RBAC)",
+                            "frontend": "Admin dashboard with Blade templates + JavaScript",
+                            "database": "PostgreSQL with indexing and optimized queries",
+                            "infrastructure": "AWS (EC2 for hosting, RDS for PostgreSQL, S3 for media storage, CloudWatch for monitoring)",
+                            "security": "RBAC, JWT, HTTPS, and data encryption"
+                        },
+                        "key_features": [
+                            "Gym registration and profile management.",
+                            "Trainer management with scheduling and availability.",
+                            "Daily tutorial publishing system with media upload support.",
+                            "User management and authentication with JWT APIs.",
+                            "Analytics dashboard for gym owners to track engagement.",
+                            "Scalable API layer for mobile application integration."
+                        ]
+                    },
+                    "challenges_and_solutions": [
+                        {
+                            "challenge": "Efficiently managing geolocation-based gym discovery.",
+                            "solution": "Integrated PostgreSQL PostGIS for location queries and filtering nearby gyms."
+                        },
+                        {
+                            "challenge": "Ensuring smooth integration between mobile app and backend APIs.",
+                            "solution": "Implemented RESTful APIs with versioning, strict validation, and JWT authentication."
+                        },
+                        {
+                            "challenge": "Managing media-heavy tutorials (images, videos).",
+                            "solution": "Configured AWS S3 for media storage and integrated CloudFront for faster delivery."
+                        },
+                        {
+                            "challenge": "Maintaining high performance with growing datasets.",
+                            "solution": "Optimized PostgreSQL with indexing and caching frequently accessed queries."
+                        }
+                    ],
+                    "outcomes": [
+                        "Enabled over 100 fitness centers to register and manage their trainers.",
+                        "Improved trainer visibility and engagement with structured tutorial posting.",
+                        "Delivered a scalable backend supporting thousands of daily active users.",
+                        "Enhanced user experience with real-time updates and secure APIs.",
+                        "Provided a robust admin dashboard for monitoring and analytics."
+                    ],
+                    "project_details": {
+                        "category": "Full Stack Application",
+                        "year": "2022",
+                        "technologies": [
+                            "Laravel",
+                            "JavaScript",
+                            "PostgreSQL",
+                            "REST API",
+                            "AWS",
+                            "JWT Authentication"
+                        ],
+                        "live_link": "https://whealthconnect.com"
+                    }
+                }
+            },
+            {
                 "title": "FlexTaxis",
                 "description": "FlexTaxis is a robust taxi booking platform developed using CodeIgniter, designed to provide a seamless experience for both passengers and drivers. It offers real-time ride tracking, dynamic fare calculation, and a secure admin dashboard for fleet management.",
                 "technologies": [
