@@ -43,7 +43,7 @@ const SocialLinks = ({ withNames = false, platforms }) => {
             {filtered.filter(item => item.status === true).map((item, index) => {
                 const Icon = iconMap[item.icon];
                 if (!Icon) return null;
-                return (<a key={index} href={item.link} target="_blank" rel="noopener noreferrer" className="social-link"><Icon className="social-icon" />{withNames && <span className="social-name">{item.name}</span>}</a>);
+                return (<a key={index} href={item.link} target="_blank" rel="noopener noreferrer" className="social-link" aria-label={`${item.name} Profile`}><Icon className="social-icon" />{withNames && <span className="social-name">{item.name}</span>}</a>);
             })}
         </div>
     );

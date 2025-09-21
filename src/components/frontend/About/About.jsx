@@ -47,21 +47,21 @@ const About = () => {
                                     <div className="skill-icon">
                                         <FaPalette className='tech-icon' title='Frontend Dev' />
                                     </div>
-                                    <h4>UI/UX Design</h4>
+                                    <h3>UI/UX Design</h3>
                                     <p>Translating concepts into responsive, user-friendly interfaces.</p>
                                 </div>
                                 <div className="skill-item" data-aos="zoom-in" data-aos-delay="450">
                                     <div className="skill-icon">
                                         <FaCodepen className='tech-icon' />
                                     </div>
-                                    <h4>Full-Stack Dev</h4>
+                                    <h3>Full-Stack Dev</h3>
                                     <p>End-to-end systems using Laravel, Node.js, React & PostgreSQL.</p>
                                 </div>
                                 <div className="skill-item" data-aos="zoom-in" data-aos-delay="500">
                                     <div className="skill-icon">
                                         <BsCloudCheck />
                                     </div>
-                                    <h4>Cloud & DevOps</h4>
+                                    <h3>Cloud & DevOps</h3>
                                     <p>AWS, Docker, CI/CD pipelines, and scalable microservices.</p>
                                 </div>
                             </div>
