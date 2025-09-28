@@ -14,16 +14,16 @@ const HeroSection = () => {
                 <Row className="align-items-center flex-md-row flex-column-reverse gap-lg-0 gap-3">
                     <Col lg={6} className="hero-content" data-aos="fade-right" data-aos-delay="100">
                         <div className="content-wrapper">
-                        <h1 className="d-md-flex gap-md-3"> Creative <Type /></h1>
-                        <p className='pe-md-3 py-md-4'>{home.compactAbout}</p>
+                        <h1 className="d-md-flex gap-md-2 text-white"> Creative <Type /></h1>
+                        <p className='pe-md-3 py-md-4 text-white'>{home.compactAbout}</p>
                         <div className="hero-stats d-flex gap-2 align-item-center justify-content-md-start justify-content-center" data-aos="fade-up" data-aos-delay="200">
                             <div className="stat-item">
                                 <span className="purecounter" data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="2">75+</span>
-                                <span className="stat-label">Projects Completed</span>
+                                <span className="stat-label text-white">Projects Completed</span>
                             </div>
                             <div className="stat-item">
                                 <span className="purecounter" data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="2">5+</span>
-                                <span className="stat-label">Years Experience</span>
+                                <span className="stat-label text-white">Years Experience</span>
                             </div>
                         </div>
                         <div className="hero-actions d-flex gap-2 align-item-center justify-content-md-start justify-content-center py-3" data-aos="fade-up" data-aos-delay="300">

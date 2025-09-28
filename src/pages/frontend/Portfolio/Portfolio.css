@@ -59,7 +59,15 @@ table tbody tr td {
 }
 
 .project-card {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+    background: linear-gradient(135deg, var(--surface-color) 0%, color-mix(in srgb, var(--surface-color), var(--accent-color) 5%) 100%);
+    border-radius: 15px !important;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%) !important;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    box-shadow: 0 8px 30px color-mix(in srgb, var(--default-color), transparent 85%) !important;
+    transform: translateY(-5px);
 }

@@ -59,11 +59,11 @@ const ContactSection = () => {
         );
     };
     return (
-        <section id="contact" className="contact section mb-5">
+        <section id="contact" className="contact section py-5">
             {/* Section Title */}
             <Container className="section-title">
-                <h2>Contact</h2>
-                <p>Feel free to get in touch — whether it's a project, collaboration, or just a technical chat.</p>
+                <h2 className="text-white">Contact</h2>
+                <p className="text-white">Feel free to get in touch — whether it's a project, collaboration, or just a technical chat.</p>
             </Container>
             <Container data-aos="fade-up" data-aos-delay="100">
                 <Row className="g-4 g-lg-5">

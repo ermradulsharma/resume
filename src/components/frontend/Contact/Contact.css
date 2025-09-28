@@ -1,6 +1,12 @@
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+#contact {
+    background-image: url('../../../assets/back.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .contact .info-box {
     background-color: var(--accent-color);
     color: var(--contrast-color);

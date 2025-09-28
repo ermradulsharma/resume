@@ -1,6 +1,18 @@
 /*--------------------------------------------------------------
 # Global Section Titles
 --------------------------------------------------------------*/
+#hero {
+    background-image: url("../../../assets/back.png");
+    background-position: center 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: calc(100vh - 77px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .section-title {
     padding-bottom: 30px;
     position: relative;
@@ -74,7 +86,7 @@
 .hero .hero-stats .stat-item .purecounter {
     font-size: 2rem;
     font-weight: 700;
-    color: var(--accent-color);
+    color: var(--white);
     line-height: 1;
 }
 

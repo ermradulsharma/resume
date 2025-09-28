@@ -71,7 +71,7 @@ export default function Portfolio() {
                 {/* Project Grid with CSS Grid */}
                 <div className="project-grid">
                     {currentProjects.map((p, index) => (
-                        <Card key={index} className="h-100 shadow-lg border-0 project-card p-0 rounded">
+                        <Card key={index} className="shadow-lg project-card p-0">
                             <div className="overflow-hidden rounded-top">
                                 <Card.Img
                                     src={require(`../../../assets/projects/${p.image}`)}

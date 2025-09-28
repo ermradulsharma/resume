@@ -360,7 +360,7 @@ button:focus {
 }
 
 .Typewriter__wrapper {
-    color: var(--accent-color) !important;
+    color: var(--white) !important;
 }
 
 .Typewriter__cursor {
