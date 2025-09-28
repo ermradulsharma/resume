@@ -130,7 +130,7 @@ const ContactSection = () => {
                             </div> */}
                             <SocialLinks withNames platforms={['GitHub', 'LinkedIn', 'X', 'GitLab', 'Telegram']} />
                             {/* Personal Tagline */}
-                            <p className="mt-4 small fst-italic text-white-50 text-center">Currently coding from ☕ Coffee-powered desk.</p>
+                            <p className="mt-4 small fst-italic text-white text-center">Currently coding from ☕ Coffee-powered desk.</p>
                         </div>
                     </Col>
 
@@ -155,7 +155,7 @@ const ContactSection = () => {
                                 </Col>
                                 {/* Service List */}
                                 <Col md={12}>
-                                    <Select closeMenuOnSelect={false} components={animatedComponents} options={servicesList} isMulti isSearchable placeholder="Select services..." value={formData.selected_services} onChange={handleSelectChange} />
+                                    <Select closeMenuOnSelect={false} components={animatedComponents} options={servicesList} isMulti isSearchable placeholder="Select services..." value={formData.selected_services} onChange={handleSelectChange} aria-label="Select the services you are interested in" />
                                 </Col>
 
                                 {/* Hidden field for EmailJS */}

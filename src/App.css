@@ -3,53 +3,62 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
-html {
-    --background-color: #ffffff;
+:root {
+    /* ---------------- Core Colors ---------------- */
+    --white: #ffffff;
+    --black: #000000;
+    --red: #ff4c4c;
+    --green: #4CE6A6;
+    --blue: #065cc2;
+    --yellow: #ffc107;
+    --orange: #ff9800;
+    --purple: #800080;
+    --pink: #ff69b4;
+    --teal: #008080;
+    --cyan: #00bcd4;
+
+    --background-color: var(--white);
+    --surface-color: var(--white);
+    --contrast-color: var(--white);
     --default-color: #314862;
     --heading-color: #13447f;
     --accent-color: #065cc2;
-    --surface-color: #ffffff;
-    --contrast-color: #ffffff;
 
-    --btn-bg: #4CE6A6;
-    --btn-text: #000000;
-    --btn-hover-bg: #3bd094;
-    --btn-hover-text: #ffffff;
-    --text-muted: #cccccc;
+    --heading-font: "math";
 
-    /* Typography Colors */
-    --imp-text-color: #4CE6A6;
-    --imp-bold-text-color: #4CE6A6;
-    --heading-color: #ffffff;
+    /* ---------------- Button Colors ---------------- */
+
+    --btn-bg: var(--accent-color);
+    --btn-text: var(--black);
+    --btn-hover-bg: var(--accent-color);
+    --btn-hover-text: var(--background-color);
+
+    /* ---------------- Typography ---------------- */
+    --imp-text-color: var(--accent-color);
+    --imp-bold-text-color: var(--accent-color);
     --subheading-color: #b0b0b0;
 
-    /* Button Colors */
-    --btn-bg: #4CE6A6;
-    --btn-text: #000000;
-    --btn-hover-bg: #3bd094;
-    --btn-hover-text: #ffffff;
+    /* ---------------- Borders ---------------- */
+    --border-color: rgba(0, 0, 0, 0.1);
+    --highlight-border: var(--accent-color);
 
-    /* Border Colors */
-    --border-color: rgba(255, 255, 255, 0.1);
-    --highlight-border: #4CE6A6;
+    /* ---------------- Shadows ---------------- */
+    --shadow-default: 0 4px 6px rgba(0, 0, 0, 0.15);
+    --shadow-hover: 0 6px 10px rgba(0, 0, 0, 0.25);
+    --blur-effect: blur(12px);
 
-    /* Shadows & Effects */
-    --shadow-default: 0 4px 6px rgba(0, 0, 0, 0.3);
-    --shadow-hover: 0 6px 10px rgba(0, 0, 0, 0.5);
-    --blur-effect: blur(15px);
+    /* ---------------- Gradients ---------------- */
+    --section-background-gradient: linear-gradient(to bottom left, #050828, #010427);
+    --image-overlay-gradient: linear-gradient(to bottom left, rgba(5, 8, 40, 0.85), rgba(1, 4, 39, 0.9));
 
-    /* Gradient Examples */
-    --section-background-gradient: linear-gradient(to bottom left, rgb(5, 8, 40), rgb(1, 4, 39));
-    --image-overlay-gradient: linear-gradient(to bottom left, rgba(5, 8, 40, 0.87), rgba(1, 4, 39, 0.925));
-
-    /* Spacing */
+    /* ---------------- Spacing ---------------- */
     --spacing-xs: 4px;
     --spacing-sm: 8px;
     --spacing-md: 16px;
     --spacing-lg: 32px;
     --spacing-xl: 64px;
 
-    /* Font Sizes */
+    /* ---------------- Font Sizes ---------------- */
     --font-xs: 0.75rem;
     --font-sm: 0.875rem;
     --font-md: 1rem;
@@ -57,27 +66,12 @@ html {
     --font-xl: 1.5rem;
     --font-xxl: 2rem;
 
-    /* Z-Index Levels */
+    /* ---------------- Z-Index Levels ---------------- */
     --z-nav: 1000;
     --z-dropdown: 1050;
     --z-overlay: 1100;
     --z-modal: 1200;
     --z-tooltip: 1300;
-}
-
-/* Dark Theme */
-[data-theme="dark"] {
-    --background-color: #0c0d0f;
-    --default-color: #cccccc;
-    --heading-color: #ffffff;
-    --accent-color: #4CE6A6;
-    --surface-color: #1a1a1a;
-    --contrast-color: #000000;
-
-    --btn-bg: #065cc2;
-    --btn-text: #ffffff;
-    --btn-hover-bg: #13447f;
-    --btn-hover-text: #e5e5e5;
 }
 
 body {
@@ -119,11 +113,6 @@ li {
     line-height: 1.3;
     color: color-mix(in srgb, var(--default-color), transparent 25%);
 }
-
-/* a {
-    color: var(--primary-color) !important;
-    text-decoration: none;
-} */
 
 .css-1wt4o4o-MuiListItemIcon-root,
 .MuiListItemIcon-root .css-s8s1gl {
@@ -182,21 +171,14 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #299c40;
+    background: var(--accent-color);
 }
 
 /* Handle */
-::-webkit-scrollbar-thumb {
-    /* background: rgba(42, 149, 63, 0.959); */
-    border-radius: 12px;
-}
-
-/* Handle on hover */
+::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-thumb:hover {
-    /* background: rgb(33, 150, 82); */
     border-radius: 12px;
 }
-
 
 /* --------- */
 /* Navbar Section  */
@@ -219,7 +201,7 @@ button:focus {
 }
 
 .downBtn {
-    color: #4CE6A6;
+    color: var(--accent-color);
     border: 1px solid #024429;
     display: flex;
     align-items: center;
@@ -374,7 +356,7 @@ button:focus {
 }
 
 .main-name {
-    color: #4CE6A6;
+    color: var(--accent-color);
 }
 
 .Typewriter__wrapper {
@@ -569,7 +551,7 @@ button:focus {
 
 .icon-data {
     font-size: 1.8rem !important;
-    color: #4CE6A6 !important;
+    color: var(--accent-color) !important;
 }
 
 .tech-icons:hover {
@@ -588,8 +570,8 @@ button:focus {
 .tech-icons:hover {
     transform: scale(1.05) !important;
     overflow: hidden !important;
-    border: 2.2px solid #4CE6A6 !important;
-    color: #4CE6A6;
+    border: 2.2px solid var(--accent-color) !important;
+    color: var(--accent-color);
 }
 
 .tech-icon-images {
@@ -638,7 +620,7 @@ button:focus {
 }
 
 .project-card-view {
-    box-shadow: 0 4px 5px 3px rgb(31, 154, 68) !important;
+    box-shadow: 0 4px 5px 3px var(--accent-color) !important;
     /* box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important; */
     color: rgb(1, 4, 39) !important;
     background-color: transparent !important;
@@ -650,7 +632,7 @@ button:focus {
 .project-card-view:hover {
     transform: scale(1.02) !important;
     overflow: hidden !important;
-    box-shadow: 0 4px 5px 3px rgb(52, 190, 96) !important;
+    box-shadow: 0 4px 5px 3px var(--accent-color) !important;
 }
 
 .blog-card {

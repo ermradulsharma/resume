@@ -77,7 +77,7 @@ export default function Portfolio() {
                                     src={require(`../../../assets/projects/${p.image}`)}
                                     alt={p.title}
                                     className="object-fit-cover rounded-0"
-                                    height={147}
+                                    height={147} rel='lazy' loading="lazy"
                                 />
                                 <div className="overlay d-flex justify-content-center align-items-center">
                                     <Button variant="success" onClick={() => handleShow(p)} size="sm">

@@ -107,7 +107,7 @@ export default function CustomModal({ open, setOpen, project = {} }) {
               borderRadius: "15px",
               marginBottom: "1rem",
               objectFit: "cover",
-            }}
+            }} rel='lazy' loading="lazy"
           />
         )}
 

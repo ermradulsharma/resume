@@ -11,7 +11,7 @@ function NavBar() {
     return (
         <Navbar sticky="top" expand="lg" collapseOnSelect bg="light" className='p-3' data-bs-theme="light">
             <Container>
-                <Navbar.Brand href="/" className='p-0 m-0'>
+                <Navbar.Brand href="/" className='p-0 m-0' aria-label="Mradul Sharma">
                     <img alt="" src={logo} height={45} />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />

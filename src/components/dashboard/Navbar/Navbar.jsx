@@ -27,12 +27,12 @@ const DashboardNavbar = () => {
             <Nav className="ms-auto">
                 <Dropdown align="end">
                     <Dropdown.Toggle as="a" className="nav-link p-0 d-flex align-items-center" id="dropdown-user" aria-label="dropdown profile avatar">
-                    <Image src="/admin/assets/img/avatars/1.png" roundedCircle height={40} className="avatar-online" alt="avatar-image" />
+                    <Image src="/admin/assets/img/avatars/1.png" roundedCircle height={40} className="avatar-online" alt="avatar-image" rel='lazy' loading="lazy" />
                     </Dropdown.Toggle>
                     <Dropdown.Menu className="dropdown-menu-end">
                         <Dropdown.Item href="#" aria-label="go to profile">
                             <div className="d-flex align-items-center">
-                                <Image src="/admin/assets/img/avatars/1.png" roundedCircle height={40} className="me-3 avatar-online" alt="avatar-image" />
+                                <Image src="/admin/assets/img/avatars/1.png" roundedCircle height={40} className="me-3 avatar-online" alt="avatar-image" rel='lazy' loading="lazy" />
                                 <div>
                                     <div className="fw-medium">{userName}</div>
                                     <small className="text-muted">{role}</small>

@@ -15,7 +15,7 @@ export const Index = () => {
                                     <Button variant="outline-primary" size="sm">View Badges</Button>
                                 </Col>
                                 <Col sm={5} className="text-center">
-                                    <Image src="/admin/assets/img/illustrations/man-with-laptop-light.png" height="140" alt="View Badge User" fluid />
+                                    <Image src="/admin/assets/img/illustrations/man-with-laptop-light.png" height="140" alt="View Badge User" fluid  rel='lazy' loading="lazy"/>
                                 </Col>
                             </Row>
                         </Card.Body>
@@ -27,7 +27,7 @@ export const Index = () => {
                             <Card>
                                 <Card.Body>
                                     <div className="d-flex justify-content-between align-items-start">
-                                    <Image src="/admin/assets/img/icons/unicons/chart-success.png" alt="chart success" className="rounded" width={40} />
+                                    <Image src="/admin/assets/img/icons/unicons/chart-success.png" alt="chart success" className="rounded" width={40} rel='lazy' loading="lazy" />
                                     <Dropdown align="end">
                                         <Dropdown.Toggle variant="link" bsPrefix="btn p-0">
                                         <i className="bx bx-dots-vertical-rounded" />
@@ -51,7 +51,7 @@ export const Index = () => {
                             <Card>
                                 <Card.Body>
                                     <div className="d-flex justify-content-between align-items-start">
-                                        <Image src="/admin/assets/img/icons/unicons/wallet-info.png" alt="wallet info" className="rounded" width={40} />
+                                        <Image src="/admin/assets/img/icons/unicons/wallet-info.png" alt="wallet info" className="rounded" width={40} rel='lazy' loading="lazy" />
                                         <Dropdown align="end">
                                             <Dropdown.Toggle variant="link" bsPrefix="btn p-0">
                                             <i className="bx bx-dots-vertical-rounded" />
