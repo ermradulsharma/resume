@@ -1,19 +1,22 @@
 import React, { useRef, useState } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { BsClock, BsWhatsapp, BsPhoneVibrateFill, BsMailbox2Flag } from "react-icons/bs";
+import { GoogleMap, InfoWindow, LoadScript, Marker } from "@react-google-maps/api";
 import "../../../components/frontend/Contact/Contact.css"
 import SocialLinks from "../SocialLinks/SocialLinks";
 import emailjs from "@emailjs/browser";
 import servicesList from "../../../components/database/serviceList.json"
 import Select from "react-select";
 import makeAnimated from 'react-select/animated';
-
+import logo from '../../../assets/mradulsharma.jpeg';
 const animatedComponents = makeAnimated();
 
 const ContactSection = () => {
     const form = useRef();
     const [done, setDone] = useState(false);
     const [notDone, setNotDone] = useState(false);
+    const [infoOpen, setInfoOpen] = useState(true);
+
     const [formData, setFormData] = useState({
         from_name: "",
         reply_to: "",
@@ -58,6 +61,11 @@ const ContactSection = () => {
             }
         );
     };
+
+    // Replace these with your actual coordinates
+    // 27.5569967,78.6348963
+    const mapCenter = { lat: 27.5482107, lng: 78.6647141 };
+    const mapContainerStyle = { width: "100%", height: "600px", borderRadius: "12px", overflow: "hidden" };
     return (
         <section id="contact" className="contact section py-5">
             {/* Section Title */}
@@ -171,6 +179,32 @@ const ContactSection = () => {
                             </Row>
                         </Form>
                         </div>
+                    </Col>
+                </Row>
+            </Container>
+            {/* Google Map */}
+            <Container className="my-5 rounded-1">
+                <Row>
+                    <Col>
+                        <LoadScript googleMapsApiKey="AIzaSyBkh0MJV_FAoKEmmC5mKOwqb9sqoG-Fk8A">
+                            <GoogleMap mapContainerStyle={mapContainerStyle} center={mapCenter} zoom={15} >
+                                <Marker position={mapCenter} onMouseOver={(e) => setInfoOpen(true)} onMouseOut={(e) => setInfoOpen(false)} >
+                                    {infoOpen && (
+                                        <InfoWindow position={mapCenter} options={{ closeBoxURL: "", enableEventPropagation: true }}>
+                                            <div style={{ maxWidth: "350px" }} className="d-flex align-items-center gap-2">
+                                                <img src={logo} alt="Mradul Sharma" style={{ width: "100px", height: "100px", borderRadius: "8px"}} />
+                                                <div>
+                                                    <h6 className="mb-1">Mradul Sharma</h6>
+                                                    <p className="mb-1">📍 Etah, Uttar Pradesh, India</p>
+                                                    <p className="mb-0"><a href="tel:+917252933077" className="text-decoration-none text-black">📞 +91 72529 33077 </a></p>
+                                                    <p className="mb-0"><a href="mailto:mradulsharma786@gmail.com" className="text-decoration-none text-black">✉️ mradulsharma786@gmail.com</a></p>
+                                                </div>
+                                            </div>
+                                        </InfoWindow>
+                                    )}
+                                </Marker>
+                            </GoogleMap>
+                        </LoadScript>
                     </Col>
                 </Row>
             </Container>

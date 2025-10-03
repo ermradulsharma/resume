@@ -7,6 +7,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .contact .info-box {
     background-color: var(--accent-color);
     color: var(--contrast-color);
@@ -171,4 +172,15 @@
 
 .contact .contact-form .btn:hover {
     background-color: color-mix(in srgb, var(--accent-color), var(--contrast-color) 20%);
+}
+
+.gm-ui-hover-effect, .gm-style-iw-chr {
+    display: none !important;
+}
+.gm-style-iw-d{
+    padding: 0 !important;
+    overflow: auto !important;
+}
+.gm-style .gm-style-iw-c {
+    padding: 12px !important;
 }
