@@ -1,4 +1,5 @@
 import React from "react";
+import SEO from "../../../components/SEO";
 import "../Blogs/Blogs.css";
 
 const Blogs = () => {
@@ -35,6 +36,13 @@ const Blogs = () => {
 
     return (
         <section className="blogs-section section">
+            <SEO
+                title="Blog - Tech Insights by Mradul Sharma | Web Development Tutorials"
+                description="Read articles and tutorials on web development, Laravel, React, AWS, best practices, and modern development techniques. Learn from real-world experiences and technical insights."
+                keywords="Full Stack Development Blog, Web Development Tutorials, Laravel Best Practices, React Development Tips, AWS Cloud Tutorials, Coding Best Practices, Backend Development Guides, Frontend Development Tips, Database Optimization Tutorials, DevOps Insights, Developer Resources, Programming Articles, Software Engineering Blog, Technical Writing, Code Examples"
+                ogUrl="https://mradulsharma.vercel.app/blogs"
+                canonicalUrl="https://mradulsharma.vercel.app/blogs"
+            />
             <div className="container">
                 <div className="section-title text-start mb-5">
                     <h2>Latest Blogs</h2>

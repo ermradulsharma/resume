@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import SEO from "../../../components/SEO";
 import LetsConnect from "../../../components/LetsConnect";
 import { Col, Container, Row } from "react-bootstrap";
 import { BsArrowRight } from "react-icons/bs";
@@ -22,8 +23,15 @@ const Services = () => {
         setShowModal(false);
         setActiveService(null);
     };
-    return(
+    return (
         <section id="services" className="services section">
+            <SEO
+                title="Services - Full-Stack Development by Mradul Sharma"
+                description="Professional full-stack development services including Laravel development, React applications, AWS cloud solutions, API development, database optimization, and DevOps consulting."
+                keywords="Full Stack Development Services, Laravel Development Services, React Development Services, AWS Cloud Consulting, Custom API Development, Database Optimization Services, DevOps Consulting, Cloud Architecture Design, Microservices Development, Enterprise SaaS Development, Payment Gateway Integration, Performance Optimization, Web Application Development, Mobile Backend Development, Technical Consulting, Code Review Services"
+                ogUrl="https://mradulsharma.vercel.app/services"
+                canonicalUrl="https://mradulsharma.vercel.app/services"
+            />
             {/* Hero Section */}
             <div className="services-hero text-white d-flex align-items-center justify-content-center text-center">
                 <div className="overlay"></div>
@@ -40,14 +48,14 @@ const Services = () => {
                 <Row className="g-4">
                     {services.filter(service => service.title && service.description).map((service, index) => {
                         return (
-                        <Col key={index} lg={4} md={6} data-aos="fade-up" data-aos-delay={`${100 * (index % 3 + 1)}`}>
-                            <div className="service-item">
-                                <div className="icon"><i className={`bi ${service.icon}`}></i></div>
-                                <h3>{service.title}</h3>
-                                <p>{service.description}</p>
-                                <button className="link-item btn btn-primary px-4 py-2 text-white" onClick={() => handleShow(service)}>Learn More <BsArrowRight /></button>
-                            </div>
-                        </Col>
+                            <Col key={index} lg={4} md={6} data-aos="fade-up" data-aos-delay={`${100 * (index % 3 + 1)}`}>
+                                <div className="service-item">
+                                    <div className="icon"><i className={`bi ${service.icon}`}></i></div>
+                                    <h3>{service.title}</h3>
+                                    <p>{service.description}</p>
+                                    <button className="link-item btn btn-primary px-4 py-2 text-white" onClick={() => handleShow(service)}>Learn More <BsArrowRight /></button>
+                                </div>
+                            </Col>
                         );
                     })}
                 </Row>

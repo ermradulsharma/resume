@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Container, Card, Button, Badge, Modal, Pagination } from "react-bootstrap";
+import SEO from "../../../components/SEO";
 import "../../frontend/Portfolio/Portfolio.css";
 import data from "../../../components/database/portfolio.json";
 import LetsConnect from "../../../components/LetsConnect";
@@ -49,6 +50,13 @@ export default function Portfolio() {
 
     return (
         <section className="portfolio-section py-0">
+            <SEO
+                title="Portfolio - Projects by Mradul Sharma | Full-Stack Applications"
+                description="Explore enterprise-grade full-stack applications built by Mradul Sharma. Featuring SaaS platforms, CMS systems, and crypto trading applications using Laravel, React, AWS, and modern technologies."
+                keywords="Full Stack Portfolio, Laravel Projects, React Applications, Enterprise Web Applications, SaaS Platform Development, Microservices Architecture, Real-Time Trading Platform, CMS Development, Payroll Management System, Cloud-Based Applications, API Integration Projects, Database-Driven Solutions, E-commerce Development, Payment Gateway Integration, Scalable Web Applications, Progressive Web Apps"
+                ogUrl="https://mradulsharma.vercel.app/portfolio"
+                canonicalUrl="https://mradulsharma.vercel.app/portfolio"
+            />
             {/* Hero Section */}
             <div className="portfolio-hero text-white d-flex align-items-center justify-content-center text-center">
                 <div className="overlay"></div>
