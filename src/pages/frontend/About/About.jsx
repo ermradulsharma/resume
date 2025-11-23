@@ -9,10 +9,9 @@ import Journey from "../../../components/frontend/Journey/Journey";
 import "../../../components/frontend/Journey/Journey.css";
 import Faqs from "../../../components/frontend/Faqs/Faqs";
 import LetsConnect from "../../../components/LetsConnect";
-import Calendarx from "../../../components/frontend/Calendar/Calendar";
 
 const About = () => {
-    const { expandedAbout, expandedAbout2, expandedAbout3, expandedAbout4, expandedAbout5, expandedAbout6, expandedAbout7, expandedAbout8 } = data.about;
+    const { expandedAbout, expandedAbout6, expandedAbout7, expandedAbout8 } = data.about;
     return (
         <div className="about-page">
             {/* Hero Section */}

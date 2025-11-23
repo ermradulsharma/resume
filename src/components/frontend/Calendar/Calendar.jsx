@@ -6,7 +6,7 @@ import interactionPlugin from "@fullcalendar/interaction"; // needed for dateCli
 import listPlugin from "@fullcalendar/list";
 
 export default function ReactFullCalendarStarter() {
-    const [weekends, setWeekends] = useState(true);
+    const [weekends] = useState(true);
     const [events, setEvents] = useState([
         { id: "1", title: "Kickoff Meeting", start: todayAt(10), end: todayAt(11) },
         { id: "2", title: "Code Review", start: todayAt(14), end: todayAt(15) },

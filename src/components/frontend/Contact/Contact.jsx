@@ -39,7 +39,6 @@ const ContactSection = () => {
         const { from_name, reply_to, phone, subject, message, selected_services } = formData;
         if (!from_name || !reply_to || !phone || !subject || !message || selected_services.length === 0) {
             setNotDone(true);
-            setNotDone(true);
             setDone(false);
             return;
         }
@@ -77,7 +76,7 @@ const ContactSection = () => {
                 <Row className="g-4 g-lg-5">
                     {/* Contact Info */}
                     <Col lg={5}>
-                        <div className="info-box p-5" data-aos="fade-up" data-aos-delay="200">
+                        <div className="info-box p-3 p-lg-5" data-aos="fade-up" data-aos-delay="200">
                             <h3>Contact Info</h3>
                             <p>I’m always open to discussing new opportunities, freelance work, or helping with your project. Let’s connect!</p>
                             <div className="info-item" data-aos="fade-up" data-aos-delay="400">
@@ -183,7 +182,7 @@ const ContactSection = () => {
                 </Row>
             </Container>
             {/* Google Map */}
-            <Container className="my-5 rounded-1">
+            <Container className="mt-5 rounded-1">
                 <Row>
                     <Col>
                         <LoadScript googleMapsApiKey="AIzaSyBkh0MJV_FAoKEmmC5mKOwqb9sqoG-Fk8A">

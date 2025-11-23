@@ -11,29 +11,23 @@
     "@fullcalendar/list": "^6.1.19",
     "@fullcalendar/react": "^6.1.19",
     "@fullcalendar/timegrid": "^6.1.19",
-    "@mui/icons-material": "^7.2.0",
-    "@mui/material": "^7.2.0",
+    "@mui/material": "^7.3.5",
     "@react-google-maps/api": "^2.20.7",
-    "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/react": "^16.3.0",
-    "@testing-library/user-event": "^14.6.1",
-    "bootstrap": "^5.3.7",
+    "bootstrap": "^5.3.8",
     "bootstrap-icons": "^1.13.1",
-    "chart.js": "^4.5.0",
-    "date-fns": "^2.30.0",
-    "react": "^19.1.0",
+    "chart.js": "^4.5.1",
+    "date-fns": "^4.1.0",
+    "eslint-config-react-app": "^7.0.1",
+    "react": "^19.2.0",
     "react-bootstrap": "^2.10.10",
-    "react-chartjs-2": "^5.3.0",
-    "react-dom": "^19.1.0",
-    "react-github-calendar": "^4.5.9",
+    "react-chartjs-2": "^5.3.1",
+    "react-dom": "^19.2.0",
+    "react-github-calendar": "^5.0.0",
     "react-icons": "^5.5.0",
-    "react-markdown": "^10.1.0",
-    "react-parallax-tilt": "^1.7.299",
-    "react-router-dom": "^7.6.3",
+    "react-router-dom": "^7.9.6",
     "react-scripts": "^5.0.1",
     "react-select": "^5.10.2",
-    "typewriter-effect": "^2.22.0",
-    "web-vitals": "^5.0.3"
+    "typewriter-effect": "^2.22.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -58,8 +52,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "pdfjs-dist": "^5.3.93"
   }
 }

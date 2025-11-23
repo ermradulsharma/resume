@@ -174,13 +174,27 @@
     background-color: color-mix(in srgb, var(--accent-color), var(--contrast-color) 20%);
 }
 
-.gm-ui-hover-effect, .gm-style-iw-chr {
+.gm-ui-hover-effect,
+.gm-style-iw-chr {
     display: none !important;
 }
-.gm-style-iw-d{
+
+.gm-style-iw-d {
     padding: 0 !important;
     overflow: auto !important;
 }
+
 .gm-style .gm-style-iw-c {
     padding: 12px !important;
+}
+
+@media screen and (max-width: 320px) {
+    .contact .info-box .social-links {
+        grid-template-columns: 2fr 2fr !important;
+    }
+
+    .contact .info-item {
+        gap: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
 }

@@ -5,8 +5,11 @@ import Navbar from "../components/dashboard/Navbar/Navbar";
 import Footer from "../components/dashboard/Footer/Footer";
 
 const DashboardLayout = () => {
-  /* global Main */
-  useEffect(() => { Main(); },[])
+  useEffect(() => {
+    if (typeof window !== 'undefined' && typeof window.Main === 'function') {
+      window.Main();
+    }
+  },[])
   return (
     <div className="layout-wrapper layout-content-navbar gradient_background">
         <div className="layout-container d-flex">

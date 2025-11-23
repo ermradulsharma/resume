@@ -1,0 +1,382 @@
+[
+    {
+        "pattern": "hi|hello|hy|Hy",
+        "answer": "Hello 👋! I’m AskMradul. You can ask me anything about my projects, skills, or experience and I’ll guide you personally."
+    },
+    {
+        "pattern": "bye|goodbye",
+        "answer": "Goodbye! It was great connecting with you. Feel free to reach out anytime for portfolio insights."
+    },
+    {
+        "pattern": "skills|technologies|stack",
+        "answer": "I specialize in React, Node.js, Laravel, AWS, PostgreSQL, MySQL, and MongoDB. I focus on building secure, scalable, and high-performance applications."
+    },
+    {
+        "pattern": "full-stack",
+        "answer": "Yes, I handle both front-end and back-end development, designing modern web applications end-to-end."
+    },
+    {
+        "pattern": "project|projects|type of project|work",
+        "answer": "I’ve developed projects like PayStubx (payroll platform), Storytellers CMS (content management system), and Wealth Mark (financial platform). Each project emphasizes clean code, security, and performance."
+    },
+    {
+        "pattern": "experience",
+        "answer": "I have over 5 years of professional experience in full-stack development, leading teams and delivering enterprise-grade applications."
+    },
+    {
+        "pattern": "cms",
+        "answer": "Yes, I created Storytellers CMS, a custom content management system that simplifies content publishing and management."
+    },
+    {
+        "pattern": "fintech",
+        "answer": "Yes, I developed Wealth Mark, a secure financial application hosted on AWS with optimized APIs and cloud architecture."
+    },
+    {
+        "pattern": "contact|email",
+        "answer": "You can reach me directly at mradul@example.com. I’ll respond personally to your queries."
+    },
+    {
+        "pattern": "cloud|deployment",
+        "answer": "I deploy applications on AWS using CI/CD pipelines, automated testing, and monitoring for smooth production performance."
+    },
+    {
+        "pattern": "microservices",
+        "answer": "I design and implement microservices-based architectures to make applications scalable and maintainable."
+    },
+    {
+        "pattern": "api",
+        "answer": "I build REST and GraphQL APIs optimized for performance and reliability."
+    },
+    {
+        "pattern": "frontend|ui",
+        "answer": "I use React and Material UI to create interactive, responsive, and accessible user interfaces."
+    },
+    {
+        "pattern": "backend",
+        "answer": "Node.js and Laravel are my primary backend technologies, focusing on efficiency and security."
+    },
+    {
+        "pattern": "database|postgres|mongo|mysql",
+        "answer": "I work with PostgreSQL, MySQL, and MongoDB to design reliable and scalable databases for applications."
+    },
+    {
+        "pattern": "testing|qa",
+        "answer": "I perform unit, integration, and functional testing to ensure that every project is stable and high quality."
+    },
+    {
+        "pattern": "deadline|fast",
+        "answer": "I plan and prioritize tasks efficiently to meet project deadlines without compromising quality."
+    },
+    {
+        "pattern": "freelance",
+        "answer": "Yes, I take freelance projects aligned with my expertise, ensuring professional results for every client."
+    },
+    {
+        "pattern": "remote",
+        "answer": "Absolutely, I collaborate effectively with remote teams using communication tools and version control workflows."
+    },
+    {
+        "pattern": "mentoring|guidance",
+        "answer": "I mentor junior developers and guide team members to adopt best practices and improve productivity."
+    },
+    {
+        "pattern": "open-source",
+        "answer": "I actively contribute to select open-source projects to enhance my skills and support the community."
+    },
+    {
+        "pattern": "workflow|process|methodology",
+        "answer": "I follow Agile methodology with iterative sprints, code reviews, and CI/CD deployment processes."
+    },
+    {
+        "pattern": "security",
+        "answer": "I implement secure authentication, authorization, encryption, and data handling practices in all my projects."
+    },
+    {
+        "pattern": "responsive|mobile|ui design",
+        "answer": "All my applications are fully responsive and optimized for desktop, tablet, and mobile devices."
+    },
+    {
+        "pattern": "charts|visualization|dashboard",
+        "answer": "I use Recharts and other visualization tools to create interactive dashboards and visual reports."
+    },
+    {
+        "pattern": "version control|git",
+        "answer": "I use Git for version control to manage code efficiently and collaborate seamlessly with teams."
+    },
+    {
+        "pattern": "documentation",
+        "answer": "I provide clear documentation for projects and APIs to help clients and teams understand and maintain code."
+    },
+    {
+        "pattern": "bug|issue|error",
+        "answer": "I promptly identify and fix bugs to ensure the applications run smoothly for all users."
+    },
+    {
+        "pattern": "learning|upskilling",
+        "answer": "I continuously learn new technologies and frameworks to stay current and deliver modern solutions."
+    },
+    {
+        "pattern": "ci/cd|deployment pipeline",
+        "answer": "I automate builds, tests, and deployments using CI/CD pipelines for reliable and quick production updates."
+    },
+    {
+        "pattern": "monitoring|logging|alerts",
+        "answer": "I implement monitoring, logging, and alerts to track application performance and uptime."
+    },
+    {
+        "pattern": "backup|disaster recovery",
+        "answer": "I maintain automated backups and disaster recovery plans to protect critical data."
+    },
+    {
+        "pattern": "teamwork|collaboration",
+        "answer": "I collaborate effectively with teams using Slack, Zoom, and Git-based workflows to ensure smooth development."
+    },
+    {
+        "pattern": "projects timeline|deadline management",
+        "answer": "I manage project timelines by setting milestones and tracking progress to ensure timely delivery."
+    },
+    {
+        "pattern": "tech stack explanation",
+        "answer": "My tech stack includes React, Node.js, Laravel, PostgreSQL, MySQL, MongoDB, and AWS cloud services."
+    },
+    {
+        "pattern": "chatbot",
+        "answer": "You’re chatting with me, AskMradul! I provide answers about my projects, skills, and experience personally."
+    },
+    {
+        "pattern": "help|support",
+        "answer": "I’m here to help! Ask me anything about my work, and I’ll provide detailed answers personally."
+    },
+    {
+        "pattern": "work samples|demo",
+        "answer": "You can explore my projects and demos directly in my portfolio under the Projects section."
+    },
+    {
+        "pattern": "enterprise experience",
+        "answer": "Yes, I’ve led end-to-end development of enterprise-grade applications."
+    },
+    {
+        "pattern": "leadership|team lead",
+        "answer": "I lead development teams, manage tasks, and ensure timely delivery of high-quality projects."
+    },
+    {
+        "pattern": "devops|automation",
+        "answer": "I manage CI/CD automation, cloud deployments, and monitoring for all production applications."
+    },
+    {
+        "pattern": "career path|background",
+        "answer": "I have over 5 years of experience in full-stack development, working with modern web technologies and cloud infrastructure."
+    },
+    {
+        "pattern": "recommendation",
+        "answer": "I can summarize my skills, projects, and achievements to help clients understand my capabilities."
+    },
+    {
+        "pattern": "timeline|project duration",
+        "answer": "Project timelines vary, but I provide estimates and milestones to keep clients informed."
+    },
+    {
+        "pattern": "general info",
+        "answer": "I provide insights about my portfolio, professional experience, and technical expertise."
+    },
+    {
+        "pattern": "frontend frameworks",
+        "answer": "I primarily use React for frontend development, along with Material UI for styling and responsive design."
+    },
+    {
+        "pattern": "backend frameworks",
+        "answer": "For backend, I use Node.js with Express and Laravel for PHP-based applications."
+    },
+    {
+        "pattern": "real-time apps",
+        "answer": "Yes, I build real-time applications using WebSocket and Socket.IO for instant updates."
+    },
+    {
+        "pattern": "authentication|login|signup",
+        "answer": "I implement secure authentication using JWT, OAuth, and other best practices."
+    },
+    {
+        "pattern": "authorization|roles",
+        "answer": "I set up role-based access control to manage user permissions efficiently."
+    },
+    {
+        "pattern": "performance optimization",
+        "answer": "I optimize applications by caching, lazy loading, code splitting, and database indexing."
+    },
+    {
+        "pattern": "scalability",
+        "answer": "I design apps to scale horizontally and vertically, using microservices and cloud infrastructure."
+    },
+    {
+        "pattern": "seo|search engine",
+        "answer": "I follow SEO best practices including metadata, sitemaps, and semantic HTML."
+    },
+    {
+        "pattern": "analytics|tracking",
+        "answer": "I integrate analytics tools like Google Analytics to track user behavior and performance."
+    },
+    {
+        "pattern": "payment gateway|payments",
+        "answer": "I integrate secure payment gateways like Stripe and PayPal for transaction handling."
+    },
+    {
+        "pattern": "notifications|email|sms",
+        "answer": "I implement email and SMS notifications using services like SendGrid or Twilio."
+    },
+    {
+        "pattern": "cloud hosting|aws|azure",
+        "answer": "I deploy and manage applications on AWS, including EC2, S3, Lambda, and RDS."
+    },
+    {
+        "pattern": "docker|container",
+        "answer": "I containerize applications using Docker for consistent deployments across environments."
+    },
+    {
+        "pattern": "kubernetes|orchestration",
+        "answer": "I deploy and manage scalable applications using Kubernetes clusters."
+    },
+    {
+        "pattern": "graphql|rest api",
+        "answer": "I build both REST and GraphQL APIs depending on project requirements."
+    },
+    {
+        "pattern": "unit testing|jest",
+        "answer": "I write unit tests using Jest and other frameworks to ensure code reliability."
+    },
+    {
+        "pattern": "integration testing",
+        "answer": "I perform integration testing to validate the interaction between modules."
+    },
+    {
+        "pattern": "e2e testing|cypress",
+        "answer": "I use Cypress for end-to-end testing of applications before deployment."
+    },
+    {
+        "pattern": "debugging|troubleshooting",
+        "answer": "I debug applications systematically to identify and fix issues quickly."
+    },
+    {
+        "pattern": "ui/ux design",
+        "answer": "I design intuitive user interfaces with a focus on user experience and accessibility."
+    },
+    {
+        "pattern": "mobile apps|pwa",
+        "answer": "I create responsive web apps and progressive web apps that behave like native mobile apps."
+    },
+    {
+        "pattern": "api documentation|swagger",
+        "answer": "I provide detailed API documentation using Swagger/OpenAPI for developers."
+    },
+    {
+        "pattern": "project management tools|jira",
+        "answer": "I use Jira, Trello, and Asana to manage projects and track tasks efficiently."
+    },
+    {
+        "pattern": "collaboration tools|slack|zoom",
+        "answer": "I use Slack, Zoom, and Git workflows to collaborate effectively with teams."
+    },
+    {
+        "pattern": "code reviews|best practices",
+        "answer": "I perform code reviews and follow best practices to ensure maintainable code."
+    },
+    {
+        "pattern": "refactoring|optimization",
+        "answer": "I refactor code regularly to improve readability, performance, and maintainability."
+    },
+    {
+        "pattern": "responsive design|media queries",
+        "answer": "I use media queries and flexible layouts to ensure responsive design."
+    },
+    {
+        "pattern": "performance monitoring|tools",
+        "answer": "I use tools like New Relic, Datadog, and CloudWatch for performance monitoring."
+    },
+    {
+        "pattern": "security audit|vulnerabilities",
+        "answer": "I perform security audits and fix vulnerabilities to protect applications."
+    },
+    {
+        "pattern": "backup strategy|data recovery",
+        "answer": "I set up automated backups and recovery plans to prevent data loss."
+    },
+    {
+        "pattern": "error handling|logging",
+        "answer": "I implement proper error handling and logging for easier troubleshooting."
+    },
+    {
+        "pattern": "progress reports|updates",
+        "answer": "I provide regular progress reports to keep clients informed about project status."
+    },
+    {
+        "pattern": "timeline estimation",
+        "answer": "I provide accurate timeline estimates and break projects into achievable milestones."
+    },
+    {
+        "pattern": "client communication|updates",
+        "answer": "I maintain transparent communication and provide updates on project progress."
+    },
+    {
+        "pattern": "project handover|documentation",
+        "answer": "I ensure proper project handover with complete documentation for client use."
+    },
+    {
+        "pattern": "scalability planning|growth",
+        "answer": "I plan for application scalability to handle growth in users and data."
+    },
+    {
+        "pattern": "maintenance|support",
+        "answer": "I offer ongoing maintenance and support for applications after deployment."
+    },
+    {
+        "pattern": "custom features|requirements",
+        "answer": "I implement custom features tailored to client requirements and business needs."
+    },
+    {
+        "pattern": "third-party integrations|api",
+        "answer": "I integrate third-party APIs and services seamlessly into applications."
+    },
+    {
+        "pattern": "team leadership|mentorship",
+        "answer": "I lead and mentor development teams to ensure quality and timely delivery."
+    },
+    {
+        "pattern": "professional growth|learning",
+        "answer": "I continuously learn new technologies to stay updated and deliver modern solutions."
+    },
+    {
+        "pattern": "project planning|milestones",
+        "answer": "I plan projects with clear milestones and timelines for efficient delivery."
+    },
+    {
+        "pattern": "feedback implementation|improvements",
+        "answer": "I incorporate client feedback to improve and refine the application."
+    },
+    {
+        "pattern": "interactive dashboards|data visualization",
+        "answer": "I create interactive dashboards and visualizations to help clients analyze data easily."
+    },
+    {
+        "pattern": "scalable architecture|design",
+        "answer": "I design scalable architectures that can grow with the client’s business needs."
+    },
+    {
+        "pattern": "user authentication|security",
+        "answer": "I implement secure user authentication and data encryption to protect sensitive information."
+    },
+    {
+        "pattern": "cloud migration|hosting",
+        "answer": "I migrate applications to the cloud and manage hosting efficiently for performance and reliability."
+    },
+    {
+        "pattern": "project showcase|demo",
+        "answer": "I provide project demos and showcases so clients can see functionality before final delivery."
+    },
+    {
+        "pattern": "custom solutions|problem solving",
+        "answer": "I deliver custom solutions that solve unique client problems effectively."
+    },
+    {
+        "pattern": "project optimization|efficiency",
+        "answer": "I optimize projects for performance, scalability, and efficient resource usage."
+    }
+]

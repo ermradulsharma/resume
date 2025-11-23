@@ -10,9 +10,9 @@ function NavBar() {
     const isActive = (path) => location.pathname === path ? 'active text-success fw-bold fs-6' : 'text-dark fw-bold fs-6';
     return (
         <Navbar sticky="top" expand="lg" collapseOnSelect bg="light" className='p-3' data-bs-theme="light">
-            <Container>
+            <Container className='px-0'>
                 <Navbar.Brand href="/" className='p-0 m-0' aria-label="Mradul Sharma">
-                    <img alt="" src={logo} height={45} />
+                    <img alt="Mradul Sharma" src={logo} height={35} />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
