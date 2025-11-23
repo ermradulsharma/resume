@@ -46,8 +46,8 @@ const Blogs = () => {
         <section className="blogs-section section">
             <div className="container">
                 <div className="section-title text-start mb-5">
-                    <h2>Latest Blogs</h2>
-                    <p>Check out my latest articles and tutorials.</p>
+                    <h1>Latest Blogs & Tutorials</h1>
+                    <p>Explore in-depth articles, tutorials, and insights on web development, Laravel, React, AWS, and modern development practices. Learn from real-world experiences and practical examples to level up your development skills.</p>
                 </div>
                 <div className="row">
                     {blogs.map((blog) => (

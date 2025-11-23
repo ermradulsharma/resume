@@ -65,7 +65,7 @@ export default function Portfolio() {
 
             {/* Project Cards Section */}
             <Container className="section-title py-4 px-3">
-                <h2>{title}</h2>
+                <h1>{title}</h1>
                 <p>{description}</p>
             </Container>
 

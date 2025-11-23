@@ -1,0 +1,39 @@
+# Mradul Sharma - Full Stack Developer Portfolio
+
+## About
+Senior Full-Stack Developer specializing in Laravel, React, Node.js, and AWS.
+Building enterprise-grade applications with focus on scalability and performance.
+Location: Etah, Uttar Pradesh, India
+
+## Services
+- Full Stack Development (Laravel, React, Node.js, Next.js)
+- AWS Cloud Architecture & Consulting
+- Custom API Development & Integration
+- Database Optimization (PostgreSQL, MongoDB)
+- DevOps & CI/CD Pipeline Setup
+- Microservices Architecture
+- Payment Gateway Integration
+- Performance Optimization
+
+## Portfolio
+Enterprise applications and SaaS platforms:
+- PayStubx: Enterprise Payroll Management System built with Laravel and PostgreSQL
+- Storytellers: Scalable Content Management Platform with AWS integration
+- Wealth Mark: Real-time Crypto Trading Platform using WebSockets
+- Multiple e-commerce and business applications
+
+## Technical Expertise
+- Backend: Laravel, Node.js, PHP, Express.js
+- Frontend: React, Next.js, Vue.js, JavaScript ES6+
+- Cloud: AWS (EC2, S3, RDS, Lambda), Docker, Kubernetes
+- Databases: PostgreSQL, MongoDB, MySQL, Redis
+- DevOps: CI/CD, Git, Jenkins, GitHub Actions
+
+## Contact
+Email: mradulsharma786@gmail.com
+Website: https://mradulsharma.vercel.app
+LinkedIn: https://www.linkedin.com/in/mradulsharma
+GitHub: https://github.com/ermradulsharma
+
+## Blog Topics
+Web development tutorials, Laravel best practices, React tips, AWS guides, and full-stack development insights.
