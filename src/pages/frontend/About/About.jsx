@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import SEO from "../../../components/SEO";
+import useSEO from "../../../hooks/useSEO";
 import "../About/About.css";
 import image from "../../../assets/mradulsharma_another.JPG";
 import data from "../../../components/database/about.json"
@@ -12,16 +12,17 @@ import Faqs from "../../../components/frontend/Faqs/Faqs";
 import LetsConnect from "../../../components/LetsConnect";
 
 const About = () => {
+    useSEO({
+        title: "About Mradul Sharma | Senior Full-Stack Developer",
+        description: "Learn about Mradul Sharma's professional journey, technical expertise, and experience in building enterprise-grade applications with Laravel, React, AWS, and modern technologies.",
+        keywords: "Mradul Sharma Profile, Senior Full Stack Developer, Professional Experience, Technical Expertise, Laravel React Specialist, AWS Certified Developer, Enterprise Application Developer, Software Engineer India, Remote Full Stack Developer, Freelance Developer Portfolio, Developer Background, Technical Skills, Web Development Expert, Programming Experience",
+        ogUrl: "https://mradulsharma.vercel.app/about",
+        canonicalUrl: "https://mradulsharma.vercel.app/about"
+    });
+
     const { expandedAbout, expandedAbout6, expandedAbout7, expandedAbout8 } = data.about;
     return (
         <div className="about-page">
-            <SEO
-                title="About Mradul Sharma | Senior Full-Stack Developer"
-                description="Learn about Mradul Sharma's professional journey, technical expertise, and experience in building enterprise-grade applications with Laravel, React, AWS, and modern technologies."
-                keywords="Mradul Sharma Profile, Senior Full Stack Developer, Professional Experience, Technical Expertise, Laravel React Specialist, AWS Certified Developer, Enterprise Application Developer, Software Engineer India, Remote Full Stack Developer, Freelance Developer Portfolio, Developer Background, Technical Skills, Web Development Expert, Programming Experience"
-                ogUrl="https://mradulsharma.vercel.app/about"
-                canonicalUrl="https://mradulsharma.vercel.app/about"
-            />
             {/* Hero Section */}
             <div className="about-hero text-white d-flex align-items-center justify-content-center text-center">
                 <div className="overlay"></div>
