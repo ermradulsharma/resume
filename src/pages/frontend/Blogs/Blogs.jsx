@@ -5,6 +5,7 @@ import { BsGrid3X3Gap, BsList, BsCalendar3, BsClock, BsPerson } from "react-icon
 import useSEO from "../../../hooks/useSEO";
 import "../Blogs/Blogs.css";
 import blogsData from "../../../components/database/blogs.json";
+import LetsConnect from "../../../components/LetsConnect";
 
 const Blogs = () => {
     useSEO({
@@ -226,6 +227,7 @@ const Blogs = () => {
                     </div>
                 )}
             </div>
+            <LetsConnect />
         </section>
     );
 };

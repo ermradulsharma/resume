@@ -6,6 +6,7 @@ import useSEO from "../../../hooks/useSEO";
 import blogsData from "../../../components/database/blogs.json";
 import "./Blogs.css";
 import "./BlogDetail.css";
+import LetsConnect from "../../../components/LetsConnect";
 
 const BlogDetail = () => {
     const { slug } = useParams();
@@ -97,8 +98,8 @@ const BlogDetail = () => {
 
                             {/* Author Info */}
                             <div className="author-card">
-                                <div className="d-flex align-items-center">
-                                    <div className="me-3">
+                                <div className="d-flex align-items-center gap-2">
+                                    <div>
                                         <div className="author-avatar">MS</div>
                                     </div>
                                     <div className="author-info">
@@ -132,6 +133,8 @@ const BlogDetail = () => {
                     </div>
                 </div>
             </Container>
+
+            <LetsConnect />
         </article>
     );
 };
