@@ -170,10 +170,9 @@ const Blogs = () => {
                                                 {post.featured && <Badge bg="success">Featured</Badge>}
                                             </div>
                                             <Card.Title className="h4">{post.title}</Card.Title>
-                                            <Card.Text className="text-muted small mb-2">
-                                                <span className="me-3"><BsCalendar3 className="me-1" /> {getRelativeTime(post.date)}</span>
-                                                <span className="me-3"><BsClock className="me-1" /> {post.readTime}</span>
-                                                <span><BsPerson className="me-1" /> {post.author}</span>
+                                            <Card.Text className="text-muted small d-flex align-items-center gap-2">
+                                                <span className="d-flex align-items-center gap-1"><BsCalendar3 /> {getRelativeTime(post.date)}</span>
+                                                <span className="d-flex align-items-center gap-1"><BsPerson /> {post.author}</span>
                                             </Card.Text>
                                             <Card.Text className="blog-list-excerpt">{post.excerpt}</Card.Text>
                                             <div className="mt-auto">
