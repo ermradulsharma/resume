@@ -126,7 +126,7 @@ const Blogs = () => {
                     <div className="blog-grid-container">
                         {currentPosts.map((post) => (
                             <Card key={post.id} className="blog-card blog-card-grid shadow-sm">
-                                <Card.Img variant="top" src={post.image} alt={post.title} />
+                                <Card.Img variant="top" src={post.image} alt={post.title} loading="lazy" />
                                 <Card.Body className="d-flex flex-column">
                                     <div className="mb-2">
                                         <Badge bg="primary" className="me-2">{post.category}</Badge>
@@ -160,7 +160,7 @@ const Blogs = () => {
                                 <Row className="g-0">
                                     <Col md={4} lg={3}>
                                         <div className="blog-list-image-wrapper">
-                                            <Card.Img src={post.image} alt={post.title} className="blog-list-image" />
+                                            <Card.Img src={post.image} alt={post.title} className="blog-list-image" loading="lazy" />
                                         </div>
                                     </Col>
                                     <Col md={8} lg={9}>

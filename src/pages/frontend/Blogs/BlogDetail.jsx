@@ -1,10 +1,11 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { Container, Row, Col, Badge, Button } from "react-bootstrap";
-import { BsArrowLeft, BsClock, BsCalendar, BsTag } from "react-icons/bs";
+import { Container, Badge, Button } from "react-bootstrap";
+import { BsArrowLeft, BsClock, BsCalendar3, BsTag, BsPerson } from "react-icons/bs";
 import useSEO from "../../../hooks/useSEO";
 import blogsData from "../../../components/database/blogs.json";
 import "./Blogs.css";
+import "./BlogDetail.css";
 
 const BlogDetail = () => {
     const { slug } = useParams();
@@ -23,6 +24,25 @@ const BlogDetail = () => {
         ogImage: post ? post.image : "https://mradulsharma.vercel.app/preview.png"
     });
 
+    // Calculate relative time
+    const getRelativeTime = (dateString) => {
+        const postDate = new Date(dateString);
+        const now = new Date();
+        const diffInSeconds = Math.floor((now - postDate) / 1000);
+
+        if (diffInSeconds < 60) return diffInSeconds === 1 ? '1 second ago' : `${diffInSeconds} seconds ago`;
+        const diffInMinutes = Math.floor(diffInSeconds / 60);
+        if (diffInMinutes < 60) return diffInMinutes === 1 ? '1 minute ago' : `${diffInMinutes} minutes ago`;
+        const diffInHours = Math.floor(diffInMinutes / 60);
+        if (diffInHours < 24) return diffInHours === 1 ? '1 hour ago' : `${diffInHours} hours ago`;
+        const diffInDays = Math.floor(diffInHours / 24);
+        if (diffInDays < 30) return diffInDays === 1 ? '1 day ago' : `${diffInDays} days ago`;
+        const diffInMonths = Math.floor(diffInDays / 30);
+        if (diffInMonths < 12) return diffInMonths === 1 ? '1 month ago' : `${diffInMonths} months ago`;
+        const diffInYears = Math.floor(diffInMonths / 12);
+        return diffInYears === 1 ? '1 year ago' : `${diffInYears} years ago`;
+    };
+
     // If post not found, show error
     if (!post) {
         return (
@@ -30,133 +50,87 @@ const BlogDetail = () => {
                 <div className="text-center">
                     <h1>Blog Post Not Found</h1>
                     <p className="text-muted">The blog post you're looking for doesn't exist.</p>
-                    <Button variant="primary" onClick={() => navigate('/blogs')}>
-                        Back to Blogs
-                    </Button>
+                    <Button variant="primary" onClick={() => navigate('/blogs')}>Back to Blogs</Button>
                 </div>
             </Container>
         );
     }
 
     // Get related posts (same category, excluding current post)
-    const relatedPosts = blogsData.blogs.posts
-        .filter(p => p.category === post.category && p.id !== post.id && p.published)
-        .slice(0, 3);
+    const relatedPosts = blogsData.blogs.posts.filter(p => p.category === post.category && p.id !== post.id && p.published).slice(0, 5);
 
     return (
-        <article className="blog-detail-page section">
+        <article className="blog-detail-page">
             {/* Hero Section with Featured Image */}
-            <div className="blog-hero" style={{
-                backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${post.image})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                minHeight: '400px',
-                display: 'flex',
-                alignItems: 'center',
-                color: 'white'
-            }}>
+            <div className="blog-detail-hero" style={{ backgroundImage: `url(${post.image})` }}>
                 <Container>
-                    <Button
-                        variant="outline-light"
-                        size="sm"
-                        className="mb-3"
-                        onClick={() => navigate('/blogs')}
-                    >
-                        <BsArrowLeft className="me-2" />
-                        Back to Blogs
-                    </Button>
-                    <Badge bg="primary" className="mb-3">{post.category}</Badge>
-                    {post.featured && <Badge bg="success" className="ms-2 mb-3">Featured</Badge>}
-                    <h1 className="display-4 fw-bold mb-3">{post.title}</h1>
-                    <div className="d-flex flex-wrap gap-3 text-white-50">
-                        <span><BsCalendar className="me-2" />{post.date}</span>
-                        <span><BsClock className="me-2" />{post.readTime}</span>
-                        <span>By {post.author}</span>
+                    <Button variant="outline-light" size="sm" className="mb-3 back-button" onClick={() => navigate('/blogs')} ><BsArrowLeft className="me-2" />Back to Blogs</Button>
+                    <div className="mb-3">
+                        <Badge bg="primary">{post.category}</Badge>
+                        {post.featured && <Badge bg="success" className="ms-2">Featured</Badge>}
+                    </div>
+                    <h1>{post.title}</h1>
+                    <div className="blog-detail-meta">
+                        <span><BsCalendar3 />{getRelativeTime(post.date)}</span>
+                        <span><BsClock />{post.readTime}</span>
+                        <span><BsPerson />By {post.author}</span>
                     </div>
                 </Container>
             </div>
 
             {/* Blog Content */}
             <Container className="py-5">
-                <Row>
-                    <Col lg={8} className="mx-auto">
-                        {/* Excerpt */}
-                        <div className="lead text-muted mb-4 p-4 bg-light rounded">
-                            {post.excerpt}
-                        </div>
+                <div className="row">
+                    <div className="col-lg-8">
+                        <div className="blog-detail-content-wrapper">
+                            {/* Excerpt */}
+                            <div className="blog-detail-excerpt">{post.excerpt}</div>
 
-                        {/* Main Content */}
-                        <div className="blog-content mb-5">
-                            {post.content.split('\n\n').map((paragraph, index) => (
-                                <p key={index} className="mb-4" style={{ lineHeight: '1.8', fontSize: '1.1rem' }}>
-                                    {paragraph}
-                                </p>
-                            ))}
-                        </div>
+                            {/* Main Content */}
+                            <div className="blog-detail-content">{post.content.split('\n\n').map((paragraph, index) => (<p key={index}>{paragraph}</p>))}</div>
 
-                        {/* Tags */}
-                        <div className="mb-5">
-                            <h5 className="mb-3"><BsTag className="me-2" />Tags</h5>
-                            <div className="d-flex flex-wrap gap-2">
-                                {post.tags.map((tag, index) => (
-                                    <Badge key={index} bg="secondary" className="px-3 py-2">
-                                        {tag}
-                                    </Badge>
-                                ))}
+                            {/* Tags */}
+                            <div className="blog-detail-tags">
+                                <h5><BsTag className="me-2" />Tags</h5>
+                                <div className="d-flex flex-wrap gap-2">{post.tags.map((tag, index) => (<Badge key={index} bg="secondary">{tag}</Badge>))}</div>
                             </div>
-                        </div>
 
-                        {/* Author Info */}
-                        <div className="p-4 bg-light rounded mb-5">
-                            <h5 className="mb-3">About the Author</h5>
-                            <div className="d-flex align-items-center">
-                                <div className="me-3">
-                                    <div className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
-                                        style={{ width: '60px', height: '60px', fontSize: '1.5rem' }}>
-                                        MS
+                            {/* Author Info */}
+                            <div className="author-card">
+                                <div className="d-flex align-items-center">
+                                    <div className="me-3">
+                                        <div className="author-avatar">MS</div>
+                                    </div>
+                                    <div className="author-info">
+                                        <h6>{post.author}</h6>
+                                        <p>Senior Full-Stack Developer specializing in Laravel, React, Node.js, and AWS. Passionate about building scalable applications and sharing knowledge.</p>
                                     </div>
                                 </div>
-                                <div>
-                                    <h6 className="mb-1">{post.author}</h6>
-                                    <p className="text-muted mb-0">
-                                        Senior Full-Stack Developer specializing in Laravel, React, Node.js, and AWS.
-                                        Passionate about building scalable applications and sharing knowledge.
-                                    </p>
-                                </div>
                             </div>
                         </div>
+                    </div>
 
-                        {/* Related Posts */}
+                    {/* Right Sidebar - Related Posts */}
+                    <div className="col-lg-4">
                         {relatedPosts.length > 0 && (
-                            <div>
-                                <h4 className="mb-4">Related Articles</h4>
-                                <Row className="g-4">
+                            <div className="related-posts-sidebar">
+                                <h5 className="sidebar-title">Related Articles</h5>
+                                <div className="related-posts-list">
                                     {relatedPosts.map((relatedPost) => (
-                                        <Col key={relatedPost.id} md={4}>
-                                            <div
-                                                className="card h-100 blog-card shadow-sm cursor-pointer"
-                                                onClick={() => navigate(`/blogs/${relatedPost.slug}`)}
-                                                style={{ cursor: 'pointer' }}
-                                            >
-                                                <img
-                                                    src={relatedPost.image}
-                                                    alt={relatedPost.title}
-                                                    className="card-img-top"
-                                                    style={{ height: '150px', objectFit: 'cover' }}
-                                                />
-                                                <div className="card-body">
-                                                    <Badge bg="primary" className="mb-2">{relatedPost.category}</Badge>
-                                                    <h6 className="card-title">{relatedPost.title}</h6>
-                                                    <p className="card-text small text-muted">{relatedPost.readTime}</p>
-                                                </div>
+                                        <div key={relatedPost.id} className="related-post-sidebar-card" onClick={() => navigate(`/blogs/${relatedPost.slug}`)}>
+                                            <img src={relatedPost.image} alt={relatedPost.title} loading="lazy" />
+                                            <div className="card-content">
+                                                <Badge bg="primary" className="mb-1">{relatedPost.category}</Badge>
+                                                <h6 className="card-title">{relatedPost.title}</h6>
+                                                <p className="card-text small text-muted">{relatedPost.readTime}</p>
                                             </div>
-                                        </Col>
+                                        </div>
                                     ))}
-                                </Row>
+                                </div>
                             </div>
                         )}
-                    </Col>
-                </Row>
+                    </div>
+                </div>
             </Container>
         </article>
     );
