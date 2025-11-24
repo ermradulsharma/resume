@@ -321,8 +321,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For any queries or suggestions, feel free to reach out:
 
-- **Email**: contact@mradulsharma.com
-- **Website**: [mradulsharma.vercel.app](https://mradulsharma.vercel.app/)
+- **Email**: mradulsharma786@gmail.com
+- **Website**: [Mradul Sharma](https://mradulsharma.vercel.app/)
+- **LinkedIn**: [Mradul Sharma](https://linkedin.com/in/mradulsharma)
+- **GitHub**: [Mradul Sharma](https://github.com/ermradulsharma)
 - **GitHub Issues**: [Create an issue](https://github.com/ermradulsharma/resume/issues)
 
 ---
