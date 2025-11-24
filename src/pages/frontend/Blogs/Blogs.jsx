@@ -18,7 +18,7 @@ const Blogs = () => {
 
     const [selectedCategory, setSelectedCategory] = useState("All");
     const [currentPage, setCurrentPage] = useState(1);
-    const postsPerPage = 6;
+    const postsPerPage = 16;
 
     // Filter posts by category
     const filteredPosts = selectedCategory === "All"
@@ -40,64 +40,40 @@ const Blogs = () => {
     return (
         <section className="blogs-section section">
             <div className="container">
-                <div className="section-title text-start mb-5">
+                <div className="section-title text-start">
                     <h1>{title}</h1>
                     <p>{description}</p>
                 </div>
 
                 {/* Category Filter */}
-                <div className="mb-4 d-flex flex-wrap gap-2">
-                    <Button
-                        variant={selectedCategory === "All" ? "primary" : "outline-primary"}
-                        size="sm"
-                        onClick={() => handleCategoryChange("All")}
-                    >
-                        All Posts
-                    </Button>
+                <div className="mb-4 d-flex flex-wrap gap-2 text-end align-items-end justify-content-end">
+                    <Button variant={selectedCategory === "All" ? "primary" : "outline-primary"} size="sm" onClick={() => handleCategoryChange("All")}>All Posts</Button>
                     {categories.map((category) => (
-                        <Button
-                            key={category}
-                            variant={selectedCategory === category ? "primary" : "outline-primary"}
-                            size="sm"
-                            onClick={() => handleCategoryChange(category)}
-                        >
-                            {category}
-                        </Button>
+                        <Button key={category} variant={selectedCategory === category ? "primary" : "outline-primary"} size="sm" onClick={() => handleCategoryChange(category)}>{category}</Button>
                     ))}
                 </div>
 
                 {/* Blog Posts Grid */}
                 <Row className="g-4">
                     {currentPosts.map((post) => (
-                        <Col key={post.id} lg={4} md={6}>
+                        <Col key={post.id} lg={3} md={6}>
                             <Card className="h-100 blog-card shadow-sm">
-                                <Card.Img
-                                    variant="top"
-                                    src={post.image}
-                                    alt={post.title}
-                                    style={{ height: "200px", objectFit: "cover" }}
-                                />
+                                <Card.Img variant="top" src={post.image} alt={post.title} style={{ height: "200px", objectFit: "cover" }} />
                                 <Card.Body className="d-flex flex-column">
                                     <div className="mb-2">
                                         <Badge bg="primary" className="me-2">{post.category}</Badge>
                                         {post.featured && <Badge bg="success">Featured</Badge>}
                                     </div>
                                     <Card.Title className="h5">{post.title}</Card.Title>
-                                    <Card.Text className="text-muted small mb-2">
-                                        {post.date} • {post.readTime}
-                                    </Card.Text>
+                                    <Card.Text className="text-muted small mb-2"> {post.date} • {post.readTime} </Card.Text>
                                     <Card.Text>{post.excerpt}</Card.Text>
                                     <div className="mt-auto">
                                         <div className="d-flex flex-wrap gap-1 mb-3">
                                             {post.tags.slice(0, 3).map((tag, index) => (
-                                                <Badge key={index} bg="secondary" className="text-white">
-                                                    {tag}
-                                                </Badge>
+                                                <Badge key={index} bg="secondary" className="text-white"> {tag} </Badge>
                                             ))}
                                         </div>
-                                        <Link to={`/blogs/${post.slug}`} className="btn btn-outline-primary btn-sm">
-                                            Read More →
-                                        </Link>
+                                        <Link to={`/blogs/${post.slug}`} className="btn btn-outline-primary btn-sm"> Read More → </Link>
                                     </div>
                                 </Card.Body>
                             </Card>
@@ -116,23 +92,11 @@ const Blogs = () => {
                 {totalPages > 1 && (
                     <div className="d-flex justify-content-center mt-5">
                         <Pagination>
-                            <Pagination.Prev
-                                onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
-                                disabled={currentPage === 1}
-                            />
+                            <Pagination.Prev onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))} disabled={currentPage === 1} />
                             {[...Array(totalPages)].map((_, index) => (
-                                <Pagination.Item
-                                    key={index + 1}
-                                    active={index + 1 === currentPage}
-                                    onClick={() => setCurrentPage(index + 1)}
-                                >
-                                    {index + 1}
-                                </Pagination.Item>
+                                <Pagination.Item key={index + 1} active={index + 1 === currentPage} onClick={() => setCurrentPage(index + 1)} >{index + 1}</Pagination.Item>
                             ))}
-                            <Pagination.Next
-                                onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
-                                disabled={currentPage === totalPages}
-                            />
+                            <Pagination.Next onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))} disabled={currentPage === totalPages} />
                         </Pagination>
                     </div>
                 )}

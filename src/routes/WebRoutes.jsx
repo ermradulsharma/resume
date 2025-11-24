@@ -8,6 +8,7 @@ import Services from "../pages/frontend/Services/Services";
 import Home from "../pages/frontend/Home";
 import Blogs from "../pages/frontend/Blogs/Blogs";
 import BlogDetail from "../pages/frontend/Blogs/BlogDetail";
+import NotFound from "../pages/frontend/NotFound/NotFound";
 
 const PublicLayout = () => (
     <>
@@ -27,7 +28,7 @@ const WebRoutes = () => {
                 <Route path="blogs" element={<Blogs />} />
                 <Route path="blogs/:slug" element={<BlogDetail />} />
                 <Route path="about" element={<About />} />
-                <Route path="*" element={<Navigate to="/" replace />} />
+                <Route path="*" element={<NotFound />} />
             </Route>
         </Routes>
     );
