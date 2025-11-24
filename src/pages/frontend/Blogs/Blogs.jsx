@@ -1,73 +1,144 @@
-import React from "react";
+import React, { useState } from "react";
+import { Container, Row, Col, Card, Badge, Button, Pagination } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import useSEO from "../../../hooks/useSEO";
 import "../Blogs/Blogs.css";
+import blogsData from "../../../components/database/blogs.json";
 
 const Blogs = () => {
     useSEO({
-        title: "Blog - Tech Insights by Mradul Sharma | Web Development Tutorials",
+        title: "Blog | Mradul Sharma - Web Dev Tutorials",
         description: "Read articles and tutorials on web development, Laravel, React, AWS, best practices, and modern development techniques. Learn from real-world experiences and technical insights.",
         keywords: "Full Stack Development Blog, Web Development Tutorials, Laravel Best Practices, React Development Tips, AWS Cloud Tutorials, Coding Best Practices, Backend Development Guides, Frontend Development Tips, Database Optimization Tutorials, DevOps Insights, Developer Resources, Programming Articles, Software Engineering Blog, Technical Writing, Code Examples",
         ogUrl: "https://mradulsharma.vercel.app/blogs",
         canonicalUrl: "https://mradulsharma.vercel.app/blogs"
     });
 
-    const blogs = [
-        {
-            id: 1,
-            title: "Getting Started with React",
-            excerpt: "Learn the basics of React and how to build your first component.",
-            date: "October 10, 2023",
-            image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=2070&auto=format&fit=crop"
-        },
-        {
-            id: 2,
-            title: "Understanding Hooks",
-            excerpt: "Deep dive into React Hooks: useState, useEffect, and more.",
-            date: "November 5, 2023",
-            image: "https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=2070&auto=format&fit=crop"
-        },
-        {
-            id: 3,
-            title: "CSS Grid vs Flexbox",
-            excerpt: "When to use Grid and when to use Flexbox for your layouts.",
-            date: "December 12, 2023",
-            image: "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?q=80&w=2070&auto=format&fit=crop"
-        },
-        {
-            id: 4,
-            title: "The Future of Web Development",
-            excerpt: "Trends to watch out for in 2024 and beyond.",
-            date: "January 15, 2024",
-            image: "https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1974&auto=format&fit=crop"
-        }
-    ];
+    const { title, description, posts, categories } = blogsData.blogs;
+
+    const [selectedCategory, setSelectedCategory] = useState("All");
+    const [currentPage, setCurrentPage] = useState(1);
+    const postsPerPage = 6;
+
+    // Filter posts by category
+    const filteredPosts = selectedCategory === "All"
+        ? posts.filter(post => post.published)
+        : posts.filter(post => post.published && post.category === selectedCategory);
+
+    // Pagination
+    const indexOfLastPost = currentPage * postsPerPage;
+    const indexOfFirstPost = indexOfLastPost - postsPerPage;
+    const currentPosts = filteredPosts.slice(indexOfFirstPost, indexOfLastPost);
+    const totalPages = Math.ceil(filteredPosts.length / postsPerPage);
+
+    // Reset to page 1 when category changes
+    const handleCategoryChange = (category) => {
+        setSelectedCategory(category);
+        setCurrentPage(1);
+    };
 
     return (
         <section className="blogs-section section">
             <div className="container">
                 <div className="section-title text-start mb-5">
-                    <h1>Latest Blogs & Tutorials</h1>
-                    <p>Explore in-depth articles, tutorials, and insights on web development, Laravel, React, AWS, and modern development practices. Learn from real-world experiences and practical examples to level up your development skills.</p>
+                    <h1>{title}</h1>
+                    <p>{description}</p>
                 </div>
-                <div className="row">
-                    {blogs.map((blog) => (
-                        <div key={blog.id} className="col-lg-4 col-md-6 mb-4">
-                            <div className="blog-card h-100 shadow-sm">
-                                <div className="blog-img-wrapper">
-                                    <img src={blog.image} alt={blog.title} className="img-fluid blog-img" />
-                                </div>
-                                <div className="blog-content p-4">
-                                    <span className="text-muted small">{blog.date}</span>
-                                    <h5 className="mt-2 mb-3 fw-bold">{blog.title}</h5>
-                                    <p className="text-muted">{blog.excerpt}</p>
-                                    <button className="btn btn-primary btn-sm mt-2">Read More</button>
-                                </div>
-                            </div>
-                        </div>
+
+                {/* Category Filter */}
+                <div className="mb-4 d-flex flex-wrap gap-2">
+                    <Button
+                        variant={selectedCategory === "All" ? "primary" : "outline-primary"}
+                        size="sm"
+                        onClick={() => handleCategoryChange("All")}
+                    >
+                        All Posts
+                    </Button>
+                    {categories.map((category) => (
+                        <Button
+                            key={category}
+                            variant={selectedCategory === category ? "primary" : "outline-primary"}
+                            size="sm"
+                            onClick={() => handleCategoryChange(category)}
+                        >
+                            {category}
+                        </Button>
                     ))}
                 </div>
+
+                {/* Blog Posts Grid */}
+                <Row className="g-4">
+                    {currentPosts.map((post) => (
+                        <Col key={post.id} lg={4} md={6}>
+                            <Card className="h-100 blog-card shadow-sm">
+                                <Card.Img
+                                    variant="top"
+                                    src={post.image}
+                                    alt={post.title}
+                                    style={{ height: "200px", objectFit: "cover" }}
+                                />
+                                <Card.Body className="d-flex flex-column">
+                                    <div className="mb-2">
+                                        <Badge bg="primary" className="me-2">{post.category}</Badge>
+                                        {post.featured && <Badge bg="success">Featured</Badge>}
+                                    </div>
+                                    <Card.Title className="h5">{post.title}</Card.Title>
+                                    <Card.Text className="text-muted small mb-2">
+                                        {post.date} • {post.readTime}
+                                    </Card.Text>
+                                    <Card.Text>{post.excerpt}</Card.Text>
+                                    <div className="mt-auto">
+                                        <div className="d-flex flex-wrap gap-1 mb-3">
+                                            {post.tags.slice(0, 3).map((tag, index) => (
+                                                <Badge key={index} bg="secondary" className="text-white">
+                                                    {tag}
+                                                </Badge>
+                                            ))}
+                                        </div>
+                                        <Link to={`/blogs/${post.slug}`} className="btn btn-outline-primary btn-sm">
+                                            Read More →
+                                        </Link>
+                                    </div>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    ))}
+                </Row>
+
+                {/* No Posts Message */}
+                {currentPosts.length === 0 && (
+                    <div className="text-center py-5">
+                        <p className="text-muted">No posts found in this category.</p>
+                    </div>
+                )}
+
+                {/* Pagination */}
+                {totalPages > 1 && (
+                    <div className="d-flex justify-content-center mt-5">
+                        <Pagination>
+                            <Pagination.Prev
+                                onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
+                                disabled={currentPage === 1}
+                            />
+                            {[...Array(totalPages)].map((_, index) => (
+                                <Pagination.Item
+                                    key={index + 1}
+                                    active={index + 1 === currentPage}
+                                    onClick={() => setCurrentPage(index + 1)}
+                                >
+                                    {index + 1}
+                                </Pagination.Item>
+                            ))}
+                            <Pagination.Next
+                                onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
+                                disabled={currentPage === totalPages}
+                            />
+                        </Pagination>
+                    </div>
+                )}
             </div>
         </section>
     );
 };
+
 export default Blogs;

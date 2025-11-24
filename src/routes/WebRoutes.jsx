@@ -7,6 +7,7 @@ import Portfolio from "../pages/frontend/Portfolio/Portfolio";
 import Services from "../pages/frontend/Services/Services";
 import Home from "../pages/frontend/Home";
 import Blogs from "../pages/frontend/Blogs/Blogs";
+import BlogDetail from "../pages/frontend/Blogs/BlogDetail";
 
 const PublicLayout = () => (
     <>
@@ -24,6 +25,7 @@ const WebRoutes = () => {
                 <Route path="portfolio" element={<Portfolio />} />
                 <Route path="services" element={<Services />} />
                 <Route path="blogs" element={<Blogs />} />
+                <Route path="blogs/:slug" element={<BlogDetail />} />
                 <Route path="about" element={<About />} />
                 <Route path="*" element={<Navigate to="/" replace />} />
             </Route>
