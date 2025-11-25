@@ -85,8 +85,8 @@ export default function Portfolio() {
                                 <Card.Img
                                     src={require(`../../../assets/projects/${p.image}`)}
                                     alt={p.title}
-                                    className="object-fit-cover rounded-0"
-                                    height={147} rel='lazy' loading="lazy"
+                                    className="rounded-0"
+                                    height={200} rel='lazy' loading="lazy"
                                 />
                                 <div className="overlay d-flex justify-content-center align-items-center">
                                     <Button variant="success" onClick={() => handleShow(p)} size="sm">

@@ -65,10 +65,12 @@ const BlogDetail = () => {
             {/* Hero Section with Featured Image */}
             <div className="blog-detail-hero" style={{ backgroundImage: `url(${post.image})` }}>
                 <Container>
-                    <Button variant="outline-light" size="sm" className="mb-3 back-button" onClick={() => navigate('/blogs')} ><BsArrowLeft className="me-2" />Back to Blogs</Button>
-                    <div className="mb-3">
-                        <Badge bg="primary">{post.category}</Badge>
-                        {post.featured && <Badge bg="success" className="ms-2">Featured</Badge>}
+                    <div className="d-flex align-items-center justify-content-between mb-3">
+                        <div>
+                            <Badge bg="primary">{post.category}</Badge>
+                            {post.featured && <Badge bg="success" className="ms-2">Featured</Badge>}
+                        </div>
+                        <Button variant="danger" className="back-button" onClick={() => navigate('/blogs')} ><BsArrowLeft className="me-2" />Back to Blogs</Button>
                     </div>
                     <h1>{post.title}</h1>
                     <div className="blog-detail-meta">

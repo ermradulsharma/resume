@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row, Col, Card, Badge, Button, Pagination, Spinner } from "react-bootstrap";
+import { Row, Col, Card, Badge, Button, Pagination, Spinner } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { BsGrid3X3Gap, BsList, BsCalendar3, BsClock, BsPerson } from "react-icons/bs";
+import { BsGrid3X3Gap, BsList, BsCalendar3, BsPerson } from "react-icons/bs";
 import useSEO from "../../../hooks/useSEO";
 import "../Blogs/Blogs.css";
 import blogsData from "../../../components/database/blogs.json";
@@ -109,16 +109,16 @@ const Blogs = () => {
                 {/* Category Filter and View Toggle */}
                 <div className="mb-4 d-flex flex-wrap gap-2 align-items-center justify-content-between">
                     <div className="d-flex flex-wrap gap-2 category-filter-wrapper">
-                        <Button variant={selectedCategory === "All" ? "primary" : "outline-primary"} onClick={() => handleCategoryChange("All")}>All Posts</Button>
+                        <Button variant={selectedCategory === "All" ? "success" : "outline-success"} size="sm" onClick={() => handleCategoryChange("All")}>All Posts</Button>
                         {categories.map((category) => (
-                            <Button key={category} variant={selectedCategory === category ? "primary" : "outline-primary"} onClick={() => handleCategoryChange(category)}>{category}</Button>
+                            <Button key={category} variant={selectedCategory === category ? "success" : "outline-success"} size="sm" onClick={() => handleCategoryChange(category)}>{category}</Button>
                         ))}
                     </div>
 
                     {/* View Toggle Buttons */}
                     <div className="view-toggle-buttons d-flex gap-2">
-                        <Button variant={viewMode === "grid" ? "primary" : "outline-secondary"} onClick={() => setViewMode("grid")} className="d-flex align-items-center p-2"><BsGrid3X3Gap /></Button>
-                        <Button variant={viewMode === "list" ? "primary" : "outline-secondary"} onClick={() => setViewMode("list")} className="d-flex align-items-center p-2"><BsList /></Button>
+                        <Button variant={viewMode === "grid" ? "success" : "outline-success"} size="sm" onClick={() => setViewMode("grid")} className="d-flex align-items-center p-2"><BsGrid3X3Gap /></Button>
+                        <Button variant={viewMode === "list" ? "success" : "outline-success"} size="sm" onClick={() => setViewMode("list")} className="d-flex align-items-center p-2"><BsList /></Button>
                     </div>
                 </div>
 
@@ -128,9 +128,9 @@ const Blogs = () => {
                         {currentPosts.map((post) => (
                             <Card key={post.id} className="blog-card blog-card-grid shadow-sm">
                                 <Card.Img variant="top" src={post.image} alt={post.title} loading="lazy" />
-                                <Card.Body className="d-flex flex-column">
+                                <Card.Body className="d-flex flex-column p-2">
                                     <div className="mb-2">
-                                        <Badge bg="primary" className="me-2">{post.category}</Badge>
+                                        <Badge bg="info" className="me-2">{post.category}</Badge>
                                         {post.featured && <Badge bg="success">Featured</Badge>}
                                     </div>
                                     <Card.Title className="h5">{post.title}</Card.Title>
@@ -142,10 +142,10 @@ const Blogs = () => {
                                     <div className="mt-auto">
                                         <div className="d-flex flex-wrap gap-1 mb-3">
                                             {post.tags.slice(0, 3).map((tag, index) => (
-                                                <Badge key={index} bg="secondary" className="text-white"> {tag} </Badge>
+                                                <Badge key={index} bg="success-subtle" className="text-black"> {tag} </Badge>
                                             ))}
                                         </div>
-                                        <Link to={`/blogs/${post.slug}`} className="btn btn-outline-primary btn-sm">Read More → </Link>
+                                        <Link to={`/blogs/${post.slug}`} className="btn btn-success btn-sm" style={{ float: 'right' }}>Read More → </Link>
                                     </div>
                                 </Card.Body>
                             </Card>
@@ -155,34 +155,34 @@ const Blogs = () => {
 
                 {/* Blog Posts - List View */}
                 {viewMode === "list" && (
-                    <div className="blog-list-container">
+                    <div className="blog-list-container d-grid gap-3">
                         {currentPosts.map((post) => (
-                            <Card key={post.id} className="blog-card blog-card-list shadow-sm mb-4">
+                            <Card key={post.id} className="blog-card blog-card-list shadow-sm">
                                 <Row className="g-0">
                                     <Col md={4} lg={3}>
                                         <div className="blog-list-image-wrapper">
-                                            <Card.Img src={post.image} alt={post.title} className="blog-list-image" loading="lazy" />
+                                            <Card.Img src={post.image} alt={post.title} className="blog-list-image rounded-0" loading="lazy" />
                                         </div>
                                     </Col>
                                     <Col md={8} lg={9}>
-                                        <Card.Body className="d-flex flex-column h-100">
-                                            <div className="mb-2">
-                                                <Badge bg="primary" className="me-2">{post.category}</Badge>
+                                        <Card.Body className="d-flex flex-column">
+                                            <div className="d-flex gap-2">
+                                                <Badge bg="info">{post.category}</Badge>
                                                 {post.featured && <Badge bg="success">Featured</Badge>}
                                             </div>
-                                            <Card.Title className="h4">{post.title}</Card.Title>
-                                            <Card.Text className="text-muted small d-flex align-items-center gap-2">
+                                            <Card.Title className="h4 my-1">{post.title}</Card.Title>
+                                            <Card.Text className="text-muted small d-flex align-items-center gap-2 mb-1">
                                                 <span className="d-flex align-items-center gap-1"><BsCalendar3 /> {getRelativeTime(post.date)}</span>
                                                 <span className="d-flex align-items-center gap-1"><BsPerson /> {post.author}</span>
                                             </Card.Text>
                                             <Card.Text className="blog-list-excerpt">{post.excerpt}</Card.Text>
-                                            <div className="mt-auto">
+                                            <div className="mt-0">
                                                 <div className="d-flex flex-wrap gap-1 mb-3">
                                                     {post.tags.map((tag, index) => (
-                                                        <Badge key={index} bg="secondary" className="text-white"> {tag} </Badge>
+                                                        <Badge key={index} bg="success-subtle" className="text-black"> {tag} </Badge>
                                                     ))}
                                                 </div>
-                                                <Link to={`/blogs/${post.slug}`} className="btn btn-primary">Read Full Article → </Link>
+                                                <Link to={`/blogs/${post.slug}`} className="btn btn-success btn-sm">Read Full Article → </Link>
                                             </div>
                                         </Card.Body>
                                     </Col>
