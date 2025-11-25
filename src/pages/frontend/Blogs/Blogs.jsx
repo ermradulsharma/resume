@@ -100,9 +100,14 @@ const Blogs = () => {
 
     return (
         <section className="blogs-section section">
+            {/* Hero Section */}
+            <div className="blog-hero text-white d-flex align-items-center justify-content-center text-center">
+                <div className="overlay"></div>
+            </div>
+
             <div className="container">
                 <div className="section-title text-start">
-                    <h1>{title}</h1>
+                    <h1 style={{ marginTop: "10px" }}>{title}</h1>
                     <p>{description}</p>
                 </div>
 

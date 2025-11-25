@@ -1,6 +1,12 @@
 .blogs-section {
-    padding: 60px 0;
+    /* padding: 60px 0; */
     background-color: #f8f9fa;
+}
+
+.blog-hero {
+    position: relative;
+    height: 70vh;
+    background: url('../../../assets/blog_header.png') 0% 37% /cover no-repeat;
 }
 
 /* Category Filter */
