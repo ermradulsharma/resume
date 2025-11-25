@@ -9,12 +9,14 @@ import servicesList from "../../../components/database/serviceList.json"
 import Select from "react-select";
 import makeAnimated from 'react-select/animated';
 import logo from '../../../assets/mradulsharma.jpeg';
+
 const animatedComponents = makeAnimated();
 
 const ContactSection = () => {
     const form = useRef();
     const [done, setDone] = useState(false);
     const [notDone, setNotDone] = useState(false);
+    const [validationError, setValidationError] = useState("");
     const [infoOpen, setInfoOpen] = useState(true);
 
     const [formData, setFormData] = useState({
@@ -23,48 +25,64 @@ const ContactSection = () => {
         phone: "",
         subject: "",
         message: "",
-        selected_services:[]
+        selected_services: []
     });
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
+        if (validationError) setValidationError("");
+        if (notDone) setNotDone(false);
+        if (done) setDone(false);
     };
 
     const handleSelectChange = (selected) => {
         setFormData(prev => ({ ...prev, selected_services: selected || [] }));
+        if (validationError) setValidationError("");
     };
 
     const sendEmail = (e) => {
         e.preventDefault();
         const { from_name, reply_to, phone, subject, message, selected_services } = formData;
-        if (!from_name || !reply_to || !phone || !subject || !message || selected_services.length === 0) {
-            setNotDone(true);
+
+        // Validation
+        if (!from_name || !reply_to || !phone || !subject || !message) {
+            setValidationError("Please fill out all required fields.");
+            setDone(false);
+            return;
+        }
+        if (selected_services.length === 0) {
+            setValidationError("Please select at least one service.");
             setDone(false);
             return;
         }
 
-        emailjs.sendForm("service_mradul", "template_hzio3hj", form.current, "OWljxBdzr02unWI2z").then((result) => {
-            setDone(true);
-            setNotDone(false);
-            setFormData({
-                from_name: "",
-                reply_to: "",
-                phone: "",
-                subject: "",
-                message: "",
-                selected_services: []
-            });
-        }, (error) => {
+        setValidationError("");
+        setNotDone(false);
+
+        emailjs.sendForm("service_mradul", "template_hzio3hj", form.current, "OWljxBdzr02unWI2z")
+            .then((result) => {
+                console.log("EmailJS Success:", result.text);
+                setDone(true);
+                setFormData({
+                    from_name: "",
+                    reply_to: "",
+                    phone: "",
+                    subject: "",
+                    message: "",
+                    selected_services: []
+                });
+            }, (error) => {
+                console.error("EmailJS Error:", error);
                 setDone(false);
                 setNotDone(true);
-            }
-        );
+            });
     };
 
     // Replace these with your actual coordinates
     // 27.5569967,78.6348963
     const mapCenter = { lat: 27.5482107, lng: 78.6647141 };
     const mapContainerStyle = { width: "100%", height: "600px", borderRadius: "12px", overflow: "hidden" };
+
     return (
         <section id="contact" className="contact section py-5">
             {/* Section Title */}
@@ -114,27 +132,6 @@ const ContactSection = () => {
                                 </div>
                             </div>
 
-                            {/* Timezone */}
-                            {/* <div className="info-item" data-aos="fade-up" data-aos-delay="550">
-                                <div className="icon-box">
-                                    🌍
-                                </div>
-                                <div className="content">
-                                    <h4>Timezone</h4>
-                                    <p>GMT+5:30 (India Standard Time)</p>
-                                </div>
-                            </div> */}
-
-                            {/* Schedule a Call */}
-                            {/* <div className="info-item" data-aos="fade-up" data-aos-delay="600">
-                                <div className="icon-box">
-                                    📅
-                                </div>
-                                <div className="content">
-                                    <h4>Schedule a Call</h4>
-                                    <p><a href="https://calendly.com/your-link" target="_blank" rel="noopener noreferrer" className="btn btn-outline-light btn-sm rounded-5 px-3">Book Now</a></p>
-                                </div>
-                            </div> */}
                             <SocialLinks withNames platforms={['GitHub', 'LinkedIn', 'X', 'GitLab', 'Telegram']} />
                             {/* Personal Tagline */}
                             <p className="mt-4 small fst-italic text-white text-center">Currently coding from ☕ Coffee-powered desk.</p>
@@ -144,39 +141,39 @@ const ContactSection = () => {
                     {/* Contact Form */}
                     <Col lg={7}>
                         <div className="contact-form" data-aos="fade-up" data-aos-delay="300">
-                        <h3>Get In Touch</h3>
-                        <p>Let me know how I can help. I'm quick to respond and open to exciting ideas.</p>
-                        <Form ref={form} onSubmit={sendEmail} className="php-email-form" data-aos="fade-up" data-aos-delay="200">
-                            <Row className="gy-4">
-                                <Col md={6}>
-                                    <Form.Control type="text" name="from_name" placeholder="Your Name" autoComplete="autocomplete" value={formData.from_name} onChange={handleChange} />
-                                </Col>
-                                <Col md={6}>
-                                    <Form.Control type="email" name="reply_to" placeholder="Your Email" autoComplete="autocomplete" value={formData.reply_to} onChange={handleChange}/>
-                                </Col>
-                                <Col md={12}>
-                                    <Form.Control type="tel" name="phone" placeholder="Mobile No." autoComplete="autocomplete" value={formData.phone} onChange={handleChange}/>
-                                </Col>
-                                <Col md={12}>
-                                    <Form.Control type="text" name="subject" placeholder="Subject" value={formData.subject} onChange={handleChange} />
-                                </Col>
-                                {/* Service List */}
-                                <Col md={12}>
-                                    <Select closeMenuOnSelect={false} components={animatedComponents} options={servicesList} isMulti isSearchable placeholder="Select services..." value={formData.selected_services} onChange={handleSelectChange} aria-label="Select the services you are interested in" />
-                                </Col>
-
-                                {/* Hidden field for EmailJS */}
-                                <input type="hidden" name="selected_services" value={formData.selected_services.map(s => s.label).join(", ")} />
-                                <Col md={12}>
-                                    <Form.Control as="textarea" rows={6} name="message" placeholder="Message" value={formData.message} onChange={handleChange} />
-                                </Col>
-                                {done && <span className="text-success mt-1 fs-6">Message sent successfully!</span>}
-                                {notDone && <span className="text-danger mt-1 fs-6">Please fill out all fields correctly.</span>}
-                                <Col md={12} className="text-center">
-                                    <Button type="submit" className='rounded-5 px-5 w-75 text-center py-2'>Send Message</Button>
-                                </Col>
-                            </Row>
-                        </Form>
+                            <h3>Get In Touch</h3>
+                            <p>Let me know how I can help. I'm quick to respond and open to exciting ideas.</p>
+                            <Form ref={form} onSubmit={sendEmail} className="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                                <Row className="gy-4">
+                                    <Col md={6}>
+                                        <Form.Control type="text" name="from_name" placeholder="Your Name" autoComplete="autocomplete" value={formData.from_name} onChange={handleChange} />
+                                    </Col>
+                                    <Col md={6}>
+                                        <Form.Control type="email" name="reply_to" placeholder="Your Email" autoComplete="autocomplete" value={formData.reply_to} onChange={handleChange} />
+                                    </Col>
+                                    <Col md={12}>
+                                        <Form.Control type="tel" name="phone" placeholder="Mobile No." autoComplete="autocomplete" value={formData.phone} onChange={handleChange} />
+                                    </Col>
+                                    <Col md={12}>
+                                        <Form.Control type="text" name="subject" placeholder="Subject" value={formData.subject} onChange={handleChange} />
+                                    </Col>
+                                    {/* Service List */}
+                                    <Col md={12}>
+                                        <Select closeMenuOnSelect={false} components={animatedComponents} options={servicesList} isMulti isSearchable placeholder="Select services..." value={formData.selected_services} onChange={handleSelectChange} aria-label="Select the services you are interested in" />
+                                        {/* Hidden field for EmailJS */}
+                                        <input type="hidden" name="selected_services" value={formData.selected_services.map(s => s.label).join(", ")} />
+                                    </Col>
+                                    <Col md={12}>
+                                        <Form.Control as="textarea" rows={6} name="message" placeholder="Message" value={formData.message} onChange={handleChange} />
+                                    </Col>
+                                    {done && <span className="text-success mt-1 fs-6">Message sent successfully!</span>}
+                                    {validationError && <span className="text-warning mt-1 fs-6">{validationError}</span>}
+                                    {notDone && <span className="text-danger mt-1 fs-6">Failed to send message. Please try again later.</span>}
+                                    <Col md={12} className="text-center">
+                                        <Button type="submit" className='rounded-5 px-5 w-75 text-center py-2'>Send Message</Button>
+                                    </Col>
+                                </Row>
+                            </Form>
                         </div>
                     </Col>
                 </Row>
@@ -191,7 +188,7 @@ const ContactSection = () => {
                                     {infoOpen && (
                                         <InfoWindow position={mapCenter} options={{ closeBoxURL: "", enableEventPropagation: true }}>
                                             <div style={{ maxWidth: "350px" }} className="d-flex align-items-center gap-2">
-                                                <img src={logo} alt="Mradul Sharma" style={{ width: "100px", height: "100px", borderRadius: "8px"}} />
+                                                <img src={logo} alt="Mradul Sharma" style={{ width: "100px", height: "100px", borderRadius: "8px" }} />
                                                 <div>
                                                     <h6 className="mb-1">Mradul Sharma</h6>
                                                     <p className="mb-1">📍 Etah, Uttar Pradesh, India</p>

@@ -1,0 +1,165 @@
+/* Service Modal Styles */
+.service-modal .modal-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.service-modal .modal-header .btn-close {
+    filter: brightness(0) invert(1);
+    opacity: 0.8;
+}
+
+.service-modal .modal-header .btn-close:hover {
+    opacity: 1;
+}
+
+.service-modal .modal-body {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.service-modal .modal-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.service-modal .modal-body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.service-modal .modal-body::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 10px;
+}
+
+.service-modal .modal-body::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #764ba2, #667eea);
+}
+
+/* Service Details Content */
+.service-details h5 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #667eea;
+    display: inline-block;
+}
+
+.service-details h6 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #667eea;
+}
+
+.service-details ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+}
+
+.service-details ul li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.2;
+    color: #555;
+}
+
+.service-details ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.service-details ul li strong {
+    color: #333;
+    font-weight: 600;
+}
+
+.service-modal .modal-footer .btn-primary {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.service-modal .modal-footer .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+.service-modal .modal-footer .btn-secondary:hover {
+    background: #5a6268;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-modal .modal-title {
+        font-size: 1.35rem;
+    }
+
+    .service-modal .modal-title i {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+
+    .service-modal .modal-body {
+        padding: 1.5rem;
+        max-height: 60vh;
+    }
+
+    .service-details h5 {
+        font-size: 1.25rem;
+    }
+
+    .service-details h6 {
+        font-size: 1.1rem;
+    }
+
+    .service-details p {
+        font-size: 1rem;
+    }
+
+    .service-modal .modal-footer {
+        padding: 1rem 1.5rem;
+    }
+
+    .service-modal .modal-footer .btn {
+        padding: 0.65rem 1.5rem;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .service-modal .modal-title {
+        font-size: 1.2rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .service-modal .modal-body {
+        padding: 1.25rem;
+    }
+
+    .service-details ul li {
+        padding-left: 1.75rem;
+        font-size: 0.95rem;
+    }
+
+    .service-details ul li::before {
+        width: 20px;
+        height: 20px;
+        font-size: 0.8rem;
+    }
+}

@@ -9,7 +9,7 @@ const ServiceModal = ({ show, handleClose, title, icon, content }) => {
     return (
         <Modal show={show} onHide={handleClose} centered size="lg" className="service-modal">
             <Modal.Header closeButton>
-                <Modal.Title className="fw-bold d-flex align-items-center"><i className={`bi ${icon} me-2`}></i>{title}</Modal.Title>
+                <Modal.Title className="fw-bold d-flex align-items-center text-white"><i className={`bi ${icon} me-2`}></i>{title}</Modal.Title>
             </Modal.Header>
             <Modal.Body>
                 <div className="modal-content-wrapper">

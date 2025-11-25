@@ -1,6 +1,5 @@
-import { Routes, Route, Navigate, Outlet } from "react-router-dom";
-import Navbar from "../components/frontend/Navbar/Navbar";
-import Footer from "../components/frontend/Footer/Footer";
+import { Routes, Route } from "react-router-dom";
+import PublicLayout from "../layouts/PublicLayout";
 import "../App.css";
 import About from "../pages/frontend/About/About";
 import Portfolio from "../pages/frontend/Portfolio/Portfolio";
@@ -9,14 +8,6 @@ import Home from "../pages/frontend/Home";
 import Blogs from "../pages/frontend/Blogs/Blogs";
 import BlogDetail from "../pages/frontend/Blogs/BlogDetail";
 import NotFound from "../pages/frontend/NotFound/NotFound";
-
-const PublicLayout = () => (
-    <>
-        <Navbar />
-        <Outlet />
-        <Footer />
-    </>
-);
 
 const WebRoutes = () => {
     return (
