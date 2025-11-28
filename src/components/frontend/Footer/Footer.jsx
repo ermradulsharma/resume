@@ -26,9 +26,9 @@ const Footer = () => {
         <footer className="footer-section bg-dark text-white">
             <Container>
                 {/* Main Footer Content */}
-                <Row className="py-5">
+                <Row className="py-5 gap-4 gap-lg-0">
                     {/* About Section */}
-                    <Col lg={4} md={6} className="mb-4">
+                    <Col lg={4} md={6}>
                         <h5 className="text-white mb-3">About {home.name}</h5>
                         <p className="text-white small">
                             {home.compactAbout}
@@ -74,7 +74,7 @@ const Footer = () => {
                     </Col>
 
                     {/* Quick Links */}
-                    <Col lg={2} md={6} className="mb-4">
+                    <Col lg={2} md={6}>
                         <h5 className="text-white mb-3">Quick Links</h5>
                         <ul className="list-unstyled">
                             <li className="mb-2">
@@ -96,7 +96,7 @@ const Footer = () => {
                     </Col>
 
                     {/* Services */}
-                    <Col lg={3} md={6} className="mb-4">
+                    <Col lg={3} md={6}>
                         <h5 className="text-white mb-3">Services</h5>
                         <ul className="list-unstyled">
                             <li className="mb-2">
@@ -118,27 +118,27 @@ const Footer = () => {
                     </Col>
 
                     {/* Contact Info */}
-                    <Col lg={3} md={6} className="mb-4">
+                    <Col lg={3} md={6}>
                         <h5 className="text-white mb-3">Get In Touch</h5>
-                        <ul className="list-unstyled">
+                        <ul className="list-unstyled d-flex flex-column gap-2">
                             {email && (
-                                <li className="mb-2 d-flex align-items-start">
-                                    <BsEnvelope className="text-primary me-2 mt-1" />
+                                <li className="d-flex align-items-center gap-2">
+                                    <BsEnvelope className="text-primary" />
                                     <a href={`mailto:${email}`} className="text-white text-decoration-none footer-link">
                                         {email}
                                     </a>
                                 </li>
                             )}
                             {phone && (
-                                <li className="mb-2 d-flex align-items-start">
-                                    <BsPhone className="text-primary me-2 mt-1" />
+                                <li className="d-flex align-items-center gap-2">
+                                    <BsPhone className="text-primary" />
                                     <a href={`tel:${phone}`} className="text-white text-decoration-none footer-link">
                                         {phone}
                                     </a>
                                 </li>
                             )}
-                            <li className="mb-2 d-flex align-items-start">
-                                <BsGeoAlt className="text-primary me-2 mt-1" />
+                            <li className="d-flex align-items-center gap-2">
+                                <BsGeoAlt className="text-primary" />
                                 <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(home.location)}`} className="text-white text-decoration-none footer-link">
                                     {home.location}
                                 </a>

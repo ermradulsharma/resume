@@ -27,6 +27,7 @@
     font-size: 0.9rem;
     transition: all 0.3s ease;
     display: inline-block;
+    color: rgba(var(--bs-success-rgb), var(--bs-text-opacity)) !important;
 }
 
 .footer-link:hover {
@@ -58,9 +59,9 @@
 
 .link-card:hover {
     background: rgba(255, 255, 255, 0.05);
-    border-color: #0d6efd !important;
+    border-color: rgba(var(--bs-success-rgb), var(--bs-text-opacity)) !important;
     transform: translateY(-5px);
-    box-shadow: 0 5px 20px rgba(13, 110, 253, 0.2);
+    box-shadow: 0 5px 20px rgba(var(--bs-success-rgb), var(--bs-text-opacity));
 }
 
 @keyframes fadeInUp {
