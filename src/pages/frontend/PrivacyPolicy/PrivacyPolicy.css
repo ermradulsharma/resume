@@ -1,0 +1,58 @@
+.privacy-policy-section {
+    min-height: 80vh;
+}
+
+.legal-hero {
+    position: relative;
+    height: 60vh;
+    background: url('../../../assets/chat_icon.png') 35% 35%/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.legal-hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.legal-hero .hero-content {
+    z-index: 2;
+    position: relative;
+}
+
+.policy-content {
+    line-height: 1.8;
+    color: #4a4a4a;
+}
+
+.policy-content h2 {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.policy-content ul {
+    margin-bottom: 1.5rem;
+}
+
+.policy-content li {
+    margin-bottom: 0.5rem;
+}
+
+/* Dark mode support if needed */
+@media (prefers-color-scheme: dark) {
+    .policy-content {
+        color: #e0e0e0;
+    }
+
+    .policy-content h2 {
+        color: #f8f9fa;
+    }
+}

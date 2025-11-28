@@ -8,6 +8,8 @@ import Home from "../pages/frontend/Home";
 import Blogs from "../pages/frontend/Blogs/Blogs";
 import BlogDetail from "../pages/frontend/Blogs/BlogDetail";
 import NotFound from "../pages/frontend/NotFound/NotFound";
+import PrivacyPolicy from "../pages/frontend/PrivacyPolicy/PrivacyPolicy";
+import TermsOfService from "../pages/frontend/TermsOfService/TermsOfService";
 
 const WebRoutes = () => {
     return (
@@ -19,6 +21,8 @@ const WebRoutes = () => {
                 <Route path="blogs" element={<Blogs />} />
                 <Route path="blogs/:slug" element={<BlogDetail />} />
                 <Route path="about" element={<About />} />
+                <Route path="privacy" element={<PrivacyPolicy />} />
+                <Route path="terms" element={<TermsOfService />} />
                 <Route path="*" element={<NotFound />} />
             </Route>
         </Routes>

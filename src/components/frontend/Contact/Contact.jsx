@@ -170,7 +170,7 @@ const ContactSection = () => {
                                     {validationError && <span className="text-warning mt-1 fs-6">{validationError}</span>}
                                     {notDone && <span className="text-danger mt-1 fs-6">Failed to send message. Please try again later.</span>}
                                     <Col md={12} className="text-center">
-                                        <Button type="submit" className='rounded-5 px-5 w-75 text-center py-2'>Send Message</Button>
+                                        <Button type="submit" className='rounded-5 px-5 w-100 text-center py-2'>Send Message</Button>
                                     </Col>
                                 </Row>
                             </Form>

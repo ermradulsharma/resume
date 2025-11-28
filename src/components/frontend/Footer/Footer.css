@@ -1,29 +1,71 @@
 .footer-section {
-    background: linear-gradient(90deg, #0d0d0d, #1f1f1f, #0d0d0d);
+    background: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 50%, #0d0d0d 100%);
     color: #fff;
-    text-align: center;
-    padding: 1rem;
-    font-size: 0.95rem;
-    font-weight: 400;
-    letter-spacing: 0.5px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 2px solid rgba(13, 110, 253, 0.3);
     animation: fadeInUp 0.8s ease-in-out;
 }
 
-.footer-section p {
-    margin: 0;
-    opacity: 0.85;
-    transition: opacity 0.3s ease, transform 0.3s ease;
+.footer-section h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 0.5rem;
 }
 
-.footer-section p:hover {
-    opacity: 1;
-    transform: scale(1.02);
+.footer-section h5::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(90deg, #0d6efd, transparent);
+}
+
+.footer-link {
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.footer-link:hover {
+    color: rgba(var(--bs-success-rgb), var(--bs-text-opacity)) !important;
+    transform: translateX(5px);
+}
+
+/* .social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: #0d6efd;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
+} */
+
+.link-card {
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.link-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: #0d6efd !important;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(13, 110, 253, 0.2);
 }
 
 @keyframes fadeInUp {
     from {
-        transform: translateY(10px);
+        transform: translateY(20px);
         opacity: 0;
     }
 
@@ -31,4 +73,19 @@
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+@media (max-width: 768px) {
+    .footer-section h5 {
+        font-size: 1rem;
+    }
+
+    .footer-link {
+        font-size: 0.85rem;
+    }
+
+    /* .social-links a {
+        width: 35px;
+        height: 35px;
+    } */
 }
