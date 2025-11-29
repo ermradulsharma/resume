@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import { BsArrowLeft, BsBook, BsBookHalf, BsBookmarkCheck, BsBriefcase, BsFolder2Open, BsHouseDoor } from "react-icons/bs";
+import { BsArrowLeft, BsBookHalf, BsBriefcase, BsFolder2Open, BsHouseDoor } from "react-icons/bs";
 import useSEO from "../../../hooks/useSEO";
 import "./NotFound.css";
 
