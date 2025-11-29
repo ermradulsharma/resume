@@ -163,6 +163,7 @@
         <p>Explore Mradul Sharma's portfolio featuring enterprise-grade full-stack applications built with Laravel,
             React, AWS, and more. Specialized in building scalable SaaS platforms and microservices.</p>
         <nav>
+            <h2>Main Navigation</h2>
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/portfolio">Portfolio</a></li>
@@ -172,13 +173,192 @@
                 <li><a href="/privacy">Privacy Policy</a></li>
                 <li><a href="/terms">Terms of Service</a></li>
             </ul>
+            <h2>Latest Articles</h2>
+            <ul>
+                <li><a href="/blogs/building-scalable-microservices-laravel-docker">Building Scalable Microservices with
+                        Laravel and Docker</a></li>
+                <li><a href="/blogs/react-performance-optimization-advanced-techniques">React Performance Optimization:
+                        Advanced Techniques</a></li>
+                <li><a href="/blogs/aws-lambda-serverless-architecture-best-practices">AWS Lambda and Serverless
+                        Architecture Best Practices</a></li>
+                <li><a href="/blogs/database-optimization-postgresql-mongodb-performance">Database Optimization:
+                        PostgreSQL vs MongoDB Performance</a></li>
+                <li><a href="/blogs/implementing-cicd-pipelines-github-actions">Implementing CI/CD Pipelines with GitHub
+                        Actions</a></li>
+                <li><a href="/blogs/building-realtime-applications-websockets-laravel">Building Real-Time Applications
+                        with WebSockets and Laravel</a></li>
+                <li><a href="/blogs/nextjs-14-server-components-app-router">Next.js 14: Server Components and App Router
+                        Deep Dive</a></li>
+                <li><a href="/blogs/api-security-best-practices-jwt-oauth2-and-rate-limiting">API Security Best
+                        Practices: JWT, OAuth2, and Rate Limiting</a></li>
+                <li><a href="/blogs/docker-multi-stage-builds-for-optimized-production-images">Docker Multi-Stage Builds
+                        for Optimized Production Images</a></li>
+                <li><a href="/blogs/graphql-vs-rest-choosing-the-right-api-architecture">GraphQL vs REST: Choosing the
+                        Right API Architecture</a></li>
+                <li><a href="/blogs/typescript-best-practices-for-large-scale-applications">TypeScript Best Practices
+                        for Large-Scale Applications</a></li>
+                <li><a href="/blogs/redis-caching-strategies-for-high-performance-applications">Redis Caching Strategies
+                        for High-Performance Applications</a></li>
+                <li><a href="/blogs/vue-js-3-composition-api-complete-guide">Vue.js 3 Composition API: Complete
+                        Guide</a></li>
+                <li><a href="/blogs/kubernetes-deployment-strategies-rolling-blue-green-and-canary">Kubernetes
+                        Deployment Strategies: Rolling, Blue-Green, and Canary</a></li>
+                <li><a href="/blogs/building-progressive-web-apps-with-service-workers">Building Progressive Web Apps
+                        with Service Workers</a></li>
+                <li><a href="/blogs/elasticsearch-for-full-text-search-implementation-guide">Elasticsearch for Full-Text
+                        Search: Implementation Guide</a></li>
+                <li><a href="/blogs/node-js-streams-processing-large-files-efficiently">Node.js Streams: Processing
+                        Large Files Efficiently</a></li>
+                <li><a href="/blogs/tailwind-css-utility-first-styling-best-practices">Tailwind CSS: Utility-First
+                        Styling Best Practices</a></li>
+                <li><a href="/blogs/laravel-queues-and-job-processing-at-scale">Laravel Queues and Job Processing at
+                        Scale</a></li>
+                <li><a href="/blogs/react-native-building-cross-platform-mobile-apps">React Native: Building
+                        Cross-Platform Mobile Apps</a></li>
+                <li><a href="/blogs/nginx-configuration-for-high-traffic-websites">Nginx Configuration for High-Traffic
+                        Websites</a></li>
+                <li><a href="/blogs/testing-strategies-unit-integration-and-e2e-tests">Testing Strategies: Unit,
+                        Integration, and E2E Tests</a></li>
+            </ul>
         </nav>
         <p>You need to enable JavaScript to run this app.</p>
     </noscript>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDZHX6JL" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <div id="root"></div>
+    <div id="root">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            .skeleton-loader {
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+                width: 100%;
+                height: 100vh;
+                background: #fff;
+                overflow: hidden;
+            }
+
+            .skeleton-nav {
+                height: 80px;
+                background: #fff;
+                border-bottom: 1px solid #eee;
+                display: flex;
+                align-items: center;
+                padding: 0 5%;
+                justify-content: space-between;
+            }
+
+            .skeleton-logo {
+                width: 150px;
+                height: 30px;
+                background: #f0f0f0;
+                border-radius: 4px;
+            }
+
+            .skeleton-links {
+                display: flex;
+                gap: 20px;
+            }
+
+            .skeleton-link {
+                width: 80px;
+                height: 20px;
+                background: #f0f0f0;
+                border-radius: 4px;
+            }
+
+            .skeleton-hero {
+                height: calc(100vh - 80px);
+                background: #f8f9fa;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                padding: 20px;
+            }
+
+            .skeleton-title {
+                width: 60%;
+                max-width: 500px;
+                height: 60px;
+                background: #e0e0e0;
+                border-radius: 8px;
+            }
+
+            .skeleton-subtitle {
+                width: 40%;
+                max-width: 400px;
+                height: 20px;
+                background: #e0e0e0;
+                border-radius: 4px;
+            }
+
+            .skeleton-button {
+                width: 150px;
+                height: 45px;
+                background: #e0e0e0;
+                border-radius: 25px;
+                margin-top: 20px;
+            }
+
+            @keyframes pulse {
+                0% {
+                    opacity: 0.6;
+                }
+
+                50% {
+                    opacity: 1;
+                }
+
+                100% {
+                    opacity: 0.6;
+                }
+            }
+
+            .skeleton-logo,
+            .skeleton-link,
+            .skeleton-title,
+            .skeleton-subtitle,
+            .skeleton-button {
+                animation: pulse 1.5s infinite ease-in-out;
+            }
+
+            /* Hide skeleton on small screens if needed, or adjust */
+            @media (max-width: 768px) {
+                .skeleton-links {
+                    display: none;
+                }
+
+                .skeleton-title {
+                    width: 80%;
+                }
+
+                .skeleton-subtitle {
+                    width: 60%;
+                }
+            }
+        </style>
+        <div class="skeleton-loader">
+            <div class="skeleton-nav">
+                <div class="skeleton-logo"></div>
+                <div class="skeleton-links">
+                    <div class="skeleton-link"></div>
+                    <div class="skeleton-link"></div>
+                    <div class="skeleton-link"></div>
+                    <div class="skeleton-link"></div>
+                </div>
+            </div>
+            <div class="skeleton-hero">
+                <div class="skeleton-title"></div>
+                <div class="skeleton-subtitle"></div>
+                <div class="skeleton-button"></div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
