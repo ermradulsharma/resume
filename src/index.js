@@ -5,10 +5,21 @@ import App from "./App";
 import "bootstrap/dist/css/bootstrap.min.css";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-    <BrowserRouter>
-        <App />
-    </BrowserRouter>
-);
+const rootElement = document.getElementById('root');
+
+if (rootElement.hasChildNodes()) {
+    ReactDOM.hydrateRoot(
+        rootElement,
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
+    );
+} else {
+    const root = ReactDOM.createRoot(rootElement);
+    root.render(
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
+    );
+}
 

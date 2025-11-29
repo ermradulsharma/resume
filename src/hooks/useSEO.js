@@ -15,6 +15,7 @@ export const useSEO = ({
     ogUrl = "https://mradulsharma.vercel.app/",
     twitterCard = "summary_large_image",
     canonicalUrl,
+    schema
 }) => {
     useEffect(() => {
         // Set page title
@@ -55,10 +56,23 @@ export const useSEO = ({
         setMetaTag('description', description);
         setMetaTag('keywords', keywords);
         setMetaTag('author', author);
+        setMetaTag('robots', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
 
         // Canonical URL
         if (canonicalUrl) {
             setLinkTag('canonical', canonicalUrl);
+        }
+
+        // JSON-LD Schema
+        if (schema) {
+            let script = document.querySelector('script[type="application/ld+json"][data-dynamic="true"]');
+            if (!script) {
+                script = document.createElement('script');
+                script.type = 'application/ld+json';
+                script.setAttribute('data-dynamic', 'true');
+                document.head.appendChild(script);
+            }
+            script.textContent = JSON.stringify(schema);
         }
 
         // Open Graph / Facebook
@@ -84,7 +98,7 @@ export const useSEO = ({
             // You can reset to default title if needed
             // document.title = 'Mradul Sharma | Portfolio';
         };
-    }, [title, description, keywords, author, ogTitle, ogDescription, ogImage, ogUrl, twitterCard, canonicalUrl]);
+    }, [title, description, keywords, author, ogTitle, ogDescription, ogImage, ogUrl, twitterCard, canonicalUrl, schema]);
 };
 
 export default useSEO;

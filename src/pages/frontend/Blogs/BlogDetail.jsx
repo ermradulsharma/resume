@@ -22,7 +22,31 @@ const BlogDetail = () => {
         keywords: post ? post.tags.join(", ") : "web development, programming, tutorials",
         ogUrl: post ? `https://mradulsharma.vercel.app/blogs/${post.slug}` : "https://mradulsharma.vercel.app/blogs",
         canonicalUrl: post ? `https://mradulsharma.vercel.app/blogs/${post.slug}` : "https://mradulsharma.vercel.app/blogs",
-        ogImage: post ? post.image : "https://mradulsharma.vercel.app/preview.png"
+        ogImage: post ? post.image : "https://mradulsharma.vercel.app/preview.png",
+        schema: post ? {
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": post.title,
+            "image": post.image,
+            "author": {
+                "@type": "Person",
+                "name": post.author
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Mradul Sharma",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://mradulsharma.vercel.app/logo192.png"
+                }
+            },
+            "datePublished": post.date,
+            "description": post.excerpt,
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": `https://mradulsharma.vercel.app/blogs/${post.slug}`
+            }
+        } : null
     });
 
     // Calculate relative time

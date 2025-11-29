@@ -1,0 +1,15 @@
+{
+    "redirects": [
+        {
+            "source": "/:path*",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "www.mradulsharma.vercel.app"
+                }
+            ],
+            "destination": "https://mradulsharma.vercel.app/:path*",
+            "permanent": true
+        }
+    ]
+}
