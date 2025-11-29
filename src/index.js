@@ -6,8 +6,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const rootElement = document.getElementById('root');
+const hasSkeleton = rootElement.querySelector('.skeleton-loader');
 
-if (rootElement.hasChildNodes()) {
+if (rootElement.hasChildNodes() && !hasSkeleton) {
     ReactDOM.hydrateRoot(
         rootElement,
         <BrowserRouter>
