@@ -25,9 +25,9 @@ const Blogs = () => {
     const postsPerPage = 16;
 
     // Filter posts by category
-    const filteredPosts = selectedCategory === "All"
-        ? posts.filter(post => post.published)
-        : posts.filter(post => post.published && post.category === selectedCategory);
+    const filteredPosts = selectedCategory === "All" ? posts.filter(post => post.published) : posts.filter(post => post.published && post.category === selectedCategory);
+    filteredPosts.sort((a, b) => b.id - a.id);
+    console.log(filteredPosts);
 
     // Pagination
     const indexOfLastPost = currentPage * postsPerPage;
