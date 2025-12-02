@@ -211,93 +211,48 @@
     color: #0d6efd;
 }
 
-.related-post-sidebar-card .badge {
-    font-size: 0.7rem;
-    padding: 0.25rem 0.5rem;
+.blog-detail-hero h1 {
+    font-size: 2rem;
 }
 
-.related-post-sidebar-card .card-text {
-    font-size: 0.8rem;
-    margin: 0;
+.blog-detail-content-wrapper {
+    padding: 1.5rem;
+    margin-top: -30px;
 }
 
-/* Back Button */
-.back-button {
-    transition: all 0.3s ease;
+.blog-detail-excerpt {
+    font-size: 1.1rem;
+    padding: 1.5rem;
 }
 
-.back-button:hover {
-    transform: translateX(-5px);
+.blog-detail-content p {
+    font-size: 1rem;
+    text-align: left;
 }
 
-/* Responsive Design */
-@media (max-width: 992px) {
-    .blog-detail-hero {
-        min-height: 350px;
-    }
-
-    .blog-detail-hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .blog-detail-content-wrapper {
-        padding: 2rem;
-    }
-
-    /* Move sidebar below content on tablet */
-    .related-posts-sidebar {
-        position: static;
-        margin-top: 2rem;
-    }
+.blog-detail-content p:first-of-type::first-letter {
+    font-size: 2.5rem;
 }
 
-@media (max-width: 768px) {
-    .blog-detail-hero {
-        min-height: 300px;
-    }
-
-    .blog-detail-hero h1 {
-        font-size: 2rem;
-    }
-
-    .blog-detail-content-wrapper {
-        padding: 1.5rem;
-        margin-top: -30px;
-    }
-
-    .blog-detail-excerpt {
-        font-size: 1.1rem;
-        padding: 1.5rem;
-    }
-
-    .blog-detail-content p {
-        font-size: 1rem;
-        text-align: left;
-    }
-
-    .blog-detail-content p:first-of-type::first-letter {
-        font-size: 2.5rem;
-    }
-
-    .author-card {
-        padding: 1.5rem;
-    }
-
-    .author-avatar {
-        width: 60px;
-        height: 60px;
-        font-size: 1.5rem;
-    }
-
-    .related-posts-sidebar {
-        padding: 1.25rem;
-    }
-
-    .related-post-sidebar-card img {
-        width: 80px;
-        height: 65px;
-    }
+.author-card {
+    padding: 1.5rem;
 }
+
+.author-avatar {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+}
+
+.related-posts-sidebar {
+    padding: 1.25rem;
+}
+
+.related-post-sidebar-card img {
+    width: 80px;
+    height: 65px;
+}
+
 
 @media (max-width: 576px) {
     .blog-detail-hero {

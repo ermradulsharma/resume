@@ -43,8 +43,6 @@ const ContactSection = () => {
     const sendEmail = (e) => {
         e.preventDefault();
         const { from_name, reply_to, phone, subject, message, selected_services } = formData;
-
-        // Validation
         if (!from_name || !reply_to || !phone || !subject || !message) {
             setValidationError("Please fill out all required fields.");
             setDone(false);
@@ -55,10 +53,8 @@ const ContactSection = () => {
             setDone(false);
             return;
         }
-
         setValidationError("");
         setNotDone(false);
-
         emailjs.sendForm("service_mradul", "template_hzio3hj", form.current, "OWljxBdzr02unWI2z")
             .then((result) => {
                 console.log("EmailJS Success:", result.text);
@@ -77,22 +73,16 @@ const ContactSection = () => {
                 setNotDone(true);
             });
     };
-
-    // Replace these with your actual coordinates
-    // 27.5569967,78.6348963
     const mapCenter = { lat: 27.5482107, lng: 78.6647141 };
     const mapContainerStyle = { width: "100%", height: "600px", borderRadius: "12px", overflow: "hidden" };
-
     return (
         <section id="contact" className="contact section py-5">
-            {/* Section Title */}
             <Container className="section-title">
                 <h2 className="text-white">Contact</h2>
                 <p className="text-white">Feel free to get in touch — whether it's a project, collaboration, or just a technical chat.</p>
             </Container>
             <Container data-aos="fade-up" data-aos-delay="100">
                 <Row className="g-4 g-lg-5">
-                    {/* Contact Info */}
                     <Col lg={5}>
                         <div className="info-box p-3 p-lg-5" data-aos="fade-up" data-aos-delay="200">
                             <h3>Contact Info</h3>
@@ -113,8 +103,6 @@ const ContactSection = () => {
                                     <p><a href="mailto:mradulsharma786@gmail.com" className="text-white text-decoration-none">mradulsharma786@gmail.com</a></p>
                                 </div>
                             </div>
-
-                            {/* WhatsApp */}
                             <div className="info-item" data-aos="fade-up" data-aos-delay="450">
                                 <div className="icon-box">< BsWhatsapp /></div>
                                 <div className="content">
@@ -122,8 +110,6 @@ const ContactSection = () => {
                                     <p><a href="https://wa.me/917252933077" target="_blank" rel="noopener noreferrer" className="text-white text-decoration-none">Chat on WhatsApp</a></p>
                                 </div>
                             </div>
-
-                            {/* Working Hours */}
                             <div className="info-item" data-aos="fade-up" data-aos-delay="500">
                                 <div className="icon-box">< BsClock /></div>
                                 <div className="content">
@@ -131,14 +117,10 @@ const ContactSection = () => {
                                     <p>Mon – Sat: 10:00 AM – 7:00 PM IST</p>
                                 </div>
                             </div>
-
-                            <SocialLinks withNames platforms={['GitHub', 'LinkedIn', 'X', 'GitLab', 'Telegram']} />
-                            {/* Personal Tagline */}
+                            <SocialLinks withNames platforms={['GitHub', 'LinkedIn', 'X', 'Medium', 'Telegram']} />
                             <p className="mt-4 small fst-italic text-white text-center">Currently coding from ☕ Coffee-powered desk.</p>
                         </div>
                     </Col>
-
-                    {/* Contact Form */}
                     <Col lg={7}>
                         <div className="contact-form" data-aos="fade-up" data-aos-delay="300">
                             <h3>Get In Touch</h3>
@@ -157,10 +139,8 @@ const ContactSection = () => {
                                     <Col md={12}>
                                         <Form.Control type="text" name="subject" placeholder="Subject" value={formData.subject} onChange={handleChange} />
                                     </Col>
-                                    {/* Service List */}
                                     <Col md={12}>
                                         <Select closeMenuOnSelect={false} components={animatedComponents} options={servicesList} isMulti isSearchable placeholder="Select services..." value={formData.selected_services} onChange={handleSelectChange} aria-label="Select the services you are interested in" />
-                                        {/* Hidden field for EmailJS */}
                                         <input type="hidden" name="selected_services" value={formData.selected_services.map(s => s.label).join(", ")} />
                                     </Col>
                                     <Col md={12}>
@@ -178,7 +158,6 @@ const ContactSection = () => {
                     </Col>
                 </Row>
             </Container>
-            {/* Google Map */}
             <Container className="mt-5 rounded-1">
                 <Row>
                     <Col>

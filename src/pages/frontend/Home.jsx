@@ -5,6 +5,7 @@ import LetsConnect from "../../components/LetsConnect";
 import HeroSection from "../../components/frontend/HeroSection/HeroSection";
 import About from "../../components/frontend/About/About";
 import ContactSection from "../../components/frontend/Contact/Contact";
+import Services from "../../components/frontend/Services/Services";
 
 const Home = () => {
     useSEO({
@@ -19,6 +20,7 @@ const Home = () => {
         <Container fluid className="px-0">
             <HeroSection />
             <About />
+            <Services />
             <ContactSection />
             <LetsConnect />
         </Container>

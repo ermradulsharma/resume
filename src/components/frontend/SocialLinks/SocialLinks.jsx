@@ -1,17 +1,17 @@
 import React from "react";
 import {
-  BsLinkedin,
-  BsGithub,
-  BsInstagram,
-  BsTwitterX,
-  BsGitlab,
-  BsStackOverflow,
-  BsMedium,
-  BsFacebook,
-  BsYoutube,
-  BsTelegram,
+    BsLinkedin,
+    BsGithub,
+    BsInstagram,
+    BsTwitterX,
+    BsGitlab,
+    BsStackOverflow,
+    BsMedium,
+    BsFacebook,
+    BsYoutube,
+    BsTelegram,
 } from "react-icons/bs";
-import data from "../../database/localDB.json";
+import data from "../../database/socialMedia.json";
 
 const iconMap = {
     BsLinkedin: BsLinkedin,

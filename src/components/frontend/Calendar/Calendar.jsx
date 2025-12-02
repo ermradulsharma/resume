@@ -46,15 +46,6 @@ export default function ReactFullCalendarStarter() {
     return (
         <div className="min-h-screen bg-gray-50 p-6">
             <div className="max-w-6xl mx-auto">
-                {/* <header className="mb-4 flex items-center justify-between">
-                    <h1 className="text-2xl font-semibold">FullCalendar – React Starter</h1>
-                    <div className="flex items-center gap-3">
-                        <label className="inline-flex items-center gap-2 text-sm">
-                            <input type="checkbox" className="h-4 w-4" checked={weekends} onChange={() => setWeekends((v) => !v)} />Show Weekends
-                        </label>
-                        <button onClick={() => setEvents([])} className="rounded-xl border px-3 py-1.5 text-sm shadow-sm hover:bg-gray-100">Clear Events</button>
-                    </div>
-                </header> */}
                 <div className="rounded-2xl bg-white p-4 shadow">
                     <FullCalendar plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin, listPlugin]}
                         initialView="dayGridMonth"
@@ -84,8 +75,6 @@ export default function ReactFullCalendarStarter() {
         </div>
     );
 }
-
-// --- helpers ---
 function todayAt(hour) {
     const d = new Date();
     d.setHours(hour, 0, 0, 0);

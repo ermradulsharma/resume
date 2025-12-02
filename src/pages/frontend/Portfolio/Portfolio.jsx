@@ -4,6 +4,7 @@ import useSEO from "../../../hooks/useSEO";
 import "../../frontend/Portfolio/Portfolio.css";
 import data from "../../../components/database/portfolio.json";
 import LetsConnect from "../../../components/LetsConnect";
+import ContactSection from "../../../components/frontend/Contact/Contact";
 
 const TechBadges = ({ items }) => (
     <div className="d-flex flex-wrap gap-2 mt-2">
@@ -74,7 +75,7 @@ export default function Portfolio() {
                 </p>
             </Container>
 
-            <Container className="pb-5">
+            <Container>
                 {/* Filters */}
                 <header className="d-flex flex-column flex-md-row align-items-md-center justify-content-end mb-4 gap-2">
                     <div className="d-flex gap-1 flex-wrap">
@@ -227,6 +228,7 @@ export default function Portfolio() {
                     <Button variant="danger" size="sm" className="m-0 px-4" onClick={handleClose}>Close</Button>
                 </Modal.Footer>
             </Modal>
+            <ContactSection />
             <LetsConnect />
         </section>
     );

@@ -3,17 +3,15 @@ import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import { BsGithub, BsLinkedin, BsTwitterX, BsEnvelope, BsPhone, BsGeoAlt, BsInstagram, BsYoutube, BsWhatsapp, BsTelegram } from "react-icons/bs";
 import data from "../../database/localDB.json";
+import socialData from "../../database/socialMedia.json";
 import "../../frontend/Footer/Footer.css";
 
 const Footer = () => {
-    const { home, contact, social } = data;
+    const { home, contact } = data;
+    const { social } = socialData;
     const currentYear = new Date().getFullYear();
-
-    // Extract contact info
     const email = contact.contacts.find(item => item.name === "mail")?.value;
     const phone = contact.contacts.find(item => item.name === "phone")?.value;
-
-    // Extract social links
     const githubLink = social.find(item => item.name === "GitHub")?.link;
     const linkedinLink = social.find(item => item.name === "LinkedIn")?.link;
     const twitterLink = social.find(item => item.name === "X (Twitter)")?.link;
@@ -21,13 +19,10 @@ const Footer = () => {
     const youtubeLink = social.find(item => item.name === "YouTube")?.link;
     const whatsappLink = social.find(item => item.name === "WhatsApp")?.link;
     const telegramLink = social.find(item => item.name === "Telegram")?.link;
-
     return (
         <footer className="footer-section bg-dark text-white">
             <Container>
-                {/* Main Footer Content */}
                 <Row className="py-5 gap-4 gap-lg-0">
-                    {/* About Section */}
                     <Col lg={4} md={6}>
                         <h5 className="text-white mb-3">About {home.name}</h5>
                         <p className="text-white small">
@@ -72,9 +67,7 @@ const Footer = () => {
 
                         </div>
                     </Col>
-
-                    {/* Quick Links */}
-                    <Col lg={2} md={6}>
+                    <Col lg={4} md={6}>
                         <h5 className="text-white mb-3">Quick Links</h5>
                         <ul className="list-unstyled">
                             <li className="mb-2">
@@ -86,17 +79,15 @@ const Footer = () => {
                             <li className="mb-2">
                                 <Link to="/portfolio" className="text-white text-decoration-none footer-link">Portfolio</Link>
                             </li>
-                            <li className="mb-2">
+                            {/* <li className="mb-2">
                                 <Link to="/services" className="text-white text-decoration-none footer-link">Services</Link>
-                            </li>
+                            </li> */}
                             <li className="mb-2">
                                 <Link to="/blogs" className="text-white text-decoration-none footer-link">Blog</Link>
                             </li>
                         </ul>
                     </Col>
-
-                    {/* Services */}
-                    <Col lg={3} md={6}>
+                    {/* <Col lg={3} md={6}>
                         <h5 className="text-white mb-3">Services</h5>
                         <ul className="list-unstyled">
                             <li className="mb-2">
@@ -115,10 +106,8 @@ const Footer = () => {
                                 <Link to="/services" className="text-white text-decoration-none footer-link">Technical Consulting</Link>
                             </li>
                         </ul>
-                    </Col>
-
-                    {/* Contact Info */}
-                    <Col lg={3} md={6}>
+                    </Col> */}
+                    <Col lg={4} md={6}>
                         <h5 className="text-white mb-3">Get In Touch</h5>
                         <ul className="list-unstyled d-flex flex-column gap-2">
                             {email && (
@@ -146,8 +135,6 @@ const Footer = () => {
                         </ul>
                     </Col>
                 </Row>
-
-                {/* Bottom Footer */}
                 <Row className="border-top border-secondary pt-3 pb-3">
                     <Col md={6} className="text-center text-md-start mb-2 mb-md-0">
                         <p className="m-0 text-white small">

@@ -18,10 +18,10 @@ function NavBar() {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ms-auto gap-lg-4 fw-medium fs-6">
                         <Nav.Item><Nav.Link href="/" className={isActive('/')}>Home</Nav.Link></Nav.Item>
-                        <Nav.Item><Nav.Link href="/portfolio" className={isActive('/portfolio')}>Portfolio</Nav.Link></Nav.Item>
-                        <Nav.Item><Nav.Link href="/services" className={isActive('/services')}>Service</Nav.Link></Nav.Item>                  
-                        <Nav.Item><Nav.Link href="/blogs" className={isActive('/blogs')}>Blogs</Nav.Link></Nav.Item>                  
                         <Nav.Item><Nav.Link href="/about" className={isActive('/about')}>About</Nav.Link></Nav.Item>
+                        <Nav.Item><Nav.Link href="/portfolio" className={isActive('/portfolio')}>Portfolio</Nav.Link></Nav.Item>
+                        {/* <Nav.Item><Nav.Link href="/services" className={isActive('/services')}>Service</Nav.Link></Nav.Item> */}
+                        <Nav.Item><Nav.Link href="/blogs" className={isActive('/blogs')}>Blogs</Nav.Link></Nav.Item>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

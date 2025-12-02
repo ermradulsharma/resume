@@ -1,10 +1,17 @@
 {
+    "description": "I offer end-to-end development solutions that are scalable, secure, and tailored to meet the evolving needs of modern digital businesses. With expertise spanning full-stack development, cloud-native architectures, and database optimization, I design and implement systems capable of handling growth without compromising performance or security. My approach combines technical precision with strategic planning, ensuring each solution is optimized for speed, stability, and long-term maintainability. Whether building custom applications, architecting APIs, or deploying cloud infrastructure, I prioritize user experience, operational efficiency, and data protection. Every project is crafted to align with business goals, adapt to future demands, and deliver measurable value in an increasingly competitive digital landscape.",
     "services": [
         {
             "title": "Full-Stack Development",
             "description": "End-to-end web application development using React, Node.js, Laravel, and modern RESTful APIs with scalable architecture.",
             "icon": "bi-code-slash",
             "content": "FullStackDevelopment"
+        },
+        {
+            "title": "Fintech & Payment Solutions",
+            "description": "Specialized development of secure financial platforms, payroll systems, and payment gateway integrations (Stripe, PayPal, Razorpay).",
+            "icon": "bi-wallet",
+            "content": "FintechAndPaymentSolutions"
         },
         {
             "title": "Custom API Integrations",
@@ -19,10 +26,10 @@
             "content": "CloudDevOps"
         },
         {
-            "title": "Custom CMS & Dashboards",
+            "title": "Enterprise Dashboards & CMS",
             "description": "Design and development of intuitive content management systems and analytics dashboards tailored to your business logic.",
             "icon": "bi-kanban",
-            "content": "CustomCmsAndDashboards"
+            "content": "EnterpriseDashboardsAndCms"
         },
         {
             "title": "SaaS Development",
@@ -53,6 +60,12 @@
             "description": "Scalable backend solutions and frontend performance optimization to ensure your applications are fast, efficient, and ready for growth.",
             "icon": "bi-graph-up",
             "content": "TechDrivenGrowthStrategy"
+        },
+        {
+            "title": "Technical Consultancy & Leadership",
+            "description": "Expert guidance on system architecture, team mentorship, code reviews, and best practices for scaling engineering teams.",
+            "icon": "bi-people",
+            "content": "TechnicalConsultancyAndLeadership"
         },
         {
             "title": "AI & LLM Integrations",

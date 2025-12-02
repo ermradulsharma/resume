@@ -18,7 +18,7 @@ const HeroSection = () => {
                             <p className='pe-md-3 py-md-4 text-white'>{home.compactAbout}</p>
                             <div className="hero-stats d-flex gap-2 align-item-center justify-content-md-start justify-content-center" data-aos="fade-up" data-aos-delay="200">
                                 <div className="stat-item">
-                                    <span className="purecounter" data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="2">75+</span>
+                                    <span className="purecounter" data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="2">50+</span>
                                     <span className="stat-label text-white">Projects Completed</span>
                                 </div>
                                 <div className="stat-item">
@@ -30,7 +30,7 @@ const HeroSection = () => {
                                 <Button variant="primary" href="/portfolio">View My Work</Button>{' '}
                                 <Button variant="outline-secondary" href="#contact">Get In Touch</Button>
                             </div>
-                            <SocialLinks platforms={['GitHub', 'LinkedIn', 'X (Twitter)', 'GitLab', 'Telegram']} />
+                            <SocialLinks platforms={['GitHub', 'LinkedIn', 'X (Twitter)', 'Medium', 'Telegram']} />
                         </div>
                     </Col>
                     <Col lg={6} className="hero-image text-end px-0" data-aos="fade-left" data-aos-delay="200">

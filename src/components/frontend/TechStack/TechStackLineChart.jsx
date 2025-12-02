@@ -10,8 +10,6 @@ import {
     Tooltip,
     Legend,
 } from "chart.js";
-
-// Register Chart.js modules
 ChartJS.register(
     CategoryScale,
     LinearScale,
@@ -23,14 +21,6 @@ ChartJS.register(
 );
 
 const TechStackLineChart = ({ data, height = 400 }) => {
-    /**
-     * data shape: {
-     *   frontend: [{ name, valueNow }, ...],
-     *   backend:  [{ name, valueNow }, ...],
-     *   ...
-     * }
-     */
-
     const { labels, values } = useMemo(() => {
         const all = Object.values(data || {}).flat();
         const labels = all.map((item) => item.name);
@@ -49,7 +39,7 @@ const TechStackLineChart = ({ data, height = 400 }) => {
                 pointBackgroundColor: "rgba(75,192,192,1)",
                 pointRadius: 5,
                 pointHoverRadius: 7,
-                tension: 0.3, // smooth curve
+                tension: 0.3,
                 fill: true,
             },
         ],
@@ -67,7 +57,7 @@ const TechStackLineChart = ({ data, height = 400 }) => {
             },
             x: {
                 ticks: {
-                    autoSkip: false, // keep all labels visible
+                    autoSkip: false,
                     maxRotation: 45,
                     minRotation: 30,
                 },

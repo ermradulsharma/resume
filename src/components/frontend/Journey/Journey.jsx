@@ -6,7 +6,7 @@ const Journey = () => {
     const professional = data.about.experience;
     const educations = data.about.education;
     return (
-        <section id="resume" className="resume section mb-5">
+        <section id="resume" className="resume section">
             <Container className="section-title">
                 <Row>
                     <Col lg={8}>
@@ -25,25 +25,25 @@ const Journey = () => {
                             </div>
                             <div className="experience-cards">
                                 {professional.map((item, index) => (
-                                <div className="experience-card" key={index} data-aos="zoom-in" data-aos-delay={300 + index * 100}>
-                                    <div className="card-header">
-                                        <div className="role-info">
-                                            <h3>{item.role}</h3>
-                                            <h4>{item.place}</h4>
+                                    <div className="experience-card" key={index} data-aos="zoom-in" data-aos-delay={300 + index * 100}>
+                                        <div className="card-header">
+                                            <div className="role-info">
+                                                <h3>{item.role}</h3>
+                                                <h4>{item.place}</h4>
+                                            </div>
+                                            <span className="duration">{item.duration}</span>
                                         </div>
-                                        <span className="duration">{item.duration}</span>
+                                        <div className="card-body">
+                                            <p>{item.description}</p>
+                                            {item.achievements && item.achievements.length > 0 && (
+                                                <ul className="achievements">
+                                                    {item.achievements.map((point, i) => (
+                                                        <li key={i}>{point}</li>
+                                                    ))}
+                                                </ul>
+                                            )}
+                                        </div>
                                     </div>
-                                    <div className="card-body">
-                                        <p>{item.description}</p>
-                                        {item.achievements && item.achievements.length > 0 && (
-                                        <ul className="achievements">
-                                            {item.achievements.map((point, i) => (
-                                                <li key={i}>{point}</li>
-                                            ))}
-                                        </ul>
-                                        )}
-                                    </div>
-                                </div>
                                 ))}
                             </div>
                         </div>
@@ -57,17 +57,17 @@ const Journey = () => {
                             <div className="education-timeline">
                                 <div className="timeline-track"></div>
                                 {educations.map((edu, index) => (
-                                <div className="education-item" key={index} data-aos="slide-up" data-aos-delay={200 + index * 100}>
-                                    <div className="timeline-marker"></div>
-                                    <div className="education-content">
-                                        <div className="degree-header">
-                                            <h3>{edu.role}</h3>
-                                            <span className="year">{edu.duration}</span>
+                                    <div className="education-item" key={index} data-aos="slide-up" data-aos-delay={200 + index * 100}>
+                                        <div className="timeline-marker"></div>
+                                        <div className="education-content">
+                                            <div className="degree-header">
+                                                <h3>{edu.role}</h3>
+                                                <span className="year">{edu.duration}</span>
+                                            </div>
+                                            <h4 className="institution">{edu.place}</h4>
+                                            <p>{edu.description}</p>
                                         </div>
-                                        <h4 className="institution">{edu.place}</h4>
-                                        <p>{edu.description}</p>
                                     </div>
-                                </div>
                                 ))}
                             </div>
                         </div>

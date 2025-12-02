@@ -1,33 +1,31 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Container, Badge, Button } from "react-bootstrap";
-import { BsArrowLeft, BsClock, BsCalendar3, BsTag, BsPerson } from "react-icons/bs";
+import { BsArrowLeft, BsClock, BsCalendar3, BsTag, BsPerson, BsShare } from "react-icons/bs";
 import useSEO from "../../../hooks/useSEO";
 import blogsData from "../../../components/database/blogs.json";
 import "./Blogs.css";
 import "./BlogDetail.css";
 import LetsConnect from "../../../components/LetsConnect";
+import logo from "../../../assets/logo.png"
+import ContactSection from "../../../components/frontend/Contact/Contact";
 
 const BlogDetail = () => {
     const { slug } = useParams();
     const navigate = useNavigate();
-
-    // Find the blog post by slug
     const post = blogsData.blogs.posts.find(p => p.slug === slug);
-
-    // Set SEO (must be called before any conditional returns)
     useSEO({
         title: post ? `${post.title} | Mradul Sharma Blog` : "Blog Post | Mradul Sharma",
         description: post ? post.excerpt : "Read technical articles and tutorials on web development.",
         keywords: post ? post.tags.join(", ") : "web development, programming, tutorials",
         ogUrl: post ? `https://mradulsharma.vercel.app/blogs/${post.slug}` : "https://mradulsharma.vercel.app/blogs",
         canonicalUrl: post ? `https://mradulsharma.vercel.app/blogs/${post.slug}` : "https://mradulsharma.vercel.app/blogs",
-        ogImage: post ? post.image : "https://mradulsharma.vercel.app/preview.png",
+        ogImage: post ? `https://mradulsharma.vercel.app${post.image}` : "https://mradulsharma.vercel.app/preview.png",
         schema: post ? {
             "@context": "https://schema.org",
             "@type": "BlogPosting",
             "headline": post.title,
-            "image": post.image,
+            "image": `https://mradulsharma.vercel.app${post.image}`,
             "author": {
                 "@type": "Person",
                 "name": post.author
@@ -37,7 +35,7 @@ const BlogDetail = () => {
                 "name": "Mradul Sharma",
                 "logo": {
                     "@type": "ImageObject",
-                    "url": "https://mradulsharma.vercel.app/logo192.png"
+                    "url": `https://mradulsharma.vercel.app${logo}`
                 }
             },
             "datePublished": post.date,
@@ -48,8 +46,6 @@ const BlogDetail = () => {
             }
         } : null
     });
-
-    // Calculate relative time
     const getRelativeTime = (dateString) => {
         const postDate = new Date(dateString);
         const now = new Date();
@@ -68,7 +64,23 @@ const BlogDetail = () => {
         return diffInYears === 1 ? '1 year ago' : `${diffInYears} years ago`;
     };
 
-    // If post not found, show error
+    const handleShare = async () => {
+        const shareData = {
+            title: post.title,
+            text: post.excerpt,
+            url: window.location.href,
+        };
+        try {
+            if (navigator.share) {
+                await navigator.share(shareData);
+            } else {
+                await navigator.clipboard.writeText(shareData.url);
+                alert('Link copied to clipboard!');
+            }
+        } catch (err) {
+            console.error('Error sharing', err);
+        }
+    };
     if (!post) {
         return (
             <Container className="py-5">
@@ -80,13 +92,9 @@ const BlogDetail = () => {
             </Container>
         );
     }
-
-    // Get related posts (same category, excluding current post)
     const relatedPosts = blogsData.blogs.posts.filter(p => p.category === post.category && p.id !== post.id && p.published).slice(0, 5);
-
     return (
         <article className="blog-detail-page">
-            {/* Hero Section with Featured Image */}
             <div className="blog-detail-hero" style={{ backgroundImage: `url(${post.image})` }}>
                 <Container>
                     <div className="d-flex align-items-center justify-content-between mb-3">
@@ -94,7 +102,14 @@ const BlogDetail = () => {
                             <Badge bg="primary">{post.category}</Badge>
                             {post.featured && <Badge bg="success" className="ms-2">Featured</Badge>}
                         </div>
-                        <Button variant="danger" className="back-button" onClick={() => navigate('/blogs')} ><BsArrowLeft className="me-2" />Back to Blogs</Button>
+                        <div className="d-flex align-items-center gap-2">
+                            <Button variant="primary" className="share-button" onClick={handleShare}>
+                                <BsShare className="me-2" />Share
+                            </Button>
+                            <Button variant="danger" className="back-button" onClick={() => navigate('/blogs')} >
+                                <BsArrowLeft className="me-2" />Back to Blogs
+                            </Button>
+                        </div>
                     </div>
                     <h1>{post.title}</h1>
                     <div className="blog-detail-meta">
@@ -105,24 +120,16 @@ const BlogDetail = () => {
                 </Container>
             </div>
 
-            {/* Blog Content */}
             <Container className="py-5">
                 <div className="row">
                     <div className="col-lg-8">
                         <div className="blog-detail-content-wrapper">
-                            {/* Excerpt */}
                             <div className="blog-detail-excerpt">{post.excerpt}</div>
-
-                            {/* Main Content */}
                             <div className="blog-detail-content">{post.content.split('\n\n').map((paragraph, index) => (<p key={index}>{paragraph}</p>))}</div>
-
-                            {/* Tags */}
                             <div className="blog-detail-tags">
                                 <h5><BsTag className="me-2" />Tags</h5>
                                 <div className="d-flex flex-wrap gap-2">{post.tags.map((tag, index) => (<Badge key={index} bg="secondary">{tag}</Badge>))}</div>
                             </div>
-
-                            {/* Author Info */}
                             <div className="author-card">
                                 <div className="d-flex align-items-center gap-2">
                                     <div>
@@ -136,8 +143,6 @@ const BlogDetail = () => {
                             </div>
                         </div>
                     </div>
-
-                    {/* Right Sidebar - Related Posts */}
                     <div className="col-lg-4">
                         {relatedPosts.length > 0 && (
                             <div className="related-posts-sidebar">
@@ -159,7 +164,7 @@ const BlogDetail = () => {
                     </div>
                 </div>
             </Container>
-
+            <ContactSection />
             <LetsConnect />
         </article>
     );

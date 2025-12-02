@@ -20,7 +20,6 @@ const PublicLayout = () => {
         <>
             <Navbar />
             <main>
-                {/* <Breadcrumbs /> */}
                 <Outlet />
             </main>
             <Footer />

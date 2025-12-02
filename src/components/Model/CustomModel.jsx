@@ -50,12 +50,11 @@ export default function CustomModal({ open, setOpen, project = {} }) {
     }
   };
 
-  // Safe image path handling
   let imageSrc = "";
   try {
     imageSrc = require(`../../assets/projects/${project.image}`);
   } catch {
-    imageSrc = ""; // fallback to blank
+    imageSrc = "";
   }
 
   return (
@@ -66,7 +65,6 @@ export default function CustomModal({ open, setOpen, project = {} }) {
       aria-describedby="modal-description"
     >
       <Box sx={{ ...style, ...(showAnimation ? showStyle : {}) }}>
-        {/* Header */}
         <div
           style={{
             display: "flex",
@@ -95,8 +93,6 @@ export default function CustomModal({ open, setOpen, project = {} }) {
             <span style={{ fontSize: "0.8rem" }}>Close</span>
           </button>
         </div>
-
-        {/* Image */}
         {imageSrc && (
           <img
             src={imageSrc}
@@ -110,8 +106,6 @@ export default function CustomModal({ open, setOpen, project = {} }) {
             }} rel='lazy' loading="lazy"
           />
         )}
-
-        {/* Category and Visit Button */}
         <div
           style={{
             display: "flex",
@@ -142,8 +136,6 @@ export default function CustomModal({ open, setOpen, project = {} }) {
             </Button>
           )}
         </div>
-
-        {/* Description */}
         <div>
           <h4 style={{ margin: "10px 0", fontSize: "1rem" }}>Description</h4>
           <p
@@ -160,8 +152,6 @@ export default function CustomModal({ open, setOpen, project = {} }) {
             {project.description || "No description provided."}
           </p>
         </div>
-
-        {/* Technologies */}
         {Array.isArray(project.technologies) && project.technologies.length > 0 && (
           <div style={{ marginTop: "1.5rem" }}>
             <h4 style={{ margin: "10px 0", fontSize: "1rem" }}>

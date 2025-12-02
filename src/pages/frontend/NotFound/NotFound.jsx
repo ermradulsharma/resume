@@ -22,13 +22,10 @@ const NotFound = () => {
                 <Row className="justify-content-center align-items-center">
                     <Col lg={10} md={12} className="text-center">
                         <div className="not-found-content py-5">
-                            {/* 404 Number */}
                             <div className="error-code">
                                 <div className="display-1 fw-bold text-primary">404</div>
                                 <div className="error-line"></div>
                             </div>
-
-                            {/* Error Message with proper H1 */}
                             <div className="error-message">
                                 <h1 className="h2 text-muted">Page Not Found - 404 Error</h1>
                                 <p className="lead text-muted mb-4">
@@ -55,8 +52,6 @@ const NotFound = () => {
                                     </p>
                                 </div>
                             </div>
-
-                            {/* Action Buttons */}
                             <div className="error-actions d-flex gap-3 justify-content-center flex-wrap">
                                 <Button variant="primary" size="sm" onClick={() => navigate("/")} className="d-flex align-items-center gap-2 text-white">
                                     <BsHouseDoor size={20} />Go to Home
@@ -65,8 +60,6 @@ const NotFound = () => {
                                     <BsArrowLeft size={20} />Go Back
                                 </Button>
                             </div>
-
-                            {/* Helpful Links Section */}
                             <div className="helpful-links">
                                 <h2 className="h4 text-muted my-4">Explore Popular Pages</h2>
                                 <Row className="g-3">

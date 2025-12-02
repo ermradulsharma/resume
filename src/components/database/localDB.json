@@ -12,32 +12,6 @@
         "compactAbout": "Accomplished Full Stack Developer with 5+ years of experience in Laravel, React, and Node.js. Skilled in building secure, scalable web applications using modern technologies. Strong background in API integration, responsive design, and performance optimization. Adept at leading development teams, writing clean code, and delivering projects efficiently. Passionate about innovation and continuous learning.",
         "location": "Etah, Uttar Pradesh, India"
     },
-    "about": {
-        "expandedAbout": "I am an accomplished Full Stack Developer with expertise in Laravel and a strong command of modern web development technologies and frameworks. With a comprehensive skill set spanning both front-end and back-end development, I specialize in creating custom web applications tailored to meet clients' unique needs. My technical toolkit includes HTML, CSS, JavaScript, PHP, and databases like Postgres, MySQL, MongoDB, and SQLite.",
-        "expandedAbout2": "I am adept at delivering scalable, high-quality solutions by focusing on clean, sustainable code and staying current with the latest industry trends. My core competencies include responsive design, user authentication, third-party API integration, and performance optimization, ensuring seamless and efficient user experiences.",
-        "expandedAbout3": "In addition to my technical abilities, I thrive in collaborative environments, leveraging strong communication skills to contribute to team-oriented success and client satisfaction. My commitment to excellence has consistently enabled me to deliver projects on time and within budget.",
-        "expandedAbout4": "Passionate about clean, efficient coding, I am always looking to expand my skill set and embrace new challenges. If you're seeking a dedicated developer to bring value to your team or organization, let's connect!",
-        "experience": [
-            {
-                "role": "Senior Full-Stack Developer",
-                "place": "W3 Info Solutions, Lucknow",
-                "duration": "March 2022 – Present",
-                "location": "Remote"
-            },
-            {
-                "role": "Laravel Developer",
-                "place": "Zaiba InfoTech, Agra",
-                "duration": "March 2020 – February 2022",
-                "location": "Agra, India"
-            },
-            {
-                "role": "PHP Developer (Internship & Full-Time)",
-                "place": "Programming Park InfoTech, Agra",
-                "duration": "December 2018 – February 2020",
-                "location": "Agra, India"
-            }
-        ]
-    },
     "contact": {
         "title": "Contact Me",
         "description": "Interested in collaborating or have any queries? Let's connect.",
@@ -64,74 +38,6 @@
                 "rows": 4
             }
         ],
-        "socialmedia": [
-            {
-                "name": "LinkedIn",
-                "link": "https://www.linkedin.com/in/mradulsharma",
-                "icon": "FaLinkedin",
-                "status": true
-            },
-            {
-                "name": "GitHub",
-                "link": "https://github.com/ermradulsharma",
-                "icon": "FaGithub",
-                "status": true
-            },
-            {
-                "name": "GitLab",
-                "link": "https://gitlab.com/mradulsharma",
-                "icon": "FaGitlab",
-                "status": true
-            },
-            {
-                "name": "Stack Overflow",
-                "link": "https://stackoverflow.com/users/8425184/mradul-sharma",
-                "icon": "FaStackOverflow",
-                "status": true
-            },
-            {
-                "name": "Dev.to",
-                "link": "https://dev.to/mradul_sharma",
-                "icon": "FaDev",
-                "status": true
-            },
-            {
-                "name": "Medium",
-                "link": "https://medium.com/@ermradulsharma",
-                "icon": "FaMedium",
-                "status": true
-            },
-            {
-                "name": "X (Twitter)",
-                "link": "https://x.com/er_mradulsharma",
-                "icon": "FaTwitter",
-                "status": true
-            },
-            {
-                "name": "Facebook",
-                "link": "https://www.facebook.com/mradulsharma786",
-                "icon": "FaFacebook",
-                "status": true
-            },
-            {
-                "name": "Instagram",
-                "link": "https://www.instagram.com/rudra_sharma_",
-                "icon": "FaInstagram",
-                "status": true
-            },
-            {
-                "name": "YouTube",
-                "link": "https://www.youtube.com/@mradulsharma6721",
-                "icon": "FaYoutube",
-                "status": true
-            },
-            {
-                "name": "Telegram",
-                "link": "https://t.me/ermradulsharma",
-                "icon": "FaTelegram",
-                "status": true
-            }
-        ],
         "contacts": [
             {
                 "name": "mail",
@@ -142,73 +48,5 @@
                 "value": "7252933077"
             }
         ]
-    },
-    "social": [
-        {
-            "name": "LinkedIn",
-            "link": "https://www.linkedin.com/in/mradulsharma",
-            "icon": "BsLinkedin",
-            "status": true
-        },
-        {
-            "name": "GitHub",
-            "link": "https://github.com/ermradulsharma",
-            "icon": "BsGithub",
-            "status": true
-        },
-        {
-            "name": "GitLab",
-            "link": "https://gitlab.com/mradulsharma",
-            "icon": "BsGitlab",
-            "status": true
-        },
-        {
-            "name": "Stack Overflow",
-            "link": "https://stackoverflow.com/users/8425184/mradul-sharma",
-            "icon": "BsStackOverflow",
-            "status": true
-        },
-        {
-            "name": "Dev.to",
-            "link": "https://dev.to/mradul_sharma",
-            "icon": "FaDev",
-            "status": true
-        },
-        {
-            "name": "Medium",
-            "link": "https://medium.com/@ermradulsharma",
-            "icon": "BsMedium",
-            "status": true
-        },
-        {
-            "name": "X (Twitter)",
-            "link": "https://x.com/er_mradulsharma",
-            "icon": "BsTwitterX",
-            "status": true
-        },
-        {
-            "name": "Facebook",
-            "link": "https://www.facebook.com/mradulsharma786",
-            "icon": "BsFacebook",
-            "status": true
-        },
-        {
-            "name": "Instagram",
-            "link": "https://www.instagram.com/rudra_sharma_",
-            "icon": "BsInstagram",
-            "status": true
-        },
-        {
-            "name": "YouTube",
-            "link": "https://www.youtube.com/@mradulsharma6721",
-            "icon": "BsYoutube",
-            "status": true
-        },
-        {
-            "name": "Telegram",
-            "link": "https://t.me/ermradulsharma",
-            "icon": "BsTelegram",
-            "status": true
-        }
-    ]
+    }
 }

@@ -10,6 +10,7 @@ import Journey from "../../../components/frontend/Journey/Journey";
 import "../../../components/frontend/Journey/Journey.css";
 import Faqs from "../../../components/frontend/Faqs/Faqs";
 import LetsConnect from "../../../components/LetsConnect";
+import Services from "../../../components/frontend/Services/Services";
 
 const About = () => {
     useSEO({
@@ -23,7 +24,6 @@ const About = () => {
     const { expandedAbout, expandedAbout6, expandedAbout7, expandedAbout8 } = data.about;
     return (
         <div className="about-page">
-            {/* Hero Section */}
             <div className="about-hero text-white d-flex align-items-center justify-content-center text-center">
                 <div className="overlay"></div>
                 <div className="hero-content">
@@ -31,8 +31,6 @@ const About = () => {
                     <p className="lead text-white">Crafting secure, scalable, and high-performance web applications using Laravel, React, and cloud-native technologies.</p>
                 </div>
             </div>
-
-            {/* About Content Section */}
             <section className="about-section py-4">
                 <Container>
                     <Row className="align-items-start">
@@ -53,12 +51,8 @@ const About = () => {
             </section>
             <TechStack />
             <Journey />
+            <Services />
             <Faqs />
-            {/* <section className="about-section py-5">
-                <Container>
-                    <GitHub />
-                </Container>
-            </section> */}
             <LetsConnect />
         </div>
     );

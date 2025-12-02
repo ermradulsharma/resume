@@ -12,36 +12,30 @@ const About = () => {
     const { expandedAbout5 } = data.about;
     return (
         <section id="about" className="about section my-5">
-            {/* Section Title */}
             <Container className="section-title">
                 <h2>About</h2>
                 <p>{expandedAbout5}</p>
             </Container>
             <Container data-aos="fade-up" data-aos-delay="100">
                 <Row className="align-items-center">
-                    {/* Profile Image */}
                     <Col lg={4} data-aos="fade-right" data-aos-delay="200">
                         <div className="profile-image-wrapper">
                             <div className="profile-image">
-                                <img src={about} alt="Profile" className="img-fluid" aria-label="Mradul Sharma" rel='lazy' loading="lazy"/>
+                                <img src={about} alt="Profile" className="img-fluid" aria-label="Mradul Sharma" rel='lazy' loading="lazy" />
                             </div>
                             <div className="signature-section">
                                 <img src={signature} alt="Signature" className="signature" rel='lazy' loading="lazy" />
                                 <p className="quote">Building meaningful digital experiences through creative code.</p>
-                                <Button variant="primary" className='rounded-5 px-5 py-2 my-4' href={resume} download aria-label="Download Mradul Sharma Resume in PDF">⚡Resume PDF Download ⚡</Button>
+                                <Button variant="primary" className='rounded-5 px-4 px-lg-5  py-2 my-4' href={resume} download aria-label="Download Mradul Sharma Resume in PDF">⚡Resume PDF Download ⚡</Button>
                             </div>
                         </div>
                     </Col>
-
-                    {/* About Content */}
                     <Col lg={8} data-aos="fade-left" data-aos-delay="300">
                         <div className="about-content">
                             <div className="intro d-none">
                                 <h2 className='d-none d-lg-block'>Hi, I'm Mradul Sharma – Full-Stack Developer</h2>
                                 <p>I’m a Senior Full-Stack Developer with 5+ years of experience designing, developing, and deploying secure, high-performance web applications. I specialize in Laravel, React.js, and Node.js, and work extensively with AWS, Docker, and CI/CD automation. Currently, I lead full-cycle engineering at W3 Info Solutions, building cloud-native, API-driven applications that scale.</p>
                             </div>
-
-                            {/* Skills */}
                             <div className="skills-grid">
                                 <div className="skill-item" data-aos="zoom-in" data-aos-delay="400">
                                     <div className="skill-icon">
@@ -65,8 +59,6 @@ const About = () => {
                                     <p>AWS, Docker, CI/CD pipelines, and scalable microservices.</p>
                                 </div>
                             </div>
-
-                            {/* Timeline */}
                             <div className="journey-timeline" data-aos="fade-up" data-aos-delay="300">
                                 <div className="timeline-item">
                                     <div className="year">2016</div>
@@ -85,14 +77,11 @@ const About = () => {
                                     <div className="description">Joined W3 Info Solutions as Senior Full-Stack Developer</div>
                                 </div>
                             </div>
-
-                            {/* Call to Action */}
                             <div className="cta-section" data-aos="fade-up" data-aos-delay="400">
                                 <div className="fun-fact px-0 px-lg-5">
                                     <span className="emoji">⚡</span>
                                     <span className="text">Always exploring cloud, code, and clean architecture.</span>
                                 </div>
-                                {/* <Button variant="primary" className='rounded-5 px-5 wm-auto w-lg-25' href='/about'>View More</Button> */}
                             </div>
                         </div>
                     </Col>
