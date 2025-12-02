@@ -11,7 +11,7 @@ import ContactSection from "../../../components/frontend/Contact/Contact";
 const Services = () => {
     useSEO({
         title: "Services - Full-Stack Development by Mradul Sharma",
-        description: "Professional full-stack development services including Laravel development, React applications, AWS cloud solutions, API development, database optimization, and DevOps consulting.",
+        description: "Professional web development and cloud solutions covering Laravel, React, Node.js, API design, DevOps, and AWS infrastructure for scalable applications.",
         keywords: "Full Stack Development Services, Laravel Development Services, React Development Services, AWS Cloud Consulting, Custom API Development, Database Optimization Services, DevOps Consulting, Cloud Architecture Design, Microservices Development, Enterprise SaaS Development, Payment Gateway Integration, Performance Optimization, Web Application Development, Mobile Backend Development, Technical Consulting, Code Review Services",
         ogUrl: "https://mradulsharma.vercel.app/services",
         canonicalUrl: "https://mradulsharma.vercel.app/services"

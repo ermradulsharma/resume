@@ -20,7 +20,7 @@ const truncateText = (text, maxLength = 155) => {
 export default function Portfolio() {
     useSEO({
         title: "Portfolio | Full-Stack Projects by Mradul Sharma",
-        description: "Explore enterprise-grade full-stack applications built by Mradul Sharma. Featuring SaaS platforms, CMS systems, and crypto trading applications using Laravel, React, AWS, and modern technologies.",
+        description: "Explore a portfolio of modern web applications and enterprise projects built with Laravel, React, Node.js, and AWS, showcasing full-stack development expertise.",
         keywords: "Full Stack Portfolio, Laravel Projects, React Applications, Enterprise Web Applications, SaaS Platform Development, Microservices Architecture, Real-Time Trading Platform, CMS Development, Payroll Management System, Cloud-Based Applications, API Integration Projects, Database-Driven Solutions, E-commerce Development, Payment Gateway Integration, Scalable Web Applications, Progressive Web Apps",
         ogUrl: "https://mradulsharma.vercel.app/portfolio",
         canonicalUrl: "https://mradulsharma.vercel.app/portfolio"

@@ -6,7 +6,7 @@ import "../PrivacyPolicy/PrivacyPolicy.css"; // Reuse styles
 const TermsOfService = () => {
     useSEO({
         title: "Terms of Service | Mradul Sharma",
-        description: "Terms of Service for Mradul Sharma's portfolio website. Read our terms and conditions.",
+        description: "Read the terms of service outlining the rules, responsibilities, and usage guidelines for accessing and using Mradul Sharma’s website and related content.",
         keywords: "terms of service, terms and conditions, legal, usage policy",
         ogUrl: "https://mradulsharma.vercel.app/terms",
         canonicalUrl: "https://mradulsharma.vercel.app/terms"
