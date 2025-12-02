@@ -51,5 +51,7 @@
             "destination": "/",
             "permanent": true
         }
-    ]
+    ],
+    "trailingSlash": false,
+    "cleanUrls": true
 }
