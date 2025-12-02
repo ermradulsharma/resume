@@ -1,15 +1,6 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Allow: /
-Allow: /static/
-Allow: /*.css$
-Allow: /*.js$
-Allow: /*.jpg$
-Allow: /*.png$
-Allow: /*.webp$
-Allow: /*.svg$
-
-Disallow: /admin/
-Disallow: /dashboard/
+Disallow: /404
 
 Sitemap: https://mradulsharma.vercel.app/sitemap.xml

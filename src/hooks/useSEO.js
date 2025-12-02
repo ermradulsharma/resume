@@ -58,9 +58,10 @@ export const useSEO = ({
         setMetaTag('author', author);
         setMetaTag('robots', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
 
-        // Fallback canonical URL (use ogUrl if no explicit canonicalUrl)
-        if (!canonicalUrl && ogUrl) {
-            setLinkTag('canonical', ogUrl);
+        // Set canonical URL (prefer explicit canonicalUrl, fallback to ogUrl)
+        const finalCanonicalUrl = canonicalUrl || ogUrl;
+        if (finalCanonicalUrl) {
+            setLinkTag('canonical', finalCanonicalUrl);
         }
 
         // JSON-LD Schema
