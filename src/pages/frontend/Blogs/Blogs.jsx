@@ -6,7 +6,6 @@ import useSEO from "../../../hooks/useSEO";
 import "../Blogs/Blogs.css";
 import blogsData from "../../../components/database/blogs.json";
 import LetsConnect from "../../../components/LetsConnect";
-import Services from "../../../components/frontend/Services/Services";
 
 const Blogs = () => {
     useSEO({
