@@ -32,7 +32,6 @@
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
-        "postbuild": "node -e \"if (process.env.CI !== 'true') { require('child_process').execSync('react-snap', {stdio: 'inherit'}) }\"",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
     },
@@ -52,21 +51,6 @@
             "last 1 chrome version",
             "last 1 firefox version",
             "last 1 safari version"
-        ]
-    },
-    "reactSnap": {
-        "include": [
-            "/",
-            "/portfolio",
-            "/services",
-            "/blogs",
-            "/about",
-            "/privacy",
-            "/terms"
-        ],
-        "puppeteerArgs": [
-            "--no-sandbox",
-            "--disable-setuid-sandbox"
         ]
     }
 }
