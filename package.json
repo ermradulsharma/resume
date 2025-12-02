@@ -32,7 +32,7 @@
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
-        "postbuild": "react-snap",
+        "postbuild": "node -e \"if (process.env.CI !== 'true') { require('child_process').execSync('react-snap', {stdio: 'inherit'}) }\"",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
     },
@@ -53,9 +53,6 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
-    },
-    "devDependencies": {
-        "react-snap": "^1.23.0"
     },
     "reactSnap": {
         "include": [
