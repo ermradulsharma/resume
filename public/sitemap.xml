@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main Pages -->
   <url>
     <loc>https://mradulsharma.vercel.app/</loc>
     <lastmod>2025-12-02</lastmod>
@@ -41,5 +42,139 @@
     <lastmod>2025-12-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://mradulsharma.vercel.app/blogs/building-scalable-microservices-laravel-docker</loc>
+    <lastmod>2025-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/blogs/react-performance-optimization-advanced-techniques</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/blogs/aws-lambda-serverless-architecture-best-practices</loc>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/blogs/database-optimization-postgresql-mongodb-performance</loc>
+    <lastmod>2025-10-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/blogs/implementing-cicd-pipelines-github-actions</loc>
+    <lastmod>2025-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/blogs/building-realtime-applications-websockets-laravel</loc>
+    <lastmod>2025-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/blogs/nextjs-14-server-components-app-router</loc>
+    <lastmod>2025-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/blogs/api-security-best-practices-jwt-oauth2-and-rate-limiting</loc>
+    <lastmod>2025-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/blogs/docker-multi-stage-builds-for-optimized-production-images</loc>
+    <lastmod>2025-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/blogs/graphql-vs-rest-choosing-the-right-api-architecture</loc>
+    <lastmod>2025-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/blogs/typescript-best-practices-for-large-scale-applications</loc>
+    <lastmod>2025-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/blogs/redis-caching-strategies-for-high-performance-applications</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/blogs/vue-js-3-composition-api-complete-guide</loc>
+    <lastmod>2025-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/blogs/kubernetes-deployment-strategies-rolling-blue-green-and-canary</loc>
+    <lastmod>2025-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/blogs/building-progressive-web-apps-with-service-workers</loc>
+    <lastmod>2025-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/blogs/elasticsearch-for-full-text-search-implementation-guide</loc>
+    <lastmod>2025-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/blogs/node-js-streams-processing-large-files-efficiently</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/blogs/tailwind-css-utility-first-styling-best-practices</loc>
+    <lastmod>2025-10-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/blogs/laravel-queues-and-job-processing-at-scale</loc>
+    <lastmod>2025-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/blogs/react-native-building-cross-platform-mobile-apps</loc>
+    <lastmod>2025-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/blogs/nginx-configuration-for-high-traffic-websites</loc>
+    <lastmod>2025-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/blogs/testing-strategies-unit-integration-and-e2e-tests</loc>
+    <lastmod>2025-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>
