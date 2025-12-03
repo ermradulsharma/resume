@@ -1,31 +1,44 @@
+import React, { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import PublicLayout from "../layouts/PublicLayout";
 import "../App.css";
-import About from "../pages/frontend/About/About";
-import Portfolio from "../pages/frontend/Portfolio/Portfolio";
-import Services from "../pages/frontend/Services/Services";
-import Home from "../pages/frontend/Home";
-import Blogs from "../pages/frontend/Blogs/Blogs";
-import BlogDetail from "../pages/frontend/Blogs/BlogDetail";
-import NotFound from "../pages/frontend/NotFound/NotFound";
-import PrivacyPolicy from "../pages/frontend/PrivacyPolicy/PrivacyPolicy";
-import TermsOfService from "../pages/frontend/TermsOfService/TermsOfService";
+
+// Lazy load components
+const About = React.lazy(() => import("../pages/frontend/About/About"));
+const Portfolio = React.lazy(() => import("../pages/frontend/Portfolio/Portfolio"));
+const Services = React.lazy(() => import("../pages/frontend/Services/Services"));
+const Home = React.lazy(() => import("../pages/frontend/Home"));
+const Blogs = React.lazy(() => import("../pages/frontend/Blogs/Blogs"));
+const BlogDetail = React.lazy(() => import("../pages/frontend/Blogs/BlogDetail"));
+const NotFound = React.lazy(() => import("../pages/frontend/NotFound/NotFound"));
+const PrivacyPolicy = React.lazy(() => import("../pages/frontend/PrivacyPolicy/PrivacyPolicy"));
+const TermsOfService = React.lazy(() => import("../pages/frontend/TermsOfService/TermsOfService"));
+
+const LoadingFallback = () => (
+    <div className="d-flex justify-content-center align-items-center" style={{ height: "100vh" }}>
+        <div className="spinner-border text-primary" role="status">
+            <span className="visually-hidden">Loading...</span>
+        </div>
+    </div>
+);
 
 const WebRoutes = () => {
     return (
-        <Routes>
-            <Route path="/" element={<PublicLayout />}>
-                <Route index element={<Home />} />
-                <Route path="portfolio" element={<Portfolio />} />
-                <Route path="services" element={<Services />} />
-                <Route path="blogs" element={<Blogs />} />
-                <Route path="blogs/:slug" element={<BlogDetail />} />
-                <Route path="about" element={<About />} />
-                <Route path="privacy" element={<PrivacyPolicy />} />
-                <Route path="terms" element={<TermsOfService />} />
-                <Route path="*" element={<NotFound />} />
-            </Route>
-        </Routes>
+        <Suspense fallback={<LoadingFallback />}>
+            <Routes>
+                <Route path="/" element={<PublicLayout />}>
+                    <Route index element={<Home />} />
+                    <Route path="portfolio" element={<Portfolio />} />
+                    <Route path="services" element={<Services />} />
+                    <Route path="blogs" element={<Blogs />} />
+                    <Route path="blogs/:slug" element={<BlogDetail />} />
+                    <Route path="about" element={<About />} />
+                    <Route path="privacy" element={<PrivacyPolicy />} />
+                    <Route path="terms" element={<TermsOfService />} />
+                    <Route path="*" element={<NotFound />} />
+                </Route>
+            </Routes>
+        </Suspense>
     );
 };
 

@@ -79,7 +79,7 @@ export default function Portfolio() {
                 {/* Filters */}
                 <header className="d-flex flex-column flex-md-row align-items-md-center justify-content-end mb-4 gap-2">
                     <div className="d-flex gap-1 flex-wrap">
-                        {["All", "PHP", "Laravel", "CodeIgniter", "Vue.js", "React.js", "Next.js", "Mautic"].map((btn) => (<Button key={btn} variant={filter === btn ? "success" : "outline-success"} size="sm" style={{ minWidth: "100px" }} onClick={() => setFilter(btn)}>{btn}</Button>))}
+                        {["All", "PHP", "Laravel", "CodeIgniter", "Vue.js", "React.js", "Next.js", "Mautic"].map((btn) => (<Button key={btn} variant={filter === btn ? "success" : "outline-secondary"} size="sm" style={{ minWidth: "100px" }} onClick={() => setFilter(btn)}>{btn}</Button>))}
                     </div>
                 </header>
 

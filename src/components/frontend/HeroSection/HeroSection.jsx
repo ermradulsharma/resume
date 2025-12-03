@@ -57,7 +57,10 @@ const HeroSection = () => {
                                     <span>NodeJs Developer</span>
                                 </div>
                             </div>
-                            <img src={logo} alt="Portfolio Hero" className="img-fluid hero-main-image" rel='lazy' loading="lazy" srcSet={`${logo} 700w, ${logo} 1400w, ${logo} 2800w`} sizes="(max-width: 768px) 100vw, 700px" />
+                            <picture>
+                                <source srcSet={`${logo}`} type="image/webp" />
+                                <img src={logo} alt="Portfolio Hero" className="img-fluid hero-main-image" loading="lazy" width="800" height="600" srcSet={`${logo} 700w, ${logo} 1400w, ${logo} 2800w`} sizes="(max-width: 768px) 100vw, 700px" />
+                            </picture>
                             <div className="image-overlay d-none d-md-block"></div>
                         </div>
                     </Col>

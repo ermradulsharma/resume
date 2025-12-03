@@ -100,9 +100,9 @@ const Blogs = () => {
 
                 <div className="mb-4 d-flex flex-wrap gap-2 align-items-center justify-content-between">
                     <div className="d-none d-md-flex flex-wrap gap-2 category-filter-wrapper">
-                        <Button variant={selectedCategory === "All" ? "success" : "outline-success"} size="sm" onClick={() => handleCategoryChange("All")}>All Posts</Button>
+                        <Button variant={selectedCategory === "All" ? "success" : "outline-secondary"} size="sm" onClick={() => handleCategoryChange("All")}>All Posts</Button>
                         {categories.map((category) => (
-                            <Button key={category} variant={selectedCategory === category ? "success" : "outline-success"} size="sm" onClick={() => handleCategoryChange(category)}>{category}</Button>
+                            <Button key={category} variant={selectedCategory === category ? "success" : "outline-secondary"} size="sm" onClick={() => handleCategoryChange(category)}>{category}</Button>
                         ))}
                     </div>
 
@@ -114,8 +114,8 @@ const Blogs = () => {
                     </div>
 
                     <div className="view-toggle-buttons d-flex gap-2 m-0">
-                        <Button variant={viewMode === "grid" ? "success" : "outline-success"} size="sm" onClick={() => setViewMode("grid")} className="d-flex align-items-center p-2"><BsGrid3X3Gap /></Button>
-                        <Button variant={viewMode === "list" ? "success" : "outline-success"} size="sm" onClick={() => setViewMode("list")} className="d-flex align-items-center p-2"><BsList /></Button>
+                        <Button variant={viewMode === "grid" ? "success" : "outline-secondary"} size="sm" onClick={() => setViewMode("grid")} className="d-flex align-items-center p-2" aria-label="Grid View"><BsGrid3X3Gap /></Button>
+                        <Button variant={viewMode === "list" ? "success" : "outline-secondary"} size="sm" onClick={() => setViewMode("list")} className="d-flex align-items-center p-2" aria-label="List View"><BsList /></Button>
                     </div>
                 </div>
 
@@ -123,7 +123,15 @@ const Blogs = () => {
                     <div className="blog-grid-container">
                         {currentPosts.map((post) => (
                             <Card key={post.id} className="blog-card blog-card-grid shadow-sm">
-                                <Card.Img variant="top" src={post.image} alt={post.title} loading="lazy" />
+                                <Card.Img
+                                    variant="top"
+                                    src={post.image}
+                                    alt={post.title}
+                                    loading="lazy"
+                                    width="100%"
+                                    height="200"
+                                    style={{ objectFit: 'cover' }}
+                                />
                                 <Card.Body className="d-flex flex-column p-2">
                                     <div className="mb-2">
                                         <Badge bg="info" className="me-2">{post.category}</Badge>
@@ -154,7 +162,15 @@ const Blogs = () => {
                                 <Row className="g-0">
                                     <Col md={4} lg={3}>
                                         <div className="blog-list-image-wrapper">
-                                            <Card.Img src={post.image} alt={post.title} className="blog-list-image rounded-0" loading="lazy" />
+                                            <Card.Img
+                                                src={post.image}
+                                                alt={post.title}
+                                                className="blog-list-image rounded-0"
+                                                loading="lazy"
+                                                width="100%"
+                                                height="100%"
+                                                style={{ objectFit: 'cover' }}
+                                            />
                                         </div>
                                     </Col>
                                     <Col md={8} lg={9}>

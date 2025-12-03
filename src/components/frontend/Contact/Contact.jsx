@@ -167,7 +167,7 @@ const ContactSection = () => {
                                     {infoOpen && (
                                         <InfoWindow position={mapCenter} options={{ closeBoxURL: "", enableEventPropagation: true }}>
                                             <div style={{ maxWidth: "350px" }} className="d-flex align-items-center gap-2">
-                                                <img src={logo} alt="Mradul Sharma" style={{ width: "100px", height: "100px", borderRadius: "8px" }} />
+                                                <img src={logo} alt="Mradul Sharma" width="100" height="100" loading="lazy" style={{ borderRadius: "8px" }} />
                                                 <div>
                                                     <h6 className="mb-1">Mradul Sharma</h6>
                                                     <p className="mb-1">📍 Etah, Uttar Pradesh, India</p>

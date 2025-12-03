@@ -35,7 +35,7 @@ const About = () => {
                 <Container>
                     <Row className="align-items-start">
                         <Col lg={4} data-aos="fade-right" className="d-lg-block d-none">
-                            <img src={image} alt="Mradul Sharma" className="img-fluid rounded-4 shadow" style={{ minHeight: "80vh" }} rel='lazy' loading="lazy" />
+                            <img src={image} alt="Mradul Sharma" className="img-fluid rounded-4 shadow" style={{ minHeight: "80vh" }} loading="lazy" width="600" height="400" />
                         </Col>
                         <Col lg={8} data-aos="fade-left" className="about-details">
                             {/* <h2 className="fw-bold mb-4">I'm Mradul Sharma – Full-Stack Developer</h2> */}

@@ -21,12 +21,12 @@ const About = () => {
                     <Col lg={4} data-aos="fade-right" data-aos-delay="200">
                         <div className="profile-image-wrapper">
                             <div className="profile-image">
-                                <img src={about} alt="Profile" className="img-fluid" aria-label="Mradul Sharma" rel='lazy' loading="lazy" />
+                                <img src={about} alt="Profile" className="img-fluid" aria-label="Mradul Sharma" loading="lazy" width="300" height="400" />
                             </div>
                             <div className="signature-section">
-                                <img src={signature} alt="Signature" className="signature" rel='lazy' loading="lazy" />
+                                <img src={signature} alt="Signature" className="signature" loading="lazy" width="200" height="100" />
                                 <p className="quote">Building meaningful digital experiences through creative code.</p>
-                                <Button variant="primary" className='rounded-5 px-4 px-lg-5  py-2 my-4' href={resume} download aria-label="Download Mradul Sharma Resume in PDF">⚡Resume PDF Download ⚡</Button>
+                                <Button variant="primary" className='rounded-5 px-4 px-lg-5 py-2 my-4' href={resume} download aria-label="Download Mradul Sharma Resume in PDF">⚡Resume PDF Download ⚡</Button>
                             </div>
                         </div>
                     </Col>

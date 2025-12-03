@@ -103,7 +103,8 @@ export default function CustomModal({ open, setOpen, project = {} }) {
               borderRadius: "15px",
               marginBottom: "1rem",
               objectFit: "cover",
-            }} rel='lazy' loading="lazy"
+            }}
+            loading="lazy"
           />
         )}
         <div
@@ -154,9 +155,7 @@ export default function CustomModal({ open, setOpen, project = {} }) {
         </div>
         {Array.isArray(project.technologies) && project.technologies.length > 0 && (
           <div style={{ marginTop: "1.5rem" }}>
-            <h4 style={{ margin: "10px 0", fontSize: "1rem" }}>
-              Technologies Used
-            </h4>
+            <h4 style={{ margin: "10px 0", fontSize: "1rem" }}>Technologies Used</h4>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
               {project.technologies.map((tech, idx) => (
                 <Chip
