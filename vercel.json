@@ -70,6 +70,12 @@
             "permanent": true
         }
     ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/index.html"
+        }
+    ],
     "trailingSlash": false,
     "cleanUrls": true
 }
