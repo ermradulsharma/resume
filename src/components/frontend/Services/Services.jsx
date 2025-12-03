@@ -56,7 +56,7 @@ const Services = () => {
                                                 <IconComponent className='tech-icon' title={service.title} />
                                             </div>
                                             <h3>{service.title}</h3>
-                                            <p>{service.description}</p>
+                                            <p className="text-secondary">{service.description}</p>
                                         </div>
                                     );
                                 })}

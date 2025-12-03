@@ -24,7 +24,7 @@ const Footer = () => {
             <Container>
                 <Row className="py-5 gap-4 gap-lg-0">
                     <Col lg={4} md={6}>
-                        <h5 className="text-white mb-3">About {home.name}</h5>
+                        <h3 className="h5 text-white mb-3">About {home.name}</h3>
                         <p className="text-white small">
                             {home.compactAbout}
                         </p>
@@ -68,7 +68,7 @@ const Footer = () => {
                         </div>
                     </Col>
                     <Col lg={4} md={6}>
-                        <h5 className="text-white mb-3">Quick Links</h5>
+                        <h3 className="h5 text-white mb-3">Quick Links</h3>
                         <ul className="list-unstyled">
                             <li className="mb-2">
                                 <Link to="/" className="text-white text-decoration-none footer-link">Home</Link>
@@ -108,7 +108,7 @@ const Footer = () => {
                         </ul>
                     </Col> */}
                     <Col lg={4} md={6}>
-                        <h5 className="text-white mb-3">Get In Touch</h5>
+                        <h3 className="h5 text-white mb-3">Get In Touch</h3>
                         <ul className="list-unstyled d-flex flex-column gap-2">
                             {email && (
                                 <li className="d-flex align-items-center gap-2">

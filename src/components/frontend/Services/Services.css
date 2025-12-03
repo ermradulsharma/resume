@@ -1,7 +1,235 @@
-/* #services {
-    background-image: url('../../../assets/service_background.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 10rem 0;
-} */
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+.about .profile-image-wrapper .profile-image {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid var(--accent-color);
+    box-shadow: 0 10px 30px color-mix(in srgb, var(--accent-color), transparent 80%);
+}
+
+.about .profile-image-wrapper .profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+@media (max-width: 768px) {
+    .about .profile-image-wrapper .profile-image {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.about .profile-image-wrapper .signature-section {
+    text-align: center;
+}
+
+.about .profile-image-wrapper .signature-section .signature {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
+
+.about .profile-image-wrapper .signature-section .quote {
+    font-style: italic;
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+    font-size: 14px;
+    margin: 0;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.about .about-content .intro {
+    margin-bottom: 40px;
+}
+
+.about .about-content .intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .about .about-content .intro h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+.about .about-content .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.about .about-content .skills-grid .skill-item {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background: color-mix(in srgb, var(--accent-color), transparent 94%);
+    border: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%);
+    transition: all 0.3s ease;
+}
+
+.about .about-content .skills-grid .skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px color-mix(in srgb, var(--accent-color), transparent 85%);
+}
+
+.about .about-content .skills-grid .skill-item .skill-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-color);
+    border-radius: 50%;
+    color: var(--contrast-color);
+    font-size: 24px;
+}
+
+.about .about-content .skills-grid .skill-item h4,
+.about .about-content .skills-grid .skill-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--heading-color);
+}
+
+.about .about-content .skills-grid .skill-item p {
+    font-size: 14px;
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+    margin: 0;
+}
+
+.about .about-content .journey-timeline {
+    margin-bottom: 40px;
+}
+
+.about .about-content .journey-timeline .timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 5px 15px;
+    border-left: 3px solid var(--accent-color);
+    background: color-mix(in srgb, var(--surface-color), transparent 30%);
+    border-radius: 0 8px 8px 0;
+    transition: all 0.3s ease;
+}
+
+.about .about-content .journey-timeline .timeline-item:hover {
+    background: color-mix(in srgb, var(--accent-color), transparent 95%);
+    border-left-color: color-mix(in srgb, var(--accent-color), transparent 10%);
+}
+
+.about .about-content .journey-timeline .timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.about .about-content .journey-timeline .timeline-item .year {
+    font-weight: 700;
+    color: var(--accent-color);
+    font-size: 18px;
+    min-width: 80px;
+    margin-right: 20px;
+}
+
+.about .about-content .journey-timeline .timeline-item .description {
+    color: color-mix(in srgb, var(--default-color), transparent 20%);
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+@media (max-width: 576px) {
+    .about .about-content .journey-timeline .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about .about-content .journey-timeline .timeline-item .year {
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+}
+
+.about .about-content .cta-section .fun-fact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 25px;
+    background: color-mix(in srgb, var(--accent-color), transparent 94%);
+    border-radius: 50px;
+    border: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%);
+    width: 100%;
+}
+
+.about .about-content .cta-section .fun-fact .emoji {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.about .about-content .cta-section .fun-fact .text {
+    color: color-mix(in srgb, var(--default-color), transparent 20%);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .about .about-content .cta-section .fun-fact {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.about .about-content .cta-section .action-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+@media (max-width: 576px) {
+    .about .about-content .cta-section .action-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.about .about-content .cta-section .action-buttons .btn {
+    padding: 12px 30px;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 15px;
+}
+
+.about .about-content .cta-section .action-buttons .btn.btn-primary {
+    background: var(--accent-color);
+    color: var(--contrast-color);
+    border: 2px solid var(--accent-color);
+}
+
+.about .about-content .cta-section .action-buttons .btn.btn-primary:hover {
+    background: color-mix(in srgb, var(--accent-color), black 10%);
+    border-color: color-mix(in srgb, var(--accent-color), black 10%);
+    transform: translateY(-2px);
+}
+
+.about .about-content .cta-section .action-buttons .btn.btn-outline {
+    background: transparent;
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+}
+
+.about .about-content .cta-section .action-buttons .btn.btn-outline:hover {
+    background: var(--accent-color);
+    color: var(--contrast-color);
+    transform: translateY(-2px);
+}

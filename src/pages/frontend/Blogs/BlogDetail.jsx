@@ -86,7 +86,7 @@ const BlogDetail = () => {
             <Container className="py-5">
                 <div className="text-center">
                     <h1>Blog Post Not Found</h1>
-                    <p className="text-muted">The blog post you're looking for doesn't exist.</p>
+                    <p className="text-secondary">The blog post you're looking for doesn't exist.</p>
                     <Button variant="primary" onClick={() => navigate('/blogs')}>Back to Blogs</Button>
                 </div>
             </Container>
@@ -127,7 +127,7 @@ const BlogDetail = () => {
                             <div className="blog-detail-excerpt">{post.excerpt}</div>
                             <div className="blog-detail-content">{post.content.split('\n\n').map((paragraph, index) => (<p key={index}>{paragraph}</p>))}</div>
                             <div className="blog-detail-tags">
-                                <h5><BsTag className="me-2" />Tags</h5>
+                                <h2 className="h5"><BsTag className="me-2" />Tags</h2>
                                 <div className="d-flex flex-wrap gap-2">{post.tags.map((tag, index) => (<Badge key={index} bg="secondary">{tag}</Badge>))}</div>
                             </div>
                             <div className="author-card">
@@ -136,7 +136,7 @@ const BlogDetail = () => {
                                         <div className="author-avatar">MS</div>
                                     </div>
                                     <div className="author-info">
-                                        <h6>{post.author}</h6>
+                                        <h3 className="h6">{post.author}</h3>
                                         <p>Senior Full-Stack Developer specializing in Laravel, React, Node.js, and AWS. Passionate about building scalable applications and sharing knowledge.</p>
                                     </div>
                                 </div>
@@ -146,15 +146,15 @@ const BlogDetail = () => {
                     <div className="col-lg-4">
                         {relatedPosts.length > 0 && (
                             <div className="related-posts-sidebar">
-                                <h5 className="sidebar-title">Related Articles</h5>
+                                <h2 className="sidebar-title h5">Related Articles</h2>
                                 <div className="related-posts-list">
                                     {relatedPosts.map((relatedPost) => (
                                         <div key={relatedPost.id} className="related-post-sidebar-card" onClick={() => navigate(`/blogs/${relatedPost.slug}`)}>
                                             <img src={relatedPost.image} alt={relatedPost.title} loading="lazy" />
                                             <div className="card-content">
                                                 <Badge bg="primary" className="mb-1">{relatedPost.category}</Badge>
-                                                <h6 className="card-title">{relatedPost.title}</h6>
-                                                <p className="card-text small text-muted">{relatedPost.readTime}</p>
+                                                <h3 className="card-title h6">{relatedPost.title}</h3>
+                                                <p className="card-text small text-secondary">{relatedPost.readTime}</p>
                                             </div>
                                         </div>
                                     ))}

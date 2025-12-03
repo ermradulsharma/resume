@@ -25,7 +25,7 @@ const About = () => {
                             </div>
                             <div className="signature-section">
                                 <img src={signature} alt="Signature" className="signature" loading="lazy" width="200" height="100" />
-                                <p className="quote">Building meaningful digital experiences through creative code.</p>
+                                <p className="quote text-secondary">Building meaningful digital experiences through creative code.</p>
                                 <Button variant="primary" className='rounded-5 px-4 px-lg-5 py-2 my-4' href={resume} download aria-label="Download Mradul Sharma Resume in PDF">⚡Resume PDF Download ⚡</Button>
                             </div>
                         </div>
@@ -42,21 +42,21 @@ const About = () => {
                                         <FaPalette className='tech-icon' title='Frontend Dev' />
                                     </div>
                                     <h3>UI/UX Design</h3>
-                                    <p>Translating concepts into responsive, user-friendly interfaces.</p>
+                                    <p className="text-secondary">Translating concepts into responsive, user-friendly interfaces.</p>
                                 </div>
                                 <div className="skill-item" data-aos="zoom-in" data-aos-delay="450">
                                     <div className="skill-icon">
                                         <FaCodepen className='tech-icon' />
                                     </div>
                                     <h3>Full-Stack Dev</h3>
-                                    <p>End-to-end systems using Laravel, Node.js, React & PostgreSQL.</p>
+                                    <p className="text-secondary">End-to-end systems using Laravel, Node.js, React & PostgreSQL.</p>
                                 </div>
                                 <div className="skill-item" data-aos="zoom-in" data-aos-delay="500">
                                     <div className="skill-icon">
                                         <BsCloudCheck />
                                     </div>
                                     <h3>Cloud & DevOps</h3>
-                                    <p>AWS, Docker, CI/CD pipelines, and scalable microservices.</p>
+                                    <p className="text-secondary">AWS, Docker, CI/CD pipelines, and scalable microservices.</p>
                                 </div>
                             </div>
                             <div className="journey-timeline" data-aos="fade-up" data-aos-delay="300">

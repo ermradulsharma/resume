@@ -10,12 +10,12 @@ const Sidebar = () => {
             <div className="p-3 border-bottom text-center">
                 <Link to="/dashboard" className="text-decoration-none">
                     <h5 className="fw-bold text-primary mb-0">Mradul Sharma</h5>
-                    <small className="text-muted">Full-Stack Developer</small>
+                    <small className="text-secondary">Full-Stack Developer</small>
                 </Link>
             </div>
 
             <Nav className="flex-column p-3">
-                <div className="text-uppercase small text-muted fw-semibold mb-2 mt-3">Main</div>
+                <div className="text-uppercase small text-secondary fw-semibold mb-2 mt-3">Main</div>
 
                 <Nav.Item>
                     <Nav.Link
@@ -50,7 +50,7 @@ const Sidebar = () => {
                     </Nav.Link>
                 </Nav.Item>
 
-                <div className="text-uppercase small text-muted fw-semibold mb-2 mt-4">External</div>
+                <div className="text-uppercase small text-secondary fw-semibold mb-2 mt-4">External</div>
 
                 <Nav.Item>
                     <Nav.Link

@@ -12,7 +12,7 @@ function NavBar() {
         <Navbar sticky="top" expand="lg" collapseOnSelect bg="light" className='p-3' data-bs-theme="light">
             <Container className='px-0'>
                 <Navbar.Brand href="/" className='p-0 m-0' aria-label="Mradul Sharma">
-                    <img alt="Mradul Sharma" src={logo} width="250" height="40" loading="lazy" />
+                    <img alt="Mradul Sharma" src={logo} width="218" height="40" loading="lazy" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">

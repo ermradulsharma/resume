@@ -137,8 +137,8 @@ const Blogs = () => {
                                         <Badge bg="info" className="me-2">{post.category}</Badge>
                                         {post.featured && <Badge bg="success">Featured</Badge>}
                                     </div>
-                                    <Card.Title className="h5">{post.title}</Card.Title>
-                                    <Card.Text className="text-muted small mb-2 d-flex align-items-center justify-content-between">
+                                    <Card.Title className="h5" as="h2">{post.title}</Card.Title>
+                                    <Card.Text className="text-secondary small mb-2 d-flex align-items-center justify-content-between">
                                         <span className="d-flex align-items-center gap-1"><BsCalendar3 /> {getRelativeTime(post.date)}</span>
                                         <span className="d-flex align-items-center gap-1"><BsPerson /> {post.author}</span>
                                     </Card.Text>
@@ -179,8 +179,8 @@ const Blogs = () => {
                                                 <Badge bg="info">{post.category}</Badge>
                                                 {post.featured && <Badge bg="success">Featured</Badge>}
                                             </div>
-                                            <Card.Title className="h4 my-1">{post.title}</Card.Title>
-                                            <Card.Text className="text-muted small d-flex align-items-center gap-2 mb-1">
+                                            <Card.Title className="h4 my-1" as="h2">{post.title}</Card.Title>
+                                            <Card.Text className="text-secondary small d-flex align-items-center gap-2 mb-1">
                                                 <span className="d-flex align-items-center gap-1"><BsCalendar3 /> {getRelativeTime(post.date)}</span>
                                                 <span className="d-flex align-items-center gap-1"><BsPerson /> {post.author}</span>
                                             </Card.Text>
@@ -203,14 +203,14 @@ const Blogs = () => {
                         {isLoadingMore && (
                             <div className="text-center py-4">
                                 <Spinner animation="border" variant="primary" />
-                                <p className="text-muted mt-2">Loading more posts...</p>
+                                <p className="text-secondary mt-2">Loading more posts...</p>
                             </div>
                         )}
 
                         {/* End of Posts Message */}
                         {currentPage >= totalPages && !isLoadingMore && (
                             <div className="text-center py-4">
-                                <p className="text-muted">You've reached the end of the posts!</p>
+                                <p className="text-secondary">You've reached the end of the posts!</p>
                             </div>
                         )}
                     </div>
@@ -218,7 +218,7 @@ const Blogs = () => {
 
                 {currentPosts.length === 0 && (
                     <div className="text-center py-5">
-                        <p className="text-muted">No posts found in this category.</p>
+                        <p className="text-secondary">No posts found in this category.</p>
                     </div>
                 )}
 

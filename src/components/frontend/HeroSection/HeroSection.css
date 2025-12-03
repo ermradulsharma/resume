@@ -14,35 +14,6 @@
     justify-content: center;
 }
 
-.section-title {
-    padding-bottom: 30px;
-    position: relative;
-}
-
-.section-title h2,
-.section-title h1 {
-    font-size: 36px;
-    font-weight: 700;
-    padding: 0;
-    /* line-height: 1px; */
-    margin: 0;
-    letter-spacing: 0.5px;
-    position: relative;
-}
-
-.section-title h2::after,
-.section-title h1::after {
-    content: "";
-    width: 120px;
-    height: 1px;
-    display: inline-block;
-    background: var(--accent-color);
-    margin: 10px 10px;
-}
-
-.section-title p {
-    margin: 10px 0 0 0;
-}
 
 /*--------------------------------------------------------------
 # Hero Section

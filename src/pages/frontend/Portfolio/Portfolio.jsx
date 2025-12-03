@@ -68,7 +68,7 @@ export default function Portfolio() {
             <Container className="section-title py-4 px-3">
                 <h1>{title}</h1>
                 <p>{description}</p>
-                <p className="text-muted">
+                <p className="text-secondary">
                     Welcome to my portfolio showcase. Here you will find a curated collection of my work, ranging from complex enterprise applications to innovative startups.
                     Each project represents a unique challenge solved with modern technology stacks including Laravel, React, Node.js, and AWS.
                     Explore the case studies to understand my problem-solving approach, architectural decisions, and the tangible results delivered.
@@ -92,7 +92,10 @@ export default function Portfolio() {
                                     src={require(`../../../assets/projects/${p.image}`)}
                                     alt={p.title}
                                     className="rounded-0"
-                                    height={200} rel='lazy' loading="lazy"
+                                    width="100%"
+                                    height={200}
+                                    style={{ objectFit: "cover" }}
+                                    loading="lazy"
                                 />
                                 <div className="overlay d-flex justify-content-center align-items-center">
                                     <Button variant="success" onClick={() => handleShow(p)} size="sm">
@@ -107,7 +110,7 @@ export default function Portfolio() {
                                     </Card.Title>
                                     <Badge bg="info" text="light">{p.period}</Badge>
                                 </div>
-                                <Card.Text className="text-muted mb-2">
+                                <Card.Text className="text-secondary mb-2">
                                     {truncateText(p.description, 155)}
                                 </Card.Text>
                                 <TechBadges items={p.technologies} />
@@ -139,21 +142,21 @@ export default function Portfolio() {
                 <Modal.Body className="px-3">
                     {activeProject?.case_study?.overview && (
                         <>
-                            <h6 className="fw-bold">Overview</h6>
-                            <p className="text-muted">{activeProject.case_study.overview}</p>
+                            <h3 className="h5 fw-bold">Overview</h3>
+                            <p className="text-secondary">{activeProject.case_study.overview}</p>
                         </>
                     )}
 
                     {activeProject?.case_study?.problem_statement?.length > 0 && (
                         <>
-                            <h6 className="fw-bold mt-3">Problem Statement</h6>
+                            <h3 className="h5 fw-bold mt-3">Problem Statement</h3>
                             <ul>{activeProject.case_study.problem_statement.map((problem, idx) => (<li key={idx}>{problem}</li>))}</ul>
                         </>
                     )}
 
                     {activeProject?.case_study?.objectives?.length > 0 && (
                         <>
-                            <h6 className="fw-bold mt-3">Objectives</h6>
+                            <h3 className="h5 fw-bold mt-3">Objectives</h3>
                             <ul>
                                 {activeProject.case_study.objectives.map((obj, idx) => (
                                     <li key={idx}>{obj}</li>
@@ -164,9 +167,9 @@ export default function Portfolio() {
 
                     {activeProject?.case_study?.implemented && (
                         <>
-                            <h6 className="fw-bold mt-3">
+                            <h3 className="h5 fw-bold mt-3">
                                 {activeProject.case_study.implemented.title}
-                            </h6>
+                            </h3>
                             <ul>
                                 {activeProject.case_study.implemented.key_features.map((f, idx) => (
                                     <li key={idx}>{f}</li>
@@ -177,7 +180,7 @@ export default function Portfolio() {
 
                     {activeProject?.case_study?.challenges_and_solutions?.length > 0 && (
                         <>
-                            <h6 className="fw-bold mt-3">Challenges & Solutions</h6>
+                            <h3 className="h5 fw-bold mt-3">Challenges & Solutions</h3>
                             <div className="table-responsive">
                                 <table className="table table-bordered table-sm align-middle">
                                     <thead className="table-light">
@@ -207,7 +210,7 @@ export default function Portfolio() {
 
                     {activeProject?.case_study?.outcomes?.length > 0 && (
                         <>
-                            <h6 className="fw-bold mt-3">Outcomes</h6>
+                            <h3 className="h5 fw-bold mt-3">Outcomes</h3>
                             <ul>
                                 {activeProject.case_study.outcomes.map((outcome, idx) => (
                                     <li key={idx}>{outcome}</li>
