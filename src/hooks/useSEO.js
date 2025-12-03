@@ -52,17 +52,36 @@ export const useSEO = ({
             element.setAttribute('href', href);
         };
 
+        // Helper function to normalize URLs for consistency
+        const normalizeUrl = (url) => {
+            if (!url) return url;
+
+            // Ensure https protocol
+            let normalized = url.replace(/^http:/, 'https:');
+
+            // Remove trailing slash (except for root domain)
+            // Keep root domain with slash: https://mradulsharma.vercel.app/
+            if (normalized.endsWith('/') && normalized !== 'https://mradulsharma.vercel.app/') {
+                normalized = normalized.slice(0, -1);
+            }
+
+            return normalized;
+        };
+
         // Primary Meta Tags
         setMetaTag('description', description);
         setMetaTag('keywords', keywords);
         setMetaTag('author', author);
         setMetaTag('robots', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
 
-        // Set canonical URL (prefer explicit canonicalUrl, fallback to ogUrl)
-        const finalCanonicalUrl = canonicalUrl || ogUrl;
+        // Set canonical URL with normalization (prefer explicit canonicalUrl, fallback to ogUrl)
+        const finalCanonicalUrl = normalizeUrl(canonicalUrl || ogUrl);
         if (finalCanonicalUrl) {
             setLinkTag('canonical', finalCanonicalUrl);
         }
+
+        // Normalize og:url to match canonical exactly
+        const finalOgUrl = normalizeUrl(ogUrl);
 
         // JSON-LD Schema
         if (schema) {
@@ -78,7 +97,7 @@ export const useSEO = ({
 
         // Open Graph / Facebook
         setMetaTag('og:type', 'website', true);
-        setMetaTag('og:url', ogUrl, true);
+        setMetaTag('og:url', finalOgUrl, true);
         setMetaTag('og:title', ogTitle || title, true);
         setMetaTag('og:description', ogDescription || description, true);
         setMetaTag('og:image', ogImage, true);
@@ -88,7 +107,7 @@ export const useSEO = ({
 
         // Twitter Card
         setMetaTag('twitter:card', twitterCard);
-        setMetaTag('twitter:url', ogUrl);
+        setMetaTag('twitter:url', finalOgUrl);
         setMetaTag('twitter:title', ogTitle || title);
         setMetaTag('twitter:description', ogDescription || description);
         setMetaTag('twitter:image', ogImage);

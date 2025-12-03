@@ -178,42 +178,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://mradulsharma.vercel.app/blogs/api-security-best-practices-jwt-oauth2-and-rate-limiting</loc>
-    <lastmod>2025-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mradulsharma.vercel.app/blogs/docker-multi-stage-builds-for-optimized-production-images</loc>
-    <lastmod>2025-10-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mradulsharma.vercel.app/blogs/graphql-vs-rest-choosing-the-right-api-architecture</loc>
-    <lastmod>2025-10-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mradulsharma.vercel.app/blogs/typescript-best-practices-for-large-scale-applications</loc>
-    <lastmod>2025-10-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mradulsharma.vercel.app/blogs/redis-caching-strategies-for-high-performance-applications</loc>
-    <lastmod>2025-10-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mradulsharma.vercel.app/blogs/vue-js-3-composition-api-complete-guide</loc>
-    <lastmod>2025-10-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://mradulsharma.vercel.app/blogs/implement-clean-architecture-in-laravel-12</loc>
     <lastmod>2025-10-29</lastmod>
     <changefreq>monthly</changefreq>

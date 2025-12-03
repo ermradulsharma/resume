@@ -9,6 +9,7 @@ import "./BlogDetail.css";
 import LetsConnect from "../../../components/LetsConnect";
 import logo from "../../../assets/logo.png"
 import ContactSection from "../../../components/frontend/Contact/Contact";
+import RelatedPosts from "../../../components/frontend/RelatedPosts/RelatedPosts";
 
 const BlogDetail = () => {
     const { slug } = useParams();
@@ -169,6 +170,12 @@ const BlogDetail = () => {
                     </div>
                 </div>
             </Container>
+            <RelatedPosts
+                currentPostId={post.id}
+                category={post.category}
+                tags={post.tags}
+                maxResults={4}
+            />
             <ContactSection />
             <LetsConnect />
         </article>
