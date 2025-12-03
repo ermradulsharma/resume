@@ -38,13 +38,11 @@ const About = () => {
                             <img src={image} alt="Mradul Sharma" className="img-fluid rounded-4 shadow" style={{ minHeight: "80vh" }} loading="lazy" width="600" height="400" />
                         </Col>
                         <Col lg={8} data-aos="fade-left" className="about-details">
-                            {/* <h2 className="fw-bold mb-4">I'm Mradul Sharma – Full-Stack Developer</h2> */}
                             <p style={{ color: "#B8B8B8" }}>{expandedAbout}</p>
                             <p style={{ color: "#B8B8B8" }}>{expandedAbout6}</p>
                             <p style={{ color: "#B8B8B8" }}>{expandedAbout7}</p>
                             <p style={{ color: "#B8B8B8" }}>{expandedAbout8}</p>
-                            <SocialLinks withNames platforms={['GitHub', 'LinkedIn', 'X (Twitter)', 'GitLab', 'Telegram']} />
-                            {/* <Button variant="primary" href="/Mradul_Sharma_Resume.pdf" className="mt-3">Download Resume <BsArrowRight className="ms-2" /> </Button> */}
+                            <SocialLinks withNames platforms={['GitHub', 'LinkedIn', 'X (Twitter)', 'Medium', 'Slack']} />
                         </Col>
                     </Row>
                 </Container>

@@ -1,10 +1,52 @@
 {
     "social": [
         {
+            "name": "Facebook",
+            "link": "https://www.facebook.com/mradulsharma0",
+            "icon": "BsFacebook",
+            "status": false
+        },
+        {
+            "name": "Instagram",
+            "link": "https://www.instagram.com/rudra_sharma_",
+            "icon": "BsInstagram",
+            "status": false
+        },
+        {
+            "name": "X (Twitter)",
+            "link": "https://x.com/er_mradulsharma",
+            "icon": "BsTwitterX",
+            "status": false
+        },
+        {
             "name": "LinkedIn",
             "link": "https://www.linkedin.com/in/mradulsharma",
             "icon": "BsLinkedin",
             "status": true
+        },
+        {
+            "name": "TikTok",
+            "link": "https://tiktok.com/",
+            "icon": "FaTiktok",
+            "status": false
+        },
+        {
+            "name": "Snapchat",
+            "link": "https://snapchat.com/",
+            "icon": "FaSnapchat",
+            "status": false
+        },
+        {
+            "name": "Threads",
+            "link": "https://threads.net/",
+            "icon": "SiThreads",
+            "status": false
+        },
+        {
+            "name": "Pinterest",
+            "link": "https://pinterest.com/ermradulsharma",
+            "icon": "FaPinterest",
+            "status": false
         },
         {
             "name": "GitHub",
@@ -19,10 +61,22 @@
             "status": true
         },
         {
-            "name": "Stack Overflow",
+            "name": "Bitbucket",
+            "link": "https://bitbucket.org/",
+            "icon": "FaBitbucket",
+            "status": false
+        },
+        {
+            "name": "StackOverflow",
             "link": "https://stackoverflow.com/users/8425184/mradul-sharma",
             "icon": "BsStackOverflow",
             "status": true
+        },
+        {
+            "name": "Stack Exchange",
+            "link": "https://stackexchange.com/",
+            "icon": "FaStackExchange",
+            "status": false
         },
         {
             "name": "Dev.to",
@@ -31,28 +85,58 @@
             "status": true
         },
         {
+            "name": "CodePen",
+            "link": "https://codepen.io/",
+            "icon": "FaCodepen",
+            "status": false
+        },
+        {
+            "name": "HackerRank",
+            "link": "https://hackerrank.com/profile/mradulsharma",
+            "icon": "FaHackerrank",
+            "status": false
+        },
+        {
+            "name": "LeetCode",
+            "link": "https://leetcode.com/u/ermradulsharma/",
+            "icon": "SiLeetcode",
+            "status": false
+        },
+        {
+            "name": "CodeSignal",
+            "link": "https://codesignal.com/",
+            "icon": "SiCodesignal",
+            "status": false
+        },
+        {
+            "name": "GeeksforGeeks",
+            "link": "https://geeksforgeeks.org/",
+            "icon": "SiGeeksforgeeks",
+            "status": false
+        },
+        {
             "name": "Medium",
             "link": "https://medium.com/@ermradulsharma",
             "icon": "BsMedium",
             "status": true
         },
         {
-            "name": "X (Twitter)",
-            "link": "https://x.com/er_mradulsharma",
-            "icon": "BsTwitterX",
+            "name": "Substack",
+            "link": "https://substack.com/@ermradulsharma",
+            "icon": "SiSubstack",
             "status": true
         },
         {
-            "name": "Facebook",
-            "link": "https://www.facebook.com/mradulsharma0",
-            "icon": "BsFacebook",
-            "status": true
+            "name": "WordPress",
+            "link": "https://wordpress.com/",
+            "icon": "FaWordpress",
+            "status": false
         },
         {
-            "name": "Instagram",
-            "link": "https://www.instagram.com/rudra_sharma_",
-            "icon": "BsInstagram",
-            "status": true
+            "name": "Blogger",
+            "link": "https://blogger.com/",
+            "icon": "FaBlogger",
+            "status": false
         },
         {
             "name": "YouTube",
@@ -61,10 +145,82 @@
             "status": true
         },
         {
+            "name": "Twitch",
+            "link": "https://twitch.tv/",
+            "icon": "FaTwitch",
+            "status": false
+        },
+        {
+            "name": "Vimeo",
+            "link": "https://vimeo.com/",
+            "icon": "FaVimeo",
+            "status": false
+        },
+        {
+            "name": "Dailymotion",
+            "link": "https://dailymotion.com/",
+            "icon": "SiDailymotion",
+            "status": false
+        },
+        {
             "name": "Telegram",
             "link": "https://t.me/ermradulsharma",
             "icon": "BsTelegram",
+            "status": false
+        },
+        {
+            "name": "WhatsApp",
+            "link": "https://whatsapp.com/",
+            "icon": "FaWhatsapp",
+            "status": false
+        },
+        {
+            "name": "Discord",
+            "link": "https://discord.com/",
+            "icon": "FaDiscord",
+            "status": false
+        },
+        {
+            "name": "Slack",
+            "link": "https://skywalkerdev.slack.com/",
+            "icon": "FaSlack",
             "status": true
+        },
+        {
+            "name": "Reddit",
+            "link": "https://reddit.com/",
+            "icon": "FaReddit",
+            "status": false
+        },
+        {
+            "name": "Quora",
+            "link": "https://quora.com/",
+            "icon": "FaQuora",
+            "status": false
+        },
+        {
+            "name": "Behance",
+            "link": "https://behance.net/",
+            "icon": "FaBehance",
+            "status": false
+        },
+        {
+            "name": "Dribbble",
+            "link": "https://dribbble.com/",
+            "icon": "FaDribbble",
+            "status": false
+        },
+        {
+            "name": "DeviantArt",
+            "link": "https://deviantart.com/",
+            "icon": "FaDeviantart",
+            "status": false
+        },
+        {
+            "name": "Canva",
+            "link": "https://canva.com/",
+            "icon": "SiCanva",
+            "status": false
         }
     ]
 }

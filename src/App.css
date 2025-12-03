@@ -489,12 +489,7 @@ li {
 /* --------- */
 
 .about-section {
-    position: relative !important;
-    padding-top: 150px !important;
-    padding-bottom: 30px !important;
     background-color: black;
-    background-image: var(--section-background-color) !important;
-    color: white !important;
 }
 
 .tech-icons {

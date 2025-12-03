@@ -39,21 +39,6 @@ const Footer = () => {
                                     <BsGithub size={24} />
                                 </a>
                             )}
-                            {twitterLink && (
-                                <a href={twitterLink} target="_blank" rel="noopener noreferrer" className="text-white me-3" aria-label="X (Twitter)">
-                                    <BsTwitterX size={24} />
-                                </a>
-                            )}
-                            {instagramLink && (
-                                <a href={instagramLink} target="_blank" rel="noopener noreferrer" className="text-white me-3" aria-label="Instagram">
-                                    <BsInstagram size={24} />
-                                </a>
-                            )}
-                            {youtubeLink && (
-                                <a href={youtubeLink} target="_blank" rel="noopener noreferrer" className="text-white me-3" aria-label="YouTube">
-                                    <BsYoutube size={24} />
-                                </a>
-                            )}
                             {whatsappLink && (
                                 <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="text-white me-3" aria-label="WhatsApp">
                                     <BsWhatsapp size={24} />

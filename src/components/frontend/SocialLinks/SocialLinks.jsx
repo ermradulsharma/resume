@@ -1,4 +1,5 @@
 import React from "react";
+// Force rebuild
 import {
     BsLinkedin,
     BsGithub,
@@ -11,6 +12,37 @@ import {
     BsYoutube,
     BsTelegram,
 } from "react-icons/bs";
+import {
+    FaTiktok,
+    FaSnapchat,
+    FaPinterest,
+    FaBitbucket,
+    FaStackExchange,
+    FaDev,
+    FaCodepen,
+    FaHackerrank,
+    FaWordpress,
+    FaBlogger,
+    FaTwitch,
+    FaVimeo,
+    FaWhatsapp,
+    FaDiscord,
+    FaSlack,
+    FaReddit,
+    FaQuora,
+    FaBehance,
+    FaDribbble,
+    FaDeviantart
+} from "react-icons/fa";
+import {
+    SiThreads,
+    SiLeetcode,
+    SiCodesignal,
+    SiGeeksforgeeks,
+    SiSubstack,
+    SiDailymotion,
+    SiCanva
+} from "react-icons/si";
 import data from "../../database/socialMedia.json";
 
 const iconMap = {
@@ -24,7 +56,35 @@ const iconMap = {
     BsInstagram: BsInstagram,
     BsYoutube: BsYoutube,
     BsTelegram: BsTelegram,
+    FaTiktok: FaTiktok,
+    FaSnapchat: FaSnapchat,
+    SiThreads: SiThreads,
+    FaPinterest: FaPinterest,
+    FaBitbucket: FaBitbucket,
+    FaStackExchange: FaStackExchange,
+    FaDev: FaDev,
+    FaCodepen: FaCodepen,
+    FaHackerrank: FaHackerrank,
+    SiLeetcode: SiLeetcode,
+    SiCodesignal: SiCodesignal,
+    SiGeeksforgeeks: SiGeeksforgeeks,
+    SiSubstack: SiSubstack,
+    FaWordpress: FaWordpress,
+    FaBlogger: FaBlogger,
+    FaTwitch: FaTwitch,
+    FaVimeo: FaVimeo,
+    SiDailymotion: SiDailymotion,
+    FaWhatsapp: FaWhatsapp,
+    FaDiscord: FaDiscord,
+    FaSlack: FaSlack,
+    FaReddit: FaReddit,
+    FaQuora: FaQuora,
+    FaBehance: FaBehance,
+    FaDribbble: FaDribbble,
+    FaDeviantart: FaDeviantart,
+    SiCanva: SiCanva
 };
+
 const SocialLinks = ({ withNames = false, platforms }) => {
     if (!platforms || platforms.length === 0) return null;
     const socialMedia = data.social;
