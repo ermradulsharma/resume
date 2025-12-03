@@ -58,8 +58,8 @@
 .resume .experience-section .experience-cards .experience-card .card-header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 1rem;
+    align-items: center;
+    margin-bottom: 0.5rem;
 }
 
 .resume .experience-section .experience-cards .experience-card .card-header .role-info h3 {
@@ -84,12 +84,6 @@
     font-size: 0.85rem;
     font-weight: 500;
     white-space: nowrap;
-}
-
-.resume .experience-section .experience-cards .experience-card .card-body p {
-    color: color-mix(in srgb, var(--default-color), transparent 25%);
-    margin-bottom: 1rem;
-    line-height: 1.6;
 }
 
 .resume .experience-section .experience-cards .experience-card .card-body .achievements {
@@ -139,7 +133,7 @@
 .resume .education-section .education-timeline .education-item {
     position: relative;
     padding-left: 3rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .resume .education-section .education-timeline .education-item:last-child {
@@ -173,8 +167,7 @@
 .resume .education-section .education-timeline .education-item .education-content .degree-header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 0.5rem;
+    align-items: center;
 }
 
 .resume .education-section .education-timeline .education-item .education-content .degree-header h3 {

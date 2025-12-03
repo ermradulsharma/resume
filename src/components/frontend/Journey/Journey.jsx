@@ -64,7 +64,7 @@ const Journey = () => {
                                                 <h3>{edu.role}</h3>
                                                 <span className="year">{edu.duration}</span>
                                             </div>
-                                            <h4 className="institution">{edu.place}</h4>
+                                            <h4 className="institution">{edu.place}, {edu.location}</h4>
                                             <p>{edu.description}</p>
                                         </div>
                                     </div>
