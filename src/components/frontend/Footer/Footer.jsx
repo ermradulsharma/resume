@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
-import { BsGithub, BsLinkedin, BsTwitterX, BsEnvelope, BsPhone, BsGeoAlt, BsInstagram, BsYoutube, BsWhatsapp, BsTelegram } from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsEnvelope, BsPhone, BsGeoAlt, BsWhatsapp, BsTelegram } from "react-icons/bs";
 import data from "../../database/localDB.json";
 import socialData from "../../database/socialMedia.json";
 import "../../frontend/Footer/Footer.css";
@@ -14,9 +14,6 @@ const Footer = () => {
     const phone = contact.contacts.find(item => item.name === "phone")?.value;
     const githubLink = social.find(item => item.name === "GitHub")?.link;
     const linkedinLink = social.find(item => item.name === "LinkedIn")?.link;
-    const twitterLink = social.find(item => item.name === "X (Twitter)")?.link;
-    const instagramLink = social.find(item => item.name === "Instagram")?.link;
-    const youtubeLink = social.find(item => item.name === "YouTube")?.link;
     const whatsappLink = social.find(item => item.name === "WhatsApp")?.link;
     const telegramLink = social.find(item => item.name === "Telegram")?.link;
     return (
