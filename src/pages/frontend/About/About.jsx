@@ -14,8 +14,8 @@ import Services from "../../../components/frontend/Services/Services";
 
 const About = () => {
     useSEO({
-        title: "About Mradul Sharma | Senior Full-Stack Developer",
-        description: "Learn about Mradul Sharma's professional journey, technical expertise, and experience in building enterprise-grade applications with Laravel, React, AWS, and modern technologies.",
+        title: "About Mradul Sharma | Senior Full-Stack Developer Profile",
+        description: "Learn about Mradul Sharma's journey, technical expertise, and experience in building enterprise-grade applications with Laravel, React, AWS, and modern tech.",
         keywords: "Mradul Sharma Profile, Senior Full Stack Developer, Professional Experience, Technical Expertise, Laravel React Specialist, AWS Certified Developer, Enterprise Application Developer, Software Engineer India, Remote Full Stack Developer, Freelance Developer Portfolio, Developer Background, Technical Skills, Web Development Expert, Programming Experience",
         ogUrl: "https://mradulsharma.vercel.app/about",
         canonicalUrl: "https://mradulsharma.vercel.app/about"

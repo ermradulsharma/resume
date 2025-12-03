@@ -9,8 +9,8 @@ const NotFound = () => {
     const navigate = useNavigate();
 
     useSEO({
-        title: "404 - Page Not Found | Mradul Sharma",
-        description: "The page you're looking for doesn't exist. Return to the homepage to explore my portfolio.",
+        title: "404 Error - Page Not Found | Mradul Sharma Portfolio",
+        description: "The page you are looking for does not exist. It might have been moved or deleted. Return to the homepage to explore my portfolio and projects.",
         keywords: "404, page not found, error",
         ogUrl: "https://mradulsharma.vercel.app/404",
         canonicalUrl: "https://mradulsharma.vercel.app/404"

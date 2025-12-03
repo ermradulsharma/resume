@@ -9,8 +9,8 @@ import LetsConnect from "../../../components/LetsConnect";
 
 const Blogs = () => {
     useSEO({
-        title: "Blog | Mradul Sharma - Web Dev Tutorials",
-        description: "Read articles and tutorials on web development, Laravel, React, AWS, best practices, and modern development techniques. Learn from real-world experiences and technical insights.",
+        title: "Blog | Mradul Sharma - Web Development Tutorials & Tips",
+        description: "Read articles on web development, Laravel, React, AWS, and best practices. Gain insights from real-world experiences and modern development techniques.",
         keywords: blogsData.blogs.tags ? blogsData.blogs.tags.join(", ") : "web development, programming, tutorials",
         ogUrl: "https://mradulsharma.vercel.app/blogs",
         canonicalUrl: "https://mradulsharma.vercel.app/blogs"

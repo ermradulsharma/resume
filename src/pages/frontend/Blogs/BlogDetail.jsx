@@ -14,8 +14,13 @@ const BlogDetail = () => {
     const { slug } = useParams();
     const navigate = useNavigate();
     const post = blogsData.blogs.posts.find(p => p.slug === slug);
+
+    const baseTitle = post ? post.title : "Blog Post";
+    const suffix = " | Mradul Sharma";
+    const title = (baseTitle + suffix).length > 60 ? baseTitle : baseTitle + suffix;
+
     useSEO({
-        title: post ? `${post.title} | Mradul Sharma Blog` : "Blog Post | Mradul Sharma",
+        title: title,
         description: post ? post.excerpt : "Read technical articles and tutorials on web development.",
         keywords: post ? post.tags.join(", ") : "web development, programming, tutorials",
         ogUrl: post ? `https://mradulsharma.vercel.app/blogs/${post.slug}` : "https://mradulsharma.vercel.app/blogs",

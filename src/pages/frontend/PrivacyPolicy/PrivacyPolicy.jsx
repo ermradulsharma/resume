@@ -5,7 +5,7 @@ import "./PrivacyPolicy.css";
 
 const PrivacyPolicy = () => {
     useSEO({
-        title: "Privacy Policy | Mradul Sharma",
+        title: "Privacy Policy | Mradul Sharma - Data Protection & Privacy",
         description: "Review the privacy policy describing how this website collects, uses, and protects your personal information, along with your rights regarding data privacy.",
         keywords: "privacy policy, data protection, gdpr, terms",
         ogUrl: "https://mradulsharma.vercel.app/privacy",
