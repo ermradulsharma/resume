@@ -571,13 +571,13 @@ li {
     background-color: black;
 }
 
-.project-card {
+/* .project-card {
     padding-top: 50px !important;
     padding-bottom: 50px !important;
     padding-left: 25px !important;
     padding-right: 25px !important;
     height: auto !important;
-}
+} */
 
 .project-card-view {
     box-shadow: 0 4px 5px 3px var(--accent-color) !important;
