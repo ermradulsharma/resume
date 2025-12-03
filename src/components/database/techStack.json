@@ -5,53 +5,255 @@
         "description": "Proficient in a versatile and industry-leading technology stack covering the full web development lifecycle — from crafting responsive, user-friendly front-end interfaces with HTML5, CSS3, JavaScript, React.js, and Bootstrap, to building secure, high-performance backend systems with PHP, Laravel, Node.js, and RESTful APIs. Experienced in relational and NoSQL databases like MySQL, PostgreSQL, and MongoDB, as well as modern DevOps practices with AWS, Docker, CI/CD pipelines, and cloud-native deployments. Skilled in integrating payment gateways, optimizing database performance, and delivering scalable solutions for enterprise-grade applications.",
         "technology": {
             "frontend": [
-                { "name": "HTML/CSS", "valueNow": 95 },
-                { "name": "JavaScript", "valueNow": 90 },
-                { "name": "Bootstrap", "valueNow": 95 },
-                { "name": "jQuery", "valueNow": 85 },
-                { "name": "React.js", "valueNow": 90 }
-            ],
-            "backend": [
-                { "name": "PHP", "valueNow": 90 },
-                { "name": "Node.js", "valueNow": 85 },
-                { "name": "RESTful API", "valueNow": 85 },      
-                { "name": "SOAP API", "valueNow": 85 },
-                { "name": "GraphQL", "valueNow": 70 }    
-            ],
-            "frameworks": [
-                { "name": "Laravel", "valueNow": 92 },
-                { "name": "CodeIgniter", "valueNow": 85 },
-                { "name": "Next.js", "valueNow": 80 },
-                { "name": "Vue.js", "valueNow": 70 },
-                { "name": "Mautic", "valueNow": 75 }
+                {
+                    "name": "HTML5/CSS3",
+                    "valueNow": 95
+                },
+                {
+                    "name": "Bootstrap",
+                    "valueNow": 95
+                },
+                {
+                    "name": "JavaScript (ES6+)",
+                    "valueNow": 92
+                },
+                {
+                    "name": "React.js",
+                    "valueNow": 92
+                },
+                {
+                    "name": "jQuery",
+                    "valueNow": 85
+                },
+                {
+                    "name": "SASS/SCSS",
+                    "valueNow": 82
+                },
+                {
+                    "name": "Tailwind CSS",
+                    "valueNow": 80
+                },
+                {
+                    "name": "Webpack",
+                    "valueNow": 78
+                },
+                {
+                    "name": "Vue.js",
+                    "valueNow": 70
+                }
             ],
             "database": [
-                { "name": "MySQL", "valueNow": 90 },
-                { "name": "PostgreSQL", "valueNow": 85 },
-                { "name": "MongoDB", "valueNow": 80 },
-                { "name": "SQLite", "valueNow": 75 },
-                { "name": "Redis", "valueNow": 80 }
+                {
+                    "name": "MySQL",
+                    "valueNow": 92
+                },
+                {
+                    "name": "PostgreSQL",
+                    "valueNow": 90
+                },
+                {
+                    "name": "MariaDB",
+                    "valueNow": 88
+                },
+                {
+                    "name": "Redis",
+                    "valueNow": 85
+                },
+                {
+                    "name": "MongoDB",
+                    "valueNow": 82
+                },
+                {
+                    "name": "SQLite",
+                    "valueNow": 75
+                },
+                {
+                    "name": "Memcached",
+                    "valueNow": 70
+                },
+                {
+                    "name": "Elasticsearch",
+                    "valueNow": 70
+                },
+                {
+                    "name": "Amazon DynamoDB",
+                    "valueNow": 70
+                }
             ],
-            "paymentGateway": [
-                { "name": "Stripe", "valueNow": 90 },
-                { "name": "Paypal", "valueNow": 85 },
-                { "name": "Authorize.Net", "valueNow": 80 },
-                { "name": "Razorpay", "valueNow": 75 }
+            "backend": [
+                {
+                    "name": "PHP 8+",
+                    "valueNow": 92
+                },
+                {
+                    "name": "RESTful API",
+                    "valueNow": 92
+                },
+                {
+                    "name": "Node.js",
+                    "valueNow": 88
+                },
+                {
+                    "name": "GraphQL",
+                    "valueNow": 75
+                },
+                {
+                    "name": "WebSocket",
+                    "valueNow": 72
+                }
+            ],
+            "frameworks": [
+                {
+                    "name": "Laravel",
+                    "valueNow": 95
+                },
+                {
+                    "name": "Express.js",
+                    "valueNow": 85
+                },
+                {
+                    "name": "Next.js",
+                    "valueNow": 82
+                },
+                {
+                    "name": "CodeIgniter",
+                    "valueNow": 80
+                },
+                {
+                    "name": "Symfony",
+                    "valueNow": 70
+                }
+            ],
+            "authentication": [
+                {
+                    "name": "JWT",
+                    "valueNow": 90
+                },
+                {
+                    "name": "OAuth 2.0",
+                    "valueNow": 88
+                },
+                {
+                    "name": "Laravel Passport",
+                    "valueNow": 85
+                },
+                {
+                    "name": "Laravel Sanctum",
+                    "valueNow": 85
+                },
+                {
+                    "name": "Passport.js",
+                    "valueNow": 78
+                }
+            ],
+            "testing": [
+                {
+                    "name": "Postman",
+                    "valueNow": 95
+                },
+                {
+                    "name": "PHPUnit",
+                    "valueNow": 88
+                },
+                {
+                    "name": "Jest",
+                    "valueNow": 85
+                },
+                {
+                    "name": "Laravel Dusk",
+                    "valueNow": 80
+                },
+                {
+                    "name": "Cypress",
+                    "valueNow": 75
+                }
             ],
             "cloudsAndDevOps": [
-                { "name": "AWS", "valueNow": 90 },
-                { "name": "Docker", "valueNow": 90 },
-                { "name": "Apache", "valueNow": 70 },
-                { "name": "GitLab CI/CD", "valueNow": 85 },
-                { "name": "GitHub Actions", "valueNow": 80 }
+                {
+                    "name": "Docker",
+                    "valueNow": 92
+                },
+                {
+                    "name": "AWS (EC2, S3, Lambda, RDS)",
+                    "valueNow": 88
+                },
+                {
+                    "name": "GitLab CI/CD",
+                    "valueNow": 88
+                },
+                {
+                    "name": "GitHub Actions",
+                    "valueNow": 85
+                },
+                {
+                    "name": "Nginx",
+                    "valueNow": 80
+                },
+                {
+                    "name": "Apache",
+                    "valueNow": 75
+                },
+                {
+                    "name": "Jenkins",
+                    "valueNow": 72
+                },
+                {
+                    "name": "Kubernetes",
+                    "valueNow": 68
+                }
             ],
             "tools": [
-                { "name": "VS Code", "valueNow": 95 },
-                { "name": "Postman", "valueNow": 95 },
-                { "name": "GIT", "valueNow": 85 },
-                { "name": "Slack", "valueNow": 95 },
-                { "name": "Trello", "valueNow": 90 }
-            ]          
+                {
+                    "name": "VS Code",
+                    "valueNow": 95
+                },
+                {
+                    "name": "Slack",
+                    "valueNow": 95
+                },
+                {
+                    "name": "Composer",
+                    "valueNow": 92
+                },
+                {
+                    "name": "Git & GitHub",
+                    "valueNow": 90
+                },
+                {
+                    "name": "NPM/Yarn",
+                    "valueNow": 90
+                },
+                {
+                    "name": "Jira",
+                    "valueNow": 85
+                },
+                {
+                    "name": "Bitbucket",
+                    "valueNow": 82
+                },
+                {
+                    "name": "Figma",
+                    "valueNow": 75
+                }
+            ],
+            "paymentGateway": [
+                {
+                    "name": "Stripe",
+                    "valueNow": 92
+                },
+                {
+                    "name": "PayPal",
+                    "valueNow": 88
+                },
+                {
+                    "name": "Razorpay",
+                    "valueNow": 80
+                },
+                {
+                    "name": "Authorize.Net",
+                    "valueNow": 78
+                }
+            ]
         }
     }
 }

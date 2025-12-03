@@ -16,6 +16,17 @@ const TechStack = () => {
         cloudsAndDevOps: "bi bi-cloud",
         tools: "bi bi-tools",
         paymentGateway: "bi bi-currency-exchange",
+        authentication: "bi bi-lock",
+        api: "bi bi-api",
+        security: "bi bi-shield",
+        performance: "bi bi-speedometer",
+        scalability: "bi bi-globe",
+        maintenance: "bi bi-tools",
+        deployment: "bi bi-cloud",
+        monitoring: "bi bi-eye",
+        documentation: "bi bi-file-text",
+        testing: "bi bi-bug",
+        versionControl: "bi bi-git",
     };
     return (
         <section id="skills" className="skills section my-5">
@@ -42,7 +53,7 @@ const TechStack = () => {
                     <Col lg={4}>
                         <div className="skills-summary" data-aos="fade-left" data-aos-delay="200">
                             <h3>Professional Expertise</h3>
-                            <p>Proven expertise in full-stack development, DevOps, cloud infrastructure, API design, and building scalable web applications using Laravel, React, and Node.js. Experienced in leading teams and delivering high-quality enterprise-grade solutions.</p>
+                            <p>Experienced in full stack development, DevOps, cloud infrastructure, API design, and building scalable applications with Laravel, React, and Node.js. Strong background in leading teams and delivering reliable, production-ready systems.</p>
                             <div className="summary-stats m-0 d-lg-block d-flex align-items-center gap-3">
                                 <div className="stat-item mb-lg-3" data-aos="zoom-in" data-aos-delay="300">
                                     <div className="stat-circle"><i className="bi bi-trophy"></i></div>
