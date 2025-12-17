@@ -17,7 +17,7 @@ function NavBar() {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ms-auto gap-lg-4 fw-medium fs-6">
-                        <Nav.Item><Nav.Link as={Link} to="/" className={isActive('/')}>Home</Nav.Link></Nav.Item>
+                        {/* <Nav.Item><Nav.Link as={Link} to="/" className={isActive('/')}>Home</Nav.Link></Nav.Item> */}
                         <Nav.Item><Nav.Link as={Link} to="/about" className={isActive('/about')}>About</Nav.Link></Nav.Item>
                         <Nav.Item><Nav.Link as={Link} to="/portfolio" className={isActive('/portfolio')}>Portfolio</Nav.Link></Nav.Item>
                         {/* <Nav.Item><Nav.Link as={Link} to="/services" className={isActive('/services')}>Service</Nav.Link></Nav.Item> */}
