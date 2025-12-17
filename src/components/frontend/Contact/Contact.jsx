@@ -1,16 +1,18 @@
 import React, { useRef, useState } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { BsClock, BsWhatsapp, BsPhoneVibrateFill, BsMailbox2Flag } from "react-icons/bs";
-import { GoogleMap, InfoWindow, LoadScript, Marker } from "@react-google-maps/api";
+import { GoogleMap, InfoWindow, useJsApiLoader, MarkerF } from "@react-google-maps/api";
 import "../../../components/frontend/Contact/Contact.css"
 import SocialLinks from "../SocialLinks/SocialLinks";
 import emailjs from "@emailjs/browser";
+import { trackEvent } from "../../../utils/analytics/ga";
 import servicesList from "../../../components/database/serviceList.json"
 import Select from "react-select";
 import makeAnimated from 'react-select/animated';
 import logo from '../../../assets/mradulsharma.jpeg';
 
 const animatedComponents = makeAnimated();
+const LIBRARIES = []; // Define libraries array outside component to prevent re-renders
 
 const ContactSection = () => {
     const form = useRef();
@@ -18,6 +20,16 @@ const ContactSection = () => {
     const [notDone, setNotDone] = useState(false);
     const [validationError, setValidationError] = useState("");
     const [infoOpen, setInfoOpen] = useState(true);
+
+    const { isLoaded, loadError } = useJsApiLoader({
+        id: 'google-map-script',
+        googleMapsApiKey: "AIzaSyBkh0MJV_FAoKEmmC5mKOwqb9sqoG-Fk8A",
+        libraries: LIBRARIES
+    });
+
+    if (loadError) {
+        console.error("Google Maps Load Error:", loadError);
+    }
 
     const [formData, setFormData] = useState({
         from_name: "",
@@ -58,6 +70,7 @@ const ContactSection = () => {
         emailjs.sendForm("service_mradul", "template_hzio3hj", form.current, "OWljxBdzr02unWI2z")
             .then((result) => {
                 console.log("EmailJS Success:", result.text);
+                trackEvent({ name: "submit_contact_form", category: "Contact", label: "Success" });
                 setDone(true);
                 setFormData({
                     from_name: "",
@@ -69,6 +82,7 @@ const ContactSection = () => {
                 });
             }, (error) => {
                 console.error("EmailJS Error:", error);
+                trackEvent({ name: "contact_form_error", category: "Contact", label: "Error" });
                 setDone(false);
                 setNotDone(true);
             });
@@ -161,9 +175,9 @@ const ContactSection = () => {
             <Container className="mt-5 rounded-1">
                 <Row>
                     <Col>
-                        <LoadScript googleMapsApiKey="AIzaSyBkh0MJV_FAoKEmmC5mKOwqb9sqoG-Fk8A">
+                        {isLoaded && (
                             <GoogleMap mapContainerStyle={mapContainerStyle} center={mapCenter} zoom={15} >
-                                <Marker position={mapCenter} onMouseOver={(e) => setInfoOpen(true)} onMouseOut={(e) => setInfoOpen(false)} >
+                                <MarkerF position={mapCenter} onMouseOver={(e) => setInfoOpen(true)} onMouseOut={(e) => setInfoOpen(false)} >
                                     {infoOpen && (
                                         <InfoWindow position={mapCenter} options={{ closeBoxURL: "", enableEventPropagation: true }}>
                                             <div style={{ maxWidth: "350px" }} className="d-flex align-items-center gap-2">
@@ -177,9 +191,9 @@ const ContactSection = () => {
                                             </div>
                                         </InfoWindow>
                                     )}
-                                </Marker>
+                                </MarkerF>
                             </GoogleMap>
-                        </LoadScript>
+                        )}
                     </Col>
                 </Row>
             </Container>

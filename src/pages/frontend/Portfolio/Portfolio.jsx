@@ -5,6 +5,7 @@ import "../../frontend/Portfolio/Portfolio.css";
 import data from "../../../components/database/portfolio.json";
 import LetsConnect from "../../../components/LetsConnect";
 import ContactSection from "../../../components/frontend/Contact/Contact";
+import { trackEvent } from "../../../utils/analytics/ga";
 
 const TechBadges = ({ items }) => (
     <div className="d-flex flex-wrap gap-2 mt-2">
@@ -50,6 +51,7 @@ export default function Portfolio() {
     const handleShow = (project) => {
         setActiveProject(project);
         setShowModal(true);
+        trackEvent({ name: "view_case_study", category: "Projects", label: project.title });
     };
 
     const handleClose = () => {
@@ -79,7 +81,7 @@ export default function Portfolio() {
                 {/* Filters */}
                 <header className="d-flex flex-column flex-md-row align-items-md-center justify-content-end mb-4 gap-2">
                     <div className="d-flex gap-1 flex-wrap">
-                        {["All", "PHP", "Laravel", "CodeIgniter", "Vue.js", "React.js", "Next.js", "Mautic"].map((btn) => (<Button key={btn} variant={filter === btn ? "success" : "outline-secondary"} size="sm" style={{ minWidth: "100px" }} onClick={() => setFilter(btn)}>{btn}</Button>))}
+                        {["All", "PHP", "Laravel", "CodeIgniter", "Vue.js", "React.js", "Next.js", "Mautic"].map((btn) => (<Button key={btn} variant={filter === btn ? "success" : "outline-secondary"} size="sm" style={{ minWidth: "100px" }} onClick={() => { setFilter(btn); trackEvent({ name: "filter_projects", category: "Projects", label: btn }); }}>{btn}</Button>))}
                     </div>
                 </header>
 

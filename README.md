@@ -1,7 +1,7 @@
 # Mradul Sharma - Portfolio Website
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![React Version](https://img.shields.io/badge/React-19.2.0-blue.svg)](https://reactjs.org/)
+[![React Version](https://img.shields.io/badge/React-19.2.3-blue.svg)](https://reactjs.org/)
 [![Live Demo](https://img.shields.io/badge/demo-live-success)](https://mradulsharma.vercel.app/)
 [![Deploy on Vercel](https://img.shields.io/badge/Deploy-Vercel-black?logo=vercel)](https://vercel.com)
 
@@ -25,7 +25,7 @@ A modern, fully responsive portfolio website showcasing my work as a Full-Stack 
 - **Fast Performance** - Optimized bundle size and lazy loading
 
 ### 📝 Blog System
-- **28 Technical Articles** - In-depth tutorials on web development
+- **Technical Articles** - In-depth tutorials on web development
 - **Category Filtering** - Frontend, Backend, DevOps, Database, Security
 - **Pagination** - Easy navigation through blog posts
 - **AI-Generated Images** - Custom images for each blog post
@@ -54,8 +54,8 @@ A modern, fully responsive portfolio website showcasing my work as a Full-Stack 
 ## 🛠 Tech Stack
 
 ### Frontend
-- **React 19.2.0** - Latest React with concurrent features
-- **React Router DOM 7.9.6** - Advanced routing
+- **React 19.2.3** - Latest React with concurrent features
+- **React Router DOM 7.10.1** - Advanced routing
 - **Bootstrap 5.3.8** - Responsive framework
 - **React Bootstrap 2.10.10** - Bootstrap components for React
 - **React Icons 5.5.0** - Icon library
@@ -69,13 +69,13 @@ A modern, fully responsive portfolio website showcasing my work as a Full-Stack 
 ### Integrations
 - **EmailJS** - Email service for contact form
 - **Google Maps API** - Location integration
-- **Chart.js** - Data visualization
+- **Chart.js 4.5.1** - Data visualization
 - **React GitHub Calendar** - GitHub contribution graph
 
 ### Development
 - **React Scripts 5.0.1** - Build tooling
 - **ESLint** - Code quality
-- **Date-fns** - Date manipulation
+- **Date-fns 4.1.0** - Date manipulation
 
 ---
 
@@ -89,10 +89,11 @@ portfolio/
 │   ├── index.html
 │   └── favicon.ico
 ├── src/
+│   ├── assets/             # Static assets
 │   ├── components/
 │   │   ├── database/       # Data files (blogs.json, projects.json)
-│   │   ├── layout/         # Layout components (Header, Footer)
 │   │   └── shared/         # Reusable components
+│   ├── layouts/            # Layout components (Header, Footer)
 │   ├── pages/
 │   │   └── frontend/       # Page components
 │   │       ├── Home/
@@ -101,11 +102,11 @@ portfolio/
 │   │       ├── Projects/
 │   │       ├── Blogs/
 │   │       └── Contact/
-│   ├── routes/
-│   │   └── WebRoutes.jsx   # Route configuration
+│   ├── routes/             # Route configurations
+│   ├── utils/              # Utility functions
 │   ├── hooks/
 │   │   └── useSEO.js       # Custom SEO hook
-│   ├── App.js
+│   ├── App.jsx
 │   ├── App.css
 │   └── index.js
 ├── package.json
@@ -202,7 +203,7 @@ npm run eject      # Eject from Create React App (one-way operation)
 
 The portfolio includes a comprehensive blog system with:
 
-- **28 Technical Articles** covering:
+- **Technical Articles** covering:
   - Frontend Development (React, Next.js, Vue.js, TypeScript)
   - Backend Development (Laravel, Node.js, APIs)
   - DevOps (Docker, Kubernetes, CI/CD)

@@ -7,6 +7,7 @@ import { FaCodepen, FaPalette } from 'react-icons/fa';
 import { BsCloudCheck } from 'react-icons/bs';
 import data from "../../../components/database/about.json"
 import resume from '../../../assets/Resume/mradulsharma.pdf'
+import { trackEvent } from "../../../utils/analytics/ga";
 
 const About = () => {
     const { expandedAbout5 } = data.about;
@@ -26,7 +27,7 @@ const About = () => {
                             <div className="signature-section">
                                 <img src={signature} alt="Signature" className="signature" loading="lazy" width="200" height="100" />
                                 <p className="quote text-secondary">Building meaningful digital experiences through creative code.</p>
-                                <Button variant="primary" className='rounded-5 px-4 px-lg-5 py-2 my-4' href={resume} download aria-label="Download Mradul Sharma Resume in PDF">⚡Resume PDF Download ⚡</Button>
+                                <Button variant="primary" className='rounded-5 px-4 px-lg-5 py-2 my-4' href={resume} download aria-label="Download Mradul Sharma Resume in PDF" onClick={() => trackEvent({ name: "download_resume", category: "Engagement", label: "PDF Download" })}>⚡Resume PDF Download ⚡</Button>
                             </div>
                         </div>
                     </Col>
