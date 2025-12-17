@@ -60,5 +60,11 @@
     "devDependencies": {
         "source-map-explorer": "^2.5.3",
         "yaml": "^2.8.2"
+    },
+    "overrides": {
+        "react-helmet-async": {
+            "react": "$react",
+            "react-dom": "$react-dom"
+        }
     }
 }
