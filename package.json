@@ -57,6 +57,7 @@
         ]
     },
     "devDependencies": {
-        "source-map-explorer": "^2.5.3"
+        "source-map-explorer": "^2.5.3",
+        "yaml": "^2.8.2"
     }
 }
