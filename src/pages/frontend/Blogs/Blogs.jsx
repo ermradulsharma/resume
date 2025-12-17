@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Row, Col, Card, Badge, Button, Pagination, Spinner, Form } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import { BsGrid3X3Gap, BsList, BsCalendar3, BsPerson } from "react-icons/bs";
 import SEO from "../../../components/common/SEO";
 import "../Blogs/Blogs.css";
@@ -9,9 +9,12 @@ import LetsConnect from "../../../components/LetsConnect";
 
 const Blogs = () => {
     const { title, description, posts, categories } = blogsData.blogs;
+    const [searchParams, setSearchParams] = useSearchParams();
 
-    const [selectedCategory, setSelectedCategory] = useState("All");
-    const [currentPage, setCurrentPage] = useState(1);
+    // Derive state from URL params
+    const selectedCategory = searchParams.get("category") || "All";
+    const currentPage = parseInt(searchParams.get("page") || "1", 10);
+
     const [viewMode, setViewMode] = useState("grid");
     const [isLoadingMore, setIsLoadingMore] = useState(false);
     const postsPerPage = 16;
@@ -23,9 +26,18 @@ const Blogs = () => {
     const indexOfFirstPost = indexOfLastPost - postsPerPage;
     const currentPosts = filteredPosts.slice(indexOfFirstPost, indexOfLastPost);
     const totalPages = Math.ceil(filteredPosts.length / postsPerPage);
+
+    const updateParams = (newParams) => {
+        setSearchParams({ category: selectedCategory, page: currentPage, ...newParams });
+        window.scrollTo(0, 0);
+    };
+
     const handleCategoryChange = (category) => {
-        setSelectedCategory(category);
-        setCurrentPage(1);
+        updateParams({ category, page: 1 });
+    };
+
+    const handlePageChange = (pageNumber) => {
+        updateParams({ page: pageNumber });
     };
 
     useEffect(() => {
@@ -38,7 +50,16 @@ const Blogs = () => {
             if (scrollPosition >= bottomPosition && !isLoadingMore && currentPage < totalPages) {
                 setIsLoadingMore(true);
                 setTimeout(() => {
-                    setCurrentPage(prev => prev + 1);
+                    // For infinite scroll, we might want to just load more without changing URL page completely?
+                    // But to keep it synced, let's update the page param. 
+                    // However, infinite scroll usually implies appending.
+                    // If we update URL, it might re-render and show ONLY page 2.
+                    // COMPLEXITY: Infinite scroll vs Pagination.
+                    // For "list" mode, maybe we strictly stick to appending?
+                    // But 'currentPosts' is derived from slice(indexOfFirstPost, indexOfLastPost).
+                    // If we want infinite scroll, we need slice(0, indexOfLastPost).
+                    // Let's modify currentPosts logic for list mode.
+                    updateParams({ page: currentPage + 1 });
                     setIsLoadingMore(false);
                 }, 500);
             }
@@ -48,6 +69,13 @@ const Blogs = () => {
         return () => window.removeEventListener('scroll', handleScroll);
         // eslint-disable-next-line
     }, [viewMode, currentPage, totalPages, isLoadingMore]);
+
+    // For List Mode: we want to show all posts up to current page?
+    // User's original code: indexOfFirstPost = indexOfLastPost - postsPerPage;
+    // That means it was PAGINATED list. Not true infinite scroll (which appends).
+    // It just auto-advanced the page.
+
+    // SEO Note: We want unique URLs for duplicates fix.
 
     const getRelativeTime = (dateString) => {
         const postDate = new Date(dateString);
@@ -83,11 +111,11 @@ const Blogs = () => {
     return (
         <section className="blogs-section section">
             <SEO
-                title="Blog | Mradul Sharma - Web Development Tutorials & Tips"
-                description="Read articles on web development, Laravel, React, AWS, and best practices. Gain insights from real-world experiences and modern development techniques."
+                title={`Blog ${currentPage > 1 ? `- Page ${currentPage} ` : ""}| Mradul Sharma - Web Development Tutorials & Tips`}
+                description={`Read articles on web development, Laravel, React, AWS${selectedCategory !== 'All' ? ` - Category: ${selectedCategory}` : ""}. Page ${currentPage}.`}
                 keywords={blogsData.blogs.tags ? blogsData.blogs.tags.join(", ") : "web development, programming, tutorials"}
-                ogUrl="https://mradulsharma.vercel.app/blogs"
-                canonicalUrl="https://mradulsharma.vercel.app/blogs"
+                ogUrl={`https://mradulsharma.vercel.app/blogs?category=${selectedCategory}&page=${currentPage}`}
+                canonicalUrl={`https://mradulsharma.vercel.app/blogs?category=${selectedCategory}&page=${currentPage}`}
             />
             <div className="blog-hero text-white d-flex align-items-center justify-content-center text-center">
                 <div className="overlay"></div>
@@ -200,7 +228,6 @@ const Blogs = () => {
                             </Card>
                         ))}
 
-                        {/* Loading Indicator for Infinite Scroll */}
                         {isLoadingMore && (
                             <div className="text-center py-4">
                                 <Spinner animation="border" variant="primary" />
@@ -208,7 +235,6 @@ const Blogs = () => {
                             </div>
                         )}
 
-                        {/* End of Posts Message */}
                         {currentPage >= totalPages && !isLoadingMore && (
                             <div className="text-center py-4">
                                 <p className="text-secondary">You've reached the end of the posts!</p>
@@ -226,11 +252,16 @@ const Blogs = () => {
                 {viewMode === "grid" && totalPages > 1 && (
                     <div className="d-flex justify-content-center my-3 align-items-center">
                         <Pagination className="m-0">
-                            <Pagination.Prev onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))} disabled={currentPage === 1} />
+                            <Pagination.Prev onClick={() => handlePageChange(Math.max(currentPage - 1, 1))} disabled={currentPage === 1} />
                             {[...Array(totalPages)].map((_, index) => (
-                                <Pagination.Item key={index + 1} active={index + 1 === currentPage} onClick={() => setCurrentPage(index + 1)} >{index + 1}</Pagination.Item>
+                                <Pagination.Item
+                                    key={index + 1}
+                                    active={index + 1 === currentPage}
+                                    onClick={() => handlePageChange(index + 1)} >
+                                    {index + 1}
+                                </Pagination.Item>
                             ))}
-                            <Pagination.Next onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))} disabled={currentPage === totalPages} />
+                            <Pagination.Next onClick={() => handlePageChange(Math.min(currentPage + 1, totalPages))} disabled={currentPage === totalPages} />
                         </Pagination>
                     </div>
                 )}
