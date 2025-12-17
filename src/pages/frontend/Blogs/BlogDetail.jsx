@@ -2,7 +2,7 @@ import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Container, Badge, Button } from "react-bootstrap";
 import { BsArrowLeft, BsClock, BsCalendar3, BsTag, BsPerson, BsShare } from "react-icons/bs";
-import useSEO from "../../../hooks/useSEO";
+import SEO from "../../../components/common/SEO";
 import blogsData from "../../../components/database/blogs.json";
 import "./Blogs.css";
 import "./BlogDetail.css";
@@ -20,38 +20,6 @@ const BlogDetail = () => {
     const suffix = " | Mradul Sharma";
     const title = (baseTitle + suffix).length > 60 ? baseTitle : baseTitle + suffix;
 
-    useSEO({
-        title: title,
-        description: post ? post.excerpt : "Read technical articles and tutorials on web development.",
-        keywords: post ? post.tags.join(", ") : "web development, programming, tutorials",
-        ogUrl: post ? `https://mradulsharma.vercel.app/blogs/${post.slug}` : "https://mradulsharma.vercel.app/blogs",
-        canonicalUrl: post ? `https://mradulsharma.vercel.app/blogs/${post.slug}` : "https://mradulsharma.vercel.app/blogs",
-        ogImage: post ? `https://mradulsharma.vercel.app${post.image}` : "https://mradulsharma.vercel.app/preview.png",
-        schema: post ? {
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            "headline": post.title,
-            "image": `https://mradulsharma.vercel.app${post.image}`,
-            "author": {
-                "@type": "Person",
-                "name": post.author
-            },
-            "publisher": {
-                "@type": "Organization",
-                "name": "Mradul Sharma",
-                "logo": {
-                    "@type": "ImageObject",
-                    "url": `https://mradulsharma.vercel.app${logo}`
-                }
-            },
-            "datePublished": post.date,
-            "description": post.excerpt,
-            "mainEntityOfPage": {
-                "@type": "WebPage",
-                "@id": `https://mradulsharma.vercel.app/blogs/${post.slug}`
-            }
-        } : null
-    });
     const getRelativeTime = (dateString) => {
         const postDate = new Date(dateString);
         const now = new Date();
@@ -87,6 +55,7 @@ const BlogDetail = () => {
             console.error('Error sharing', err);
         }
     };
+
     if (!post) {
         return (
             <Container className="py-5">
@@ -98,9 +67,42 @@ const BlogDetail = () => {
             </Container>
         );
     }
+
     const relatedPosts = blogsData.blogs.posts.filter(p => p.category === post.category && p.id !== post.id && p.published).slice(0, 5);
     return (
         <article className="blog-detail-page">
+            <SEO
+                title={title}
+                description={post ? post.excerpt : "Read technical articles and tutorials on web development."}
+                keywords={post ? post.tags.join(", ") : "web development, programming, tutorials"}
+                ogUrl={post ? `https://mradulsharma.vercel.app/blogs/${post.slug}` : "https://mradulsharma.vercel.app/blogs"}
+                canonicalUrl={post ? `https://mradulsharma.vercel.app/blogs/${post.slug}` : "https://mradulsharma.vercel.app/blogs"}
+                ogImage={post ? `https://mradulsharma.vercel.app${post.image}` : "https://mradulsharma.vercel.app/preview.png"}
+                schema={post ? {
+                    "@context": "https://schema.org",
+                    "@type": "BlogPosting",
+                    "headline": post.title,
+                    "image": `https://mradulsharma.vercel.app${post.image}`,
+                    "author": {
+                        "@type": "Person",
+                        "name": post.author
+                    },
+                    "publisher": {
+                        "@type": "Organization",
+                        "name": "Mradul Sharma",
+                        "logo": {
+                            "@type": "ImageObject",
+                            "url": `https://mradulsharma.vercel.app${logo}`
+                        }
+                    },
+                    "datePublished": post.date,
+                    "description": post.excerpt,
+                    "mainEntityOfPage": {
+                        "@type": "WebPage",
+                        "@id": `https://mradulsharma.vercel.app/blogs/${post.slug}`
+                    }
+                } : null}
+            />
             <div className="blog-detail-hero" style={{ backgroundImage: `url(${post.image})` }}>
                 <Container>
                     <div className="d-flex align-items-center justify-content-between mb-3">

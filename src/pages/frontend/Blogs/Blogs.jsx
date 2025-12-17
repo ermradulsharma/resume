@@ -2,19 +2,12 @@ import React, { useState, useEffect } from "react";
 import { Row, Col, Card, Badge, Button, Pagination, Spinner, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { BsGrid3X3Gap, BsList, BsCalendar3, BsPerson } from "react-icons/bs";
-import useSEO from "../../../hooks/useSEO";
+import SEO from "../../../components/common/SEO";
 import "../Blogs/Blogs.css";
 import blogsData from "../../../components/database/blogs.json";
 import LetsConnect from "../../../components/LetsConnect";
 
 const Blogs = () => {
-    useSEO({
-        title: "Blog | Mradul Sharma - Web Development Tutorials & Tips",
-        description: "Read articles on web development, Laravel, React, AWS, and best practices. Gain insights from real-world experiences and modern development techniques.",
-        keywords: blogsData.blogs.tags ? blogsData.blogs.tags.join(", ") : "web development, programming, tutorials",
-        ogUrl: "https://mradulsharma.vercel.app/blogs",
-        canonicalUrl: "https://mradulsharma.vercel.app/blogs"
-    });
     const { title, description, posts, categories } = blogsData.blogs;
 
     const [selectedCategory, setSelectedCategory] = useState("All");
@@ -53,6 +46,7 @@ const Blogs = () => {
 
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
+        // eslint-disable-next-line
     }, [viewMode, currentPage, totalPages, isLoadingMore]);
 
     const getRelativeTime = (dateString) => {
@@ -88,6 +82,13 @@ const Blogs = () => {
 
     return (
         <section className="blogs-section section">
+            <SEO
+                title="Blog | Mradul Sharma - Web Development Tutorials & Tips"
+                description="Read articles on web development, Laravel, React, AWS, and best practices. Gain insights from real-world experiences and modern development techniques."
+                keywords={blogsData.blogs.tags ? blogsData.blogs.tags.join(", ") : "web development, programming, tutorials"}
+                ogUrl="https://mradulsharma.vercel.app/blogs"
+                canonicalUrl="https://mradulsharma.vercel.app/blogs"
+            />
             <div className="blog-hero text-white d-flex align-items-center justify-content-center text-center">
                 <div className="overlay"></div>
             </div>

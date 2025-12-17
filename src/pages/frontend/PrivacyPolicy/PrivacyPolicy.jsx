@@ -1,19 +1,18 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import useSEO from "../../../hooks/useSEO";
+import SEO from "../../../components/common/SEO";
 import "./PrivacyPolicy.css";
 
 const PrivacyPolicy = () => {
-    useSEO({
-        title: "Privacy Policy | Mradul Sharma - Data Protection & Privacy",
-        description: "Review the privacy policy describing how this website collects, uses, and protects your personal information, along with your rights regarding data privacy.",
-        keywords: "privacy policy, data protection, gdpr, terms",
-        ogUrl: "https://mradulsharma.vercel.app/privacy",
-        canonicalUrl: "https://mradulsharma.vercel.app/privacy"
-    });
-
     return (
         <section className="privacy-policy-section">
+            <SEO
+                title="Privacy Policy | Mradul Sharma - Data Protection & Privacy"
+                description="Review the privacy policy describing how this website collects, uses, and protects your personal information, along with your rights regarding data privacy."
+                keywords="privacy policy, data protection, gdpr, terms"
+                ogUrl="https://mradulsharma.vercel.app/privacy"
+                canonicalUrl="https://mradulsharma.vercel.app/privacy"
+            />
             {/* Hero Section */}
             <div className="legal-hero">
                 <div className="overlay"></div>

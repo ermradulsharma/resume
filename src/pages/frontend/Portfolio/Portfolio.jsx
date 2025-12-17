@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Container, Card, Button, Badge, Modal, Pagination } from "react-bootstrap";
-import useSEO from "../../../hooks/useSEO";
+import SEO from "../../../components/common/SEO";
 import "../../frontend/Portfolio/Portfolio.css";
 import data from "../../../components/database/portfolio.json";
 import LetsConnect from "../../../components/LetsConnect";
@@ -19,14 +19,6 @@ const truncateText = (text, maxLength = 155) => {
 };
 
 export default function Portfolio() {
-    useSEO({
-        title: "Portfolio | Full-Stack Projects by Mradul Sharma Dev",
-        description: "Explore a portfolio of modern web applications and enterprise projects built with Laravel, React, Node.js, and AWS, showcasing full-stack development expertise.",
-        keywords: "Full Stack Portfolio, Laravel Projects, React Applications, Enterprise Web Applications, SaaS Platform Development, Microservices Architecture, Real-Time Trading Platform, CMS Development, Payroll Management System, Cloud-Based Applications, API Integration Projects, Database-Driven Solutions, E-commerce Development, Payment Gateway Integration, Scalable Web Applications, Progressive Web Apps",
-        ogUrl: "https://mradulsharma.vercel.app/portfolio",
-        canonicalUrl: "https://mradulsharma.vercel.app/portfolio"
-    });
-
     const { title, description, projectsList } = data.projects;
     const [filter, setFilter] = useState("All");
     const [showModal, setShowModal] = useState(false);
@@ -61,6 +53,13 @@ export default function Portfolio() {
 
     return (
         <section className="portfolio-section py-0">
+            <SEO
+                title="Portfolio | Full-Stack Projects by Mradul Sharma Dev"
+                description="Explore a portfolio of modern web applications and enterprise projects built with Laravel, React, Node.js, and AWS, showcasing full-stack development expertise."
+                keywords="Full Stack Portfolio, Laravel Projects, React Applications, Enterprise Web Applications, SaaS Platform Development, Microservices Architecture, Real-Time Trading Platform, CMS Development, Payroll Management System, Cloud-Based Applications, API Integration Projects, Database-Driven Solutions, E-commerce Development, Payment Gateway Integration, Scalable Web Applications, Progressive Web Apps"
+                ogUrl="https://mradulsharma.vercel.app/portfolio"
+                canonicalUrl="https://mradulsharma.vercel.app/portfolio"
+            />
             {/* Hero Section */}
             <div className="portfolio-hero text-white d-flex align-items-center justify-content-center text-center">
                 <div className="overlay"></div>

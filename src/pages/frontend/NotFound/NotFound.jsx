@@ -2,22 +2,21 @@ import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { BsArrowLeft, BsBookHalf, BsBriefcase, BsFolder2Open, BsHouseDoor } from "react-icons/bs";
-import useSEO from "../../../hooks/useSEO";
+import SEO from "../../../components/common/SEO";
 import "./NotFound.css";
 
 const NotFound = () => {
     const navigate = useNavigate();
 
-    useSEO({
-        title: "404 Error - Page Not Found | Mradul Sharma Portfolio",
-        description: "The page you are looking for does not exist. It might have been moved or deleted. Return to the homepage to explore my portfolio and projects.",
-        keywords: "404, page not found, error",
-        ogUrl: "https://mradulsharma.vercel.app/404",
-        canonicalUrl: "https://mradulsharma.vercel.app/404"
-    });
-
     return (
         <section className="not-found-section">
+            <SEO
+                title="404 Error - Page Not Found | Mradul Sharma Portfolio"
+                description="The page you are looking for does not exist. It might have been moved or deleted. Return to the homepage to explore my portfolio and projects."
+                keywords="404, page not found, error"
+                ogUrl="https://mradulsharma.vercel.app/404"
+                canonicalUrl="https://mradulsharma.vercel.app/404"
+            />
             <Container>
                 <Row className="justify-content-center align-items-center">
                     <Col lg={10} md={12} className="text-center">

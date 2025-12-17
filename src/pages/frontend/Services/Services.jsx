@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import useSEO from "../../../hooks/useSEO";
+import SEO from "../../../components/common/SEO";
 import LetsConnect from "../../../components/LetsConnect";
 import { Col, Container, Row } from "react-bootstrap";
 import { BsArrowRight } from "react-icons/bs";
@@ -9,14 +9,6 @@ import ServiceModal from "../../../components/modals/ServiceModal";
 import ContactSection from "../../../components/frontend/Contact/Contact";
 
 const Services = () => {
-    useSEO({
-        title: "Services | Full-Stack Development by Mradul Sharma",
-        description: "Professional web development and cloud solutions covering Laravel, React, Node.js, API design, DevOps, and AWS infrastructure for scalable applications.",
-        keywords: "Full Stack Development Services, Laravel Development Services, React Development Services, AWS Cloud Consulting, Custom API Development, Database Optimization Services, DevOps Consulting, Cloud Architecture Design, Microservices Development, Enterprise SaaS Development, Payment Gateway Integration, Performance Optimization, Web Application Development, Mobile Backend Development, Technical Consulting, Code Review Services",
-        ogUrl: "https://mradulsharma.vercel.app/services",
-        canonicalUrl: "https://mradulsharma.vercel.app/services"
-    });
-
     const services = data.services.filter(service => service.title);
     const [showModal, setShowModal] = useState(false);
     const [activeService, setActiveService] = useState(null);
@@ -33,6 +25,13 @@ const Services = () => {
     };
     return (
         <section id="services" className="services section">
+            <SEO
+                title="Services | Full-Stack Development by Mradul Sharma"
+                description="Professional web development and cloud solutions covering Laravel, React, Node.js, API design, DevOps, and AWS infrastructure for scalable applications."
+                keywords="Full Stack Development Services, Laravel Development Services, React Development Services, AWS Cloud Consulting, Custom API Development, Database Optimization Services, DevOps Consulting, Cloud Architecture Design, Microservices Development, Enterprise SaaS Development, Payment Gateway Integration, Performance Optimization, Web Application Development, Mobile Backend Development, Technical Consulting, Code Review Services"
+                ogUrl="https://mradulsharma.vercel.app/services"
+                canonicalUrl="https://mradulsharma.vercel.app/services"
+            />
             {/* Hero Section */}
             <div className="services-hero text-white d-flex align-items-center justify-content-center text-center">
                 <div className="overlay"></div>
