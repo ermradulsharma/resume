@@ -2,33 +2,55 @@ import ReactGA from "react-ga4";
 
 const GA_ID = "G-NMCW7EH7M0"; // hardcoded as requested
 
-export const initGA = () => {
-    if (window.location.hostname !== "localhost") {
-        ReactGA.initialize(GA_ID);
-    }
-};
+const isProd = () =>
+    typeof window !== "undefined" &&
+    window.location.hostname !== "localhost";
 
-export const trackPage = (path) => {
-    if (window.location.hostname !== "localhost") {
-        ReactGA.send({ hitType: "pageview", page: path });
-    }
+/**
+ * Initialize GA4
+ * Call once on app load
+ */
+export const initGA = () => {
+    if (!isProd()) return;
+
+    ReactGA.initialize(GA_ID);
 };
 
 /**
- * Heatmap-style, recruiter-readable events
+ * Track page views
+ * Call on route change
+ */
+export const trackPage = (path) => {
+    if (!isProd()) return;
+
+    ReactGA.send({
+        hitType: "pageview",
+        page: path
+    });
+};
+
+/**
+ * Recruiter-readable, heatmap-style events
+ *
+ * Example:
+ * trackEvent({
+ *   name: "resume_download",
+ *   category: "engagement",
+ *   label: "resume_pdf",
+ *   value: 1
+ * })
  */
 export const trackEvent = ({
+    name,
     category,
-    action,
     label,
     value
 }) => {
-    if (window.location.hostname !== "localhost") {
-        ReactGA.event({
-            category,
-            action,
-            label,
-            value
-        });
-    }
+    if (!isProd() || !name) return;
+
+    ReactGA.event(name, {
+        category,
+        label,
+        value
+    });
 };
