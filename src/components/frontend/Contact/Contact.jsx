@@ -23,7 +23,7 @@ const ContactSection = () => {
 
     const { isLoaded, loadError } = useJsApiLoader({
         id: 'google-map-script',
-        googleMapsApiKey: "AIzaSyBkh0MJV_FAoKEmmC5mKOwqb9sqoG-Fk8A",
+        googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
         libraries: LIBRARIES
     });
 
