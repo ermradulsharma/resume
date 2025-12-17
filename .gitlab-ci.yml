@@ -1,0 +1,28 @@
+image: node:18-alpine
+
+cache:
+  paths:
+    - node_modules/
+
+stages:
+  - build
+  - test
+
+install:
+  stage: .pre
+  script:
+    - npm ci
+
+build_app:
+  stage: build
+  script:
+    - npm run build
+  artifacts:
+    paths:
+      - build/
+    expire_in: 1 hour
+
+test_app:
+  stage: test
+  script:
+    - npm test -- --passWithNoTests --watchAll=false
