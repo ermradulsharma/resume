@@ -1,4 +1,3 @@
-
 # Contributing to Portfolio Website
 
 First off, thanks for taking the time to contribute! 🎉
@@ -8,6 +7,13 @@ The following is a set of guidelines for contributing to Mradul Sharma's Portfol
 ## Code of Conduct
 
 This project and everyone participating in it is governed by the [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
+
+## Choosing an Issue
+
+If you're looking for a place to start, look for issues labeled with `good first issue`. These are typically smaller, well-defined tasks that are perfect for newcomers.
+
+You can find them by searching:
+`is:issue is:open label:"good first issue"`
 
 ## How Can I Contribute?
 
@@ -33,11 +39,13 @@ This section guides you through submitting an enhancement suggestion, including 
 ### Pull Requests
 
 1.  Fork the repo and create your branch from `main`.
-2.  If you've added code that should be tested, add tests.
-3.  If you've changed APIs, update the documentation.
-4.  Ensure the test suite passes.
-5.  Make sure your code lints.
-6.  Issue that pull request!
+2.  Once you push your changes to your fork, GitHub will often show a **"Compare & pull request"** banner at the top of the repository page. Click this to start your PR!
+3.  If you don't see the banner, go to the "Pull Requests" tab and click "New pull request".
+4.  If you've added code that should be tested, add tests.
+5.  If you've changed APIs, update the documentation.
+6.  Ensure the test suite passes.
+7.  Make sure your code lints.
+8.  Issue that pull request!
 
 ## Styleguides
 
@@ -57,12 +65,14 @@ This section guides you through submitting an enhancement suggestion, including 
 ## Getting Started
 
 1.  Clone the repository:
+
     ```bash
     git clone https://github.com/ermradulsharma/resume.git
     cd portfolio
     ```
 
 2.  Install dependencies:
+
     ```bash
     npm install
     ```

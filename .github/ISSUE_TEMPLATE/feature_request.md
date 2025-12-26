@@ -1,11 +1,11 @@
-
 ---
 name: Feature request
 about: Suggest an idea for this project
-title: ''
+title: ""
 labels: enhancement
-assignees: ''
-
+assignees: ""
+# Note to Maintainers: If this is a well-defined, beginner-friendly task,
+# please add the 'good first issue' label.
 ---
 
 **Is your feature request related to a problem? Please describe.**

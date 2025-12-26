@@ -6,6 +6,21 @@ updates:
       interval: "weekly"
     open-pull-requests-limit: 10
 
+    groups:
+      fullcalendar:
+        patterns:
+          - "@fullcalendar/*"
+
+      react:
+        patterns:
+          - "react"
+          - "react-dom"
+          - "react-router*"
+
+      misc:
+        patterns:
+          - "*"
+
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
