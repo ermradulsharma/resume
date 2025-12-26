@@ -7,6 +7,7 @@
         "@emailjs/browser": "^4.4.1",
         "@emotion/react": "^11.14.0",
         "@emotion/styled": "^11.14.1",
+        "@fullcalendar/core": "^6.1.19",
         "@fullcalendar/daygrid": "^6.1.19",
         "@fullcalendar/interaction": "^6.1.19",
         "@fullcalendar/list": "^6.1.19",
@@ -72,6 +73,6 @@
         },
         "nth-check": "^2.1.1",
         "postcss": "^8.4.38",
-        "webpack-dev-server": "^4.15.2"
+        "webpack-dev-server": "^5.2.1"
     }
 }
