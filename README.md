@@ -18,6 +18,7 @@ A modern, fully responsive portfolio website showcasing my work as a Full-Stack 
 ## ✨ Features
 
 ### 🎯 Core Features
+
 - **Fully Responsive Design** - Optimized for all devices (mobile, tablet, desktop)
 - **Modern UI/UX** - Clean, professional design with smooth animations
 - **Dark/Light Mode** - Theme switching with persistent preferences
@@ -25,6 +26,7 @@ A modern, fully responsive portfolio website showcasing my work as a Full-Stack 
 - **Fast Performance** - Optimized bundle size and lazy loading
 
 ### 📝 Blog System
+
 - **Technical Articles** - In-depth tutorials on web development
 - **Category Filtering** - Frontend, Backend, DevOps, Database, Security
 - **Pagination** - Easy navigation through blog posts
@@ -33,6 +35,7 @@ A modern, fully responsive portfolio website showcasing my work as a Full-Stack 
 - **Related Posts** - Smart content recommendations
 
 ### 💼 Portfolio Sections
+
 - **Home** - Hero section with typewriter effect and introduction
 - **About** - Professional background and skills
 - **Resume** - Detailed work experience and education
@@ -41,6 +44,7 @@ A modern, fully responsive portfolio website showcasing my work as a Full-Stack 
 - **Contact** - Contact form with EmailJS integration
 
 ### 🛠️ Technical Features
+
 - **React Router v7** - Client-side routing with nested routes
 - **React Bootstrap** - Responsive UI components
 - **EmailJS Integration** - Contact form without backend
@@ -54,6 +58,7 @@ A modern, fully responsive portfolio website showcasing my work as a Full-Stack 
 ## 🛠 Tech Stack
 
 ### Frontend
+
 - **React 19.2.3** - Latest React with concurrent features
 - **React Router DOM 7.10.1** - Advanced routing
 - **Bootstrap 5.3.8** - Responsive framework
@@ -61,18 +66,21 @@ A modern, fully responsive portfolio website showcasing my work as a Full-Stack 
 - **React Icons 5.5.0** - Icon library
 
 ### UI/UX
+
 - **Typewriter Effect** - Animated text effects
 - **React Select** - Enhanced select components
 - **Bootstrap Icons** - Icon set
 - **Custom CSS** - Tailored styling
 
 ### Integrations
+
 - **EmailJS** - Email service for contact form
 - **Google Maps API** - Location integration
 - **Chart.js 4.5.1** - Data visualization
 - **React GitHub Calendar** - GitHub contribution graph
 
-### Development
+### Development Tools
+
 - **React Scripts 5.0.1** - Build tooling
 - **ESLint** - Code quality
 - **Date-fns 4.1.0** - Date manipulation
@@ -81,7 +89,7 @@ A modern, fully responsive portfolio website showcasing my work as a Full-Stack 
 
 ## 📂 Project Structure
 
-```
+```text
 portfolio/
 ├── public/
 │   ├── images/
@@ -132,23 +140,23 @@ git clone https://github.com/ermradulsharma/resume.git
 cd portfolio
 ```
 
-2. **Install dependencies**
+1. **Install dependencies**
 
 ```bash
 npm install
 ```
 
-3. **Set up environment variables** (optional)
+1. **Set up environment variables** (optional)
 
-Create a `.env` file for EmailJS configuration:
+   Create a `.env` file for EmailJS configuration:
 
-```env
-REACT_APP_EMAILJS_SERVICE_ID=your_service_id
-REACT_APP_EMAILJS_TEMPLATE_ID=your_template_id
-REACT_APP_EMAILJS_PUBLIC_KEY=your_public_key
-```
+   ```env
+   REACT_APP_EMAILJS_SERVICE_ID=your_service_id
+   REACT_APP_EMAILJS_TEMPLATE_ID=your_template_id
+   REACT_APP_EMAILJS_PUBLIC_KEY=your_public_key
+   ```
 
-4. **Start development server**
+1. **Start development server**
 
 ```bash
 npm start
@@ -160,7 +168,7 @@ The app will open at [http://localhost:3000](http://localhost:3000)
 
 ## 💻 Available Scripts
 
-### Development
+### Local Development
 
 ```bash
 npm start          # Start development server
@@ -176,18 +184,21 @@ npm run eject      # Eject from Create React App (one-way operation)
 ### Customizing Content
 
 1. **Personal Information**
+
    - Edit `src/components/database/profile.json` (if exists)
    - Update contact details in `src/pages/frontend/Contact/`
 
-2. **Blog Posts**
+1. **Blog Posts**
+
    - Modify `src/components/database/blogs.json`
    - Add images to `public/images/blogs/`
 
-3. **Projects**
+1. **Projects**
+
    - Update `src/components/database/projects.json`
    - Add project images to `public/images/projects/`
 
-4. **SEO Settings**
+1. **SEO Settings**
    - Edit meta tags in `src/hooks/useSEO.js`
    - Update default values for each page
 
@@ -204,6 +215,7 @@ npm run eject      # Eject from Create React App (one-way operation)
 The portfolio includes a comprehensive blog system with:
 
 - **Technical Articles** covering:
+
   - Frontend Development (React, Next.js, Vue.js, TypeScript)
   - Backend Development (Laravel, Node.js, APIs)
   - DevOps (Docker, Kubernetes, CI/CD)
@@ -226,22 +238,22 @@ The portfolio includes a comprehensive blog system with:
 ### Deploy on Vercel (Recommended)
 
 1. Push your code to GitHub
-2. Visit [vercel.com](https://vercel.com)
-3. Import your repository
-4. Configure build settings:
+1. Visit [vercel.com](https://vercel.com)
+1. Import your repository
+1. Configure build settings:
    - **Build Command**: `npm run build`
    - **Output Directory**: `build`
-5. Deploy!
+1. Deploy!
 
 ### Deploy on Netlify
 
 1. Push your code to GitHub
-2. Visit [netlify.com](https://netlify.com)
-3. New site from Git
-4. Configure:
+1. Visit [netlify.com](https://netlify.com)
+1. New site from Git
+1. Configure:
    - **Build Command**: `npm run build`
    - **Publish Directory**: `build`
-5. Deploy!
+1. Deploy!
 
 ### Deploy on GitHub Pages
 
@@ -286,22 +298,22 @@ npm run deploy
 Contributions are welcome! Please follow these steps:
 
 1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+1. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+1. Push to the branch (`git push origin feature/AmazingFeature`)
+1. Open a Pull Request
 
 ---
 
 ## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
 
 ---
 
 ## 👨‍💻 Author
 
-**Mradul Sharma**
+### Mradul Sharma
 
 - Portfolio: [mradulsharma.vercel.app](https://mradulsharma.vercel.app/)
 - GitHub: [@ermradulsharma](https://github.com/ermradulsharma)
@@ -322,7 +334,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For any queries or suggestions, feel free to reach out:
 
-- **Email**: mradulsharma786@gmail.com
+- **Email**: <mradulsharma786@gmail.com>
 - **Website**: [Mradul Sharma](https://mradulsharma.vercel.app/)
 - **LinkedIn**: [Mradul Sharma](https://linkedin.com/in/mradulsharma)
 - **GitHub**: [Mradul Sharma](https://github.com/ermradulsharma)
@@ -330,7 +342,6 @@ For any queries or suggestions, feel free to reach out:
 
 ---
 
-<div align="center">
-  <p>Made with ❤️ by Mradul Sharma</p>
-  <p>⭐ Star this repo if you find it helpful!</p>
-</div>
+Made with ❤️ by Mradul Sharma
+
+⭐ Star this repo if you find it helpful!

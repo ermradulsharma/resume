@@ -1,6 +1,7 @@
 {
     "name": "mradulsharma",
     "version": "0.3.0",
+    "license": "MIT",
     "private": true,
     "dependencies": {
         "@emailjs/browser": "^4.4.1",

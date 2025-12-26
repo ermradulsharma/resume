@@ -1,10 +1,10 @@
-
 # Security Policy
 
 ## Supported Versions
 
 | Version | Supported          |
 | ------- | ------------------ |
+| 0.3.x   | :white_check_mark: |
 | 0.2.x   | :white_check_mark: |
 
 ## Reporting a Vulnerability
@@ -13,9 +13,7 @@ We take the security of this project seriously. If you discover a security vulne
 
 ### How to Report
 
-Please **DO NOT** create a public GitHub issue for security vulnerabilities. Instead, please report them via email to:
-
-**mradulsharma786@gmail.com**
+Please **DO NOT** create a public GitHub issue for security vulnerabilities. Instead, please report them via email to <mradulsharma786@gmail.com>.
 
 Please include the following information in your report:
 
