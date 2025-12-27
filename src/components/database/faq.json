@@ -1,28 +1,182 @@
 {
+    "title": "Frequently Asked Questions",
+    "description": "Here you’ll find answers to common questions about my experience, the technologies I work with, and how I approach problem solving. It’s a quick way to understand how I work and what you can expect when working together.",
     "faqs": [
         {
             "question": "What technologies are you most proficient in?",
-            "answer": "I specialize in Laravel, React.js, Node.js, and AWS. I have extensive experience across full-stack development including REST APIs, DevOps pipelines, and scalable backend systems."
+            "answer": "I primarily work with Laravel (v12+), React.js, Node.js (Express.js), and AWS. My expertise covers full-stack development including REST APIs, GraphQL, WebSockets, database design, and cloud deployments."
+        },
+        {
+            "question": "How many years of professional experience do you have?",
+            "answer": "I have over 5 years of professional experience in full-stack development, working on scalable enterprise applications, SaaS platforms, and real-time systems."
         },
         {
             "question": "What types of projects have you led or contributed to?",
-            "answer": "I've led enterprise projects such as PayStubx (payroll system), Storytellers CMS, and Wealth Mark (crypto platform), handling full architecture, deployment, and feature implementation."
+            "answer": "I’ve worked on payroll systems, content management platforms, cryptocurrency trading systems, product management tools, and subscription-based platforms. Notable projects include PayStubx, Storytellers CMS, Wealth Mark, and Matrix Store."
+        },
+        {
+            "question": "Have you worked as a team lead or mentored developers?",
+            "answer": "Yes. I’ve led teams of 5–7 developers, handled task planning, conducted code reviews, and mentored junior developers to improve code quality, performance, and delivery timelines."
+        },
+        {
+            "question": "Do you have experience with cloud infrastructure and DevOps?",
+            "answer": "Absolutely. I manage AWS infrastructure including EC2, S3, RDS, IAM, and CloudFormation. I also set up CI/CD pipelines using GitHub Actions and GitLab CI/CD, and work with Docker and Kubernetes."
+        },
+        {
+            "question": "What is your backend development approach?",
+            "answer": "I focus on clean architecture, scalable APIs, secure authentication, and optimized database queries. I follow best practices for RESTful design, microservices where applicable, and write maintainable, well-tested code."
+        },
+        {
+            "question": "How do you approach frontend development?",
+            "answer": "I build component-based user interfaces using React.js and Next.js, focusing on performance, responsiveness, and usability. I work with Tailwind CSS and Bootstrap to ensure clean and consistent UI across devices."
+        },
+        {
+            "question": "Do you have experience with real-time features?",
+            "answer": "Yes. I’ve implemented real-time updates using WebSockets in projects like cryptocurrency trading platforms and dashboards that require live data updates."
+        },
+        {
+            "question": "What databases do you usually work with?",
+            "answer": "I regularly work with PostgreSQL, MySQL, MongoDB, and SQLite. I focus on query optimization, indexing strategies, and data integrity to ensure performance and scalability."
+        },
+        {
+            "question": "Have you worked with payment gateway integrations?",
+            "answer": "Yes. I’ve integrated multiple payment gateways including Stripe, PayPal, Razorpay, and PayU, ensuring secure transactions and smooth user experience."
         },
         {
             "question": "Do you have experience working remotely or with distributed teams?",
-            "answer": "Yes, I’ve worked remotely with cross-functional teams at W3 Info Solutions and managed seamless project deliveries using Agile/Scrum practices and tools like Trello, Slack, and GitLab."
+            "answer": "Yes, I’ve worked remotely with cross-functional teams, following Agile and Scrum practices using tools like Slack, Trello, GitHub, and GitLab to ensure clear communication and timely delivery."
         },
         {
-            "question": "Are you involved in DevOps and cloud infrastructure management?",
-            "answer": "Absolutely. I manage CI/CD pipelines using GitHub Actions and GitLab CI/CD, and handle deployments on AWS (EC2, S3, RDS). I also work with Docker, Nginx, and cron jobs."
+            "question": "How do you ensure code quality and reliability?",
+            "answer": "I follow best practices such as writing clean, modular code, performing code reviews, and using testing tools like PHPUnit, Pest, Jest, and Cypress to ensure reliability and maintainability."
         },
         {
-            "question": "What is your approach to frontend development?",
-            "answer": "I follow component-based architecture using React.js, apply best practices in responsive design, and work with Tailwind CSS, Bootstrap, and client-side routing for seamless UX."
+            "question": "Are you open to freelance, contract, or full-time opportunities?",
+            "answer": "Yes. I’m open to freelance, contract-based, and full-time roles where I can contribute to meaningful products and solve real-world problems."
         },
         {
             "question": "Do you contribute to open source or write technical content?",
-            "answer": "Yes, I contribute to GitHub and write technical blogs on Medium and Dev.to. I believe in knowledge sharing and continuous learning through open collaboration."
+            "answer": "I actively contribute to GitHub projects and write technical articles on platforms like Medium and Dev.to, focusing on practical development insights and real-world solutions."
+        },
+        {
+            "question": "Can you help me if I’m not technical?",
+            "answer": "Yes, absolutely. I regularly work with non-technical clients and explain things in simple terms. I focus on understanding your business goals first, then translate them into practical technical solutions."
+        },
+        {
+            "question": "How do you understand my project requirements?",
+            "answer": "I start with detailed discussions to understand your idea, goals, and target users. If needed, I help refine unclear requirements and suggest improvements before development begins."
+        },
+        {
+            "question": "Will you help me decide the right technology for my project?",
+            "answer": "Yes. I recommend technologies based on your project needs, budget, scalability, and long-term maintenance, not just trends."
+        },
+        {
+            "question": "How do you communicate during the project?",
+            "answer": "I provide regular updates through calls, messages, or project tools like Slack or Trello. You’ll always know the current status and next steps."
+        },
+        {
+            "question": "What happens if I want changes during development?",
+            "answer": "That’s completely fine. I handle change requests professionally, discuss their impact on timeline and cost, and proceed only after clear agreement."
+        },
+        {
+            "question": "Will my project be secure?",
+            "answer": "Yes. I follow security best practices such as secure authentication, role-based access control, data encryption, and server-level protections."
+        },
+        {
+            "question": "Do you provide support after the project is completed?",
+            "answer": "Yes. I offer post-launch support for bug fixes, improvements, and performance monitoring. Ongoing maintenance can also be arranged if needed."
+        },
+        {
+            "question": "How do you ensure my project will scale in the future?",
+            "answer": "I design systems with scalability in mind from day one, using clean architecture, optimized databases, and cloud infrastructure that can grow with your business."
+        },
+        {
+            "question": "Will I own the source code and data?",
+            "answer": "Yes. Once the project is completed and payment terms are met, you have full ownership of the source code and project assets."
+        },
+        {
+            "question": "Can you work with my existing system or codebase?",
+            "answer": "Yes. I can review, improve, and extend existing systems while maintaining stability and minimizing disruption."
+        },
+        {
+            "question": "How do you estimate timelines and costs?",
+            "answer": "After understanding your requirements, I break the project into phases and provide realistic timelines and transparent cost estimates."
+        },
+        {
+            "question": "What if my idea is still at an early stage?",
+            "answer": "That’s perfectly fine. I often help clients shape early-stage ideas into clear, build-ready plans, including feature prioritization and MVP development."
+        },
+        {
+            "question": "Why should I choose you over an agency?",
+            "answer": "You work directly with me, not through layers of communication. This means faster decisions, better accountability, and a deeper understanding of your project."
+        },
+        {
+            "question": "How do you handle deadlines?",
+            "answer": "I plan work in milestones, set realistic deadlines, and communicate early if anything impacts the schedule. Reliability and transparency are very important to me."
+        },
+        {
+            "question": "Can you sign NDAs or confidentiality agreements?",
+            "answer": "Yes. I fully respect client confidentiality and am comfortable signing NDAs or other legal agreements when required."
+        },
+        {
+            "question": "How involved do I need to be during the project?",
+            "answer": "Your involvement can be as much or as little as you prefer. I’ll guide the process and only ask for input at key decision points to keep things moving smoothly."
+        },
+        {
+            "question": "What if I don’t like the initial version?",
+            "answer": "Feedback is part of the process. I work in iterations, so we review progress regularly and refine things until the solution aligns with your expectations."
+        },
+        {
+            "question": "Can you work within my budget?",
+            "answer": "Yes. I help prioritize features so we can deliver the most value within your budget and scale later if needed."
+        },
+        {
+            "question": "How do you handle misunderstandings or miscommunication?",
+            "answer": "I clarify requirements early, document decisions, and keep communication open. If anything feels unclear, we address it immediately."
+        },
+        {
+            "question": "Will my application work on all devices?",
+            "answer": "Yes. I build responsive applications that work smoothly across desktops, tablets, and mobile devices."
+        },
+        {
+            "question": "Do you test the project before delivery?",
+            "answer": "Yes. Every project goes through proper testing to ensure functionality, performance, and stability before final delivery."
+        },
+        {
+            "question": "What happens if something breaks after launch?",
+            "answer": "I provide post-launch support to quickly fix issues and ensure the application continues to run smoothly."
+        },
+        {
+            "question": "Can you help improve an existing slow or buggy system?",
+            "answer": "Yes. I can audit your current system, identify performance issues or bugs, and apply improvements without rebuilding everything from scratch."
+        },
+        {
+            "question": "How do you protect my data?",
+            "answer": "I follow best practices for data security, including secure access control, encrypted communication, and proper server configuration."
+        },
+        {
+            "question": "Will I be able to manage the system myself later?",
+            "answer": "Yes. I build user-friendly systems and provide guidance or documentation so you can manage basic operations confidently."
+        },
+        {
+            "question": "What if my requirements change after the project starts?",
+            "answer": "Requirement changes are common. I discuss the impact clearly and adjust the plan so there are no surprises."
+        },
+        {
+            "question": "Do you offer long-term collaboration?",
+            "answer": "Yes. Many clients choose to work with me long-term for feature enhancements, maintenance, and scaling."
+        },
+        {
+            "question": "How soon can we start?",
+            "answer": "After an initial discussion and agreement on scope, I can usually start within a short timeframe depending on availability."
+        },
+        {
+            "question": "How do I track project progress?",
+            "answer": "I share regular updates and milestones so you always know what’s completed, what’s in progress, and what’s coming next."
+        },
+        {
+            "question": "What makes your working style different?",
+            "answer": "I focus on clear communication, realistic planning, and delivering reliable solutions. My goal is to make the development process stress-free for you."
         }
     ]
 }

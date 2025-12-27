@@ -6,6 +6,7 @@
         "projectsList": [
             {
                 "title": "CLEW Pouches Management Platform",
+                "slug": "clew-pouches-management",
                 "description": "A Laravel-based platform developed for CLEW to manage product catalogs, subscription services, distributors, and customer engagement. The system provides streamlined product management, regulatory compliance tracking, and order handling. Built to scale with enterprise needs, it ensures transparency, sustainability, and premium product delivery.",
                 "technologies": [
                     "Laravel",
@@ -20,6 +21,8 @@
                 "image": "clew.png",
                 "category": "PRODUCT MANAGEMENT & SUBSCRIPTION PLATFORM",
                 "period": "2025",
+                "startDate": "2025-01-10",
+                "endDate": "2025-03-25",
                 "case_study": {
                     "overview": "The CLEW Pouches Management Platform was built to digitize and automate CLEW’s operations, including product management, distributor network coordination, subscription services, and compliance monitoring. By leveraging Laravel and Vue.js, the system offers a secure and scalable solution to handle high-volume product distribution while ensuring regulatory standards and quality assurance.",
                     "problem_statement": [
@@ -103,6 +106,7 @@
             },
             {
                 "title": "Gokleen Car (Subscription-based Car Washing Platform)",
+                "slug": "gokleen-car-subscription",
                 "description": "Gokleen Car Wash offers subscription-based eco-friendly detailing and washing services in Ernakulam. With a focus on perfection in details, GoKlean provides doorstep car cleaning services that emphasize hassle-free booking, high-quality workmanship, and ecological sustainability.",
                 "technologies": [
                     "Laravel",
@@ -118,6 +122,8 @@
                 "image": "gokleencar.png",
                 "category": "SUBSCRIPTION SERVICE PLATFORM",
                 "period": "2025",
+                "startDate": "2025-04-05",
+                "endDate": "2025-06-20",
                 "case_study": {
                     "overview": "Gokleen Car was developed as a subscription-based car cleaning platform that combines premium workmanship with eco-friendly practices. Customers can subscribe to interior and exterior wash services, manage their schedules, and enjoy professional detailing at their doorstep. The platform simplifies recurring service management, payments, and customer interactions through an intuitive web interface and upcoming mobile app.",
                     "problem_statement": [
@@ -202,6 +208,7 @@
             },
             {
                 "title": "Bolld PM",
+                "slug": "bolld-pm-property-management",
                 "description": "A Laravel-powered subscription-based property management application developed for the Vancouver real estate market. The platform streamlines rental listings, tenant applications, PMA (Property Management Agreements), and subscription workflows for owners, agents, and property managers.",
                 "technologies": [
                     "Laravel",
@@ -216,6 +223,8 @@
                 "image": "bolldpm.png",
                 "category": "PROPERTY MANAGEMENT & RENTAL PLATFORM",
                 "period": "2025",
+                "startDate": "2025-07-10",
+                "endDate": "2025-10-15",
                 "case_study": {
                     "overview": "Bolld PM is a subscription-based property management solution built on Laravel for the Vancouver market. It provides property owners, managers, and agents with tools to list properties, manage tenant applications, handle PMA agreements, and automate rental workflows. Designed for scalability and compliance, the platform offers role-based dashboards and subscription billing for agents and managers.",
                     "problem_statement": [
@@ -299,6 +308,7 @@
             },
             {
                 "title": "Marketing Analytics Report Dashboard",
+                "slug": "marketing-analytics-dashboard",
                 "description": "Developed a custom analytics dashboard within Mautic to visualize and manage multi-channel marketing data, including Meta, Shopify, WhatsApp, Email, and Cohort analysis. Integrated multiple APIs and rendered dynamic, interactive charts using Chart.js.",
                 "technologies": [
                     "Mautic",
@@ -316,6 +326,8 @@
                 "image": "expedify.png",
                 "category": "MARKETING ANALYTICS PLATFORM",
                 "period": "2024-25",
+                "startDate": "2024-11-01",
+                "endDate": "2025-02-28",
                 "case_study": {
                     "overview": "The Marketing Analytics Report Dashboard was designed to provide businesses with a unified view of their multi-channel marketing performance. Built on top of Mautic, the system integrates with various data sources like Meta Ads, Shopify, WhatsApp campaigns, Email marketing, and custom cohort analysis. By leveraging REST APIs and modern visualization tools, the dashboard enables real-time performance monitoring and actionable insights for marketing teams.",
                     "problem_statement": [
@@ -400,6 +412,7 @@
             },
             {
                 "title": "Konnifel",
+                "slug": "konnifel-research-internship",
                 "description": "Konnifel is a non-profit research and internship platform developed in CodeIgniter. It connects professors, researchers, scientists, and institutions with aspiring students by providing structured, standardized, and transparent research internship opportunities. With built-in assessment mechanisms, recommendations, and the Research Readiness Standard, Konnifel simplifies and streamlines the process of applying to research opportunities.",
                 "technologies": [
                     "CodeIgniter",
@@ -414,6 +427,8 @@
                 "image": "konnifel.png",
                 "category": "RESEARCH & EDUCATION PLATFORM",
                 "period": "2024",
+                "startDate": "2024-06-01",
+                "endDate": "2024-12-20",
                 "case_study": {
                     "overview": "Konnifel was established to foster research and structured learning by bridging the gap between experienced researchers and students. It enables institutions, professors, and scientists to post internships, fellowships, and research assistantships while offering students a standardized application process and tailored opportunities. Konnifel empowers research-driven growth through its Research Readiness and Aptitude Test (RRAT) and recommendation mechanisms.",
                     "problem_statement": [
@@ -494,6 +509,7 @@
             },
             {
                 "title": "Caumit (Community Volunteering Platform)",
+                "slug": "caumit-volunteering",
                 "description": "Developed a community-driven platform to connect volunteers with local organizations and community groups. Caumit enables individuals to find volunteering opportunities, collaborate with NGOs, and track their social impact, making it easier to strengthen local communities.",
                 "technologies": [
                     "Laravel",
@@ -507,6 +523,8 @@
                 "image": "caumit.png",
                 "category": "COMMUNITY PLATFORM",
                 "period": "2024",
+                "startDate": "2024-01-15",
+                "endDate": "2024-05-25",
                 "case_study": {
                     "overview": "Caumit is designed to bridge the gap between individuals willing to volunteer and organizations in need of support. The platform fosters community collaboration by simplifying how volunteers discover, join, and participate in local initiatives. Organizations benefit from role-based dashboards, making it easy to post opportunities, manage volunteers, and track activities, while volunteers gain visibility into causes they care about.",
                     "problem_statement": [
@@ -583,6 +601,7 @@
             },
             {
                 "title": "ForRentCentral",
+                "slug": "forrentcentral-property-management",
                 "description": "A Laravel-based subscription application designed for property management, enabling property owners, managers, and agents to list, manage, and rent properties efficiently. The platform supports rental applications, PMA (Property Management Agreements), tenant onboarding, and subscription-based access for stakeholders.",
                 "technologies": [
                     "Laravel",
@@ -598,6 +617,8 @@
                 "image": "forrentcentral.png",
                 "category": "PROPERTY MANAGEMENT & RENTAL PLATFORM",
                 "period": "2024",
+                "startDate": "2024-05-10",
+                "endDate": "2024-08-15",
                 "case_study": {
                     "overview": "ForRentCentral is a subscription-based property management application developed in Laravel to simplify rental operations for property owners, tenants, agents, and managers. The system allows owners to list their properties, agents to manage them, and tenants to apply online through rental applications and PMA agreements. With integrated notifications, compliance tracking, and subscription billing, it provides a complete ecosystem for property rentals.",
                     "problem_statement": [
@@ -682,6 +703,7 @@
             },
             {
                 "title": "Wealth Mark (Cryptocurrency Trading Platform)",
+                "slug": "wealthmark-crypto-trading",
                 "description": "Architected a secure and scalable cryptocurrency trading system using Laravel and WebSockets, enabling real-time data updates and wallet integrations.",
                 "technologies": [
                     "Laravel",
@@ -693,6 +715,8 @@
                 "image": "wealthmark.png",
                 "category": "FULL STACK APPLICATION",
                 "period": "2023",
+                "startDate": "2023-03-01",
+                "endDate": "2023-06-30",
                 "case_study": {
                     "overview": "Wealth Mark is a cryptocurrency trading platform designed to provide users with secure, real-time trading capabilities. The system was built using Laravel for backend services and WebSockets for live updates, ensuring instant data synchronization across user dashboards and trading engines. With wallet integration, secure APIs, and robust database optimization, the platform delivers a seamless trading experience for crypto investors.",
                     "problem_statement": [
@@ -772,6 +796,7 @@
             },
             {
                 "title": "StackFood (Restaurant & Delivery Management System)",
+                "slug": "stackfood-delivery-management",
                 "description": "Developed a full-featured food delivery and restaurant management platform, enabling order management, POS, restaurant listings, and delivery tracking for restaurants and hotels.",
                 "technologies": [
                     "Laravel",
@@ -788,6 +813,8 @@
                 "image": "stackfood.png",
                 "category": "FULL STACK APPLICATION",
                 "period": "2022",
+                "startDate": "2022-01-15",
+                "endDate": "2022-05-30",
                 "case_study": {
                     "overview": "StackFood is a comprehensive delivery service and restaurant management system designed to streamline food ordering, delivery, and POS operations for restaurants and hotels. It provides both customer-facing and admin-facing features, integrating multiple payment gateways and ensuring scalability for high transaction volumes.",
                     "problem_statement": [
@@ -872,6 +899,7 @@
             },
             {
                 "title": "PayStubx (Payroll Management System)",
+                "slug": "paystubx-payroll-management",
                 "description": "Led the design and development of a comprehensive payroll system using Laravel 9, deployed on AWS with secure API integrations and PostgreSQL optimization.",
                 "technologies": [
                     "Laravel",
@@ -885,6 +913,8 @@
                 "image": "paystubx.png",
                 "category": "FULL STACK APPLICATION",
                 "period": "2022",
+                "startDate": "2022-06-10",
+                "endDate": "2022-08-25",
                 "case_study": {
                     "overview": "PayStubx is a cloud-based payroll management system designed to streamline payroll operations for businesses of all sizes. The system was built with Laravel 9 as the backend framework, deployed on AWS for scalability and reliability, and integrated with secure payment gateways and APIs to provide a seamless payroll experience.",
                     "problem_statement": [
@@ -966,6 +996,7 @@
             },
             {
                 "title": "Storytellers (Content Management Platform)",
+                "slug": "storytellers-cms",
                 "description": "Built a scalable CMS using Laravel and PostgreSQL, deployed on AWS cloud with integrated secure backend APIs for content delivery and admin management.",
                 "technologies": [
                     "Laravel",
@@ -977,6 +1008,8 @@
                 "image": "storytellers.png",
                 "category": "WEB APPLICATION",
                 "period": "2022",
+                "startDate": "2022-09-01",
+                "endDate": "2022-10-30",
                 "case_study": {
                     "overview": "Storytellers is a modern, cloud-based content management platform designed to empower creators, publishers, and organizations to efficiently manage, deliver, and scale their digital content. Built with Laravel as the core backend framework, PostgreSQL for optimized data storage, and deployed on AWS, the platform ensures high availability, security, and scalability.",
                     "problem_statement": [
@@ -1055,6 +1088,7 @@
             },
             {
                 "title": "WhealthConnect (Fitness & Gym Management Platform)",
+                "slug": "whealthconnect-fitness",
                 "description": "Developed the backend dashboard and REST APIs for WhealthConnect, a mobile application that allows fitness centers to register, manage trainers, and publish daily tutorials, built with Laravel and PostgreSQL for scalability.",
                 "technologies": [
                     "Laravel",
@@ -1068,6 +1102,8 @@
                 "image": "whealthconnect.png",
                 "category": "FULL STACK APPLICATION",
                 "period": "2022",
+                "startDate": "2022-11-05",
+                "endDate": "2022-12-28",
                 "case_study": {
                     "overview": "WhealthConnect is a mobile-first fitness platform designed to connect gyms, fitness centers, and trainers with users seeking personalized training and daily workout tutorials. The backend dashboard and APIs were developed using Laravel, ensuring secure authentication, efficient data handling, and seamless integration with the mobile app.",
                     "problem_statement": [
@@ -1148,6 +1184,7 @@
             },
             {
                 "title": "FlexTaxis",
+                "slug": "flextaxis-ride-hailing",
                 "description": "FlexTaxis is a robust taxi booking platform developed using CodeIgniter, designed to provide a seamless experience for both passengers and drivers. It offers real-time ride tracking, dynamic fare calculation, and a secure admin dashboard for fleet management.",
                 "technologies": [
                     "CodeIgniter",
@@ -1163,6 +1200,8 @@
                 "image": "flextaxis.png",
                 "category": "TRANSPORTATION & RIDE-HAILING PLATFORM",
                 "period": "2021",
+                "startDate": "2021-01-10",
+                "endDate": "2021-04-15",
                 "case_study": {
                     "overview": "FlexTaxis is a scalable and secure taxi booking solution designed to meet the demands of modern transportation services. The platform caters to passengers, drivers, and fleet administrators by offering real-time ride tracking, fare calculation, and comprehensive dashboards. With mobile-responsive interfaces and integration with mapping services, FlexTaxis ensures smooth ride management for both users and operators.",
                     "problem_statement": [
@@ -1246,6 +1285,7 @@
             },
             {
                 "title": "Long Distance Taxis",
+                "slug": "long-distance-taxis",
                 "description": "Long Distance Taxis Ltd is a UK-based taxi booking platform built with CodeIgniter. It specializes in reliable and affordable long-distance taxi services, offering nationwide coverage for airport transfers, business trips, holidays, and bespoke UK travel tours. With transparent pricing, professional drivers, and seamless online booking, it has established itself as one of the most trusted long-distance taxi services in the UK.",
                 "technologies": [
                     "CodeIgniter",
@@ -1260,6 +1300,8 @@
                 "image": "longdistancetaxis.png",
                 "category": "TRANSPORTATION & TAXI BOOKING",
                 "period": "2021",
+                "startDate": "2021-05-01",
+                "endDate": "2021-07-20",
                 "case_study": {
                     "overview": "Long Distance Taxis Ltd offers nationwide taxi services across the UK, ensuring reliable, safe, and affordable travel for long-distance journeys. From airport transfers to bespoke UK tours, the platform simplifies long-distance taxi booking with an easy-to-use system, transparent pricing, and professional licensed drivers. Built on CodeIgniter, the solution is designed for scalability, efficiency, and a seamless booking experience for both passengers and administrators.",
                     "problem_statement": [
@@ -1338,6 +1380,7 @@
             },
             {
                 "title": "NGO Career",
+                "slug": "ngo-career-job-portal",
                 "description": "NGO Career is a UK-based employment search service built on CodeIgniter, designed to connect NGOs with ideal recruits while supporting job seekers looking for meaningful careers in the NGO sector. It serves as a specialized job board dedicated to bridging the gap between organizations with humanitarian missions and skilled individuals ready to contribute.",
                 "technologies": [
                     "CodeIgniter",
@@ -1352,6 +1395,8 @@
                 "image": "ngocareer.png",
                 "category": "EMPLOYMENT & JOB PORTAL",
                 "period": "2021",
+                "startDate": "2021-08-10",
+                "endDate": "2021-11-25",
                 "case_study": {
                     "overview": "NGO Career is an international NGO job board created to streamline recruitment in the non-profit sector. With NGOs often facing unique recruitment challenges—limited resources, international talent pools, and the need for precise candidate matching—NGO Career provides a dedicated digital solution to match skilled job seekers with organizations worldwide. The platform supports both NGOs seeking talent and individuals seeking meaningful careers in the non-profit sector.",
                     "problem_statement": [
@@ -1431,6 +1476,7 @@
             },
             {
                 "title": "Chariot (Food & Parcel Delivery App)",
+                "slug": "chariot-delivery-app",
                 "description": "Developed a scalable food and parcel delivery platform with real-time tracking, secure payments, and seamless customer-driver interactions, deployed on AWS with microservices architecture.",
                 "technologies": [
                     "Laravel",
@@ -1446,6 +1492,8 @@
                 "image": "chariot.png",
                 "category": "FULL STACK APPLICATION",
                 "period": "2020",
+                "startDate": "2020-01-15",
+                "endDate": "2020-05-15",
                 "case_study": {
                     "overview": "Chariot is a cloud-native delivery application enabling customers to order food and send parcels with real-time tracking and secure transactions. The app connects customers, delivery partners, and merchants through an optimized and scalable microservices-based platform.",
                     "problem_statement": [
@@ -1531,6 +1579,7 @@
             },
             {
                 "title": "Nirvia - Smart Way to Buy Best Insurance",
+                "slug": "nirvia-insurance-platform",
                 "description": "Developed a modern insurance comparison and purchase platform with a seamless user interface, real-time policy recommendations, and secure transactions.",
                 "technologies": [
                     "Laravel",
@@ -1544,6 +1593,8 @@
                 "image": "nirvia.png",
                 "category": "FULL STACK APPLICATION",
                 "period": "2020",
+                "startDate": "2020-06-01",
+                "endDate": "2020-09-30",
                 "case_study": {
                     "overview": "Nirvia is a digital-first insurance platform designed to simplify the process of comparing, selecting, and purchasing insurance policies. It leverages modern technologies to deliver personalized recommendations, secure transactions, and a transparent experience for customers.",
                     "problem_statement": [
@@ -1625,6 +1676,7 @@
             },
             {
                 "title": "AFT (Agra Fort Taxi Service)",
+                "slug": "aft-taxi-service",
                 "description": "Developed a robust and user-friendly taxi booking platform using Laravel, enabling real-time ride management, fare calculations, driver tracking, and booking history. Integrated location-based services and secure admin dashboards for operations management.",
                 "technologies": [
                     "Laravel",
@@ -1637,6 +1689,8 @@
                 "image": "aft.PNG",
                 "category": "FULL STACK APPLICATION",
                 "period": "2019",
+                "startDate": "2019-04-10",
+                "endDate": "2019-05-28",
                 "case_study": {
                     "overview": "Agra Fort Taxi Service (AFT) is a taxi booking platform designed to simplify ride booking and management for both passengers and drivers. The system allows real-time ride scheduling, fare calculation, driver tracking, and booking history, ensuring a reliable and smooth transportation experience. With a Laravel-powered backend and MySQL database, the platform integrates location-based services for accurate ride management and a secure admin dashboard for operational oversight.",
                     "problem_statement": [
@@ -1717,6 +1771,7 @@
             },
             {
                 "title": "GN Ganpati Logistic",
+                "slug": "gn-ganpati-logistic",
                 "description": "Built a logistics management platform using Laravel to streamline freight booking, vehicle assignments, route tracking, and delivery confirmations. The system supports multi-user access with secure authentication and role-based dashboards for admins, drivers, and clients.",
                 "technologies": [
                     "Laravel",
@@ -1729,6 +1784,8 @@
                 "image": "gnganpati.PNG",
                 "category": "FULL STACK APPLICATION",
                 "period": "2019",
+                "startDate": "2019-03-05",
+                "endDate": "2019-04-28",
                 "case_study": {
                     "overview": "GN Ganpati Logistic is a logistics management platform developed to simplify and digitalize freight operations. The system allows businesses to manage bookings, assign vehicles, track routes in real-time, and confirm deliveries efficiently. With Laravel as the backend framework and MySQL as the database, the platform ensures secure multi-user access with role-based dashboards tailored for admins, drivers, and clients.",
                     "problem_statement": [
@@ -1809,6 +1866,7 @@
             },
             {
                 "title": "Kefishine (E-commerce Trial & Shop Platform)",
+                "slug": "kefishine-ecommerce",
                 "description": "Designed and developed a dynamic Laravel-based e-commerce platform for skincare and cosmetic trials. Features include trial point systems, real-time product availability, cart management, responsive sliders, and category-based product showcases. Admin panel enables product uploads, price updates, and order management.",
                 "technologies": [
                     "Laravel",
@@ -1822,6 +1880,8 @@
                 "image": "kefishine.PNG",
                 "category": "FULL STACK APPLICATION",
                 "period": "2019",
+                "startDate": "2019-03-10",
+                "endDate": "2019-05-28",
                 "case_study": {
                     "overview": "Kefishine is a Laravel-based e-commerce platform designed for skincare and cosmetic enthusiasts to explore both trial and retail products. The platform introduces a unique trial point system where customers can redeem trial products before making full purchases. It offers real-time product availability, secure cart management, and an engaging shopping experience with sliders and category-based product showcases. Admins can efficiently manage inventory, pricing, orders, and trial product workflows via a dedicated backend panel.",
                     "problem_statement": [
@@ -1905,6 +1965,7 @@
             },
             {
                 "title": "Zaiba Info Tech (IT Company Website)",
+                "slug": "zaiba-info-tech",
                 "description": "Developed a corporate website for Zaiba Info Tech using Laravel, focused on IT service offerings, technology consulting, and business solutions. The platform includes dynamic service listings, contact forms, career module, and content-managed admin panel for managing client portfolios, blogs, and inquiry handling.",
                 "technologies": [
                     "Laravel",
@@ -1918,6 +1979,8 @@
                 "image": "zaibainfo.PNG",
                 "category": "FULL STACK APPLICATION",
                 "period": "2019",
+                "startDate": "2019-01-01",
+                "endDate": "2019-03-28",
                 "case_study": {
                     "overview": "Zaiba Info Tech is a corporate IT company website developed to showcase IT services, technology consulting, and business solutions. The platform highlights the company’s offerings while providing interactive features like a career module, dynamic service listings, portfolio showcases, and client engagement through contact forms. Built with Laravel and MySQL, it ensures secure data handling, easy content management, and a professional digital presence for the brand.",
                     "problem_statement": [
