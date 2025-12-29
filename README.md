@@ -1,347 +1,120 @@
-# Mradul Sharma - Portfolio Website
+# Mradul Sharma - Modern Portfolio Project
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![React Version](https://img.shields.io/badge/React-19.2.3-blue.svg)](https://reactjs.org/)
 [![Live Demo](https://img.shields.io/badge/demo-live-success)](https://mradulsharma.vercel.app/)
 [![Deploy on Vercel](https://img.shields.io/badge/Deploy-Vercel-black?logo=vercel)](https://vercel.com)
 
-A modern, fully responsive portfolio website showcasing my work as a Full-Stack Developer. Built with React 19, Bootstrap 5, and modern web technologies, featuring a comprehensive blog system, project showcase, and SEO optimization.
+A high-performance, fully responsive professional portfolio ecosystem. Built with **React 19**, **Bootstrap 5**, and modern engineering principles, featuring a headless blog system, dynamic meta management, and sub-second performance.
 
 ---
 
-## 🚀 Live Demo
+## 🚀 Key Technical Features
 
-👉 **[mradulsharma.vercel.app](https://mradulsharma.vercel.app/)**
+### 🎯 Core Architecture
 
----
+- **React 19 Core**: Leveraging the latest concurrent features and server-side ready architecture.
+- **Client-Side Routing**: Integrated with **React Router v7** for seamless navigation and nested routes.
+- **Dynamic SEO Strategy**: Custom-built `useSEO` hook for real-time meta tag injection and Open Graph optimization.
+- **Full Response Mastery**: Mobile-first design using Bootstrap 5 and custom media queries.
 
-## ✨ Features
+### 📝 Headless Blog Engine
 
-### 🎯 Core Features
+- **JSON-Driven Content**: Decoupled content management via `blogs.json`.
+- **Intelligent Navigation**: Category filtering, dynamic pagination, and related post algorithms.
+- **Visual Excellence**: Automatic reading time estimation and AI-generated image integration.
 
-- **Fully Responsive Design** - Optimized for all devices (mobile, tablet, desktop)
-- **Modern UI/UX** - Clean, professional design with smooth animations
-- **Dark/Light Mode** - Theme switching with persistent preferences
-- **SEO Optimized** - Dynamic meta tags, Open Graph, Twitter Cards
-- **Fast Performance** - Optimized bundle size and lazy loading
+### 🛠️ Developer Experience
 
-### 📝 Blog System
-
-- **Technical Articles** - In-depth tutorials on web development
-- **Category Filtering** - Frontend, Backend, DevOps, Database, Security
-- **Pagination** - Easy navigation through blog posts
-- **AI-Generated Images** - Custom images for each blog post
-- **Reading Time** - Estimated reading time for each article
-- **Related Posts** - Smart content recommendations
-
-### 💼 Portfolio Sections
-
-- **Home** - Hero section with typewriter effect and introduction
-- **About** - Professional background and skills
-- **Resume** - Detailed work experience and education
-- **Projects** - Showcase of development projects with live demos
-- **Blogs** - Technical writing and tutorials
-- **Contact** - Contact form with EmailJS integration
-
-### 🛠️ Technical Features
-
-- **React Router v7** - Client-side routing with nested routes
-- **React Bootstrap** - Responsive UI components
-- **EmailJS Integration** - Contact form without backend
-- **Custom SEO Hook** - Dynamic meta tags for each page
-- **Google Maps Integration** - Interactive location display
-- **GitHub Calendar** - Contribution activity visualization
-- **Chart.js** - Data visualization for skills and analytics
+- **Fault-Tolerant Integrations**: Contact systems powered by EmailJS (no backend required).
+- **Interactive Data**: Real-time GitHub calendars and Chart.js visualizations for developer activity.
+- **Modern Tooling**: Strict ESLint configurations and date-fns for precise temporal logic.
 
 ---
 
-## 🛠 Tech Stack
+## 💻 Technical Stack
 
-### Frontend
+### 💻 Infrastructure & Ecosystem
 
-- **React 19.2.3** - Latest React with concurrent features
-- **React Router DOM 7.10.1** - Advanced routing
-- **Bootstrap 5.3.8** - Responsive framework
-- **React Bootstrap 2.10.10** - Bootstrap components for React
-- **React Icons 5.5.0** - Icon library
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 
-### UI/UX
+### 🚀 Frontend & UI Mastery
 
-- **Typewriter Effect** - Animated text effects
-- **React Select** - Enhanced select components
-- **Bootstrap Icons** - Icon set
-- **Custom CSS** - Tailored styling
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511fa.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-### Integrations
+### 🛠️ Integrations & Tools
 
-- **EmailJS** - Email service for contact form
-- **Google Maps API** - Location integration
-- **Chart.js 4.5.1** - Data visualization
-- **React GitHub Calendar** - GitHub contribution graph
-
-### Development Tools
-
-- **React Scripts 5.0.1** - Build tooling
-- **ESLint** - Code quality
-- **Date-fns 4.1.0** - Date manipulation
+![Chart.js](https://img.shields.io/badge/chart.js-F5788D.svg?style=for-the-badge&logo=chart.js&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white) ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 
 ---
 
-## 📂 Project Structure
+## 📂 Project Organization
 
 ```text
 portfolio/
-├── public/
-│   ├── images/
-│   │   └── blogs/          # Blog post images
-│   ├── index.html
-│   └── favicon.ico
+├── public/                 # Static assets & Blog media
 ├── src/
-│   ├── assets/             # Static assets
 │   ├── components/
-│   │   ├── database/       # Data files (blogs.json, projects.json)
-│   │   └── shared/         # Reusable components
-│   ├── layouts/            # Layout components (Header, Footer)
-│   ├── pages/
-│   │   └── frontend/       # Page components
-│   │       ├── Home/
-│   │       ├── About/
-│   │       ├── Resume/
-│   │       ├── Projects/
-│   │       ├── Blogs/
-│   │       └── Contact/
-│   ├── routes/             # Route configurations
-│   ├── utils/              # Utility functions
-│   ├── hooks/
-│   │   └── useSEO.js       # Custom SEO hook
-│   ├── App.jsx
-│   ├── App.css
-│   └── index.js
+│   │   ├── database/       # JSON-driven CMS (blogs, projects, socials)
+│   │   └── shared/         # Reusable UI components
+│   ├── pages/              # View layer controllers
+│   ├── routes/             # v7 Navigation configuration
+│   ├── hooks/              # SEO & Logic hooks
+│   └── utils/              # Helper functions
 ├── package.json
 └── README.md
 ```
 
 ---
 
-## 🚀 Getting Started
+## 🛠️ Development Workflow
 
 ### Prerequisites
 
 - **Node.js** ≥ v18.x
-- **npm** ≥ v9.x (or yarn/pnpm)
-- Modern web browser
+- **npm** ≥ v9.x
 
-### Installation
+### Local Setup
 
-1. **Clone the repository**
-
-```bash
-git clone https://github.com/ermradulsharma/resume.git
-cd portfolio
-```
-
-1. **Install dependencies**
-
-```bash
-npm install
-```
-
-1. **Set up environment variables** (optional)
-
-   Create a `.env` file for EmailJS configuration:
-
-   ```env
-   REACT_APP_EMAILJS_SERVICE_ID=your_service_id
-   REACT_APP_EMAILJS_TEMPLATE_ID=your_template_id
-   REACT_APP_EMAILJS_PUBLIC_KEY=your_public_key
+1. **Clone & Enter**
+   ```bash
+   git clone https://github.com/ermradulsharma/resume.git
+   cd portfolio
+   ```
+2. **Install & Run**
+   ```bash
+   npm install
+   npm start
    ```
 
-1. **Start development server**
+### Available Scripts
 
 ```bash
-npm start
-```
-
-The app will open at [http://localhost:3000](http://localhost:3000)
-
----
-
-## 💻 Available Scripts
-
-### Local Development
-
-```bash
-npm start          # Start development server
-npm run build      # Build for production
-npm test           # Run tests
-npm run eject      # Eject from Create React App (one-way operation)
+npm start          # Development mode at localhost:3000
+npm run build      # Production optimized build
+npm test           # Execute test suites
 ```
 
 ---
 
-## ⚙️ Configuration
+## 🤝 Contributing & License
 
-### Customizing Content
-
-1. **Personal Information**
-
-   - Edit `src/components/database/profile.json` (if exists)
-   - Update contact details in `src/pages/frontend/Contact/`
-
-1. **Blog Posts**
-
-   - Modify `src/components/database/blogs.json`
-   - Add images to `public/images/blogs/`
-
-1. **Projects**
-
-   - Update `src/components/database/projects.json`
-   - Add project images to `public/images/projects/`
-
-1. **SEO Settings**
-   - Edit meta tags in `src/hooks/useSEO.js`
-   - Update default values for each page
-
-### Theme Customization
-
-- **Colors**: Edit CSS variables in `src/App.css`
-- **Fonts**: Update font imports in `public/index.html`
-- **Layout**: Modify Bootstrap breakpoints in component styles
+This project is licensed under the **MIT License**. Contributions are welcome via Pull Requests.
 
 ---
 
-## 🎨 Blog System
-
-The portfolio includes a comprehensive blog system with:
-
-- **Technical Articles** covering:
-
-  - Frontend Development (React, Next.js, Vue.js, TypeScript)
-  - Backend Development (Laravel, Node.js, APIs)
-  - DevOps (Docker, Kubernetes, CI/CD)
-  - Database (PostgreSQL, MongoDB, Redis)
-  - Cloud Computing (AWS Lambda, Serverless)
-  - Security (JWT, OAuth2, API Security)
-
-- **Features**:
-  - Category-based filtering
-  - Pagination (6 posts per page)
-  - Reading time estimation
-  - Related posts suggestions
-  - SEO-optimized individual blog pages
-  - AI-generated custom images
-
----
-
-## 🚀 Deployment
-
-### Deploy on Vercel (Recommended)
-
-1. Push your code to GitHub
-1. Visit [vercel.com](https://vercel.com)
-1. Import your repository
-1. Configure build settings:
-   - **Build Command**: `npm run build`
-   - **Output Directory**: `build`
-1. Deploy!
-
-### Deploy on Netlify
-
-1. Push your code to GitHub
-1. Visit [netlify.com](https://netlify.com)
-1. New site from Git
-1. Configure:
-   - **Build Command**: `npm run build`
-   - **Publish Directory**: `build`
-1. Deploy!
-
-### Deploy on GitHub Pages
-
-```bash
-npm install --save-dev gh-pages
-```
-
-Add to `package.json`:
-
-```json
-{
-  "homepage": "https://yourusername.github.io/portfolio",
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  }
-}
-```
-
-Deploy:
-
-```bash
-npm run deploy
-```
-
----
-
-## 📊 SEO Features
-
-- **Dynamic Meta Tags** - Unique titles and descriptions for each page
-- **Open Graph Tags** - Optimized social media sharing
-- **Twitter Cards** - Enhanced Twitter previews
-- **Canonical URLs** - Prevent duplicate content issues
-- **Structured Data** - Rich snippets for search engines
-- **Sitemap** - XML sitemap for search engines
-- **Robots.txt** - Search engine crawling instructions
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-1. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-1. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-1. Push to the branch (`git push origin feature/AmazingFeature`)
-1. Open a Pull Request
-
----
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
-
----
-
-## 👨‍💻 Author
+## 👨‍💻 Developed By
 
 ### Mradul Sharma
 
-- Portfolio: [mradulsharma.vercel.app](https://mradulsharma.vercel.app/)
-- GitHub: [@ermradulsharma](https://github.com/ermradulsharma)
-- LinkedIn: [Mradul Sharma](https://linkedin.com/in/mradulsharma)
+_Software Architect • Full-Stack Engineer_
 
----
+<p align="left">
+<a href="https://linkedin.com/in/mradulsharma"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+<a href="https://github.com/ermradulsharma"><img src="https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+<a href="https://www.upwork.com/freelancers/~01e91f0a0ab6d99a4d"><img src="https://img.shields.io/badge/Upwork-6FDA44?style=for-the-badge&logo=Upwork&logoColor=white" alt="Upwork" /></a>
+<a href="https://x.com/er_mradulsharma"><img src="https://img.shields.io/badge/X-%23000.svg?style=for-the-badge&logo=X&logoColor=white" alt="X" /></a>
+<a href="mailto:mradulsharma786@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white" alt="Email" /></a>
+</p>
 
-## 🙏 Acknowledgments
-
-- React team for the amazing framework
-- Bootstrap team for the responsive framework
-- Vercel for hosting
-- All open-source contributors
-
----
-
-## 📧 Contact
-
-For any queries or suggestions, feel free to reach out:
-
-- **Email**: <mradulsharma786@gmail.com>
-- **Website**: [Mradul Sharma](https://mradulsharma.vercel.app/)
-- **LinkedIn**: [Mradul Sharma](https://linkedin.com/in/mradulsharma)
-- **GitHub**: [Mradul Sharma](https://github.com/ermradulsharma)
-- **GitHub Issues**: [Create an issue](https://github.com/ermradulsharma/resume/issues)
-
----
-
-Made with ❤️ by Mradul Sharma
-
-⭐ Star this repo if you find it helpful!
+[Portfolio Live](https://mradulsharma.vercel.app/) • [GitHub Profile](https://github.com/ermradulsharma)
