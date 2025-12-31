@@ -10,7 +10,7 @@ import servicesList from "../../../components/database/serviceList.json"
 import Select from "react-select";
 import makeAnimated from 'react-select/animated';
 import logo from '../../../assets/mradulsharma.webp';
-import SectionHeader from "../../../components/common/SectionHeader";
+// import SectionHeader from "../../../components/common/SectionHeader";
 const animatedComponents = makeAnimated();
 const LIBRARIES = []; // Define libraries array outside component to prevent re-renders
 
