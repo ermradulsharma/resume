@@ -20,7 +20,7 @@
                     "Kubernetes",
                     "DevOps"
                 ],
-                "image": "/images/blogs/blog_microservices_laravel.png",
+                "image": "/images/blogs/blog_microservices_laravel.webp",
                 "featured": true,
                 "published": true
             },
@@ -41,7 +41,7 @@
                     "JavaScript",
                     "Web Development"
                 ],
-                "image": "/images/blogs/blog_react_performance.png",
+                "image": "/images/blogs/blog_react_performance.webp",
                 "featured": true,
                 "published": true
             },
@@ -62,7 +62,7 @@
                     "API Gateway",
                     "DynamoDB"
                 ],
-                "image": "/images/blogs/blog_aws_serverless.png",
+                "image": "/images/blogs/blog_aws_serverless.webp",
                 "featured": true,
                 "published": true
             },
@@ -83,7 +83,7 @@
                     "Performance",
                     "Optimization"
                 ],
-                "image": "/images/blogs/blog_database_comparison.png",
+                "image": "/images/blogs/blog_database_comparison.webp",
                 "featured": false,
                 "published": true
             },
@@ -104,7 +104,7 @@
                     "Automation",
                     "Deployment"
                 ],
-                "image": "/images/blogs/blog_cicd_github.png",
+                "image": "/images/blogs/blog_cicd_github.webp",
                 "featured": false,
                 "published": true
             },
@@ -125,7 +125,7 @@
                     "Broadcasting",
                     "Pusher"
                 ],
-                "image": "/images/blogs/blog_websockets_realtime.png",
+                "image": "/images/blogs/blog_websockets_realtime.webp",
                 "featured": false,
                 "published": true
             },
@@ -146,7 +146,7 @@
                     "App Router",
                     "SSR"
                 ],
-                "image": "/images/blogs/blog_nextjs_server.png",
+                "image": "/images/blogs/blog_nextjs_server.webp",
                 "featured": false,
                 "published": true
             },
@@ -167,7 +167,7 @@
                     "Authentication",
                     "Rate Limiting"
                 ],
-                "image": "/images/blogs/blog_api_security.png",
+                "image": "/images/blogs/blog_api_security.webp",
                 "featured": false,
                 "published": true
             },
@@ -188,7 +188,7 @@
                     "Optimization",
                     "Security"
                 ],
-                "image": "/images/blogs/blog_docker_optimization.png",
+                "image": "/images/blogs/blog_docker_optimization.webp",
                 "featured": false,
                 "published": true
             },
@@ -209,7 +209,7 @@
                     "Architecture",
                     "Web Development"
                 ],
-                "image": "/images/blogs/blog_graphql_rest.png",
+                "image": "/images/blogs/blog_graphql_rest.webp",
                 "featured": false,
                 "published": true
             },
@@ -230,7 +230,7 @@
                     "Type Safety",
                     "Development"
                 ],
-                "image": "/images/blogs/blog_typescript_practices.png",
+                "image": "/images/blogs/blog_typescript_practices.webp",
                 "featured": false,
                 "published": true
             },
@@ -251,7 +251,7 @@
                     "Database",
                     "Optimization"
                 ],
-                "image": "/images/blogs/blog_redis_caching.png",
+                "image": "/images/blogs/blog_redis_caching.webp",
                 "featured": false,
                 "published": true
             },
@@ -272,7 +272,7 @@
                     "Frontend",
                     "Web Development"
                 ],
-                "image": "/images/blogs/blog_vue_composition.png",
+                "image": "/images/blogs/blog_vue_composition.webp",
                 "featured": false,
                 "published": true
             },
@@ -293,7 +293,7 @@
                     "CI/CD",
                     "Containers"
                 ],
-                "image": "/images/blogs/blog_kubernetes_deployment.png",
+                "image": "/images/blogs/blog_kubernetes_deployment.webp",
                 "featured": false,
                 "published": true
             },
@@ -606,7 +606,7 @@
                     "Backend",
                     "Architecture"
                 ],
-                "image": "/images/blogs/laravel-clean-arch.png",
+                "image": "/images/blogs/laravel-clean-arch.webp",
                 "featured": true,
                 "published": true
             },
@@ -625,7 +625,7 @@
                     "Express",
                     "API"
                 ],
-                "image": "/images/blogs/node-production.png",
+                "image": "/images/blogs/node-production.webp",
                 "featured": false,
                 "published": true
             },
@@ -644,7 +644,7 @@
                     "Queues",
                     "Redis"
                 ],
-                "image": "/images/blogs/laravel-queue.png",
+                "image": "/images/blogs/laravel-queue.webp",
                 "featured": false,
                 "published": true
             },
@@ -663,7 +663,7 @@
                     "Hooks",
                     "Frontend"
                 ],
-                "image": "/images/blogs/react-hooks.png",
+                "image": "/images/blogs/react-hooks.webp",
                 "featured": false,
                 "published": true
             },
@@ -682,7 +682,7 @@
                     "React",
                     "Server Actions"
                 ],
-                "image": "/images/blogs/next-server-actions.png",
+                "image": "/images/blogs/next-server-actions.webp",
                 "featured": false,
                 "published": true
             },
@@ -701,7 +701,7 @@
                     "Frontend",
                     "UI"
                 ],
-                "image": "/images/blogs/tailwind-fast.png",
+                "image": "/images/blogs/tailwind-fast.webp",
                 "featured": false,
                 "published": true
             },
@@ -945,7 +945,7 @@
                     "PostgreSQL",
                     "Database"
                 ],
-                "image": "/images/blogs/postgresql-index.png",
+                "image": "/images/blogs/postgresql-index.webp",
                 "featured": false,
                 "published": true
             },
@@ -963,7 +963,7 @@
                     "MongoDB",
                     "Database"
                 ],
-                "image": "/images/blogs/mongodb-aggregation.png",
+                "image": "/images/blogs/mongodb-aggregation.webp",
                 "featured": false,
                 "published": true
             },
@@ -982,7 +982,7 @@
                     "Performance",
                     "Optimization"
                 ],
-                "image": "/images/blogs/mysql-slow.png",
+                "image": "/images/blogs/mysql-slow.webp",
                 "featured": false,
                 "published": true
             },
@@ -1001,7 +1001,7 @@
                     "Architecture",
                     "Scaling"
                 ],
-                "image": "/images/blogs/microservices-breakdown.png",
+                "image": "/images/blogs/microservices-breakdown.webp",
                 "featured": false,
                 "published": true
             },
@@ -1021,7 +1021,7 @@
                     "REST",
                     "Events"
                 ],
-                "image": "/images/blogs/microservices-comms.png",
+                "image": "/images/blogs/microservices-comms.webp",
                 "featured": false,
                 "published": true
             },
@@ -1040,7 +1040,7 @@
                     "Microservices",
                     "DevOps"
                 ],
-                "image": "/images/blogs/k8s-orchestration.png",
+                "image": "/images/blogs/k8s-orchestration.webp",
                 "featured": false,
                 "published": true
             },
@@ -1059,7 +1059,7 @@
                     "Real-Time",
                     "Pusher"
                 ],
-                "image": "/images/blogs/websocket-notify.png",
+                "image": "/images/blogs/websocket-notify.webp",
                 "featured": false,
                 "published": true
             },
@@ -1078,7 +1078,7 @@
                     "Architecture",
                     "WebSockets"
                 ],
-                "image": "/images/blogs/order-realtime.png",
+                "image": "/images/blogs/order-realtime.webp",
                 "featured": false,
                 "published": true
             },
@@ -1098,7 +1098,7 @@
                     "Polling",
                     "Real-Time"
                 ],
-                "image": "/images/blogs/realtime-protocols.png",
+                "image": "/images/blogs/realtime-protocols.webp",
                 "featured": false,
                 "published": true
             },
@@ -1117,7 +1117,7 @@
                     "Laravel",
                     "API"
                 ],
-                "image": "/images/blogs/laravel-security.png",
+                "image": "/images/blogs/laravel-security.webp",
                 "featured": false,
                 "published": true
             },
@@ -1136,7 +1136,7 @@
                     "OWASP",
                     "Vulnerabilities"
                 ],
-                "image": "/images/blogs/owasp.png",
+                "image": "/images/blogs/owasp.webp",
                 "featured": false,
                 "published": true
             },
@@ -1155,7 +1155,7 @@
                     "Security",
                     "IAM"
                 ],
-                "image": "/images/blogs/aws-iam.png",
+                "image": "/images/blogs/aws-iam.webp",
                 "featured": false,
                 "published": true
             },
@@ -1174,7 +1174,7 @@
                     "Laravel",
                     "Testing"
                 ],
-                "image": "/images/blogs/phpunit.png",
+                "image": "/images/blogs/phpunit.webp",
                 "featured": false,
                 "published": true
             },
@@ -1193,7 +1193,7 @@
                     "Testing",
                     "Laravel"
                 ],
-                "image": "/images/blogs/pest.png",
+                "image": "/images/blogs/pest.webp",
                 "featured": false,
                 "published": true
             },
@@ -1212,7 +1212,7 @@
                     "Frontend",
                     "Testing"
                 ],
-                "image": "/images/blogs/cypress.png",
+                "image": "/images/blogs/cypress.webp",
                 "featured": false,
                 "published": true
             },
@@ -1231,7 +1231,7 @@
                     "Performance",
                     "Frontend"
                 ],
-                "image": "/images/blogs/react-speed.png",
+                "image": "/images/blogs/react-speed.webp",
                 "featured": false,
                 "published": true
             },

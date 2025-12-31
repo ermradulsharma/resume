@@ -1,22 +1,27 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import '../../frontend/About/About.css'
-import about from '../../../assets/mradulsharma_another.JPG'
-import signature from '../../../assets/signature.png'
+import '../../frontend/About/About.css';
+import about from '../../../assets/mradulsharma_another.webp';
+import signature from '../../../assets/signature.webp';
 import { FaCodepen, FaPalette } from 'react-icons/fa';
 import { BsCloudCheck } from 'react-icons/bs';
-import data from "../../../components/database/about.json"
-import resume from '../../../assets/Resume/mradulsharma.pdf'
+import data from "../../../components/database/about.json";
+import resume from '../../../assets/resume/mradulsharma.pdf';
 import { trackEvent } from "../../../utils/analytics/ga";
+import SectionHeader from "../../../components/common/SectionHeader";
+import GitHub from "../ContributionCalendar/GitHub";
+import PublicCalendar from "../Calendar/Calendar";
 
 const About = () => {
     const { expandedAbout5 } = data.about;
+
+    const handleDownloadResume = () => {
+        trackEvent({ name: "download_resume", category: "Engagement", label: "PDF Download" });
+    };
+
     return (
-        <section id="about" className="about section my-5">
-            <Container className="section-title">
-                <h2>About</h2>
-                <p>{expandedAbout5}</p>
-            </Container>
+        <section id="about" className="about section">
+            <SectionHeader title="About" description={expandedAbout5} />
             <Container data-aos="fade-up" data-aos-delay="100">
                 <Row className="align-items-center">
                     <Col lg={4} data-aos="fade-right" data-aos-delay="200">
@@ -27,7 +32,7 @@ const About = () => {
                             <div className="signature-section">
                                 <img src={signature} alt="Signature" className="signature" loading="lazy" width="200" height="100" />
                                 <p className="quote text-secondary">Building meaningful digital experiences through creative code.</p>
-                                <Button variant="primary" className='rounded-5 px-4 px-lg-5 py-2 my-4' href={resume} download aria-label="Download Mradul Sharma Resume in PDF" onClick={() => trackEvent({ name: "download_resume", category: "Engagement", label: "PDF Download" })}>⚡Resume PDF Download ⚡</Button>
+                                <Button variant="primary" className='rounded-5 px-4 px-lg-5 py-2 my-4' href={resume} download aria-label="Download Mradul Sharma Resume in PDF" onClick={handleDownloadResume}>⚡Resume PDF Download ⚡</Button>
                             </div>
                         </div>
                     </Col>
@@ -88,6 +93,15 @@ const About = () => {
                     </Col>
                 </Row>
             </Container>
+
+            {/* Activity & Availability Section */}
+            <div className="activity-availability-section mt-4">
+                <SectionHeader title="Activity & Availability" description="A transparent look at my development consistency on GitHub and my current professional availability. I maintain a steady coding rhythm to ensure high-quality delivery and keep my schedule updated for upcoming collaborations." />
+                <Container>
+                    <GitHub />
+                    <PublicCalendar />
+                </Container>
+            </div>
         </section>
     );
 };

@@ -6,6 +6,7 @@ import SEO from "../../../components/common/SEO";
 import "../Blogs/Blogs.css";
 import blogsData from "../../../components/database/blogs.json";
 import LetsConnect from "../../../components/LetsConnect";
+import SectionHeader from "../../../components/common/SectionHeader";
 
 const Blogs = () => {
     const { title, description, posts, categories } = blogsData.blogs;
@@ -50,15 +51,6 @@ const Blogs = () => {
             if (scrollPosition >= bottomPosition && !isLoadingMore && currentPage < totalPages) {
                 setIsLoadingMore(true);
                 setTimeout(() => {
-                    // For infinite scroll, we might want to just load more without changing URL page completely?
-                    // But to keep it synced, let's update the page param. 
-                    // However, infinite scroll usually implies appending.
-                    // If we update URL, it might re-render and show ONLY page 2.
-                    // COMPLEXITY: Infinite scroll vs Pagination.
-                    // For "list" mode, maybe we strictly stick to appending?
-                    // But 'currentPosts' is derived from slice(indexOfFirstPost, indexOfLastPost).
-                    // If we want infinite scroll, we need slice(0, indexOfLastPost).
-                    // Let's modify currentPosts logic for list mode.
                     updateParams({ page: currentPage + 1 });
                     setIsLoadingMore(false);
                 }, 500);
@@ -67,15 +59,7 @@ const Blogs = () => {
 
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
-        // eslint-disable-next-line
     }, [viewMode, currentPage, totalPages, isLoadingMore]);
-
-    // For List Mode: we want to show all posts up to current page?
-    // User's original code: indexOfFirstPost = indexOfLastPost - postsPerPage;
-    // That means it was PAGINATED list. Not true infinite scroll (which appends).
-    // It just auto-advanced the page.
-
-    // SEO Note: We want unique URLs for duplicates fix.
 
     const getRelativeTime = (dateString) => {
         const postDate = new Date(dateString);
@@ -108,24 +92,55 @@ const Blogs = () => {
         return diffInDays === 1 ? "1 day ago" : `${diffInDays} days ago`;
     };
 
+    const getCanonicalUrl = () => {
+        const baseUrl = "https://mradulsharma.vercel.app/blogs";
+        const params = new URLSearchParams();
+        if (selectedCategory !== "All") params.set("category", selectedCategory);
+        if (currentPage > 1) params.set("page", currentPage);
+        const query = params.toString();
+        return query ? `${baseUrl}?${query}` : baseUrl;
+    };
+
+    const getPrevUrl = () => {
+        if (currentPage <= 1) return null;
+        const baseUrl = "https://mradulsharma.vercel.app/blogs";
+        const params = new URLSearchParams();
+        if (selectedCategory !== "All") params.set("category", selectedCategory);
+        if (currentPage > 2) params.set("page", currentPage - 1);
+        const query = params.toString();
+        return query ? `${baseUrl}?${query}` : baseUrl;
+    };
+
+    const getNextUrl = () => {
+        if (currentPage >= totalPages) return null;
+        const baseUrl = "https://mradulsharma.vercel.app/blogs";
+        const params = new URLSearchParams();
+        if (selectedCategory !== "All") params.set("category", selectedCategory);
+        params.set("page", currentPage + 1);
+        const query = params.toString();
+        return `${baseUrl}?${query}`;
+    };
+
     return (
         <section className="blogs-section section">
             <SEO
                 title={`Blog ${currentPage > 1 ? `- Page ${currentPage} ` : ""}| Mradul Sharma - Web Development Tutorials & Tips`}
                 description={`Read articles on web development, Laravel, React, AWS${selectedCategory !== 'All' ? ` - Category: ${selectedCategory}` : ""}. Page ${currentPage}.`}
                 keywords={blogsData.blogs.tags ? blogsData.blogs.tags.join(", ") : "web development, programming, tutorials"}
-                ogUrl={`https://mradulsharma.vercel.app/blogs?category=${selectedCategory}&page=${currentPage}`}
-                canonicalUrl={`https://mradulsharma.vercel.app/blogs?category=${selectedCategory}&page=${currentPage}`}
+                canonicalUrl={getCanonicalUrl()}
+                prevUrl={getPrevUrl()}
+                nextUrl={getNextUrl()}
             />
             <div className="blog-hero text-white d-flex align-items-center justify-content-center text-center">
                 <div className="overlay"></div>
             </div>
 
-            <div className="container mt-5">
-                <div className="section-title text-start">
-                    <h1>{title}</h1>
-                    <p>{description}</p>
-                </div>
+            <SectionHeader
+                title={title}
+                description={description}
+                className=" py-4 px-3"
+            />
+            <div className="container">
 
                 <div className="mb-4 d-flex flex-wrap gap-2 align-items-center justify-content-between">
                     <div className="d-none d-md-flex flex-wrap gap-2 category-filter-wrapper">

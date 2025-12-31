@@ -9,8 +9,8 @@ import { trackEvent } from "../../../utils/analytics/ga";
 import servicesList from "../../../components/database/serviceList.json"
 import Select from "react-select";
 import makeAnimated from 'react-select/animated';
-import logo from '../../../assets/mradulsharma.jpeg';
-
+import logo from '../../../assets/mradulsharma.webp';
+import SectionHeader from "../../../components/common/SectionHeader";
 const animatedComponents = makeAnimated();
 const LIBRARIES = []; // Define libraries array outside component to prevent re-renders
 
@@ -67,7 +67,12 @@ const ContactSection = () => {
         }
         setValidationError("");
         setNotDone(false);
-        emailjs.sendForm("service_mradul", "template_hzio3hj", form.current, "OWljxBdzr02unWI2z")
+        emailjs.sendForm(
+            process.env.REACT_APP_EMAILJS_SERVICE_ID,
+            process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+            form.current,
+            process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+        )
             .then((result) => {
                 console.log("EmailJS Success:", result.text);
                 trackEvent({ name: "submit_contact_form", category: "Contact", label: "Success" });
@@ -91,10 +96,7 @@ const ContactSection = () => {
     const mapContainerStyle = { width: "100%", height: "600px", borderRadius: "12px", overflow: "hidden" };
     return (
         <section id="contact" className="contact section py-5">
-            <Container className="section-title">
-                <h2 className="text-white">Contact</h2>
-                <p className="text-white">Feel free to get in touch — whether it's a project, collaboration, or just a technical chat.</p>
-            </Container>
+            <SectionHeader title="Contact" description="Feel free to get in touch — whether it's a project, collaboration, or just a technical chat." className=" py-4 px-3 text-white" />
             <Container data-aos="fade-up" data-aos-delay="100">
                 <Row className="g-4 g-lg-5">
                     <Col lg={5}>

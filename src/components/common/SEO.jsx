@@ -13,6 +13,8 @@ const SEO = ({
     ogUrl,
     twitterCard = "summary_large_image",
     canonicalUrl,
+    prevUrl,
+    nextUrl,
     schema
 }) => {
     const location = useLocation();
@@ -21,11 +23,17 @@ const SEO = ({
     // Normalize URL helper
     const normalizeUrl = (url) => {
         if (!url) return url;
+        
+        // Ensure https
         let normalized = url.replace(/^http:/, 'https:');
-        if (normalized.endsWith('/') && normalized !== `${baseUrl}/`) {
-            normalized = normalized.slice(0, -1);
+        
+        // Remove trailing slash except for the root domain
+        const urlObj = new URL(normalized, baseUrl);
+        if (urlObj.pathname.endsWith('/') && urlObj.pathname !== '/') {
+            urlObj.pathname = urlObj.pathname.slice(0, -1);
         }
-        return normalized;
+        
+        return urlObj.toString();
     };
 
     const currentUrl = normalizeUrl(canonicalUrl || ogUrl || `${baseUrl}${location.pathname}`);
@@ -48,6 +56,10 @@ const SEO = ({
 
             {/* Canonical URL */}
             <link rel="canonical" href={currentUrl} />
+
+            {/* Pagination Links */}
+            {prevUrl && <link rel="prev" href={normalizeUrl(prevUrl)} />}
+            {nextUrl && <link rel="next" href={normalizeUrl(nextUrl)} />}
 
             {/* Open Graph / Facebook */}
             <meta property="og:type" content="website" />

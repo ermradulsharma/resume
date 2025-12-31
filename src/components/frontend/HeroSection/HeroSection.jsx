@@ -1,15 +1,19 @@
 import { Row, Col, Button, Container } from 'react-bootstrap';
-import logo from '../../../assets/mradulsharma.jpeg';
+import logo from '../../../assets/mradulsharma.webp';
 import '../../frontend/HeroSection/HeroSection.css'
 import data from "../../database/localDB.json";
 import Type from '../Type/Type';
 import SocialLinks from '../SocialLinks/SocialLinks';
 import { FaCode, FaDocker, FaLaravel, FaNodeJs, FaReact } from 'react-icons/fa';
+import { Helmet } from 'react-helmet-async';
 
 const HeroSection = () => {
     const home = data.home;
     return (
         <section id="hero" className="hero section py-lg-5">
+            <Helmet>
+                <link rel="preload" as="image" href={logo} type="image/webp" />
+            </Helmet>
             <Container>
                 <Row className="align-items-center flex-md-row flex-column-reverse gap-lg-0 gap-3">
                     <Col lg={6} className="hero-content" data-aos="fade-right" data-aos-delay="100">
@@ -58,8 +62,8 @@ const HeroSection = () => {
                                 </div>
                             </div>
                             <picture>
-                                <source srcSet={`${logo}`} type="image/webp" />
-                                <img src={logo} alt="Portfolio Hero" className="img-fluid hero-main-image" loading="lazy" width="800" height="600" srcSet={`${logo} 700w, ${logo} 1400w, ${logo} 2800w`} sizes="(max-width: 768px) 100vw, 700px" />
+                                <source srcSet={logo} type="image/webp" />
+                                <img src={logo} alt="Portfolio Hero" className="img-fluid hero-main-image" loading="lazy" width="800" height="600" />
                             </picture>
                             <div className="image-overlay d-none d-md-block"></div>
                         </div>

@@ -1,7 +1,7 @@
 .portfolio-hero {
     position: relative;
     height: 50vh;
-    background: url('../../../assets/portfolio_section.png') 0% 0% /cover no-repeat;
+    background: url('../../../assets/portfolio_section.webp') 0% 0% /cover no-repeat;
 }
 
 .portfolio-hero .overlay {

@@ -1,5 +1,6 @@
 import React from "react";
-import { Card, Col, Row, Badge } from "react-bootstrap";
+import { Container, Card, Col, Row, Badge } from "react-bootstrap";
+import SectionHeader from "../../common/SectionHeader";
 import { Link } from "react-router-dom";
 import { BsClock, BsCalendar3 } from "react-icons/bs";
 import blogsData from "../../database/blogs.json";
@@ -48,14 +49,9 @@ const RelatedPosts = ({ currentPostId, category, tags = [], maxResults = 4 }) =>
     }
 
     return (
-        <section className="related-posts-section py-5">
-            <div className="container">
-                <h3 className="section-title mb-4">
-                    <span className="border-bottom border-primary border-3 pb-2">
-                        Related Posts
-                    </span>
-                </h3>
-
+        <section id="relatedPosts" className="relatedPosts">
+            <SectionHeader title="Related Posts" description="" />
+            <Container data-aos="fade-up" data-aos-delay="100">
                 <Row className="g-4">
                     {relatedPosts.map(post => (
                         <Col key={post.id} xs={12} sm={6} lg={3}>
@@ -107,8 +103,8 @@ const RelatedPosts = ({ currentPostId, category, tags = [], maxResults = 4 }) =>
                         </Col>
                     ))}
                 </Row>
-            </div>
-        </section>
+            </Container>
+        </section >
     );
 };
 

@@ -2,7 +2,7 @@
 # Contact Section
 --------------------------------------------------------------*/
 #contact {
-    background-image: url('../../../assets/back.png');
+    background-image: url('../../../assets/back.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -76,7 +76,7 @@
 .contact .info-item .icon-box {
     width: 3.5rem;
     height: 3.5rem;
-    background-color: color-mix(in srgb, var(--contrast-color), transparent 85%);
+    background-color: var(--contrast-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -85,13 +85,16 @@
     transition: 0.3s;
 }
 
-.contact .info-item .icon-box i {
+.contact .info-item .icon-box i,
+.contact .info-item .icon-box svg {
     font-size: 1.5rem;
-    color: var(--contrast-color);
+    color: var(--accent-color);
 }
 
 .contact .info-item:hover .icon-box {
-    background-color: color-mix(in srgb, var(--contrast-color), transparent 70%);
+    transform: scale(1.1);
+    background-color: var(--contrast-color);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 }
 
 .contact .info-item .content h4 {

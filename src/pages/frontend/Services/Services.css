@@ -1,7 +1,7 @@
 .services-hero {
     position: relative;
     height: calc(100vh - 77px);
-    background: url('../../../assets/services_banner.png') 65% 30% /cover no-repeat;
+    background: url('../../../assets/services_banner.webp') 65% 30% /cover no-repeat;
 }
 
 .services-hero .overlay {
@@ -143,7 +143,7 @@
 
     .services-hero {
         height: 20rem;
-        background: url('../../../assets/services_banner.png') 50% 0% / cover no-repeat;
+        background: url('../../../assets/services_banner.webp') 50% 0% / cover no-repeat;
     }
 }
 

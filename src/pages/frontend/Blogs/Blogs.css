@@ -4,8 +4,8 @@
 
 .blog-hero {
     position: relative;
-    height: 70vh;
-    background: url('../../../assets/blog_header.png') 50% 37% /cover no-repeat;
+    height: calc(80vh - 77px);
+    background: url('../../../assets/blog_header.webp') 65% 35% /cover no-repeat;
 }
 
 .view-toggle-buttons .btn {

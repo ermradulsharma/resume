@@ -5,7 +5,7 @@
 .legal-hero {
     position: relative;
     height: 60vh;
-    background: url('../../../assets/chat_icon.png') 35% 35%/cover no-repeat;
+    background: url('../../../assets/chat_icon.webp') 35% 35%/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;

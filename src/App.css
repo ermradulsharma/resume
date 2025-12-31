@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 :root {
     /* ---------------- Core Colors ---------------- */
@@ -93,7 +93,6 @@ h3,
 h4,
 h5,
 h6 {
-    /* color: var(--heading-color) !important; */
     font-weight: 600 !important;
 }
 
@@ -514,20 +513,8 @@ li {
 .tech-icons:hover {
     transform: scale(1.1) !important;
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3), 0 4px 6px rgba(0, 0, 0, 0.2) !important;
-    border-color: rgba(255, 255, 255, 0.4) !important;
+    border-color: var(--accent-color) !important;
     background: rgba(255, 255, 255, 0.2) !important;
-}
-
-@media (max-width: 767px) {
-    .tech-icons {
-        margin: 10px !important;
-    }
-}
-
-.tech-icons:hover {
-    transform: scale(1.05) !important;
-    overflow: hidden !important;
-    border: 2.2px solid var(--accent-color) !important;
     color: var(--accent-color);
 }
 
@@ -649,13 +636,14 @@ li {
 
 .section-title h2,
 .section-title h1 {
-    font-size: 36px;
-    font-weight: 700;
-    padding: 0;
+    /* font-size: 36px; */
+    /* font-weight: 700; */
+    /* padding: 0; */
     /* line-height: 1px; */
-    margin: 0;
-    letter-spacing: 0.5px;
-    position: relative;
+    /* margin: 0; */
+    /* letter-spacing: 0.5px; */
+    /* position: relative; */
+    color: var(--heading-color) !important;
 }
 
 .section-title h2::after,
@@ -666,4 +654,20 @@ li {
     display: inline-block;
     background: var(--accent-color);
     margin: 10px 10px;
+}
+
+section {
+    margin-bottom: 1.5rem;
+}
+
+.stat-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), var(--heading-color) 30%));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #ffffff;
 }

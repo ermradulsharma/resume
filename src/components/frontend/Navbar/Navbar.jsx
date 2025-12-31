@@ -3,8 +3,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
-import logo from '../../../assets/logo.png';
-import resume from '../../../assets/Resume/mradulsharma.pdf';
+import logo from '../../../assets/logo.webp';
+import resume from '../../../assets/resume/mradulsharma.pdf';
 import { useLocation, Link } from 'react-router-dom';
 import { trackEvent } from '../../../utils/analytics/ga';
 
@@ -34,7 +34,7 @@ function NavBar() {
                         <Nav.Item><Nav.Link as={Link} to="/services" className={isActive('/services')}>Services</Nav.Link></Nav.Item>
                         <Nav.Item><Nav.Link as={Link} to="/portfolio" className={isActive('/portfolio')}>Portfolio</Nav.Link></Nav.Item>
                         <Nav.Item><Nav.Link as={Link} to="/blogs" className={isActive('/blogs')}>Blogs</Nav.Link></Nav.Item>
-                        <Nav.Item><Nav.Link href="#contact" className="text-dark fw-bold fs-6">Contact</Nav.Link></Nav.Item>
+                        <Nav.Item><Nav.Link as={Link} to="/contact" className={isActive('/contact')}>Contact</Nav.Link></Nav.Item>
                         <Nav.Item className="d-flex align-items-center">
                             <Button
                                 variant="success"

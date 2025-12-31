@@ -1,0 +1,130 @@
+.public-calendar-container .fc {
+    font-family: inherit;
+}
+
+.public-calendar-container .fc-toolbar-title {
+    font-size: 1.25rem !important;
+    font-weight: 700;
+}
+
+.public-calendar-container .fc-button {
+    background-color: #f8f9fa;
+    border-color: #dee2e6;
+    color: #212529;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 0.875rem;
+}
+
+.public-calendar-container .fc-button:hover {
+    background-color: #e9ecef;
+    border-color: #ced4da;
+    color: #212529;
+}
+
+.public-calendar-container .fc-button-active {
+    background-color: #198754 !important;
+    border-color: #198754 !important;
+    color: #fff !important;
+}
+
+.public-calendar-container .fc-daygrid-day-number {
+    font-size: 0.9rem;
+    color: #495057;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.public-calendar-container .fc-col-header-cell-cushion {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 10px 0;
+    color: #6c757d;
+    text-decoration: none;
+}
+
+.public-calendar-container .fc-event {
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin: 1px 0;
+}
+
+.public-calendar-container .fc-day-today {
+    background-color: rgba(25, 135, 84, 0.05) !important;
+}
+
+/* New Styles for Search and Modal */
+.search-bar-wrapper {
+    max-width: 600px;
+    background: #fff;
+    border: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+
+.search-bar-wrapper:focus-within {
+    box-shadow: 0 5px 15px rgba(25, 135, 84, 0.1) !important;
+    border-color: #198754;
+}
+
+.project-detail-modal .modal-content {
+    border: none;
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+
+.project-detail-modal .modal-header {
+    padding: 2rem 2rem 0.5rem;
+}
+
+.project-detail-modal .modal-body {
+    padding: 1rem 2rem 2rem;
+}
+
+.project-detail-modal .modal-footer {
+    padding: 1rem 2rem 2rem;
+}
+
+.leading-relaxed {
+    line-height: 1.7;
+}
+
+.holiday-event {
+    cursor: default !important;
+}
+
+.holiday-event .fc-event-title {
+    padding: 2px 4px;
+}
+
+.project-sidebar-card {
+    border: none;
+    background: #fff;
+}
+
+.project-sidebar-item {
+    transition: all 0.2s ease;
+    border-left: 3px solid transparent;
+}
+
+.project-sidebar-item:hover {
+    background-color: #f8f9fa;
+    border-left-color: #198754;
+    padding-left: 1.25rem !important;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.transition-all {
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .public-calendar-container .fc-toolbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

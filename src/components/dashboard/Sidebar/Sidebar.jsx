@@ -1,6 +1,7 @@
 import React from "react";
 import { Nav } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
+import { BsSpeedometer2, BsKanban, BsGraphUp, BsGithub } from "react-icons/bs";
 
 const Sidebar = () => {
     const location = useLocation();
@@ -23,7 +24,7 @@ const Sidebar = () => {
                         to="/dashboard"
                         className={`d-flex align-items-center py-2 ${location.pathname === "/dashboard" ? "active fw-bold text-primary" : "text-dark"}`}
                     >
-                        <i className="me-2 bi bi-speedometer2" />
+                        <BsSpeedometer2 className="me-2" />
                         Dashboard
                     </Nav.Link>
                 </Nav.Item>
@@ -34,7 +35,7 @@ const Sidebar = () => {
                         to="/projects"
                         className={`d-flex align-items-center py-2 ${location.pathname === "/projects" ? "active fw-bold text-primary" : "text-dark"}`}
                     >
-                        <i className="me-2 bi bi-kanban" />
+                        <BsKanban className="me-2" />
                         Projects
                     </Nav.Link>
                 </Nav.Item>
@@ -45,7 +46,7 @@ const Sidebar = () => {
                         to="/analytics"
                         className={`d-flex align-items-center py-2 ${location.pathname === "/analytics" ? "active fw-bold text-primary" : "text-dark"}`}
                     >
-                        <i className="me-2 bi bi-graph-up" />
+                        <BsGraphUp className="me-2" />
                         Analytics
                     </Nav.Link>
                 </Nav.Item>
@@ -58,7 +59,7 @@ const Sidebar = () => {
                         target="_blank"
                         className="d-flex align-items-center py-2 text-dark"
                     >
-                        <i className="me-2 bi bi-github" />
+                        <BsGithub className="me-2" />
                         GitHub
                     </Nav.Link>
                 </Nav.Item>

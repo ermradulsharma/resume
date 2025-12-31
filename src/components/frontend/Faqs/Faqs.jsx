@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import faqs from "../../database/faq.json";
 import "../../frontend/Faqs/Faqs.css"
+import { BsChevronDown, BsChevronRight } from "react-icons/bs";
+import { Container, Row, Col } from "react-bootstrap";
+import SectionHeader from "../../common/SectionHeader";
+
 const Faqs = () => {
     const [activeIndex, setActiveIndex] = useState(0);
     const toggleFaq = (index) => {
@@ -9,14 +13,10 @@ const Faqs = () => {
     const data = faqs.faqs;
     return (
         <section id="faq" className="faq section">
-            <div className="container section-title">
-                <h2>Frequently Asked Questions</h2>
-                <p>Get insights into my experience, expertise, and working style.</p>
-            </div>
-
-            <div className="container">
-                <div className="row justify-content-center">
-                    <div className="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+            <SectionHeader title={faqs.title} description={faqs.description} />
+            <Container>
+                <Row className="justify-content-center">
+                    <Col lg={12} data-aos="fade-up" data-aos-delay="100">
                         <div className="faq-container">
                             {data.map((faq, index) => {
                                 const isActive = activeIndex === index;
@@ -26,14 +26,14 @@ const Faqs = () => {
                                         <div className="faq-content" style={{ display: isActive ? "block" : "none" }}>
                                             <p>{faq.answer}</p>
                                         </div>
-                                        <i className={`faq-toggle bi ${isActive ? "bi-chevron-down" : "bi-chevron-right"}`}></i>
+                                        {isActive ? <BsChevronDown className="faq-toggle" /> : <BsChevronRight className="faq-toggle" />}
                                     </div>
                                 );
                             })}
                         </div>
-                    </div>
-                </div>
-            </div>
+                    </Col>
+                </Row>
+            </Container>
         </section>
     );
 };

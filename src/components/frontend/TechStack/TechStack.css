@@ -51,7 +51,7 @@
 }
 
 .skills .skills-grid .skill-card .skill-item {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .skills .skills-grid .skill-card .skill-item:last-child {
@@ -117,14 +117,13 @@
 
 .skills .skills-summary h3 {
     color: var(--heading-color);
-    margin-bottom: 20px;
-    font-size: 24px;
+    /* font-size: 24px; */
 }
 
 .skills .skills-summary p {
-    color: color-mix(in srgb, var(--default-color), transparent 20%);
+    /* color: color-mix(in srgb, var(--default-color), transparent 20%);
     margin-bottom: 30px;
-    line-height: 1.6;
+    line-height: 1.6; */
 }
 
 .skills .skills-summary .summary-stats {
@@ -142,7 +141,7 @@
     margin-bottom: 0;
 }
 
-.skills .skills-summary .summary-stats .stat-item .stat-circle {
+/* .skills .skills-summary .summary-stats .stat-item .stat-circle {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -151,7 +150,7 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-}
+} */
 
 .skills .skills-summary .summary-stats .stat-item .stat-circle i {
     color: var(--contrast-color);

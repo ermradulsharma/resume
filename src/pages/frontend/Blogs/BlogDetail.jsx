@@ -7,8 +7,7 @@ import blogsData from "../../../components/database/blogs.json";
 import "./Blogs.css";
 import "./BlogDetail.css";
 import LetsConnect from "../../../components/LetsConnect";
-import logo from "../../../assets/logo.png"
-import ContactSection from "../../../components/frontend/Contact/Contact";
+import logo from "../../../assets/logo.webp"
 import RelatedPosts from "../../../components/frontend/RelatedPosts/RelatedPosts";
 
 const BlogDetail = () => {
@@ -178,7 +177,6 @@ const BlogDetail = () => {
                 tags={post.tags}
                 maxResults={4}
             />
-            <ContactSection />
             <LetsConnect />
         </article>
     );

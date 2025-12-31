@@ -1,15 +1,21 @@
 import React, { useState } from "react";
-import { Container, Card, Button, Badge, Modal, Pagination } from "react-bootstrap";
+import { Container, Card, Button, Badge, Pagination } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import SEO from "../../../components/common/SEO";
 import "../../frontend/Portfolio/Portfolio.css";
 import data from "../../../components/database/portfolio.json";
 import LetsConnect from "../../../components/LetsConnect";
-import ContactSection from "../../../components/frontend/Contact/Contact";
 import { trackEvent } from "../../../utils/analytics/ga";
+import SectionHeader from "../../../components/common/SectionHeader";
+import { getSafeProjectImage } from "../../../utils/imageUtils";
 
 const TechBadges = ({ items }) => (
     <div className="d-flex flex-wrap gap-2 mt-2">
-        {items.map((t) => (<Badge key={t} bg="success-subtle" text="dark" className="fw-normal"> {t} </Badge>))}
+        {items.map((t) => (
+            <Badge key={t} bg="success-subtle" text="dark" className="fw-normal">
+                {t}
+            </Badge>
+        ))}
     </div>
 );
 
@@ -21,35 +27,26 @@ const truncateText = (text, maxLength = 155) => {
 export default function Portfolio() {
     const { title, description, projectsList } = data.projects;
     const [filter, setFilter] = useState("All");
-    const [showModal, setShowModal] = useState(false);
-    const [activeProject, setActiveProject] = useState(null);
 
     // Pagination states
     const [currentPage, setCurrentPage] = useState(1);
     const projectsPerPage = 8;
 
     // Filter projects by technology
-    const filteredProjects = projectsList.filter((p) => filter === "All" ? true : p.technologies.some((tech) => tech.toLowerCase().includes(filter.toLowerCase())));
+    const filteredProjects = projectsList.filter((p) =>
+        filter === "All" ? true : p.technologies.some((tech) => tech.toLowerCase().includes(filter.toLowerCase()))
+    );
 
     // Reset page if filter changes
-    React.useEffect(() => { setCurrentPage(1); }, [filter]);
+    React.useEffect(() => {
+        setCurrentPage(1);
+    }, [filter]);
 
     // Pagination logic
     const totalPages = Math.ceil(filteredProjects.length / projectsPerPage);
     const indexOfLast = currentPage * projectsPerPage;
     const indexOfFirst = indexOfLast - projectsPerPage;
     const currentProjects = filteredProjects.slice(indexOfFirst, indexOfLast);
-
-    const handleShow = (project) => {
-        setActiveProject(project);
-        setShowModal(true);
-        trackEvent({ name: "view_case_study", category: "Projects", label: project.title });
-    };
-
-    const handleClose = () => {
-        setActiveProject(null);
-        setShowModal(false);
-    };
 
     return (
         <section className="portfolio-section py-0">
@@ -66,53 +63,75 @@ export default function Portfolio() {
             </div>
 
             {/* Project Cards Section */}
-            <Container className="section-title py-4 px-3">
-                <h1>{title}</h1>
-                <p>{description}</p>
-                <p className="text-secondary">
-                    Welcome to my portfolio showcase. Here you will find a curated collection of my work, ranging from complex enterprise applications to innovative startups.
-                    Each project represents a unique challenge solved with modern technology stacks including Laravel, React, Node.js, and AWS.
-                    Explore the case studies to understand my problem-solving approach, architectural decisions, and the tangible results delivered.
-                </p>
-            </Container>
-
+            <SectionHeader
+                title={title}
+                description={description}
+                className=" py-4 px-3"
+            />
             <Container>
                 {/* Filters */}
                 <header className="d-flex flex-column flex-md-row align-items-md-center justify-content-end mb-4 gap-2">
                     <div className="d-flex gap-1 flex-wrap">
-                        {["All", "PHP", "Laravel", "CodeIgniter", "Vue.js", "React.js", "Next.js", "Mautic"].map((btn) => (<Button key={btn} variant={filter === btn ? "success" : "outline-secondary"} size="sm" style={{ minWidth: "100px" }} onClick={() => { setFilter(btn); trackEvent({ name: "filter_projects", category: "Projects", label: btn }); }}>{btn}</Button>))}
+                        {["All", "PHP", "Laravel", "CodeIgniter", "Vue.js", "React.js", "Next.js", "Mautic"].map((btn) => (
+                            <Button
+                                key={btn}
+                                variant={filter === btn ? "success" : "outline-secondary"}
+                                size="sm"
+                                style={{ minWidth: "100px" }}
+                                onClick={() => {
+                                    setFilter(btn);
+                                    trackEvent({ name: "filter_projects", category: "Projects", label: btn });
+                                }}
+                            >
+                                {btn}
+                            </Button>
+                        ))}
                     </div>
                 </header>
 
-                {/* Project Grid with CSS Grid */}
+                {/* Project Grid */}
                 <div className="project-grid">
                     {currentProjects.map((p, index) => (
-                        <Card key={index} className="shadow-lg project-card p-0">
-                            <div className="overflow-hidden rounded-top">
-                                <Card.Img
-                                    src={require(`../../../assets/projects/${p.image}`)}
-                                    alt={p.title}
-                                    className="rounded-0"
-                                    width="100%"
-                                    height={200}
-                                    style={{ objectFit: "cover" }}
-                                    loading="lazy"
-                                />
-                                <div className="overlay d-flex justify-content-center align-items-center">
-                                    <Button variant="success" onClick={() => handleShow(p)} size="sm">
-                                        Case Study
-                                    </Button>
+                        <Card key={index} className="shadow-lg project-card p-0 border-0 overflow-hidden">
+                            <Link
+                                to={`/portfolio/${p.slug}`}
+                                className="text-decoration-none"
+                                onClick={() => trackEvent({ name: "view_case_study", category: "Projects", label: p.title })}
+                            >
+                                <div className="card-img-wrapper position-relative overflow-hidden">
+                                    <Card.Img
+                                        src={getSafeProjectImage(p.image)}
+                                        alt={p.title}
+                                        height={220}
+                                        style={{ objectFit: "cover" }}
+                                        loading="lazy"
+                                        onError={(e) => { e.target.src = 'https://via.placeholder.com/400x220?text=Project+Image'; }}
+                                    />
+                                    <div className="overlay d-flex justify-content-center align-items-center">
+                                        <Button as="span" variant="success" className="fw-bold">
+                                            Case Study
+                                        </Button>
+                                    </div>
                                 </div>
-                            </div>
-                            <Card.Body>
-                                <div className="d-flex justify-content-between align-items-start">
-                                    <Card.Title className="fs-6 fw-semibold mb-1 my-min-height-38">
-                                        {p.title}
-                                    </Card.Title>
-                                    <Badge bg="info" text="light">{p.period}</Badge>
+                            </Link>
+                            <Card.Body className="p-4 d-flex flex-column">
+                                <div className="d-flex justify-content-between align-items-start mb-2">
+                                    <Link
+                                        to={`/portfolio/${p.slug}`}
+                                        className="text-decoration-none text-dark flex-grow-1"
+                                        onClick={() => trackEvent({ name: "view_case_study", category: "Projects", label: p.title })}
+                                    >
+                                        <Card.Title
+                                            className="h6 fw-bold mb-0 project-title"
+                                            style={{ minHeight: "40px" }}
+                                        >
+                                            {p.title}
+                                        </Card.Title>
+                                    </Link>
+                                    <Badge bg="success-subtle" text="success" className="border border-success-subtle">{p.period}</Badge>
                                 </div>
-                                <Card.Text className="text-secondary mb-2">
-                                    {truncateText(p.description, 155)}
+                                <Card.Text className="text-secondary small mb-3">
+                                    {truncateText(p.description, 140)}
                                 </Card.Text>
                                 <TechBadges items={p.technologies} />
                             </Card.Body>
@@ -120,14 +139,21 @@ export default function Portfolio() {
                     ))}
                 </div>
 
-
                 {/* Pagination Controls */}
                 {totalPages > 1 && (
-                    <div className="d-flex justify-content-center mt-4">
+                    <div className="d-flex justify-content-center mt-5">
                         <Pagination>
                             <Pagination.First onClick={() => setCurrentPage(1)} disabled={currentPage === 1} />
                             <Pagination.Prev onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))} disabled={currentPage === 1} />
-                            {Array.from({ length: totalPages }, (_, i) => (<Pagination.Item key={i + 1} active={i + 1 === currentPage} onClick={() => setCurrentPage(i + 1)}>{i + 1}</Pagination.Item>))}
+                            {Array.from({ length: totalPages }, (_, i) => (
+                                <Pagination.Item
+                                    key={i + 1}
+                                    active={i + 1 === currentPage}
+                                    onClick={() => setCurrentPage(i + 1)}
+                                >
+                                    {i + 1}
+                                </Pagination.Item>
+                            ))}
                             <Pagination.Next onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))} disabled={currentPage === totalPages} />
                             <Pagination.Last onClick={() => setCurrentPage(totalPages)} disabled={currentPage === totalPages} />
                         </Pagination>
@@ -135,104 +161,6 @@ export default function Portfolio() {
                 )}
             </Container>
 
-            {/* Modal */}
-            <Modal show={showModal} onHide={handleClose} centered size="lg">
-                <Modal.Header closeButton className="p-3">
-                    <Modal.Title className="fs-6 fw-semibold">{activeProject?.title}</Modal.Title>
-                </Modal.Header>
-                <Modal.Body className="px-3">
-                    {activeProject?.case_study?.overview && (
-                        <>
-                            <h3 className="h5 fw-bold">Overview</h3>
-                            <p className="text-secondary">{activeProject.case_study.overview}</p>
-                        </>
-                    )}
-
-                    {activeProject?.case_study?.problem_statement?.length > 0 && (
-                        <>
-                            <h3 className="h5 fw-bold mt-3">Problem Statement</h3>
-                            <ul>{activeProject.case_study.problem_statement.map((problem, idx) => (<li key={idx}>{problem}</li>))}</ul>
-                        </>
-                    )}
-
-                    {activeProject?.case_study?.objectives?.length > 0 && (
-                        <>
-                            <h3 className="h5 fw-bold mt-3">Objectives</h3>
-                            <ul>
-                                {activeProject.case_study.objectives.map((obj, idx) => (
-                                    <li key={idx}>{obj}</li>
-                                ))}
-                            </ul>
-                        </>
-                    )}
-
-                    {activeProject?.case_study?.implemented && (
-                        <>
-                            <h3 className="h5 fw-bold mt-3">
-                                {activeProject.case_study.implemented.title}
-                            </h3>
-                            <ul>
-                                {activeProject.case_study.implemented.key_features.map((f, idx) => (
-                                    <li key={idx}>{f}</li>
-                                ))}
-                            </ul>
-                        </>
-                    )}
-
-                    {activeProject?.case_study?.challenges_and_solutions?.length > 0 && (
-                        <>
-                            <h3 className="h5 fw-bold mt-3">Challenges & Solutions</h3>
-                            <div className="table-responsive">
-                                <table className="table table-bordered table-sm align-middle">
-                                    <thead className="table-light">
-                                        <tr>
-                                            <th className="text-center" style={{ width: "50%" }}>
-                                                Challenge
-                                            </th>
-                                            <th className="text-center" style={{ width: "50%" }}>
-                                                Solution
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        {activeProject.case_study.challenges_and_solutions.map(
-                                            (item, idx) => (
-                                                <tr key={idx}>
-                                                    <td>{item.challenge}</td>
-                                                    <td>{item.solution}</td>
-                                                </tr>
-                                            )
-                                        )}
-                                    </tbody>
-                                </table>
-                            </div>
-                        </>
-                    )}
-
-                    {activeProject?.case_study?.outcomes?.length > 0 && (
-                        <>
-                            <h3 className="h5 fw-bold mt-3">Outcomes</h3>
-                            <ul>
-                                {activeProject.case_study.outcomes.map((outcome, idx) => (
-                                    <li key={idx}>{outcome}</li>
-                                ))}
-                            </ul>
-                        </>
-                    )}
-
-                    {activeProject?.technologies?.length > 0 && (
-                        <div className="mt-3 d-flex flex-wrap gap-2">
-                            {activeProject.technologies.map((tech, i) => (
-                                <Badge bg="success-subtle" text="dark" className="fw-normal" key={i} > {tech}{" "} </Badge>
-                            ))}
-                        </div>
-                    )}
-                </Modal.Body>
-                <Modal.Footer className="p-2 border-0">
-                    <Button variant="danger" size="sm" className="m-0 px-4" onClick={handleClose}>Close</Button>
-                </Modal.Footer>
-            </Modal>
-            <ContactSection />
             <LetsConnect />
         </section>
     );

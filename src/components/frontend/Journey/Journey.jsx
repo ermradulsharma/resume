@@ -1,27 +1,25 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import data from "../../database/about.json";
+import { BsBriefcase, BsMortarboard } from "react-icons/bs";
+import SectionHeader from "../../common/SectionHeader";
 
 const Journey = () => {
     const professional = data.about.experience;
     const educations = data.about.education;
     return (
         <section id="resume" className="resume section">
-            <Container className="section-title">
-                <Row>
-                    <Col lg={8}>
-                        <h2>My Journey</h2>
-                        <p>A comprehensive overview of my academic background and professional journey.</p>
-                    </Col>
-                </Row>
-            </Container>
+            <SectionHeader
+                title="My Journey"
+                description="A comprehensive overview of my academic background and professional journey."
+            />
             <Container data-aos="fade-up" data-aos-delay="100">
                 <Row>
                     <Col lg={6} data-aos="fade-right" data-aos-delay="200">
                         <div className="experience-section">
                             <div className="section-header">
-                                <h2><i className="bi bi-briefcase"></i> Professional Journey</h2>
-                                <p className="section-subtitle">Proven track record of delivering scalable solutions across multiple industries using full-stack technologies.</p>
+                                <h2 className="mb-1" style={{ color: "var(--heading-color)" }}><BsBriefcase style={{ color: "var(--accent-color)" }} /> Professional Journey</h2>
+                                <p style={{ color: "var(--default-color)" }} className="mb-0 section-subtitle">Proven track record of delivering scalable solutions across multiple industries using full-stack technologies.</p>
                             </div>
                             <div className="experience-cards">
                                 {professional.map((item, index) => (
@@ -51,8 +49,8 @@ const Journey = () => {
                     <Col lg={6} data-aos="fade-left" data-aos-delay="200">
                         <div className="education-section">
                             <div className="section-header">
-                                <h2><i className="bi bi-mortarboard"></i> Academic Excellence </h2>
-                                <p className="section-subtitle">Strong foundation in engineering and analytical thinking, complemented by real-world software experience.</p>
+                                <h2 className="mb-1" style={{ color: "var(--heading-color)" }}><BsMortarboard style={{ color: "var(--accent-color)" }} /> Academic Excellence </h2>
+                                <p style={{ color: "var(--default-color)" }} className="mb-0 section-subtitle">Strong foundation in engineering and analytical thinking, complemented by real-world software experience.</p>
                             </div>
                             <div className="education-timeline">
                                 <div className="timeline-track"></div>
@@ -61,7 +59,7 @@ const Journey = () => {
                                         <div className="timeline-marker"></div>
                                         <div className="education-content">
                                             <div className="degree-header">
-                                                <h3>{edu.role}</h3>
+                                                <h3 style={{ color: "var(--heading-color)" }}>{edu.role}</h3>
                                                 <span className="year">{edu.duration}</span>
                                             </div>
                                             <h4 className="institution">{edu.place}, {edu.location}</h4>

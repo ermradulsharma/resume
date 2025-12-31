@@ -4,16 +4,22 @@ import Maintenance from "../Maintenance/Maintenance";
 import * as ServiceComponents from "../../components/frontend/serviceContents";
 import "../modals/ServiceModal.css"
 
+import { getServiceIcon } from "../../utils/serviceIcons";
+
 const ServiceModal = ({ show, handleClose, title, icon, content }) => {
     const SelectedContent = ServiceComponents[content];
+    const IconComponent = getServiceIcon(icon);
     return (
         <Modal show={show} onHide={handleClose} centered size="lg" className="service-modal">
             <Modal.Header closeButton>
-                <Modal.Title className="fw-bold d-flex align-items-center text-white"><i className={`bi ${icon} me-2`}></i>{title}</Modal.Title>
+                <Modal.Title className="fw-bold d-flex align-items-center text-white">
+                    {IconComponent && <IconComponent className="me-2" />}
+                    {title}
+                </Modal.Title>
             </Modal.Header>
             <Modal.Body>
                 <div className="modal-content-wrapper">
-                    {content ? (<SelectedContent /> ) : ( <Maintenance /> )}
+                    {content ? (<SelectedContent />) : (<Maintenance />)}
                 </div>
             </Modal.Body>
             <Modal.Footer>

@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import SEO from "../../../components/common/SEO";
 import "../About/About.css";
-import image from "../../../assets/mradulsharma_another.JPG";
+import image from "../../../assets/mradulsharma_another.webp";
 import data from "../../../components/database/about.json"
 import SocialLinks from "../../../components/frontend/SocialLinks/SocialLinks";
 import TechStack from "../../../components/frontend/TechStack/TechStack";
@@ -11,9 +11,19 @@ import "../../../components/frontend/Journey/Journey.css";
 import Faqs from "../../../components/frontend/Faqs/Faqs";
 import LetsConnect from "../../../components/LetsConnect";
 import Services from "../../../components/frontend/Services/Services";
+import signature from '../../../assets/signature.webp'
+import Button from 'react-bootstrap/Button';
+import resume from '../../../assets/resume/mradulsharma.pdf';
+import { trackEvent } from "../../../utils/analytics/ga";
+
+
 
 const About = () => {
-    const { expandedAbout, expandedAbout6, expandedAbout7, expandedAbout8 } = data.about;
+    const { expandedAbout, expandedAbout3, expandedAbout7, } = data.about;
+    const handleDownloadResume = () => {
+        trackEvent({ action: "download_resume", category: "Engagement", label: "PDF Download" });
+    };
+
     return (
         <div className="about-page">
             <SEO
@@ -27,21 +37,29 @@ const About = () => {
                 <div className="overlay"></div>
                 <div className="hero-content">
                     <h1 className="display-4 fw-bold">About Me</h1>
-                    <p className="lead text-white">Crafting secure, scalable, and high-performance web applications using Laravel, React, and cloud-native technologies.</p>
+                    <p className="lead text-white">I craft secure, scalable, and high-performance web applications using Laravel, React, and cloud-native technologies. From designing robust backend systems to building interactive front-end experiences, I turn complex ideas into seamless, reliable, and user-friendly digital solutions that drive real impact.</p>
                 </div>
             </div>
-            <section className="about-section py-4">
+            <section className="about-section py-5">
                 <Container>
                     <Row className="align-items-start">
-                        <Col lg={4} data-aos="fade-right" className="d-lg-block d-none">
-                            <img src={image} alt="Mradul Sharma" className="img-fluid rounded-4 shadow" style={{ minHeight: "80vh" }} loading="lazy" width="600" height="400" />
-                        </Col>
-                        <Col lg={8} data-aos="fade-left" className="about-details">
+                        <Col lg={9} data-aos="fade-left" className="about-details">
                             <p style={{ color: "#B8B8B8" }}>{expandedAbout}</p>
-                            <p style={{ color: "#B8B8B8" }}>{expandedAbout6}</p>
+                            <p style={{ color: "#B8B8B8" }}>{expandedAbout3}</p>
                             <p style={{ color: "#B8B8B8" }}>{expandedAbout7}</p>
-                            <p style={{ color: "#B8B8B8" }}>{expandedAbout8}</p>
                             <SocialLinks withNames platforms={['GitHub', 'LinkedIn', 'X (Twitter)', 'Medium', 'Slack']} />
+                        </Col>
+                        <Col lg={3} data-aos="fade-right" data-aos-delay="200">
+                            <div className="profile-image-wrapper">
+                                <div className="profile-image">
+                                    <img src={image} alt="Profile" className="img-fluid" aria-label="Mradul Sharma" loading="lazy" width="300" height="400" />
+                                </div>
+                                <div className="signature-section">
+                                    <img src={signature} alt="Signature" className="signature" loading="lazy" width="300" height="80" />
+                                    <p className="quote text-secondary mb-1">Building meaningful digital experiences through thoughtful, creative code.</p>
+                                    <Button variant="primary" className='rounded-5 px-4 px-lg-4 py-2 mt-4' href={resume} download aria-label="Download Mradul Sharma Resume in PDF" onClick={handleDownloadResume}>⚡Resume PDF Download ⚡</Button>
+                                </div>
+                            </div>
                         </Col>
                     </Row>
                 </Container>

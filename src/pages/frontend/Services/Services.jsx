@@ -6,7 +6,8 @@ import { BsArrowRight } from "react-icons/bs";
 import data from "../../../components/database/services.json";
 import "../Services/Services.css";
 import ServiceModal from "../../../components/modals/ServiceModal";
-import ContactSection from "../../../components/frontend/Contact/Contact";
+
+import { getServiceIcon } from "../../../utils/serviceIcons";
 
 const Services = () => {
     const services = data.services.filter(service => service.title);
@@ -47,10 +48,11 @@ const Services = () => {
             <Container data-aos="fade-up" data-aos-delay="100" className="mb-3">
                 <Row className="g-4">
                     {services.filter(service => service.title && service.description).map((service, index) => {
+                        const IconComponent = getServiceIcon(service.icon);
                         return (
                             <Col key={index} lg={4} md={6} data-aos="fade-up" data-aos-delay={`${100 * (index % 3 + 1)}`}>
                                 <div className="service-item">
-                                    <div className="icon"><i className={`bi ${service.icon}`}></i></div>
+                                    <div className="stat-circle mb-2"><IconComponent /></div>
                                     <h3>{service.title}</h3>
                                     <p>{service.description}</p>
                                     <button className="link-item btn btn-primary px-4 py-2 text-white" onClick={() => handleShow(service)}>Learn More <BsArrowRight /></button>
@@ -60,7 +62,6 @@ const Services = () => {
                     })}
                 </Row>
             </Container>
-            <ContactSection />
             <LetsConnect />
             <ServiceModal show={showModal} handleClose={handleClose} title={activeService?.title} icon={activeService?.icon} content={activeService?.content} />
         </section>

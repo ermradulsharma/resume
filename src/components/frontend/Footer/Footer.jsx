@@ -20,7 +20,7 @@ const Footer = () => {
         <footer className="footer-section bg-dark text-white">
             <Container>
                 <Row className="py-5 gap-4 gap-lg-0">
-                    <Col lg={4} md={6}>
+                    <Col lg={3} md={6}>
                         <h3 className="h5 text-white mb-3">About {home.name}</h3>
                         <p className="text-white small">
                             {home.compactAbout}
@@ -49,7 +49,7 @@ const Footer = () => {
 
                         </div>
                     </Col>
-                    <Col lg={4} md={6}>
+                    <Col lg={3} md={6}>
                         <h3 className="h5 text-white mb-3">Quick Links</h3>
                         <ul className="list-unstyled">
                             <li className="mb-2">
@@ -59,18 +59,21 @@ const Footer = () => {
                                 <Link to="/about" className="text-white text-decoration-none footer-link">About Me</Link>
                             </li>
                             <li className="mb-2">
+                                <Link to="/contact" className="text-white text-decoration-none footer-link">Contact Us</Link>
+                            </li>
+                            <li className="mb-2">
                                 <Link to="/portfolio" className="text-white text-decoration-none footer-link">Portfolio</Link>
                             </li>
-                            {/* <li className="mb-2">
-                                <Link to="/services" className="text-white text-decoration-none footer-link">Services</Link>
-                            </li> */}
                             <li className="mb-2">
-                                <Link to="/blogs" className="text-white text-decoration-none footer-link">Blog</Link>
+                                <Link to="/blogs" className="text-white text-decoration-none footer-link">Blog Posts</Link>
+                            </li>
+                            <li className="mb-2">
+                                <Link to="/privacy" className="text-white text-decoration-none footer-link small">Privacy Policy</Link>
                             </li>
                         </ul>
                     </Col>
-                    {/* <Col lg={3} md={6}>
-                        <h5 className="text-white mb-3">Services</h5>
+                    <Col lg={3} md={6}>
+                        <h3 className="h5 text-white mb-3">Services</h3>
                         <ul className="list-unstyled">
                             <li className="mb-2">
                                 <Link to="/services" className="text-white text-decoration-none footer-link">Full-Stack Development</Link>
@@ -81,15 +84,12 @@ const Footer = () => {
                             <li className="mb-2">
                                 <Link to="/services" className="text-white text-decoration-none footer-link">Cloud Solutions</Link>
                             </li>
-                            <li className="mb-2">
+                            <li className="mb-3">
                                 <Link to="/services" className="text-white text-decoration-none footer-link">DevOps & CI/CD</Link>
                             </li>
-                            <li className="mb-2">
-                                <Link to="/services" className="text-white text-decoration-none footer-link">Technical Consulting</Link>
-                            </li>
                         </ul>
-                    </Col> */}
-                    <Col lg={4} md={6}>
+                    </Col>
+                    <Col lg={3} md={6}>
                         <h3 className="h5 text-white mb-3">Get In Touch</h3>
                         <ul className="list-unstyled d-flex flex-column gap-2">
                             {email && (

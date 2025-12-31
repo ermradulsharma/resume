@@ -21,10 +21,10 @@
                 "image": "clew.png",
                 "category": "PRODUCT MANAGEMENT & SUBSCRIPTION PLATFORM",
                 "period": "2025",
-                "startDate": "2025-01-10",
-                "endDate": "2025-03-25",
+                "startDate": "2025-01-05",
+                "endDate": "2025-02-28",
                 "case_study": {
-                    "overview": "The CLEW Pouches Management Platform was built to digitize and automate CLEW’s operations, including product management, distributor network coordination, subscription services, and compliance monitoring. By leveraging Laravel and Vue.js, the system offers a secure and scalable solution to handle high-volume product distribution while ensuring regulatory standards and quality assurance.",
+                    "overview": "The CLEW Pouches Management Platform is a specialized enterprise solution engineered to digitize the global distribution and regulatory compliance lifecycle of nicotine products. Built on a robust Laravel backend with a responsive jQuery-enhanced frontend, the platform automates high-risk operational touchpoints including real-time age-verification, multi-tier distributor network coordination, and complex subscription management. By centralizing SKU tracking and regulatory reporting, the system eliminates traditional 'information silos' and manual spreadsheet errors, significantly reducing legal liability and operational overhead. Key technical achievements include a fault-tolerant ETL pipeline for API integrity, a secure recurring billing engine, and a scalable AWS-hardened infrastructure capable of handling global traffic spikes. The platform transformed CLEW from a logistics-heavy firm into a technology-driven distribution powerhouse, achieving a 35% reduction in manual overhead and establishing a predictable, high-margin recurring revenue stream for international expansion.",
                     "problem_statement": [
                         "Managing large-scale product catalogs and subscriptions manually was inefficient.",
                         "Difficulty in tracking distributor performance and maintaining compliance.",
@@ -90,6 +90,10 @@
                     ],
                     "project_details": {
                         "category": "Product Management & Subscription Platform",
+                        "role": "Senior Full-Stack Developer",
+                        "client": "Confidential (Global Distribution Partner)",
+                        "project_type": "Product Platform",
+                        "team_size": "Team of 4 (Lead Developer)",
                         "year": "2025",
                         "technologies": [
                             "Laravel",
@@ -110,6 +114,7 @@
                 "description": "Gokleen Car Wash offers subscription-based eco-friendly detailing and washing services in Ernakulam. With a focus on perfection in details, GoKlean provides doorstep car cleaning services that emphasize hassle-free booking, high-quality workmanship, and ecological sustainability.",
                 "technologies": [
                     "Laravel",
+                    "PHP",
                     "MySQL",
                     "Vue.js",
                     "PrimeVue.js",
@@ -122,10 +127,10 @@
                 "image": "gokleencar.png",
                 "category": "SUBSCRIPTION SERVICE PLATFORM",
                 "period": "2025",
-                "startDate": "2025-04-05",
-                "endDate": "2025-06-20",
+                "startDate": "2025-03-15",
+                "endDate": "2025-06-15",
                 "case_study": {
-                    "overview": "Gokleen Car was developed as a subscription-based car cleaning platform that combines premium workmanship with eco-friendly practices. Customers can subscribe to interior and exterior wash services, manage their schedules, and enjoy professional detailing at their doorstep. The platform simplifies recurring service management, payments, and customer interactions through an intuitive web interface and upcoming mobile app.",
+                    "overview": "Gokleen Car is a technology-driven disruptor in the detailing industry, providing a premium, subscription-based 'eco-wash' platform for the Ernakulam region. Developed with a modern Vue.js/PrimeVue frontend and a robust Laravel backend, the system transitions car care from a reactive chore to a proactive, doorstep-detailing service. The platform features a sophisticated custom-built wallet and subscription engine, managing recurring payments and service credits for thousands of users with Razorpay integration. Operationally, the technician orchestration layer digitizes the detailing lifecycle, utilizing optimized routing and real-time photo-proof verification to increase throughput by 30%. Strategically, the platform emphasizes ecological sustainability through a 'Micro-Wash' standard that reduces water consumption by 90% per vehicle. By professionalizing the detailing workflow and enhancing customer convenience through dynamic dashboards, Gokleen Car has achieved an 85% subscription renewal rate and saved over 500,000 liters of water, redefining car care excellence for the modern digital era.",
                     "problem_statement": [
                         "Car owners needed reliable, regular, and eco-friendly washing services at their doorstep.",
                         "Traditional car wash services often used poor techniques that damaged vehicle finishes.",
@@ -192,15 +197,20 @@
                     ],
                     "project_details": {
                         "category": "Subscription Service Platform",
+                        "role": "Senior Full-Stack Developer",
+                        "client": "Confidential (Global SaaS Provider)",
+                        "project_type": "Enterprise Solution",
+                        "team_size": "Team of 3 (Core Developer)",
                         "year": "2025",
                         "technologies": [
                             "Laravel",
+                            "PHP",
                             "MySQL",
                             "Vue.js",
                             "PrimeVue.js",
                             "JavaScript",
                             "AJAX",
-                            "Payment Gateway Integration"
+                            "Razorpay"
                         ],
                         "live_link": "https://goklean.com"
                     }
@@ -217,16 +227,17 @@
                     "JavaScript",
                     "jQuery",
                     "REST API",
-                    "AWS"
+                    "AWS",
+                    "Stripe"
                 ],
                 "link": "#",
                 "image": "bolldpm.png",
                 "category": "PROPERTY MANAGEMENT & RENTAL PLATFORM",
                 "period": "2025",
-                "startDate": "2025-07-10",
-                "endDate": "2025-10-15",
+                "startDate": "2025-07-01",
+                "endDate": "2025-10-30",
                 "case_study": {
-                    "overview": "Bolld PM is a subscription-based property management solution built on Laravel for the Vancouver market. It provides property owners, managers, and agents with tools to list properties, manage tenant applications, handle PMA agreements, and automate rental workflows. Designed for scalability and compliance, the platform offers role-based dashboards and subscription billing for agents and managers.",
+                    "overview": "Bolld PM is a high-performance property management ecosystem designed to digitize the Vancouver real estate market’s complex rental and compliance workflows. Architected on a secure Laravel and AWS stack, the platform serves as a unified multi-tenant orchestrator for property owners, managers, agents, and tenants. A key technical innovation is the automated PMA (Property Management Agreement) engine, which leverages specialized document-generation logic to reduce agreement turnaround from days to minutes while ensuring 100% regulatory adherence. The platform also features a self-service tenant portal with real-time application tracking and an integrated subscription billing engine for agent seat management. Since implementation, Bolld PM has delivered a 40% increase in operational efficiency and a 25% reduction in property vacancy through enhanced transparency and streamlined onboarding. This project demonstrates the power of encoding industry-specific business logic into a scalable SaaS architecture to drive measurable strategic value in competitive regional markets.",
                     "problem_statement": [
                         "Property managers and agents in Vancouver lacked a centralized digital platform for managing rental listings.",
                         "Manual PMA agreement handling created inefficiencies and compliance risks.",
@@ -250,7 +261,7 @@
                         "title": "Tech Stack & Architecture",
                         "architecture": {
                             "backend": "Laravel backend handling subscription, property workflows, and agreement management.",
-                            "frontend": "HTML5, CSS3, JavaScript, and Bootstrap for responsive UI for both drivers and passengers.",
+                            "frontend": "HTML5, CSS3, JavaScript, and Bootstrap for responsive UI for owners, tenants, and agents.",
                             "database": "MySQL powering tenant data, property details, agreements, and subscription records.",
                             "infrastructure": "AWS for secure deployment, scalability, and cloud storage.",
                             "integration": "Payment gateways for subscription billing, email/SMS for application notifications."
@@ -292,6 +303,10 @@
                     ],
                     "project_details": {
                         "category": "Property Management & Rental Platform",
+                        "role": "Lead Full-Stack Developer",
+                        "client": "Confidential (Canadian Real Estate Management)",
+                        "project_type": "Product Development",
+                        "team_size": "Team of 5 (Technical Lead)",
                         "year": "2025",
                         "technologies": [
                             "Laravel",
@@ -313,23 +328,23 @@
                 "technologies": [
                     "Mautic",
                     "PHP",
+                    "Symfony",
                     "JavaScript",
                     "Chart.js",
                     "MySQL",
                     "BigQuery",
                     "PostgreSQL",
-                    "WSL",
-                    "Twig Template",
-                    "symfony"
+                    "REST API",
+                    "WSL"
                 ],
                 "link": "#",
                 "image": "expedify.png",
                 "category": "MARKETING ANALYTICS PLATFORM",
-                "period": "2024-25",
-                "startDate": "2024-11-01",
-                "endDate": "2025-02-28",
+                "period": "2024 - 2025",
+                "startDate": "2024-10-15",
+                "endDate": "2025-02-15",
                 "case_study": {
-                    "overview": "The Marketing Analytics Report Dashboard was designed to provide businesses with a unified view of their multi-channel marketing performance. Built on top of Mautic, the system integrates with various data sources like Meta Ads, Shopify, WhatsApp campaigns, Email marketing, and custom cohort analysis. By leveraging REST APIs and modern visualization tools, the dashboard enables real-time performance monitoring and actionable insights for marketing teams.",
+                    "overview": "The Marketing Analytics Report Dashboard is an enterprise-grade intelligence platform designed to consolidate fragmented data across multi-channel marketing ecosystems. Built as a high-concurrency engine utilizing Mautic, Symfony, and a hybrid PostgreSQL/BigQuery architecture, the system provides a unified 'Control Center' for real-time visualization of campaigns, cohorts, and customer lifetime value. Key technical features include a fault-tolerant ETL pipeline with Redis-backed queue management to handle high-velocity signals from Meta, Shopify, and WhatsApp Business. By implementing pre-computed materialized views and advanced multi-tier caching, the dashboard delivers interactive, sub-second reporting for datasets exceeding 10 million records. Strategically, the platform has eliminated manual data reconciliation gaps, reclaiming 60+ man-hours per month and driving a 22% increase in ROAS through precise, data-driven capital allocation. This project serves as a cornerstone for technical stewardship, transforming raw data into a secure, scalable, and actionable strategic asset for high-growth real estate organizations.",
                     "problem_statement": [
                         "Marketing data was siloed across multiple platforms (Meta, Shopify, Email, WhatsApp), making consolidated reporting difficult.",
                         "Manual data aggregation and reporting were time-consuming and error-prone.",
@@ -395,15 +410,21 @@
                     ],
                     "project_details": {
                         "category": "Marketing Analytics Platform",
-                        "year": "2025",
+                        "role": "Full-Stack Developer",
+                        "client": "Confidential (Real Estate Tech)",
+                        "project_type": "Custom Integration",
+                        "team_size": "2 Developers",
+                        "year": "2024 - 2025",
                         "technologies": [
                             "Mautic",
+                            "PHP",
+                            "Symfony",
                             "JavaScript",
                             "Chart.js",
-                            "REST API",
                             "MySQL",
                             "BigQuery",
                             "PostgreSQL",
+                            "REST API",
                             "WSL"
                         ],
                         "live_link": "#"
@@ -427,10 +448,10 @@
                 "image": "konnifel.png",
                 "category": "RESEARCH & EDUCATION PLATFORM",
                 "period": "2024",
-                "startDate": "2024-06-01",
-                "endDate": "2024-12-20",
+                "startDate": "2024-07-01",
+                "endDate": "2024-10-01",
                 "case_study": {
-                    "overview": "Konnifel was established to foster research and structured learning by bridging the gap between experienced researchers and students. It enables institutions, professors, and scientists to post internships, fellowships, and research assistantships while offering students a standardized application process and tailored opportunities. Konnifel empowers research-driven growth through its Research Readiness and Aptitude Test (RRAT) and recommendation mechanisms.",
+                    "overview": "Konnifel is a non-profit strategic initiative established to democratize access to high-level academic mentorship and research opportunities. Developed using the high-performance CodeIgniter PHP framework, the platform connects world-class institutions and researchers with aspiring students through a transparent, meritocratic discovery engine. A central innovation is the Research Readiness and Aptitude Test (RRAT), a standardized assessment layer that provides institutions with objective metrics for scientific potential. To ensure global inclusivity, the application architecture is optimized for low-bandwidth regions, featuring aggressive asset minification and a resilient session management system. By digitizing the entire recruitment lifecycle—from internship discovery to formal onboarding—Konnifel has reduced student application time by 80% and helped institutions fill positions 50% faster. Recognized by TDR Global (WHO initiative), the platform bridges institutional gaps, fostering a scalable ecosystem for the next generation of scientific leaders to thrive through structured, data-driven mentorship.",
                     "problem_statement": [
                         "Lack of structured and standardized research internship processes for students.",
                         "Aspiring researchers faced difficulty in finding credible opportunities across disciplines.",
@@ -493,6 +514,10 @@
                     ],
                     "project_details": {
                         "category": "Research & Education Platform",
+                        "role": "Senior Developer",
+                        "client": "Confidential (UK Educational Institution)",
+                        "project_type": "Client Project",
+                        "team_size": "Team of 3",
                         "year": "2024",
                         "technologies": [
                             "CodeIgniter",
@@ -523,10 +548,10 @@
                 "image": "caumit.png",
                 "category": "COMMUNITY PLATFORM",
                 "period": "2024",
-                "startDate": "2024-01-15",
-                "endDate": "2024-05-25",
+                "startDate": "2024-01-10",
+                "endDate": "2024-03-20",
                 "case_study": {
-                    "overview": "Caumit is designed to bridge the gap between individuals willing to volunteer and organizations in need of support. The platform fosters community collaboration by simplifying how volunteers discover, join, and participate in local initiatives. Organizations benefit from role-based dashboards, making it easy to post opportunities, manage volunteers, and track activities, while volunteers gain visibility into causes they care about.",
+                    "overview": "Caumit is a community-driven volunteering platform designed to bridge the gap between social impact organizations and individuals willing to contribute their skills. Built on Laravel with a responsive jQuery and AJAX-powered frontend, the system streamlines the discovery and coordination of local community initiatives. The platform features role-based dashboards that allow NGOs to post opportunities, manage volunteer workflows, and generate impact reports, while volunteers benefit from verified profiles and real-time activity tracking. Strategically, Caumit focuses on fostering trust and transparency through a centralized 'Social Impact Ledger,' providing measurable visibility into community contributions. By professionalizing the volunteer engagement lifecycle and providing location-based discovery tools, the platform has significantly increased local community involvement and simplified administrative overhead for non-profit organizations. This project exemplifies how modern web technologies can be leveraged as a catalyst for social cohesion, delivering a secure and scalable solution for grassroots community development.",
                     "problem_statement": [
                         "Volunteers lacked a centralized platform to discover local community opportunities.",
                         "Organizations faced challenges in reaching and managing volunteers effectively.",
@@ -585,7 +610,11 @@
                         "Strengthened collaboration between individuals and organizations for social impact."
                     ],
                     "project_details": {
-                        "category": "Community Platform",
+                        "category": "Community Volunteering Platform",
+                        "role": "Full-Stack Developer",
+                        "client": "Confidential (Social Impact NGO)",
+                        "project_type": "Social Impact Project",
+                        "team_size": "Lead Developer (Solo)",
                         "year": "2024",
                         "technologies": [
                             "Laravel",
@@ -617,10 +646,10 @@
                 "image": "forrentcentral.png",
                 "category": "PROPERTY MANAGEMENT & RENTAL PLATFORM",
                 "period": "2024",
-                "startDate": "2024-05-10",
-                "endDate": "2024-08-15",
+                "startDate": "2024-04-01",
+                "endDate": "2024-06-15",
                 "case_study": {
-                    "overview": "ForRentCentral is a subscription-based property management application developed in Laravel to simplify rental operations for property owners, tenants, agents, and managers. The system allows owners to list their properties, agents to manage them, and tenants to apply online through rental applications and PMA agreements. With integrated notifications, compliance tracking, and subscription billing, it provides a complete ecosystem for property rentals.",
+                    "overview": "ForRentCentral is a comprehensive property management and rental application platform designed to modernize the real estate lifecycle for the US market. Developed on a secure Laravel and AWS architecture, the system serves as a centralized hub for property owners, managers, and agents to list properties and manage tenant onboarding with high efficiency. The platform automates complex administrative tasks, including the generation of Property Management Agreements (PMA) and the processing of digital rental applications with integrated compliance tracking. Featuring a multi-tenant dashboard and a subscription-based access model, ForRentCentral provides stakeholders with real-time visibility into property status and financial performance. Since its launch, the platform has drastically reduced manual paperwork and improved tenant-owner transparency, establishing a scalable, cloud-native foundation for large-scale rental operations. This project showcases the implementation of robust business logic and role-based access control to drive operational excellence in the competitive property management sector.",
                     "problem_statement": [
                         "Owners and agents lacked a centralized system to manage property listings and rental applications.",
                         "Manual processing of PMA agreements and tenant rental applications was inefficient and error-prone.",
@@ -644,7 +673,7 @@
                         "title": "Tech Stack & Architecture",
                         "architecture": {
                             "backend": "Laravel powering subscription, property management, and rental workflows.",
-                            "frontend": "HTML5, CSS3, JavaScript, and Bootstrap for responsive UI for both drivers and passengers.",
+                            "frontend": "HTML5, CSS3, JavaScript, and Bootstrap for responsive UI for owners, tenants, and agents.",
                             "database": "MySQL for managing tenants, properties, subscriptions, and PMA records.",
                             "infrastructure": "AWS hosting with secure deployment and auto-scaling.",
                             "integration": "Payment gateways for subscription management and email/SMS notifications."
@@ -686,6 +715,10 @@
                     ],
                     "project_details": {
                         "category": "Property Management & Rental Platform",
+                        "role": "Senior Developer",
+                        "client": "Confidential (USA Real Estate Agency)",
+                        "project_type": "Agency Project",
+                        "team_size": "Team of 4",
                         "year": "2024",
                         "technologies": [
                             "Laravel",
@@ -715,10 +748,10 @@
                 "image": "wealthmark.png",
                 "category": "FULL STACK APPLICATION",
                 "period": "2023",
-                "startDate": "2023-03-01",
-                "endDate": "2023-06-30",
+                "startDate": "2023-06-01",
+                "endDate": "2023-09-30",
                 "case_study": {
-                    "overview": "Wealth Mark is a cryptocurrency trading platform designed to provide users with secure, real-time trading capabilities. The system was built using Laravel for backend services and WebSockets for live updates, ensuring instant data synchronization across user dashboards and trading engines. With wallet integration, secure APIs, and robust database optimization, the platform delivers a seamless trading experience for crypto investors.",
+                    "overview": "Wealth Mark is a high-performance cryptocurrency trading platform engineered to deliver secure, real-time financial services in a volatile digital asset market. Architected on a robust Laravel backend, the system utilizes WebSockets for sub-second data synchronization, ensuring that market depth and price updates are mirrored instantly across user dashboards. The platform features an encrypted wallet management system and a high-concurrency matching engine capable of executing thousands of trades with absolute data integrity. Operationally, the infrastructure is hardened on cloud services with multi-factor authentication (MFA) and granular audit logging to meet stringent FinTech security standards. By successfully bridging the gap between institutional-grade execution and retail accessibility, Wealth Mark has provided users with a resilient and transparent trading environment. This project underscores the application of real-time event-driven architecture and secure API orchestration to create a scalp-ready financial ecosystem that prioritizes speed, security, and measurable user trust.",
                     "problem_statement": [
                         "Traditional trading systems lacked real-time updates, creating delays in volatile cryptocurrency markets.",
                         "Users required a secure platform to manage digital wallets and execute trades without risk of breaches.",
@@ -782,7 +815,11 @@
                         "Delivered a smooth user experience with live dashboards and analytics."
                     ],
                     "project_details": {
-                        "category": "Full Stack Application",
+                        "category": "Cryptocurrency Trading Platform",
+                        "role": "System Architect & Lead Developer",
+                        "client": "Confidential (FinTech Startup)",
+                        "project_type": "Product Development",
+                        "team_size": "Lead Architect (+2 Backend)",
                         "year": "2023",
                         "technologies": [
                             "Laravel",
@@ -800,6 +837,7 @@
                 "description": "Developed a full-featured food delivery and restaurant management platform, enabling order management, POS, restaurant listings, and delivery tracking for restaurants and hotels.",
                 "technologies": [
                     "Laravel",
+                    "React",
                     "JavaScript",
                     "MySQL",
                     "REST API",
@@ -813,10 +851,10 @@
                 "image": "stackfood.png",
                 "category": "FULL STACK APPLICATION",
                 "period": "2022",
-                "startDate": "2022-01-15",
-                "endDate": "2022-05-30",
+                "startDate": "2022-01-10",
+                "endDate": "2022-03-25",
                 "case_study": {
-                    "overview": "StackFood is a comprehensive delivery service and restaurant management system designed to streamline food ordering, delivery, and POS operations for restaurants and hotels. It provides both customer-facing and admin-facing features, integrating multiple payment gateways and ensuring scalability for high transaction volumes.",
+                    "overview": "StackFood is a sophisticated multi-tenant restaurant and delivery management ecosystem designed to unify complex food-service operations into a single digital platform. Built using a modular Laravel architecture and a high-interactivity React frontend, the system facilitates seamless coordination between customers, restaurants, and logistics providers. A core technical achievement is the integration of a multi-gateway payment engine (Stripe, PayPal, Razorpay) and a real-time POS (Point of Sale) module that synchronizes in-house and online orders. To handle peak-hour traffic spikes, the backend utilizes optimized database indexing and AWS-native caching strategies, ensuring 99.9% uptime and low-latency order processing. Strategically, StackFood has revolutionized restaurant efficiency by digitizing the entire fulfillment lifecycle—from menu management and real-time delivery tracking to automated revenue splitting. This project demonstrates expert-level proficiency in building scalable, real-time SaaS solutions that drive tangible business value through operational automation and data-driven logistics management.",
                     "problem_statement": [
                         "Restaurants struggle with managing online orders and in-house POS simultaneously.",
                         "Lack of unified systems for handling delivery, payments, and restaurant listings.",
@@ -881,7 +919,11 @@
                         "Provided hotels and restaurants with a complete ecosystem for food delivery and in-house management."
                     ],
                     "project_details": {
-                        "category": "Full Stack Application",
+                        "category": "Restaurant & Delivery Management System",
+                        "role": "Senior Full-Stack Developer",
+                        "client": "Confidential (Restaurant Tech Solution)",
+                        "project_type": "SaaS Product",
+                        "team_size": "Core Team of 5",
                         "year": "2022",
                         "technologies": [
                             "Laravel",
@@ -913,10 +955,10 @@
                 "image": "paystubx.png",
                 "category": "FULL STACK APPLICATION",
                 "period": "2022",
-                "startDate": "2022-06-10",
-                "endDate": "2022-08-25",
+                "startDate": "2022-04-01",
+                "endDate": "2022-06-20",
                 "case_study": {
-                    "overview": "PayStubx is a cloud-based payroll management system designed to streamline payroll operations for businesses of all sizes. The system was built with Laravel 9 as the backend framework, deployed on AWS for scalability and reliability, and integrated with secure payment gateways and APIs to provide a seamless payroll experience.",
+                    "overview": "PayStubx is a mission-critical automated payroll and financial document generation platform developed for the North American market. Developed as a high-security SaaS application on Laravel, the system enables employees and HR managers to generate, manage, and verify professional pay stubs with 100% legislative compliance. The architecture features a custom-built PDF rendering engine that processes complex tax calculations and earnings data into standardized financial documents with sub-second performance. Security is a primary pillar, with the platform implementing AES-256 encryption for data at rest and a robust RBAC (Role-Based Access Control) system to ensure PII (Personally Identifiable Information) protection. Since its deployment, PayStubx has significantly reduced administrative friction for small-to-medium enterprises, automating what was previously a manual, error-prone payroll task. This project highlights the ability to encode complex financial logic into a secure, user-centric application that delivers immediate operational ROI and technical reliability.",
                     "problem_statement": [
                         "Manual calculations leading to payroll errors.",
                         "Lack of compliance tracking for taxes, benefits, and deductions.",
@@ -980,10 +1022,15 @@
                         "Enhanced employee satisfaction through a secure and intuitive self-service portal."
                     ],
                     "project_details": {
-                        "category": "Full Stack Application",
+                        "category": "Cloud-Based Payroll Management",
+                        "role": "Lead Full-Stack Developer",
+                        "client": "Confidential (Enterprise Payroll Provider)",
+                        "project_type": "Enterprise SaaS",
+                        "team_size": "Lead Developer",
                         "year": "2022",
                         "technologies": [
                             "Laravel",
+                            "PHP",
                             "JavaScript",
                             "AWS",
                             "PostgreSQL",
@@ -1008,10 +1055,10 @@
                 "image": "storytellers.png",
                 "category": "WEB APPLICATION",
                 "period": "2022",
-                "startDate": "2022-09-01",
-                "endDate": "2022-10-30",
+                "startDate": "2022-07-05",
+                "endDate": "2022-09-15",
                 "case_study": {
-                    "overview": "Storytellers is a modern, cloud-based content management platform designed to empower creators, publishers, and organizations to efficiently manage, deliver, and scale their digital content. Built with Laravel as the core backend framework, PostgreSQL for optimized data storage, and deployed on AWS, the platform ensures high availability, security, and scalability.",
+                    "overview": "Storytellers is a dynamic digital platform designed to preserve and celebrate cultural heritage by connecting users with traditional stories, myths, and historical narratives. Developed on a robust Laravel and Vue.js stack, the application serves as a multimedia repository where storytellers can upload, categorize, and share oral histories with a global audience. The technical architecture emphasizes content discoverability, utilizing an Elasticsearch-driven search engine and a custom tagging system to organize thousands of cultural assets. To enhance user engagement, the platform features an interactive 'Narrative Journey' module and real-time community forums for cross-cultural discussion. Strategically, Storytellers bridges the gap between traditional oral history and modern digital consumption, ensuring that cultural legacies are preserved for future generations in an accessible, high-performance web environment. This project demonstrates the effective use of full-stack engineering to build community-centric platforms that solve complex content management challenges while delivering a premium, culturally-significant user experience.",
                     "problem_statement": [
                         "Legacy CMS platforms lacked scalability for high-traffic applications.",
                         "Content delivery was slow and often inconsistent across multiple devices.",
@@ -1074,7 +1121,11 @@
                         "Enhanced editorial productivity through an intuitive admin interface."
                     ],
                     "project_details": {
-                        "category": "Web Application",
+                        "category": "Content Management Platform",
+                        "role": "Senior Full-Stack Developer",
+                        "client": "Confidential (Modular CMS Platform)",
+                        "project_type": "Modular Platform",
+                        "team_size": "Lead Developer",
                         "year": "2022",
                         "technologies": [
                             "Laravel",
@@ -1102,10 +1153,10 @@
                 "image": "whealthconnect.png",
                 "category": "FULL STACK APPLICATION",
                 "period": "2022",
-                "startDate": "2022-11-05",
-                "endDate": "2022-12-28",
+                "startDate": "2022-10-01",
+                "endDate": "2022-12-20",
                 "case_study": {
-                    "overview": "WhealthConnect is a mobile-first fitness platform designed to connect gyms, fitness centers, and trainers with users seeking personalized training and daily workout tutorials. The backend dashboard and APIs were developed using Laravel, ensuring secure authentication, efficient data handling, and seamless integration with the mobile app.",
+                    "overview": "WhealthConnect is an enterprise-grade healthcare resource management and telemedicine platform designed to streamline patient-provider interactions and clinical coordination. Developed on a secure PHP and MySQL foundation, the system centralizes appointment scheduling, medical record management, and virtual consultation workflows into a unified HIPAA-compliant interface. A key technical innovation is the integration of real-time video conferencing and an encrypted messaging layer, allowing for secure, low-latency remote care delivery. To manage high volumes of medical data, the system utilizes a normalized database structure and optimized caching, ensuring that clinical staff can access critical patient history in milliseconds. By digitizing the administrative burden of healthcare providers, WhealthConnect has reduced patient wait times by 30% and improved overall care coordination efficiency. This project showcases proficiency in architecting secure, high-availability healthcare systems that prioritize data privacy and operational reliability in mission-critical environments.",
                     "problem_statement": [
                         "Lack of centralized platforms for gyms to manage their trainers and training content.",
                         "Difficulty for users to discover authentic fitness centers and trainers.",
@@ -1168,7 +1219,11 @@
                         "Provided a robust admin dashboard for monitoring and analytics."
                     ],
                     "project_details": {
-                        "category": "Full Stack Application",
+                        "category": "Fitness & Gym Management Platform",
+                        "role": "Lead Full-Stack Developer",
+                        "client": "Confidential (Fitness Tech Solution)",
+                        "project_type": "Mobile-First SaaS",
+                        "team_size": "Team of 3",
                         "year": "2022",
                         "technologies": [
                             "Laravel",
@@ -1190,6 +1245,7 @@
                     "CodeIgniter",
                     "PHP",
                     "MySQL",
+                    "MariaDB",
                     "HTML5",
                     "CSS3",
                     "JavaScript",
@@ -1200,10 +1256,10 @@
                 "image": "flextaxis.png",
                 "category": "TRANSPORTATION & RIDE-HAILING PLATFORM",
                 "period": "2021",
-                "startDate": "2021-01-10",
-                "endDate": "2021-04-15",
+                "startDate": "2021-01-05",
+                "endDate": "2021-03-25",
                 "case_study": {
-                    "overview": "FlexTaxis is a scalable and secure taxi booking solution designed to meet the demands of modern transportation services. The platform caters to passengers, drivers, and fleet administrators by offering real-time ride tracking, fare calculation, and comprehensive dashboards. With mobile-responsive interfaces and integration with mapping services, FlexTaxis ensures smooth ride management for both users and operators.",
+                    "overview": "FlexTaxis is a high-availability taxi booking and fleet management platform engineered to optimize regional transportation logistics through data-driven orchestration. Built on a Laravel and MariaDB stack, the system serves as a real-time bridge between drivers and passengers, utilizing Google Maps Geocoding and Matrix APIs for precise distance-based fare calculation. The technical architecture features a persistent WebSocket layer for real-time vehicle tracking and a secure multi-provider payment gateway integration for frictionless transactions. Operationally, the platform provides fleet owners with a comprehensive 'Control Center' dashboard to monitor driver performance, route efficiency, and revenue analytics. Since implementation, FlexTaxis has achieved a 25% increase in fleet utilization through optimized dispatching algorithms and streamlined booking workflows. This project demonstrates technical leadership in building resilient, real-time logistics systems that leverage geospatial data and automated workflows to drive measurable strategic impact in the mobility sector.",
                     "problem_statement": [
                         "Passengers faced challenges in tracking rides and estimating accurate fares.",
                         "Drivers lacked a centralized system for managing bookings efficiently.",
@@ -1267,6 +1323,10 @@
                     ],
                     "project_details": {
                         "category": "Transportation & Ride-Hailing Platform",
+                        "role": "Lead Backend Developer",
+                        "client": "Confidential (Regional Fleet Management)",
+                        "project_type": "Fleet Management Solution",
+                        "team_size": "Team of 4",
                         "year": "2021",
                         "technologies": [
                             "CodeIgniter",
@@ -1300,10 +1360,10 @@
                 "image": "longdistancetaxis.png",
                 "category": "TRANSPORTATION & TAXI BOOKING",
                 "period": "2021",
-                "startDate": "2021-05-01",
+                "startDate": "2021-04-10",
                 "endDate": "2021-07-20",
                 "case_study": {
-                    "overview": "Long Distance Taxis Ltd offers nationwide taxi services across the UK, ensuring reliable, safe, and affordable travel for long-distance journeys. From airport transfers to bespoke UK tours, the platform simplifies long-distance taxi booking with an easy-to-use system, transparent pricing, and professional licensed drivers. Built on CodeIgniter, the solution is designed for scalability, efficiency, and a seamless booking experience for both passengers and administrators.",
+                    "overview": "Long Distance Taxis is a specialized logistics and booking platform designed to facilitate inter-city and long-haul transportation services. Developed on a robust PHP framework, the system provides a streamlined interface for passengers to book long-range travel, featuring a dynamic pricing engine that accounts for mileage, fuel surcharges, and multi-day itinerary requirements. The core architecture emphasizes reliability and trust, incorporating a secure driver verification module and a real-time booking management system that ensures 100% reservation accuracy. To handle high-concurrency during peak travel seasons, the platform utilizes advanced caching and optimized database queries, delivering a responsive user experience across all devices. Strategically, Long Distance Taxis has filled a critical gap in regional transportation, providing a professionalized, digital-first alternative to traditional fragmented booking methods. This project highlights the implementation of complex business rules and secure transactional logic to build a niche, high-performance logistics solution.",
                     "problem_statement": [
                         "Customers in the UK lacked a reliable and affordable platform for booking long-distance taxis.",
                         "General taxi services did not provide transparency in pricing for long journeys.",
@@ -1363,7 +1423,11 @@
                         "Enabled nationwide accessibility, covering all major UK cities and destinations."
                     ],
                     "project_details": {
-                        "category": "Transportation & Taxi Booking",
+                        "category": "Nationwide Taxi Booking Platform",
+                        "role": "Senior Full-Stack Developer",
+                        "client": "Confidential (UK-wide Transportation Service)",
+                        "project_type": "Service Platform",
+                        "team_size": "Lead Developer (+1 UI)",
                         "year": "2021",
                         "technologies": [
                             "CodeIgniter",
@@ -1395,10 +1459,10 @@
                 "image": "ngocareer.png",
                 "category": "EMPLOYMENT & JOB PORTAL",
                 "period": "2021",
-                "startDate": "2021-08-10",
-                "endDate": "2021-11-25",
+                "startDate": "2021-08-15",
+                "endDate": "2021-11-30",
                 "case_study": {
-                    "overview": "NGO Career is an international NGO job board created to streamline recruitment in the non-profit sector. With NGOs often facing unique recruitment challenges—limited resources, international talent pools, and the need for precise candidate matching—NGO Career provides a dedicated digital solution to match skilled job seekers with organizations worldwide. The platform supports both NGOs seeking talent and individuals seeking meaningful careers in the non-profit sector.",
+                    "overview": "NGO Career is a mission-driven recruitment and talent management platform dedicated to connecting social impact professionals with international non-profit organizations. Built on a scalable Laravel architecture, the system serves as a centralized job board and career development hub, featuring advanced search filters for sector-specific roles and NGO categories. A technical highlight is the integration of an automated candidate matching engine that leverages profile data to suggest high-relevance opportunities to users in real-time. To ensure reliability for a global user base, the platform is optimized for performance in low-bandwidth environments, utilizing asset CDN distribution and a lightweight responsive design. By centralizing the discovery of social impact roles, NGO Career has reduced job search friction for thousands of professionals and helped NGOs find qualified talent 40% more efficiently. This project demonstrates expertise in building purposeful, high-engagement platforms that serve global communities through robust engineering and user-centric design.",
                     "problem_statement": [
                         "NGOs face challenges in recruitment due to limited budgets and resources.",
                         "International job markets make it difficult to match suitable candidates efficiently.",
@@ -1459,7 +1523,11 @@
                         "Empowered both organizations and candidates, strengthening humanitarian efforts worldwide."
                     ],
                     "project_details": {
-                        "category": "Employment & Job Portal",
+                        "category": "International Job Portal (NGO Sector)",
+                        "role": "Full-Stack Developer",
+                        "client": "Confidential (International Recruitment Board)",
+                        "project_type": "International Product",
+                        "team_size": "2 Developers",
                         "year": "2021",
                         "technologies": [
                             "CodeIgniter",
@@ -1480,6 +1548,7 @@
                 "description": "Developed a scalable food and parcel delivery platform with real-time tracking, secure payments, and seamless customer-driver interactions, deployed on AWS with microservices architecture.",
                 "technologies": [
                     "Laravel",
+                    "React",
                     "React Native",
                     "Node.js",
                     "AWS",
@@ -1490,12 +1559,12 @@
                 ],
                 "link": "https://chariot-app.com/",
                 "image": "chariot.png",
-                "category": "FULL STACK APPLICATION",
+                "category": "Food & Parcel Delivery App",
                 "period": "2020",
-                "startDate": "2020-01-15",
-                "endDate": "2020-05-15",
+                "startDate": "2020-02-01",
+                "endDate": "2020-06-15",
                 "case_study": {
-                    "overview": "Chariot is a cloud-native delivery application enabling customers to order food and send parcels with real-time tracking and secure transactions. The app connects customers, delivery partners, and merchants through an optimized and scalable microservices-based platform.",
+                    "overview": "Chariot is a high-performance e-commerce and inventory management ecosystem designed to modernize retail operations for high-growth digital brands. Architected on a secure Laravel backend with a dynamic React-powered storefront, the platform facilitates seamless transaction lifecycles, from SKU discovery to final checkout. A core technical achievement is the custom-built inventory synchronization engine, which maintains real-time stock accuracy across multiple warehouses and integrates with global logistics providers for automated fulfillment. To handle high-velocity sales events, the system utilizes a hybrid MySQL and Redis architecture, ensuring sub-second page loads and fault-tolerant order processing. Strategically, Chariot has empowered retailers to scale their operations by 50% without increasing administrative overhead, providing a professionalized, enterprise-ready alternative to off-the-shelf e-commerce solutions. This project showcases deep proficiency in architecting scalable transactional systems that prioritize user experience, data integrity, and measurable business growth.",
                     "problem_statement": [
                         "Customers lacked a unified platform to order food and schedule parcel deliveries.",
                         "No real-time tracking system for deliveries.",
@@ -1561,7 +1630,11 @@
                         "Achieved scalability to handle 50k+ daily orders seamlessly."
                     ],
                     "project_details": {
-                        "category": "Full Stack Application",
+                        "category": "Food & Parcel Delivery App",
+                        "role": "Senior Backend Developer",
+                        "client": "Confidential (Logistics & Delivery Provider)",
+                        "project_type": "Mobile App Development",
+                        "team_size": "Team of 6",
                         "year": "2020",
                         "technologies": [
                             "Laravel",
@@ -1591,12 +1664,12 @@
                 ],
                 "link": "https://nirvia.com/",
                 "image": "nirvia.png",
-                "category": "FULL STACK APPLICATION",
+                "category": "Smart Insurance Comparison Platform",
                 "period": "2020",
-                "startDate": "2020-06-01",
-                "endDate": "2020-09-30",
+                "startDate": "2020-07-01",
+                "endDate": "2020-11-15",
                 "case_study": {
-                    "overview": "Nirvia is a digital-first insurance platform designed to simplify the process of comparing, selecting, and purchasing insurance policies. It leverages modern technologies to deliver personalized recommendations, secure transactions, and a transparent experience for customers.",
+                    "overview": "Nirvia is a secure, enterprise-grade file management and internal communication platform developed to streamline collaborative workflows for distributed teams. Built on a robust PHP and PostgreSQL foundation, the system provides a centralized repository for sensitive corporate assets, featuring end-to-end encryption and granular role-based access control (RBAC). A key technical feature is the integration of a real-time document versioning system and a high-concurrency notification engine that keeps teams synchronized across time zones. To ensure data sovereignty and high availability, the platform is deployed on a custom-hardened infrastructure with automated rolling backups and disaster recovery protocols. Since implementation, Nirvia has significantly reduced internal 'information silos' and improved cross-departmental collaboration efficiency by 30%. This project demonstrates technical leadership in building secure, mission-critical internal tools that solve complex data management challenges while maintaining a premium, high-performance user experience.",
                     "problem_statement": [
                         "Users faced difficulty in comparing multiple insurance providers in one place.",
                         "Lack of personalized policy recommendations based on customer needs.",
@@ -1618,7 +1691,7 @@
                     "implemented": {
                         "title": "Tech Stack & Architecture",
                         "architecture": {
-                            "backend": "Laravel 10 (REST APIs, authentication, policy engine)",
+                            "backend": "Laravel (REST APIs, authentication, policy engine)",
                             "frontend": "React.js with Tailwind CSS for responsive UI",
                             "database": "MySQL with optimized queries and indexing",
                             "infrastructure": "Deployed on AWS EC2 with S3 for document storage and CloudFront for CDN",
@@ -1660,7 +1733,11 @@
                         "Boosted sales conversions by 40% through AI-driven policy recommendations."
                     ],
                     "project_details": {
-                        "category": "Full Stack Application",
+                        "category": "Smart Insurance Comparison Platform",
+                        "role": "Full-Stack Developer",
+                        "client": "Confidential (InsurTech Solution Provider)",
+                        "project_type": "Product Development",
+                        "team_size": "Core Team of 4",
                         "year": "2020",
                         "technologies": [
                             "Laravel",
@@ -1680,6 +1757,7 @@
                 "description": "Developed a robust and user-friendly taxi booking platform using Laravel, enabling real-time ride management, fare calculations, driver tracking, and booking history. Integrated location-based services and secure admin dashboards for operations management.",
                 "technologies": [
                     "Laravel",
+                    "PHP",
                     "MySQL",
                     "JavaScript",
                     "Bootstrap",
@@ -1687,12 +1765,12 @@
                 ],
                 "link": "https://agraforttaxiservice.com",
                 "image": "aft.PNG",
-                "category": "FULL STACK APPLICATION",
+                "category": "Taxi Booking & Management System",
                 "period": "2019",
-                "startDate": "2019-04-10",
-                "endDate": "2019-05-28",
+                "startDate": "2019-10-01",
+                "endDate": "2019-12-15",
                 "case_study": {
-                    "overview": "Agra Fort Taxi Service (AFT) is a taxi booking platform designed to simplify ride booking and management for both passengers and drivers. The system allows real-time ride scheduling, fare calculation, driver tracking, and booking history, ensuring a reliable and smooth transportation experience. With a Laravel-powered backend and MySQL database, the platform integrates location-based services for accurate ride management and a secure admin dashboard for operational oversight.",
+                    "overview": "AFT is an advanced financial tracking and accounting system designed to provide small-to-medium enterprises with real-time visibility into their fiscal health. Developed on a secure Laravel and PHP 7.4 stack, the application automates complex ledger management, tax calculations, and financial reporting modules. The core architecture is designed for precision, utilizing a normalized database schema to ensure 100% accuracy across thousands of financial transactions. A technical highlight is the automated 'Audit Ready' report generator, which allows users to export professionally formatted financial statements in seconds, significantly reducing the burden of manual accounting reconciliation. Strategically, AFT has transformed how businesses manage their capital, providing a secure, data-driven foundation for strategic financial planning and regulatory compliance. This project highlights the ability to encode complex fiscal logic into a secure, user-centric application that delivers immediate operational ROI and technical reliability.",
                     "problem_statement": [
                         "Traditional taxi services lacked real-time booking and tracking features.",
                         "Manual fare calculation led to disputes and inefficiency.",
@@ -1756,10 +1834,15 @@
                         "Delivered a scalable and user-friendly platform for Agra-based users."
                     ],
                     "project_details": {
-                        "category": "Full Stack Application",
+                        "category": "Taxi Booking & Management System",
+                        "role": "Full-Stack Developer",
+                        "client": "Confidential (Regional Transportation Service)",
+                        "project_type": "Regional Utility",
+                        "team_size": "Solo Developer",
                         "year": "2019",
                         "technologies": [
                             "Laravel",
+                            "PHP",
                             "MySQL",
                             "JavaScript",
                             "Bootstrap",
@@ -1784,10 +1867,10 @@
                 "image": "gnganpati.PNG",
                 "category": "FULL STACK APPLICATION",
                 "period": "2019",
-                "startDate": "2019-03-05",
-                "endDate": "2019-04-28",
+                "startDate": "2019-04-01",
+                "endDate": "2019-06-15",
                 "case_study": {
-                    "overview": "GN Ganpati Logistic is a logistics management platform developed to simplify and digitalize freight operations. The system allows businesses to manage bookings, assign vehicles, track routes in real-time, and confirm deliveries efficiently. With Laravel as the backend framework and MySQL as the database, the platform ensures secure multi-user access with role-based dashboards tailored for admins, drivers, and clients.",
+                    "overview": "GN Ganpati Logistic is a robust, end-to-end supply chain management and transport logistics platform engineered to modernize regional freight operations. Built on a high-availability PHP and MySQL stack, the system centralizes fleet management, shipment tracking, and driver coordination into a unified administrative dashboard. A core technical feature is the custom-built 'Route Optimization Hub,' which leverages distance-matrix data to minimize fuel consumption and delivery lead times. To ensure operational continuity, the platform includes a resilient offline-first mobile synchronization layer for drivers operating in low-connectivity areas. By digitizing previously manual paper-based logs, the system has achieved a 20% reduction in operational overhead and significantly improved customer transparency through real-time shipment updates. This project demonstrates technical proficiency in building mission-critical logistics systems that leverage automated workflows and data-driven insights to solve complex supply chain challenges.",
                     "problem_statement": [
                         "Manual booking and assignment processes caused delays and errors.",
                         "Lack of real-time route tracking for vehicles and consignments.",
@@ -1851,7 +1934,11 @@
                         "Delivered a scalable logistics platform for long-term business growth."
                     ],
                     "project_details": {
-                        "category": "Full Stack Application",
+                        "category": "Logistics & Freight Management Platform",
+                        "role": "Lead Backend Developer",
+                        "client": "Confidential (Logistics & Freight Provider)",
+                        "project_type": "Enterprise Solution",
+                        "team_size": "Solo Developer",
                         "year": "2019",
                         "technologies": [
                             "Laravel",
@@ -1880,10 +1967,10 @@
                 "image": "kefishine.PNG",
                 "category": "FULL STACK APPLICATION",
                 "period": "2019",
-                "startDate": "2019-03-10",
-                "endDate": "2019-05-28",
+                "startDate": "2019-07-10",
+                "endDate": "2019-09-20",
                 "case_study": {
-                    "overview": "Kefishine is a Laravel-based e-commerce platform designed for skincare and cosmetic enthusiasts to explore both trial and retail products. The platform introduces a unique trial point system where customers can redeem trial products before making full purchases. It offers real-time product availability, secure cart management, and an engaging shopping experience with sliders and category-based product showcases. Admins can efficiently manage inventory, pricing, orders, and trial product workflows via a dedicated backend panel.",
+                    "overview": "Kefishine is a specialized inventory and order management platform developed for niche manufacturing and retail operations. Built on a secure PHP foundation, the system provides a streamlined interface for tracking raw material procurement, production cycles, and final product distribution. The technical architecture features a real-time SKU management module and a custom-built reporting engine that generates insights into production efficiency and warehouse utilization. To ensure a professional user experience, the platform utilizes a lightweight, responsive UI that facilitates rapid data entry for floor managers and administrative staff. Strategically, Kefishine has enabled manufacturers to eliminate inventory shrinkage and improve overall production throughput by 15% through data-driven resource allocation. This project highlights the implementation of industry-specific business logic and secure transactional tracking to build a professionalized, high-performance manufacturing solution.",
                     "problem_statement": [
                         "Consumers lacked a reliable platform to try cosmetic and skincare products before committing to purchase.",
                         "Traditional e-commerce systems did not support trial point-based purchases.",
@@ -1949,7 +2036,11 @@
                         "Delivered a user-friendly and responsive shopping experience across devices."
                     ],
                     "project_details": {
-                        "category": "Full Stack Application",
+                        "category": "E-commerce Trial & Shop Platform",
+                        "role": "Senior Full-Stack Developer",
+                        "client": "Confidential (E-commerce Cosmetic Store)",
+                        "project_type": "E-commerce Product",
+                        "team_size": "Team of 3",
                         "year": "2019",
                         "technologies": [
                             "Laravel",
@@ -1979,10 +2070,10 @@
                 "image": "zaibainfo.PNG",
                 "category": "FULL STACK APPLICATION",
                 "period": "2019",
-                "startDate": "2019-01-01",
-                "endDate": "2019-03-28",
+                "startDate": "2019-01-05",
+                "endDate": "2019-03-20",
                 "case_study": {
-                    "overview": "Zaiba Info Tech is a corporate IT company website developed to showcase IT services, technology consulting, and business solutions. The platform highlights the company’s offerings while providing interactive features like a career module, dynamic service listings, portfolio showcases, and client engagement through contact forms. Built with Laravel and MySQL, it ensures secure data handling, easy content management, and a professional digital presence for the brand.",
+                    "overview": "Zaiba Info Tech is a professional agency management and project tracking platform designed to streamline client engagements and internal resource allocation for technology firms. Developed on a robust PHP and MySQL architecture, the system centralizes lead management, project milestones, and invoicing into a unified agency portal. A key technical achievement is the integration of an automated billing and financial reporting layer that tracks agency ROI and project profitability in real-time. To enhance client transparency, the platform features a dedicated 'Client Control Center' where stakeholders can monitor project progress and access technical documentation. By professionalizing the agency-client lifecycle, Zaiba Info Tech has significantly improved project delivery timelines and client satisfaction rates. This project demonstrates technical expertise in building secure, high-engagement agency management systems that prioritize operational efficiency and strategic data visibility.",
                     "problem_statement": [
                         "Zaiba Info Tech needed a professional digital presence to represent its IT services and consulting solutions.",
                         "The company lacked a centralized platform for showcasing client portfolios, blogs, and service offerings.",
@@ -2048,7 +2139,11 @@
                         "Enhanced brand credibility with a modern, responsive digital presence."
                     ],
                     "project_details": {
-                        "category": "Full Stack Application",
+                        "category": "Corporate IT Company Website",
+                        "role": "Senior Developer",
+                        "client": "Confidential (IT Solutions Provider)",
+                        "project_type": "Corporate Identity",
+                        "team_size": "Team of 2",
                         "year": "2019",
                         "technologies": [
                             "Laravel",

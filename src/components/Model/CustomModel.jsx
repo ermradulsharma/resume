@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import { IoClose } from "react-icons/io5";
 import { Chip, Button } from "@mui/material";
+import { getSafeProjectImage } from "../../utils/imageUtils";
 
 const style = {
   position: "absolute",
@@ -50,12 +51,7 @@ export default function CustomModal({ open, setOpen, project = {} }) {
     }
   };
 
-  let imageSrc = "";
-  try {
-    imageSrc = require(`../../assets/projects/${project.image}`);
-  } catch {
-    imageSrc = "";
-  }
+  const imageSrc = getSafeProjectImage(project.image);
 
   return (
     <Modal

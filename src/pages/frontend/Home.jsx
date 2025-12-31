@@ -4,8 +4,9 @@ import SEO from "../../components/common/SEO";
 import LetsConnect from "../../components/LetsConnect";
 import HeroSection from "../../components/frontend/HeroSection/HeroSection";
 import About from "../../components/frontend/About/About";
-import ContactSection from "../../components/frontend/Contact/Contact";
 import Services from "../../components/frontend/Services/Services";
+import FeaturedProjects from "../../components/frontend/FeaturedProjects/FeaturedProjects";
+import LatestBlogs from "../../components/frontend/LatestBlogs/LatestBlogs";
 
 const Home = () => {
     return (
@@ -20,7 +21,8 @@ const Home = () => {
             <HeroSection />
             <About />
             <Services />
-            <ContactSection />
+            <FeaturedProjects />
+            <LatestBlogs />
             <LetsConnect />
         </Container>
     );
