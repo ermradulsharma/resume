@@ -13,7 +13,7 @@ import LetsConnect from "../../../components/LetsConnect";
 import Services from "../../../components/frontend/Services/Services";
 import signature from '../../../assets/signature.webp'
 import Button from 'react-bootstrap/Button';
-import resume from '../../../assets/Resume/mradulsharma.pdf';
+import resume from '../../../assets/resume/mradulsharma.pdf';
 import { trackEvent } from "../../../utils/analytics/ga";
 
 
