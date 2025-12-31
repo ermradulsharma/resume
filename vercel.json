@@ -1,18 +1,4 @@
 {
-    "redirects": [
-        {
-            "source": "/(.*)",
-            "has": [
-                {
-                    "type": "host",
-                    "value": "www.mradulsharma.vercel.app"
-                }
-            ],
-            "destination": "https://mradulsharma.vercel.app/$1",
-            "permanent": true
-        }
-    ],
-    "trailingSlash": true,
     "rewrites": [
         {
             "source": "/((?!static|.*\\..*).*)",
