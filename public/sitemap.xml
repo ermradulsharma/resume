@@ -2,49 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mradulsharma.vercel.app</loc>
-    <lastmod>2025-12-27</lastmod>
+    <lastmod>2025-12-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://mradulsharma.vercel.app/about</loc>
-    <lastmod>2025-12-27</lastmod>
+    <lastmod>2025-12-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mradulsharma.vercel.app/portfolio</loc>
-    <lastmod>2025-12-27</lastmod>
+    <lastmod>2025-12-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mradulsharma.vercel.app/services</loc>
-    <lastmod>2025-12-27</lastmod>
+    <lastmod>2025-12-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mradulsharma.vercel.app/blogs</loc>
-    <lastmod>2025-12-27</lastmod>
+    <lastmod>2025-12-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mradulsharma.vercel.app/privacy</loc>
-    <lastmod>2025-12-27</lastmod>
+    <lastmod>2025-12-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mradulsharma.vercel.app/terms-of-service</loc>
-    <lastmod>2025-12-27</lastmod>
+    <lastmod>2025-12-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mradulsharma.vercel.app/contact</loc>
-    <lastmod>2025-12-27</lastmod>
+    <lastmod>2025-12-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -448,6 +448,132 @@
     <loc>https://mradulsharma.vercel.app/blogs/paypal-rest-api-integration-from-scratch</loc>
     <lastmod>2025-12-06</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/portfolio/clew-pouches-management</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/portfolio/gokleen-car-subscription</loc>
+    <lastmod>2025-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/portfolio/bolld-pm-property-management</loc>
+    <lastmod>2025-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/portfolio/marketing-analytics-dashboard</loc>
+    <lastmod>2024-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/portfolio/konnifel-research-internship</loc>
+    <lastmod>2024-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/portfolio/caumit-volunteering</loc>
+    <lastmod>2024-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/portfolio/forrentcentral-property-management</loc>
+    <lastmod>2024-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/portfolio/wealthmark-crypto-trading</loc>
+    <lastmod>2023-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/portfolio/stackfood-delivery-management</loc>
+    <lastmod>2022-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/portfolio/paystubx-payroll-management</loc>
+    <lastmod>2022-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/portfolio/storytellers-cms</loc>
+    <lastmod>2022-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/portfolio/whealthconnect-fitness</loc>
+    <lastmod>2022-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/portfolio/flextaxis-ride-hailing</loc>
+    <lastmod>2021-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/portfolio/long-distance-taxis</loc>
+    <lastmod>2021-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/portfolio/ngo-career-job-portal</loc>
+    <lastmod>2021-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/portfolio/chariot-delivery-app</loc>
+    <lastmod>2020-02-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/portfolio/nirvia-insurance-platform</loc>
+    <lastmod>2020-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/portfolio/aft-taxi-service</loc>
+    <lastmod>2019-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/portfolio/gn-ganpati-logistic</loc>
+    <lastmod>2019-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/portfolio/kefishine-ecommerce</loc>
+    <lastmod>2019-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mradulsharma.vercel.app/portfolio/zaiba-info-tech</loc>
+    <lastmod>2019-01-05</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 </urlset>

@@ -10,8 +10,8 @@ const TermsOfService = () => {
                 title="Terms of Service | Mradul Sharma - Usage Rules & Guidelines"
                 description="Read the terms of service outlining the rules, responsibilities, and usage guidelines for accessing and using Mradul Sharma’s website and related content."
                 keywords="terms of service, terms and conditions, legal, usage policy"
-                ogUrl="https://mradulsharma.vercel.app/terms"
-                canonicalUrl="https://mradulsharma.vercel.app/terms"
+                ogUrl="https://mradulsharma.vercel.app/terms-of-service"
+                canonicalUrl="https://mradulsharma.vercel.app/terms-of-service"
             />
             {/* Hero Section */}
             <div className="legal-hero">
