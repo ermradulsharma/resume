@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { Row, Col, Card, Badge, Button, Pagination, Spinner, Form } from "react-bootstrap";
 import { Link, useSearchParams } from "react-router-dom";
 import { BsGrid3X3Gap, BsList, BsCalendar3, BsPerson } from "react-icons/bs";
@@ -28,10 +28,10 @@ const Blogs = () => {
     const currentPosts = filteredPosts.slice(indexOfFirstPost, indexOfLastPost);
     const totalPages = Math.ceil(filteredPosts.length / postsPerPage);
 
-    const updateParams = (newParams) => {
+    const updateParams = useCallback((newParams) => {
         setSearchParams({ category: selectedCategory, page: currentPage, ...newParams });
         window.scrollTo(0, 0);
-    };
+    }, [selectedCategory, currentPage, setSearchParams]);
 
     const handleCategoryChange = (category) => {
         updateParams({ category, page: 1 });
@@ -59,7 +59,7 @@ const Blogs = () => {
 
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
-    }, [viewMode, currentPage, totalPages, isLoadingMore]);
+    }, [viewMode, currentPage, totalPages, isLoadingMore, updateParams]);
 
     const getRelativeTime = (dateString) => {
         const postDate = new Date(dateString);

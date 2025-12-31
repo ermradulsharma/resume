@@ -48,14 +48,6 @@ const PublicCalendar = () => {
         calendarApi.gotoDate(project.startDate || "2025-01-01");
     };
 
-    const formatDate = (date) => {
-        if (!date) return "";
-        return new Date(date).toLocaleDateString("en-US", {
-            month: "short",
-            day: "2-digit",
-            year: "numeric"
-        });
-    };
 
     /* =========================
        Calendar Events

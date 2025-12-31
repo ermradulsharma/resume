@@ -1,7 +1,7 @@
 import React from "react";
-import { Container, Row, Col, Card, Badge, Button } from "react-bootstrap";
+import { Container, Row, Col, Card, Badge } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { BsCalendar3, BsClock, BsArrowRight } from "react-icons/bs";
+import { BsCalendar3, BsClock } from "react-icons/bs";
 import blogsData from "../../database/blogs.json";
 import "./LatestBlogs.css";
 
