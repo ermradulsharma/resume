@@ -16,7 +16,7 @@
 }
 
 .latest-blogs-section .section-title h2 {
-    color: #212529;
+    color: var(--neutral-900);
 }
 
 .latest-blogs-section .category-badge {

@@ -1,6 +1,6 @@
 .breadcrumbs-container {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    border-bottom: 1px solid #dee2e6;
+    background: linear-gradient(135deg, var(--neutral-50) 0%, var(--neutral-200) 100%);
+    border-bottom: 1px solid var(--neutral-200);
     font-size: 0.875rem;
 }
 
@@ -16,16 +16,16 @@
 .breadcrumb-item {
     display: flex;
     align-items: center;
-    color: #6c757d;
+    color: var(--neutral-500);
 }
 
 .breadcrumb-item.active {
-    color: #212529;
+    color: var(--neutral-900);
     font-weight: 500;
 }
 
 .breadcrumb-link {
-    color: #0d6efd;
+    color: var(--primary-color);
     text-decoration: none;
     transition: all 0.2s ease;
     display: flex;

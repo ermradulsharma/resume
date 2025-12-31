@@ -33,7 +33,7 @@
 }
 
 .hero .hero-title .typed {
-    color: var(--accent-color);
+    color: var(--primary-color);
     position: relative;
 }
 
@@ -89,9 +89,9 @@
 }
 
 .hero .hero-actions .btn.btn-outline:hover {
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
     color: var(--contrast-color);
-    border-color: var(--accent-color);
+    border-color: var(--primary-color);
 }
 
 .hero .social-links {
@@ -125,7 +125,7 @@
 }
 
 .hero .social-links a:hover {
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
     color: var(--contrast-color);
     transform: translateY(-3px);
 }
@@ -153,7 +153,7 @@
     left: 20px;
     right: -20px;
     bottom: -20px;
-    background: linear-gradient(45deg, var(--accent-color), color-mix(in srgb, var(--accent-color), transparent 30%));
+    background: linear-gradient(45deg, var(--primary-color), color-mix(in srgb, var(--primary-color), transparent 30%));
     border-radius: 20px;
     z-index: 1;
 }
@@ -189,7 +189,7 @@
 
 .hero .floating-card i {
     font-size: 1.5rem;
-    color: var(--accent-color);
+    color: var(--primary-color);
 }
 
 @media (max-width: 768px) {

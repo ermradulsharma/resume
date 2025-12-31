@@ -138,7 +138,7 @@ const Blogs = () => {
             <SectionHeader
                 title={title}
                 description={description}
-                className=" py-4 px-3"
+                className=" pt-4 px-3"
             />
             <div className="container">
 
@@ -267,16 +267,26 @@ const Blogs = () => {
                 {viewMode === "grid" && totalPages > 1 && (
                     <div className="d-flex justify-content-center my-3 align-items-center">
                         <Pagination className="m-0">
-                            <Pagination.Prev onClick={() => handlePageChange(Math.max(currentPage - 1, 1))} disabled={currentPage === 1} />
+                            <Pagination.Prev
+                                href={`?category=${selectedCategory}&page=${Math.max(currentPage - 1, 1)}`}
+                                onClick={(e) => { e.preventDefault(); handlePageChange(Math.max(currentPage - 1, 1)); }}
+                                disabled={currentPage === 1}
+                            />
                             {[...Array(totalPages)].map((_, index) => (
                                 <Pagination.Item
                                     key={index + 1}
                                     active={index + 1 === currentPage}
-                                    onClick={() => handlePageChange(index + 1)} >
+                                    href={`?category=${selectedCategory}&page=${index + 1}`}
+                                    onClick={(e) => { e.preventDefault(); handlePageChange(index + 1); }}
+                                >
                                     {index + 1}
                                 </Pagination.Item>
                             ))}
-                            <Pagination.Next onClick={() => handlePageChange(Math.min(currentPage + 1, totalPages))} disabled={currentPage === totalPages} />
+                            <Pagination.Next
+                                href={`?category=${selectedCategory}&page=${Math.min(currentPage + 1, totalPages)}`}
+                                onClick={(e) => { e.preventDefault(); handlePageChange(Math.min(currentPage + 1, totalPages)); }}
+                                disabled={currentPage === totalPages}
+                            />
                         </Pagination>
                     </div>
                 )}

@@ -42,7 +42,8 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "analyze": "source-map-explorer 'build/static/js/*.js'"
+        "analyze": "source-map-explorer 'build/static/js/*.js'",
+        "postbuild": "react-snap"
     },
     "eslintConfig": {
         "extends": [
@@ -62,7 +63,14 @@
             "last 1 safari version"
         ]
     },
+    "reactSnap": {
+        "puppeteerArgs": [
+            "--no-sandbox",
+            "--disable-setuid-sandbox"
+        ]
+    },
     "devDependencies": {
+        "react-snap": "^1.23.0",
         "source-map-explorer": "^2.5.3",
         "yaml": "^2.8.2"
     },

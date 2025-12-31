@@ -1,6 +1,6 @@
 .footer-section {
     background: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 50%, #0d0d0d 100%);
-    color: #fff;
+    color: var(--surface-color);
     border-top: 2px solid rgba(13, 110, 253, 0.3);
     animation: fadeInUp 0.8s ease-in-out;
 }
@@ -20,7 +20,7 @@
     bottom: 0;
     width: 40px;
     height: 2px;
-    background: linear-gradient(90deg, #0d6efd, transparent);
+    background: linear-gradient(90deg, var(--primary-color), transparent);
 }
 
 .footer-link {
@@ -47,7 +47,7 @@
 }
 
 .social-links a:hover {
-    background: #0d6efd;
+    background: var(--primary-color);
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
 } */

@@ -9,7 +9,7 @@
 }
 
 .contact .info-box {
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
     color: var(--contrast-color);
     padding: 3rem;
     border-radius: 1rem;
@@ -47,8 +47,8 @@
 
 .contact .info-box .social-links a {
     padding: 0.5rem;
-    background: #ffffff;
-    color: var(--accent-color);
+    background: var(--surface-color);
+    color: var(--primary-color);
     border-radius: 5%;
     display: flex;
     align-items: center;
@@ -88,7 +88,7 @@
 .contact .info-item .icon-box i,
 .contact .info-item .icon-box svg {
     font-size: 1.5rem;
-    color: var(--accent-color);
+    color: var(--primary-color);
 }
 
 .contact .info-item:hover .icon-box {
@@ -155,7 +155,7 @@
 .contact .contact-form .form-control:focus,
 .contact .contact-form .form-select:focus {
     box-shadow: none;
-    border-color: var(--accent-color);
+    border-color: var(--primary-color);
 }
 
 .contact .contact-form .form-control::placeholder,
@@ -164,7 +164,7 @@
 }
 
 .contact .contact-form .btn {
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
     color: var(--contrast-color);
     transition: 0.3s;
 }
@@ -174,7 +174,7 @@
 }
 
 .contact .contact-form .btn:hover {
-    background-color: color-mix(in srgb, var(--accent-color), var(--contrast-color) 20%);
+    background-color: color-mix(in srgb, var(--primary-color), var(--contrast-color) 20%);
 }
 
 .gm-ui-hover-effect,

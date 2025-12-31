@@ -23,7 +23,7 @@
 
 .portfolio-project .card-body,
 .portfolio-project .card-footer {
-    background: color-mix(in srgb, var(--accent-color), #0000 94%);
+    background: color-mix(in srgb, var(--primary-color), #0000 94%);
 }
 
 .portfolio-project .card-body .card-title {
@@ -59,11 +59,11 @@ table tbody tr td {
 }
 
 .project-card {
-    background: linear-gradient(135deg, var(--surface-color) 0%, color-mix(in srgb, var(--surface-color), var(--accent-color) 5%) 100%);
+    background: linear-gradient(135deg, var(--surface-color) 0%, color-mix(in srgb, var(--surface-color), var(--primary-color) 5%) 100%);
     border-radius: 15px !important;
     position: relative;
     overflow: hidden;
-    border: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%) !important;
+    border: 1px solid color-mix(in srgb, var(--primary-color), transparent 85%) !important;
     transition: all 0.3s ease;
 }
 

@@ -1,5 +1,5 @@
 .featured-projects {
-    background-color: #ffffff;
+    background-color: var(--surface-color);
 }
 
 .featured-projects .project-card {
@@ -68,7 +68,7 @@
 }
 
 .featured-projects .cursor-pointer:hover {
-    color: var(--accent-color);
+    color: var(--primary-color);
 }
 
 .featured-projects .project-title {

@@ -14,30 +14,97 @@
     --teal: #008080;
     --cyan: #00bcd4;
 
-    --background-color: var(--white);
+    --background-color: var(--neutral-50);
     --surface-color: var(--white);
     --contrast-color: var(--white);
-    --default-color: #314862;
-    --heading-color: #13447f;
-    --accent-color: #065cc2;
+    --default-color: var(--neutral-700);
+    /* Was #314862 */
+    --heading-color: var(--neutral-900);
+    /* Was #13447f */
+    --primary-color: #065cc2;
+    --accent-color: var(--primary-color);
 
     --heading-font: "math";
 
     /* ---------------- Button Colors ---------------- */
 
-    --btn-bg: var(--accent-color);
+    --btn-bg: var(--primary-color);
     --btn-text: var(--black);
-    --btn-hover-bg: var(--accent-color);
+    --btn-hover-bg: var(--primary-color);
     --btn-hover-text: var(--background-color);
 
     /* ---------------- Typography ---------------- */
-    --imp-text-color: var(--accent-color);
-    --imp-bold-text-color: var(--accent-color);
+    --imp-text-color: var(--primary-color);
+    --imp-bold-text-color: var(--primary-color);
     --subheading-color: #b0b0b0;
 
+    /* ---------------- Brand Palette (Base: #065cc2) ---------------- */
+    --primary-color: #065cc2;
+    --primary-hover: #044b9e;
+    /* 10% Darker */
+    --primary-active: #033a7d;
+    /* 20% Darker */
+    --primary-light: #5297e0;
+    /* Lighter accent */
+    --primary-subtle: #dbeafe;
+    /* Pale background tint */
+
+    /* ---------------- Neutral Scale (Blue-Tinted Grays) ---------------- */
+    /* Cohesive grays that match the primary blue hue (Hue ~212) */
+    --neutral-900: #0f172a;
+    /* Deepest Blue-Black */
+    --neutral-800: #1e293b;
+    /* Dark Headings */
+    --neutral-700: #334155;
+    /* Primary Text */
+    --neutral-600: #475569;
+    /* Secondary Text */
+    --neutral-500: #64748b;
+    /* Muted Text */
+    --neutral-400: #94a3b8;
+    /* Borders / Icons */
+    --neutral-300: #cbd5e1;
+    /* Light Borders */
+    --neutral-200: #e2e8f0;
+    /* Light Backgrounds */
+    --neutral-100: #f1f5f9;
+    /* Surface Color */
+    --neutral-50: #f8fafc;
+    /* Page Background */
+
+    /* ---------------- Semantic WCAG 2 AA Colors ---------------- */
+    /* Mapping specific palette colors to semantic roles */
+    --text-primary: var(--neutral-800);
+    /* #1e293b - Contrast: 13.9:1 */
+    --text-secondary: var(--neutral-600);
+    /* #475569 - Contrast: 7.6:1 */
+    --text-muted: var(--neutral-500);
+    /* #64748b - Contrast: 4.9:1 */
+    --text-dark: var(--neutral-900);
+    /* #0f172a - Contrast: 17.6:1 */
+    --text-policy: var(--neutral-700);
+    /* #334155 - Contrast: 10.4:1 */
+    --heading-policy: var(--neutral-900);
+    /* #0f172a - Contrast: 17.6:1 */
+
+    /* ---------------- Semantic State Colors ---------------- */
+    --success-color: #198754;
+    /* Bootstrap Success Green */
+    --success-bg: #d1e7dd;
+    /* Light Green Background */
+    --warning-color: #ffc107;
+    /* Warning Yellow */
+    --error-color: #dc3545;
+    /* Bootstrap Danger Red */
+    --info-color: #0dcaf0;
+    /* Info Cyan */
+
     /* ---------------- Borders ---------------- */
-    --border-color: rgba(0, 0, 0, 0.1);
-    --highlight-border: var(--accent-color);
+    --border-color: var(--neutral-200);
+    /* #e2e8f0 */
+    --border-strong: var(--neutral-400);
+    /* #94a3b8 */
+    --highlight-border: var(--primary-color);
 
     /* ---------------- Shadows ---------------- */
     --shadow-default: 0 4px 6px rgba(0, 0, 0, 0.15);
@@ -71,8 +138,55 @@
     --z-tooltip: 1300;
 }
 
+/* Theme Toggle Switch Focus Removal */
+.custom-switch .form-check-input:focus {
+    box-shadow: none !important;
+    border-color: rgba(0, 0, 0, 0.25);
+}
+
+/* ---------------- Dark Mode Overrides ---------------- */
+[data-theme="dark"] {
+    /* Backgrounds */
+    --background-color: var(--neutral-900);
+    --surface-color: var(--neutral-800);
+    --contrast-color: var(--neutral-900);
+
+    /* Text Colors (Inverted) */
+    --text-primary: var(--neutral-100);
+    /* Light text for headings */
+    --text-secondary: var(--neutral-300);
+    /* Softer light text */
+    --text-muted: var(--neutral-400);
+    /* Muted light text */
+    --text-dark: var(--neutral-50);
+    /* Whitest text for emphasis */
+    --heading-color: var(--neutral-50);
+    /* Hero/Section headings */
+
+    /* Policy Colors */
+    --text-policy: var(--neutral-200);
+    --heading-policy: var(--neutral-50);
+
+    /* UI Elements */
+    --border-color: var(--neutral-700);
+    --border-strong: var(--neutral-600);
+    --default-color: var(--neutral-300);
+
+    /* Shadows (Adjusted for dark bg) */
+    --shadow-default: 0 4px 6px rgba(0, 0, 0, 0.4);
+    --shadow-hover: 0 10px 15px rgba(0, 0, 0, 0.5);
+
+    /* Primary Color Adjustments (Optional: Lighter for better contrast on dark) */
+    --primary-color: #3b82f6;
+    /* Lighter Blue */
+    --primary-hover: #60a5fa;
+}
+
 body {
     font-family: 'Roboto', sans-serif !important;
+    background-color: var(--background-color);
+    color: var(--text-secondary);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 p {
@@ -84,7 +198,7 @@ p {
 }
 
 .btn-primary {
-    background-color: var(--accent-color) !important;
+    background-color: var(--primary-color) !important;
 }
 
 h1,
@@ -145,7 +259,7 @@ li {
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: var(--accent-color);
+    background: var(--primary-color);
 }
 
 /* Handle */
@@ -175,7 +289,7 @@ li {
 }
 
 .downBtn {
-    color: var(--accent-color);
+    color: var(--primary-color);
     border: 1px solid #024429;
     display: flex;
     align-items: center;
@@ -279,8 +393,12 @@ li {
     font-weight: 100;
     opacity: 0.1;
     margin-top: 100px;
-    color: var(--accent-color);
+    color: var(--primary-color);
     display: none;
+}
+
+.connect {
+    position: relative !important;
 }
 
 .connect:hover .arrows i {
@@ -317,7 +435,7 @@ li {
 }
 
 .main-name {
-    color: var(--accent-color);
+    color: var(--primary-color);
 }
 
 .Typewriter__wrapper {
@@ -326,7 +444,7 @@ li {
 
 .Typewriter__cursor {
     /* font-size: 1.4em !important; */
-    color: var(--accent-color) !important;
+    color: var(--primary-color) !important;
 }
 
 @media (max-width: 767px) {
@@ -507,15 +625,15 @@ li {
 
 .icon-data {
     font-size: 1.8rem !important;
-    color: var(--accent-color) !important;
+    color: var(--primary-color) !important;
 }
 
 .tech-icons:hover {
     transform: scale(1.1) !important;
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3), 0 4px 6px rgba(0, 0, 0, 0.2) !important;
-    border-color: var(--accent-color) !important;
+    border-color: var(--primary-color) !important;
     background: rgba(255, 255, 255, 0.2) !important;
-    color: var(--accent-color);
+    color: var(--primary-color);
 }
 
 .tech-icon-images {
@@ -564,7 +682,7 @@ li {
 } */
 
 .project-card-view {
-    box-shadow: 0 4px 5px 3px var(--accent-color) !important;
+    box-shadow: 0 4px 5px 3px var(--primary-color) !important;
     /* box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important; */
     color: rgb(1, 4, 39) !important;
     background-color: transparent !important;
@@ -576,7 +694,7 @@ li {
 .project-card-view:hover {
     transform: scale(1.02) !important;
     overflow: hidden !important;
-    box-shadow: 0 4px 5px 3px var(--accent-color) !important;
+    box-shadow: 0 4px 5px 3px var(--primary-color) !important;
 }
 
 .blog-card {
@@ -652,7 +770,7 @@ li {
     width: 120px;
     height: 2px;
     display: inline-block;
-    background: var(--accent-color);
+    background: var(--primary-color);
     margin: 10px 10px;
 }
 
@@ -664,7 +782,7 @@ section {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), var(--heading-color) 30%));
+    background: linear-gradient(135deg, var(--primary-color), color-mix(in srgb, var(--primary-color), var(--heading-color) 30%));
     display: flex;
     align-items: center;
     justify-content: center;

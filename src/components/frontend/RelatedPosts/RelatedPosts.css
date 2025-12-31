@@ -1,23 +1,23 @@
 .related-posts-section {
-    background-color: #f8f9fa;
+    background-color: var(--neutral-50);
 }
 
 .section-title {
     font-size: 1.75rem;
     font-weight: 700;
-    color: #212529;
+    color: var(--neutral-900);
 }
 
 .related-post-card {
     transition: all 0.3s ease;
-    border: 1px solid #dee2e6;
+    border: 1px solid var(--neutral-200);
     overflow: hidden;
 }
 
 .related-post-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-    /* border-color: #0d6efd; */
+    /* border-color: var(--primary-color); */
 }
 
 .post-image-wrapper {
@@ -50,7 +50,7 @@
 }
 
 .related-post-card:hover .related-post-title {
-    color: #198754 !important;
+    color: var(--success-color) !important;
 }
 
 /* Responsive adjustments */

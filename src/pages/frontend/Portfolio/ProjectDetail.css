@@ -1,6 +1,6 @@
 .project-detail-page {
-    background-color: #f8f9fa;
-    color: #212529;
+    background-color: var(--neutral-50);
+    color: var(--neutral-900);
 }
 
 .project-hero {
@@ -17,18 +17,18 @@
 }
 
 .back-link {
-    color: #ffffff;
+    color: var(--surface-color);
     font-weight: 500;
     transition: transform 0.3s ease;
 }
 
 .back-link:hover {
-    color: var(--accent-color);
+    color: var(--primary-color);
     transform: translateX(-5px);
 }
 
 .case-study-content {
-    background: #ffffff;
+    background: var(--surface-color);
     border-radius: 40px 40px 0 0;
     margin-top: -50px;
     position: relative;
@@ -101,7 +101,7 @@
 .dot {
     height: 8px;
     width: 8px;
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
     border-radius: 50%;
     display: inline-block;
 }
@@ -117,11 +117,11 @@
 .gallery-item img {
     min-height: 200px;
     object-fit: cover;
-    background: #f0f0f0;
+    background: var(--neutral-100);
 }
 
 .challenge-item {
-    background: #fff;
+    background: var(--surface-color);
     transition: transform 0.3s ease;
 }
 
@@ -134,9 +134,9 @@
 }
 
 .dot {
-    background-color: #198754;
+    background-color: var(--success-color);
 }
 
 :root {
-    --accent-color: #198754;
+    --accent-color: var(--success-color);
 }

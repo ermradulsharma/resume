@@ -30,11 +30,11 @@
 
 .policy-content {
     line-height: 1.8;
-    color: #4a4a4a;
+    color: var(--text-policy);
 }
 
 .policy-content h2 {
-    color: #2c3e50;
+    color: var(--heading-policy);
     font-weight: 600;
 }
 
@@ -53,6 +53,6 @@
     }
 
     .policy-content h2 {
-        color: #f8f9fa;
+        color: var(--neutral-50);
     }
 }

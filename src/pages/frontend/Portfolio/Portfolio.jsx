@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useCallback } from "react";
 import { Container, Card, Button, Badge, Pagination } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import SEO from "../../../components/common/SEO";
 import "../../frontend/Portfolio/Portfolio.css";
 import data from "../../../components/database/portfolio.json";
@@ -26,21 +26,33 @@ const truncateText = (text, maxLength = 155) => {
 
 export default function Portfolio() {
     const { title, description, projectsList } = data.projects;
-    const [filter, setFilter] = useState("All");
+    const [searchParams, setSearchParams] = useSearchParams();
 
-    // Pagination states
-    const [currentPage, setCurrentPage] = useState(1);
+    // Derive state from URL params
+    const filter = searchParams.get("filter") || "All";
+    const currentPage = parseInt(searchParams.get("page") || "1", 10);
     const projectsPerPage = 8;
+
+    const updateParams = useCallback((newParams) => {
+        setSearchParams((prev) => {
+            const params = new URLSearchParams(prev);
+            Object.entries(newParams).forEach(([key, value]) => {
+                params.set(key, value);
+            });
+            return params;
+        });
+        window.scrollTo(0, 0);
+    }, [setSearchParams]);
 
     // Filter projects by technology
     const filteredProjects = projectsList.filter((p) =>
         filter === "All" ? true : p.technologies.some((tech) => tech.toLowerCase().includes(filter.toLowerCase()))
     );
 
-    // Reset page if filter changes
+    // Reset page if filter changes explicitly (handled in click handler)
     React.useEffect(() => {
-        setCurrentPage(1);
-    }, [filter]);
+        if (currentPage < 1) updateParams({ page: 1 });
+    }, [currentPage, updateParams]);
 
     // Pagination logic
     const totalPages = Math.ceil(filteredProjects.length / projectsPerPage);
@@ -79,7 +91,7 @@ export default function Portfolio() {
                                 size="sm"
                                 style={{ minWidth: "100px" }}
                                 onClick={() => {
-                                    setFilter(btn);
+                                    updateParams({ filter: btn, page: 1 });
                                     trackEvent({ name: "filter_projects", category: "Projects", label: btn });
                                 }}
                             >
@@ -139,23 +151,39 @@ export default function Portfolio() {
                     ))}
                 </div>
 
-                {/* Pagination Controls */}
                 {totalPages > 1 && (
                     <div className="d-flex justify-content-center mt-5">
                         <Pagination>
-                            <Pagination.First onClick={() => setCurrentPage(1)} disabled={currentPage === 1} />
-                            <Pagination.Prev onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))} disabled={currentPage === 1} />
+                            <Pagination.First
+                                href={`?filter=${filter}&page=1`}
+                                onClick={(e) => { e.preventDefault(); updateParams({ page: 1 }); }}
+                                disabled={currentPage === 1}
+                            />
+                            <Pagination.Prev
+                                href={`?filter=${filter}&page=${Math.max(currentPage - 1, 1)}`}
+                                onClick={(e) => { e.preventDefault(); updateParams({ page: Math.max(currentPage - 1, 1) }); }}
+                                disabled={currentPage === 1}
+                            />
                             {Array.from({ length: totalPages }, (_, i) => (
                                 <Pagination.Item
                                     key={i + 1}
                                     active={i + 1 === currentPage}
-                                    onClick={() => setCurrentPage(i + 1)}
+                                    href={`?filter=${filter}&page=${i + 1}`}
+                                    onClick={(e) => { e.preventDefault(); updateParams({ page: i + 1 }); }}
                                 >
                                     {i + 1}
                                 </Pagination.Item>
                             ))}
-                            <Pagination.Next onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))} disabled={currentPage === totalPages} />
-                            <Pagination.Last onClick={() => setCurrentPage(totalPages)} disabled={currentPage === totalPages} />
+                            <Pagination.Next
+                                href={`?filter=${filter}&page=${Math.min(currentPage + 1, totalPages)}`}
+                                onClick={(e) => { e.preventDefault(); updateParams({ page: Math.min(currentPage + 1, totalPages) }); }}
+                                disabled={currentPage === totalPages}
+                            />
+                            <Pagination.Last
+                                href={`?filter=${filter}&page=${totalPages}`}
+                                onClick={(e) => { e.preventDefault(); updateParams({ page: totalPages }); }}
+                                disabled={currentPage === totalPages}
+                            />
                         </Pagination>
                     </div>
                 )}

@@ -96,7 +96,7 @@ const ContactSection = () => {
     const mapContainerStyle = { width: "100%", height: "600px", borderRadius: "12px", overflow: "hidden" };
     return (
         <section id="contact" className="contact section py-5">
-            <SectionHeader title="Contact" description="Feel free to get in touch — whether it's a project, collaboration, or just a technical chat." className=" py-4 px-3 text-white" />
+            {/* <SectionHeader title="Contact" description="Feel free to get in touch — whether it's a project, collaboration, or just a technical chat." className=" py-4 px-3 text-white" /> */}
             <Container data-aos="fade-up" data-aos-delay="100">
                 <Row className="g-4 g-lg-5">
                     <Col lg={5}>

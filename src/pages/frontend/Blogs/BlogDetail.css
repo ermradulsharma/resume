@@ -1,6 +1,6 @@
 /* Blog Detail Page Styles */
 .blog-detail-page {
-    background-color: #f8f9fa;
+    background-color: var(--neutral-50);
 }
 
 /* Hero Section */
@@ -62,11 +62,11 @@
 .blog-detail-excerpt {
     font-size: 1rem;
     line-height: 1.5;
-    color: #555;
+    color: var(--text-secondary);
     padding: 2rem;
-    background: #f8f9fa;
+    background: var(--neutral-50);
     border-radius: 8px;
-    border-left: 4px solid #0d6efd;
+    border-left: 4px solid var(--primary-color);
     margin-bottom: 1.5rem;
 }
 
@@ -74,7 +74,7 @@
     font-size: 1.125rem;
     line-height: 1.8;
     margin-bottom: 1.5rem;
-    color: #333;
+    color: var(--text-primary);
     text-align: justify;
 }
 
@@ -84,14 +84,14 @@
     line-height: 1;
     float: left;
     margin-right: 0.5rem;
-    color: #0d6efd;
+    color: var(--primary-color);
 }
 
 /* Tags Section */
 .blog-detail-tags {
     margin: 1rem 0;
     padding: 1.5rem;
-    background: #f8f9fa;
+    background: var(--neutral-50);
     border-radius: 8px;
 }
 
@@ -99,7 +99,7 @@
     font-size: 1.1rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #333;
+    color: var(--text-primary);
 }
 
 .blog-detail-tags .badge {
@@ -156,9 +156,9 @@
     font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
-    color: #333;
+    color: var(--text-primary);
     padding-bottom: 0.75rem;
-    border-bottom: 2px solid #e9ecef;
+    border-bottom: 2px solid var(--neutral-200);
 }
 
 .related-posts-list {
@@ -177,7 +177,7 @@
 }
 
 .related-post-sidebar-card:hover {
-    background: #f8f9fa;
+    background: var(--neutral-50);
     transform: translateX(5px);
 }
 
@@ -199,7 +199,7 @@
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: 0.2rem;
-    color: #333;
+    color: var(--text-primary);
     display: -webkit-box;
     -webkit-line-clamp: 2;
     line-clamp: 2;
@@ -208,7 +208,7 @@
 }
 
 .related-post-sidebar-card:hover .card-title {
-    color: #0d6efd;
+    color: var(--primary-color);
 }
 
 .blog-detail-hero h1 {

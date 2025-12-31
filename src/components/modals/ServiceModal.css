@@ -39,7 +39,7 @@
 .service-details h5 {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #333;
+    color: var(--text-primary);
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
     border-bottom: 3px solid #667eea;
@@ -63,7 +63,7 @@
     padding-left: 2rem;
     margin-bottom: 0.75rem;
     line-height: 1.2;
-    color: #555;
+    color: var(--text-secondary);
 }
 
 .service-details ul li::before {
@@ -84,7 +84,7 @@
 }
 
 .service-details ul li strong {
-    color: #333;
+    color: var(--text-primary);
     font-weight: 600;
 }
 

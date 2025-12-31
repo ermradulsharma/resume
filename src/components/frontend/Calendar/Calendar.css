@@ -8,29 +8,29 @@
 }
 
 .public-calendar-container .fc-button {
-    background-color: #f8f9fa;
-    border-color: #dee2e6;
-    color: #212529;
+    background-color: var(--neutral-50);
+    border-color: var(--neutral-200);
+    color: var(--neutral-900);
     font-weight: 600;
     text-transform: capitalize;
     font-size: 0.875rem;
 }
 
 .public-calendar-container .fc-button:hover {
-    background-color: #e9ecef;
-    border-color: #ced4da;
-    color: #212529;
+    background-color: var(--neutral-200);
+    border-color: var(--neutral-300);
+    color: var(--neutral-900);
 }
 
 .public-calendar-container .fc-button-active {
-    background-color: #198754 !important;
-    border-color: #198754 !important;
-    color: #fff !important;
+    background-color: var(--success-color) !important;
+    border-color: var(--success-color) !important;
+    color: var(--surface-color) !important;
 }
 
 .public-calendar-container .fc-daygrid-day-number {
     font-size: 0.9rem;
-    color: #495057;
+    color: var(--neutral-700);
     padding: 8px;
     text-decoration: none;
 }
@@ -40,7 +40,7 @@
     text-transform: uppercase;
     letter-spacing: 0.5px;
     padding: 10px 0;
-    color: #6c757d;
+    color: var(--neutral-500);
     text-decoration: none;
 }
 
@@ -58,14 +58,14 @@
 /* New Styles for Search and Modal */
 .search-bar-wrapper {
     max-width: 600px;
-    background: #fff;
+    background: var(--surface-color);
     border: 1px solid #eee;
     transition: all 0.3s ease;
 }
 
 .search-bar-wrapper:focus-within {
     box-shadow: 0 5px 15px rgba(25, 135, 84, 0.1) !important;
-    border-color: #198754;
+    border-color: var(--success-color);
 }
 
 .project-detail-modal .modal-content {
@@ -100,7 +100,7 @@
 
 .project-sidebar-card {
     border: none;
-    background: #fff;
+    background: var(--surface-color);
 }
 
 .project-sidebar-item {
@@ -109,8 +109,8 @@
 }
 
 .project-sidebar-item:hover {
-    background-color: #f8f9fa;
-    border-left-color: #198754;
+    background-color: var(--neutral-50);
+    border-left-color: var(--success-color);
     padding-left: 1.25rem !important;
 }
 

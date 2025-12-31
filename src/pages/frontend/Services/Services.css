@@ -39,7 +39,7 @@
     left: 0;
     width: 3px;
     height: 0;
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
     transition: height 0.3s ease-in-out;
 }
 
@@ -55,7 +55,7 @@
 .services .service-item:hover .icon i,
 .services .service-item:hover .icon svg {
     /* transform: scale(1) rotate(5deg); */
-    color: var(--accent-color);
+    color: var(--primary-color);
 }
 
 .services .service-item:hover .link-item i {
@@ -70,14 +70,14 @@
 .modal-title i {
     transition: all 0.3s ease-in-out;
     font-size: 25px;
-    color: var(--accent-color);
+    color: var(--primary-color);
     width: 45px;
     height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
     background:
-        color-mix(in srgb, var(--accent-color), transparent 90%);
+        color-mix(in srgb, var(--primary-color), transparent 90%);
     border-radius: 12px;
 }
 
@@ -94,7 +94,7 @@
 .services .service-item .card-links .link-item {
     display: inline-flex;
     align-items: center;
-    color: var(--accent-color);
+    color: var(--primary-color);
     font-weight: 500;
     font-size: 0.95rem;
     transition: color 0.3s ease;
@@ -107,7 +107,7 @@
 }
 
 .services .service-item .card-links .link-item:hover {
-    color: color-mix(in srgb, var(--accent-color), transparent 25%);
+    color: color-mix(in srgb, var(--primary-color), transparent 25%);
 }
 
 @media (max-width: 991px) {
