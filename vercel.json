@@ -12,7 +12,7 @@
             "permanent": true
         }
     ],
-    "trailingSlash": false,
+    "trailingSlash": true,
     "rewrites": [
         {
             "source": "/((?!static|.*\\..*).*)",
