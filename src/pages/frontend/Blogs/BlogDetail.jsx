@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams, useNavigate, Link } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { Container, Badge, Button } from "react-bootstrap";
 import { BsArrowLeft, BsClock, BsCalendar3, BsTag, BsPerson, BsShare } from "react-icons/bs";
 import SEO from "../../../components/common/SEO";
@@ -12,7 +12,6 @@ import RelatedPosts from "../../../components/frontend/RelatedPosts/RelatedPosts
 
 const BlogDetail = () => {
     const { slug } = useParams();
-    const navigate = useNavigate();
     const post = blogsData.blogs.posts.find(p => p.slug === slug);
 
     const baseTitle = post ? post.title : "Blog Post";
