@@ -160,7 +160,7 @@
 
 .contact .contact-form .form-control::placeholder,
 .contact .contact-form .form-select::placeholder {
-    color: color-mix(in srgb, var(--default-color), transparent 50%);
+    color: color-mix(in srgb, var(--default-color), transparent 20%);
 }
 
 .contact .contact-form .btn {

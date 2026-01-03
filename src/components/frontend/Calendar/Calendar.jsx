@@ -113,12 +113,20 @@ const PublicCalendar = () => {
                                     height="auto"
                                     dayMaxEventRows
                                     eventClick={handleEventClick}
-                                    dayHeaderContent={(args) => (
-                                        <span className="fc-col-header-cell-cushion">{args.text}</span>
-                                    )}
-                                    dayCellContent={(args) => (
-                                        <span className="fc-daygrid-day-number">{args.dayNumberText}</span>
-                                    )}
+                                    dayHeaderContent={(args) => args.text}
+                                    dayCellContent={(args) => args.dayNumberText}
+                                    dayHeaderDidMount={(arg) => {
+                                        const cushion = arg.el.querySelector('.fc-col-header-cell-cushion');
+                                        if (cushion && cushion.tagName === 'A') {
+                                            cushion.setAttribute('href', '#calendar');
+                                        }
+                                    }}
+                                    dayCellDidMount={(arg) => {
+                                        const cushion = arg.el.querySelector('.fc-daygrid-day-number');
+                                        if (cushion && cushion.tagName === 'A') {
+                                            cushion.setAttribute('href', '#calendar');
+                                        }
+                                    }}
                                 />
                             </div>
                         </Card.Body>
@@ -127,7 +135,7 @@ const PublicCalendar = () => {
 
                 <Col lg={3} md={4}>
                     <Card className="shadow-sm rounded-4 h-100 border-0">
-                        <Card.Header className="py-3 ps-4"><h5 className="fw-bold mb-0">Projects</h5></Card.Header>
+                        <Card.Header className="py-3 ps-4"><h3 className="h5 fw-bold mb-0">Projects</h3></Card.Header>
                         <Card.Body className="p-0 overflow-auto" style={{ maxHeight: 600 }}>
                             {filteredProjects.length ? filteredProjects.map((project, idx) => (
                                 <div key={idx} className="p-2 border-bottom cursor-pointer" onClick={() => handleJumpToProject(project)}>

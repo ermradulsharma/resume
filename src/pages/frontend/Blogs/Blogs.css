@@ -245,11 +245,9 @@
         line-clamp: 2;
     }
 
-    .category-filter-wrapper {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0.5rem;
-        width: 100%;
+    .btn-outline-secondary {
+        border-color: var(--neutral-600);
+        color: var(--neutral-800);
     }
 
     /* .view-toggle-buttons {

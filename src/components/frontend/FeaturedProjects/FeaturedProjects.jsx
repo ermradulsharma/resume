@@ -31,10 +31,10 @@ const FeaturedProjects = () => {
                                         {project.technologies.slice(0, 3).map(tech => <Badge key={tech} bg="success-subtle" text="success" className="fw-normal border border-success-subtle">{tech}</Badge>)}
                                     </div>
                                     <Link to={`/portfolio/${project.slug}`} className="text-decoration-none text-dark">
-                                        <Card.Title className="h5 fw-bold project-title">{project.title}</Card.Title>
+                                        <Card.Title className="h5 fw-bold project-title" as="h3">{project.title}</Card.Title>
                                     </Link>
                                     <Card.Text className="text-secondary small mb-4">{project.description.length > 120 ? project.description.substring(0, 120) + '...' : project.description}</Card.Text>
-                                    <Link to={`/portfolio/${project.slug}`} className="text-success text-decoration-none fw-bold d-flex align-items-center mt-auto">
+                                    <Link to={`/portfolio/${project.slug}`} className="text-success text-decoration-none fw-bold d-flex align-items-center mt-auto" aria-label={`Read case study for ${project.title}`}>
                                         Read Case Study <BiRightArrowAlt className="ms-1" />
                                     </Link>
                                 </Card.Body>

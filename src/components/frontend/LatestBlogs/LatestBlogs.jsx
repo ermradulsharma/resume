@@ -34,7 +34,7 @@ const LatestBlogs = ({ maxPosts = 4 }) => {
                                         {post.featured && <Badge bg="success-subtle" text="success">Featured</Badge>}
                                     </div>
                                     <Link to={`/blogs/${post.slug}`} className="text-decoration-none text-dark">
-                                        <Card.Title className="h5 fw-bold mb-3">{post.title}</Card.Title>
+                                        <Card.Title className="h5 fw-bold mb-3" as="h3">{post.title}</Card.Title>
                                     </Link>
                                     <Card.Text className="text-secondary small mb-3">
                                         {post.excerpt.length > 160 ? `${post.excerpt.substring(0, 160)}...` : post.excerpt}

@@ -38,7 +38,8 @@
 
 .about .profile-image-wrapper .signature-section .quote {
     font-style: italic;
-    color: color-mix(in srgb, var(--default-color), transparent 30%);
+    color: color-mix(in srgb, var(--white), transparent 0%);
+    opacity: 1;
     font-size: 14px;
     margin: 0;
     max-width: 250px;
@@ -105,7 +106,8 @@
 
 .about .about-content .skills-grid .skill-item p {
     font-size: 14px;
-    color: color-mix(in srgb, var(--default-color), transparent 30%);
+    color: color-mix(in srgb, var(--default-color), transparent 0%);
+    opacity: 1;
     margin: 0;
 }
 
@@ -142,7 +144,8 @@
 }
 
 .about .about-content .journey-timeline .timeline-item .description {
-    color: color-mix(in srgb, var(--default-color), transparent 20%);
+    color: color-mix(in srgb, var(--default-color), transparent 0%);
+    opacity: 1;
     font-size: 15px;
     line-height: 1.5;
 }
@@ -176,7 +179,8 @@
 }
 
 .about .about-content .cta-section .fun-fact .text {
-    color: color-mix(in srgb, var(--default-color), transparent 20%);
+    color: color-mix(in srgb, var(--default-color), transparent 0%);
+    opacity: 1;
     font-size: 14px;
     font-weight: 500;
 }

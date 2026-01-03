@@ -56,20 +56,18 @@ const Footer = () => {
                                 <Link to="/" className="text-white text-decoration-none footer-link">Home</Link>
                             </li>
                             <li className="mb-2">
-                                <Link to="/about" className="text-white text-decoration-none footer-link">About Me</Link>
+                                <Link to="/about" className="text-white text-decoration-none footer-link">About</Link>
                             </li>
                             <li className="mb-2">
-                                <Link to="/contact" className="text-white text-decoration-none footer-link">Contact Us</Link>
+                                <Link to="/contact" className="text-white text-decoration-none footer-link">Contact</Link>
                             </li>
                             <li className="mb-2">
                                 <Link to="/portfolio" className="text-white text-decoration-none footer-link">Portfolio</Link>
                             </li>
                             <li className="mb-2">
-                                <Link to="/blogs" className="text-white text-decoration-none footer-link">Blog Posts</Link>
+                                <Link to="/blogs" className="text-white text-decoration-none footer-link">Blogs</Link>
                             </li>
-                            <li className="mb-2">
-                                <Link to="/privacy" className="text-white text-decoration-none footer-link small">Privacy Policy</Link>
-                            </li>
+
                         </ul>
                     </Col>
                     <Col lg={3} md={6}>

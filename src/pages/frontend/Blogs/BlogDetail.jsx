@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import { Container, Badge, Button } from "react-bootstrap";
 import { BsArrowLeft, BsClock, BsCalendar3, BsTag, BsPerson, BsShare } from "react-icons/bs";
 import SEO from "../../../components/common/SEO";
@@ -61,7 +61,7 @@ const BlogDetail = () => {
                 <div className="text-center">
                     <h1>Blog Post Not Found</h1>
                     <p className="text-secondary">The blog post you're looking for doesn't exist.</p>
-                    <Button variant="primary" onClick={() => navigate('/blogs')}>Back to Blogs</Button>
+                    <Link to="/blogs" className="btn btn-primary">Back to Blogs</Link>
                 </div>
             </Container>
         );
@@ -113,9 +113,9 @@ const BlogDetail = () => {
                             <Button variant="primary" className="share-button" onClick={handleShare}>
                                 <BsShare className="me-2" />Share
                             </Button>
-                            <Button variant="danger" className="back-button" onClick={() => navigate('/blogs')} >
+                            <Link to="/blogs" className="btn btn-danger back-button">
                                 <BsArrowLeft className="me-2" />Back to Blogs
-                            </Button>
+                            </Link>
                         </div>
                     </div>
                     <h1>{post.title}</h1>
@@ -156,14 +156,18 @@ const BlogDetail = () => {
                                 <h2 className="sidebar-title h5">Related Articles</h2>
                                 <div className="related-posts-list">
                                     {relatedPosts.map((relatedPost) => (
-                                        <div key={relatedPost.id} className="related-post-sidebar-card" onClick={() => navigate(`/blogs/${relatedPost.slug}`)}>
+                                        <Link
+                                            to={`/blogs/${relatedPost.slug}`}
+                                            key={relatedPost.id}
+                                            className="related-post-sidebar-card text-decoration-none"
+                                        >
                                             <img src={relatedPost.image} alt={relatedPost.title} loading="lazy" />
                                             <div className="card-content">
                                                 <Badge bg="primary" className="mb-1">{relatedPost.category}</Badge>
                                                 <h3 className="card-title h6">{relatedPost.title}</h3>
                                                 <p className="card-text small text-secondary">{relatedPost.readTime}</p>
                                             </div>
-                                        </div>
+                                        </Link>
                                     ))}
                                 </div>
                             </div>

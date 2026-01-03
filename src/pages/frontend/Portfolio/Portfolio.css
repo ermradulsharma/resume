@@ -1,4 +1,4 @@
-.portfolio-hero {
+﻿.portfolio-hero {
     position: relative;
     height: 50vh;
     background: url('../../../assets/portfolio_section.webp') 0% 0% /cover no-repeat;
@@ -70,4 +70,14 @@ table tbody tr td {
 .project-card:hover {
     box-shadow: 0 8px 30px color-mix(in srgb, var(--default-color), transparent 85%) !important;
     transform: translateY(-5px);
+}
+
+.btn-outline-secondary {
+    border-color: var(--neutral-600) !important;
+    color: var(--neutral-700) !important;
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--neutral-600) !important;
+    color: white !important;
 }

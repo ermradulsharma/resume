@@ -5,7 +5,7 @@ import { OverlayTrigger, Tooltip } from "react-bootstrap";
 const GitHub = () => {
     return (
         <div className="github-calendar-wrapper p-4 rounded-4 shadow-sm bg-white border">
-            <h4 className="fw-bold mb-4 text-dark">Contribution Activity</h4>
+            <h3 className="h4 fw-bold mb-4 text-dark">Contribution Activity</h3>
             <div className="d-flex justify-content-center">
                 <GitHubCalendar
                     username="ermradulsharma"

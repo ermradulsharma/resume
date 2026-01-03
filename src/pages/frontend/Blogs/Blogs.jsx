@@ -139,6 +139,7 @@ const Blogs = () => {
                 title={title}
                 description={description}
                 className=" pt-4 px-3"
+                level="h1"
             />
             <div className="container">
 
@@ -191,7 +192,7 @@ const Blogs = () => {
                                         <div className="d-flex flex-wrap gap-1 mb-3">
                                             {post.tags.slice(0, 3).map((tag, index) => (<Badge key={index} bg="success-subtle" className="text-black"> {tag} </Badge>))}
                                         </div>
-                                        <Link to={`/blogs/${post.slug}`} className="btn btn-success btn-sm" style={{ float: 'right' }}>Read More → </Link>
+                                        <Link to={`/blogs/${post.slug}`} className="btn btn-success btn-sm" aria-label={`Read more about ${post.title}`} style={{ float: 'right' }}>Read More → </Link>
                                     </div>
                                 </Card.Body>
                             </Card>

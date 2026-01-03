@@ -79,24 +79,25 @@ export default function Portfolio() {
                 title={title}
                 description={description}
                 className=" py-4 px-3"
+                level="h1"
             />
             <Container>
                 {/* Filters */}
+                <h2 className="visually-hidden">Filter Projects</h2>
                 <header className="d-flex flex-column flex-md-row align-items-md-center justify-content-end mb-4 gap-2">
                     <div className="d-flex gap-1 flex-wrap">
                         {["All", "PHP", "Laravel", "CodeIgniter", "Vue.js", "React.js", "Next.js", "Mautic"].map((btn) => (
-                            <Button
+                            <Link
                                 key={btn}
-                                variant={filter === btn ? "success" : "outline-secondary"}
-                                size="sm"
+                                to={`?filter=${btn}&page=1`}
+                                className={`btn btn-sm ${filter === btn ? "btn-success" : "btn-outline-secondary"}`}
                                 style={{ minWidth: "100px" }}
                                 onClick={() => {
-                                    updateParams({ filter: btn, page: 1 });
                                     trackEvent({ name: "filter_projects", category: "Projects", label: btn });
                                 }}
                             >
                                 {btn}
-                            </Button>
+                            </Link>
                         ))}
                     </div>
                 </header>

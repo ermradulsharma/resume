@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function LetsConnect() {
     return (
-        <Link to="/contact" className="connect text-decoration-none py-4 text-center" style={{ color: "#B8B8B8" }}>
+        <Link to="/contact" className="connect text-decoration-none py-4 text-center" style={{ color: "var(--primary-color)" }}>
             <div className="arrows">
                 <i className="bx bx-right-arrow-alt"></i>
                 <i className="bx bx-right-arrow-alt"></i>

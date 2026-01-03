@@ -36,7 +36,7 @@
     /* ---------------- Typography ---------------- */
     --imp-text-color: var(--primary-color);
     --imp-bold-text-color: var(--primary-color);
-    --subheading-color: #b0b0b0;
+    --subheading-color: var(--neutral-700);
 
     /* ---------------- Brand Palette (Base: #065cc2) ---------------- */
     --primary-color: #065cc2;
@@ -57,12 +57,12 @@
     /* Dark Headings */
     --neutral-700: #334155;
     /* Primary Text */
-    --neutral-600: #475569;
-    /* Secondary Text */
-    --neutral-500: #64748b;
-    /* Muted Text */
-    --neutral-400: #94a3b8;
-    /* Borders / Icons */
+    --neutral-600: #334155;
+    /* Darker Gray */
+    --neutral-500: #475569;
+    /* Muted Text - Darkened */
+    --neutral-400: #64748b;
+    /* Borders / Icons - Darkened */
     --neutral-300: #cbd5e1;
     /* Light Borders */
     --neutral-200: #e2e8f0;
@@ -194,7 +194,7 @@ p {
     font-weight: 400;
     font-family: math;
     line-height: 1.3;
-    color: color-mix(in srgb, var(--default-color), transparent 10%);
+    color: color-mix(in srgb, var(--default-color), transparent 0%);
 }
 
 .btn-primary {
@@ -221,7 +221,7 @@ li {
     font-weight: 400;
     font-family: math;
     line-height: 1.3;
-    color: color-mix(in srgb, var(--default-color), transparent 25%);
+    color: color-mix(in srgb, var(--default-color), transparent 0%);
 }
 
 /* --------- */

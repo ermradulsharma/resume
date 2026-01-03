@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { BsArrowLeft, BsBookHalf, BsBriefcase, BsFolder2Open, BsHouseDoor } from "react-icons/bs";
 import SEO from "../../../components/common/SEO";
 import "./NotFound.css";
@@ -52,9 +52,9 @@ const NotFound = () => {
                                 </div>
                             </div>
                             <div className="error-actions d-flex gap-3 justify-content-center flex-wrap">
-                                <Button variant="primary" size="sm" onClick={() => navigate("/")} className="d-flex align-items-center gap-2 text-white">
+                                <Link to="/" className="btn btn-primary btn-sm d-flex align-items-center gap-2 text-white">
                                     <BsHouseDoor size={20} />Go to Home
-                                </Button>
+                                </Link>
                                 <Button variant="secondary" size="sm" onClick={() => navigate(-1)} className="d-flex align-items-center gap-2 text-white">
                                     <BsArrowLeft size={20} />Go Back
                                 </Button>
@@ -63,32 +63,32 @@ const NotFound = () => {
                                 <h2 className="h4 text-secondary my-4">Explore Popular Pages</h2>
                                 <Row className="g-3">
                                     <Col md={3} sm={6}>
-                                        <div className="link-card p-3 border rounded h-100" onClick={() => navigate("/")} style={{ cursor: 'pointer' }}>
+                                        <Link to="/" className="link-card p-3 border rounded h-100 d-block text-decoration-none" style={{ cursor: 'pointer' }}>
                                             <BsHouseDoor size={24} className="text-primary mb-2" />
-                                            <h3 className="h6 mb-1">Home</h3>
+                                            <h3 className="h6 mb-1 text-dark">Home</h3>
                                             <p className="small text-secondary mb-0">Start from the beginning</p>
-                                        </div>
+                                        </Link>
                                     </Col>
                                     <Col md={3} sm={6}>
-                                        <div className="link-card p-3 border rounded h-100" onClick={() => navigate("/portfolio")} style={{ cursor: 'pointer' }}>
+                                        <Link to="/portfolio" className="link-card p-3 border rounded h-100 d-block text-decoration-none" style={{ cursor: 'pointer' }}>
                                             <BsFolder2Open size={24} className="text-primary mb-2" />
-                                            <h3 className="h6 mb-1">Portfolio</h3>
+                                            <h3 className="h6 mb-1 text-dark">Portfolio</h3>
                                             <p className="small text-secondary mb-0">View my projects</p>
-                                        </div>
+                                        </Link>
                                     </Col>
                                     <Col md={3} sm={6}>
-                                        <div className="link-card p-3 border rounded h-100" onClick={() => navigate("/blogs")} style={{ cursor: 'pointer' }}>
+                                        <Link to="/blogs" className="link-card p-3 border rounded h-100 d-block text-decoration-none" style={{ cursor: 'pointer' }}>
                                             <BsBookHalf size={24} className="text-primary mb-2" />
-                                            <h3 className="h6 mb-1">Blog</h3>
+                                            <h3 className="h6 mb-1 text-dark">Blog</h3>
                                             <p className="small text-secondary mb-0">Read technical articles</p>
-                                        </div>
+                                        </Link>
                                     </Col>
                                     <Col md={3} sm={6}>
-                                        <div className="link-card p-3 border rounded h-100" onClick={() => navigate("/services")} style={{ cursor: 'pointer' }}>
+                                        <Link to="/services" className="link-card p-3 border rounded h-100 d-block text-decoration-none" style={{ cursor: 'pointer' }}>
                                             <BsBriefcase size={24} className="text-primary mb-2" />
-                                            <h3 className="h6 mb-1">Services</h3>
+                                            <h3 className="h6 mb-1 text-dark">Services</h3>
                                             <p className="small text-secondary mb-0">Explore what I offer</p>
-                                        </div>
+                                        </Link>
                                     </Col>
                                 </Row>
                             </div>

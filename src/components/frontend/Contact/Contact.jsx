@@ -101,7 +101,7 @@ const ContactSection = () => {
                 <Row className="g-4 g-lg-5">
                     <Col lg={5}>
                         <div className="info-box p-3 p-lg-5" data-aos="fade-up" data-aos-delay="200">
-                            <h3>Contact Info</h3>
+                            <h2>Contact Info</h2>
                             <p>I’m always open to discussing new opportunities, freelance work, or helping with your project. Let’s connect!</p>
                             <div className="info-item" data-aos="fade-up" data-aos-delay="400">
                                 <div className="icon-box"><BsPhoneVibrateFill /></div>
@@ -139,7 +139,7 @@ const ContactSection = () => {
                     </Col>
                     <Col lg={7}>
                         <div className="contact-form" data-aos="fade-up" data-aos-delay="300">
-                            <h3>Get In Touch</h3>
+                            <h2>Get In Touch</h2>
                             <p>Let me know how I can help. I'm quick to respond and open to exciting ideas.</p>
                             <Form ref={form} onSubmit={sendEmail} className="php-email-form" data-aos="fade-up" data-aos-delay="200">
                                 <Row className="gy-4">
@@ -185,7 +185,7 @@ const ContactSection = () => {
                                             <div style={{ maxWidth: "350px" }} className="d-flex align-items-center gap-2">
                                                 <img src={logo} alt="Mradul Sharma" width="100" height="100" loading="lazy" style={{ borderRadius: "8px" }} />
                                                 <div>
-                                                    <h6 className="mb-1">Mradul Sharma</h6>
+                                                    <h3 className="h6 mb-1">Mradul Sharma</h3>
                                                     <p className="mb-1">📍 Etah, Uttar Pradesh, India</p>
                                                     <p className="mb-0"><a href="tel:+917252933077" className="text-decoration-none text-black">📞 +91 72529 33077 </a></p>
                                                     <p className="mb-0"><a href="mailto:mradulsharma786@gmail.com" className="text-decoration-none text-black">✉️ mradulsharma786@gmail.com</a></p>

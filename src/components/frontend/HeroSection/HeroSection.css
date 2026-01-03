@@ -1,4 +1,4 @@
-/*--------------------------------------------------------------
+﻿/*--------------------------------------------------------------
 # Global Section Titles
 --------------------------------------------------------------*/
 #hero {
@@ -39,7 +39,7 @@
 
 .hero .lead {
     /* font-size: 1.2rem; */
-    color: color-mix(in srgb, var(--default-color), transparent 20%);
+    color: var(--white);
     /* margin-bottom: 3rem;
     line-height: 1.6; */
 }
@@ -290,4 +290,15 @@
     50% {
         transform: translateY(-20px);
     }
+}
+
+.hero .hero-actions .btn-outline-light {
+    border: 2px solid var(--white) !important;
+    color: var(--white) !important;
+    background: transparent !important;
+}
+
+.hero .hero-actions .btn-outline-light:hover {
+    background: var(--white) !important;
+    color: var(--primary-color) !important;
 }

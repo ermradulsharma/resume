@@ -3,13 +3,14 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { BiRightArrowAlt } from 'react-icons/bi';
 
-const SectionHeader = ({ id, title, description, linkTo, linkText, className = "" }) => {
+const SectionHeader = ({ id, title, description, linkTo, linkText, className = "", level = "h2" }) => {
+    const HeadingTag = level;
     return (
         <Container id={id} className={`mb-4${className}`}>
             <Row className="align-items-center">
                 <Col md={linkTo ? 10 : 12}>
                     <div className="section-title text-start p-0 m-0">
-                        <h2>{title}</h2>
+                        <HeadingTag>{title}</HeadingTag>
                         {description && <p className="text-secondary mb-0">{description}</p>}
                     </div>
                 </Col>

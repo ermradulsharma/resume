@@ -30,7 +30,7 @@
 
 .public-calendar-container .fc-daygrid-day-number {
     font-size: 0.9rem;
-    color: var(--neutral-700);
+    color: var(--neutral-800);
     padding: 8px;
     text-decoration: none;
 }
@@ -40,7 +40,7 @@
     text-transform: uppercase;
     letter-spacing: 0.5px;
     padding: 10px 0;
-    color: var(--neutral-500);
+    color: var(--neutral-700);
     text-decoration: none;
 }
 
