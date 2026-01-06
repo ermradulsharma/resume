@@ -1,8 +1,9 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { useNavigate, Link } from "react-router-dom";
 import { BsArrowLeft, BsBookHalf, BsBriefcase, BsFolder2Open, BsHouseDoor } from "react-icons/bs";
 import SEO from "../../../components/common/SEO";
+import BrandButton from "../../../components/common/BrandButton";
 import "./NotFound.css";
 
 const NotFound = () => {
@@ -52,12 +53,12 @@ const NotFound = () => {
                                 </div>
                             </div>
                             <div className="error-actions d-flex gap-3 justify-content-center flex-wrap">
-                                <Link to="/" className="btn btn-primary btn-sm d-flex align-items-center gap-2 text-white">
-                                    <BsHouseDoor size={20} />Go to Home
-                                </Link>
-                                <Button variant="secondary" size="sm" onClick={() => navigate(-1)} className="d-flex align-items-center gap-2 text-white">
-                                    <BsArrowLeft size={20} />Go Back
-                                </Button>
+                                <BrandButton to="/" icon={<BsHouseDoor size={20} />}>
+                                    Go to Home
+                                </BrandButton>
+                                <BrandButton variant="brand-outline" onClick={() => navigate(-1)} icon={<BsArrowLeft size={20} />}>
+                                    Go Back
+                                </BrandButton>
                             </div>
                             <div className="helpful-links">
                                 <h2 className="h4 text-secondary my-4">Explore Popular Pages</h2>

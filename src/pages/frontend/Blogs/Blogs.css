@@ -1,5 +1,5 @@
 .blogs-section {
-    background-color: var(--neutral-50);
+    background-color: var(--background-color);
 }
 
 .blog-hero {
@@ -25,7 +25,7 @@
     border-radius: 12px;
     overflow: hidden;
     transition: all 0.3s ease;
-    border: 1px solid #e0e0e0;
+    border: 1px solid var(--border-color);
     animation: fadeInUp 0.5s ease;
     display: flex;
     flex-direction: column;
@@ -34,7 +34,7 @@
 
 .blog-card-grid:hover {
     transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
+    box-shadow: var(--shadow-hover) !important;
 }
 
 .blog-card-grid .card-img-top {
@@ -67,18 +67,18 @@
 }
 
 .blog-card-grid:hover .card-title {
-    color: var(--success-color);
+    color: var(--primary-color);
 }
 
 .active>.page-link,
 .page-link.active {
-    background-color: var(--success-color) !important;
-    border-color: var(--success-color) !important;
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
     color: var(--surface-color) !important;
 }
 
 .page-link {
-    color: var(--success-color) !important;
+    color: var(--primary-color) !important;
 }
 
 .blog-card-grid .card-text {
@@ -108,13 +108,13 @@
     border-radius: 12px;
     overflow: hidden;
     transition: all 0.3s ease;
-    border: 1px solid #e0e0e0;
+    border: 1px solid var(--border-color);
     animation: fadeInLeft 0.5s ease;
 }
 
 .blog-card-list:hover {
     transform: translateX(5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12) !important;
+    box-shadow: var(--shadow-hover) !important;
 }
 
 .blog-list-image-wrapper {
@@ -141,7 +141,7 @@
 }
 
 .blog-card-list:hover .card-title {
-    color: var(--success-color);
+    color: var(--primary-color);
 }
 
 .blog-list-excerpt {

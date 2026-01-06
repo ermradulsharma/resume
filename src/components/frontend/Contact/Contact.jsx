@@ -1,16 +1,16 @@
 import React, { useRef, useState } from "react";
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import { Container, Row, Col, Form } from "react-bootstrap";
 import { BsClock, BsWhatsapp, BsPhoneVibrateFill, BsMailbox2Flag } from "react-icons/bs";
 import { GoogleMap, InfoWindow, useJsApiLoader, MarkerF } from "@react-google-maps/api";
 import "../../../components/frontend/Contact/Contact.css"
 import SocialLinks from "../SocialLinks/SocialLinks";
 import emailjs from "@emailjs/browser";
 import { trackEvent } from "../../../utils/analytics/ga";
+import BrandButton from "../../common/BrandButton";
 import servicesList from "../../../components/database/serviceList.json"
 import Select from "react-select";
 import makeAnimated from 'react-select/animated';
 import logo from '../../../assets/mradulsharma.webp';
-// import SectionHeader from "../../../components/common/SectionHeader";
 const animatedComponents = makeAnimated();
 const LIBRARIES = []; // Define libraries array outside component to prevent re-renders
 
@@ -96,7 +96,6 @@ const ContactSection = () => {
     const mapContainerStyle = { width: "100%", height: "600px", borderRadius: "12px", overflow: "hidden" };
     return (
         <section id="contact" className="contact section py-5">
-            {/* <SectionHeader title="Contact" description="Feel free to get in touch — whether it's a project, collaboration, or just a technical chat." className=" py-4 px-3 text-white" /> */}
             <Container data-aos="fade-up" data-aos-delay="100">
                 <Row className="g-4 g-lg-5">
                     <Col lg={5}>
@@ -156,17 +155,17 @@ const ContactSection = () => {
                                         <Form.Control type="text" name="subject" placeholder="Subject" value={formData.subject} onChange={handleChange} />
                                     </Col>
                                     <Col md={12}>
-                                        <Select closeMenuOnSelect={false} components={animatedComponents} options={servicesList} isMulti isSearchable placeholder="Select services..." value={formData.selected_services} onChange={handleSelectChange} aria-label="Select the services you are interested in" />
+                                        <Select closeMenuOnSelect={false} components={animatedComponents} options={servicesList} isMulti isSearchable placeholder="Select services..." className="rounded-5" value={formData.selected_services} onChange={handleSelectChange} aria-label="Select the services you are interested in" />
                                         <input type="hidden" name="selected_services" value={formData.selected_services.map(s => s.label).join(", ")} />
                                     </Col>
                                     <Col md={12}>
                                         <Form.Control as="textarea" rows={6} name="message" placeholder="Message" value={formData.message} onChange={handleChange} />
                                     </Col>
-                                    {done && <span className="text-success mt-1 fs-6">Message sent successfully!</span>}
+                                    {done && <span className="text-primary mt-1 fs-6">Message sent successfully!</span>}
                                     {validationError && <span className="text-warning mt-1 fs-6">{validationError}</span>}
                                     {notDone && <span className="text-danger mt-1 fs-6">Failed to send message. Please try again later.</span>}
                                     <Col md={12} className="text-center">
-                                        <Button type="submit" className='rounded-5 px-5 w-100 text-center py-2'>Send Message</Button>
+                                        <BrandButton type="submit" className='w-100 py-2'>Send Message</BrandButton>
                                     </Col>
                                 </Row>
                             </Form>
@@ -187,8 +186,8 @@ const ContactSection = () => {
                                                 <div>
                                                     <h3 className="h6 mb-1">Mradul Sharma</h3>
                                                     <p className="mb-1">📍 Etah, Uttar Pradesh, India</p>
-                                                    <p className="mb-0"><a href="tel:+917252933077" className="text-decoration-none text-black">📞 +91 72529 33077 </a></p>
-                                                    <p className="mb-0"><a href="mailto:mradulsharma786@gmail.com" className="text-decoration-none text-black">✉️ mradulsharma786@gmail.com</a></p>
+                                                    <p className="mb-0"><a href="tel:+917252933077" className="text-decoration-none" style={{ color: 'var(--text-dark)' }}>📞 +91 72529 33077 </a></p>
+                                                    <p className="mb-0"><a href="mailto:mradulsharma786@gmail.com" className="text-decoration-none" style={{ color: 'var(--text-dark)' }}>✉️ mradulsharma786@gmail.com</a></p>
                                                 </div>
                                             </div>
                                         </InfoWindow>

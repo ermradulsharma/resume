@@ -9,7 +9,8 @@ import {
     Tooltip,
     Legend,
 } from "chart.js";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
+import BrandButton from "../../../components/common/BrandButton";
 
 ChartJS.register(RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend);
 
@@ -95,13 +96,13 @@ const DrilldownRadarChart = ({ data, height = 400 }) => {
 
                             {selectedCategory && (
                                 <div className="text-center mt-3">
-                                    <Button
-                                        variant="outline-secondary"
+                                    <BrandButton
+                                        variant="brand-outline"
                                         size="sm"
                                         onClick={() => setSelectedCategory(null)}
                                     >
                                         🔙 Back to Categories
-                                    </Button>
+                                    </BrandButton>
                                 </div>
                             )}
                         </Card.Body>

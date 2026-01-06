@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import SEO from "../../../components/common/SEO";
 import LetsConnect from "../../../components/LetsConnect";
 import { Col, Container, Row } from "react-bootstrap";
-import { BsArrowRight } from "react-icons/bs";
 import data from "../../../components/database/services.json";
 import "../Services/Services.css";
 import ServiceModal from "../../../components/modals/ServiceModal";
 
 import { getServiceIcon } from "../../../utils/serviceIcons";
+import BrandButton from "../../../components/common/BrandButton";
 
 const Services = () => {
     const services = data.services.filter(service => service.title);
@@ -55,7 +55,7 @@ const Services = () => {
                                     <div className="stat-circle mb-2"><IconComponent /></div>
                                     <h3>{service.title}</h3>
                                     <p>{service.description}</p>
-                                    <button className="link-item btn btn-primary px-4 py-2 text-white" onClick={() => handleShow(service)}>Learn More <BsArrowRight /></button>
+                                    <BrandButton className="link-item px-4 py-2" withArrow onClick={() => handleShow(service)}>Learn More</BrandButton>
                                 </div>
                             </Col>
                         );

@@ -5,6 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import { ThemeProvider } from "./context/ThemeContext";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./styles/buttons.css";
 
 const rootElement = document.getElementById('root');
 const hasSkeleton = rootElement.querySelector('.skeleton-loader');

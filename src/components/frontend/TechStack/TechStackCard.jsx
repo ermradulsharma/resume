@@ -16,8 +16,8 @@ const TechStackCard = ({ type, Icon, aosDelay = 200 }) => {
                     {techItems.map((skill, index) => (
                         <div className="skill-item" key={`${type}-${index}`}>
                             <div className="skill-info">
-                                <span className="skill-name">{skill.name}</span>
-                                <span className="skill-percentage">{skill.valueNow}%</span>
+                                <span className="skill-name" style={{ color: 'var(--text-primary)' }}>{skill.name}</span>
+                                <span className="skill-percentage" style={{ color: 'var(--text-secondary)' }}>{skill.valueNow}%</span>
                             </div>
                             <ProgressBar className="skill-bar" now={skill.valueNow} />
                         </div>

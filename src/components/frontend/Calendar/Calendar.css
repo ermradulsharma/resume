@@ -5,32 +5,33 @@
 .public-calendar-container .fc-toolbar-title {
     font-size: 1.25rem !important;
     font-weight: 700;
+    color: var(--text-dark);
 }
 
 .public-calendar-container .fc-button {
-    background-color: var(--neutral-50);
-    border-color: var(--neutral-200);
-    color: var(--neutral-900);
+    background-color: var(--surface-color);
+    border-color: var(--border-color);
+    color: var(--text-primary);
     font-weight: 600;
     text-transform: capitalize;
     font-size: 0.875rem;
 }
 
 .public-calendar-container .fc-button:hover {
-    background-color: var(--neutral-200);
-    border-color: var(--neutral-300);
-    color: var(--neutral-900);
+    background-color: var(--background-color);
+    border-color: var(--border-strong);
+    color: var(--text-primary);
 }
 
 .public-calendar-container .fc-button-active {
-    background-color: var(--success-color) !important;
-    border-color: var(--success-color) !important;
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
     color: var(--surface-color) !important;
 }
 
 .public-calendar-container .fc-daygrid-day-number {
     font-size: 0.9rem;
-    color: var(--neutral-800);
+    color: var(--text-secondary);
     padding: 8px;
     text-decoration: none;
 }
@@ -40,7 +41,7 @@
     text-transform: uppercase;
     letter-spacing: 0.5px;
     padding: 10px 0;
-    color: var(--neutral-700);
+    color: var(--text-muted);
     text-decoration: none;
 }
 
@@ -52,20 +53,38 @@
 }
 
 .public-calendar-container .fc-day-today {
-    background-color: rgba(25, 135, 84, 0.05) !important;
+    background-color: color-mix(in srgb, var(--primary-color), transparent 90%) !important;
+}
+
+[data-theme="dark"] .public-calendar-container .fc-day-today {
+    background-color: color-mix(in srgb, var(--primary-color), var(--black) 60%) !important;
+}
+
+[data-theme="dark"] .public-calendar-container .fc-day-today .fc-daygrid-day-number {
+    color: var(--white);
+    font-weight: 800;
+}
+
+.public-calendar-container .fc-theme-standard td,
+.public-calendar-container .fc-theme-standard th {
+    border-color: var(--border-color);
+}
+
+.public-calendar-container .fc-theme-standard .fc-scrollgrid {
+    border-color: var(--border-color);
 }
 
 /* New Styles for Search and Modal */
 .search-bar-wrapper {
     max-width: 600px;
     background: var(--surface-color);
-    border: 1px solid #eee;
+    border: 1px solid var(--border-color);
     transition: all 0.3s ease;
 }
 
 .search-bar-wrapper:focus-within {
-    box-shadow: 0 5px 15px rgba(25, 135, 84, 0.1) !important;
-    border-color: var(--success-color);
+    box-shadow: 0 5px 15px rgba(6, 92, 194, 0.1) !important;
+    border-color: var(--primary-color);
 }
 
 .project-detail-modal .modal-content {
@@ -99,19 +118,17 @@
 }
 
 .project-sidebar-card {
-    border: none;
+    border: 1px solid var(--border-color);
     background: var(--surface-color);
 }
 
 .project-sidebar-item {
     transition: all 0.2s ease;
-    border-left: 3px solid transparent;
 }
 
 .project-sidebar-item:hover {
-    background-color: var(--neutral-50);
-    border-left-color: var(--success-color);
-    padding-left: 1.25rem !important;
+    background-color: var(--background-color);
+    padding-left: 1rem !important;
 }
 
 .cursor-pointer {

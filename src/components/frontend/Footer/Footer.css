@@ -32,26 +32,11 @@
 }
 
 .footer-link:hover {
-    color: rgba(var(--bs-success-rgb), var(--bs-text-opacity)) !important;
+    color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
     transform: translateX(5px);
 }
 
-/* .social-links a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.05);
-    transition: all 0.3s ease;
-}
 
-.social-links a:hover {
-    background: var(--primary-color);
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
-} */
 
 .link-card {
     transition: all 0.3s ease;
@@ -60,9 +45,9 @@
 
 .link-card:hover {
     background: rgba(255, 255, 255, 0.05);
-    border-color: rgba(var(--bs-success-rgb), var(--bs-text-opacity)) !important;
+    border-color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
     transform: translateY(-5px);
-    box-shadow: 0 5px 20px rgba(var(--bs-success-rgb), var(--bs-text-opacity));
+    box-shadow: 0 5px 20px rgba(var(--bs-primary-rgb), var(--bs-text-opacity));
 }
 
 @keyframes fadeInUp {

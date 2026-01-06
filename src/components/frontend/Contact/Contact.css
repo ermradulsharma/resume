@@ -32,30 +32,10 @@
     color: var(--surface-color);
 }
 
-.contact .info-box a {
+.contact .info-item a {
     color: var(--contrast-color);
 }
 
-.contact .info-box .social-links {
-    display: grid;
-    gap: 0.25rem;
-    /* justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; */
-    grid-template-columns: 3fr 3fr 3fr;
-}
-
-.contact .info-box .social-links a {
-    padding: 0.5rem;
-    background: var(--surface-color);
-    color: var(--primary-color);
-    border-radius: 5%;
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-    font-weight: 800;
-    text-decoration: none;
-}
 
 @media (max-width: 992px) {
     .contact .info-box {
@@ -163,20 +143,6 @@
     color: color-mix(in srgb, var(--default-color), transparent 20%);
 }
 
-.contact .contact-form .btn {
-    background-color: var(--primary-color);
-    color: var(--contrast-color);
-    transition: 0.3s;
-}
-
-.contact .contact-form .btn i {
-    font-size: 1.25rem;
-}
-
-.contact .contact-form .btn:hover {
-    background-color: color-mix(in srgb, var(--primary-color), var(--contrast-color) 20%);
-}
-
 .gm-ui-hover-effect,
 .gm-style-iw-chr {
     display: none !important;
@@ -193,7 +159,7 @@
 
 @media screen and (max-width: 320px) {
     .contact .info-box .social-links {
-        grid-template-columns: 2fr 2fr !important;
+        gap: 0.5rem !important;
     }
 
     .contact .info-item {

@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
-import { Container, Badge, Button } from "react-bootstrap";
+import { Container, Badge } from "react-bootstrap";
 import { BsArrowLeft, BsClock, BsCalendar3, BsTag, BsPerson, BsShare } from "react-icons/bs";
 import SEO from "../../../components/common/SEO";
 import blogsData from "../../../components/database/blogs.json";
@@ -9,6 +9,7 @@ import "./BlogDetail.css";
 import LetsConnect from "../../../components/LetsConnect";
 import logo from "../../../assets/logo.webp"
 import RelatedPosts from "../../../components/frontend/RelatedPosts/RelatedPosts";
+import BrandButton from "../../../components/common/BrandButton";
 
 const BlogDetail = () => {
     const { slug } = useParams();
@@ -60,7 +61,7 @@ const BlogDetail = () => {
                 <div className="text-center">
                     <h1>Blog Post Not Found</h1>
                     <p className="text-secondary">The blog post you're looking for doesn't exist.</p>
-                    <Link to="/blogs" className="btn btn-primary">Back to Blogs</Link>
+                    <BrandButton to="/blogs">Back to Blogs</BrandButton>
                 </div>
             </Container>
         );
@@ -105,16 +106,16 @@ const BlogDetail = () => {
                 <Container>
                     <div className="d-flex align-items-center justify-content-between mb-3">
                         <div>
-                            <Badge bg="primary">{post.category}</Badge>
-                            {post.featured && <Badge bg="success" className="ms-2">Featured</Badge>}
+                            <Badge bg="primary-subtle" className="border border-primary-subtle" style={{ color: 'var(--primary-color)' }}>{post.category}</Badge>
+                            {post.featured && <Badge bg="primary-subtle" className="ms-2 border border-primary-subtle" style={{ color: 'var(--primary-color)' }}>Featured</Badge>}
                         </div>
                         <div className="d-flex align-items-center gap-2">
-                            <Button variant="primary" className="share-button" onClick={handleShare}>
+                            <BrandButton className="share-button" onClick={handleShare}>
                                 <BsShare className="me-2" />Share
-                            </Button>
-                            <Link to="/blogs" className="btn btn-danger back-button">
+                            </BrandButton>
+                            <BrandButton to="/blogs" className="back-button">
                                 <BsArrowLeft className="me-2" />Back to Blogs
-                            </Link>
+                            </BrandButton>
                         </div>
                     </div>
                     <h1>{post.title}</h1>
@@ -162,7 +163,7 @@ const BlogDetail = () => {
                                         >
                                             <img src={relatedPost.image} alt={relatedPost.title} loading="lazy" />
                                             <div className="card-content">
-                                                <Badge bg="primary" className="mb-1">{relatedPost.category}</Badge>
+                                                <Badge bg="primary-subtle" className="mb-1 border border-primary-subtle" style={{ color: 'var(--primary-color)' }}>{relatedPost.category}</Badge>
                                                 <h3 className="card-title h6">{relatedPost.title}</h3>
                                                 <p className="card-text small text-secondary">{relatedPost.readTime}</p>
                                             </div>

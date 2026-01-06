@@ -1,5 +1,6 @@
 import React from "react";
-import { Modal, Button } from "react-bootstrap";
+import { Modal } from "react-bootstrap";
+import BrandButton from "../common/BrandButton";
 import Maintenance from "../Maintenance/Maintenance";
 import * as ServiceComponents from "../../components/frontend/serviceContents";
 import "../modals/ServiceModal.css"
@@ -23,8 +24,8 @@ const ServiceModal = ({ show, handleClose, title, icon, content }) => {
                 </div>
             </Modal.Body>
             <Modal.Footer>
-                <Button variant="secondary" onClick={handleClose}>Close </Button>
-                <a href="#contact" className="btn btn-primary" onClick={handleClose}>Let's Connect</a>
+                <BrandButton variant="brand-outline" onClick={handleClose}>Close </BrandButton>
+                <BrandButton href="#contact" onClick={handleClose}>Let's Connect</BrandButton>
             </Modal.Footer>
         </Modal>
     );

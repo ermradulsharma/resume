@@ -1,5 +1,5 @@
 import React, { useCallback } from "react";
-import { Container, Card, Button, Badge, Pagination } from "react-bootstrap";
+import { Container, Card, Badge, Pagination } from "react-bootstrap";
 import { Link, useSearchParams } from "react-router-dom";
 import SEO from "../../../components/common/SEO";
 import "../../frontend/Portfolio/Portfolio.css";
@@ -8,12 +8,13 @@ import LetsConnect from "../../../components/LetsConnect";
 import { trackEvent } from "../../../utils/analytics/ga";
 import SectionHeader from "../../../components/common/SectionHeader";
 import { getSafeProjectImage } from "../../../utils/imageUtils";
+import BrandButton from "../../../components/common/BrandButton";
 
 const TechBadges = ({ items }) => (
     <div className="d-flex flex-wrap gap-2 mt-2">
-        {items.map((t) => (
-            <Badge key={t} bg="success-subtle" text="dark" className="fw-normal">
-                {t}
+        {items.map((tech, index) => (
+            <Badge key={index} bg="primary-subtle" className="fw-normal border border-primary-subtle" style={{ color: 'var(--primary-color)' }}>
+                {tech}
             </Badge>
         ))}
     </div>
@@ -87,17 +88,18 @@ export default function Portfolio() {
                 <header className="d-flex flex-column flex-md-row align-items-md-center justify-content-end mb-4 gap-2">
                     <div className="d-flex gap-1 flex-wrap">
                         {["All", "PHP", "Laravel", "CodeIgniter", "Vue.js", "React.js", "Next.js", "Mautic"].map((btn) => (
-                            <Link
+                            <BrandButton
                                 key={btn}
                                 to={`?filter=${btn}&page=1`}
-                                className={`btn btn-sm ${filter === btn ? "btn-success" : "btn-outline-secondary"}`}
+                                variant={filter === btn ? "brand" : "brand-outline"}
+                                size="sm"
                                 style={{ minWidth: "100px" }}
                                 onClick={() => {
                                     trackEvent({ name: "filter_projects", category: "Projects", label: btn });
                                 }}
                             >
                                 {btn}
-                            </Link>
+                            </BrandButton>
                         ))}
                     </div>
                 </header>
@@ -121,9 +123,9 @@ export default function Portfolio() {
                                         onError={(e) => { e.target.src = 'https://via.placeholder.com/400x220?text=Project+Image'; }}
                                     />
                                     <div className="overlay d-flex justify-content-center align-items-center">
-                                        <Button as="span" variant="success" className="fw-bold">
+                                        <BrandButton as="span" className="fw-bold">
                                             Case Study
-                                        </Button>
+                                        </BrandButton>
                                     </div>
                                 </div>
                             </Link>
@@ -141,7 +143,7 @@ export default function Portfolio() {
                                             {p.title}
                                         </Card.Title>
                                     </Link>
-                                    <Badge bg="success-subtle" text="success" className="border border-success-subtle">{p.period}</Badge>
+                                    <Badge bg="primary-subtle" className="border border-primary-subtle" style={{ color: 'var(--primary-color)' }}>{p.period}</Badge>
                                 </div>
                                 <Card.Text className="text-secondary small mb-3">
                                     {truncateText(p.description, 140)}

@@ -76,12 +76,12 @@
     }
 }
 
-.bg-success-subtle {
-    background-color: rgba(25, 135, 84, 0.05) !important;
+.bg-primary-subtle {
+    background-color: var(--primary-subtle) !important;
 }
 
-.border-success {
-    border-color: rgba(25, 135, 84, 0.2) !important;
+.border-primary {
+    border-color: color-mix(in srgb, var(--primary-color), transparent 80%) !important;
 }
 
 /* New Styles */
@@ -134,9 +134,9 @@
 }
 
 .dot {
-    background-color: var(--success-color);
+    background-color: var(--primary-color);
 }
 
 :root {
-    --accent-color: var(--success-color);
+    --accent-color: var(--primary-color);
 }

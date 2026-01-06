@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import { BiRightArrowAlt } from 'react-icons/bi';
+import BrandButton from './BrandButton';
 
 const SectionHeader = ({ id, title, description, linkTo, linkText, className = "", level = "h2" }) => {
     const HeadingTag = level;
@@ -16,9 +15,9 @@ const SectionHeader = ({ id, title, description, linkTo, linkText, className = "
                 </Col>
                 {linkTo && linkText && (
                     <Col md={2} className="text-md-end mt-3 mt-md-0">
-                        <Link to={linkTo} className="btn btn-outline-success d-inline-flex align-items-center rounded-pill px-4">
-                            {linkText} <BiRightArrowAlt className="ms-2" />
-                        </Link>
+                        <BrandButton to={linkTo} variant="brand-outline" size="sm" withArrow>
+                            {linkText}
+                        </BrandButton>
                     </Col>
                 )}
             </Row>

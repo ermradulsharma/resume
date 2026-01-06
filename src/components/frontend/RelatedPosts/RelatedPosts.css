@@ -50,7 +50,7 @@
 }
 
 .related-post-card:hover .related-post-title {
-    color: var(--success-color) !important;
+    color: var(--primary-color) !important;
 }
 
 /* Responsive adjustments */

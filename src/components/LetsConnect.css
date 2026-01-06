@@ -1,0 +1,67 @@
+.lets-connect {
+    background-color: var(--primary-color);
+    transition: background-color 0.3s ease;
+}
+
+[data-theme="dark"] .lets-connect {
+    background-color: var(--surface-color);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.lets-connect .connect-content {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+}
+
+[data-theme="dark"] .lets-connect .connect-content {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.lets-connect .display-5 {
+    color: var(--white);
+}
+
+[data-theme="dark"] .lets-connect .display-5 {
+    color: var(--heading-color);
+}
+
+.lets-connect .lead {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme="dark"] .lets-connect .lead {
+    color: var(--text-secondary);
+}
+
+/* Button overrides for light/dark on this specific section */
+.lets-connect .btn-light {
+    background-color: var(--white);
+    color: var(--primary-color) !important;
+    border: none;
+}
+
+[data-theme="dark"] .lets-connect .btn-light {
+    background-color: var(--primary-color);
+    color: var(--white) !important;
+}
+
+.lets-connect .btn-outline-light {
+    border-color: rgba(255, 255, 255, 0.5);
+    color: var(--white);
+}
+
+[data-theme="dark"] .lets-connect .btn-outline-light {
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+.lets-connect .btn-outline-light:hover {
+    background-color: var(--white);
+    color: var(--primary-color);
+}
+
+[data-theme="dark"] .lets-connect .btn-outline-light:hover {
+    background-color: var(--neutral-100);
+    color: var(--primary-color);
+}

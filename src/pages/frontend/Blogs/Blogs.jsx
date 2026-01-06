@@ -1,12 +1,13 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { Row, Col, Card, Badge, Button, Pagination, Spinner, Form } from "react-bootstrap";
-import { Link, useSearchParams } from "react-router-dom";
+import { Row, Col, Card, Badge, Pagination, Spinner, Form } from "react-bootstrap";
+import { useSearchParams } from "react-router-dom";
 import { BsGrid3X3Gap, BsList, BsCalendar3, BsPerson } from "react-icons/bs";
 import SEO from "../../../components/common/SEO";
 import "../Blogs/Blogs.css";
 import blogsData from "../../../components/database/blogs.json";
 import LetsConnect from "../../../components/LetsConnect";
 import SectionHeader from "../../../components/common/SectionHeader";
+import BrandButton from "../../../components/common/BrandButton";
 
 const Blogs = () => {
     const { title, description, posts, categories } = blogsData.blogs;
@@ -145,9 +146,9 @@ const Blogs = () => {
 
                 <div className="mb-4 d-flex flex-wrap gap-2 align-items-center justify-content-between">
                     <div className="d-none d-md-flex flex-wrap gap-2 category-filter-wrapper">
-                        <Button variant={selectedCategory === "All" ? "success" : "outline-secondary"} size="sm" onClick={() => handleCategoryChange("All")}>All Posts</Button>
+                        <BrandButton variant={selectedCategory === "All" ? "brand" : "brand-outline"} size="sm" onClick={() => handleCategoryChange("All")}>All Posts</BrandButton>
                         {categories.map((category) => (
-                            <Button key={category} variant={selectedCategory === category ? "success" : "outline-secondary"} size="sm" onClick={() => handleCategoryChange(category)}>{category}</Button>
+                            <BrandButton key={category} variant={selectedCategory === category ? "brand" : "brand-outline"} size="sm" onClick={() => handleCategoryChange(category)}>{category}</BrandButton>
                         ))}
                     </div>
 
@@ -159,8 +160,8 @@ const Blogs = () => {
                     </div>
 
                     <div className="view-toggle-buttons d-flex gap-2 m-0">
-                        <Button variant={viewMode === "grid" ? "success" : "outline-secondary"} size="sm" onClick={() => setViewMode("grid")} className="d-flex align-items-center p-2" aria-label="Grid View"><BsGrid3X3Gap /></Button>
-                        <Button variant={viewMode === "list" ? "success" : "outline-secondary"} size="sm" onClick={() => setViewMode("list")} className="d-flex align-items-center p-2" aria-label="List View"><BsList /></Button>
+                        <BrandButton variant={viewMode === "grid" ? "brand" : "brand-outline"} size="sm" onClick={() => setViewMode("grid")} aria-label="Grid View"><BsGrid3X3Gap /></BrandButton>
+                        <BrandButton variant={viewMode === "list" ? "brand" : "brand-outline"} size="sm" onClick={() => setViewMode("list")} aria-label="List View"><BsList /></BrandButton>
                     </div>
                 </div>
 
@@ -178,10 +179,7 @@ const Blogs = () => {
                                     style={{ objectFit: 'cover' }}
                                 />
                                 <Card.Body className="d-flex flex-column p-2">
-                                    <div className="mb-2">
-                                        <Badge bg="info" className="me-2">{post.category}</Badge>
-                                        {post.featured && <Badge bg="success">Featured</Badge>}
-                                    </div>
+                                    {post.featured && <Badge bg="primary">Featured</Badge>}
                                     <Card.Title className="h5" as="h2">{post.title}</Card.Title>
                                     <Card.Text className="text-secondary small mb-2 d-flex align-items-center justify-content-between">
                                         <span className="d-flex align-items-center gap-1"><BsCalendar3 /> {getRelativeTime(post.date)}</span>
@@ -190,9 +188,9 @@ const Blogs = () => {
                                     <Card.Text>{post.excerpt}</Card.Text>
                                     <div className="mt-auto">
                                         <div className="d-flex flex-wrap gap-1 mb-3">
-                                            {post.tags.slice(0, 3).map((tag, index) => (<Badge key={index} bg="success-subtle" className="text-black"> {tag} </Badge>))}
+                                            {post.tags.slice(0, 3).map((tag, index) => (<Badge key={index} bg="primary-subtle" className="border border-primary-subtle" style={{ color: 'var(--primary-color)' }}> {tag} </Badge>))}
                                         </div>
-                                        <Link to={`/blogs/${post.slug}`} className="btn btn-success btn-sm" aria-label={`Read more about ${post.title}`} style={{ float: 'right' }}>Read More → </Link>
+                                        <BrandButton to={`/blogs/${post.slug}`} size="sm" withArrow aria-label={`Read more about ${post.title}`} style={{ float: 'right' }}>Read More</BrandButton>
                                     </div>
                                 </Card.Body>
                             </Card>
@@ -222,7 +220,7 @@ const Blogs = () => {
                                         <Card.Body className="d-flex flex-column">
                                             <div className="d-flex gap-2">
                                                 <Badge bg="info">{post.category}</Badge>
-                                                {post.featured && <Badge bg="success">Featured</Badge>}
+                                                {post.featured && <Badge bg="primary">Featured</Badge>}
                                             </div>
                                             <Card.Title className="h4 my-1" as="h2">{post.title}</Card.Title>
                                             <Card.Text className="text-secondary small d-flex align-items-center gap-2 mb-1">
@@ -233,10 +231,10 @@ const Blogs = () => {
                                             <div className="mt-0">
                                                 <div className="d-flex flex-wrap gap-1 mb-3">
                                                     {post.tags.map((tag, index) => (
-                                                        <Badge key={index} bg="success-subtle" className="text-black"> {tag} </Badge>
+                                                        <Badge key={index} bg="primary-subtle" className="border border-primary-subtle" style={{ color: 'var(--primary-color)' }}> {tag} </Badge>
                                                     ))}
                                                 </div>
-                                                <Link to={`/blogs/${post.slug}`} className="btn btn-success btn-sm">Read Full Article → </Link>
+                                                <BrandButton to={`/blogs/${post.slug}`} size="sm" withArrow>Read Full Article</BrandButton>
                                             </div>
                                         </Card.Body>
                                     </Col>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import '../../frontend/About/About.css';
 import about from '../../../assets/mradulsharma_another.webp';
 import signature from '../../../assets/signature.webp';
@@ -9,6 +9,7 @@ import data from "../../../components/database/about.json";
 import resume from '../../../assets/resume/mradulsharma.pdf';
 import { trackEvent } from "../../../utils/analytics/ga";
 import SectionHeader from "../../../components/common/SectionHeader";
+import BrandButton from '../../common/BrandButton';
 import GitHub from "../ContributionCalendar/GitHub";
 import PublicCalendar from "../Calendar/Calendar";
 
@@ -32,7 +33,7 @@ const About = () => {
                             <div className="signature-section">
                                 <img src={signature} alt="Signature" className="signature" loading="lazy" width="200" height="100" />
                                 <p className="quote text-secondary">Building meaningful digital experiences through creative code.</p>
-                                <Button variant="primary" className='rounded-5 px-4 px-lg-5 py-2 my-4' href={resume} download aria-label="Download Mradul Sharma Resume in PDF" onClick={handleDownloadResume}>⚡Resume PDF Download ⚡</Button>
+                                <BrandButton className='mt-4' href={resume} download aria-label="Download Mradul Sharma Resume in PDF" onClick={handleDownloadResume}>⚡Resume PDF Download ⚡</BrandButton>
                             </div>
                         </div>
                     </Col>

@@ -1,5 +1,6 @@
 import React from "react";
-import { Button, Card, Col, Dropdown, Image, Row } from "react-bootstrap";
+import { Card, Col, Dropdown, Image, Row } from "react-bootstrap";
+import BrandButton from "../../components/common/BrandButton";
 
 export const Index = () => {
     return (
@@ -12,10 +13,10 @@ export const Index = () => {
                                 <Col sm={7}>
                                     <h5 className="card-title text-primary">Congratulations John! 🎉</h5>
                                     <p className="mb-4">You have done <span className="fw-medium">72%</span> more sales today. Check your new badge in your profile.</p>
-                                    <Button variant="outline-primary" size="sm">View Badges</Button>
+                                    <BrandButton variant="brand-outline" size="sm">View Badges</BrandButton>
                                 </Col>
                                 <Col sm={5} className="text-center">
-                                    <Image src="/admin/assets/img/illustrations/man-with-laptop-light.png" height="140" alt="View Badge User" fluid  rel='lazy' loading="lazy"/>
+                                    <Image src="/admin/assets/img/illustrations/man-with-laptop-light.png" height="140" alt="View Badge User" fluid rel='lazy' loading="lazy" />
                                 </Col>
                             </Row>
                         </Card.Body>
@@ -27,21 +28,21 @@ export const Index = () => {
                             <Card>
                                 <Card.Body>
                                     <div className="d-flex justify-content-between align-items-start">
-                                    <Image src="/admin/assets/img/icons/unicons/chart-success.png" alt="chart success" className="rounded" width={40} rel='lazy' loading="lazy" />
-                                    <Dropdown align="end">
-                                        <Dropdown.Toggle variant="link" bsPrefix="btn p-0">
-                                        <i className="bx bx-dots-vertical-rounded" />
-                                        </Dropdown.Toggle>
-                                        <Dropdown.Menu>
-                                        <Dropdown.Item href="#">View More</Dropdown.Item>
-                                        <Dropdown.Item href="#">Delete</Dropdown.Item>
-                                        </Dropdown.Menu>
-                                    </Dropdown>
+                                        <Image src="/admin/assets/img/icons/unicons/chart-success.png" alt="chart success" className="rounded" width={40} rel='lazy' loading="lazy" />
+                                        <Dropdown align="end">
+                                            <Dropdown.Toggle variant="link" bsPrefix="btn p-0">
+                                                <i className="bx bx-dots-vertical-rounded" />
+                                            </Dropdown.Toggle>
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item href="#">View More</Dropdown.Item>
+                                                <Dropdown.Item href="#">Delete</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                     </div>
                                     <span className="fw-medium d-block mb-1">Profit</span>
                                     <h3 className="card-title mb-2">$12,628</h3>
-                                    <small className="text-success fw-medium">
-                                    <i className="bx bx-up-arrow-alt"></i> +72.80%
+                                    <small className="text-primary fw-medium">
+                                        <i className="bx bx-up-arrow-alt"></i> +72.80%
                                     </small>
                                 </Card.Body>
                             </Card>
@@ -54,18 +55,18 @@ export const Index = () => {
                                         <Image src="/admin/assets/img/icons/unicons/wallet-info.png" alt="wallet info" className="rounded" width={40} rel='lazy' loading="lazy" />
                                         <Dropdown align="end">
                                             <Dropdown.Toggle variant="link" bsPrefix="btn p-0">
-                                            <i className="bx bx-dots-vertical-rounded" />
+                                                <i className="bx bx-dots-vertical-rounded" />
                                             </Dropdown.Toggle>
                                             <Dropdown.Menu>
-                                            <Dropdown.Item href="#">View More</Dropdown.Item>
-                                            <Dropdown.Item href="#">Delete</Dropdown.Item>
+                                                <Dropdown.Item href="#">View More</Dropdown.Item>
+                                                <Dropdown.Item href="#">Delete</Dropdown.Item>
                                             </Dropdown.Menu>
                                         </Dropdown>
                                     </div>
                                     <span>Sales</span>
                                     <h3 className="card-title mb-2">$4,679</h3>
-                                    <small className="text-success fw-medium">
-                                    <i className="bx bx-up-arrow-alt"></i> +28.42%
+                                    <small className="text-primary fw-medium">
+                                        <i className="bx bx-up-arrow-alt"></i> +28.42%
                                     </small>
                                 </Card.Body>
                             </Card>

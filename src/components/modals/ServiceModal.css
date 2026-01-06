@@ -1,6 +1,7 @@
 /* Service Modal Styles */
 .service-modal .modal-header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: var(--primary-color);
+    border-bottom: 2px solid var(--border-color);
 }
 
 .service-modal .modal-header .btn-close {
@@ -12,9 +13,15 @@
     opacity: 1;
 }
 
+.service-modal .modal-title {
+    color: var(--white) !important;
+}
+
 .service-modal .modal-body {
     max-height: 70vh;
     overflow-y: auto;
+    background-color: var(--surface-color);
+    color: var(--text-primary);
 }
 
 .service-modal .modal-body::-webkit-scrollbar {
@@ -22,12 +29,12 @@
 }
 
 .service-modal .modal-body::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: var(--surface-color);
     border-radius: 10px;
 }
 
 .service-modal .modal-body::-webkit-scrollbar-thumb {
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: var(--primary-color);
     border-radius: 10px;
 }
 
@@ -88,13 +95,18 @@
     font-weight: 600;
 }
 
+.service-modal .modal-footer {
+    background-color: var(--surface-color);
+    border-top: 2px solid var(--border-color);
+}
+
 .service-modal .modal-footer .btn-primary {
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: var(--primary-color);
 }
 
 .service-modal .modal-footer .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+    box-shadow: var(--shadow-hover);
 }
 
 .service-modal .modal-footer .btn-secondary:hover {

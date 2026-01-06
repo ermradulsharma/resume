@@ -75,71 +75,9 @@
     font-size: 1.1rem;
 }
 
-.error-actions .btn {
-    border-radius: 50px;
-    padding: 0.75rem 2rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-.error-actions .btn-primary {
-    background: white;
-    color: #667eea;
-    border: none;
-}
-
-.error-actions .btn-primary:hover {
-    background: rgba(255, 255, 255, 0.9);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-}
-
-.error-actions .btn-outline-secondary {
-    border: 2px solid white;
-    color: white;
-    background: transparent;
-}
-
-.error-actions .btn-outline-secondary:hover {
-    background: white;
-    color: #667eea;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-}
-
 .quick-links p {
     color: rgba(255, 255, 255, 0.8);
     font-size: 0.9rem;
-}
-
-.quick-links .btn-link {
-    color: white;
-    font-weight: 500;
-    padding: 0.5rem 1rem;
-    transition: all 0.3s ease;
-    position: relative;
-}
-
-.quick-links .btn-link::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 2px;
-    background: white;
-    transition: width 0.3s ease;
-}
-
-.quick-links .btn-link:hover {
-    color: white;
-    opacity: 1;
-}
-
-.quick-links .btn-link:hover::after {
-    width: 80%;
 }
 
 .error-illustration svg {
@@ -169,15 +107,6 @@
 
     .error-message p {
         font-size: 1rem;
-    }
-
-    .error-actions {
-        flex-direction: column;
-    }
-
-    .error-actions .btn {
-        width: 100%;
-        max-width: 300px;
     }
 
     .quick-links .d-flex {

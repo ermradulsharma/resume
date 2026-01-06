@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
-import Button from 'react-bootstrap/Button';
+import BrandButton from '../../common/BrandButton';
 import logo from '../../../assets/logo.webp';
 import resume from '../../../assets/resume/mradulsharma.pdf';
 import { useLocation, Link } from 'react-router-dom';
@@ -44,6 +44,7 @@ function NavBar() {
                         width="218"
                         height="40"
                         loading="lazy"
+                        className="theme-aware-logo"
                     />
                 </Navbar.Brand>
 
@@ -61,30 +62,30 @@ function NavBar() {
                         <Nav.Item><Nav.Link as={Link} to="/blogs" className={isActive('/blogs')}>Blogs</Nav.Link></Nav.Item>
                         <Nav.Item><Nav.Link as={Link} to="/contact" className={isActive('/contact')}>Contact</Nav.Link></Nav.Item>
                         <Nav.Item className="d-none d-lg-block">
-                            <Button
-                                variant="primary"
+                            <BrandButton
+                                variant="success"
                                 size="sm"
                                 href={resume}
                                 target="_blank"
-                                className="rounded-pill px-3 fw-bold"
+                                className="px-3 fw-bold"
                                 onClick={handleResumeClick}
                             >
                                 Download Resume
-                            </Button>
+                            </BrandButton>
                         </Nav.Item>
                     </Nav>
                     {/* Mobile Resume Button */}
                     <div className="d-lg-none mt-3">
-                        <Button
-                            variant="primary"
+                        <BrandButton
+                            variant="success"
                             size="sm"
                             href={resume}
                             target="_blank"
-                            className="w-100 rounded-pill fw-bold"
+                            className="w-100 fw-bold"
                             onClick={handleResumeClick}
                         >
                             Download Resume
-                        </Button>
+                        </BrandButton>
                     </div>
                 </Navbar.Collapse>
             </Container>

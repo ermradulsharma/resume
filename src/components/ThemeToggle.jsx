@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import BrandButton from "./common/BrandButton";
 
 export default function ThemeToggle() {
     const [theme, setTheme] = useState(() => {
@@ -11,6 +12,6 @@ export default function ThemeToggle() {
     }, [theme]);
 
     return (
-        <button onClick={() => setTheme(theme === "light" ? "dark" : "light")} className="btn btn-primary">{theme === "light" ? "🌙 Dark Mode" : "☀️ Light Mode"}</button>
+        <BrandButton variant="brand-outline" onClick={() => setTheme(theme === "light" ? "dark" : "light")} size="sm">{theme === "light" ? "🌙 Dark Mode" : "☀️ Light Mode"}</BrandButton>
     );
 }

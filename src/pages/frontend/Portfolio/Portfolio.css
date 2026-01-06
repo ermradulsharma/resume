@@ -71,13 +71,3 @@ table tbody tr td {
     box-shadow: 0 8px 30px color-mix(in srgb, var(--default-color), transparent 85%) !important;
     transform: translateY(-5px);
 }
-
-.btn-outline-secondary {
-    border-color: var(--neutral-600) !important;
-    color: var(--neutral-700) !important;
-}
-
-.btn-outline-secondary:hover {
-    background-color: var(--neutral-600) !important;
-    color: white !important;
-}

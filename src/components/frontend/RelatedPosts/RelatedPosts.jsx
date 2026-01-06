@@ -66,7 +66,7 @@ const RelatedPosts = ({ currentPostId, category, tags = [], maxResults = 4 }) =>
                                             className="related-post-image"
                                         />
                                         {post.featured && (
-                                            <Badge bg="success" className="featured-badge">
+                                            <Badge bg="primary" className="featured-badge">
                                                 Featured
                                             </Badge>
                                         )}

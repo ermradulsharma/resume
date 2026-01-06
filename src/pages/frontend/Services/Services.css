@@ -26,7 +26,7 @@
     padding: 2rem;
     background-color: var(--surface-color);
     border-radius: 12px;
-    box-shadow: 0 5px 25px -5px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--shadow-default);
     transition: all 0.3s ease-in-out;
     position: relative;
     overflow: hidden;
@@ -45,7 +45,7 @@
 
 .services .service-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 30px -5px rgba(0, 0, 0, 0.08);
+    box-shadow: var(--shadow-hover);
 }
 
 .services .service-item:hover::before {
@@ -54,7 +54,6 @@
 
 .services .service-item:hover .icon i,
 .services .service-item:hover .icon svg {
-    /* transform: scale(1) rotate(5deg); */
     color: var(--primary-color);
 }
 

@@ -12,9 +12,9 @@ import Faqs from "../../../components/frontend/Faqs/Faqs";
 import LetsConnect from "../../../components/LetsConnect";
 import Services from "../../../components/frontend/Services/Services";
 import signature from '../../../assets/signature.webp'
-import Button from 'react-bootstrap/Button';
 import resume from '../../../assets/resume/mradulsharma.pdf';
 import { trackEvent } from "../../../utils/analytics/ga";
+import BrandButton from "../../../components/common/BrandButton";
 
 
 
@@ -44,9 +44,9 @@ const About = () => {
                 <Container>
                     <Row className="align-items-start">
                         <Col lg={9} data-aos="fade-left" className="about-details">
-                            <p style={{ color: "#B8B8B8" }}>{expandedAbout}</p>
-                            <p style={{ color: "#B8B8B8" }}>{expandedAbout3}</p>
-                            <p style={{ color: "#B8B8B8" }}>{expandedAbout7}</p>
+                            <p>{expandedAbout}</p>
+                            <p>{expandedAbout3}</p>
+                            <p>{expandedAbout7}</p>
                             <SocialLinks withNames platforms={['GitHub', 'LinkedIn', 'X (Twitter)', 'Medium', 'Slack']} />
                         </Col>
                         <Col lg={3} data-aos="fade-right" data-aos-delay="200">
@@ -57,7 +57,16 @@ const About = () => {
                                 <div className="signature-section">
                                     <img src={signature} alt="Signature" className="signature" loading="lazy" width="300" height="80" />
                                     <p className="quote text-secondary mb-1">Building meaningful digital experiences through thoughtful, creative code.</p>
-                                    <Button variant="primary" className='rounded-5 px-4 px-lg-4 py-2 mt-4' href={resume} download aria-label="Download Mradul Sharma Resume in PDF" onClick={handleDownloadResume}>⚡Resume PDF Download ⚡</Button>
+                                    <BrandButton
+                                        className='mt-4'
+                                        href={resume}
+                                        download
+                                        aria-label="Download Mradul Sharma Resume in PDF"
+                                        onClick={handleDownloadResume}
+                                        icon={<span>⚡</span>}
+                                    >
+                                        Resume PDF Download ⚡
+                                    </BrandButton>
                                 </div>
                             </div>
                         </Col>

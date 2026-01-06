@@ -10,7 +10,7 @@
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 @media (max-width: 1200px) {
@@ -33,7 +33,7 @@
 
 .featured-projects .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1) !important;
+    box-shadow: var(--shadow-hover) !important;
 }
 
 .featured-projects .card-img-wrapper {
@@ -46,7 +46,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(25, 135, 84, 0.8);
+    background: color-mix(in srgb, var(--primary-color), transparent 20%);
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -79,12 +79,4 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     line-height: 1.5rem;
-}
-
-.bg-success-subtle {
-    background-color: rgba(25, 135, 84, 0.05) !important;
-}
-
-.border-success-subtle {
-    border-color: rgba(25, 135, 84, 0.1) !important;
 }

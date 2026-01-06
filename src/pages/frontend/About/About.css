@@ -25,7 +25,7 @@
     border-radius: 50%;
     overflow: hidden;
     border: 5px solid var(--primary-color);
-    box-shadow: 0 10px 30px color-mix(in srgb, var(--primary-color), transparent 80%);
+    box-shadow: var(--shadow-default);
 }
 
 .profile-image-wrapper .profile-image img {
@@ -48,7 +48,10 @@
 
 .profile-image-wrapper .signature-section .signature {
     max-width: 100%;
-    filter: invert(1);
+}
+
+[data-theme="dark"] .profile-image-wrapper .signature-section .signature {
+    filter: invert(1) brightness(2);
 }
 
 .profile-image-wrapper .signature-section .quote {
@@ -60,26 +63,6 @@
     margin: 0 auto;
 }
 
-.about-details .social-links {
-    display: flex;
-    gap: 0.6rem;
-    justify-content: start;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.about-details .social-links a {
-    padding: 0.5rem 1.2rem;
-    background: var(--primary-color);
-    color: var(--surface-color);
-    border-radius: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.25rem;
-    font-weight: 800;
-    text-decoration: none;
-}
 
 .about-hero p.lead {
     width: 70%;

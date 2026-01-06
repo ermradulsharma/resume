@@ -22,7 +22,7 @@ const LatestBlogs = ({ maxPosts = 4 }) => {
                 <Row className="g-4">
                     {latestPosts.map((post) => (
                         <Col key={post.id} lg={3} md={6}>
-                            <Card className="blog-card h-100 shadow-sm border-0 border-top border-success border-3">
+                            <Card className="blog-card h-100 shadow-sm border-0 border-top border-primary border-3">
                                 <Link to={`/blogs/${post.slug}`} className="text-decoration-none">
                                     <div className="card-img-wrapper" style={{ height: "200px", overflow: "hidden" }}>
                                         <Card.Img variant="top" src={post.image} alt={post.title} style={{ objectFit: "cover", height: "100%" }} loading="lazy" />
@@ -30,21 +30,21 @@ const LatestBlogs = ({ maxPosts = 4 }) => {
                                 </Link>
                                 <Card.Body className="d-flex flex-column">
                                     <div className="mb-2">
-                                        <Badge bg="info-subtle" text="info" className="me-2">{post.category}</Badge>
-                                        {post.featured && <Badge bg="success-subtle" text="success">Featured</Badge>}
+                                        <Badge bg="info-subtle" className="me-2" style={{ color: 'var(--info-color)' }}>{post.category}</Badge>
+                                        {post.featured && <Badge bg="primary-subtle" style={{ color: 'var(--primary-color)' }}>Featured</Badge>}
                                     </div>
-                                    <Link to={`/blogs/${post.slug}`} className="text-decoration-none text-dark">
-                                        <Card.Title className="h5 fw-bold mb-3" as="h3">{post.title}</Card.Title>
+                                    <Link to={`/blogs/${post.slug}`} className="text-decoration-none">
+                                        <Card.Title className="h5 fw-bold mb-3" as="h3" style={{ color: 'var(--text-dark)' }}>{post.title}</Card.Title>
                                     </Link>
-                                    <Card.Text className="text-secondary small mb-3">
+                                    <Card.Text className="small mb-3" style={{ color: 'var(--text-secondary)' }}>
                                         {post.excerpt.length > 160 ? `${post.excerpt.substring(0, 160)}...` : post.excerpt}
                                     </Card.Text>
                                     <div className="mt-auto pt-3 border-top d-flex align-items-center justify-content-between">
-                                        <div className="d-flex align-items-center gap-2 text-muted small">
+                                        <div className="d-flex align-items-center gap-2 small" style={{ color: 'var(--text-muted)' }}>
                                             <BsCalendar3 />
                                             <span>{new Date(post.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
                                         </div>
-                                        <div className="d-flex align-items-center gap-2 text-muted small">
+                                        <div className="d-flex align-items-center gap-2 small" style={{ color: 'var(--text-muted)' }}>
                                             <BsClock />
                                             <span>{post.readTime}</span>
                                         </div>

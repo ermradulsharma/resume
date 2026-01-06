@@ -1,0 +1,86 @@
+/* Brand Button Design System */
+:root {
+    --btn-radius: 3rem;
+    --btn-padding-x: 1.75rem;
+    --btn-padding-y: 0.3rem;
+    --btn-font-weight: 600;
+    --btn-transition: all 0.3s ease;
+    --btn-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    --btn-shadow-hover: 0 8px 25px rgba(6, 92, 194, 0.25);
+}
+
+/* Global Override for all Bootstrap buttons to ensure pill shape */
+.btn {
+    border-radius: var(--btn-radius) !important;
+    padding: var(--btn-padding-y) var(--btn-padding-x);
+    font-weight: var(--btn-font-weight);
+    transition: var(--btn-transition);
+}
+
+/* Brand Primary Button (The "Resume" Style) */
+.btn-brand {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    color: var(--white) !important;
+    box-shadow: var(--btn-shadow);
+}
+
+.btn-brand:hover {
+    background-color: var(--primary-hover) !important;
+    border-color: var(--primary-hover) !important;
+    transform: translateY(-2px);
+    box-shadow: var(--btn-shadow-hover);
+}
+
+.btn-brand:active {
+    background-color: var(--primary-active) !important;
+    transform: translateY(0);
+}
+
+/* Brand Outline Button */
+.btn-brand-outline {
+    background-color: transparent !important;
+    border: 2px solid var(--primary-color) !important;
+    color: var(--primary-color) !important;
+    border-radius: var(--btn-radius) !important;
+}
+
+.btn-brand-outline:hover {
+    background-color: var(--primary-color) !important;
+    color: var(--white) !important;
+    transform: translateY(-2px);
+}
+
+/* Brand Outline Light (For primary/dark backgrounds) */
+.btn-brand-outline-light {
+    background-color: transparent !important;
+    border: 2px solid var(--white) !important;
+    color: var(--white) !important;
+    border-radius: var(--btn-radius) !important;
+}
+
+.btn-brand-outline-light:hover {
+    background-color: var(--white) !important;
+    color: var(--primary-color) !important;
+    transform: translateY(-2px);
+}
+
+/* Variant for Social Links (Small Brand Buttons) */
+.btn-social {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Dark Mode Specific Tweaks if needed */
+[data-theme="dark"] .btn-brand-outline {
+    border-color: var(--primary-light) !important;
+    color: var(--primary-light) !important;
+}
+
+[data-theme="dark"] .btn-brand-outline:hover {
+    background-color: var(--primary-light) !important;
+    color: var(--neutral-900) !important;
+}

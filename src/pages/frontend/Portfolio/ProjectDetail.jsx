@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { Container, Row, Col, Badge, Card, Button } from 'react-bootstrap';
+import { Container, Row, Col, Badge, Card } from 'react-bootstrap';
 import { BiArrowBack, BiTime, BiLayer, BiCheckCircle, BiTargetLock, BiDetail, BiRocket } from 'react-icons/bi';
 import SEO from '../../../components/common/SEO';
 import data from '../../../components/database/portfolio.json';
 import LetsConnect from '../../../components/LetsConnect';
 import { getSafeProjectImage } from '../../../utils/imageUtils';
+import BrandButton from '../../../components/common/BrandButton';
 import './ProjectDetail.css';
 
 const ProjectDetail = () => {
@@ -22,7 +23,7 @@ const ProjectDetail = () => {
             <Container className="py-5 text-center my-5">
                 <h2>Project Not Found</h2>
                 <p>The project you are looking for does not exist.</p>
-                <Link to="/portfolio" className="btn btn-success mt-3">Back to Portfolio</Link>
+                <BrandButton to="/portfolio" className="mt-3">Back to Portfolio</BrandButton>
             </Container>
         );
     }
@@ -54,15 +55,15 @@ const ProjectDetail = () => {
                             <h1 className="display-4 fw-bold mb-3">{title}</h1>
                             <div className="d-flex flex-wrap gap-3 mb-4">
                                 <span className="d-flex align-items-center">
-                                    <BiTime className="me-2 text-success" /> {case_study.project_details?.year || period}
+                                    <BiTime className="me-2 text-primary" /> {case_study.project_details?.year || period}
                                 </span>
                                 <span className="d-flex align-items-center">
-                                    <BiLayer className="me-2 text-success" /> {case_study.project_details?.category || project.category}
+                                    <BiLayer className="me-2 text-primary" /> {case_study.project_details?.category || project.category}
                                 </span>
                             </div>
                             <div className="d-flex flex-wrap gap-2">
                                 {technologies.map(tech => (
-                                    <Badge key={tech} bg="success-subtle" text="light" className="px-3 py-2 fw-normal fs-6" style={{ background: 'rgba(25, 135, 84, 0.2)', border: '1px solid rgba(25, 135, 84, 0.3)' }}>
+                                    <Badge key={tech} bg="primary-subtle" text="light" className="px-3 py-2 fw-normal fs-6" style={{ background: 'var(--primary-subtle)', color: 'var(--primary-color)', border: '1px solid var(--primary-color)' }}>
                                         {tech}
                                     </Badge>
                                 ))}
@@ -79,7 +80,7 @@ const ProjectDetail = () => {
                             {/* Overview */}
                             <div className="content-block mb-5" data-aos="fade-up">
                                 <h3 className="h4 fw-bold mb-3 d-flex align-items-center">
-                                    <BiDetail className="me-2 text-success" /> Overview
+                                    <BiDetail className="me-2 text-primary" /> Overview
                                 </h3>
                                 <p className="text-secondary lead-sm">{case_study.overview}</p>
                             </div>
@@ -104,13 +105,13 @@ const ProjectDetail = () => {
                             {/* Solution / Objectives */}
                             {case_study.objectives && (
                                 <div className="content-block mb-5" data-aos="fade-up">
-                                    <h3 className="h4 fw-bold mb-3 d-flex align-items-center text-success">
+                                    <h3 className="h4 fw-bold mb-3 d-flex align-items-center text-primary">
                                         <BiRocket className="me-2" /> Our Solution
                                     </h3>
                                     <ul className="list-unstyled">
                                         {case_study.objectives.map((item, idx) => (
                                             <li key={idx} className="mb-3 d-flex align-items-start">
-                                                <BiCheckCircle className="text-success mt-1 me-3 flex-shrink-0" />
+                                                <BiCheckCircle className="text-primary mt-1 me-3 flex-shrink-0" />
                                                 <span className="text-secondary">{item}</span>
                                             </li>
                                         ))}
@@ -133,7 +134,7 @@ const ProjectDetail = () => {
                                                         <p className="text-secondary mb-0">{item.challenge}</p>
                                                     </div>
                                                     <div className="col-md-6">
-                                                        <h6 className="fw-bold text-uppercase small text-success mb-2">Solution</h6>
+                                                        <h6 className="fw-bold text-uppercase small text-primary mb-2">Solution</h6>
                                                         <p className="text-secondary mb-0">{item.solution}</p>
                                                     </div>
                                                 </div>
@@ -165,7 +166,7 @@ const ProjectDetail = () => {
                                             {case_study.implemented.key_features.map((feature, idx) => (
                                                 <div key={idx} className="col-md-6">
                                                     <div className="p-3 border rounded-3 small text-secondary bg-white h-100 d-flex align-items-center shadow-sm hover-up transition-base">
-                                                        <BiCheckCircle className="text-success me-2 flex-shrink-0 fs-5" /> {feature}
+                                                        <BiCheckCircle className="text-primary me-2 flex-shrink-0 fs-5" /> {feature}
                                                     </div>
                                                 </div>
                                             ))}
@@ -178,7 +179,7 @@ const ProjectDetail = () => {
                             {case_study.images && case_study.images.length > 0 && (
                                 <div className="content-block mb-5" data-aos="fade-up">
                                     <h3 className="h4 fw-bold mb-4 d-flex align-items-center">
-                                        <BiDetail className="me-2 text-success" /> Project Gallery
+                                        <BiDetail className="me-2 text-primary" /> Project Gallery
                                     </h3>
                                     <div className="project-gallery mt-4">
                                         <div className="row g-4">
@@ -209,13 +210,13 @@ const ProjectDetail = () => {
                             {/* Outcomes */}
                             {case_study.outcomes && (
                                 <div className="content-block mb-0" data-aos="fade-up">
-                                    <h3 className="h4 fw-bold mb-4 d-flex align-items-center text-success">
-                                        <BiCheckCircle className="me-2" /> Strategic Impact
+                                    <h3 className="h4 fw-bold mb-4 d-flex align-items-center text-primary">
+                                        <BiCheckCircle className="me-2 text-primary" /> Strategic Impact
                                     </h3>
                                     <div className="row g-4 mt-2">
                                         {case_study.outcomes.map((outcome, idx) => (
                                             <div key={idx} className="col-md-6">
-                                                <div className="p-4 bg-success-subtle rounded-4 border border-success border-opacity-25 h-100 shadow-sm">
+                                                <div className="p-4 bg-primary-subtle rounded-4 border border-primary border-opacity-25 h-100 shadow-sm">
                                                     <p className="mb-0 small fw-medium text-dark-emphasis" style={{ lineHeight: '1.6' }}>{outcome}</p>
                                                 </div>
                                             </div>
@@ -259,9 +260,9 @@ const ProjectDetail = () => {
                                         </div>
                                     </div>
                                     <div className="mt-4">
-                                        <Button as="a" href={project.link === "#" ? "#" : (case_study.project_details?.live_link || project.link)} disabled={project.link === "#" && !case_study.project_details?.live_link} target="_blank" variant="success" className="w-100 py-3 fw-bold">
+                                        <BrandButton href={project.link === "#" ? "#" : (case_study.project_details?.live_link || project.link)} disabled={project.link === "#" && !case_study.project_details?.live_link} target="_blank" className="w-100 py-3 fw-bold">
                                             {project.link === "#" && !case_study.project_details?.live_link ? "Internal Platform" : "Visit Project Website"}
-                                        </Button>
+                                        </BrandButton>
                                     </div>
                                 </Card>
                             </div>

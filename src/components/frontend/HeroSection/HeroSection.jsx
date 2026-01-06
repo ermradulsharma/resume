@@ -1,4 +1,5 @@
-import { Row, Col, Button, Container } from 'react-bootstrap';
+import { Row, Col, Container } from 'react-bootstrap';
+import BrandButton from '../../common/BrandButton';
 import logo from '../../../assets/mradulsharma.webp';
 import '../../frontend/HeroSection/HeroSection.css'
 import data from "../../database/localDB.json";
@@ -31,8 +32,8 @@ const HeroSection = () => {
                                 </div>
                             </div>
                             <div className="hero-actions d-flex gap-2 align-item-center justify-content-md-start justify-content-center py-3" data-aos="fade-up" data-aos-delay="300">
-                                <Button variant="primary" href="/portfolio">View My Work</Button>{' '}
-                                <Button variant="outline-secondary" href="#contact">Get In Touch</Button>
+                                <BrandButton to="/portfolio">View My Work</BrandButton>
+                                <BrandButton variant="brand-outline-light" href="#contact">Get In Touch</BrandButton>
                             </div>
                             <SocialLinks platforms={['GitHub', 'LinkedIn', 'X (Twitter)', 'Medium', 'Telegram']} />
                         </div>

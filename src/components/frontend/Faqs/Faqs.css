@@ -4,11 +4,10 @@
 .faq .faq-container .faq-item {
     background-color: var(--surface-color);
     position: relative;
-    padding: 20px;
-    margin-bottom: 15px;
-    border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
-    border-radius: 5px;
+    padding: 20px 0px 20px 0px;
+    border-bottom: 2px solid var(--border-color);
     overflow: hidden;
+    color: var(--text-primary);
 }
 
 .faq .faq-container .faq-item:last-child {
@@ -17,13 +16,19 @@
 
 .faq .faq-container .faq-item h3 {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
-    margin: 0 30px 0 0;
+    margin: 0 30px 0 32px;
     transition: 0.3s;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
+    color: var(--heading-color);
+}
+
+.faq .faq-container .faq-item:hover h3 {
+    color: var(--primary-color);
+}
+
+.faq .faq-container .faq-active h3 {
+    color: var(--primary-color);
 }
 
 .faq .faq-container .faq-item h3 .num {
@@ -75,7 +80,7 @@
     grid-template-rows: 1fr;
     visibility: visible;
     opacity: 1;
-    padding-top: 10px;
+    padding: 0.5rem 2rem 0rem 2rem;
 }
 
 .faq .faq-container .faq-active .faq-toggle {
