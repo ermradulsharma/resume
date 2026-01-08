@@ -1,0 +1,65 @@
+.blog-subscription-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.subscription-card {
+    background: var(--surface-color);
+    border-color: color-mix(in srgb, var(--primary-color), transparent 90%) !important;
+}
+
+.subscription-form .form-control:focus {
+    box-shadow: none;
+    background: transparent;
+}
+
+.icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+[data-bs-theme="dark"] .subscription-card {
+    background: color-mix(in srgb, var(--surface-color), transparent 20%) !important;
+}
+
+[data-bs-theme="dark"] .subscription-form .input-group {
+    background: color-mix(in srgb, var(--surface-color), transparent 50%) !important;
+    border-color: color-mix(in srgb, var(--white), transparent 85%) !important;
+}
+
+[data-bs-theme="dark"] .subscription-form .form-control {
+    color: var(--white);
+}
+
+[data-bs-theme="dark"] .subscription-form .form-control::placeholder {
+    color: color-mix(in srgb, var(--white), transparent 60%);
+}
+
+@media (max-width: 576px) {
+    .subscription-card {
+        padding: 2.5rem 1.5rem !important;
+    }
+
+    .subscription-form .input-group {
+        flex-direction: column;
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        gap: 15px;
+    }
+
+    .subscription-form .input-group .form-control {
+        background: var(--surface-color) !important;
+        border: 1px solid color-mix(in srgb, var(--primary-color), transparent 80%) !important;
+        border-radius: 50px !important;
+        padding: 12px 25px !important;
+        width: 100%;
+    }
+
+    .subscription-form .input-group .btn {
+        width: 100%;
+        padding: 12px !important;
+    }
+}

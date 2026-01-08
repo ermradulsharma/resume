@@ -378,5 +378,16 @@
     {
         "pattern": "project optimization|efficiency",
         "answer": "I optimize projects for performance, scalability, and efficient resource usage."
+    },
+    {
+        "seo": {
+            "title": "Chat – Mradul Sharma",
+            "description": "Interactive chatbot answers about my projects and expertise.",
+            "keywords": [
+                "Mradul Sharma",
+                "Chatbot",
+                "FAQ"
+            ]
+        }
     }
 ]

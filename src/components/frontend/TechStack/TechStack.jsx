@@ -33,46 +33,44 @@ const TechStack = () => {
         versionControl: BsGit,
     };
     return (
-        <section id="skills" className="skills section">
+        <Container id="skills" className="skills section" data-aos="fade-up" data-aos-delay="100">
             <SectionHeader title={data.techStack.name} description={data.techStack.description} />
-            <Container data-aos="fade-up" data-aos-delay="100">
-                <Row>
-                    <Col lg={8}>
-                        <div className="skills-grid">
-                            <Row className="g-4">
-                                {Object.keys(techData).map((type, index) => (
-                                    <TechStackCard key={type} type={type} Icon={iconMap[type] || BsCircle} aosDelay={200 + index * 100} />
-                                ))}
-                            </Row>
-                        </div>
-                    </Col>
+            <Row>
+                <Col lg={8}>
+                    <div className="skills-grid">
+                        <Row className="g-4">
+                            {Object.keys(techData).map((type, index) => (
+                                <TechStackCard key={type} type={type} Icon={iconMap[type] || BsCircle} aosDelay={200 + index * 100} />
+                            ))}
+                        </Row>
+                    </div>
+                </Col>
 
-                    <Col lg={4}>
-                        <div className="skills-summary" data-aos="fade-left" data-aos-delay="200">
-                            <h3>Professional Expertise</h3>
-                            <p>Experienced in full stack development, DevOps, cloud infrastructure, API design, and building scalable applications with Laravel, React, and Node.js. Strong background in leading teams and delivering reliable, production-ready systems.</p>
-                            <div className="summary-stats m-0 d-lg-block d-flex align-items-center gap-3">
-                                <div className="stat-item mb-lg-3" data-aos="zoom-in" data-aos-delay="300">
-                                    <div className="stat-circle"><BsTrophy /></div>
-                                    <div className="stat-info">
-                                        <span className="stat-number">5+</span>
-                                        <span className="stat-label">Years Experience</span>
-                                    </div>
+                <Col lg={4}>
+                    <div className="skills-summary" data-aos="fade-left" data-aos-delay="200">
+                        <h3>Professional Expertise</h3>
+                        <p>Experienced in full stack development, DevOps, cloud infrastructure, API design, and building scalable applications with Laravel, React, and Node.js. Strong background in leading teams and delivering reliable, production-ready systems.</p>
+                        <div className="summary-stats m-0 d-lg-block d-flex align-items-center gap-3">
+                            <div className="stat-item mb-lg-3" data-aos="zoom-in" data-aos-delay="300">
+                                <div className="stat-circle"><BsTrophy /></div>
+                                <div className="stat-info">
+                                    <span className="stat-number">5+</span>
+                                    <span className="stat-label">Years Experience</span>
                                 </div>
+                            </div>
 
-                                <div className="stat-item" data-aos="zoom-in" data-aos-delay="400">
-                                    <div className="stat-circle"><BsDiagram3 /></div>
-                                    <div className="stat-info">
-                                        <span className="stat-number">50+</span>
-                                        <span className="stat-label">Projects Completed</span>
-                                    </div>
+                            <div className="stat-item" data-aos="zoom-in" data-aos-delay="400">
+                                <div className="stat-circle"><BsDiagram3 /></div>
+                                <div className="stat-info">
+                                    <span className="stat-number">50+</span>
+                                    <span className="stat-label">Projects Completed</span>
                                 </div>
                             </div>
                         </div>
-                    </Col>
-                </Row>
-            </Container>
-        </section>
+                    </div>
+                </Col>
+            </Row>
+        </Container>
     );
 };
 export default TechStack;

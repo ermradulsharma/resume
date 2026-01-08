@@ -2,6 +2,7 @@ import React, { Suspense, lazy, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Spinner } from "react-bootstrap";
 import { initGA, trackPage } from "./utils/analytics/ga";
+import ErrorBoundary from "./components/common/ErrorBoundary/ErrorBoundary";
 
 // Lazy load the route components
 const WebRoutes = lazy(() => import("./routes/WebRoutes"));
@@ -25,9 +26,11 @@ const App = () => {
     );
 
     return (
-        <Suspense fallback={<LoadingFallback />}>
-            {isDashboardRoute ? <AppRoutes /> : <WebRoutes />}
-        </Suspense>
+        <ErrorBoundary>
+            <Suspense fallback={<LoadingFallback />}>
+                {isDashboardRoute ? <AppRoutes /> : <WebRoutes />}
+            </Suspense>
+        </ErrorBoundary>
     );
 };
 

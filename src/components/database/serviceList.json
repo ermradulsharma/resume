@@ -161,5 +161,17 @@
                 "label": "Freelance Development & Technical Mentorship"
             }
         ]
+    },
+    {
+        "seo": {
+            "title": "Service List – Mradul Sharma",
+            "description": "Detailed list of services offered by Mradul Sharma.",
+            "keywords": [
+                "Mradul Sharma",
+                "Services",
+                "List",
+                "Offerings"
+            ]
+        }
     }
 ]

@@ -6,17 +6,20 @@ import SEO from "../../../components/common/SEO";
 import BrandButton from "../../../components/common/BrandButton";
 import "./NotFound.css";
 
+import seoData from "../../../components/database/seo.json";
+
 const NotFound = () => {
     const navigate = useNavigate();
 
     return (
         <section className="not-found-section">
             <SEO
-                title="404 Error - Page Not Found | Mradul Sharma Portfolio"
-                description="The page you are looking for does not exist. It might have been moved or deleted. Return to the homepage to explore my portfolio and projects."
-                keywords="404, page not found, error"
-                ogUrl="https://mradulsharma.vercel.app/404"
-                canonicalUrl="https://mradulsharma.vercel.app/404"
+                title={seoData.notFoundSeo.title}
+                description={seoData.notFoundSeo.description}
+                keywords={seoData.notFoundSeo.keywords}
+                ogUrl={seoData.notFoundSeo.ogUrl}
+                canonicalUrl={seoData.notFoundSeo.canonicalUrl}
+                ogImage={seoData.notFoundSeo.ogImage}
             />
             <Container>
                 <Row className="justify-content-center align-items-center">

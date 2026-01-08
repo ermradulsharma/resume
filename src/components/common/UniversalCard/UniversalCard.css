@@ -1,0 +1,56 @@
+.universal-card {
+    background: linear-gradient(135deg, var(--surface-color) 0%, color-mix(in srgb, var(--surface-color), var(--primary-color) 5%) 100%);
+    border-radius: 15px !important;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid color-mix(in srgb, var(--primary-color), transparent 85%) !important;
+    transition: all 0.3s ease;
+}
+
+.universal-card:hover {
+    box-shadow: 0 8px 30px color-mix(in srgb, var(--default-color), transparent 85%) !important;
+    transform: translateY(-5px);
+}
+
+.universal-card .card-body,
+.universal-card .card-footer {
+    background: color-mix(in srgb, var(--primary-color), #0000 94%);
+}
+
+.card-title-text {
+    color: var(--bs-heading-color);
+    transition: color 0.3s ease;
+}
+
+.universal-card:hover .card-title-text {
+    color: var(--primary-color);
+}
+
+.universal-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.universal-card:hover .overlay {
+    opacity: 1;
+}
+
+/* Dark Mode Overrides */
+[data-theme="dark"] .universal-card {
+    background: color-mix(in srgb, var(--surface-color), transparent 20%) !important;
+    border-color: color-mix(in srgb, var(--white), transparent 90%) !important;
+}
+
+[data-theme="dark"] .card-title-text {
+    color: var(--bs-heading-color);
+}
+
+[data-theme="dark"] .description-text {
+    color: color-mix(in srgb, var(--white), transparent 30%) !important;
+}

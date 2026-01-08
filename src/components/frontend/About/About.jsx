@@ -21,89 +21,85 @@ const About = () => {
     };
 
     return (
-        <section id="about" className="about section">
+        <Container className="about section" id="about" data-aos="fade-up" data-aos-delay="100">
             <SectionHeader title="About" description={expandedAbout5} />
-            <Container data-aos="fade-up" data-aos-delay="100">
-                <Row className="align-items-center">
-                    <Col lg={4} data-aos="fade-right" data-aos-delay="200">
-                        <div className="profile-image-wrapper">
-                            <div className="profile-image">
-                                <img src={about} alt="Profile" className="img-fluid" aria-label="Mradul Sharma" loading="lazy" width="300" height="400" />
+            <Row className="align-items-center">
+                <Col lg={4} data-aos="fade-right" data-aos-delay="200">
+                    <div className="profile-image-wrapper">
+                        <div className="profile-image">
+                            <img src={about} alt="Profile" className="img-fluid" aria-label="Mradul Sharma" loading="lazy" width="300" height="400" />
+                        </div>
+                        <div className="signature-section">
+                            <img src={signature} alt="Signature" className="signature" loading="lazy" width="200" height="100" />
+                            <p className="quote text-secondary">Building meaningful digital experiences through creative code.</p>
+                            <BrandButton className='mt-4' href={resume} download aria-label="Download Mradul Sharma Resume in PDF" onClick={handleDownloadResume}>⚡Resume PDF Download ⚡</BrandButton>
+                        </div>
+                    </div>
+                </Col>
+                <Col lg={8} data-aos="fade-left" data-aos-delay="300">
+                    <div className="about-content">
+                        <div className="intro d-none">
+                            <h2 className='d-none d-lg-block'>Hi, I'm Mradul Sharma – Full-Stack Developer</h2>
+                            <p>I’m a Senior Full-Stack Developer with 5+ years of experience designing, developing, and deploying secure, high-performance web applications. I specialize in Laravel, React.js, and Node.js, and work extensively with AWS, Docker, and CI/CD automation. Currently, I lead full-cycle engineering at W3 Info Solutions, building cloud-native, API-driven applications that scale.</p>
+                        </div>
+                        <div className="skills-grid">
+                            <div className="skill-item" data-aos="zoom-in" data-aos-delay="400">
+                                <div className="skill-icon">
+                                    <FaPalette className='tech-icon' title='Frontend Dev' />
+                                </div>
+                                <h3>UI/UX Design</h3>
+                                <p className="text-secondary">Translating concepts into responsive, user-friendly interfaces.</p>
                             </div>
-                            <div className="signature-section">
-                                <img src={signature} alt="Signature" className="signature" loading="lazy" width="200" height="100" />
-                                <p className="quote text-secondary">Building meaningful digital experiences through creative code.</p>
-                                <BrandButton className='mt-4' href={resume} download aria-label="Download Mradul Sharma Resume in PDF" onClick={handleDownloadResume}>⚡Resume PDF Download ⚡</BrandButton>
+                            <div className="skill-item" data-aos="zoom-in" data-aos-delay="450">
+                                <div className="skill-icon">
+                                    <FaCodepen className='tech-icon' />
+                                </div>
+                                <h3>Full-Stack Dev</h3>
+                                <p className="text-secondary">End-to-end systems using Laravel, Node.js, React & PostgreSQL.</p>
+                            </div>
+                            <div className="skill-item" data-aos="zoom-in" data-aos-delay="500">
+                                <div className="skill-icon">
+                                    <BsCloudCheck />
+                                </div>
+                                <h3>Cloud & DevOps</h3>
+                                <p className="text-secondary">AWS, Docker, CI/CD pipelines, and scalable microservices.</p>
                             </div>
                         </div>
-                    </Col>
-                    <Col lg={8} data-aos="fade-left" data-aos-delay="300">
-                        <div className="about-content">
-                            <div className="intro d-none">
-                                <h2 className='d-none d-lg-block'>Hi, I'm Mradul Sharma – Full-Stack Developer</h2>
-                                <p>I’m a Senior Full-Stack Developer with 5+ years of experience designing, developing, and deploying secure, high-performance web applications. I specialize in Laravel, React.js, and Node.js, and work extensively with AWS, Docker, and CI/CD automation. Currently, I lead full-cycle engineering at W3 Info Solutions, building cloud-native, API-driven applications that scale.</p>
+                        <div className="journey-timeline" data-aos="fade-up" data-aos-delay="300">
+                            <div className="timeline-item">
+                                <div className="year">2016</div>
+                                <div className="description">Graduated B.Tech from Kanpur Institute of Technology</div>
                             </div>
-                            <div className="skills-grid">
-                                <div className="skill-item" data-aos="zoom-in" data-aos-delay="400">
-                                    <div className="skill-icon">
-                                        <FaPalette className='tech-icon' title='Frontend Dev' />
-                                    </div>
-                                    <h3>UI/UX Design</h3>
-                                    <p className="text-secondary">Translating concepts into responsive, user-friendly interfaces.</p>
-                                </div>
-                                <div className="skill-item" data-aos="zoom-in" data-aos-delay="450">
-                                    <div className="skill-icon">
-                                        <FaCodepen className='tech-icon' />
-                                    </div>
-                                    <h3>Full-Stack Dev</h3>
-                                    <p className="text-secondary">End-to-end systems using Laravel, Node.js, React & PostgreSQL.</p>
-                                </div>
-                                <div className="skill-item" data-aos="zoom-in" data-aos-delay="500">
-                                    <div className="skill-icon">
-                                        <BsCloudCheck />
-                                    </div>
-                                    <h3>Cloud & DevOps</h3>
-                                    <p className="text-secondary">AWS, Docker, CI/CD pipelines, and scalable microservices.</p>
-                                </div>
+                            <div className="timeline-item">
+                                <div className="year">2018</div>
+                                <div className="description">Joined Programming Park InfoTech as PHP Developer</div>
                             </div>
-                            <div className="journey-timeline" data-aos="fade-up" data-aos-delay="300">
-                                <div className="timeline-item">
-                                    <div className="year">2016</div>
-                                    <div className="description">Graduated B.Tech from Kanpur Institute of Technology</div>
-                                </div>
-                                <div className="timeline-item">
-                                    <div className="year">2018</div>
-                                    <div className="description">Joined Programming Park InfoTech as PHP Developer</div>
-                                </div>
-                                <div className="timeline-item">
-                                    <div className="year">2020</div>
-                                    <div className="description">Joined Zaiba InfoTech as Laravel Developer</div>
-                                </div>
-                                <div className="timeline-item">
-                                    <div className="year">2022</div>
-                                    <div className="description">Joined W3 Info Solutions as Senior Full-Stack Developer</div>
-                                </div>
+                            <div className="timeline-item">
+                                <div className="year">2020</div>
+                                <div className="description">Joined Zaiba InfoTech as Laravel Developer</div>
                             </div>
-                            <div className="cta-section" data-aos="fade-up" data-aos-delay="400">
-                                <div className="fun-fact px-0 px-lg-5">
-                                    <span className="emoji">⚡</span>
-                                    <span className="text">Always exploring cloud, code, and clean architecture.</span>
-                                </div>
+                            <div className="timeline-item">
+                                <div className="year">2022</div>
+                                <div className="description">Joined W3 Info Solutions as Senior Full-Stack Developer</div>
                             </div>
                         </div>
-                    </Col>
-                </Row>
-            </Container>
+                        <div className="cta-section" data-aos="fade-up" data-aos-delay="400">
+                            <div className="fun-fact px-0 px-lg-5">
+                                <span className="emoji">⚡</span>
+                                <span className="text">Always exploring cloud, code, and clean architecture.</span>
+                            </div>
+                        </div>
+                    </div>
+                </Col>
+            </Row>
 
             {/* Activity & Availability Section */}
-            <div className="activity-availability-section mt-4">
+            <Container className='activity-availability-section mt-4'>
                 <SectionHeader title="Activity & Availability" description="A transparent look at my development consistency on GitHub and my current professional availability. I maintain a steady coding rhythm to ensure high-quality delivery and keep my schedule updated for upcoming collaborations." />
-                <Container>
-                    <GitHub />
-                    <PublicCalendar />
-                </Container>
-            </div>
-        </section>
+                <GitHub />
+                <PublicCalendar />
+            </Container>
+        </Container>
     );
 };
 

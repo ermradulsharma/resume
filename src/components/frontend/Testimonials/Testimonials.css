@@ -1,0 +1,106 @@
+.testimonials-section {
+    position: relative;
+    background-color: var(--background-color);
+    overflow: hidden;
+}
+
+.testimonial-carousel .carousel-indicators {
+    bottom: -10px;
+}
+
+.testimonial-carousel .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    margin: 0 6px;
+    opacity: 0.3;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.testimonial-carousel .carousel-indicators .active {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.testimonial-card {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    background: var(--surface-color);
+    backdrop-filter: blur(10px);
+    border: 1px solid color-mix(in srgb, var(--primary-color), transparent 90%);
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.author-image img {
+    object-fit: cover;
+    background-color: var(--primary-subtle);
+}
+
+.author-info h5 {
+    font-size: 1.1rem;
+    color: var(--heading-color) !important;
+}
+
+.author-info small {
+    display: block;
+    font-size: 0.9rem;
+}
+
+.recommendation-date {
+    font-size: 0.8rem;
+}
+
+.testimonial-text {
+    font-size: 1.25rem;
+    font-style: italic;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    min-height: 100px;
+}
+
+.testimonial-carousel .carousel-control-prev,
+.testimonial-carousel .carousel-control-next {
+    width: 5%;
+    filter: invert(var(--dark-mode-invert, 0.5));
+}
+
+/* Dark Mode Overrides */
+[data-bs-theme="dark"] .testimonial-card {
+    background: color-mix(in srgb, var(--surface-color), transparent 20%);
+    border-color: color-mix(in srgb, var(--primary-color), transparent 80%);
+}
+
+[data-bs-theme="dark"] .testimonial-text {
+    color: color-mix(in srgb, var(--white), transparent 20%);
+}
+
+[data-bs-theme="dark"] .author-info h5 {
+    color: var(--white) !important;
+}
+
+@media (max-width: 768px) {
+    .testimonial-card {
+        padding: 1.5rem !important;
+    }
+
+    .testimonial-text {
+        font-size: 1.1rem;
+    }
+
+    .testimonial-author {
+        flex-direction: column;
+        text-align: center !important;
+    }
+
+    .author-info {
+        text-align: center !important;
+        margin-top: 10px;
+    }
+
+    .author-image {
+        margin-right: 0 !important;
+    }
+}

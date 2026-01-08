@@ -5,145 +5,2060 @@
             "title": "Full-Stack Development",
             "description": "End-to-end web application development using React, Node.js, Laravel, and modern RESTful APIs with scalable architecture.",
             "icon": "bi-code-slash",
-            "content": "FullStackDevelopment"
+            "content": "FullStackDevelopment",
+            "details": {
+                "introduction": "Full-Stack Development refers to the comprehensive development of software applications, covering both the client-side (frontend) and server-side (backend) aspects. It allows for seamless integration between the user interface and the underlying logic and databases.\n\nWith my hands-on expertise in technologies such as React, Node.js, Laravel, and RESTful APIs, I manage the entire software development lifecycle — from planning and architecture to deployment and support.",
+                "sections": [
+                    {
+                        "title": "Key Features of My Full-Stack Solutions",
+                        "items": [
+                            {
+                                "title": "Frontend Engineering",
+                                "description": "Using React, I craft interactive, fast, and responsive user interfaces with a focus on clean code architecture and optimized rendering. I ensure accessibility, cross-browser compatibility, and mobile responsiveness in every application."
+                            },
+                            {
+                                "title": "Backend Architecture",
+                                "description": "With Node.js and Laravel, I build scalable APIs, microservices, and event-driven systems that are secure, performant, and tailored to your business logic. I follow MVC architecture, clean coding principles, and leverage modern backend patterns like repository/service layers."
+                            },
+                            {
+                                "title": "Database Integration",
+                                "description": "Proficient in MySQL, PostgreSQL, MongoDB, and SQLite, I design relational and NoSQL schemas that are optimized for performance, reliability, and growth. I ensure ACID-compliant transactions, indexing, and query optimization."
+                            },
+                            {
+                                "title": "API-First Approach",
+                                "description": "I build RESTful and secure APIs using JWT or OAuth2 authentication, which allow seamless integration across web, mobile, and third-party services. Documentation with Swagger/Postman ensures easy testing and future scaling."
+                            },
+                            {
+                                "title": "Security-First Development",
+                                "description": "Every project adheres to security best practices: input sanitization, token-based authentication, CORS policies, HTTPS enforcement, rate limiting, and protection from XSS, CSRF, and SQL injection."
+                            },
+                            {
+                                "title": "Performance Optimization",
+                                "description": "From frontend lazy-loading and asset minification to backend caching and load balancing, I ensure your applications scale under traffic with minimal downtime and optimal resource utilization."
+                            },
+                            {
+                                "title": "DevOps & CI/CD",
+                                "description": "I integrate with GitHub Actions, GitLab CI, or Jenkins to enable continuous deployment pipelines. Applications are deployed using Docker, Nginx, and hosted on AWS, DigitalOcean, or Vercel, ensuring high availability and zero-downtime deployments."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Frontend Technologies",
+                        "items": [
+                            "React.js (Hooks, Context API, Redux, TailwindCSS, Bootstrap)",
+                            "HTML5, CSS3, JavaScript ES6+",
+                            "Responsive & Mobile-first Design"
+                        ]
+                    },
+                    {
+                        "title": "Backend Technologies",
+                        "items": [
+                            "Node.js (Express.js, NestJS)",
+                            "Laravel (Eloquent ORM, Blade, Sanctum/Passport)",
+                            "RESTful API & GraphQL"
+                        ]
+                    },
+                    {
+                        "title": "Database Technologies",
+                        "items": [
+                            "PostgreSQL / MySQL",
+                            "MongoDB / Mongoose",
+                            "Firebase / Realtime Database"
+                        ]
+                    },
+                    {
+                        "title": "Authentication & Security",
+                        "items": [
+                            "JWT, OAuth 2.0, 2FA",
+                            "Role-Based Access Control (RBAC)",
+                            "Bcrypt, CSRF/XSS protection, Helmet"
+                        ]
+                    },
+                    {
+                        "title": "Deployment & DevOps",
+                        "items": [
+                            "AWS EC2, S3, Lambda, RDS",
+                            "Docker, Nginx, PM2",
+                            "GitHub Actions, GitLab CI, Firebase Hosting, Vercel"
+                        ]
+                    },
+                    {
+                        "title": "Use Cases",
+                        "items": [
+                            "Admin Dashboards with dynamic role-based modules",
+                            "SaaS Applications with subscription models and billing integration",
+                            "E-Commerce Platforms with real-time inventory, carts, and payment gateways",
+                            "Portfolio & Resume Builders with CMS-style content editing",
+                            "CRMs integrated with tools like Twilio, SendGrid, and Stripe",
+                            "Custom Analytics Panels using Chart.js, ApexCharts, and real-time APIs"
+                        ]
+                    },
+                    {
+                        "title": "Development Workflow",
+                        "items": [
+                            {
+                                "title": "Requirement Gathering & Planning",
+                                "description": "Business goals are understood deeply to map features, scope, and technical requirements."
+                            },
+                            {
+                                "title": "UI/UX Prototyping",
+                                "description": "Wireframes or mockups are created with tools like Figma, Adobe XD, or custom drafts."
+                            },
+                            {
+                                "title": "Component-Based Frontend Development",
+                                "description": "Reusable UI components are built with React, styled with CSS-in-JS or Tailwind."
+                            },
+                            {
+                                "title": "Backend Development & API Design",
+                                "description": "Business logic, database design, and API layers are developed using Laravel or Node.js."
+                            },
+                            {
+                                "title": "Testing & QA",
+                                "description": "Each module is tested thoroughly — unit, integration, and end-to-end using tools like Jest, Postman, and Cypress."
+                            },
+                            {
+                                "title": "Deployment & Monitoring",
+                                "description": "Using CI/CD, applications are deployed on staging and production. Monitoring via LogRocket, Sentry, or AWS CloudWatch ensures system health."
+                            },
+                            {
+                                "title": "Post-Launch Support",
+                                "description": "Bug fixes, improvements, and scaling strategies are handled promptly through maintenance contracts or hourly support."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Why Choose My Full-Stack Services?",
+                        "items": [
+                            "One-stop solution for UI, backend, API, database, and deployment",
+                            "Agile project delivery with clear milestones and version control",
+                            "SEO-friendly, fast-loading, and scalable applications",
+                            "Proven experience delivering enterprise-grade solutions",
+                            "Transparent communication, professional documentation, and post-deployment support"
+                        ]
+                    },
+                    {
+                        "title": "Let’s Build Together",
+                        "items": [
+                            "If you're looking for a reliable full-stack developer to bring your idea to life — from an MVP to a complex enterprise application — let’s connect. I offer competitive pricing, clear timelines, and full transparency in the development lifecycle."
+                        ]
+                    }
+                ]
+            }
         },
         {
             "title": "Fintech & Payment Solutions",
             "description": "Specialized development of secure financial platforms, payroll systems, and payment gateway integrations (Stripe, PayPal, Razorpay).",
             "icon": "bi-wallet",
-            "content": "FintechAndPaymentSolutions"
+            "content": "FintechAndPaymentSolutions",
+            "details": {
+                "introduction": "Fintech & Payment Solutions involve building secure, compliant, and high-performance financial applications. I specialize in integrating complex payment flows, digital wallets, and banking APIs while ensuring strict adherence to security standards like PCI-DSS.",
+                "sections": [
+                    {
+                        "title": "Fintech Services",
+                        "items": [
+                            {
+                                "title": "Payment Gateway Integration",
+                                "description": "Seamless integration of Stripe, PayPal, Razorpay, and custom payment processors for global transactions."
+                            },
+                            {
+                                "title": "Subscription Billing",
+                                "description": "Automated recurring billing systems with dunning management and invoicing."
+                            },
+                            {
+                                "title": "Digital Wallets",
+                                "description": "Development of closed-loop wallet systems for credits, rewards, and peer-to-peer transfers."
+                            },
+                            {
+                                "title": "KYC/AML Integration",
+                                "description": "Integration with identity verification providers to meet regulatory compliance."
+                            },
+                            {
+                                "title": "Financial Reporting",
+                                "description": "Real-time generation of translation logs, settlement reports, and tax documents."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Security & Compliance",
+                        "items": [
+                            "PCI-DSS compliant architecture",
+                            "End-to-end encryption (E2EE) for sensitive data",
+                            "Tokenization of card details",
+                            "Fraud detection and risk analysis",
+                            "Two-factor authentication (2FA) for transactions",
+                            "Audit trails for all financial operations"
+                        ]
+                    },
+                    {
+                        "title": "Technologies",
+                        "items": [
+                            "Stripe Connect & API",
+                            "Plaid for bank integrations",
+                            "PayPal REST SDK",
+                            "Razorpay & PayU",
+                            "Blockchain/Crypto payment APIs",
+                            "Laravel Cashier & Spark"
+                        ]
+                    },
+                    {
+                        "title": "Benefits",
+                        "items": [
+                            "Secure and reliable transactions",
+                            "Automated financial workflows",
+                            "Global payment acceptance",
+                            "Reduced fraud risk",
+                            "Regulatory compliance",
+                            "Seamless user checkout experience"
+                        ]
+                    }
+                ]
+            }
         },
         {
             "title": "Custom API Integrations",
             "description": "Secure and scalable API development & integration, including payment gateways, third-party services, and internal microservices.",
             "icon": "bi-plug",
-            "content": "CustomApiIntegrations"
+            "content": "CustomApiIntegrations",
+            "details": {
+                "introduction": "Custom API Integrations enable seamless connectivity between your applications and third-party services, payment gateways, CRMs, marketing tools, and internal microservices. I specialize in building secure, scalable, and well-documented APIs that power modern digital ecosystems.",
+                "sections": [
+                    {
+                        "title": "What I Offer",
+                        "items": [
+                            {
+                                "title": "RESTful API Development",
+                                "description": "Design and build clean, versioned REST APIs with proper HTTP methods, status codes, and JSON responses."
+                            },
+                            {
+                                "title": "Third-Party Integrations",
+                                "description": "Connect with payment gateways (Stripe, PayPal, Razorpay), CRMs (Salesforce, HubSpot), email services (SendGrid, Mailchimp), SMS (Twilio), and more."
+                            },
+                            {
+                                "title": "Microservices Architecture",
+                                "description": "Break down monolithic applications into independent, scalable microservices that communicate via APIs."
+                            },
+                            {
+                                "title": "Webhook Implementation",
+                                "description": "Set up real-time event-driven webhooks for instant notifications and data synchronization."
+                            },
+                            {
+                                "title": "API Security",
+                                "description": "Implement JWT/OAuth2 authentication, rate limiting, CORS policies, and encryption to protect sensitive data."
+                            },
+                            {
+                                "title": "API Documentation",
+                                "description": "Provide comprehensive documentation using Swagger/OpenAPI or Postman collections for easy integration and testing."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Technologies Used",
+                        "items": [
+                            "Node.js (Express, NestJS)",
+                            "Laravel (API Resources, Sanctum, Passport)",
+                            "GraphQL & Apollo",
+                            "Axios, Fetch API",
+                            "Postman, Swagger/OpenAPI",
+                            "Redis for caching"
+                        ]
+                    },
+                    {
+                        "title": "Use Cases",
+                        "items": [
+                            "Payment gateway integration for e-commerce platforms",
+                            "CRM synchronization for sales and marketing automation",
+                            "Social media API integration (Facebook, Twitter, LinkedIn)",
+                            "SMS and email notification systems",
+                            "Analytics and tracking integrations (Google Analytics, Mixpanel)",
+                            "Custom internal APIs for mobile and web applications"
+                        ]
+                    },
+                    {
+                        "title": "Why Choose My API Services?",
+                        "items": [
+                            "Secure and scalable API architecture",
+                            "Comprehensive error handling and logging",
+                            "Detailed documentation for developers",
+                            "Performance optimization with caching and rate limiting",
+                            "Ongoing support and maintenance"
+                        ]
+                    }
+                ]
+            }
         },
         {
             "title": "Cloud & DevOps",
             "description": "Infrastructure setup, CI/CD pipelines, automated deployments, and scaling on AWS, DigitalOcean, and Firebase for high availability.",
             "icon": "bi-cloud-upload",
-            "content": "CloudDevOps"
+            "content": "CloudDevOps",
+            "details": {
+                "introduction": "Cloud & DevOps services focus on infrastructure automation, continuous integration/deployment (CI/CD), and scalable cloud architecture. I help businesses deploy, monitor, and scale applications efficiently on AWS, DigitalOcean, Firebase, and other cloud platforms.",
+                "sections": [
+                    {
+                        "title": "Core Services",
+                        "items": [
+                            {
+                                "title": "Cloud Infrastructure Setup",
+                                "description": "Design and deploy scalable cloud infrastructure using AWS EC2, S3, RDS, Lambda, and DigitalOcean Droplets."
+                            },
+                            {
+                                "title": "CI/CD Pipelines",
+                                "description": "Automate build, test, and deployment processes using GitHub Actions, GitLab CI, Jenkins, or Bitbucket Pipelines."
+                            },
+                            {
+                                "title": "Containerization",
+                                "description": "Package applications using Docker and orchestrate with Kubernetes or Docker Compose for consistent deployments."
+                            },
+                            {
+                                "title": "Server Configuration",
+                                "description": "Set up and configure Nginx, Apache, PM2, and load balancers for high availability and performance."
+                            },
+                            {
+                                "title": "Monitoring & Logging",
+                                "description": "Implement monitoring solutions using AWS CloudWatch, Sentry, LogRocket, or custom logging systems."
+                            },
+                            {
+                                "title": "Auto-Scaling",
+                                "description": "Configure auto-scaling groups and load balancers to handle traffic spikes efficiently."
+                            },
+                            {
+                                "title": "Backup & Disaster Recovery",
+                                "description": "Set up automated backups, snapshots, and disaster recovery plans to ensure data safety."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Technologies & Tools",
+                        "items": [
+                            "AWS (EC2, S3, Lambda, RDS, CloudFront, Route 53)",
+                            "DigitalOcean, Firebase, Vercel, Netlify",
+                            "Docker, Kubernetes, Docker Compose",
+                            "GitHub Actions, GitLab CI, Jenkins",
+                            "Nginx, Apache, PM2",
+                            "Terraform, Ansible (Infrastructure as Code)"
+                        ]
+                    },
+                    {
+                        "title": "Benefits",
+                        "items": [
+                            "Zero-downtime deployments with rollback capabilities",
+                            "Automated testing and quality assurance",
+                            "Scalable infrastructure that grows with your business",
+                            "Cost optimization through efficient resource management",
+                            "Enhanced security with SSL, firewalls, and access controls",
+                            "24/7 monitoring and alerting for system health"
+                        ]
+                    },
+                    {
+                        "title": "Ideal For",
+                        "items": [
+                            "Startups needing rapid deployment and scaling",
+                            "Enterprises requiring high availability and reliability",
+                            "Teams wanting to automate their deployment workflows",
+                            "Applications with fluctuating traffic patterns"
+                        ]
+                    }
+                ]
+            }
         },
         {
             "title": "Enterprise Dashboards & CMS",
             "description": "Design and development of intuitive content management systems and analytics dashboards tailored to your business logic.",
             "icon": "bi-kanban",
-            "content": "EnterpriseDashboardsAndCms"
+            "content": "EnterpriseDashboardsAndCms",
+            "details": {
+                "introduction": "Enterprise Dashboards & CMS solutions are tailored to help businesses manage complex data, workflows, and content efficiently. I utilize modern frontend frameworks and robust backends to create intuitive, data-rich interfaces for internal use.",
+                "sections": [
+                    {
+                        "title": "Dashboard Features",
+                        "items": [
+                            {
+                                "title": "Data Visualization",
+                                "description": "Interactive charts, graphs, and heatmaps to visualize KPIs and business metrics."
+                            },
+                            {
+                                "title": "Role-Based Access (RBAC)",
+                                "description": "Granular permissions ensuring users only see data relevant to their role."
+                            },
+                            {
+                                "title": "Content Management",
+                                "description": "Flexible editors and media libraries for managing website or app content."
+                            },
+                            {
+                                "title": "Workflow Automation",
+                                "description": "Built-in approval processes and status tracking for business operations."
+                            },
+                            {
+                                "title": "Real-Time Updates",
+                                "description": "Live data feeds via WebSockets for monitoring critical system states."
+                            },
+                            {
+                                "title": "Export & Reporting",
+                                "description": "One-click generation of PDF, CSV, and Excel reports."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Tech Stack",
+                        "items": [
+                            "React / Next.js for frontend",
+                            "Laravel / Node.js for API",
+                            "Chart.js / Recharts / ApexCharts",
+                            "Material UI / Tailwind CSS",
+                            "Socket.IO for real-time data",
+                            "Draft.js / TipTap for rich text editing"
+                        ]
+                    },
+                    {
+                        "title": "Use Cases",
+                        "items": [
+                            "Executive decision-making dashboards",
+                            "Inventory and order management systems",
+                            "Customer support portals",
+                            "HR and employee management systems",
+                            "Marketing campaign trackers",
+                            "IoT device monitoring panels"
+                        ]
+                    },
+                    {
+                        "title": "Why Custom Dashboards?",
+                        "items": [
+                            "Tailored exactly to your business logic",
+                            "No recurring licensing fees like SaaS tools",
+                            "Full ownership of data and code",
+                            "Seamless integration with existing databases",
+                            "Scalable as your data grows"
+                        ]
+                    }
+                ]
+            }
         },
         {
             "title": "SaaS Development",
             "description": "Building scalable Software-as-a-Service platforms with secure multi-tenant architecture, billing systems, and user access control.",
             "icon": "bi-boxes",
-            "content": "SaasDevelopment"
+            "content": "SaasDevelopment",
+            "details": {
+                "introduction": "SaaS (Software as a Service) Development involves building scalable, multi-tenant cloud applications with subscription-based models, user management, and billing integrations. I create robust SaaS platforms that serve thousands of users with high performance and security.",
+                "sections": [
+                    {
+                        "title": "Key Features",
+                        "items": [
+                            {
+                                "title": "Multi-Tenant Architecture",
+                                "description": "Design database schemas and application logic that isolate data between tenants while sharing infrastructure efficiently."
+                            },
+                            {
+                                "title": "Subscription Management",
+                                "description": "Integrate with Stripe, PayPal, or Razorpay for recurring billing, plan upgrades, and payment processing."
+                            },
+                            {
+                                "title": "User Access Control",
+                                "description": "Implement role-based access control (RBAC) with customizable permissions for different user types."
+                            },
+                            {
+                                "title": "API-First Design",
+                                "description": "Build RESTful APIs that allow third-party integrations and mobile app connectivity."
+                            },
+                            {
+                                "title": "Admin Dashboard",
+                                "description": "Create comprehensive admin panels for managing users, subscriptions, analytics, and system settings."
+                            },
+                            {
+                                "title": "Analytics & Reporting",
+                                "description": "Provide real-time dashboards with metrics, charts, and exportable reports for business insights."
+                            },
+                            {
+                                "title": "Scalability",
+                                "description": "Design systems that handle growth from 10 to 10,000+ users with minimal infrastructure changes."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Technology Stack",
+                        "items": [
+                            "Frontend: React, Next.js, TailwindCSS",
+                            "Backend: Node.js, Laravel, Express",
+                            "Database: PostgreSQL, MongoDB, MySQL",
+                            "Payment: Stripe, PayPal, Razorpay",
+                            "Authentication: JWT, OAuth2, 2FA",
+                            "Hosting: AWS, DigitalOcean, Vercel"
+                        ]
+                    },
+                    {
+                        "title": "SaaS Examples",
+                        "items": [
+                            "Project management tools (Trello, Asana-like)",
+                            "CRM and sales automation platforms",
+                            "E-learning and course management systems",
+                            "Invoicing and accounting software",
+                            "Marketing automation platforms",
+                            "Team collaboration and communication tools"
+                        ]
+                    },
+                    {
+                        "title": "Development Process",
+                        "items": [
+                            {
+                                "title": "Discovery & Planning",
+                                "description": "Understand business model, target users, and feature requirements."
+                            },
+                            {
+                                "title": "MVP Development",
+                                "description": "Build a minimum viable product with core features for early user feedback."
+                            },
+                            {
+                                "title": "Iterative Enhancement",
+                                "description": "Add features based on user feedback and market demands."
+                            },
+                            {
+                                "title": "Testing & QA",
+                                "description": "Comprehensive testing for security, performance, and user experience."
+                            },
+                            {
+                                "title": "Launch & Support",
+                                "description": "Deploy to production with ongoing maintenance and feature updates."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Why Choose My SaaS Services?",
+                        "items": [
+                            "Proven experience building production-ready SaaS applications",
+                            "Secure, scalable architecture from day one",
+                            "Integrated payment and subscription management",
+                            "Mobile-responsive and cross-browser compatible",
+                            "Comprehensive documentation and training",
+                            "Post-launch support and feature development"
+                        ]
+                    }
+                ]
+            }
         },
         {
             "title": "Performance Optimization",
             "description": "Audit and enhance application speed, scalability, and codebase quality with caching, lazy loading, and query optimization techniques.",
             "icon": "bi-speedometer2",
-            "content": "PerformanceOptimization"
+            "content": "PerformanceOptimization",
+            "details": {
+                "introduction": "Performance Optimization services focus on making your applications faster, more efficient, and capable of handling increased traffic. I audit and enhance every aspect of your application to deliver exceptional user experiences.",
+                "sections": [
+                    {
+                        "title": "Optimization Areas",
+                        "items": [
+                            {
+                                "title": "Frontend Performance",
+                                "description": "Implement code splitting, lazy loading, image optimization, minification, and tree shaking to reduce bundle sizes and improve load times."
+                            },
+                            {
+                                "title": "Backend Optimization",
+                                "description": "Optimize database queries, implement caching strategies (Redis, Memcached), and use efficient algorithms to reduce server response times."
+                            },
+                            {
+                                "title": "Database Tuning",
+                                "description": "Add proper indexes, optimize queries, implement query caching, and design efficient database schemas."
+                            },
+                            {
+                                "title": "Caching Strategies",
+                                "description": "Implement multi-layer caching including browser cache, CDN, application cache, and database query cache."
+                            },
+                            {
+                                "title": "Asset Optimization",
+                                "description": "Compress images (WebP, AVIF), minify CSS/JS, use CDNs, and implement progressive image loading."
+                            },
+                            {
+                                "title": "API Performance",
+                                "description": "Optimize API endpoints, implement pagination, use GraphQL for efficient data fetching, and add rate limiting."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Performance Metrics We Improve",
+                        "items": [
+                            "First Contentful Paint (FCP)",
+                            "Largest Contentful Paint (LCP)",
+                            "Time to Interactive (TTI)",
+                            "Cumulative Layout Shift (CLS)",
+                            "First Input Delay (FID)",
+                            "Server Response Time (TTFB)"
+                        ]
+                    },
+                    {
+                        "title": "Tools & Technologies",
+                        "items": [
+                            "Performance Testing: Lighthouse, WebPageTest, GTmetrix",
+                            "Caching: Redis, Memcached, Varnish",
+                            "CDN: Cloudflare, AWS CloudFront, Fastly",
+                            "Monitoring: New Relic, Datadog, Sentry",
+                            "Profiling: Chrome DevTools, React Profiler",
+                            "Image Optimization: Sharp, ImageMagick, Cloudinary"
+                        ]
+                    },
+                    {
+                        "title": "Optimization Techniques",
+                        "items": [
+                            "Code splitting and lazy loading",
+                            "Server-side rendering (SSR) and static generation",
+                            "Database query optimization and indexing",
+                            "Implementing service workers for offline support",
+                            "Using HTTP/2 and HTTP/3 protocols",
+                            "Gzip/Brotli compression",
+                            "Resource hints (preload, prefetch, preconnect)",
+                            "Debouncing and throttling user interactions"
+                        ]
+                    },
+                    {
+                        "title": "Expected Results",
+                        "items": [
+                            "50-80% reduction in page load times",
+                            "Improved Google PageSpeed scores (90+)",
+                            "Better SEO rankings",
+                            "Reduced server costs through efficiency",
+                            "Higher user engagement and conversion rates",
+                            "Ability to handle 10x more concurrent users"
+                        ]
+                    }
+                ]
+            }
         },
         {
             "title": "Enterprise Web Solutions",
             "description": "Custom web applications built with React, Laravel, and Node.js — designed for high availability, clean architecture, and business logic automation.",
             "icon": "bi-globe",
-            "content": "EnterpriseWebSolutions"
+            "content": "EnterpriseWebSolutions",
+            "details": {
+                "introduction": "Enterprise Web Solutions are large-scale, mission-critical applications built for businesses that require high availability, security, and scalability. I develop robust systems that support complex business processes and thousands of users.",
+                "sections": [
+                    {
+                        "title": "Core Capabilities",
+                        "items": [
+                            {
+                                "title": "Scalable Architecture",
+                                "description": "Design systems that handle growth from hundreds to millions of users with microservices, load balancing, and horizontal scaling."
+                            },
+                            {
+                                "title": "High Availability",
+                                "description": "Implement redundancy, failover mechanisms, and 99.9% uptime guarantees with multi-region deployments."
+                            },
+                            {
+                                "title": "Enterprise Security",
+                                "description": "Advanced security measures including SSO, SAML, OAuth2, encryption at rest and in transit, and compliance with GDPR, HIPAA, SOC 2."
+                            },
+                            {
+                                "title": "Integration Capabilities",
+                                "description": "Connect with existing enterprise systems like SAP, Salesforce, Oracle, Microsoft Dynamics, and legacy databases."
+                            },
+                            {
+                                "title": "Business Process Automation",
+                                "description": "Automate workflows, approvals, notifications, and data synchronization across departments."
+                            },
+                            {
+                                "title": "Advanced Reporting",
+                                "description": "Generate complex reports, export to multiple formats, and provide executive dashboards with real-time insights."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Technology Stack",
+                        "items": [
+                            "Frontend: React, Angular, Next.js",
+                            "Backend: Node.js, Laravel, .NET Core, Java Spring",
+                            "Database: PostgreSQL, Oracle, SQL Server, MongoDB",
+                            "Infrastructure: AWS, Azure, Google Cloud",
+                            "Message Queues: RabbitMQ, Apache Kafka, AWS SQS",
+                            "Search: Elasticsearch, Apache Solr"
+                        ]
+                    },
+                    {
+                        "title": "Enterprise Features",
+                        "items": [
+                            "Single Sign-On (SSO) and Active Directory integration",
+                            "Multi-tenancy with data isolation",
+                            "Advanced audit logging and compliance tracking",
+                            "Disaster recovery and business continuity planning",
+                            "API gateway and service mesh architecture",
+                            "Real-time data synchronization",
+                            "Custom workflow engines",
+                            "White-labeling and branding customization"
+                        ]
+                    },
+                    {
+                        "title": "Industries Served",
+                        "items": [
+                            "Healthcare and medical systems",
+                            "Financial services and banking",
+                            "Manufacturing and supply chain",
+                            "Education and e-learning",
+                            "Government and public sector",
+                            "Retail and e-commerce"
+                        ]
+                    },
+                    {
+                        "title": "Development Approach",
+                        "items": [
+                            {
+                                "title": "Requirements Analysis",
+                                "description": "Deep dive into business processes, stakeholder interviews, and technical requirements gathering."
+                            },
+                            {
+                                "title": "Architecture Design",
+                                "description": "Create comprehensive system architecture diagrams, database schemas, and API specifications."
+                            },
+                            {
+                                "title": "Agile Development",
+                                "description": "Iterative development with regular demos, sprint planning, and continuous feedback."
+                            },
+                            {
+                                "title": "Quality Assurance",
+                                "description": "Comprehensive testing including unit, integration, performance, and security testing."
+                            },
+                            {
+                                "title": "Deployment & Support",
+                                "description": "Phased rollout, training, documentation, and 24/7 support options."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Why Choose Enterprise Solutions?",
+                        "items": [
+                            "Proven track record with large-scale systems",
+                            "Compliance with industry standards and regulations",
+                            "Scalable to millions of transactions per day",
+                            "Enterprise-grade security and data protection",
+                            "Comprehensive documentation and training",
+                            "Long-term support and maintenance contracts"
+                        ]
+                    }
+                ]
+            }
         },
         {
             "title": "Secure System Architecture",
             "description": "Security-first system design with token-based authentication, role-based access control, data validation, and protection against common vulnerabilities.",
             "icon": "bi-shield-lock",
-            "content": "SecureSystemArchitecture"
+            "content": "SecureSystemArchitecture",
+            "details": {
+                "introduction": "Secure System Architecture focuses on building applications with security as the foundation. I design and implement systems that protect against modern threats while maintaining usability and performance.",
+                "sections": [
+                    {
+                        "title": "Security Services",
+                        "items": [
+                            {
+                                "title": "Authentication & Authorization",
+                                "description": "Implement JWT, OAuth2, SAML, multi-factor authentication (2FA/MFA), and biometric authentication."
+                            },
+                            {
+                                "title": "Role-Based Access Control (RBAC)",
+                                "description": "Design granular permission systems with roles, permissions, and resource-level access control."
+                            },
+                            {
+                                "title": "Data Encryption",
+                                "description": "Encrypt data at rest and in transit using AES-256, TLS 1.3, and end-to-end encryption for sensitive information."
+                            },
+                            {
+                                "title": "Security Auditing",
+                                "description": "Implement comprehensive logging, intrusion detection, and real-time security monitoring."
+                            },
+                            {
+                                "title": "Vulnerability Protection",
+                                "description": "Protect against OWASP Top 10 threats including XSS, CSRF, SQL injection, and clickjacking."
+                            },
+                            {
+                                "title": "API Security",
+                                "description": "Secure APIs with rate limiting, API keys, OAuth tokens, and request validation."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Security Measures",
+                        "items": [
+                            "Input validation and sanitization",
+                            "SQL injection prevention with prepared statements",
+                            "XSS protection with content security policies",
+                            "CSRF tokens for form submissions",
+                            "Secure session management",
+                            "Password hashing with bcrypt/Argon2",
+                            "HTTPS enforcement and HSTS headers",
+                            "Security headers (X-Frame-Options, X-Content-Type-Options)"
+                        ]
+                    },
+                    {
+                        "title": "Compliance & Standards",
+                        "items": [
+                            "GDPR compliance for data privacy",
+                            "HIPAA for healthcare applications",
+                            "PCI DSS for payment processing",
+                            "SOC 2 Type II certification support",
+                            "ISO 27001 security standards",
+                            "OWASP security guidelines"
+                        ]
+                    },
+                    {
+                        "title": "Technologies Used",
+                        "items": [
+                            "Authentication: Passport.js, Laravel Sanctum, Auth0",
+                            "Encryption: OpenSSL, Let's Encrypt, AWS KMS",
+                            "Security Tools: Helmet.js, CORS, Rate Limiter",
+                            "Monitoring: Snyk, SonarQube, OWASP ZAP",
+                            "Firewalls: AWS WAF, Cloudflare, ModSecurity"
+                        ]
+                    },
+                    {
+                        "title": "Security Architecture Features",
+                        "items": [
+                            "Zero-trust security model",
+                            "Defense in depth strategy",
+                            "Principle of least privilege",
+                            "Secure by default configurations",
+                            "Regular security updates and patches",
+                            "Penetration testing and vulnerability assessments",
+                            "Incident response planning",
+                            "Security awareness training materials"
+                        ]
+                    },
+                    {
+                        "title": "Benefits",
+                        "items": [
+                            "Protection against data breaches and cyber attacks",
+                            "Compliance with industry regulations",
+                            "Customer trust and brand protection",
+                            "Reduced risk of financial and legal penalties",
+                            "Peace of mind for stakeholders"
+                        ]
+                    }
+                ]
+            }
         },
         {
             "title": "Tech-Driven Growth Strategy",
             "description": "Scalable backend solutions and frontend performance optimization to ensure your applications are fast, efficient, and ready for growth.",
             "icon": "bi-graph-up",
-            "content": "TechDrivenGrowthStrategy"
+            "content": "TechDrivenGrowthStrategy",
+            "details": {
+                "introduction": "Tech-Driven Growth Strategy combines technical excellence with business strategy to help your applications scale efficiently. I provide consulting and implementation services that prepare your systems for rapid growth.",
+                "sections": [
+                    {
+                        "title": "Growth Services",
+                        "items": [
+                            {
+                                "title": "Scalability Planning",
+                                "description": "Design architecture that scales horizontally and vertically, handling 10x to 100x growth without major rewrites."
+                            },
+                            {
+                                "title": "Performance Optimization",
+                                "description": "Optimize every layer of your stack to handle increased traffic while reducing infrastructure costs."
+                            },
+                            {
+                                "title": "Technical Debt Reduction",
+                                "description": "Identify and eliminate technical debt that slows development and increases maintenance costs."
+                            },
+                            {
+                                "title": "Automation Strategy",
+                                "description": "Automate repetitive tasks, testing, deployment, and monitoring to increase team productivity."
+                            },
+                            {
+                                "title": "Data-Driven Decisions",
+                                "description": "Implement analytics and monitoring to make informed technical and business decisions."
+                            },
+                            {
+                                "title": "Team Efficiency",
+                                "description": "Improve development workflows, CI/CD pipelines, and collaboration tools."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Growth Optimization Areas",
+                        "items": [
+                            "Database optimization and sharding strategies",
+                            "Caching layers (Redis, CDN, application cache)",
+                            "Load balancing and auto-scaling",
+                            "Microservices migration for better scalability",
+                            "API rate limiting and throttling",
+                            "Queue-based processing for heavy tasks",
+                            "Content delivery network (CDN) implementation",
+                            "Database read replicas and clustering"
+                        ]
+                    },
+                    {
+                        "title": "Business Impact",
+                        "items": [
+                            "Faster time to market for new features",
+                            "Reduced infrastructure costs through optimization",
+                            "Ability to handle viral growth and traffic spikes",
+                            "Improved user experience and retention",
+                            "Better team productivity and morale",
+                            "Competitive advantage through technical excellence"
+                        ]
+                    },
+                    {
+                        "title": "Consulting Services",
+                        "items": [
+                            "Technical architecture review and recommendations",
+                            "Code quality audits and refactoring plans",
+                            "Technology stack evaluation and modernization",
+                            "Performance benchmarking and optimization roadmap",
+                            "Security assessment and hardening",
+                            "Team training and best practices workshops"
+                        ]
+                    },
+                    {
+                        "title": "Technologies & Tools",
+                        "items": [
+                            "Monitoring: Datadog, New Relic, Grafana",
+                            "Analytics: Google Analytics, Mixpanel, Amplitude",
+                            "Testing: Jest, Cypress, Selenium, k6",
+                            "CI/CD: GitHub Actions, Jenkins, CircleCI",
+                            "Infrastructure: Terraform, Ansible, Kubernetes"
+                        ]
+                    },
+                    {
+                        "title": "Growth Metrics We Track",
+                        "items": [
+                            "Application response times and throughput",
+                            "Infrastructure costs per user",
+                            "Deployment frequency and success rate",
+                            "Mean time to recovery (MTTR)",
+                            "Code quality and test coverage",
+                            "User engagement and retention rates"
+                        ]
+                    },
+                    {
+                        "title": "Ideal For",
+                        "items": [
+                            "Startups preparing for rapid growth",
+                            "Scale-ups experiencing performance issues",
+                            "Companies planning major feature launches",
+                            "Businesses optimizing operational costs",
+                            "Teams modernizing legacy systems"
+                        ]
+                    }
+                ]
+            }
         },
         {
             "title": "Technical Consultancy & Leadership",
             "description": "Expert guidance on system architecture, team mentorship, code reviews, and best practices for scaling engineering teams.",
             "icon": "bi-people",
-            "content": "TechnicalConsultancyAndLeadership"
+            "content": "TechnicalConsultancyAndLeadership",
+            "details": {
+                "introduction": "Technical Consultancy & Leadership services bridge the gap between business goals and engineering reality. I partner with companies to design scalable architectures, improve code quality, and mentor development teams for long-term success.",
+                "sections": [
+                    {
+                        "title": "Consulting Services",
+                        "items": [
+                            {
+                                "title": "System Architecture Design",
+                                "description": "Planning scalable, secure, and cost-effective cloud-native architectures."
+                            },
+                            {
+                                "title": "Code Reviews & Audits",
+                                "description": "Deep-dive analysis of existing codebases to identify security risks, performance bottlenecks, and technical debt."
+                            },
+                            {
+                                "title": "Tech Stack Selection",
+                                "description": "Advising on the right tools, languages, and frameworks for your specific project needs."
+                            },
+                            {
+                                "title": "Team Mentorship",
+                                "description": "Guiding junior and mid-level developers on best practices, design patterns, and career growth."
+                            },
+                            {
+                                "title": "DevOps Strategy",
+                                "description": "Setting up CI/CD pipelines, automated testing, and infrastructure improvements."
+                            },
+                            {
+                                "title": "Hiring Support",
+                                "description": "Assisting in technical interviews and defining engineering roles."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Key Focus Areas",
+                        "items": [
+                            "Scalability and performance",
+                            "Security and compliance",
+                            "Code maintainability and clean architecture",
+                            "Cloud cost optimization",
+                            "Agile development processes",
+                            "Disaster recovery planning"
+                        ]
+                    },
+                    {
+                        "title": "Who Is This For?",
+                        "items": [
+                            "Startups delivering their MVP",
+                            "Non-technical founders needing a CTO-for-hire",
+                            "Companies tackling technical debt",
+                            "Teams transitioning to modern stacks",
+                            "Businesses scaling their engineering team"
+                        ]
+                    },
+                    {
+                        "title": "Benefits",
+                        "items": [
+                            "Avoid costly architectural mistakes",
+                            "Accelerate development velocity",
+                            "Ensure industry-standard security",
+                            "Build a strong engineering culture",
+                            "Make informed technical decisions"
+                        ]
+                    }
+                ]
+            }
         },
         {
             "title": "AI & LLM Integrations",
             "description": "Incorporate AI/LLM models like WebLLM or OpenAI into your web applications for intelligent features such as chatbots, automation, and NLP tasks.",
             "icon": "bi-cpu",
-            "content": "AiAndLlmIntegrations"
+            "content": "AiAndLlmIntegrations",
+            "details": {
+                "introduction": "AI & LLM Integrations bring artificial intelligence and large language models into your applications, enabling intelligent features like chatbots, content generation, sentiment analysis, and automated decision-making.",
+                "sections": [
+                    {
+                        "title": "AI Services Offered",
+                        "items": [
+                            {
+                                "title": "ChatGPT Integration",
+                                "description": "Integrate OpenAI's GPT models for conversational AI, content generation, and intelligent assistants."
+                            },
+                            {
+                                "title": "Custom Chatbots",
+                                "description": "Build context-aware chatbots for customer support, sales, and user engagement using LLMs."
+                            },
+                            {
+                                "title": "Natural Language Processing",
+                                "description": "Implement text analysis, sentiment detection, entity extraction, and language translation."
+                            },
+                            {
+                                "title": "Content Generation",
+                                "description": "Automate blog posts, product descriptions, email templates, and marketing copy."
+                            },
+                            {
+                                "title": "Image AI",
+                                "description": "Integrate DALL-E, Stable Diffusion, or Midjourney for AI-generated images and graphics."
+                            },
+                            {
+                                "title": "Voice AI",
+                                "description": "Implement speech-to-text and text-to-speech using services like Whisper and ElevenLabs."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "AI Technologies",
+                        "items": [
+                            "OpenAI (GPT-4, GPT-3.5, DALL-E, Whisper)",
+                            "Anthropic Claude",
+                            "Google PaLM and Gemini",
+                            "Hugging Face models",
+                            "LangChain for LLM orchestration",
+                            "Vector databases (Pinecone, Weaviate, Chroma)"
+                        ]
+                    },
+                    {
+                        "title": "Use Cases",
+                        "items": [
+                            "Customer support chatbots with 24/7 availability",
+                            "Content creation and SEO optimization tools",
+                            "Document analysis and summarization",
+                            "Code generation and debugging assistants",
+                            "Personalized product recommendations",
+                            "Automated email responses and categorization",
+                            "Language translation services",
+                            "Sentiment analysis for social media monitoring"
+                        ]
+                    },
+                    {
+                        "title": "Implementation Features",
+                        "items": [
+                            "Prompt engineering and optimization",
+                            "Context management and conversation history",
+                            "Rate limiting and cost optimization",
+                            "Fallback mechanisms for API failures",
+                            "Content moderation and safety filters",
+                            "Custom fine-tuning for specific use cases",
+                            "Analytics and usage tracking",
+                            "Multi-language support"
+                        ]
+                    },
+                    {
+                        "title": "Technical Stack",
+                        "items": [
+                            {
+                                "title": "APIs",
+                                "description": "OpenAI API, Anthropic API, Hugging Face"
+                            },
+                            {
+                                "title": "Frameworks",
+                                "description": "LangChain, LlamaIndex"
+                            },
+                            {
+                                "title": "Vector DBs",
+                                "description": "Pinecone, Weaviate, FAISS"
+                            },
+                            {
+                                "title": "Frontend",
+                                "description": "React with streaming responses"
+                            },
+                            {
+                                "title": "Backend",
+                                "description": "Node.js, Python (FastAPI)"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Benefits",
+                        "items": [
+                            "Reduce customer support costs by 60-80%",
+                            "Automate repetitive content creation tasks",
+                            "Provide 24/7 intelligent assistance",
+                            "Improve user engagement and satisfaction",
+                            "Scale customer interactions without hiring",
+                            "Gain insights from unstructured data"
+                        ]
+                    }
+                ]
+            }
         },
         {
             "title": "Cloud Infrastructure & Deployment",
             "description": "CI/CD pipelines, auto-scaling, monitoring, and serverless architecture setup using AWS, Firebase, and DigitalOcean for modern DevOps workflows.",
             "icon": "bi-cloud-check",
-            "content": "CloudInfrastructureAndDeployment"
+            "content": "CloudInfrastructureAndDeployment",
+            "details": {
+                "introduction": "Cloud Infrastructure & Deployment services provide comprehensive cloud solutions including setup, migration, CI/CD pipelines, monitoring, and optimization across AWS, Azure, Google Cloud, and DigitalOcean.",
+                "sections": [
+                    {
+                        "title": "Cloud Services",
+                        "items": [
+                            {
+                                "title": "Cloud Migration",
+                                "description": "Migrate existing applications from on-premise or other clouds to AWS, Azure, or GCP with minimal downtime."
+                            },
+                            {
+                                "title": "Infrastructure as Code",
+                                "description": "Use Terraform, CloudFormation, or Pulumi to define and manage infrastructure programmatically."
+                            },
+                            {
+                                "title": "Serverless Architecture",
+                                "description": "Build cost-effective solutions using AWS Lambda, Azure Functions, or Google Cloud Functions."
+                            },
+                            {
+                                "title": "Container Orchestration",
+                                "description": "Deploy and manage containerized applications using Kubernetes, ECS, or Docker Swarm."
+                            },
+                            {
+                                "title": "Auto-Scaling",
+                                "description": "Configure automatic scaling based on traffic, CPU, memory, or custom metrics."
+                            },
+                            {
+                                "title": "Multi-Region Deployment",
+                                "description": "Set up global infrastructure for low latency and high availability worldwide."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "AWS Services",
+                        "items": [
+                            "EC2, ECS, EKS for compute",
+                            "S3, EBS, EFS for storage",
+                            "RDS, DynamoDB, Aurora for databases",
+                            "Lambda for serverless functions",
+                            "CloudFront for CDN",
+                            "Route 53 for DNS",
+                            "VPC, Security Groups for networking",
+                            "CloudWatch for monitoring"
+                        ]
+                    },
+                    {
+                        "title": "CI/CD Pipeline",
+                        "items": [
+                            "Automated testing on every commit",
+                            "Staging and production environments",
+                            "Blue-green and canary deployments",
+                            "Rollback capabilities",
+                            "Environment-specific configurations",
+                            "Secrets management with AWS Secrets Manager or Vault",
+                            "Build optimization and caching",
+                            "Deployment notifications via Slack/Email"
+                        ]
+                    },
+                    {
+                        "title": "Monitoring & Logging",
+                        "items": [
+                            "Application performance monitoring (APM)",
+                            "Log aggregation and analysis",
+                            "Real-time alerts and notifications",
+                            "Custom dashboards and metrics",
+                            "Error tracking and debugging",
+                            "Cost monitoring and optimization"
+                        ]
+                    },
+                    {
+                        "title": "Security & Compliance",
+                        "items": [
+                            "IAM roles and policies",
+                            "Network security with VPC and security groups",
+                            "SSL/TLS certificates management",
+                            "Encryption at rest and in transit",
+                            "Regular security audits",
+                            "Compliance with SOC 2, HIPAA, PCI DSS"
+                        ]
+                    },
+                    {
+                        "title": "Cost Optimization",
+                        "items": [
+                            "Right-sizing instances and resources",
+                            "Reserved instances and savings plans",
+                            "Spot instances for non-critical workloads",
+                            "S3 lifecycle policies",
+                            "CloudFront caching strategies",
+                            "Resource tagging and cost allocation"
+                        ]
+                    },
+                    {
+                        "title": "Benefits",
+                        "items": [
+                            "99.99% uptime SLA",
+                            "Global reach with low latency",
+                            "Pay-as-you-go pricing model",
+                            "Automatic backups and disaster recovery",
+                            "Scalability from startup to enterprise",
+                            "Reduced operational overhead"
+                        ]
+                    }
+                ]
+            }
         },
         {
             "title": "Workflow & Process Automation",
             "description": "Automate repetitive business tasks and backend processes through cron jobs, event-driven logic, and API orchestration using Laravel Queues or Node Workers.",
             "icon": "bi-gear",
-            "content": "WorkflowAndProcessAutomation"
+            "content": "WorkflowAndProcessAutomation",
+            "details": {
+                "introduction": "Workflow & Process Automation eliminates repetitive manual tasks by automating business processes, data synchronization, notifications, and backend operations using modern automation tools and techniques.",
+                "sections": [
+                    {
+                        "title": "Automation Services",
+                        "items": [
+                            {
+                                "title": "Business Process Automation",
+                                "description": "Automate approval workflows, document processing, data entry, and reporting tasks."
+                            },
+                            {
+                                "title": "Task Scheduling",
+                                "description": "Set up cron jobs, scheduled tasks, and time-based triggers for recurring operations."
+                            },
+                            {
+                                "title": "Event-Driven Automation",
+                                "description": "Create workflows triggered by specific events like user actions, database changes, or API calls."
+                            },
+                            {
+                                "title": "Data Synchronization",
+                                "description": "Automate data sync between systems, databases, and third-party services."
+                            },
+                            {
+                                "title": "Email Automation",
+                                "description": "Set up automated email campaigns, notifications, and transactional emails."
+                            },
+                            {
+                                "title": "Report Generation",
+                                "description": "Automatically generate and distribute reports on schedules or triggers."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Technologies Used",
+                        "items": [
+                            "Laravel Queues and Jobs",
+                            "Node.js Workers and Bull Queue",
+                            "Cron Jobs and Task Schedulers",
+                            "Zapier and Make (Integromat)",
+                            "Apache Airflow for complex workflows",
+                            "AWS Step Functions",
+                            "RabbitMQ, Redis Queue"
+                        ]
+                    },
+                    {
+                        "title": "Common Automations",
+                        "items": [
+                            "Invoice generation and sending",
+                            "Customer onboarding workflows",
+                            "Data backup and archival",
+                            "Social media post scheduling",
+                            "Inventory management and alerts",
+                            "Lead nurturing sequences",
+                            "Compliance reporting",
+                            "Database cleanup and optimization"
+                        ]
+                    },
+                    {
+                        "title": "Benefits",
+                        "items": [
+                            "Save 10-20 hours per week on manual tasks",
+                            "Reduce human errors and inconsistencies",
+                            "Improve response times and efficiency",
+                            "Scale operations without hiring",
+                            "24/7 automated operations",
+                            "Better resource allocation for strategic work"
+                        ]
+                    }
+                ]
+            }
         },
         {
             "title": "Progressive Web App (PWA) Development",
             "description": "Build installable, offline-ready PWAs using React, service workers, and Web App Manifest to deliver native-like mobile experiences.",
             "icon": "bi-phone",
-            "content": "ProgressiveWebAppDevelopment"
+            "content": "ProgressiveWebAppDevelopment",
+            "details": {
+                "introduction": "Progressive Web App (PWA) Development creates fast, reliable, and engaging web applications that work offline, can be installed on devices, and provide native app-like experiences across all platforms.",
+                "sections": [
+                    {
+                        "title": "PWA Features",
+                        "items": [
+                            {
+                                "title": "Offline Functionality",
+                                "description": "Use service workers to cache assets and enable offline access to your application."
+                            },
+                            {
+                                "title": "Installable",
+                                "description": "Allow users to install your web app on their home screen without app stores."
+                            },
+                            {
+                                "title": "Push Notifications",
+                                "description": "Send push notifications to re-engage users even when the app is closed."
+                            },
+                            {
+                                "title": "Fast Loading",
+                                "description": "Implement app shell architecture for instant loading and smooth performance."
+                            },
+                            {
+                                "title": "Responsive Design",
+                                "description": "Work seamlessly across all devices and screen sizes."
+                            },
+                            {
+                                "title": "Background Sync",
+                                "description": "Sync data in the background when connection is restored."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Technologies",
+                        "items": [
+                            "Service Workers for offline caching",
+                            "Web App Manifest for installability",
+                            "Workbox for PWA tooling",
+                            "Push API for notifications",
+                            "IndexedDB for local storage",
+                            "React, Next.js, or Vue.js"
+                        ]
+                    },
+                    {
+                        "title": "Benefits",
+                        "items": [
+                            "70% lower development cost than native apps",
+                            "Single codebase for all platforms",
+                            "No app store approval process",
+                            "Instant updates without user action",
+                            "Better SEO than native apps",
+                            "Reduced data usage with caching"
+                        ]
+                    }
+                ]
+            }
         },
         {
             "title": "Third-Party Integrations",
             "description": "Seamless integration with CRMs, analytics, marketing platforms (e.g. Mautic, Stripe, Twilio, Zapier) for automated workflows and enhanced capabilities.",
             "icon": "bi-link",
-            "content": "ThirdPartyIntegrations"
+            "content": "ThirdPartyIntegrations",
+            "details": {
+                "introduction": "Third-Party Integrations connect your application with external services like CRMs, payment gateways, marketing platforms, analytics tools, and communication services to extend functionality and automate workflows.",
+                "sections": [
+                    {
+                        "title": "Integration Services",
+                        "items": [
+                            {
+                                "title": "Payment Gateways",
+                                "description": "Integrate Stripe, PayPal, Razorpay, Square for secure payment processing."
+                            },
+                            {
+                                "title": "CRM Integration",
+                                "description": "Connect with Salesforce, HubSpot, Zoho CRM for customer data synchronization."
+                            },
+                            {
+                                "title": "Email Services",
+                                "description": "Integrate SendGrid, Mailchimp, Mailgun for transactional and marketing emails."
+                            },
+                            {
+                                "title": "SMS & Communication",
+                                "description": "Add Twilio, Vonage for SMS, voice calls, and WhatsApp messaging."
+                            },
+                            {
+                                "title": "Analytics",
+                                "description": "Implement Google Analytics, Mixpanel, Amplitude for user tracking and insights."
+                            },
+                            {
+                                "title": "Social Media",
+                                "description": "Integrate Facebook, Twitter, LinkedIn APIs for social login and sharing."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Popular Integrations",
+                        "items": [
+                            "Stripe for payments and subscriptions",
+                            "Twilio for SMS and voice",
+                            "SendGrid for email delivery",
+                            "Slack for team notifications",
+                            "Google Maps for location services",
+                            "AWS S3 for file storage",
+                            "Zapier for workflow automation",
+                            "Firebase for real-time features"
+                        ]
+                    },
+                    {
+                        "title": "Benefits",
+                        "items": [
+                            "Faster development with pre-built services",
+                            "Reduced maintenance overhead",
+                            "Access to specialized features",
+                            "Improved user experience",
+                            "Automated data synchronization",
+                            "Scalable third-party infrastructure"
+                        ]
+                    }
+                ]
+            }
         },
         {
             "title": "Admin Panel & Backoffice Systems",
             "description": "Custom dashboards and admin panels with role-based access, data insights, and CRUD operations for internal business management.",
             "icon": "bi-hdd-rack",
-            "content": "AdminPanelAndBackofficeSystems"
+            "content": "AdminPanelAndBackofficeSystems",
+            "details": {
+                "introduction": "Admin Panel & Backoffice Systems provide powerful internal tools for managing users, content, data, and business operations with role-based access, analytics, and comprehensive CRUD operations.",
+                "sections": [
+                    {
+                        "title": "Admin Panel Features",
+                        "items": [
+                            {
+                                "title": "User Management",
+                                "description": "Manage users, roles, permissions, and access control with detailed user profiles."
+                            },
+                            {
+                                "title": "Content Management",
+                                "description": "Create, edit, and publish content with rich text editors and media management."
+                            },
+                            {
+                                "title": "Data Analytics",
+                                "description": "View real-time dashboards with charts, graphs, and key performance indicators."
+                            },
+                            {
+                                "title": "CRUD Operations",
+                                "description": "Full create, read, update, delete functionality for all data entities."
+                            },
+                            {
+                                "title": "Reporting Tools",
+                                "description": "Generate and export reports in PDF, Excel, and CSV formats."
+                            },
+                            {
+                                "title": "Audit Logging",
+                                "description": "Track all user actions and system changes for compliance and security."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Technologies",
+                        "items": [
+                            "React Admin, AdminLTE, CoreUI",
+                            "Laravel Nova, Filament",
+                            "Chart.js, ApexCharts for visualizations",
+                            "DataTables for data grids",
+                            "Export libraries (jsPDF, ExcelJS)"
+                        ]
+                    },
+                    {
+                        "title": "Common Modules",
+                        "items": [
+                            "User and role management",
+                            "Product/inventory management",
+                            "Order and transaction management",
+                            "Customer support ticketing",
+                            "Email template management",
+                            "Settings and configuration",
+                            "Activity logs and audit trails",
+                            "Notification management"
+                        ]
+                    },
+                    {
+                        "title": "Benefits",
+                        "items": [
+                            "Centralized business management",
+                            "Improved operational efficiency",
+                            "Better data insights and reporting",
+                            "Reduced manual errors",
+                            "Scalable as business grows",
+                            "Customizable to specific needs"
+                        ]
+                    }
+                ]
+            }
         },
         {
             "title": "Serverless & Microservices Architecture",
             "description": "Design and deployment of scalable, decoupled systems using Lambda, S3, API Gateway, Docker, and container orchestration strategies.",
             "icon": "bi-diagram-3",
-            "content": "ServerlessAndMicroservicesArchitecture"
+            "content": "ServerlessAndMicroservicesArchitecture",
+            "details": {
+                "introduction": "Serverless & Microservices Architecture designs scalable, decoupled systems using AWS Lambda, containers, API gateways, and event-driven patterns for maximum flexibility and cost efficiency.",
+                "sections": [
+                    {
+                        "title": "Architecture Services",
+                        "items": [
+                            {
+                                "title": "Serverless Functions",
+                                "description": "Build event-driven applications using AWS Lambda, Azure Functions, or Google Cloud Functions."
+                            },
+                            {
+                                "title": "Microservices Design",
+                                "description": "Break monolithic applications into independent, deployable microservices."
+                            },
+                            {
+                                "title": "API Gateway",
+                                "description": "Implement API gateways for routing, authentication, and rate limiting."
+                            },
+                            {
+                                "title": "Event-Driven Architecture",
+                                "description": "Use message queues and event buses for asynchronous communication."
+                            },
+                            {
+                                "title": "Container Orchestration",
+                                "description": "Deploy with Docker, Kubernetes, or AWS ECS for container management."
+                            },
+                            {
+                                "title": "Service Mesh",
+                                "description": "Implement Istio or Linkerd for service-to-service communication."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Technologies",
+                        "items": [
+                            "AWS Lambda, S3, API Gateway, DynamoDB",
+                            "Docker, Kubernetes, ECS, Fargate",
+                            "Message Queues: SQS, SNS, RabbitMQ, Kafka",
+                            "Service Discovery: Consul, Eureka",
+                            "API Gateway: Kong, AWS API Gateway"
+                        ]
+                    },
+                    {
+                        "title": "Benefits",
+                        "items": [
+                            "Pay only for actual usage (serverless)",
+                            "Auto-scaling without configuration",
+                            "Independent deployment of services",
+                            "Better fault isolation",
+                            "Technology flexibility per service",
+                            "Easier team scalability"
+                        ]
+                    }
+                ]
+            }
         },
         {
             "title": "Technical SEO Optimization",
             "description": "Backend and frontend performance tuning, structured data, Open Graph, meta handling, and routing optimization for better indexability.",
             "icon": "bi-search",
-            "content": "TechnicalSeoOptimization"
+            "content": "TechnicalSeoOptimization",
+            "details": {
+                "introduction": "Technical SEO Optimization improves your website's search engine visibility through performance tuning, structured data, meta optimization, and technical best practices for better rankings and organic traffic.",
+                "sections": [
+                    {
+                        "title": "SEO Services",
+                        "items": [
+                            {
+                                "title": "Performance Optimization",
+                                "description": "Improve Core Web Vitals, page speed, and loading times for better rankings."
+                            },
+                            {
+                                "title": "Structured Data",
+                                "description": "Implement Schema.org markup for rich snippets and enhanced search results."
+                            },
+                            {
+                                "title": "Meta Tags",
+                                "description": "Optimize title tags, meta descriptions, and Open Graph tags for social sharing."
+                            },
+                            {
+                                "title": "URL Structure",
+                                "description": "Create SEO-friendly URLs with proper hierarchy and keywords."
+                            },
+                            {
+                                "title": "XML Sitemaps",
+                                "description": "Generate and submit sitemaps for better crawling and indexing."
+                            },
+                            {
+                                "title": "Mobile Optimization",
+                                "description": "Ensure mobile-first indexing compatibility and responsive design."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Technical Improvements",
+                        "items": [
+                            "Server-side rendering (SSR) for better crawlability",
+                            "Canonical tags to prevent duplicate content",
+                            "Robots.txt and meta robots optimization",
+                            "Image optimization with alt tags and lazy loading",
+                            "Internal linking structure",
+                            "HTTPS and security headers",
+                            "Breadcrumb navigation",
+                            "404 error handling and redirects"
+                        ]
+                    },
+                    {
+                        "title": "Tools Used",
+                        "items": [
+                            "Google Search Console",
+                            "Google Analytics 4",
+                            "Screaming Frog SEO Spider",
+                            "Ahrefs, SEMrush",
+                            "Lighthouse, PageSpeed Insights"
+                        ]
+                    },
+                    {
+                        "title": "Benefits",
+                        "items": [
+                            "Higher search engine rankings",
+                            "Increased organic traffic",
+                            "Better user experience",
+                            "Improved conversion rates",
+                            "Reduced bounce rates",
+                            "Enhanced brand visibility"
+                        ]
+                    }
+                ]
+            }
         },
         {
             "title": "CI/CD & Deployment Automation",
             "description": "GitHub Actions, Bitbucket Pipelines, or custom CI workflows to automate builds, testing, and secure deployment with rollback strategies.",
             "icon": "bi-lightning-charge",
-            "content": "CiCdAndDeploymentAutomation"
+            "content": "CiCdAndDeploymentAutomation",
+            "details": {
+                "introduction": "CI/CD & Deployment Automation streamlines your development workflow with automated testing, building, and deployment pipelines using GitHub Actions, GitLab CI, Jenkins, and modern DevOps practices.",
+                "sections": [
+                    {
+                        "title": "CI/CD Services",
+                        "items": [
+                            {
+                                "title": "Automated Testing",
+                                "description": "Run unit, integration, and end-to-end tests on every commit automatically."
+                            },
+                            {
+                                "title": "Build Automation",
+                                "description": "Automate code compilation, bundling, and optimization processes."
+                            },
+                            {
+                                "title": "Deployment Pipelines",
+                                "description": "Set up multi-stage pipelines for staging, QA, and production environments."
+                            },
+                            {
+                                "title": "Rollback Strategies",
+                                "description": "Implement automatic rollback on failed deployments for zero downtime."
+                            },
+                            {
+                                "title": "Environment Management",
+                                "description": "Manage multiple environments with environment-specific configurations."
+                            },
+                            {
+                                "title": "Secrets Management",
+                                "description": "Securely handle API keys, passwords, and sensitive data in pipelines."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "CI/CD Tools",
+                        "items": [
+                            "GitHub Actions",
+                            "GitLab CI/CD",
+                            "Jenkins",
+                            "CircleCI",
+                            "Travis CI",
+                            "Bitbucket Pipelines",
+                            "AWS CodePipeline"
+                        ]
+                    },
+                    {
+                        "title": "Pipeline Features",
+                        "items": [
+                            "Automated code linting and formatting",
+                            "Security scanning and vulnerability checks",
+                            "Docker image building and pushing",
+                            "Database migrations",
+                            "Cache optimization for faster builds",
+                            "Parallel job execution",
+                            "Slack/Email notifications",
+                            "Deployment approvals for production"
+                        ]
+                    },
+                    {
+                        "title": "Benefits",
+                        "items": [
+                            "Deploy multiple times per day safely",
+                            "Catch bugs before production",
+                            "Reduce manual deployment errors",
+                            "Faster time to market",
+                            "Consistent deployment process",
+                            "Better team collaboration"
+                        ]
+                    }
+                ]
+            }
         },
         {
             "title": "Web Security Auditing",
             "description": "Comprehensive audits for XSS, CSRF, SQLi, and other OWASP Top 10 vulnerabilities, with secure-by-design development practices.",
             "icon": "bi-shield-shaded",
-            "content": "WebSecurityAuditing"
+            "content": "WebSecurityAuditing",
+            "details": {
+                "introduction": "Web Security Auditing provides comprehensive security assessments to identify and fix vulnerabilities including XSS, CSRF, SQL injection, and other OWASP Top 10 threats with detailed reports and remediation guidance.",
+                "sections": [
+                    {
+                        "title": "Security Audit Services",
+                        "items": [
+                            {
+                                "title": "Vulnerability Assessment",
+                                "description": "Scan for common vulnerabilities like XSS, CSRF, SQL injection, and insecure configurations."
+                            },
+                            {
+                                "title": "Penetration Testing",
+                                "description": "Simulate real-world attacks to identify security weaknesses before hackers do."
+                            },
+                            {
+                                "title": "Code Review",
+                                "description": "Manual code review to identify security flaws and insecure coding practices."
+                            },
+                            {
+                                "title": "Compliance Audit",
+                                "description": "Ensure compliance with GDPR, HIPAA, PCI DSS, and other regulations."
+                            },
+                            {
+                                "title": "Security Hardening",
+                                "description": "Implement security best practices and configurations across your stack."
+                            },
+                            {
+                                "title": "Remediation Support",
+                                "description": "Provide detailed fix recommendations and implementation assistance."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "OWASP Top 10 Coverage",
+                        "items": [
+                            "Injection attacks (SQL, NoSQL, Command)",
+                            "Broken authentication and session management",
+                            "Sensitive data exposure",
+                            "XML external entities (XXE)",
+                            "Broken access control",
+                            "Security misconfiguration",
+                            "Cross-site scripting (XSS)",
+                            "Insecure deserialization",
+                            "Using components with known vulnerabilities",
+                            "Insufficient logging and monitoring"
+                        ]
+                    },
+                    {
+                        "title": "Security Tools",
+                        "items": [
+                            "OWASP ZAP for penetration testing",
+                            "Burp Suite for security scanning",
+                            "Snyk for dependency vulnerabilities",
+                            "SonarQube for code quality and security",
+                            "Nmap for network scanning",
+                            "Metasploit for penetration testing"
+                        ]
+                    },
+                    {
+                        "title": "Deliverables",
+                        "items": [
+                            "Comprehensive security audit report",
+                            "Vulnerability severity ratings",
+                            "Detailed remediation recommendations",
+                            "Code examples for fixes",
+                            "Compliance checklist",
+                            "Follow-up verification testing"
+                        ]
+                    },
+                    {
+                        "title": "Benefits",
+                        "items": [
+                            "Prevent data breaches and cyber attacks",
+                            "Protect customer data and privacy",
+                            "Avoid legal and financial penalties",
+                            "Build customer trust and confidence",
+                            "Meet compliance requirements",
+                            "Reduce security incident costs"
+                        ]
+                    }
+                ]
+            }
         },
         {
             "title": "Real-Time Applications",
             "description": "Development of real-time apps using WebSockets, Socket.IO, Laravel Echo, or Firebase for features like chat, notifications, and dashboards.",
             "icon": "bi-broadcast-pin",
-            "content": "RealTimeApplications"
+            "content": "RealTimeApplications",
+            "details": {
+                "introduction": "Real-Time Applications enable instant, bidirectional communication using WebSockets, Socket.IO, Laravel Echo, and Firebase for features like live chat, notifications, collaborative editing, and real-time dashboards.",
+                "sections": [
+                    {
+                        "title": "Real-Time Features",
+                        "items": [
+                            {
+                                "title": "Live Chat",
+                                "description": "Build instant messaging systems with typing indicators, read receipts, and file sharing."
+                            },
+                            {
+                                "title": "Push Notifications",
+                                "description": "Send real-time notifications for events, updates, and user actions."
+                            },
+                            {
+                                "title": "Collaborative Editing",
+                                "description": "Enable multiple users to edit documents simultaneously like Google Docs."
+                            },
+                            {
+                                "title": "Live Dashboards",
+                                "description": "Display real-time analytics, metrics, and data visualizations that update automatically."
+                            },
+                            {
+                                "title": "Presence Detection",
+                                "description": "Show online/offline status and active users in real-time."
+                            },
+                            {
+                                "title": "Live Updates",
+                                "description": "Push content updates, news feeds, and social media feeds in real-time."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Technologies",
+                        "items": [
+                            "WebSockets for bidirectional communication",
+                            "Socket.IO for real-time events",
+                            "Laravel Echo and Pusher",
+                            "Firebase Realtime Database",
+                            "Redis Pub/Sub",
+                            "Server-Sent Events (SSE)"
+                        ]
+                    },
+                    {
+                        "title": "Use Cases",
+                        "items": [
+                            "Customer support chat systems",
+                            "Social media feeds and notifications",
+                            "Collaborative project management tools",
+                            "Live sports scores and updates",
+                            "Stock trading platforms",
+                            "Multiplayer games",
+                            "Live auction systems",
+                            "Real-time monitoring dashboards"
+                        ]
+                    },
+                    {
+                        "title": "Benefits",
+                        "items": [
+                            "Instant user engagement",
+                            "Better user experience",
+                            "Reduced server polling",
+                            "Lower bandwidth usage",
+                            "Scalable to thousands of connections",
+                            "Cross-platform compatibility"
+                        ]
+                    }
+                ]
+            }
         },
         {
             "title": "Freelance & Client Portal Solutions",
             "description": "Custom lightweight platforms to manage proposals, invoices, communication, and assets for freelancers or SMEs.",
             "icon": "bi-person-badge",
-            "content": "FreelanceAndClientPortalSolutions"
+            "content": "FreelanceAndClientPortalSolutions",
+            "details": {
+                "introduction": "Freelance & Client Portal Solutions provide custom platforms for managing proposals, invoices, projects, communication, and file sharing between freelancers/agencies and their clients in one centralized system.",
+                "sections": [
+                    {
+                        "title": "Portal Features",
+                        "items": [
+                            {
+                                "title": "Project Management",
+                                "description": "Track projects, tasks, milestones, and deadlines with Kanban boards and Gantt charts."
+                            },
+                            {
+                                "title": "Proposal System",
+                                "description": "Create, send, and track proposals with e-signature capabilities."
+                            },
+                            {
+                                "title": "Invoice Management",
+                                "description": "Generate invoices, track payments, and integrate with payment gateways."
+                            },
+                            {
+                                "title": "Time Tracking",
+                                "description": "Log billable hours with timers and generate time-based invoices."
+                            },
+                            {
+                                "title": "File Sharing",
+                                "description": "Securely share files, documents, and assets with clients."
+                            },
+                            {
+                                "title": "Communication Hub",
+                                "description": "Built-in messaging, comments, and email notifications."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Key Modules",
+                        "items": [
+                            "Client management and CRM",
+                            "Project and task management",
+                            "Proposal and contract management",
+                            "Invoice and payment tracking",
+                            "Time tracking and reporting",
+                            "File storage and sharing",
+                            "Calendar and scheduling",
+                            "Expense tracking"
+                        ]
+                    },
+                    {
+                        "title": "Technologies",
+                        "items": [
+                            "React for dynamic interfaces",
+                            "Laravel/Node.js for backend",
+                            "Stripe for payments",
+                            "AWS S3 for file storage",
+                            "PDF generation for invoices",
+                            "Email integration (SendGrid)"
+                        ]
+                    },
+                    {
+                        "title": "Benefits",
+                        "items": [
+                            "Professional client experience",
+                            "Streamlined business operations",
+                            "Faster payment collection",
+                            "Better project organization",
+                            "Reduced administrative work",
+                            "Improved client communication"
+                        ]
+                    }
+                ]
+            }
         },
         {
             "title": "Code Refactoring & Legacy Migration",
             "description": "Upgrade legacy PHP, jQuery, or monolithic codebases to modern stacks (React, Laravel 10+, Node.js) with better maintainability and modularity.",
             "icon": "bi-arrow-repeat",
-            "content": "CodeRefactoringAndLegacyMigration"
+            "content": "CodeRefactoringAndLegacyMigration",
+            "details": {
+                "introduction": "Code Refactoring & Legacy Migration services modernize outdated codebases by upgrading from legacy technologies (PHP, jQuery, monolithic systems) to modern stacks (React, Laravel 10+, Node.js) with improved maintainability and performance.",
+                "sections": [
+                    {
+                        "title": "Migration Services",
+                        "items": [
+                            {
+                                "title": "Technology Upgrade",
+                                "description": "Migrate from PHP 5.x to PHP 8+, jQuery to React/Vue, or monolithic to microservices."
+                            },
+                            {
+                                "title": "Code Modernization",
+                                "description": "Refactor legacy code to use modern patterns, best practices, and design principles."
+                            },
+                            {
+                                "title": "Database Migration",
+                                "description": "Upgrade database schemas, optimize queries, and migrate to modern database systems."
+                            },
+                            {
+                                "title": "API Modernization",
+                                "description": "Convert legacy endpoints to RESTful APIs with proper documentation."
+                            },
+                            {
+                                "title": "Security Updates",
+                                "description": "Fix security vulnerabilities and implement modern security practices."
+                            },
+                            {
+                                "title": "Performance Optimization",
+                                "description": "Improve application speed and efficiency during migration."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Common Migrations",
+                        "items": [
+                            "PHP 5.x/7.x to PHP 8+",
+                            "jQuery to React/Vue/Angular",
+                            "Laravel 5.x to Laravel 10+",
+                            "Monolithic to microservices",
+                            "MySQL to PostgreSQL",
+                            "On-premise to cloud (AWS/Azure)",
+                            "Custom CMS to headless CMS",
+                            "Legacy APIs to GraphQL"
+                        ]
+                    },
+                    {
+                        "title": "Migration Process",
+                        "items": [
+                            {
+                                "title": "Assessment",
+                                "description": "Analyze existing codebase, dependencies, and technical debt."
+                            },
+                            {
+                                "title": "Planning",
+                                "description": "Create migration roadmap with phases and milestones."
+                            },
+                            {
+                                "title": "Incremental Migration",
+                                "description": "Migrate in phases to minimize risk and downtime."
+                            },
+                            {
+                                "title": "Testing",
+                                "description": "Comprehensive testing at each phase to ensure functionality."
+                            },
+                            {
+                                "title": "Deployment",
+                                "description": "Gradual rollout with rollback capabilities."
+                            },
+                            {
+                                "title": "Documentation",
+                                "description": "Update all technical documentation and training materials."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Benefits",
+                        "items": [
+                            "Improved application performance",
+                            "Better code maintainability",
+                            "Enhanced security and compliance",
+                            "Easier to hire developers",
+                            "Reduced technical debt",
+                            "Lower maintenance costs",
+                            "Better scalability",
+                            "Modern user experience"
+                        ]
+                    },
+                    {
+                        "title": "Risk Mitigation",
+                        "items": [
+                            "Comprehensive backup strategies",
+                            "Parallel running of old and new systems",
+                            "Feature parity verification",
+                            "User acceptance testing",
+                            "Rollback plans for each phase",
+                            "Minimal business disruption"
+                        ]
+                    }
+                ]
+            }
         }
     ]
 }

@@ -7,11 +7,14 @@ import data from '../../../components/database/portfolio.json';
 import LetsConnect from '../../../components/LetsConnect';
 import { getSafeProjectImage } from '../../../utils/imageUtils';
 import BrandButton from '../../../components/common/BrandButton';
+import Lightbox from '../../../components/common/Lightbox/Lightbox';
+import ReadingProgress from '../../../components/common/ReadingProgress/ReadingProgress';
 import './ProjectDetail.css';
 
 const ProjectDetail = () => {
     const { slug } = useParams();
     const project = data.projects.projectsList.find(p => p.slug === slug);
+    const [lightboxIndex, setLightboxIndex] = React.useState(-1);
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -29,14 +32,36 @@ const ProjectDetail = () => {
     }
 
     const { title, description, technologies, period, case_study } = project;
+    const galleryImages = (case_study.images || []).map(img => getSafeProjectImage(img, project.image));
+
+    const openLightbox = (index) => setLightboxIndex(index);
+    const closeLightbox = () => setLightboxIndex(-1);
+    const prevImage = () => setLightboxIndex((prev) => (prev > 0 ? prev - 1 : galleryImages.length - 1));
+    const nextImage = () => setLightboxIndex((prev) => (prev < galleryImages.length - 1 ? prev + 1 : 0));
 
     return (
         <div className="project-detail-page">
+            <ReadingProgress />
             <SEO
                 title={`${title} | Case Study - Mradul Sharma`}
                 description={description}
+                keywords={technologies.join(", ")}
                 ogUrl={`https://mradulsharma.vercel.app/portfolio/${slug}`}
                 canonicalUrl={`https://mradulsharma.vercel.app/portfolio/${slug}`}
+                ogImage={getSafeProjectImage(project.image)}
+                schema={{
+                    "@context": "https://schema.org",
+                    "@type": "CreativeWork",
+                    "name": title,
+                    "description": description,
+                    "image": getSafeProjectImage(project.image),
+                    "author": {
+                        "@type": "Person",
+                        "name": "Mradul Sharma"
+                    },
+                    "datePublished": case_study.project_details?.year || period,
+                    "url": `https://mradulsharma.vercel.app/portfolio/${slug}`
+                }}
             />
 
             {/* Hero Section */}
@@ -75,6 +100,20 @@ const ProjectDetail = () => {
 
             <section className="case-study-content py-5">
                 <Container>
+                    {project.metrics && (
+                        <div className="metrics-container mb-5" data-aos="fade-up">
+                            <Row className="g-3">
+                                {project.metrics.map((m, idx) => (
+                                    <Col key={idx} md={4} sm={6}>
+                                        <div className="metric-card p-4 text-center rounded-4 border shadow-sm h-100 bg-white">
+                                            <h4 className="display-6 fw-bold text-primary mb-1">{m.value}</h4>
+                                            <p className="text-muted small text-uppercase mb-0 fw-medium letter-spacing-1">{m.label}</p>
+                                        </div>
+                                    </Col>
+                                ))}
+                            </Row>
+                        </div>
+                    )}
                     <Row className="gy-5">
                         <Col lg={8}>
                             {/* Overview */}
@@ -185,12 +224,16 @@ const ProjectDetail = () => {
                                         <div className="row g-4">
                                             {case_study.images.map((img, idx) => (
                                                 <div key={idx} className={`${idx === 0 ? 'col-12' : 'col-md-6 col-lg-4'}`}>
-                                                    <div className="gallery-item rounded-4 overflow-hidden shadow-sm border h-100">
+                                                    <div
+                                                        className="gallery-item rounded-4 overflow-hidden shadow-sm border h-100 cursor-pointer"
+                                                        onClick={() => openLightbox(idx)}
+                                                    >
                                                         <img
                                                             src={getSafeProjectImage(img, project.image)}
                                                             alt={`${title} - screenshot ${idx + 1}`}
-                                                            className="img-fluid w-100 h-100 object-fit-cover"
+                                                            className="img-fluid w-100 h-100 object-fit-cover transition-base"
                                                             loading="lazy"
+                                                            style={{ cursor: 'zoom-in' }}
                                                             onError={(e) => {
                                                                 const fallback = getSafeProjectImage(project.image);
                                                                 if (e.target.src !== fallback) {
@@ -271,6 +314,16 @@ const ProjectDetail = () => {
                     <LetsConnect />
                 </Container>
             </section>
+
+            {lightboxIndex !== -1 && (
+                <Lightbox
+                    images={galleryImages}
+                    currentIndex={lightboxIndex}
+                    onClose={closeLightbox}
+                    onPrev={prevImage}
+                    onNext={nextImage}
+                />
+            )}
         </div>
     );
 };

@@ -140,3 +140,79 @@
 :root {
     --accent-color: var(--primary-color);
 }
+
+/* Metric Cards */
+.metric-card {
+    background: var(--surface-color) !important;
+    border: 1px solid color-mix(in srgb, var(--primary-color), transparent 90%) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.metric-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+    border-color: color-mix(in srgb, var(--primary-color), transparent 70%) !important;
+}
+
+[data-bs-theme="dark"] .metric-card {
+    background: color-mix(in srgb, var(--surface-color), transparent 20%) !important;
+    border-color: color-mix(in srgb, var(--white), transparent 90%) !important;
+}
+
+[data-bs-theme="dark"] .metric-card .text-muted {
+    color: color-mix(in srgb, var(--white), transparent 40%) !important;
+}
+
+/* Dark Mode Overrides */
+[data-bs-theme="dark"] .project-detail-page {
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+}
+
+[data-bs-theme="dark"] .case-study-content {
+    background: var(--bs-body-bg);
+}
+
+[data-bs-theme="dark"] .text-secondary {
+    color: var(--bs-secondary-color) !important;
+}
+
+[data-bs-theme="dark"] .challenge-item,
+[data-bs-theme="dark"] .summary-item p.fw-bold,
+[data-bs-theme="dark"] .metric-card h4 {
+    color: var(--bs-heading-color);
+}
+
+[data-bs-theme="dark"] .challenge-item {
+    background: var(--bs-tertiary-bg);
+}
+
+[data-bs-theme="dark"] .gallery-item img {
+    background: var(--bs-dark-bg-subtle);
+}
+
+[data-bs-theme="dark"] .shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(255, 255, 255, 0.075) !important;
+}
+
+[data-bs-theme="dark"] .bg-white {
+    background-color: var(--bs-tertiary-bg) !important;
+}
+
+[data-bs-theme="dark"] .bg-light {
+    background-color: var(--bs-dark-bg-subtle) !important;
+}
+
+[data-bs-theme="dark"] .card {
+    background-color: var(--bs-tertiary-bg);
+    border-color: var(--bs-border-color);
+}
+
+[data-bs-theme="dark"] .project-detail-page h1,
+[data-bs-theme="dark"] .project-detail-page h2,
+[data-bs-theme="dark"] .project-detail-page h3,
+[data-bs-theme="dark"] .project-detail-page h4,
+[data-bs-theme="dark"] .project-detail-page h5,
+[data-bs-theme="dark"] .project-detail-page h6 {
+    color: var(--bs-heading-color) !important;
+}

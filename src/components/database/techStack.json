@@ -255,5 +255,16 @@
                 }
             ]
         }
+    },
+    "seo": {
+        "title": "Tech Stack – Mradul Sharma",
+        "description": "Explore the technologies and tools Mradul Sharma uses for full-stack development.",
+        "keywords": [
+            "Mradul Sharma",
+            "Tech Stack",
+            "Technologies",
+            "Skills",
+            "Development"
+        ]
     }
 }

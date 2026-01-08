@@ -178,5 +178,15 @@
             "question": "What makes your working style different?",
             "answer": "I focus on clear communication, realistic planning, and delivering reliable solutions. My goal is to make the development process stress-free for you."
         }
-    ]
+    ],
+    "seo": {
+        "title": "FAQ – Mradul Sharma",
+        "description": "Frequently Asked Questions about Mradul Sharma's services and expertise.",
+        "keywords": [
+            "Mradul Sharma",
+            "FAQ",
+            "Questions",
+            "Services"
+        ]
+    }
 }

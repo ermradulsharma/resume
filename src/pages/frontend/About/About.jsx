@@ -4,6 +4,7 @@ import SEO from "../../../components/common/SEO";
 import "../About/About.css";
 import image from "../../../assets/mradulsharma_another.webp";
 import data from "../../../components/database/about.json"
+import seoData from "../../../components/database/seo.json";
 import SocialLinks from "../../../components/frontend/SocialLinks/SocialLinks";
 import TechStack from "../../../components/frontend/TechStack/TechStack";
 import Journey from "../../../components/frontend/Journey/Journey";
@@ -25,13 +26,38 @@ const About = () => {
     };
 
     return (
-        <div className="about-page">
+        <Container fluid className="px-0 about-page" id="about" data-aos="fade-up" data-aos-delay="100">
             <SEO
-                title="About Mradul Sharma | Senior Full-Stack Developer Profile"
-                description="Learn about Mradul Sharma's journey, technical expertise, and experience in building enterprise-grade applications with Laravel, React, AWS, and modern tech."
-                keywords="Mradul Sharma Profile, Senior Full Stack Developer, Professional Experience, Technical Expertise, Laravel React Specialist, AWS Certified Developer, Enterprise Application Developer, Software Engineer India, Remote Full Stack Developer, Freelance Developer Portfolio, Developer Background, Technical Skills, Web Development Expert, Programming Experience"
-                ogUrl="https://mradulsharma.vercel.app/about"
-                canonicalUrl="https://mradulsharma.vercel.app/about"
+                title={seoData.aboutSeo.title}
+                description={seoData.aboutSeo.description}
+                keywords={seoData.aboutSeo.keywords}
+                ogUrl={seoData.aboutSeo.ogUrl}
+                canonicalUrl={seoData.aboutSeo.canonicalUrl}
+                ogImage={seoData.aboutSeo.ogImage}
+                schema={{
+                    "@context": "https://schema.org",
+                    "@type": "BlogPosting",
+                    "headline": seoData.aboutSeo.title,
+                    "image": seoData.aboutSeo.ogImage,
+                    "author": {
+                        "@type": "Person",
+                        "name": "Mradul Sharma"
+                    },
+                    "publisher": {
+                        "@type": "Organization",
+                        "name": "Mradul Sharma",
+                        "logo": {
+                            "@type": "ImageObject",
+                            "url": seoData.aboutSeo.ogImage
+                        }
+                    },
+                    "datePublished": "",
+                    "description": seoData.aboutSeo.description,
+                    "mainEntityOfPage": {
+                        "@type": "WebPage",
+                        "@id": `https://mradulsharma.vercel.app`
+                    }
+                }}
             />
             <div className="about-hero text-white d-flex align-items-center justify-content-center text-center">
                 <div className="overlay"></div>
@@ -40,45 +66,34 @@ const About = () => {
                     <p className="lead text-white">I craft secure, scalable, and high-performance web applications using Laravel, React, and cloud-native technologies. From designing robust backend systems to building interactive front-end experiences, I turn complex ideas into seamless, reliable, and user-friendly digital solutions that drive real impact.</p>
                 </div>
             </div>
-            <section className="about-section py-5">
-                <Container>
-                    <Row className="align-items-start">
-                        <Col lg={9} data-aos="fade-left" className="about-details">
-                            <p>{expandedAbout}</p>
-                            <p>{expandedAbout3}</p>
-                            <p>{expandedAbout7}</p>
-                            <SocialLinks withNames platforms={['GitHub', 'LinkedIn', 'X (Twitter)', 'Medium', 'Slack']} />
-                        </Col>
-                        <Col lg={3} data-aos="fade-right" data-aos-delay="200">
-                            <div className="profile-image-wrapper">
-                                <div className="profile-image">
-                                    <img src={image} alt="Profile" className="img-fluid" aria-label="Mradul Sharma" loading="lazy" width="300" height="400" />
-                                </div>
-                                <div className="signature-section">
-                                    <img src={signature} alt="Signature" className="signature" loading="lazy" width="300" height="80" />
-                                    <p className="quote text-secondary mb-1">Building meaningful digital experiences through thoughtful, creative code.</p>
-                                    <BrandButton
-                                        className='mt-4'
-                                        href={resume}
-                                        download
-                                        aria-label="Download Mradul Sharma Resume in PDF"
-                                        onClick={handleDownloadResume}
-                                        icon={<span>⚡</span>}
-                                    >
-                                        Resume PDF Download ⚡
-                                    </BrandButton>
-                                </div>
+            <div className="container">
+                <Row className="align-items-start">
+                    <Col lg={9} data-aos="fade-left" className="about-details">
+                        <p>{expandedAbout}</p>
+                        <p>{expandedAbout3}</p>
+                        <p>{expandedAbout7}</p>
+                        <SocialLinks withNames platforms={['GitHub', 'LinkedIn', 'X (Twitter)', 'Medium', 'Slack']} />
+                    </Col>
+                    <Col lg={3} data-aos="fade-right" data-aos-delay="200">
+                        <div className="profile-image-wrapper">
+                            <div className="profile-image">
+                                <img src={image} alt="Profile" className="img-fluid" aria-label="Mradul Sharma" loading="lazy" width="300" height="400" />
                             </div>
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
+                            <div className="signature-section">
+                                <img src={signature} alt="Signature" className="signature" loading="lazy" width="300" height="80" />
+                                <p className="quote text-secondary mb-1">Building meaningful digital experiences through thoughtful, creative code.</p>
+                                <BrandButton className='mt-4' href={resume} download aria-label="Download Mradul Sharma Resume in PDF" onClick={handleDownloadResume} icon={<span>⚡</span>}>Resume PDF Download ⚡</BrandButton>
+                            </div>
+                        </div>
+                    </Col>
+                </Row>
+            </div>
             <TechStack />
             <Journey />
             <Services />
             <Faqs />
             <LetsConnect />
-        </div>
+        </Container>
     );
 };
 

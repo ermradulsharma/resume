@@ -6,22 +6,52 @@ import HeroSection from "../../components/frontend/HeroSection/HeroSection";
 import About from "../../components/frontend/About/About";
 import Services from "../../components/frontend/Services/Services";
 import FeaturedProjects from "../../components/frontend/FeaturedProjects/FeaturedProjects";
+import Testimonials from "../../components/frontend/Testimonials/Testimonials";
 import LatestBlogs from "../../components/frontend/LatestBlogs/LatestBlogs";
+import TechStackMarquee from "../../components/frontend/TechStackMarquee/TechStackMarquee";
+import seoData from "../../components/database/seo.json";
 
 const Home = () => {
     return (
-        <Container fluid className="px-0">
+        <Container fluid className="px-0" id="home" data-aos="fade-up" data-aos-delay="100">
             <SEO
-                title="Mradul Sharma | Senior Full-Stack Developer Portfolio"
-                description="Explore Mradul Sharma's portfolio featuring enterprise-grade full-stack applications built with Laravel, React, AWS. Specialized in scalable SaaS platforms."
-                keywords="Mradul Sharma, Senior Full Stack Developer, Laravel Developer, React Developer, Node.js Developer, AWS Cloud Developer, Enterprise Application Developer, Microservices Architect, API Development Expert, SaaS Platform Developer, PostgreSQL MongoDB Expert, DevOps Engineer, Docker Kubernetes Specialist, Next.js Developer, Full Stack Developer India, Remote Developer, Freelance Developer, PHP Developer, JavaScript Developer, Backend Developer, Frontend Developer"
-                ogUrl="https://mradulsharma.vercel.app/"
-                canonicalUrl="https://mradulsharma.vercel.app/"
+                title={seoData.homeSeo.title}
+                description={seoData.homeSeo.description}
+                keywords={seoData.homeSeo.keywords}
+                ogUrl={seoData.homeSeo.ogUrl}
+                canonicalUrl={seoData.homeSeo.canonicalUrl}
+                ogImage={seoData.homeSeo.ogImage}
+                schema={{
+                    "@context": "https://schema.org",
+                    "@type": "BlogPosting",
+                    "headline": seoData.homeSeo.title,
+                    "image": seoData.homeSeo.ogImage,
+                    "author": {
+                        "@type": "Person",
+                        "name": "Mradul Sharma"
+                    },
+                    "publisher": {
+                        "@type": "Organization",
+                        "name": "Mradul Sharma",
+                        "logo": {
+                            "@type": "ImageObject",
+                            "url": seoData.homeSeo.ogImage
+                        }
+                    },
+                    "datePublished": "",
+                    "description": seoData.homeSeo.description,
+                    "mainEntityOfPage": {
+                        "@type": "WebPage",
+                        "@id": `https://mradulsharma.vercel.app`
+                    }
+                }}
             />
             <HeroSection />
+            <TechStackMarquee />
             <About />
             <Services />
             <FeaturedProjects />
+            <Testimonials />
             <LatestBlogs />
             <LetsConnect />
         </Container>

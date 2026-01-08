@@ -14,11 +14,31 @@
         "available": true,
         "link": "/ui",
         "submenu": [
-          { "text": "Without menu", "available": true, "link": "/layout/without-menu" },
-          { "text": "Without navbar", "available": true, "link": "/layout/without-navbar" },
-          { "text": "Container", "available": true, "link": "/layout/container" },
-          { "text": "Fluid", "available": true, "link": "/layout/fluid" },
-          { "text": "Blank", "available": true, "link": "/layout/blank" }
+          {
+            "text": "Without menu",
+            "available": true,
+            "link": "/layout/without-menu"
+          },
+          {
+            "text": "Without navbar",
+            "available": true,
+            "link": "/layout/without-navbar"
+          },
+          {
+            "text": "Container",
+            "available": true,
+            "link": "/layout/container"
+          },
+          {
+            "text": "Fluid",
+            "available": true,
+            "link": "/layout/fluid"
+          },
+          {
+            "text": "Blank",
+            "available": true,
+            "link": "/layout/blank"
+          }
         ]
       },
       {
@@ -27,11 +47,31 @@
         "available": false,
         "link": "",
         "submenu": [
-          { "text": "Landing", "available": true, "link": "https://.../landing-page.html" },
-          { "text": "Pricing", "available": true, "link": "https://.../pricing-page.html" },
-          { "text": "Payment", "available": true, "link": "https://.../payment-page.html" },
-          { "text": "Checkout", "available": true, "link": "https://.../checkput-page.html" },
-          { "text": "Help Center", "available": true, "link": "https://.../help-center-landing.html" }
+          {
+            "text": "Landing",
+            "available": true,
+            "link": "https://.../landing-page.html"
+          },
+          {
+            "text": "Pricing",
+            "available": true,
+            "link": "https://.../pricing-page.html"
+          },
+          {
+            "text": "Payment",
+            "available": true,
+            "link": "https://.../payment-page.html"
+          },
+          {
+            "text": "Checkout",
+            "available": true,
+            "link": "https://.../checkput-page.html"
+          },
+          {
+            "text": "Help Center",
+            "available": true,
+            "link": "https://.../help-center-landing.html"
+          }
         ]
       }
     ]
@@ -39,19 +79,51 @@
   {
     "header": "APPS & PAGES",
     "items": [
-      { "text": "Email", "icon": "bi bi-envelope", "available": false, "link": "https://.../app-email.html" },
-      { "text": "Chat", "icon": "bi bi-chat", "available": false, "link": "https://.../app-chat.html" },
-      { "text": "Calendar", "icon": "bi bi-calendar", "available": false, "link": "https://.../app-calendar.html" },
-      { "text": "Kanban", "icon": "bi bi-grid", "available": false, "link": "https://.../app-kanban.html" },
+      {
+        "text": "Email",
+        "icon": "bi bi-envelope",
+        "available": false,
+        "link": "https://.../app-email.html"
+      },
+      {
+        "text": "Chat",
+        "icon": "bi bi-chat",
+        "available": false,
+        "link": "https://.../app-chat.html"
+      },
+      {
+        "text": "Calendar",
+        "icon": "bi bi-calendar",
+        "available": false,
+        "link": "https://.../app-calendar.html"
+      },
+      {
+        "text": "Kanban",
+        "icon": "bi bi-grid",
+        "available": false,
+        "link": "https://.../app-kanban.html"
+      },
       {
         "text": "Account Setting",
         "icon": "bi bi-sliders",
         "available": true,
         "link": "",
         "submenu": [
-          { "text": "Account", "available": true, "link": "/account/settings" },
-          { "text": "Notification", "available": true, "link": "/account/notifications" },
-          { "text": "Connetctions", "available": true, "link": "/account/connections" }
+          {
+            "text": "Account",
+            "available": true,
+            "link": "/account/settings"
+          },
+          {
+            "text": "Notification",
+            "available": true,
+            "link": "/account/notifications"
+          },
+          {
+            "text": "Connetctions",
+            "available": true,
+            "link": "/account/connections"
+          }
         ]
       },
       {
@@ -60,9 +132,21 @@
         "available": true,
         "link": "",
         "submenu": [
-          { "text": "Login", "available": true, "link": "/auth/login" },
-          { "text": "Register", "available": true, "link": "/auth/register" },
-          { "text": "Forgot Password", "available": true, "link": "/auth/forgot-password" }
+          {
+            "text": "Login",
+            "available": true,
+            "link": "/auth/login"
+          },
+          {
+            "text": "Register",
+            "available": true,
+            "link": "/auth/register"
+          },
+          {
+            "text": "Forgot Password",
+            "available": true,
+            "link": "/auth/forgot-password"
+          }
         ]
       },
       {
@@ -71,8 +155,16 @@
         "available": true,
         "link": "",
         "submenu": [
-          { "text": "Error", "available": true, "link": "/misc/error" },
-          { "text": "Under Maintenance", "available": true, "link": "/misc/under-maintenance" }
+          {
+            "text": "Error",
+            "available": true,
+            "link": "/misc/error"
+          },
+          {
+            "text": "Under Maintenance",
+            "available": true,
+            "link": "/misc/under-maintenance"
+          }
         ]
       }
     ]
@@ -86,24 +178,96 @@
         "available": true,
         "link": "",
         "submenu": [
-          { "text": "Accordion", "available": true, "link": "/ui/accordion" },
-          { "text": "Alerts", "available": true, "link": "/ui/alerts" },
-          { "text": "Badges", "available": true, "link": "/ui/badges" },
-          { "text": "Buttons", "available": true, "link": "/ui/buttons" },
-          { "text": "Cards", "available": true, "link": "/ui/cards" },
-          { "text": "Carrousel", "available": true, "link": "/ui/carousel" },
-          { "text": "Collapse", "available": true, "link": "/ui/collapse" },
-          { "text": "Dropdown", "available": true, "link": "/ui/dropdown" },
-          { "text": "List Group", "available": true, "link": "/ui/list-group" },
-          { "text": "Modals", "available": true, "link": "/ui/modals" },
-          { "text": "Navbar", "available": true, "link": "/ui/navbar" },
-          { "text": "Pagination & Breadcrumbs", "available": true, "link": "/ui/pagination-breadcrumbs" },
-          { "text": "Progress", "available": true, "link": "/ui/progress" },
-          { "text": "Spinners", "available": true, "link": "/ui/spinners" },
-          { "text": "Tabs & Pills", "available": true, "link": "/ui/tabs-pills" },
-          { "text": "Toasts", "available": true, "link": "/ui/toasts" },
-          { "text": "Tooltips & popovers", "available": true, "link": "/ui/tooltips-popovers" },
-          { "text": "Typography", "available": true, "link": "/ui/typography" }
+          {
+            "text": "Accordion",
+            "available": true,
+            "link": "/ui/accordion"
+          },
+          {
+            "text": "Alerts",
+            "available": true,
+            "link": "/ui/alerts"
+          },
+          {
+            "text": "Badges",
+            "available": true,
+            "link": "/ui/badges"
+          },
+          {
+            "text": "Buttons",
+            "available": true,
+            "link": "/ui/buttons"
+          },
+          {
+            "text": "Cards",
+            "available": true,
+            "link": "/ui/cards"
+          },
+          {
+            "text": "Carrousel",
+            "available": true,
+            "link": "/ui/carousel"
+          },
+          {
+            "text": "Collapse",
+            "available": true,
+            "link": "/ui/collapse"
+          },
+          {
+            "text": "Dropdown",
+            "available": true,
+            "link": "/ui/dropdown"
+          },
+          {
+            "text": "List Group",
+            "available": true,
+            "link": "/ui/list-group"
+          },
+          {
+            "text": "Modals",
+            "available": true,
+            "link": "/ui/modals"
+          },
+          {
+            "text": "Navbar",
+            "available": true,
+            "link": "/ui/navbar"
+          },
+          {
+            "text": "Pagination & Breadcrumbs",
+            "available": true,
+            "link": "/ui/pagination-breadcrumbs"
+          },
+          {
+            "text": "Progress",
+            "available": true,
+            "link": "/ui/progress"
+          },
+          {
+            "text": "Spinners",
+            "available": true,
+            "link": "/ui/spinners"
+          },
+          {
+            "text": "Tabs & Pills",
+            "available": true,
+            "link": "/ui/tabs-pills"
+          },
+          {
+            "text": "Toasts",
+            "available": true,
+            "link": "/ui/toasts"
+          },
+          {
+            "text": "Tooltips & popovers",
+            "available": true,
+            "link": "/ui/tooltips-popovers"
+          },
+          {
+            "text": "Typography",
+            "available": true,
+            "link": "/ui/typography"
+          }
         ]
       },
       {
@@ -112,8 +276,16 @@
         "available": true,
         "link": "/extended-ui",
         "submenu": [
-          { "text": "Perfect Scrollbar", "available": true, "link": "/extended-ui/perfect-scrollbar" },
-          { "text": "Text Divider", "available": true, "link": "/extended-ui/text-divider" }
+          {
+            "text": "Perfect Scrollbar",
+            "available": true,
+            "link": "/extended-ui/perfect-scrollbar"
+          },
+          {
+            "text": "Text Divider",
+            "available": true,
+            "link": "/extended-ui/text-divider"
+          }
         ]
       },
       {
@@ -133,8 +305,16 @@
         "available": true,
         "link": "",
         "submenu": [
-          { "text": "Basic Input", "available": true, "link": "/form/basic-inputs" },
-          { "text": "Input Groups", "available": true, "link": "/form/input-groups" }
+          {
+            "text": "Basic Input",
+            "available": true,
+            "link": "/form/basic-inputs"
+          },
+          {
+            "text": "Input Groups",
+            "available": true,
+            "link": "/form/input-groups"
+          }
         ]
       },
       {
@@ -143,8 +323,16 @@
         "available": true,
         "link": "",
         "submenu": [
-          { "text": "Vertical Form", "available": true, "link": "/form-layout/vertical-form" },
-          { "text": "Horizontal Form", "available": true, "link": "/form-layout/horizontal-form" }
+          {
+            "text": "Vertical Form",
+            "available": true,
+            "link": "/form-layout/vertical-form"
+          },
+          {
+            "text": "Horizontal Form",
+            "available": true,
+            "link": "/form-layout/horizontal-form"
+          }
         ]
       },
       {
@@ -189,5 +377,17 @@
         "link": "https://.../documentation/"
       }
     ]
+  },
+  {
+    "seo": {
+      "title": "Menu – Mradul Sharma",
+      "description": "Navigation menu for Mradul Sharma's portfolio.",
+      "keywords": [
+        "Mradul Sharma",
+        "Menu",
+        "Navigation",
+        "Links"
+      ]
+    }
   }
 ]

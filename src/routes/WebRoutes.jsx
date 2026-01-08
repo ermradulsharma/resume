@@ -37,7 +37,7 @@ const WebRoutes = () => {
                     <Route path="blogs/:slug" element={<BlogDetail />} />
                     <Route path="about" element={<About />} />
                     <Route path="privacy" element={<PrivacyPolicy />} />
-                    <Route path="terms-of-service" element={<TermsOfService />} />
+                    <Route path="terms" element={<TermsOfService />} />
                     <Route path="contact" element={<ContactPage />} />
                     <Route path="*" element={<NotFound />} />
                 </Route>

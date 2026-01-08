@@ -5,13 +5,18 @@ import { BsGrid3X3Gap, BsList, BsCalendar3, BsPerson } from "react-icons/bs";
 import SEO from "../../../components/common/SEO";
 import "../Blogs/Blogs.css";
 import blogsData from "../../../components/database/blogs.json";
+import seoData from "../../../components/database/seo.json";
 import LetsConnect from "../../../components/LetsConnect";
 import SectionHeader from "../../../components/common/SectionHeader";
 import BrandButton from "../../../components/common/BrandButton";
+import Skeleton from "../../../components/common/Skeleton/Skeleton";
+import BlogSubscription from "../../../components/frontend/BlogSubscription/BlogSubscription";
+import UniversalCard from "../../../components/common/UniversalCard/UniversalCard";
 
 const Blogs = () => {
     const { title, description, posts, categories } = blogsData.blogs;
     const [searchParams, setSearchParams] = useSearchParams();
+    const [isInitialLoading, setIsInitialLoading] = useState(true);
 
     // Derive state from URL params
     const selectedCategory = searchParams.get("category") || "All";
@@ -41,6 +46,14 @@ const Blogs = () => {
     const handlePageChange = (pageNumber) => {
         updateParams({ page: pageNumber });
     };
+
+    useEffect(() => {
+        setIsInitialLoading(true);
+        const timer = setTimeout(() => {
+            setIsInitialLoading(false);
+        }, 1000);
+        return () => clearTimeout(timer);
+    }, [selectedCategory]);
 
     useEffect(() => {
         if (viewMode !== "list") return;
@@ -125,25 +138,43 @@ const Blogs = () => {
     return (
         <section className="blogs-section section">
             <SEO
-                title={`Blog ${currentPage > 1 ? `- Page ${currentPage} ` : ""}| Mradul Sharma - Web Development Tutorials & Tips`}
-                description={`Read articles on web development, Laravel, React, AWS${selectedCategory !== 'All' ? ` - Category: ${selectedCategory}` : ""}. Page ${currentPage}.`}
-                keywords={blogsData.blogs.tags ? blogsData.blogs.tags.join(", ") : "web development, programming, tutorials"}
-                canonicalUrl={getCanonicalUrl()}
-                prevUrl={getPrevUrl()}
-                nextUrl={getNextUrl()}
+                title={seoData.blogsSeo.title}
+                description={seoData.blogsSeo.description}
+                keywords={seoData.blogsSeo.keywords}
+                ogUrl={seoData.blogsSeo.ogUrl}
+                canonicalUrl={seoData.blogsSeo.canonicalUrl}
+                ogImage={seoData.blogsSeo.ogImage}
+                schema={{
+                    "@context": "https://schema.org",
+                    "@type": "BlogPosting",
+                    "headline": seoData.blogsSeo.title,
+                    "image": seoData.blogsSeo.ogImage,
+                    "author": {
+                        "@type": "Person",
+                        "name": "Mradul Sharma"
+                    },
+                    "publisher": {
+                        "@type": "Organization",
+                        "name": "Mradul Sharma",
+                        "logo": {
+                            "@type": "ImageObject",
+                            "url": seoData.blogsSeo.ogImage
+                        }
+                    },
+                    "datePublished": "",
+                    "description": seoData.blogsSeo.description,
+                    "mainEntityOfPage": {
+                        "@type": "WebPage",
+                        "@id": `https://mradulsharma.vercel.app`
+                    }
+                }}
             />
             <div className="blog-hero text-white d-flex align-items-center justify-content-center text-center">
                 <div className="overlay"></div>
             </div>
 
-            <SectionHeader
-                title={title}
-                description={description}
-                className=" pt-4 px-3"
-                level="h1"
-            />
             <div className="container">
-
+                <SectionHeader title={title} description={description} className=" pt-4 px-3" level="h1" />
                 <div className="mb-4 d-flex flex-wrap gap-2 align-items-center justify-content-between">
                     <div className="d-none d-md-flex flex-wrap gap-2 category-filter-wrapper">
                         <BrandButton variant={selectedCategory === "All" ? "brand" : "brand-outline"} size="sm" onClick={() => handleCategoryChange("All")}>All Posts</BrandButton>
@@ -167,34 +198,36 @@ const Blogs = () => {
 
                 {viewMode === "grid" && (
                     <div className="blog-grid-container">
-                        {currentPosts.map((post) => (
-                            <Card key={post.id} className="blog-card blog-card-grid shadow-sm">
-                                <Card.Img
-                                    variant="top"
-                                    src={post.image}
-                                    alt={post.title}
-                                    loading="lazy"
-                                    width="100%"
-                                    height="200"
-                                    style={{ objectFit: 'cover' }}
-                                />
-                                <Card.Body className="d-flex flex-column p-2">
-                                    {post.featured && <Badge bg="primary">Featured</Badge>}
-                                    <Card.Title className="h5" as="h2">{post.title}</Card.Title>
-                                    <Card.Text className="text-secondary small mb-2 d-flex align-items-center justify-content-between">
-                                        <span className="d-flex align-items-center gap-1"><BsCalendar3 /> {getRelativeTime(post.date)}</span>
-                                        <span className="d-flex align-items-center gap-1"><BsPerson /> {post.author}</span>
-                                    </Card.Text>
-                                    <Card.Text>{post.excerpt}</Card.Text>
-                                    <div className="mt-auto">
-                                        <div className="d-flex flex-wrap gap-1 mb-3">
-                                            {post.tags.slice(0, 3).map((tag, index) => (<Badge key={index} bg="primary-subtle" className="border border-primary-subtle" style={{ color: 'var(--primary-color)' }}> {tag} </Badge>))}
+                        {isInitialLoading ? (
+                            [...Array(postsPerPage)].map((_, index) => (
+                                <Card key={`skeleton-grid-${index}`} className="blog-card blog-card-grid shadow-sm border-0">
+                                    <Skeleton height="200px" borderRadius="0" />
+                                    <Card.Body className="p-2 d-flex flex-column">
+                                        <Skeleton width="40%" height="16px" className="mb-2" />
+                                        <Skeleton width="100%" height="24px" className="mb-3" />
+                                        <div className="d-flex justify-content-between mb-3">
+                                            <Skeleton width="30%" height="16px" />
+                                            <Skeleton width="30%" height="16px" />
                                         </div>
-                                        <BrandButton to={`/blogs/${post.slug}`} size="sm" withArrow aria-label={`Read more about ${post.title}`} style={{ float: 'right' }}>Read More</BrandButton>
-                                    </div>
-                                </Card.Body>
-                            </Card>
-                        ))}
+                                        <Skeleton width="100%" height="40px" className="mb-3" />
+                                        <div className="mt-auto">
+                                            <div className="d-flex gap-1 mb-3">
+                                                <Skeleton width="50px" height="20px" />
+                                                <Skeleton width="50px" height="20px" />
+                                            </div>
+                                            <Skeleton width="100px" height="32px" className="ms-auto" />
+                                        </div>
+                                    </Card.Body>
+                                </Card>
+                            ))
+                        ) : (
+                            currentPosts.map((post) => (
+                                <UniversalCard key={post.id} image={post.image} title={post.title} link={`/blogs/${post.slug}`} description={post.excerpt} badge={{ text: post.featured ? "Featured" : null, bg: "primary", color: "white" }} tags={post.tags.slice(0, 3)} meta={[
+                                    { icon: <BsCalendar3 />, text: getRelativeTime(post.date) },
+                                    { icon: <BsPerson />, text: post.author }
+                                ]} overlayText="Read Article" className="h-100" imageHeight="200px" />
+                            ))
+                        )}
                     </div>
                 )}
 
@@ -290,6 +323,7 @@ const Blogs = () => {
                     </div>
                 )}
             </div>
+            <BlogSubscription />
             <LetsConnect />
         </section>
     );

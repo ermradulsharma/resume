@@ -1,0 +1,194 @@
+{
+    "homeSeo": {
+        "title": "Mradul Sharma | Senior FullStack Developer & Software Architect",
+        "description": "Professional portfolio of Mradul Sharma, a Senior FullStack Developer specialized in Laravel, React, and AWS. Building scalable SaaS and enterprise solutions.",
+        "keywords": [
+            "Mradul Sharma",
+            "Senior FullStack Developer",
+            "Software Architect",
+            "Laravel Developer India",
+            "React.js Expert",
+            "AWS Solutions Architect",
+            "SaaS Developer",
+            "Technical Lead",
+            "Enterprise App Development"
+        ],
+        "ogUrl": "https://mradulsharma.vercel.app",
+        "canonicalUrl": "https://mradulsharma.vercel.app",
+        "ogImage": "https://mradulsharma.vercel.app/preview.png",
+        "ogImageAlt": "Mradul Sharma - Senior FullStack Developer",
+        "ogType": "website",
+        "ogSiteName": "Mradul Sharma | Senior FullStack Developer",
+        "ogLocale": "en_IN",
+        "ogTitle": "Mradul Sharma | Senior FullStack Developer & Software Architect",
+        "ogDescription": "Senior FullStack Developer with 6+ years of experience in building high-performance, scalable web applications using Laravel, React, and Cloud infrastructure."
+    },
+    "aboutSeo": {
+        "title": "About – Mradul Sharma | Journey & Expertise",
+        "description": "Learn about Mradul Sharma's 6+ years of journey in software engineering, technical expertise in Laravel & React, and experience building enterprise applications.",
+        "keywords": [
+            "Mradul Sharma Biography",
+            "Full Stack Developer Profile",
+            "Laravel React Specialist",
+            "Senior Software Engineer India",
+            "Technical Leadership",
+            "Mradul Sharma Experience",
+            "Software Architect Journey"
+        ],
+        "ogUrl": "https://mradulsharma.vercel.app/about",
+        "canonicalUrl": "https://mradulsharma.vercel.app/about",
+        "ogImage": "https://mradulsharma.vercel.app/preview.png",
+        "ogImageAlt": "About Mradul Sharma",
+        "ogType": "website",
+        "ogSiteName": "Mradul Sharma | Senior FullStack Developer",
+        "ogLocale": "en_IN",
+        "ogTitle": "About – Mradul Sharma | Journey & Expertise",
+        "ogDescription": "An in-depth look at Mradul Sharma's professional background, technical skills, and commitment to building robust digital solutions."
+    },
+    "blogsSeo": {
+        "title": "Latest Blogs & Tutorials – Mradul Sharma",
+        "description": "In-depth articles, tutorials, and insights on web development, Laravel, React, AWS, and modern development practices by Mradul Sharma.",
+        "keywords": [
+            "Web Development Blog",
+            "Laravel Tutorials",
+            "React Performance",
+            "Cloud Computing Insights",
+            "Mradul Sharma Blogs",
+            "Technical Writing",
+            "Software Development Guide"
+        ],
+        "ogUrl": "https://mradulsharma.vercel.app/blogs",
+        "canonicalUrl": "https://mradulsharma.vercel.app/blogs",
+        "ogImage": "https://mradulsharma.vercel.app/preview.png",
+        "ogImageAlt": "Latest Blogs & Tutorials – Mradul Sharma",
+        "ogType": "website",
+        "ogSiteName": "Mradul Sharma | Senior FullStack Developer",
+        "ogLocale": "en_IN",
+        "ogTitle": "Latest Blogs & Tutorials – Mradul Sharma",
+        "ogDescription": "Explore expert technical articles and tutorials covering the latest in web development, architecture, and cloud technologies."
+    },
+    "portfolioSeo": {
+        "title": "Projects & Portfolio – Mradul Sharma",
+        "description": "Explore Mradul Sharma's portfolio of web development projects, case studies, and enterprise-grade applications built with Laravel, React, and AWS.",
+        "keywords": [
+            "Mradul Sharma",
+            "Portfolio",
+            "Projects",
+            "Case Studies",
+            "Web Development Portfolio",
+            "Full-Stack Projects",
+            "Laravel Projects",
+            "React Case Studies"
+        ],
+        "ogUrl": "https://mradulsharma.vercel.app/portfolio",
+        "canonicalUrl": "https://mradulsharma.vercel.app/portfolio",
+        "ogImage": "https://mradulsharma.vercel.app/preview.png",
+        "ogImageAlt": "Mradul Sharma Projects & Portfolio",
+        "ogType": "website",
+        "ogSiteName": "Mradul Sharma | Senior FullStack Developer",
+        "ogLocale": "en_IN",
+        "ogTitle": "Projects & Portfolio – Mradul Sharma",
+        "ogDescription": "A curated collection of web development projects and technical case studies showcasing expertise in scalable architectures and modern tech stacks."
+    },
+    "contactSeo": {
+        "title": "Contact Me | Mradul Sharma – Let's Talk Development",
+        "description": "Get in touch for project collaborations, technical consulting, or just to say hi. I'm available for freelance work and full-stack development opportunities.",
+        "keywords": [
+            "Contact Mradul Sharma",
+            "Hire Full Stack Developer",
+            "Laravel Consultant",
+            "React Developer for Hire",
+            "Technical Collaboration",
+            "Software Development Inquiry"
+        ],
+        "ogUrl": "https://mradulsharma.vercel.app/contact",
+        "canonicalUrl": "https://mradulsharma.vercel.app/contact",
+        "ogImage": "https://mradulsharma.vercel.app/preview.png",
+        "ogImageAlt": "Contact Mradul Sharma",
+        "ogType": "website",
+        "ogSiteName": "Mradul Sharma | Senior FullStack Developer",
+        "ogLocale": "en_IN",
+        "ogTitle": "Contact Me | Mradul Sharma – Let's Talk Development",
+        "ogDescription": "Reach out for enterprise-grade web development, system architecture, or technical partnership opportunities."
+    },
+    "privacySeo": {
+        "title": "Privacy Policy | Mradul Sharma – Data Protection & Privacy",
+        "description": "Review the privacy policy describing how this website collects, uses, and protects your personal information, along with your rights regarding data privacy.",
+        "keywords": [
+            "Privacy Policy",
+            "Data Protection",
+            "GDPR Compliance",
+            "User Rights",
+            "Data Security"
+        ],
+        "ogUrl": "https://mradulsharma.vercel.app/privacy",
+        "canonicalUrl": "https://mradulsharma.vercel.app/privacy",
+        "ogImage": "https://mradulsharma.vercel.app/preview.png",
+        "ogImageAlt": "Privacy Policy - Mradul Sharma",
+        "ogType": "website",
+        "ogSiteName": "Mradul Sharma | Senior FullStack Developer",
+        "ogLocale": "en_IN",
+        "ogTitle": "Privacy Policy | Mradul Sharma – Data Protection & Privacy",
+        "ogDescription": "Transparency and data security are paramount. Learn how I handle and protect your information."
+    },
+    "termsSeo": {
+        "title": "Terms of Service | Mradul Sharma – Usage & Legal Terms",
+        "description": "Read the terms of service governing the use of Mradul Sharma's portfolio website and the terms under which services are provided.",
+        "keywords": [
+            "Terms of Service",
+            "Usage Terms",
+            "Legal Agreement",
+            "Service Conditions"
+        ],
+        "ogUrl": "https://mradulsharma.vercel.app/terms",
+        "canonicalUrl": "https://mradulsharma.vercel.app/terms",
+        "ogImage": "https://mradulsharma.vercel.app/preview.png",
+        "ogImageAlt": "Terms of Service - Mradul Sharma",
+        "ogType": "website",
+        "ogSiteName": "Mradul Sharma | Senior FullStack Developer",
+        "ogLocale": "en_IN",
+        "ogTitle": "Terms of Service | Mradul Sharma – Usage & Legal Terms",
+        "ogDescription": "Standard terms and conditions for navigating and using this technical portfolio and services."
+    },
+    "notFoundSeo": {
+        "title": "404 Error - Page Not Found | Mradul Sharma Portfolio",
+        "description": "The page you are looking for does not exist. Return to the homepage to explore my portfolio and projects.",
+        "keywords": [
+            "404",
+            "Page Not Found",
+            "Error"
+        ],
+        "ogUrl": "https://mradulsharma.vercel.app/404",
+        "canonicalUrl": "https://mradulsharma.vercel.app/404",
+        "ogImage": "https://mradulsharma.vercel.app/preview.png",
+        "ogImageAlt": "404 Error - Page Not Found",
+        "ogType": "website",
+        "ogSiteName": "Mradul Sharma | Senior FullStack Developer",
+        "ogLocale": "en_IN",
+        "ogTitle": "404 Error - Page Not Found | Mradul Sharma Portfolio",
+        "ogDescription": "Oops! The page you were looking for doesn't exist."
+    },
+    "servicesSeo": {
+        "title": "Professional Services – Mradul Sharma",
+        "description": "Specialized full-stack development, fintech solutions, API integrations, and cloud-native architecture services.",
+        "keywords": [
+            "Full-Stack Development",
+            "Fintech Solutions",
+            "API Integration",
+            "SaaS Development",
+            "Cloud & DevOps",
+            "Performance Optimization",
+            "Mradul Sharma",
+            "Software Architect"
+        ],
+        "ogUrl": "https://mradulsharma.vercel.app/services",
+        "canonicalUrl": "https://mradulsharma.vercel.app/services",
+        "ogImage": "https://mradulsharma.vercel.app/preview.png",
+        "ogImageAlt": "Professional Services – Mradul Sharma",
+        "ogType": "website",
+        "ogSiteName": "Mradul Sharma | Senior FullStack Developer",
+        "ogLocale": "en_IN",
+        "ogTitle": "Professional Services – Mradul Sharma",
+        "ogDescription": "Expert full-stack development, fintech architecture, and cloud solutions tailored for modern businesses."
+    }
+}

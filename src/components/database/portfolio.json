@@ -20,6 +20,20 @@
                 "link": "#",
                 "image": "clew.png",
                 "category": "PRODUCT MANAGEMENT & SUBSCRIPTION PLATFORM",
+                "metrics": [
+                    {
+                        "label": "Manual Overhead",
+                        "value": "-35%"
+                    },
+                    {
+                        "label": "Revenue Predictability",
+                        "value": "High"
+                    },
+                    {
+                        "label": "Deployment Time",
+                        "value": "Fast"
+                    }
+                ],
                 "period": "2025",
                 "startDate": "2025-01-05",
                 "endDate": "2025-02-28",
@@ -126,6 +140,20 @@
                 "link": "https://gokleencar.com",
                 "image": "gokleencar.png",
                 "category": "SUBSCRIPTION SERVICE PLATFORM",
+                "metrics": [
+                    {
+                        "label": "Water Saved",
+                        "value": "500k+ L"
+                    },
+                    {
+                        "label": "Renewal Rate",
+                        "value": "85%"
+                    },
+                    {
+                        "label": "Throughput",
+                        "value": "+30%"
+                    }
+                ],
                 "period": "2025",
                 "startDate": "2025-03-15",
                 "endDate": "2025-06-15",
@@ -233,6 +261,20 @@
                 "link": "#",
                 "image": "bolldpm.png",
                 "category": "PROPERTY MANAGEMENT & RENTAL PLATFORM",
+                "metrics": [
+                    {
+                        "label": "Op. Efficiency",
+                        "value": "+40%"
+                    },
+                    {
+                        "label": "Vacancy Rate",
+                        "value": "-25%"
+                    },
+                    {
+                        "label": "Process Speed",
+                        "value": "10x"
+                    }
+                ],
                 "period": "2025",
                 "startDate": "2025-07-01",
                 "endDate": "2025-10-30",

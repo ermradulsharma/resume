@@ -67,5 +67,28 @@
                 "value": "7252933077"
             }
         ]
-    }
+    },
+    "testimonials": [
+        {
+            "id": 1,
+            "name": "Arjun Mehta",
+            "position": "CTO at FinTech Solutions",
+            "comment": "Mradul's expertise in Laravel and system architecture was pivotal for our core migration. His dedication to clean code and performance is unmatched.",
+            "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=Arjun"
+        },
+        {
+            "id": 2,
+            "name": "Sarah Chen",
+            "position": "Product Manager, Global SaaS",
+            "comment": "Working with Mradul was a breeze. He translated complex requirements into a seamless React front-end that our users absolutely love. A true professional.",
+            "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah"
+        },
+        {
+            "id": 3,
+            "name": "Rajesh Kumar",
+            "position": "Engineering Lead, W3 Info Solutions",
+            "comment": "His ability to handle full-cycle development from AWS deployment to database optimization has been impressive. A versatile and reliable technical leader.",
+            "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=Rajesh"
+        }
+    ]
 }

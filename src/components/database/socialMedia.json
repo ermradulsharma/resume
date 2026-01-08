@@ -222,5 +222,15 @@
             "icon": "SiCanva",
             "status": false
         }
-    ]
+    ],
+    "seo": {
+        "title": "Social Media – Mradul Sharma",
+        "description": "Connect with Mradul Sharma on social media platforms.",
+        "keywords": [
+            "Mradul Sharma",
+            "Social Media",
+            "Connect",
+            "Links"
+        ]
+    }
 }

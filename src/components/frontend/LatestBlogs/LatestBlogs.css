@@ -4,7 +4,7 @@
 
 .latest-blogs-section .blog-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
 }
 
 .latest-blogs-section .card-img-wrapper img {
@@ -32,4 +32,28 @@
     line-clamp: 2;
     overflow: hidden;
     height: 3rem;
+}
+
+.latest-blogs-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+@media (max-width: 1200px) {
+    .latest-blogs-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 991px) {
+    .latest-blogs-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .latest-blogs-grid {
+        grid-template-columns: 1fr;
+    }
 }

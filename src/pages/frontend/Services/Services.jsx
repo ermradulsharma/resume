@@ -3,6 +3,7 @@ import SEO from "../../../components/common/SEO";
 import LetsConnect from "../../../components/LetsConnect";
 import { Col, Container, Row } from "react-bootstrap";
 import data from "../../../components/database/services.json";
+import seoData from "../../../components/database/seo.json";
 import "../Services/Services.css";
 import ServiceModal from "../../../components/modals/ServiceModal";
 
@@ -27,11 +28,36 @@ const Services = () => {
     return (
         <section id="services" className="services section">
             <SEO
-                title="Services | Full-Stack Development by Mradul Sharma"
-                description="Professional web development and cloud solutions covering Laravel, React, Node.js, API design, DevOps, and AWS infrastructure for scalable applications."
-                keywords="Full Stack Development Services, Laravel Development Services, React Development Services, AWS Cloud Consulting, Custom API Development, Database Optimization Services, DevOps Consulting, Cloud Architecture Design, Microservices Development, Enterprise SaaS Development, Payment Gateway Integration, Performance Optimization, Web Application Development, Mobile Backend Development, Technical Consulting, Code Review Services"
-                ogUrl="https://mradulsharma.vercel.app/services"
-                canonicalUrl="https://mradulsharma.vercel.app/services"
+                title={seoData.servicesSeo.title}
+                description={seoData.servicesSeo.description}
+                keywords={seoData.servicesSeo.keywords}
+                ogUrl={seoData.servicesSeo.ogUrl}
+                canonicalUrl={seoData.servicesSeo.canonicalUrl}
+                ogImage={seoData.servicesSeo.ogImage}
+                schema={{
+                    "@context": "https://schema.org",
+                    "@type": "BlogPosting",
+                    "headline": seoData.servicesSeo.title,
+                    "image": seoData.servicesSeo.ogImage,
+                    "author": {
+                        "@type": "Person",
+                        "name": "Mradul Sharma"
+                    },
+                    "publisher": {
+                        "@type": "Organization",
+                        "name": "Mradul Sharma",
+                        "logo": {
+                            "@type": "ImageObject",
+                            "url": seoData.servicesSeo.ogImage
+                        }
+                    },
+                    "datePublished": "",
+                    "description": seoData.servicesSeo.description,
+                    "mainEntityOfPage": {
+                        "@type": "WebPage",
+                        "@id": `https://mradulsharma.vercel.app`
+                    }
+                }}
             />
             {/* Hero Section */}
             <div className="services-hero text-white d-flex align-items-center justify-content-center text-center">
@@ -63,7 +89,7 @@ const Services = () => {
                 </Row>
             </Container>
             <LetsConnect />
-            <ServiceModal show={showModal} handleClose={handleClose} title={activeService?.title} icon={activeService?.icon} content={activeService?.content} />
+            <ServiceModal show={showModal} handleClose={handleClose} activeService={activeService} />
         </section>
     );
 };

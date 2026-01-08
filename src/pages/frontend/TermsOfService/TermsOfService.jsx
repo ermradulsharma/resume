@@ -1,17 +1,19 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import SEO from "../../../components/common/SEO";
-import "../PrivacyPolicy/PrivacyPolicy.css"; // Reuse styles
+import "../PrivacyPolicy/PrivacyPolicy.css";
+import seoData from "../../../components/database/seo.json";
 
 const TermsOfService = () => {
     return (
         <section className="privacy-policy-section">
             <SEO
-                title="Terms of Service | Mradul Sharma - Usage Rules & Guidelines"
-                description="Read the terms of service outlining the rules, responsibilities, and usage guidelines for accessing and using Mradul Sharma’s website and related content."
-                keywords="terms of service, terms and conditions, legal, usage policy"
-                ogUrl="https://mradulsharma.vercel.app/terms-of-service"
-                canonicalUrl="https://mradulsharma.vercel.app/terms-of-service"
+                title={seoData.termsSeo.title}
+                description={seoData.termsSeo.description}
+                keywords={seoData.termsSeo.keywords}
+                ogUrl={seoData.termsSeo.ogUrl}
+                canonicalUrl={seoData.termsSeo.canonicalUrl}
+                ogImage={seoData.termsSeo.ogImage}
             />
             {/* Hero Section */}
             <div className="legal-hero">

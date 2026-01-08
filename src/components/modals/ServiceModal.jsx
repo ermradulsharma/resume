@@ -2,14 +2,14 @@ import React from "react";
 import { Modal } from "react-bootstrap";
 import BrandButton from "../common/BrandButton";
 import Maintenance from "../Maintenance/Maintenance";
-import * as ServiceComponents from "../../components/frontend/serviceContents";
 import "../modals/ServiceModal.css"
 
 import { getServiceIcon } from "../../utils/serviceIcons";
 
-const ServiceModal = ({ show, handleClose, title, icon, content }) => {
-    const SelectedContent = ServiceComponents[content];
-    const IconComponent = getServiceIcon(icon);
+const ServiceModal = ({ show, handleClose, activeService }) => {
+    const { title, icon, details } = activeService || {};
+    const IconComponent = icon ? getServiceIcon(icon) : null;
+
     return (
         <Modal show={show} onHide={handleClose} centered size="lg" className="service-modal">
             <Modal.Header closeButton>
@@ -20,7 +20,33 @@ const ServiceModal = ({ show, handleClose, title, icon, content }) => {
             </Modal.Header>
             <Modal.Body>
                 <div className="modal-content-wrapper">
-                    {content ? (<SelectedContent />) : (<Maintenance />)}
+                    {details ? (
+                        <div className="service-details">
+                            <p dangerouslySetInnerHTML={{ __html: details.introduction.replace(/\n/g, '<br />') }}></p>
+
+                            {details.sections && details.sections.map((section, index) => (
+                                <div key={index} className="mb-4">
+                                    <h5>{section.title}</h5>
+                                    <ul>
+                                        {section.items.map((item, idx) => (
+                                            <li key={idx} className="mb-2">
+                                                {typeof item === 'string' ? (
+                                                    item
+                                                ) : (
+                                                    <>
+                                                        <strong>{item.title}:</strong>{" "}
+                                                        <span className="d-inline">{item.description}</span>
+                                                    </>
+                                                )}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            ))}
+                        </div>
+                    ) : (
+                        <Maintenance />
+                    )}
                 </div>
             </Modal.Body>
             <Modal.Footer>

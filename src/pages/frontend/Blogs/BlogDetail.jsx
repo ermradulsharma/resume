@@ -7,9 +7,10 @@ import blogsData from "../../../components/database/blogs.json";
 import "./Blogs.css";
 import "./BlogDetail.css";
 import LetsConnect from "../../../components/LetsConnect";
-import logo from "../../../assets/logo.webp"
 import RelatedPosts from "../../../components/frontend/RelatedPosts/RelatedPosts";
 import BrandButton from "../../../components/common/BrandButton";
+import ReadingProgress from "../../../components/common/ReadingProgress/ReadingProgress";
+
 
 const BlogDetail = () => {
     const { slug } = useParams();
@@ -57,11 +58,11 @@ const BlogDetail = () => {
 
     if (!post) {
         return (
-            <Container className="py-5">
+            <Container className="py-5" style={{ minHeight: '60vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <div className="text-center">
-                    <h1>Blog Post Not Found</h1>
-                    <p className="text-secondary">The blog post you're looking for doesn't exist.</p>
-                    <BrandButton to="/blogs">Back to Blogs</BrandButton>
+                    <h1 className="display-4 fw-bold">Post Not Found</h1>
+                    <p className="text-secondary mb-4">The blog post you're looking for doesn't exist or has been moved.</p>
+                    <BrandButton to="/blogs">Back to All Blogs</BrandButton>
                 </div>
             </Container>
         );
@@ -70,6 +71,7 @@ const BlogDetail = () => {
     const relatedPosts = blogsData.blogs.posts.filter(p => p.category === post.category && p.id !== post.id && p.published).slice(0, 5);
     return (
         <article className="blog-detail-page">
+            <ReadingProgress />
             <SEO
                 title={title}
                 description={post ? post.excerpt : "Read technical articles and tutorials on web development."}
@@ -91,7 +93,7 @@ const BlogDetail = () => {
                         "name": "Mradul Sharma",
                         "logo": {
                             "@type": "ImageObject",
-                            "url": `https://mradulsharma.vercel.app${logo}`
+                            "url": "https://mradulsharma.vercel.app/preview.png"
                         }
                     },
                     "datePublished": post.date,

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import Navbar from "../components/frontend/Navbar/Navbar";
 import Footer from "../components/frontend/Footer/Footer";
+import BackToTop from "../components/common/BackToTop/BackToTop";
 
 const PublicLayout = () => {
     const { pathname } = useLocation();
@@ -22,6 +23,7 @@ const PublicLayout = () => {
                 <Outlet />
             </main>
             <Footer />
+            <BackToTop />
         </>
     );
 };
