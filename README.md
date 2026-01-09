@@ -5,101 +5,125 @@
 [![Live Demo](https://img.shields.io/badge/demo-live-success)](https://mradulsharma.vercel.app/)
 [![Deploy on Vercel](https://img.shields.io/badge/Deploy-Vercel-black?logo=vercel)](https://vercel.com)
 
-A high-performance, fully responsive professional portfolio ecosystem. Built with **React 19**, **Bootstrap 5**, and modern engineering principles, featuring a headless blog system, dynamic meta management, and sub-second performance.
+A high-performance, fully responsive professional portfolio built with **React 19**, **Bootstrap 5**, and modern web technologies. This project features a robust JSON-driven CMS for easy content management, dynamic SEO, and a polished UI/UX with dark/light mode support.
 
 ---
 
-## 🚀 Key Technical Features
+## 🚀 Key Features
 
-### 🎯 Core Architecture
+### 🏗️ Modern Architecture
 
-- **React 19 Core**: Leveraging the latest concurrent features and server-side ready architecture.
-- **Client-Side Routing**: Integrated with **React Router v7** for seamless navigation and nested routes.
-- **Dynamic SEO Strategy**: Custom-built `useSEO` hook for real-time meta tag injection and Open Graph optimization.
-- **Full Response Mastery**: Mobile-first design using Bootstrap 5 and custom media queries.
+- **React 19 & React Router v7**: Built on the latest React ecosystem standards.
+- **Component-Based Design**: Modular and reusable component architecture featuring `UniversalCard`, `Lightbox`, and `Skeleton` loaders.
+- **Performance Optimized**: Implements code splitting, `ErrorBoundary`, and lazy loading for faster page loads.
+- **Custom Hooks**: Dedicated `useSEO` hook for advanced meta tag management.
 
-### 📝 Headless Blog Engine
+### 🎨 UI & User Experience
 
-- **JSON-Driven Content**: Decoupled content management via `blogs.json`.
-- **Intelligent Navigation**: Category filtering, dynamic pagination, and related post algorithms.
-- **Visual Excellence**: Automatic reading time estimation and AI-generated image integration.
+- **Responsive Design**: Mobile-first approach using **Bootstrap 5**.
+- **Dark/Light Mode**: Integrated theme toggler (`ThemeToggle`) for personalized viewing preference.
+- **Interactive Elements**: Includes dynamic charts (`Chart.js`), interactive maps (`@react-google-maps/api`), `ReadingProgress` bars, and calendars (`FullCalendar`).
 
-### 🛠️ Developer Experience
+### 📝 Headless Content Management
 
-- **Fault-Tolerant Integrations**: Contact systems powered by EmailJS (no backend required).
-- **Interactive Data**: Real-time GitHub calendars and Chart.js visualizations for developer activity.
-- **Modern Tooling**: Strict ESLint configurations and date-fns for precise temporal logic.
+- **JSON-Driven System**: Manage Blogs, Projects, Services, and FAQs directly via JSON files in `src/components/database`.
+- **Dynamic Routing**: Automated route generation for blog posts and project details based on content slugs.
+
+### 🔍 SEO & Analytics
+
+- **Dynamic Meta Tags**: Automated via `useSEO` hook and `react-helmet-async` for optimal search engine visibility.
+- **Analytics Ready**: Integrated `react-ga4` for Google Analytics tracking.
+
+### 📧 Connectivity
+
+- **Functional Contact Form**: Powered by **EmailJS** for serverless email handling.
 
 ---
 
 ## 💻 Technical Stack
 
-### 💻 Infrastructure & Ecosystem
+### Core Technologies
 
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+![SASS](https://img.shields.io/badge/SASS-hotpink?style=for-the-badge&logo=SASS&logoColor=white)
 
-### 🚀 Frontend & UI Mastery
+### Utilities & Libraries
 
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511fa.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
-
-### 🛠️ Integrations & Tools
-
-![Chart.js](https://img.shields.io/badge/chart.js-F5788D.svg?style=for-the-badge&logo=chart.js&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white) ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+- **Forms & Validation**: `ajv`
+- **Visualization**: `chart.js`, `react-chartjs-2`, `@fullcalendar/react`
+- **Icons**: `react-icons`, `bootstrap-icons`
+- **Utilities**: `date-fns`, `typewriter-effect`
+- **Maps**: `@react-google-maps/api`
 
 ---
 
-## 📂 Project Organization
+## 📂 Project Structure
 
 ```text
-portfolio/
-├── public/                 # Static assets & Blog media
+resume/
+├── public/                 # Static assets
 ├── src/
 │   ├── components/
-│   │   ├── database/       # JSON-driven CMS (blogs, projects, socials)
-│   │   └── shared/         # Reusable UI components
-│   ├── pages/              # View layer controllers
-│   ├── routes/             # v7 Navigation configuration
-│   ├── hooks/              # SEO & Logic hooks
-│   └── utils/              # Helper functions
+│   │   ├── common/         # Shared UI components (Header, Footer, etc.)
+│   │   ├── database/       # JSON Data (Blogs, Projects, etc.)
+│   │   ├── dashboard/      # Dashboard widgets
+│   │   └── frontend/       # Feature-specific components
+│   ├── pages/
+│   │   └── frontend/       # Main Page Views (Home, About, etc.)
+│   ├── routes/             # Routing configuration
+│   ├── layouts/            # Page layouts
+│   ├── context/            # Global state context
+│   └── hooks/              # Custom React hooks
 ├── package.json
 └── README.md
 ```
 
 ---
 
-## 🛠️ Development Workflow
+## 🛠️ Getting Started
 
 ### Prerequisites
 
-- **Node.js** ≥ v18.x
-- **npm** ≥ v9.x
+- **Node.js** (v18.0.0 or higher recommended)
+- **npm** (v9.0.0 or higher)
 
-### Local Setup
+### Installation
 
-1. **Clone & Enter**
+1. **Clone the repository**
+
    ```bash
    git clone https://github.com/ermradulsharma/resume.git
-   cd portfolio
+   cd resume
    ```
-2. **Install & Run**
+
+2. **Install dependencies**
+
    ```bash
    npm install
-   npm start
    ```
 
-### Available Scripts
+3. **Run the development server**
+   ```bash
+   npm start
+   ```
+   Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+### Building for Production
 
 ```bash
-npm start          # Development mode at localhost:3000
-npm run build      # Production optimized build
-npm test           # Execute test suites
+npm run build
 ```
+
+Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance.
 
 ---
 
 ## 🤝 Contributing & License
 
-This project is licensed under the **MIT License**. Contributions are welcome via Pull Requests.
+This project is open-source and available under the **MIT License**.
+Feel free to fork, improved, and submit pull requests.
 
 ---
 
@@ -117,4 +141,4 @@ _Software Architect • Full-Stack Engineer_
 <a href="mailto:mradulsharma786@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white" alt="Email" /></a>
 </p>
 
-[Portfolio Live](https://mradulsharma.vercel.app/) • [GitHub Profile](https://github.com/ermradulsharma)
+[Portfolio Live](https://mradulsharma.vercel.app/)
