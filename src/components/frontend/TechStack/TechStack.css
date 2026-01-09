@@ -120,11 +120,6 @@
     /* font-size: 24px; */
 }
 
-.skills .skills-summary p {
-    /* color: color-mix(in srgb, var(--default-color), transparent 20%);
-    margin-bottom: 30px;
-    line-height: 1.6; */
-}
 
 .skills .skills-summary .summary-stats {
     margin-bottom: 30px;
@@ -140,17 +135,6 @@
 .skills .skills-summary .summary-stats .stat-item:last-child {
     margin-bottom: 0;
 }
-
-/* .skills .skills-summary .summary-stats .stat-item .stat-circle {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--primary-color), color-mix(in srgb, var(--primary-color), var(--heading-color) 30%));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-} */
 
 .skills .skills-summary .summary-stats .stat-item .stat-circle i {
     color: var(--contrast-color);
@@ -236,4 +220,146 @@
     .skills .skills-summary .summary-stats .stat-item .stat-info .stat-number {
         font-size: 20px;
     }
+}
+
+/* Skills Visualization Section */
+.skills-visualization {
+    background: var(--surface-color);
+    padding: 50px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px color-mix(in srgb, var(--default-color), transparent 95%);
+    border: 1px solid color-mix(in srgb, var(--primary-color), transparent 92%);
+}
+
+.custom-chart-nav.nav-pills .nav-link {
+    background: color-mix(in srgb, var(--primary-color), transparent 95%);
+    color: var(--default-color);
+    border-radius: 30px;
+    padding: 10px 25px;
+    margin: 5px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.custom-chart-nav.nav-pills .nav-link.active {
+    background: var(--primary-color);
+    color: var(--contrast-color);
+    box-shadow: 0 10px 20px color-mix(in srgb, var(--primary-color), transparent 80%);
+}
+
+.custom-chart-nav.nav-pills .nav-link:hover:not(.active) {
+    background: color-mix(in srgb, var(--primary-color), transparent 85%);
+    border-color: color-mix(in srgb, var(--primary-color), transparent 70%);
+}
+
+.chart-container-wrapper {
+    transition: all 0.5s ease;
+    animation: fadeInChart 0.6s ease-out;
+}
+
+@keyframes fadeInChart {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 767px) {
+    .custom-chart-nav.nav-pills .nav-link {
+        padding: 8px 15px;
+        font-size: 13px;
+    }
+
+    .skills-visualization {
+        padding: 30px 15px;
+    }
+}
+
+/* Dynamic Chart Engine Styles */
+.dynamic-chart-container {
+    background: rgba(15, 23, 42, 0.95);
+    padding: 40px;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    text-align: center;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 10;
+}
+
+/* .chart-toolbar {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: inline-flex !important;
+    gap: 15px;
+    max-width: 100%;
+} */
+
+.custom-chart-switcher .btn {
+    border: none !important;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 18px;
+    transition: all 0.3s ease;
+    color: rgba(255, 255, 255, 0.6) !important;
+    border-radius: 30px !important;
+    margin: 0 2px;
+}
+
+.custom-chart-switcher .btn:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: #fff !important;
+}
+
+.custom-chart-switcher .btn.active {
+    background: var(--primary-color, #6366f1) !important;
+    color: #fff !important;
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.4);
+}
+
+.dynamic-chart-wrapper {
+    position: relative;
+    padding: 20px;
+    min-height: 450px;
+}
+
+.chart-title-header h4 {
+    letter-spacing: 1.5px;
+    font-size: 1.25rem;
+    color: #fff !important;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.custom-toolbar-wrapper {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+    -webkit-overflow-scrolling: touch;
+}
+
+.custom-toolbar-wrapper::-webkit-scrollbar {
+    height: 4px;
+}
+
+.custom-toolbar-wrapper::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.custom-toolbar-wrapper::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.custom-chart-switcher .btn {
+    white-space: nowrap;
+    flex-shrink: 0;
 }

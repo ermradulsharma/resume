@@ -9,29 +9,32 @@ import {
     BsGlobe, BsEye, BsFileText, BsBug, BsGit, BsTrophy, BsDiagram3, BsCircle
 } from "react-icons/bs";
 import SectionHeader from "../../common/SectionHeader";
+import DynamicTechStackChart from "./DynamicTechStackChart";
+
+const iconMap = {
+    frontend: BsCodeSlash,
+    backend: BsServer,
+    frameworks: BsBox,
+    database: BsHdd,
+    cloudsAndDevOps: BsCloud,
+    tools: BsTools,
+    paymentGateway: BsCurrencyExchange,
+    authentication: BsLock,
+    api: BsLightning,
+    security: BsShield,
+    performance: BsSpeedometer,
+    scalability: BsGlobe,
+    maintenance: BsTools,
+    deployment: BsCloud,
+    monitoring: BsEye,
+    documentation: BsFileText,
+    testing: BsBug,
+    versionControl: BsGit,
+};
 
 const TechStack = () => {
     const techData = data.techStack.technology;
-    const iconMap = {
-        frontend: BsCodeSlash,
-        backend: BsServer,
-        frameworks: BsBox,
-        database: BsHdd,
-        cloudsAndDevOps: BsCloud,
-        tools: BsTools,
-        paymentGateway: BsCurrencyExchange,
-        authentication: BsLock,
-        api: BsLightning,
-        security: BsShield,
-        performance: BsSpeedometer,
-        scalability: BsGlobe,
-        maintenance: BsTools,
-        deployment: BsCloud,
-        monitoring: BsEye,
-        documentation: BsFileText,
-        testing: BsBug,
-        versionControl: BsGit,
-    };
+
     return (
         <Container id="skills" className="skills section" data-aos="fade-up" data-aos-delay="100">
             <SectionHeader title={data.techStack.name} description={data.techStack.description} />
@@ -70,7 +73,17 @@ const TechStack = () => {
                     </div>
                 </Col>
             </Row>
+
+            <Row className="mt-5">
+                <Col lg={12}>
+                    <div className="skills-visualization" data-aos="fade-up" data-aos-delay="500">
+                        <SectionHeader title="Skills Insights" description="Comprehensive data visualization of my technical depth. Switch between different chart types to explore proficiency." />
+                        <DynamicTechStackChart data={techData} />
+                    </div>
+                </Col>
+            </Row>
         </Container>
     );
 };
+
 export default TechStack;
