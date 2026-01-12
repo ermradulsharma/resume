@@ -106,7 +106,7 @@ const ContactSection = () => {
                                 <div className="icon-box"><BsPhoneVibrateFill /></div>
                                 <div className="content">
                                     <h4>Phone</h4>
-                                    <p><a href="tel:+917252933077" className="text-white text-decoration-none">+91 72529 33077</a></p>
+                                    <p><a href="tel:+917252933077" className="text-white text-decoration-none" onClick={() => trackEvent({ action: "click_contact_link", category: "Contact", label: "Phone", value: 1 })}>+91 72529 33077</a></p>
                                 </div>
                             </div>
                             <div className="info-item" data-aos="fade-up" data-aos-delay="500">
@@ -115,14 +115,14 @@ const ContactSection = () => {
                                 </div>
                                 <div className="content">
                                     <h4>Email</h4>
-                                    <p><a href="mailto:mradulsharma786@gmail.com" className="text-white text-decoration-none">mradulsharma786@gmail.com</a></p>
+                                    <p><a href="mailto:mradulsharma786@gmail.com" className="text-white text-decoration-none" onClick={() => trackEvent({ action: "click_contact_link", category: "Contact", label: "Email", value: 1 })}>mradulsharma786@gmail.com</a></p>
                                 </div>
                             </div>
                             <div className="info-item" data-aos="fade-up" data-aos-delay="450">
                                 <div className="icon-box">< BsWhatsapp /></div>
                                 <div className="content">
                                     <h4>WhatsApp</h4>
-                                    <p><a href="https://wa.me/917252933077" target="_blank" rel="noopener noreferrer" className="text-white text-decoration-none">Chat on WhatsApp</a></p>
+                                    <p><a href="https://wa.me/917252933077" target="_blank" rel="noopener noreferrer" className="text-white text-decoration-none" onClick={() => trackEvent({ action: "click_contact_link", category: "Contact", label: "WhatsApp", value: 1 })}>Chat on WhatsApp</a></p>
                                 </div>
                             </div>
                             <div className="info-item" data-aos="fade-up" data-aos-delay="500">

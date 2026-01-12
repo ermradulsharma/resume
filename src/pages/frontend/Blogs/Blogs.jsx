@@ -12,6 +12,7 @@ import BrandButton from "../../../components/common/BrandButton";
 import Skeleton from "../../../components/common/Skeleton/Skeleton";
 import BlogSubscription from "../../../components/frontend/BlogSubscription/BlogSubscription";
 import UniversalCard from "../../../components/common/UniversalCard/UniversalCard";
+import { trackEvent } from "../../../utils/analytics/ga";
 
 const Blogs = () => {
     const { title, description, posts, categories } = blogsData.blogs;
@@ -41,6 +42,7 @@ const Blogs = () => {
 
     const handleCategoryChange = (category) => {
         updateParams({ category, page: 1 });
+        trackEvent({ action: "filter_blogs", category: "Engagement", label: category, value: 1 });
     };
 
     const handlePageChange = (pageNumber) => {
@@ -104,35 +106,6 @@ const Blogs = () => {
         }
 
         return diffInDays === 1 ? "1 day ago" : `${diffInDays} days ago`;
-    };
-
-    const getCanonicalUrl = () => {
-        const baseUrl = "https://mradulsharma.vercel.app/blogs";
-        const params = new URLSearchParams();
-        if (selectedCategory !== "All") params.set("category", selectedCategory);
-        if (currentPage > 1) params.set("page", currentPage);
-        const query = params.toString();
-        return query ? `${baseUrl}?${query}` : baseUrl;
-    };
-
-    const getPrevUrl = () => {
-        if (currentPage <= 1) return null;
-        const baseUrl = "https://mradulsharma.vercel.app/blogs";
-        const params = new URLSearchParams();
-        if (selectedCategory !== "All") params.set("category", selectedCategory);
-        if (currentPage > 2) params.set("page", currentPage - 1);
-        const query = params.toString();
-        return query ? `${baseUrl}?${query}` : baseUrl;
-    };
-
-    const getNextUrl = () => {
-        if (currentPage >= totalPages) return null;
-        const baseUrl = "https://mradulsharma.vercel.app/blogs";
-        const params = new URLSearchParams();
-        if (selectedCategory !== "All") params.set("category", selectedCategory);
-        params.set("page", currentPage + 1);
-        const query = params.toString();
-        return `${baseUrl}?${query}`;
     };
 
     return (
@@ -225,7 +198,7 @@ const Blogs = () => {
                                 <UniversalCard key={post.id} image={post.image} title={post.title} link={`/blogs/${post.slug}`} description={post.excerpt} badge={{ text: post.featured ? "Featured" : null, bg: "primary", color: "white" }} tags={post.tags.slice(0, 3)} meta={[
                                     { icon: <BsCalendar3 />, text: getRelativeTime(post.date) },
                                     { icon: <BsPerson />, text: post.author }
-                                ]} overlayText="Read Article" className="h-100" imageHeight="200px" />
+                                ]} overlayText="Read Article" className="h-100" imageHeight="200px" onClick={() => trackEvent({ action: "view_blog", category: "Blogs", label: post.title, value: 1 })} />
                             ))
                         )}
                     </div>
@@ -267,7 +240,7 @@ const Blogs = () => {
                                                         <Badge key={index} bg="primary-subtle" className="border border-primary-subtle" style={{ color: 'var(--primary-color)' }}> {tag} </Badge>
                                                     ))}
                                                 </div>
-                                                <BrandButton to={`/blogs/${post.slug}`} size="sm" withArrow>Read Full Article</BrandButton>
+                                                <BrandButton to={`/blogs/${post.slug}`} size="sm" withArrow onClick={() => trackEvent({ action: "view_blog", category: "Blogs", label: post.title, value: 1 })}>Read Full Article</BrandButton>
                                             </div>
                                         </Card.Body>
                                     </Col>

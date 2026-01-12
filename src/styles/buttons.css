@@ -15,6 +15,20 @@
     padding: var(--btn-padding-y) var(--btn-padding-x);
     font-weight: var(--btn-font-weight);
     transition: var(--btn-transition);
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Pagination Links - Ensure accessible size */
+.page-link {
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
 }
 
 /* Brand Primary Button (The "Resume" Style) */

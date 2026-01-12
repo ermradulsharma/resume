@@ -25,7 +25,7 @@ const Testimonials = () => {
                                             <img src={t.image} alt={t.name} className="rounded-circle border border-2 border-primary" width="60" height="60" />
                                         </div>
                                         <div className="author-info text-start">
-                                            <h5 className="fw-bold mb-0 text-dark">{t.name}</h5>
+                                            <h3 className="h5 fw-bold mb-0 text-dark">{t.name}</h3>
                                             <small className="text-primary fw-medium">{t.position}</small>
                                         </div>
                                     </div>

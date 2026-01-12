@@ -139,7 +139,7 @@ const PublicCalendar = () => {
                         <Card.Body className="p-0 overflow-auto" style={{ maxHeight: 600 }}>
                             {filteredProjects.length ? filteredProjects.map((project, idx) => (
                                 <div key={idx} className="p-2 border-bottom cursor-pointer project-sidebar-item" style={{ borderColor: 'var(--border-color)' }} onClick={() => handleJumpToProject(project)}>
-                                    <h6 className="fw-bold m-0 small" style={{ color: 'var(--text-primary)' }}>{project.title}</h6>
+                                    <div className="fw-bold m-0 small" style={{ color: 'var(--text-primary)' }}>{project.title}</div>
                                 </div>)) : (<div className="p-4 text-center small" style={{ color: 'var(--text-muted)' }}>No projects found for "{searchTerm}"</div>)}
                         </Card.Body>
                     </Card>

@@ -9,6 +9,7 @@ import ServiceModal from "../../../components/modals/ServiceModal";
 
 import { getServiceIcon } from "../../../utils/serviceIcons";
 import BrandButton from "../../../components/common/BrandButton";
+import { trackEvent } from "../../../utils/analytics/ga";
 
 const Services = () => {
     const services = data.services.filter(service => service.title);
@@ -19,6 +20,7 @@ const Services = () => {
         console.log("Service passed to modal:", service);
         setActiveService(service);
         setShowModal(true);
+        trackEvent({ action: "view_service_detail", category: "Services", label: service.title, value: 1 });
     };
 
     const handleClose = () => {
@@ -26,7 +28,7 @@ const Services = () => {
         setActiveService(null);
     };
     return (
-        <section id="services" className="services section">
+        <Container fluid className="px-0 services" id="services" data-aos="fade-up" data-aos-delay="100">
             <SEO
                 title={seoData.servicesSeo.title}
                 description={seoData.servicesSeo.description}
@@ -67,11 +69,9 @@ const Services = () => {
                     <p className="lead text-white">I specialize in developing robust, scalable, and secure digital solutions that power modern businesses.</p>
                 </div>
             </div>
-            <Container className="section-title py-4 px-3">
+            <Container className="section-title py-4 px-3" id="services" data-aos="fade-up" data-aos-delay="100">
                 <h2>Services</h2>
                 <p>I offer end-to-end development solutions that are scalable, secure, and tailored to meet the evolving needs of modern digital businesses. With expertise spanning full-stack development, cloud-native architectures, and database optimization, I design and implement systems capable of handling growth without compromising performance or security. My approach combines technical precision with strategic planning, ensuring each solution is optimized for speed, stability, and long-term maintainability. Whether building custom applications, architecting APIs, or deploying cloud infrastructure, I prioritize user experience, operational efficiency, and data protection. Every project is crafted to align with business goals, adapt to future demands, and deliver measurable value in an increasingly competitive digital landscape.</p>
-            </Container>
-            <Container data-aos="fade-up" data-aos-delay="100" className="mb-3">
                 <Row className="g-4">
                     {services.filter(service => service.title && service.description).map((service, index) => {
                         const IconComponent = getServiceIcon(service.icon);
@@ -90,7 +90,7 @@ const Services = () => {
             </Container>
             <LetsConnect />
             <ServiceModal show={showModal} handleClose={handleClose} activeService={activeService} />
-        </section>
+        </Container>
     );
 };
 export default Services;

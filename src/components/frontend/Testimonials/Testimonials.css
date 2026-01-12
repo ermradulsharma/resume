@@ -16,6 +16,10 @@
     margin: 0 6px;
     opacity: 0.3;
     transition: opacity 0.3s ease, transform 0.3s ease;
+    /* Increase touch target to >44px */
+    border: 18px solid transparent;
+    background-clip: padding-box;
+    box-sizing: content-box;
 }
 
 .testimonial-carousel .carousel-indicators .active {

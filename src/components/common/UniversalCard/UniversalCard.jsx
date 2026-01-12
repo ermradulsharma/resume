@@ -41,7 +41,7 @@ const UniversalCard = ({
             <Card.Body className="p-4 d-flex flex-column">
                 <div className="d-flex justify-content-between align-items-start mb-2">
                     <Link to={link} className="text-decoration-none text-dark flex-grow-1" onClick={onClick}>
-                        <Card.Title className="h6 fw-bold mb-0 card-title-text" style={{ minHeight: "40px" }}>{title}</Card.Title>
+                        <Card.Title as="h3" className="h6 fw-bold mb-0 card-title-text" style={{ minHeight: "40px" }}>{title}</Card.Title>
                     </Link>
                     {badge && (typeof badge === 'string' || badge.text) && (
                         <Badge bg={badge.bg || "primary-subtle"} className={`border border-${badge.bg || "primary-subtle"}`} style={{ color: badge.color || 'var(--primary-color)' }}>{typeof badge === 'string' ? badge : badge.text}</Badge>

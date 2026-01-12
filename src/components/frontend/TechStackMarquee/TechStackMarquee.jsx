@@ -87,11 +87,11 @@ const TechStackMarquee = () => {
                 const IconComponent = iconMap[item.name] || DefaultIcon;
                 const link = linkMap[item.name] || "#";
                 return (
-                    <div key={`${item.name}-${index}`} className="marquee-tech-card">
-                        <a href={link} target="_blank" rel="noopener noreferrer" className="marquee-tech-link">
+                    <div key={`${item.name}-${index}`} className="marquee-tech-card-wrapper">
+                        <a href={link} target="_blank" rel="noopener noreferrer" className="marquee-tech-card marquee-tech-link" aria-label={`Visit ${item.name} documentation`}>
                             <IconComponent className="marquee-tech-icon" />
+                            <span className="marquee-tech-name">{item.name}</span>
                         </a>
-                        <span className="marquee-tech-name">{item.name}</span>
                     </div>
                 );
             })}

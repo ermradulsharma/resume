@@ -1,21 +1,21 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import SEO from "../../../components/common/SEO";
-import "../About/About.css";
 import image from "../../../assets/mradulsharma_another.webp";
 import data from "../../../components/database/about.json"
 import seoData from "../../../components/database/seo.json";
 import SocialLinks from "../../../components/frontend/SocialLinks/SocialLinks";
 import TechStack from "../../../components/frontend/TechStack/TechStack";
 import Journey from "../../../components/frontend/Journey/Journey";
-import "../../../components/frontend/Journey/Journey.css";
 import Faqs from "../../../components/frontend/Faqs/Faqs";
 import LetsConnect from "../../../components/LetsConnect";
 import Services from "../../../components/frontend/Services/Services";
 import signature from '../../../assets/signature.webp'
 import resume from '../../../assets/resume/mradulsharma.pdf';
-import { trackEvent } from "../../../utils/analytics/ga";
 import BrandButton from "../../../components/common/BrandButton";
+import { trackEvent } from "../../../utils/analytics/ga";
+import "../About/About.css";
+import "../../../components/frontend/Journey/Journey.css";
 
 
 
@@ -66,7 +66,7 @@ const About = () => {
                     <p className="lead text-white">I craft secure, scalable, and high-performance web applications using Laravel, React, and cloud-native technologies. From designing robust backend systems to building interactive front-end experiences, I turn complex ideas into seamless, reliable, and user-friendly digital solutions that drive real impact.</p>
                 </div>
             </div>
-            <div className="container">
+            <Container className="about-content" id="about" data-aos="fade-up" data-aos-delay="100">
                 <Row className="align-items-start">
                     <Col lg={9} data-aos="fade-left" className="about-details">
                         <p>{expandedAbout}</p>
@@ -87,7 +87,7 @@ const About = () => {
                         </div>
                     </Col>
                 </Row>
-            </div>
+            </Container>
             <TechStack />
             <Journey />
             <Services />

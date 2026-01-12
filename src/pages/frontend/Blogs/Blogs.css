@@ -322,7 +322,10 @@
     }
 
     .category-filter-wrapper .btn {
-        min-height: 29px;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .blog-list-image-wrapper {

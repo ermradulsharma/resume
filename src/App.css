@@ -191,6 +191,24 @@ p {
 
 /* Button overrides are now handled in src/styles/buttons.css */
 
+/* Global Text Utility Overrides for Accessibility */
+.text-secondary {
+    color: var(--text-secondary) !important;
+}
+
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+/* Badge Contrast Fixes */
+.bg-info-subtle {
+    color: var(--text-dark) !important;
+}
+
+.badge.bg-info-subtle {
+    color: var(--text-dark) !important;
+}
+
 h1,
 h2,
 h3,
