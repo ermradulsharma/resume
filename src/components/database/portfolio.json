@@ -17,7 +17,7 @@
                     "Tailwind CSS"
                 ],
                 "link": "https://github.com/ermradulsharma/matrix-store",
-                "image": "paystubx.png",
+                "image": "matrix_main.png",
                 "category": "E-COMMERCE SOLUTION",
                 "metrics": [
                     {
@@ -52,10 +52,10 @@
                         "Ensure secure data synchronization through a robust RESTful API layer."
                     ],
                     "images": [
-                        "paystubx.png",
-                        "admin-dashboard.png",
-                        "provider-portal.png",
-                        "shopping-experience.png"
+                        "matrix_main.png",
+                        "matrix_slider_2.png",
+                        "matrix_slider_3.png",
+                        "matrix_slider_11.jpg"
                     ],
                     "implemented": {
                         "title": "Tech Stack & Architecture",
