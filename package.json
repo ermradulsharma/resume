@@ -31,7 +31,7 @@
         "react-github-calendar": "^5.0.4",
         "react-helmet-async": "^2.0.5",
         "react-icons": "^5.5.0",
-        "react-router-dom": "^7.11.0",
+        "react-router-dom": "^7.12.0",
         "react-scripts": "^5.0.1",
         "react-select": "^5.10.2",
         "typewriter-effect": "^2.22.0"
