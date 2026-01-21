@@ -2198,6 +2198,346 @@
                         "live_link": "https://zaibainfotech.com"
                     }
                 }
+            },
+            {
+                "title": "NexTask (Advanced Project Management System)",
+                "slug": "nextask-project-management",
+                "description": "NexTask is a high-performance project management tool designed for agile teams. It features real-time collaboration using WebSockets, interactive Gantt charts, and a robust role-based access control system. The platform streamlines task allocation, milestone tracking, and team communication in a unified, responsive interface.",
+                "technologies": [
+                    "Laravel",
+                    "React",
+                    "Inertia.js",
+                    "WebSockets",
+                    "MySQL",
+                    "Tailwind CSS",
+                    "Chart.js"
+                ],
+                "link": "#",
+                "image": "nextask.png",
+                "category": "SAAS PLATFORM",
+                "metrics": [
+                    {
+                        "label": "Productivity",
+                        "value": "+50%"
+                    },
+                    {
+                        "label": "Project Delay",
+                        "value": "-30%"
+                    },
+                    {
+                        "label": "Sync Accuracy",
+                        "value": "99.9%"
+                    }
+                ],
+                "period": "2025",
+                "startDate": "2025-01-15",
+                "endDate": "2025-05-20",
+                "case_study": {
+                    "overview": "NexTask is a state-of-the-art project management ecosystem engineered to modernize team collaboration and resource orchestration. Built on a powerful Laravel and React (Inertia.js) stack, the platform delivers a seamless, single-page application experience with real-time data synchronization via WebSockets. Key technical features include a dynamic Gantt chart engine for milestone visualization and a granular RBAC (Role-Based Access Control) system that ensures secure data partitioning across enterprise departments. By implementing advanced state management and optimized database queries, NexTask handles high-concurrency environments with sub-second responsiveness. Strategically, the platform has empowered organizations to reduce project turnaround times by 30% and increase overall team productivity by 50%. This project highlights the synergy between modern backend robustness and frontend agility, creating a scalable SaaS solution for the future of work.",
+                    "problem_statement": [
+                        "Teams struggled with fragmented communication and siloed task management tools.",
+                        "Lack of real-time visibility into project milestones led to frequent delays.",
+                        "Existing project management solutions were either too complex or lacked essential collaborative features.",
+                        "Managing permissions across diverse teams was prone to security risks and inefficiencies."
+                    ],
+                    "objectives": [
+                        "Create a unified platform for task management, milestone tracking, and team collaboration.",
+                        "Implement real-time updates to ensure all team members are always in sync.",
+                        "Provide intuitive data visualizations like Gantt charts and performance dashboards.",
+                        "Ensure a secure, scalable architecture capable of supporting large enterprise teams.",
+                        "Simplify the user experience with a modern, responsive interface."
+                    ],
+                    "images": [
+                        "nextask.png",
+                        "gantt-chart.png",
+                        "team-dashboard.png",
+                        "task-collaboration.png"
+                    ],
+                    "implemented": {
+                        "title": "Tech Stack & Architecture",
+                        "architecture": {
+                            "backend": "Laravel with Inertia.js for a seamless bridge between PHP logic and React components.",
+                            "frontend": "React with Tailwind CSS for a highly responsive and modern UI.",
+                            "realtime": "WebSockets for instant task updates and team notifications.",
+                            "database": "MySQL for transactional data and complex reporting queries.",
+                            "infrastructure": "Dockerized environment for consistent deployment across cloud providers."
+                        },
+                        "key_features": [
+                            "Real-time task and milestone synchronization.",
+                            "Interactive Gantt charts for project timeline management.",
+                            "Granular Role-Based Access Control (RBAC).",
+                            "Team communication hub with threaded comments.",
+                            "Advanced reporting and productivity analytics dashboards.",
+                            "Automated email and in-app notifications.",
+                            "Mobile-responsive design for on-the-go management."
+                        ]
+                    },
+                    "challenges_and_solutions": [
+                        {
+                            "challenge": "Maintaining data consistency across multiple concurrent users in real-time.",
+                            "solution": "Leveraged WebSockets and optimistic UI updates in React to ensure a lag-free, consistent experience."
+                        },
+                        {
+                            "challenge": "Visualizing complex project timelines effectively.",
+                            "solution": "Developed a custom Gantt chart component using SVG and interactive drag-and-drop logic."
+                        },
+                        {
+                            "challenge": "Balancing complex feature sets with a simple, intuitive user interface.",
+                            "solution": "Adopted a modular UI design with collapsible sidebars and context-sensitive action menus."
+                        }
+                    ],
+                    "outcomes": [
+                        "Dramatically improved team alignment and communication clarity.",
+                        "Reduced manual project tracking overhead through automated dashboards.",
+                        "Achieved high user adoption rates due to the intuitive interface.",
+                        "Successfully scaled to support multi-departmental enterprise workflows.",
+                        "Established a reliable, real-time platform for critical project delivery."
+                    ],
+                    "project_details": {
+                        "category": "SaaS Project Management Platform",
+                        "role": "Lead Full-Stack Architect",
+                        "client": "Confidential (Enterprise Tech Group)",
+                        "project_type": "Product Infrastructure",
+                        "team_size": "Team of 6",
+                        "year": "2025",
+                        "technologies": [
+                            "Laravel",
+                            "React",
+                            "Inertia.js",
+                            "WebSockets",
+                            "MySQL",
+                            "Tailwind CSS"
+                        ],
+                        "live_link": "#"
+                    }
+                }
+            },
+            {
+                "title": "SwiftCommerce (Enterprise E-commerce Platform)",
+                "slug": "swiftcommerce-ecommerce",
+                "description": "SwiftCommerce is a scalable multi-vendor e-commerce solution built with a modern MERN stack. It features a secure Stripe payment integration, advanced inventory management, and a high-performance product discovery engine. Designed to handle high traffic, it provides a seamless shopping experience across all devices.",
+                "technologies": [
+                    "React",
+                    "Node.js",
+                    "Express",
+                    "MongoDB",
+                    "Stripe API",
+                    "Redux Toolkit",
+                    "AWS S3",
+                    "Docker"
+                ],
+                "link": "#",
+                "image": "swiftcommerce.png",
+                "category": "E-COMMERCE SOLUTION",
+                "metrics": [
+                    {
+                        "label": "Active Users",
+                        "value": "200k+"
+                    },
+                    {
+                        "label": "Conversion Rate",
+                        "value": "+15%"
+                    },
+                    {
+                        "label": "Page Load",
+                        "value": "<2s"
+                    }
+                ],
+                "period": "2024",
+                "startDate": "2024-06-01",
+                "endDate": "2024-12-15",
+                "case_study": {
+                    "overview": "SwiftCommerce is a high-performance e-commerce engine designed to meet the demands of modern digital retail. Architected as a headless commerce solution using React for the frontend and a Node.js microservices-based backend, the platform offers unparalleled scalability and speed. Key innovations include an AI-powered product recommendation engine and a highly optimized checkout flow with integrated Stripe 3D Secure payments. For operational efficiency, the system features a comprehensive multi-vendor dashboard with real-time inventory tracking and automated order fulfillment workflows. Deployment is handled via a CI/CD pipeline onto an AWS-hardened infrastructure, utilizing Redis for caching and S3 for global asset delivery. SwiftCommerce has redefined retail excellence for its clients, achieving a 15% boost in conversion rates and sustaining smooth operations during peak holiday traffic spikes. This project demonstrates the ability to engineer complex, secure, and user-centric commerce systems that drive measurable business growth.",
+                    "problem_statement": [
+                        "Traditional e-commerce platforms struggled with slow load times and poor mobile responsiveness.",
+                        "Managing multi-vendor inventory and payouts was a complex, manual process.",
+                        "Legacy systems lacked the security and flexibility needed for global payment integrations.",
+                        "Difficulty in scaling the infrastructure to handle high-traffic promotional events."
+                    ],
+                    "objectives": [
+                        "Develop a lightning-fast, mobile-first e-commerce interface using React.",
+                        "Architect a scalable backend capable of handling millions of SKUs and transactions.",
+                        "Integrate secure, PCI-compliant payment gateways for international commerce.",
+                        "Automate inventory management and vendor payouts to reduce operational friction.",
+                        "Implement advanced search and filtering for enhanced product discovery."
+                    ],
+                    "images": [
+                        "swiftcommerce.png",
+                        "product-listing.png",
+                        "vendor-dashboard.png",
+                        "checkout-experience.png"
+                    ],
+                    "implemented": {
+                        "title": "Tech Stack & Architecture",
+                        "architecture": {
+                            "frontend": "React with Redux Toolkit for sophisticated state management and performance.",
+                            "backend": "Node.js (Express) microservices for decoupled, scalable business logic.",
+                            "database": "MongoDB for flexible, high-speed product and user data storage.",
+                            "cdn": "AWS S3 and CloudFront for lightning-fast global asset delivery.",
+                            "payment": "Stripe API for secure, multi-currency transaction handling."
+                        },
+                        "key_features": [
+                            "Microservices-based scalable architecture.",
+                            "Multi-vendor support with independent dashboards.",
+                            "High-performance product search with elastic indexing.",
+                            "Secure checkout with Stripe and fraud detection.",
+                            "Real-time inventory and order status notifications.",
+                            "Advanced discount and promotional engine.",
+                            "Responsive design optimized for fast mobile conversions."
+                        ]
+                    },
+                    "challenges_and_solutions": [
+                        {
+                            "challenge": "Ensuring high availability and performance during traffic surges.",
+                            "solution": "Implemented auto-scaling on AWS and utilized Redis for distributed caching."
+                        },
+                        {
+                            "challenge": "Managing complex state across a large-scale e-commerce application.",
+                            "solution": "Utilized Redux Toolkit to maintain a predictable state and optimize component re-rendering."
+                        },
+                        {
+                            "challenge": "Providing a secure and smooth international payment experience.",
+                            "solution": "Integrated Stripe's advanced API features including 3D Secure and multi-currency support."
+                        }
+                    ],
+                    "outcomes": [
+                        "Delivered a premium shopping experience with sub-2s page load times.",
+                        "Significantly increased sales through improved product discovery and checkout flows.",
+                        "Streamlined multi-vendor operations with automated management tools.",
+                        "Established a rock-solid, secure foundation for global retail expansion.",
+                        "Reduced infrastructure costs through optimized cloud resource utilization."
+                    ],
+                    "project_details": {
+                        "category": "Enterprise E-commerce Platform",
+                        "role": "Senior Full-Stack Developer",
+                        "client": "Global Retail Solutions",
+                        "project_type": "Full-Scale Launch",
+                        "team_size": "Team of 8",
+                        "year": "2024",
+                        "technologies": [
+                            "React",
+                            "Node.js",
+                            "MongoDB",
+                            "Stripe",
+                            "Redux",
+                            "AWS"
+                        ],
+                        "live_link": "#"
+                    }
+                }
+            },
+            {
+                "title": "SurveyPulse (Data Analytics & Survey Platform)",
+                "slug": "surveypulse-analytics",
+                "description": "SurveyPulse is a data-driven platform for creating complex surveys and generating actionable insights. Built with Laravel and React, it features a dynamic drag-and-drop form builder, real-time analytics dashboards with Chart.js, and automated report generation for large-scale data sets.",
+                "technologies": [
+                    "Laravel",
+                    "React",
+                    "Chart.js",
+                    "PostgreSQL",
+                    "BigQuery",
+                    "Redis",
+                    "Docker"
+                ],
+                "link": "#",
+                "image": "surveypulse.png",
+                "category": "DATA & ANALYTICS PLATFORM",
+                "metrics": [
+                    {
+                        "label": "Data Processed",
+                        "value": "1M+ Res"
+                    },
+                    {
+                        "label": "Visualization",
+                        "value": "40+ Cts"
+                    },
+                    {
+                        "label": "Insight Speed",
+                        "value": "10x"
+                    }
+                ],
+                "period": "2024",
+                "startDate": "2024-02-10",
+                "endDate": "2024-05-30",
+                "case_study": {
+                    "overview": "SurveyPulse is an enterprise-grade survey and data intelligence platform designed to transform raw feedback into strategic insights. Developed with a robust Laravel backend and a dynamic React frontend, the system handles the entire data lifecycle from complex form construction to deep-dive analytics. A key technical highlight is the custom drag-and-drop survey builder and the integration with Google BigQuery for processing datasets exceeding one million records in real-time. By utilizing PostgreSQL for transactional data and Redis for high-speed computation, SurveyPulse delivers interactive dashboards with over 40 distinct chart types using Chart.js. The platform also features automated PDF/Excel report generation, enabling stakeholders to share insights instantly. SurveyPulse has become a critical tool for data-driven organizations, providing insights 10 times faster than traditional methods. This project showcases proficiency in data engineering, real-time visualization, and the development of mission-critical analytics infrastructure.",
+                    "problem_statement": [
+                        "Organizations struggled to collect and analyze large volumes of complex survey data efficiently.",
+                        "Existing survey tools offered limited customization and poor data visualization capabilities.",
+                        "Manual report generation was time-consuming and prone to human error.",
+                        "Processing large-scale datasets often led to performance bottlenecks and system instability."
+                    ],
+                    "objectives": [
+                        "Build a highly flexible, drag-and-drop survey builder with multi-tier logic support.",
+                        "Implement real-time analytics dashboards for instant feedback visualization.",
+                        "Architect a data pipeline capable of handling millions of responses with sub-second querying.",
+                        "Automate the generation of comprehensive demographic and performance reports.",
+                        "Provide a secure, multi-tenant platform with granular user access controls."
+                    ],
+                    "images": [
+                        "surveypulse.png",
+                        "survey-builder.png",
+                        "analytics-dashboard.png",
+                        "data-visualization.png"
+                    ],
+                    "implemented": {
+                        "title": "Tech Stack & Architecture",
+                        "architecture": {
+                            "backend": "Laravel serving as a secure API and data orchestration layer.",
+                            "frontend": "React for an interactive builder and real-time analytics interface.",
+                            "analytics": "BigQuery for massive data aggregation and Chart.js for visualization.",
+                            "storage": "PostgreSQL for ACID-compliant transactions and response storage.",
+                            "performance": "Redis for session management and result caching."
+                        },
+                        "key_features": [
+                            "Intuitive drag-and-drop survey builder with conditional logic.",
+                            "Real-time data visualization with 40+ interactive chart types.",
+                            "Large-scale data processing integrated with Google BigQuery.",
+                            "Automated report generation in PDF, CSV, and Excel formats.",
+                            "Multi-tenant architecture with organizational hierarchy support.",
+                            "Embeddable survey widgets and shareable public links.",
+                            "Advanced data export and API integration for third-party tools."
+                        ]
+                    },
+                    "challenges_and_solutions": [
+                        {
+                            "challenge": "Designing a flexible survey builder that supports complex conditional branching.",
+                            "solution": "Developed a recursive logic engine in the backend and a visual flow editor in the frontend."
+                        },
+                        {
+                            "challenge": "Rendering complex charts with large datasets without freezing the UI.",
+                            "solution": "Implemented data pagination and server-side aggregation for high-volume analytics."
+                        },
+                        {
+                            "challenge": "Ensuring data privacy and compliance across multiple clients.",
+                            "solution": "Adopted a secure multi-tenant database schema with data encryption at rest."
+                        }
+                    ],
+                    "outcomes": [
+                        "Empowered organizations to make faster, data-driven decisions.",
+                        "Handled over 1 million survey responses with zero downtime.",
+                        "Reduced report generation time from hours to seconds.",
+                        "Improved user engagement through interactive and visually appealing surveys.",
+                        "Successfully transitioned from a prototype to a mission-critical enterprise tool."
+                    ],
+                    "project_details": {
+                        "category": "Data Analytics & Survey Platform",
+                        "role": "Lead Developer & Data Architect",
+                        "client": "Market Research Intelligence",
+                        "project_type": "Enterprise SaaS",
+                        "team_size": "Team of 4",
+                        "year": "2024",
+                        "technologies": [
+                            "Laravel",
+                            "React",
+                            "PostgreSQL",
+                            "BigQuery",
+                            "Chart.js",
+                            "Docker"
+                        ],
+                        "live_link": "#"
+                    }
+                }
             }
         ]
     }

@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="public/assets/images/logo.png" alt="Mradul Sharma Logo" width="200" />
+</p>
+
 # Mradul Sharma - Modern Portfolio Project
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
@@ -131,7 +135,7 @@ Feel free to fork, improved, and submit pull requests.
 
 ### Mradul Sharma
 
-_Software Architect • Full-Stack Engineer_
+<img src="public/assets/images/logo.png" alt="Mradul Sharma Logo" width="50" style="vertical-align: middle; margin-right: 10px;" /> _Software Architect • Full-Stack Engineer_
 
 <p align="left">
 <a href="https://linkedin.com/in/mradulsharma"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
