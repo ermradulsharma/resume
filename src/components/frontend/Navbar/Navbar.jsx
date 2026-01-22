@@ -3,7 +3,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import BrandButton from '../../common/BrandButton';
-import logo from '../../../assets/logo.webp';
+import logo from '../../../assets/logo.gif';
 import resume from '../../../assets/resume/mradulsharma.pdf';
 import { useLocation, Link } from 'react-router-dom';
 import { trackEvent } from '../../../utils/analytics/ga';
@@ -29,9 +29,9 @@ function NavBar() {
             sticky="top"
             expand="lg"
             collapseOnSelect
-            className='p-3 transition-all'
+            className='px-3 py-0 transition-all'
             style={{
-                backgroundColor: 'var(--surface-color)',
+                backgroundColor: '#c3c6ce',
                 transition: 'background-color 0.3s ease'
             }}
             data-bs-theme={theme}
@@ -41,8 +41,8 @@ function NavBar() {
                     <img
                         alt="Mradul Sharma"
                         src={logo}
-                        width="218"
-                        height="40"
+                        width="250"
+                        height="75"
                         loading="lazy"
                         className="theme-aware-logo"
                     />

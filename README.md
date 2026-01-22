@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/assets/images/logo.png" alt="Mradul Sharma Logo" width="200" />
+  <img src="public/assets/images/logo.gif" alt="Mradul Sharma Logo" width="200" />
 </p>
 
 # Mradul Sharma - Modern Portfolio Project
