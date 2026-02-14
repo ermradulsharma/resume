@@ -5,6 +5,402 @@
         "searchPlaceholder": "Search project...",
         "projectsList": [
             {
+                "title": "Constant Time Encoding",
+                "slug": "constant-time-encoding",
+                "description": "A Laravel package for constant-time character encoding, ensuring security against timing attacks when handling sensitive data.",
+                "technologies": [
+                    "Laravel",
+                    "PHP",
+                    "Security",
+                    "Package"
+                ],
+                "link": "https://github.com/skywalker-labs/constant-time-encoding.git",
+                "image": "package_placeholder.png",
+                "category": "LARAVEL PACKAGE",
+                "period": "2024",
+                "startDate": "2024-01-01",
+                "endDate": "2024-12-31",
+                "case_study": {
+                    "overview": "Constant Time Encoding is a security-focused Laravel package designed to mitigate timing attacks by providing constant-time implementations for character encoding operations. It ensures that the time taken to process data does not leak information about the data itself, which is critical for handling sensitive information like tokens or cryptographic keys.",
+                    "images": [],
+                    "project_details": {
+                        "category": "Laravel Package",
+                        "role": "Author",
+                        "year": "2024",
+                        "technologies": [
+                            "Laravel",
+                            "PHP"
+                        ],
+                        "live_link": "https://github.com/skywalker-labs/constant-time-encoding.git"
+                    }
+                }
+            },
+            {
+                "title": "QR Code Generator Service",
+                "slug": "qr-code-generator",
+                "description": "A robust QR Code generation package for Laravel applications, supporting various formats and customization options.",
+                "technologies": [
+                    "Laravel",
+                    "PHP",
+                    "QRCode",
+                    "Package"
+                ],
+                "link": "https://github.com/skywalker-labs/qr-code.git",
+                "image": "package_placeholder.png",
+                "category": "LARAVEL PACKAGE",
+                "period": "2024",
+                "startDate": "2024-01-01",
+                "endDate": "2024-12-31",
+                "case_study": {
+                    "overview": "This Laravel package provides a simple yet powerful API for generating QR codes. It supports multiple formats (PNG, SVG, EPS), custom colors, and error correction levels, making it easy to integrate QR code functionality into any Laravel application.",
+                    "images": [],
+                    "project_details": {
+                        "category": "Laravel Package",
+                        "role": "Author",
+                        "year": "2024",
+                        "technologies": [
+                            "Laravel",
+                            "PHP"
+                        ],
+                        "live_link": "https://github.com/skywalker-labs/qr-code.git"
+                    }
+                }
+            },
+            {
+                "title": "Laravel Enum",
+                "slug": "laravel-enum-package",
+                "description": "An advanced Enum implementation for Laravel, providing rich features for handling enumerations in your application.",
+                "technologies": [
+                    "Laravel",
+                    "PHP",
+                    "Enum",
+                    "Package"
+                ],
+                "link": "https://github.com/skywalker-labs/enum.git",
+                "image": "package_placeholder.png",
+                "category": "LARAVEL PACKAGE",
+                "period": "2024",
+                "startDate": "2024-01-01",
+                "endDate": "2024-12-31",
+                "case_study": {
+                    "overview": "Laravel Enum extends native PHP enums with powerful helpers and Laravel integration. It simplifies validation, casting, and localization of enums, making your code cleaner and more expressive.",
+                    "images": [],
+                    "project_details": {
+                        "category": "Laravel Package",
+                        "role": "Author",
+                        "year": "2024",
+                        "technologies": [
+                            "Laravel",
+                            "PHP"
+                        ],
+                        "live_link": "https://github.com/skywalker-labs/enum.git"
+                    }
+                }
+            },
+            {
+                "title": "Log Viewer",
+                "slug": "log-viewer-package",
+                "description": "A lightweight and easy-to-use log viewer for Laravel applications, allowing you to view and manage log files directly from the browser.",
+                "technologies": [
+                    "Laravel",
+                    "PHP",
+                    "Logging",
+                    "Package"
+                ],
+                "link": "https://github.com/skywalker-labs/log-viewer.git",
+                "image": "package_placeholder.png",
+                "category": "LARAVEL PACKAGE",
+                "period": "2024",
+                "startDate": "2024-01-01",
+                "endDate": "2024-12-31",
+                "case_study": {
+                    "overview": "Log Viewer provides a user-friendly interface for viewing Laravel logs. It supports log rotation, searching, and filtering, helping developers debug issues quickly without accessing the server terminal.",
+                    "images": [],
+                    "project_details": {
+                        "category": "Laravel Package",
+                        "role": "Author",
+                        "year": "2024",
+                        "technologies": [
+                            "Laravel",
+                            "PHP"
+                        ],
+                        "live_link": "https://github.com/skywalker-labs/log-viewer.git"
+                    }
+                }
+            },
+            {
+                "title": "Laravel Toolkit",
+                "slug": "laravel-toolkit",
+                "description": "A collection of essential utilities and helpers to speed up Laravel development.",
+                "technologies": [
+                    "Laravel",
+                    "PHP",
+                    "Utilities",
+                    "Package"
+                ],
+                "link": "https://github.com/skywalker-labs/laravel-toolkit.git",
+                "image": "package_placeholder.png",
+                "category": "LARAVEL PACKAGE",
+                "period": "2024",
+                "startDate": "2024-01-01",
+                "endDate": "2024-12-31",
+                "case_study": {
+                    "overview": "Laravel Toolkit is a Swiss Army knife for Laravel developers, containing a set of reusable traits, helpers, and classes that solve common problems and reduce boilerplate code.",
+                    "images": [],
+                    "project_details": {
+                        "category": "Laravel Package",
+                        "role": "Author",
+                        "year": "2024",
+                        "technologies": [
+                            "Laravel",
+                            "PHP"
+                        ],
+                        "live_link": "https://github.com/skywalker-labs/laravel-toolkit.git"
+                    }
+                }
+            },
+            {
+                "title": "Laravel HTML",
+                "slug": "laravel-html-builder",
+                "description": "A fluent HTML builder for Laravel, making it easier to generate HTML elements and forms programmatically.",
+                "technologies": [
+                    "Laravel",
+                    "PHP",
+                    "HTML",
+                    "Package"
+                ],
+                "link": "https://github.com/skywalker-labs/laravel-html.git",
+                "image": "package_placeholder.png",
+                "category": "LARAVEL PACKAGE",
+                "period": "2024",
+                "startDate": "2024-01-01",
+                "endDate": "2024-12-31",
+                "case_study": {
+                    "overview": "Laravel HTML simplifies the creation of complex HTML structures and forms. It provides a clean, fluent syntax for generating tags, tables, and lists, keeping your views clean and maintainable.",
+                    "images": [],
+                    "project_details": {
+                        "category": "Laravel Package",
+                        "role": "Author",
+                        "year": "2024",
+                        "technologies": [
+                            "Laravel",
+                            "PHP"
+                        ],
+                        "live_link": "https://github.com/skywalker-labs/laravel-html.git"
+                    }
+                }
+            },
+            {
+                "title": "OmniLocate",
+                "slug": "omnilocate-geolocation",
+                "description": "A powerful IP geolocation package for Laravel, supporting multiple providers and fallback mechanisms.",
+                "technologies": [
+                    "Laravel",
+                    "PHP",
+                    "Geolocation",
+                    "Package"
+                ],
+                "link": "https://github.com/skywalker-labs/omniLocate.git",
+                "image": "package_placeholder.png",
+                "category": "LARAVEL PACKAGE",
+                "period": "2024",
+                "startDate": "2024-01-01",
+                "endDate": "2024-12-31",
+                "case_study": {
+                    "overview": "OmniLocate abstracts IP geolocation services, allowing you to switch between providers (like MaxMind, IPStack, etc.) easily. It includes caching and a unified API for retrieving location data.",
+                    "images": [],
+                    "project_details": {
+                        "category": "Laravel Package",
+                        "role": "Author",
+                        "year": "2024",
+                        "technologies": [
+                            "Laravel",
+                            "PHP"
+                        ],
+                        "live_link": "https://github.com/skywalker-labs/omniLocate.git"
+                    }
+                }
+            },
+            {
+                "title": "Footprints",
+                "slug": "footprints-tracking",
+                "description": "A user activity tracking package for Laravel, helping you monitor user footprints and behavior within your application.",
+                "technologies": [
+                    "Laravel",
+                    "PHP",
+                    "Tracking",
+                    "Package"
+                ],
+                "link": "https://github.com/skywalker-labs/footprints.git",
+                "image": "package_placeholder.png",
+                "category": "LARAVEL PACKAGE",
+                "period": "2024",
+                "startDate": "2024-01-01",
+                "endDate": "2024-12-31",
+                "case_study": {
+                    "overview": "Footprints allows you to track and record user activities and visits in your Laravel application. It is useful for analytics, auditing, and understanding user behavior flows.",
+                    "images": [],
+                    "project_details": {
+                        "category": "Laravel Package",
+                        "role": "Author",
+                        "year": "2024",
+                        "technologies": [
+                            "Laravel",
+                            "PHP"
+                        ],
+                        "live_link": "https://github.com/skywalker-labs/footprints.git"
+                    }
+                }
+            },
+            {
+                "title": "Resume / Personal Portfolio",
+                "slug": "resume-portfolio",
+                "description": "My personal portfolio website built with React, showcasing my projects, skills, and experience.",
+                "technologies": [
+                    "React",
+                    "JavaScript",
+                    "HTML",
+                    "CSS"
+                ],
+                "link": "https://github.com/ermradulsharma/resume",
+                "image": "package_placeholder.png",
+                "category": "WEB APPLICATION",
+                "period": "2024",
+                "startDate": "2024-01-01",
+                "endDate": "2024-12-31",
+                "case_study": {
+                    "overview": "A personal portfolio website designed to showcase my professional work and skills.",
+                    "images": [],
+                    "project_details": {
+                        "category": "Web Application",
+                        "role": "Developer",
+                        "year": "2024",
+                        "technologies": [
+                            "React"
+                        ],
+                        "live_link": "https://github.com/ermradulsharma/resume"
+                    }
+                }
+            },
+            {
+                "title": "Krishna",
+                "slug": "krishna-laravel",
+                "description": "A specialized Laravel application designed for efficient data management.",
+                "technologies": [
+                    "Laravel",
+                    "PHP",
+                    "MySQL"
+                ],
+                "link": "https://github.com/ermradulsharma/krishna",
+                "image": "package_placeholder.png",
+                "category": "WEB APPLICATION",
+                "period": "2024",
+                "startDate": "2024-01-01",
+                "endDate": "2024-12-31",
+                "case_study": {
+                    "overview": "A custom Larvel application built to address specific business needs.",
+                    "images": [],
+                    "project_details": {
+                        "category": "Web Application",
+                        "role": "Developer",
+                        "year": "2024",
+                        "technologies": [
+                            "Laravel",
+                            "PHP"
+                        ],
+                        "live_link": "https://github.com/ermradulsharma/krishna"
+                    }
+                }
+            },
+            {
+                "title": "The Droning Company (Backend)",
+                "slug": "droning-company-backend",
+                "description": "The backend infrastructure for The Droning Company, providing robust API services.",
+                "technologies": [
+                    "Laravel",
+                    "PHP",
+                    "API"
+                ],
+                "link": "https://github.com/ermradulsharma/the-droning-company-backend",
+                "image": "package_placeholder.png",
+                "category": "BACKEND API",
+                "period": "2024",
+                "startDate": "2024-01-01",
+                "endDate": "2024-12-31",
+                "case_study": {
+                    "overview": "Backend API services supporting The Droning Company platform.",
+                    "images": [],
+                    "project_details": {
+                        "category": "Backend API",
+                        "role": "Backend Developer",
+                        "year": "2024",
+                        "technologies": [
+                            "Laravel",
+                            "PHP"
+                        ],
+                        "live_link": "https://github.com/ermradulsharma/the-droning-company-backend"
+                    }
+                }
+            },
+            {
+                "title": "Grambahar",
+                "slug": "grambahar-platform",
+                "description": "A Next.js based application delivering a modern web experience.",
+                "technologies": [
+                    "Next.js",
+                    "React",
+                    "JavaScript"
+                ],
+                "link": "https://github.com/ermradulsharma/grambahar",
+                "image": "package_placeholder.png",
+                "category": "WEB APPLICATION",
+                "period": "2024",
+                "startDate": "2024-01-01",
+                "endDate": "2024-12-31",
+                "case_study": {
+                    "overview": "A web application built using the Next.js framework.",
+                    "images": [],
+                    "project_details": {
+                        "category": "Web Application",
+                        "role": "Developer",
+                        "year": "2024",
+                        "technologies": [
+                            "Next.js"
+                        ],
+                        "live_link": "https://github.com/ermradulsharma/grambahar"
+                    }
+                }
+            },
+            {
+                "title": "Pahadigo",
+                "slug": "pahadigo-app",
+                "description": "A dynamic web application built with Next.js.",
+                "technologies": [
+                    "Next.js",
+                    "React",
+                    "JavaScript"
+                ],
+                "link": "https://github.com/ermradulsharma/pahadigo",
+                "image": "package_placeholder.png",
+                "category": "WEB APPLICATION",
+                "period": "2024",
+                "startDate": "2024-01-01",
+                "endDate": "2024-12-31",
+                "case_study": {
+                    "overview": "A Next.js project focusing on performance and user experience.",
+                    "images": [],
+                    "project_details": {
+                        "category": "Web Application",
+                        "role": "Developer",
+                        "year": "2024",
+                        "technologies": [
+                            "Next.js"
+                        ],
+                        "live_link": "https://github.com/ermradulsharma/pahadigo"
+                    }
+                }
+            },
+            {
                 "title": "Matrix Store (Full-Stack E-commerce Platform)",
                 "slug": "matrix-store-ecommerce",
                 "description": "Matrix Store is a modern, full-stack e-commerce platform built with the MERN stack. It features a comprehensive multi-role admin dashboard for managing inventory, providers, and customer orders. The platform provides an optimized, seamless shopping experience through advanced state management and responsive design.",
