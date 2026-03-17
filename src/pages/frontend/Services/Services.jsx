@@ -17,7 +17,6 @@ const Services = () => {
     const [activeService, setActiveService] = useState(null);
 
     const handleShow = (service) => {
-        console.log("Service passed to modal:", service);
         setActiveService(service);
         setShowModal(true);
         trackEvent({ action: "view_service_detail", category: "Services", label: service.title, value: 1 });

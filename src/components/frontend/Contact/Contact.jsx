@@ -74,7 +74,6 @@ const ContactSection = () => {
             process.env.REACT_APP_EMAILJS_PUBLIC_KEY
         )
             .then((result) => {
-                console.log("EmailJS Success:", result.text);
                 trackEvent({ name: "submit_contact_form", category: "Contact", label: "Success" });
                 setDone(true);
                 setFormData({
@@ -86,7 +85,6 @@ const ContactSection = () => {
                     selected_services: []
                 });
             }, (error) => {
-                console.error("EmailJS Error:", error);
                 trackEvent({ name: "contact_form_error", category: "Contact", label: "Error" });
                 setDone(false);
                 setNotDone(true);

@@ -32,7 +32,7 @@ const UniversalCard = ({
         <Card className={`universal-card shadow-lg border-0 overflow-hidden ${className}`}>
             <Link to={link} className="text-decoration-none" onClick={onClick}>
                 <div className="card-img-wrapper position-relative overflow-hidden" style={{ height: imageHeight }}>
-                    <Card.Img src={getCardImageSrc(image)} alt={title} height="100%" style={{ objectFit: "cover", width: '100%' }} loading="lazy" onError={(e) => { e.target.src = 'https://via.placeholder.com/400x220?text=Image+Not+Found'; }} />
+                    <Card.Img src={getCardImageSrc(image)} alt={title} height="100%" style={{ objectFit: "fill", width: '100%' }} loading="lazy" onError={(e) => { e.target.src = 'https://via.placeholder.com/400x220?text=Image+Not+Found'; }} />
                     <div className="overlay d-flex justify-content-center align-items-center">
                         <BrandButton as="span" className="fw-bold">{overlayText}</BrandButton>
                     </div>

@@ -122,6 +122,24 @@ npm run build
 
 Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance.
 
+### Testing (End-to-End)
+
+This project uses **Playwright** for robust End-to-End (E2E) testing. To run the tests locally:
+
+1. Install Playwright browsers (first time only):
+   ```bash
+   npx playwright install
+   ```
+
+2. Run the tests in headless mode:
+   ```bash
+   npm run test:e2e
+   ```
+
+3. Run the tests in UI mode (interactive):
+   ```bash
+   npm run test:e2e:ui
+   ```
 ---
 
 ## 🤝 Contributing & License

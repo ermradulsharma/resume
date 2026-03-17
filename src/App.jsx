@@ -6,11 +6,10 @@ import ErrorBoundary from "./components/common/ErrorBoundary/ErrorBoundary";
 
 // Lazy load the route components
 const WebRoutes = lazy(() => import("./routes/WebRoutes"));
-const AppRoutes = lazy(() => import("./routes/AppRoutes"));
 
 const App = () => {
     const location = useLocation();
-    const isDashboardRoute = location.pathname.startsWith("/dashboard");
+
     useEffect(() => {
         initGA();
     }, []);
@@ -28,7 +27,7 @@ const App = () => {
     return (
         <ErrorBoundary>
             <Suspense fallback={<LoadingFallback />}>
-                {isDashboardRoute ? <AppRoutes /> : <WebRoutes />}
+                <WebRoutes />
             </Suspense>
         </ErrorBoundary>
     );

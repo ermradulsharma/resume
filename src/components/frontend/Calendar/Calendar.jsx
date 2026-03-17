@@ -58,9 +58,13 @@ const PublicCalendar = () => {
 
             // FullCalendar end is exclusive
             if (endDate) {
-                const d = new Date(endDate);
-                d.setDate(d.getDate() + 1);
-                endDate = d.toISOString().split("T")[0];
+                const d = endDate.toLowerCase() === "present" ? new Date() : new Date(endDate);
+                if (!isNaN(d.getTime())) {
+                    d.setDate(d.getDate() + 1);
+                    endDate = d.toISOString().split("T")[0];
+                } else {
+                    endDate = undefined;
+                }
             }
 
             return {

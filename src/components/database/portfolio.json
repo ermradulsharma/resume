@@ -5,250 +5,374 @@
         "searchPlaceholder": "Search project...",
         "projectsList": [
             {
-                "title": "Constant Time Encoding",
-                "slug": "constant-time-encoding",
-                "description": "A Laravel package for constant-time character encoding, ensuring security against timing attacks when handling sensitive data.",
+                "title": "Constant Time Encoding Package",
+                "slug": "constant-time-encoding-package",
+                "description": "Constant-time implementations of RFC 4648 encoding (Base64, Base32, Hex) and other variants (Base64UrlSafe, Base64DotSlash, Base32Hex)",
                 "technologies": [
                     "Laravel",
                     "PHP",
-                    "Security",
+                    "Open Source",
                     "Package"
                 ],
-                "link": "https://github.com/skywalker-labs/constant-time-encoding.git",
-                "image": "package_placeholder.png",
-                "category": "LARAVEL PACKAGE",
-                "period": "2024",
-                "startDate": "2024-01-01",
-                "endDate": "2024-12-31",
+                "link": "https://github.com/skywalker-labs/constant-time-encoding",
+                "image": "https://opengraph.githubassets.com/1/skywalker-labs/constant-time-encoding",
+                "category": "OPEN SOURCE",
+                "period": "Jan 2026",
+                "startDate": "2026-01-15",
+                "endDate": "2026-01-19",
                 "case_study": {
-                    "overview": "Constant Time Encoding is a security-focused Laravel package designed to mitigate timing attacks by providing constant-time implementations for character encoding operations. It ensures that the time taken to process data does not leak information about the data itself, which is critical for handling sensitive information like tokens or cryptographic keys.",
+                    "overview": "Constant-time implementations of RFC 4648 encoding (Base64, Base32, Hex) and other variants (Base64UrlSafe, Base64DotSlash, Base32Hex)",
                     "images": [],
                     "project_details": {
-                        "category": "Laravel Package",
-                        "role": "Author",
-                        "year": "2024",
+                        "category": "Open Source Package",
+                        "role": "Author / Lead Developer",
+                        "year": "2022",
                         "technologies": [
                             "Laravel",
                             "PHP"
                         ],
-                        "live_link": "https://github.com/skywalker-labs/constant-time-encoding.git"
+                        "live_link": "https://github.com/skywalker-labs/constant-time-encoding"
                     }
                 }
             },
             {
-                "title": "QR Code Generator Service",
-                "slug": "qr-code-generator",
-                "description": "A robust QR Code generation package for Laravel applications, supporting various formats and customization options.",
+                "title": "Entrust Package",
+                "slug": "entrust-package",
+                "description": "A flexible Role-based Permissions package for Laravel 10, 11, and 12.",
                 "technologies": [
                     "Laravel",
                     "PHP",
-                    "QRCode",
+                    "Open Source",
                     "Package"
                 ],
-                "link": "https://github.com/skywalker-labs/qr-code.git",
-                "image": "package_placeholder.png",
-                "category": "LARAVEL PACKAGE",
-                "period": "2024",
-                "startDate": "2024-01-01",
-                "endDate": "2024-12-31",
+                "link": "https://github.com/skywalker-labs/entrust",
+                "image": "https://opengraph.githubassets.com/1/skywalker-labs/entrust",
+                "category": "OPEN SOURCE",
+                "period": "Jan 2026",
+                "startDate": "2026-01-20",
+                "endDate": "2026-01-25",
                 "case_study": {
-                    "overview": "This Laravel package provides a simple yet powerful API for generating QR codes. It supports multiple formats (PNG, SVG, EPS), custom colors, and error correction levels, making it easy to integrate QR code functionality into any Laravel application.",
+                    "overview": "A flexible Role-based Permissions package for Laravel 10, 11, and 12.",
                     "images": [],
                     "project_details": {
-                        "category": "Laravel Package",
-                        "role": "Author",
-                        "year": "2024",
+                        "category": "Open Source Package",
+                        "role": "Author / Lead Developer",
+                        "year": "2022",
                         "technologies": [
                             "Laravel",
                             "PHP"
                         ],
-                        "live_link": "https://github.com/skywalker-labs/qr-code.git"
+                        "live_link": "https://github.com/skywalker-labs/entrust"
                     }
                 }
             },
             {
-                "title": "Laravel Enum",
-                "slug": "laravel-enum-package",
-                "description": "An advanced Enum implementation for Laravel, providing rich features for handling enumerations in your application.",
+                "title": "Enum Package",
+                "slug": "enum-package",
+                "description": "A robust and type-safe Enum implementation for PHP, featuring singleton-based constants, mapping capabilities, and extensive compatibility from PHP 7.0 to 9.0.",
                 "technologies": [
                     "Laravel",
                     "PHP",
-                    "Enum",
+                    "Open Source",
                     "Package"
                 ],
-                "link": "https://github.com/skywalker-labs/enum.git",
-                "image": "package_placeholder.png",
-                "category": "LARAVEL PACKAGE",
-                "period": "2024",
-                "startDate": "2024-01-01",
-                "endDate": "2024-12-31",
+                "link": "https://github.com/skywalker-labs/enum",
+                "image": "https://opengraph.githubassets.com/1/skywalker-labs/enum",
+                "category": "OPEN SOURCE",
+                "period": "Jan 2026",
+                "startDate": "2026-01-26",
+                "endDate": "2026-01-30",
                 "case_study": {
-                    "overview": "Laravel Enum extends native PHP enums with powerful helpers and Laravel integration. It simplifies validation, casting, and localization of enums, making your code cleaner and more expressive.",
+                    "overview": "A robust and type-safe Enum implementation for PHP, featuring singleton-based constants, mapping capabilities, and extensive compatibility from PHP 7.0 to 9.0.",
                     "images": [],
                     "project_details": {
-                        "category": "Laravel Package",
-                        "role": "Author",
-                        "year": "2024",
+                        "category": "Open Source Package",
+                        "role": "Author / Lead Developer",
+                        "year": "2022",
                         "technologies": [
                             "Laravel",
                             "PHP"
                         ],
-                        "live_link": "https://github.com/skywalker-labs/enum.git"
+                        "live_link": "https://github.com/skywalker-labs/enum"
                     }
                 }
             },
             {
-                "title": "Log Viewer",
-                "slug": "log-viewer-package",
-                "description": "A lightweight and easy-to-use log viewer for Laravel applications, allowing you to view and manage log files directly from the browser.",
+                "title": "Footprints Package",
+                "slug": "footprints-package",
+                "description": "Seamlessly track UTM parameters and referrers for user registration attribution in Laravel applications.",
                 "technologies": [
                     "Laravel",
                     "PHP",
-                    "Logging",
+                    "Open Source",
                     "Package"
                 ],
-                "link": "https://github.com/skywalker-labs/log-viewer.git",
-                "image": "package_placeholder.png",
-                "category": "LARAVEL PACKAGE",
-                "period": "2024",
-                "startDate": "2024-01-01",
-                "endDate": "2024-12-31",
+                "link": "https://github.com/skywalker-labs/footprints",
+                "image": "https://opengraph.githubassets.com/1/skywalker-labs/footprints",
+                "category": "OPEN SOURCE",
+                "period": "Jan 2026",
+                "startDate": "2026-01-31",
+                "endDate": "2026-02-03",
                 "case_study": {
-                    "overview": "Log Viewer provides a user-friendly interface for viewing Laravel logs. It supports log rotation, searching, and filtering, helping developers debug issues quickly without accessing the server terminal.",
+                    "overview": "Seamlessly track UTM parameters and referrers for user registration attribution in Laravel applications.",
                     "images": [],
                     "project_details": {
-                        "category": "Laravel Package",
-                        "role": "Author",
-                        "year": "2024",
+                        "category": "Open Source Package",
+                        "role": "Author / Lead Developer",
+                        "year": "2022",
                         "technologies": [
                             "Laravel",
                             "PHP"
                         ],
-                        "live_link": "https://github.com/skywalker-labs/log-viewer.git"
+                        "live_link": "https://github.com/skywalker-labs/footprints"
                     }
                 }
             },
             {
-                "title": "Laravel Toolkit",
-                "slug": "laravel-toolkit",
-                "description": "A collection of essential utilities and helpers to speed up Laravel development.",
+                "title": "Formcraft Package",
+                "slug": "formcraft-package",
+                "description": "Modern HTML & Form Builder for Laravel with 50+ components, theme support (Bootstrap/Tailwind), Livewire integration, and accessibility features",
                 "technologies": [
                     "Laravel",
                     "PHP",
-                    "Utilities",
+                    "Open Source",
                     "Package"
                 ],
-                "link": "https://github.com/skywalker-labs/laravel-toolkit.git",
-                "image": "package_placeholder.png",
-                "category": "LARAVEL PACKAGE",
-                "period": "2024",
-                "startDate": "2024-01-01",
-                "endDate": "2024-12-31",
+                "link": "https://github.com/skywalker-labs/formcraft",
+                "image": "https://opengraph.githubassets.com/1/skywalker-labs/formcraft",
+                "category": "OPEN SOURCE",
+                "period": "Feb 2026",
+                "startDate": "2026-02-04",
+                "endDate": "2026-02-08",
                 "case_study": {
-                    "overview": "Laravel Toolkit is a Swiss Army knife for Laravel developers, containing a set of reusable traits, helpers, and classes that solve common problems and reduce boilerplate code.",
+                    "overview": "Modern HTML & Form Builder for Laravel with 50+ components, theme support (Bootstrap/Tailwind), Livewire integration, and accessibility features",
                     "images": [],
                     "project_details": {
-                        "category": "Laravel Package",
-                        "role": "Author",
-                        "year": "2024",
+                        "category": "Open Source Package",
+                        "role": "Author / Lead Developer",
+                        "year": "2021",
                         "technologies": [
                             "Laravel",
                             "PHP"
                         ],
-                        "live_link": "https://github.com/skywalker-labs/laravel-toolkit.git"
+                        "live_link": "https://github.com/skywalker-labs/formcraft"
                     }
                 }
             },
             {
-                "title": "Laravel HTML",
-                "slug": "laravel-html-builder",
-                "description": "A fluent HTML builder for Laravel, making it easier to generate HTML elements and forms programmatically.",
+                "title": "Impersonate Package",
+                "slug": "impersonate-package",
+                "description": "A powerful Laravel package to authenticate as your users. Easily impersonate other users in your application with a simple trait. Includes features like Blade directives, event handling, multi-guard support, and customizable access controls for advanced user management and debugging.",
                 "technologies": [
                     "Laravel",
                     "PHP",
-                    "HTML",
+                    "Open Source",
                     "Package"
                 ],
-                "link": "https://github.com/skywalker-labs/laravel-html.git",
-                "image": "package_placeholder.png",
-                "category": "LARAVEL PACKAGE",
-                "period": "2024",
-                "startDate": "2024-01-01",
-                "endDate": "2024-12-31",
+                "link": "https://github.com/skywalker-labs/impersonate",
+                "image": "https://opengraph.githubassets.com/1/skywalker-labs/impersonate",
+                "category": "OPEN SOURCE",
+                "period": "Feb 2026",
+                "startDate": "2026-02-09",
+                "endDate": "2026-02-12",
                 "case_study": {
-                    "overview": "Laravel HTML simplifies the creation of complex HTML structures and forms. It provides a clean, fluent syntax for generating tags, tables, and lists, keeping your views clean and maintainable.",
+                    "overview": "A powerful Laravel package to authenticate as your users. Easily impersonate other users in your application with a simple trait. Includes features like Blade directives, event handling, multi-guard support, and customizable access controls for advanced user management and debugging.",
                     "images": [],
                     "project_details": {
-                        "category": "Laravel Package",
-                        "role": "Author",
-                        "year": "2024",
+                        "category": "Open Source Package",
+                        "role": "Author / Lead Developer",
+                        "year": "2021",
                         "technologies": [
                             "Laravel",
                             "PHP"
                         ],
-                        "live_link": "https://github.com/skywalker-labs/laravel-html.git"
+                        "live_link": "https://github.com/skywalker-labs/impersonate"
                     }
                 }
             },
             {
-                "title": "OmniLocate",
-                "slug": "omnilocate-geolocation",
-                "description": "A powerful IP geolocation package for Laravel, supporting multiple providers and fallback mechanisms.",
+                "title": "Laraguard Package",
+                "slug": "laraguard-package",
+                "description": "On-premises 2FA Authentication for all your users out-of-the-box",
                 "technologies": [
                     "Laravel",
                     "PHP",
-                    "Geolocation",
+                    "Open Source",
                     "Package"
                 ],
-                "link": "https://github.com/skywalker-labs/omniLocate.git",
-                "image": "package_placeholder.png",
-                "category": "LARAVEL PACKAGE",
-                "period": "2024",
-                "startDate": "2024-01-01",
-                "endDate": "2024-12-31",
+                "link": "https://github.com/skywalker-labs/laraguard",
+                "image": "https://opengraph.githubassets.com/1/skywalker-labs/laraguard",
+                "category": "OPEN SOURCE",
+                "period": "Feb 2026",
+                "startDate": "2026-02-13",
+                "endDate": "2026-02-16",
                 "case_study": {
-                    "overview": "OmniLocate abstracts IP geolocation services, allowing you to switch between providers (like MaxMind, IPStack, etc.) easily. It includes caching and a unified API for retrieving location data.",
+                    "overview": "On-premises 2FA Authentication for all your users out-of-the-box",
                     "images": [],
                     "project_details": {
-                        "category": "Laravel Package",
-                        "role": "Author",
-                        "year": "2024",
+                        "category": "Open Source Package",
+                        "role": "Author / Lead Developer",
+                        "year": "2021",
                         "technologies": [
                             "Laravel",
                             "PHP"
                         ],
-                        "live_link": "https://github.com/skywalker-labs/omniLocate.git"
+                        "live_link": "https://github.com/skywalker-labs/laraguard"
                     }
                 }
             },
             {
-                "title": "Footprints",
-                "slug": "footprints-tracking",
-                "description": "A user activity tracking package for Laravel, helping you monitor user footprints and behavior within your application.",
+                "title": "Location Package",
+                "slug": "location-package",
+                "description": "OmniLocate: Advanced user location detection for Laravel with persistence, caching, and distance utilities.",
                 "technologies": [
                     "Laravel",
                     "PHP",
-                    "Tracking",
+                    "Open Source",
                     "Package"
                 ],
-                "link": "https://github.com/skywalker-labs/footprints.git",
-                "image": "package_placeholder.png",
-                "category": "LARAVEL PACKAGE",
-                "period": "2024",
-                "startDate": "2024-01-01",
-                "endDate": "2024-12-31",
+                "link": "https://github.com/skywalker-labs/location",
+                "image": "https://opengraph.githubassets.com/1/skywalker-labs/location",
+                "category": "OPEN SOURCE",
+                "period": "Feb 2026",
+                "startDate": "2026-02-17",
+                "endDate": "2026-02-20",
                 "case_study": {
-                    "overview": "Footprints allows you to track and record user activities and visits in your Laravel application. It is useful for analytics, auditing, and understanding user behavior flows.",
+                    "overview": "OmniLocate: Advanced user location detection for Laravel with persistence, caching, and distance utilities.",
                     "images": [],
                     "project_details": {
-                        "category": "Laravel Package",
-                        "role": "Author",
-                        "year": "2024",
+                        "category": "Open Source Package",
+                        "role": "Author / Lead Developer",
+                        "year": "2021",
                         "technologies": [
                             "Laravel",
                             "PHP"
                         ],
-                        "live_link": "https://github.com/skywalker-labs/footprints.git"
+                        "live_link": "https://github.com/skywalker-labs/location"
+                    }
+                }
+            },
+            {
+                "title": "Passwordless Package",
+                "slug": "passwordless-package",
+                "description": "Seamless Passwordless Authentication for Laravel. Integrate OTP (One-Time Password) Login and 2FA into your default authentication flow with zero-conf middleware and ready-to-use UI.",
+                "technologies": [
+                    "Laravel",
+                    "PHP",
+                    "Open Source",
+                    "Package"
+                ],
+                "link": "https://github.com/skywalker-labs/passwordless",
+                "image": "https://opengraph.githubassets.com/1/skywalker-labs/passwordless",
+                "category": "OPEN SOURCE",
+                "period": "Feb 2026",
+                "startDate": "2026-02-21",
+                "endDate": "2026-02-25",
+                "case_study": {
+                    "overview": "Seamless Passwordless Authentication for Laravel. Integrate OTP (One-Time Password) Login and 2FA into your default authentication flow with zero-conf middleware and ready-to-use UI.",
+                    "images": [],
+                    "project_details": {
+                        "category": "Open Source Package",
+                        "role": "Author / Lead Developer",
+                        "year": "2021",
+                        "technologies": [
+                            "Laravel",
+                            "PHP"
+                        ],
+                        "live_link": "https://github.com/skywalker-labs/passwordless"
+                    }
+                }
+            },
+            {
+                "title": "Qr Code Package",
+                "slug": "qr-code-package",
+                "description": "A high-performance and highly customizable QR code generator for PHP, maintained by Skywalker Labs. Supports various output formats and provides a robust API for building advanced QR code solutions.",
+                "technologies": [
+                    "Laravel",
+                    "PHP",
+                    "Open Source",
+                    "Package"
+                ],
+                "link": "https://github.com/skywalker-labs/qr-code",
+                "image": "https://opengraph.githubassets.com/1/skywalker-labs/qr-code",
+                "category": "OPEN SOURCE",
+                "period": "Feb 2026",
+                "startDate": "2026-02-26",
+                "endDate": "2026-03-02",
+                "case_study": {
+                    "overview": "A high-performance and highly customizable QR code generator for PHP, maintained by Skywalker Labs. Supports various output formats and provides a robust API for building advanced QR code solutions.",
+                    "images": [],
+                    "project_details": {
+                        "category": "Open Source Package",
+                        "role": "Author / Lead Developer",
+                        "year": "2021",
+                        "technologies": [
+                            "Laravel",
+                            "PHP"
+                        ],
+                        "live_link": "https://github.com/skywalker-labs/qr-code"
+                    }
+                }
+            },
+            {
+                "title": "Toolkit Package",
+                "slug": "toolkit-package",
+                "description": "A comprehensive toolkit for Laravel package and application development.",
+                "technologies": [
+                    "Laravel",
+                    "PHP",
+                    "Open Source",
+                    "Package"
+                ],
+                "link": "https://github.com/skywalker-labs/toolkit",
+                "image": "https://opengraph.githubassets.com/1/skywalker-labs/toolkit",
+                "category": "OPEN SOURCE",
+                "period": "Mar 2026",
+                "startDate": "2026-03-03",
+                "endDate": "2026-03-08",
+                "case_study": {
+                    "overview": "A comprehensive toolkit for Laravel package and application development.",
+                    "images": [],
+                    "project_details": {
+                        "category": "Open Source Package",
+                        "role": "Author / Lead Developer",
+                        "year": "2021",
+                        "technologies": [
+                            "Laravel",
+                            "PHP"
+                        ],
+                        "live_link": "https://github.com/skywalker-labs/toolkit"
+                    }
+                }
+            },
+            {
+                "title": "Ui Package",
+                "slug": "ui-package",
+                "description": "Frontend presets and powerful UI utilities for Laravel applications by Skywalker Labs.",
+                "technologies": [
+                    "Laravel",
+                    "PHP",
+                    "Open Source",
+                    "Package"
+                ],
+                "link": "https://github.com/skywalker-labs/ui",
+                "image": "https://opengraph.githubassets.com/1/skywalker-labs/ui",
+                "category": "OPEN SOURCE",
+                "period": "Mar 2026",
+                "startDate": "2026-03-09",
+                "endDate": "2026-03-14",
+                "case_study": {
+                    "overview": "Frontend presets and powerful UI utilities for Laravel applications by Skywalker Labs.",
+                    "images": [],
+                    "project_details": {
+                        "category": "Open Source Package",
+                        "role": "Author / Lead Developer",
+                        "year": "2021",
+                        "technologies": [
+                            "Laravel",
+                            "PHP"
+                        ],
+                        "live_link": "https://github.com/skywalker-labs/ui"
                     }
                 }
             },
