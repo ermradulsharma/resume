@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software as a reference or template, please cite it as below."
+authors:
+- family-names: "Sharma"
+  given-names: "Mradul"
+  orcid: "https://orcid.org/0000-0000-0000-0000" # Replace with actual ORCID if available
+title: "Mradul Sharma - Professional React Portfolio and Vendor Service Platform"
+version: 0.4.0
+date-released: 2026-03-15
+url: "https://github.com/ermradulsharma/portfolio"
+repository-code: "https://github.com/ermradulsharma/portfolio"
+keywords:
+  - react
+  - portfolio
+  - web-development
+  - full-stack
+license: MIT
