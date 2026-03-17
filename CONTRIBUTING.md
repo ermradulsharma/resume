@@ -1,84 +1,70 @@
-# Contributing to Portfolio Website
+# 🤝 Contributing to Mradul Sharma's Portfolio & Packages
 
-First off, thanks for taking the time to contribute! 🎉
+We actively welcome contributions from the open-source community to improve this React 19 SPA, the underlying JSON schema structures, and the interconnected Skywalker Labs Laravel packages.
 
-The following is a set of guidelines for contributing to Mradul Sharma's Portfolio Website. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
+This repository strictly adheres to Enterprise-grade Pull Request cycles, CI/CD validations, and semantic versioning.
 
-## Code of Conduct
+---
 
-This project and everyone participating in it is governed by the [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
+## 🏗️ Architecture Familiarity Requirement
 
-## Choosing an Issue
+Before contributing, please review the [ARCHITECTURE.md](ARCHITECTURE.md) document. You must understand the **Headless JSON-Driven** approach. We do *not* accept PRs attempting to introduce heavy database layers (e.g., Firebase, Supabase) into this specific frontend repository.
 
-If you're looking for a place to start, look for issues labeled with `good first issue`. These are typically smaller, well-defined tasks that are perfect for newcomers.
+---
 
-You can find them by searching:
-`is:issue is:open label:"good first issue"`
+## 🛠️ Local Environment Setup
 
-## How Can I Contribute?
-
-### Reporting Bugs
-
-This section guides you through submitting a bug report. Following these guidelines helps maintainers and the community understand your report, reproduce the behavior, and find related reports.
-
-- **Use a clear and descriptive title** for the issue to identify the problem.
-- **Describe the steps to reproduce the problem** in as much detail as possible.
-- **Provide specific examples** to demonstrate the steps.
-- **Describe the behavior you observed** after following the steps and point out what exactly is the problem with that behavior.
-- **Explain which behavior you expected to see instead** and why.
-
-### Suggesting Enhancements
-
-This section guides you through submitting an enhancement suggestion, including completely new features and minor improvements to existing functionality.
-
-- **Use a clear and descriptive title** for the issue to identify the suggestion.
-- **Provide a step-by-step description of the suggested enhancement** in as much detail as possible.
-- **Provide specific examples** to demonstrate the steps.
-- **Describe the current behavior** and explain which behavior you expected to see instead and why.
-
-### Pull Requests
-
-1. Fork the repo and create your branch from `main`.
-2. Once you push your changes to your fork, GitHub will often show a **"Compare & pull request"** banner at the top of the repository page. Click this to start your PR!
-3. If you don't see the banner, go to the "Pull Requests" tab and click "New pull request".
-4. If you've added code that should be tested, add tests.
-5. If you've changed APIs, update the documentation.
-6. Ensure the test suite passes.
-7. Make sure your code lints.
-8. Issue that pull request!
-
-## Styleguides
-
-### Git Commit Messages
-
-- Use the present tense ("Add feature" not "Added feature")
-- Use the imperative mood ("Move cursor to..." not "Moves cursor to...")
-- Limit the first line to 72 characters or less
-- Reference issues and pull requests liberally after the first line
-
-### JavaScript Styleguide
-
-- All JavaScript must adhere to standard React best practices.
-- Prefer functional components with Hooks.
-- Use `const` and `let`, avoid `var`.
-
-## Getting Started
-
-1. Clone the repository:
-
+1. **Fork & Clone:**
    ```bash
-   git clone https://github.com/ermradulsharma/resume.git
+   git clone https://github.com/YOUR_USERNAME/portfolio.git
    cd portfolio
    ```
 
-2. Install dependencies:
-
+2. **Strict Node Pipeline Installation:**
+   Requires Node.js `^18.17.0`. Use `npm ci` instead of `npm install` to enforce the frozen `package-lock.json` dependency tree.
    ```bash
-   npm install
+   npm ci
    ```
 
-3. Start development server:
-
+3. **Start Development Engine:**
    ```bash
    npm start
    ```
+
+---
+
+## 📦 Submission Guidelines: The PR Lifecycle
+
+### 1. Branching Strategy
+We follow the **GitFlow** methodology. Do not push directly to `main`.
+- Features: `feature/your-feature-name`
+- Bug Fixes: `fix/ticket-id-or-description`
+- Documentation: `docs/document-name`
+
+### 2. Commit Message Standards (Conventional Commits)
+Commits must follow the Conventional Commits specification. This allows automated `CHANGELOG.md` generation.
+- ✅ `feat(ui): add progressive loading to package cards`
+- ✅ `fix(seo): correct OpenGraph injection logic in useSEO hook`
+- ❌ `added loading` or `fixed bug`
+
+### 3. Verification Standards (Pre-PR Checklist)
+Before opening a Pull Request against the `main` branch, ensure:
+1. **Zero ESLint Warnings:** Run `npm run lint` and resolve all AST errors.
+2. **Zero Dead Code:** Run `npx depcheck` to verify no orphaned modules were introduced.
+3. **No Console Logs:** Production builds will fail if `console.log` statements are detected in UI components.
+4. **Responsive Integrity:** Verify Bootstrap 5 grid behavior down to `320px` viewport widths.
+
+### 4. Code Review & Merging
+Once submitted:
+- The GitHub Actions CI/CD pipeline will automatically build and lint your branch.
+- Maintainers (Mradul Sharma) will review the code for architectural alignment.
+- Approved features will be merged via **Squash and Merge** to maintain a clean linear commit history on `main`.
+
+---
+
+## 🐛 Defect Reporting (Issues)
+
+If you discover a structural bug, please open a standard Issue using the `.github/ISSUE_TEMPLATE` schemas. 
+> 🚨 **Security Vulnerability?** Do NOT open a public issue. See our [Security Policy](SECURITY.md) for direct disclosure instructions.
+
+Thank you for elevating the quality of this open-source architecture!

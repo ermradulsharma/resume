@@ -1,166 +1,111 @@
 <p align="center">
-  <img src="public/assets/images/logo.gif" alt="Mradul Sharma Logo" width="200" />
+  <img src="public/assets/images/logo.gif" alt="Mradul Sharma Logo" width="220" />
 </p>
 
-# Mradul Sharma - Modern Portfolio Project
+# 🚀 Mradul Sharma | Senior Full-Stack Architecture & Portfolio
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![React Version](https://img.shields.io/badge/React-19.2.3-blue.svg)](https://reactjs.org/)
-[![Live Demo](https://img.shields.io/badge/demo-live-success)](https://mradulsharma.vercel.app/)
-[![Deploy on Vercel](https://img.shields.io/badge/Deploy-Vercel-black?logo=vercel)](https://vercel.com)
+[![React Version](https://img.shields.io/badge/React-19.2.3-61DAFB.svg?logo=react&logoColor=white)](https://reactjs.org/)
+[![Node Environment](https://img.shields.io/badge/Node.js-v18%2B-339933.svg?logo=node.js&logoColor=white)](https://nodejs.org/)
+[![Vercel Deployment](https://img.shields.io/badge/Deployed_on-Vercel-black.svg?logo=vercel&logoColor=white)](https://vercel.com)
+[![Code Quality](https://img.shields.io/badge/Code_Quality-ESLint-4B32C3.svg?logo=eslint&logoColor=white)](https://eslint.org/)
+[![Analytics](https://img.shields.io/badge/Analytics-GA4-F4B400.svg?logo=googleanalytics&logoColor=white)](https://analytics.google.com/)
 
-A high-performance, fully responsive professional portfolio built with **React 19**, **Bootstrap 5**, and modern web technologies. This project features a robust JSON-driven CMS for easy content management, dynamic SEO, and a polished UI/UX with dark/light mode support.
+Welcome to the open-source repository of **Mradul Sharma's Professional Portfolio and Technical Hub**. 
 
----
+This repository operates as a dual-purpose platform: it is a highly optimized, headless **Single Page Application (SPA)** demonstrating modern frontend capabilities, and simultaneously serves as the centralized nexus for my open-source PHP/Laravel package ecosystem.
 
-## 🚀 Key Features
-
-### 🏗️ Modern Architecture
-
-- **React 19 & React Router v7**: Built on the latest React ecosystem standards.
-- **Component-Based Design**: Modular and reusable component architecture featuring `UniversalCard`, `Lightbox`, and `Skeleton` loaders.
-- **Performance Optimized**: Implements code splitting, `ErrorBoundary`, and lazy loading for faster page loads.
-- **Custom Hooks**: Dedicated `useSEO` hook for advanced meta tag management.
-
-### 🎨 UI & User Experience
-
-- **Responsive Design**: Mobile-first approach using **Bootstrap 5**.
-- **Dark/Light Mode**: Integrated theme toggler (`ThemeToggle`) for personalized viewing preference.
-- **Interactive Elements**: Includes dynamic charts (`Chart.js`), interactive maps (`@react-google-maps/api`), `ReadingProgress` bars, and calendars (`FullCalendar`).
-
-### 📝 Headless Content Management
-
-- **JSON-Driven System**: Manage Blogs, Projects, Services, and FAQs directly via JSON files in `src/components/database`.
-- **Dynamic Routing**: Automated route generation for blog posts and project details based on content slugs.
-
-### 🔍 SEO & Analytics
-
-- **Dynamic Meta Tags**: Automated via `useSEO` hook and `react-helmet-async` for optimal search engine visibility.
-- **Analytics Ready**: Integrated `react-ga4` for Google Analytics tracking.
-
-### 📧 Connectivity
-
-- **Functional Contact Form**: Powered by **EmailJS** for serverless email handling.
+Built from the ground up prioritizing **performance, accessibility, dynamic SEO**, and **modular scalability**, this codebase is a reflection of my enterprise engineering standards.
 
 ---
 
-## 💻 Technical Stack
+## 🏗️ Technical Masterclass: Under the Hood
 
-### Core Technologies
+This project transcends a standard template. It is engineered to demonstrate production-grade architectural patterns:
 
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
-![SASS](https://img.shields.io/badge/SASS-hotpink?style=for-the-badge&logo=SASS&logoColor=white)
+### 1. ⚛️ Advanced React 19 Ecosystem
+- **Concurrent Feature Adoption:** Leveraging React 19 methodologies, minimizing re-renders via strict component isolation and memoization strategies.
+- **Routing & Code Splitting:** `react-router-dom` (v7) implements dynamic tree rendering. Routes are heavily code-split using `React.lazy()` and `Suspense` with highly optimized fallback skeleton loaders.
+- **Custom Hook Paradigms:** Dedicated hooks, such as `useSEO()`, abstract complex DOM manipulations, dynamically injecting localized `<meta>` arrays and OpenGraph schemas via `react-helmet-async`.
 
-### Utilities & Libraries
+### 2. ⚡ Headless Data Architecture & CMS
+- **JSON-Driven Hydration:** Entire modules (Experiences, Open Source Packages, Services, FAQs) are loosely coupled from the UI, hydrated synchronously via static `src/components/database/*.json` configurations at runtime.
+- **Skywalker Labs Integrations:** Automatically parses and displays metadata (including GitHub OG images) for over 14 bespoke Laravel vendor packages directly sourced from live composer definitions.
 
-- **Forms & Validation**: `ajv`
-- **Visualization**: `chart.js`, `react-chartjs-2`, `@fullcalendar/react`
-- **Icons**: `react-icons`, `bootstrap-icons`
-- **Utilities**: `date-fns`, `typewriter-effect`
-- **Maps**: `@react-google-maps/api`
+### 3. 🛡️ Absolute Performance & Security Optimization
+- **Zero-Bloat Guarantee:** The codebase has been subjected to rigorous static analysis (via `depcheck`, `eslint`, and manual dependency graph mapping) to maintain a zero-orphan, zero-dead-code repository state.
+- **Optimized Asset Delivery:** Static assets are served over Edge networks via Vercel, utilizing WebP compressions and asynchronous loading attributes `(loading="lazy")` out of the box.
+
+### 4. 🎨 Design System & Micro-Interactions
+- **Glassmorphic & Semantic UI:** Combines `react-bootstrap` grids with vanilla CSS semantic tokens (`var(--surface-color)`).
+- **Theme Propagation:** Context-driven Light/Dark mode toggling propagated instantly across all components down to internal Chart.js canvas renderers and GitHub contribution grids.
 
 ---
 
-## 📂 Project Structure
+## 🌐 Holistic Engineering Stack (Beyond this Repo)
 
-```text
-resume/
-├── public/                 # Static assets
-├── src/
-│   ├── components/
-│   │   ├── common/         # Shared UI components (Header, Footer, etc.)
-│   │   ├── database/       # JSON Data (Blogs, Projects, etc.)
-│   │   ├── dashboard/      # Dashboard widgets
-│   │   └── frontend/       # Feature-specific components
-│   ├── pages/
-│   │   └── frontend/       # Main Page Views (Home, About, etc.)
-│   ├── routes/             # Routing configuration
-│   ├── layouts/            # Page layouts
-│   ├── context/            # Global state context
-│   └── hooks/              # Custom React hooks
-├── package.json
-└── README.md
+While this repository focuses on the React implementation, my daily engineering ecosystem involves deep, full-stack architectures:
+
+- **Backend / APIs:** PHP 8+, `Laravel`, `Node.js` (Express/NestJS)
+- **Databases:** `PostgreSQL`, `MySQL`, `Redis`, `MongoDB`
+- **Cloud Infrastructure:** `AWS` (EC2, S3, RDS, Lambda), `Docker`
+- **DevOps & Automations:** `GitHub Actions`, `GitLab CI/CD`, Linux Server Admin
+
+*(For a deeper dive into the exact file-by-file configuration, see [ARCHITECTURE.md](ARCHITECTURE.md))*
+
+---
+
+## 🛠️ Local Development & Deployment
+
+### Environment Prerequisites
+- Node.js `^18.17.0` (LTS recommended)
+- npm `^9.0.0` or Yarn
+
+### Initialization Sequence
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/ermradulsharma/portfolio.git
+cd portfolio
+
+# 2. Resolve dependencies (frozen lockfile recommended for perfect replication)
+npm ci
+
+# 3. Ignite the development server (Hot Module Replacement enabled)
+npm start
 ```
 
----
+Your localized instance will be served at `http://localhost:3000`.
 
-## 🛠️ Getting Started
-
-### Prerequisites
-
-- **Node.js** (v18.0.0 or higher recommended)
-- **npm** (v9.0.0 or higher)
-
-### Installation
-
-1. **Clone the repository**
-
-   ```bash
-   git clone https://github.com/ermradulsharma/resume.git
-   cd resume
-   ```
-
-2. **Install dependencies**
-
-   ```bash
-   npm install
-   ```
-
-3. **Run the development server**
-   ```bash
-   npm start
-   ```
-   Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-### Building for Production
+### Production Build Pipeline
 
 ```bash
 npm run build
 ```
-
-Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance.
-
-### Testing (End-to-End)
-
-This project uses **Playwright** for robust End-to-End (E2E) testing. To run the tests locally:
-
-1. Install Playwright browsers (first time only):
-   ```bash
-   npx playwright install
-   ```
-
-2. Run the tests in headless mode:
-   ```bash
-   npm run test:e2e
-   ```
-
-3. Run the tests in UI mode (interactive):
-   ```bash
-   npm run test:e2e:ui
-   ```
----
-
-## 🤝 Contributing & License
-
-This project is open-source and available under the **MIT License**.
-Feel free to fork, improved, and submit pull requests.
+The React-Scripts Webpack engine will compile, minify, and chunk the application into the `/build` directory, producing optimized static hashed files ready for instantaneous CDN deployment.
 
 ---
 
-## 👨‍💻 Developed By
+## 🤝 Community & Support
+
+This repository strictly adheres to open-source community standards. I actively welcome technical discussions, peer code reviews, and structural forks.
+
+- **Found a bug?** Review our [Security Policy](SECURITY.md) for critical leaks, or open an issue based on the parameters in [SUPPORT.md](SUPPORT.md).
+- **Want to contribute?** We have specific guidelines! Please read [CONTRIBUTING.md](CONTRIBUTING.md) and our [Code of Conduct](CODE_OF_CONDUCT.md).
+- **Future Plans?** Our trajectory is openly documented in [ROADMAP.md](ROADMAP.md).
+
+---
+
+## 👨‍💻 Primary Architect
 
 ### Mradul Sharma
-
-<img src="public/assets/images/logo.png" alt="Mradul Sharma Logo" width="50" style="vertical-align: middle; margin-right: 10px;" /> _Software Architect • Full-Stack Engineer_
+*Senior Full-Stack Developer • Cloud Architect • Open-Source Advocate*
 
 <p align="left">
-<a href="https://linkedin.com/in/mradulsharma"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-<a href="https://github.com/ermradulsharma"><img src="https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
-<a href="https://www.upwork.com/freelancers/~01e91f0a0ab6d99a4d"><img src="https://img.shields.io/badge/Upwork-6FDA44?style=for-the-badge&logo=Upwork&logoColor=white" alt="Upwork" /></a>
-<a href="https://x.com/er_mradulsharma"><img src="https://img.shields.io/badge/X-%23000.svg?style=for-the-badge&logo=X&logoColor=white" alt="X" /></a>
-<a href="mailto:mradulsharma786@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white" alt="Email" /></a>
+<a href="https://linkedin.com/in/mradulsharma"><img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin" alt="LinkedIn" /></a>
+<a href="https://github.com/ermradulsharma"><img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github" alt="GitHub" /></a>
+<a href="https://www.upwork.com/freelancers/~01e91f0a0ab6d99a4d"><img src="https://img.shields.io/badge/Upwork-Hire_Me-6FDA44?style=for-the-badge&logo=Upwork" alt="Upwork" /></a>
 </p>
 
-[Portfolio](https://mradulsharma.vercel.app/)
+### ⚖️ Licensing
+Distributed under the [MIT License](LICENSE.md). See `LICENSE.md` for more information.

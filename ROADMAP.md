@@ -1,21 +1,22 @@
-# Project Roadmap
+# 🗺️ Engineering Architecture Roadmap
 
-This document outlines the high-level goals and future features planned for Mradul Sharma's Portfolio and open-source packages.
-
-## [Planned for Q3 2026]
-### Features
-- **Dark/Light Theme Toggle:** Full integration of a system-aware or user-toggled theme mechanism across all React components.
-- **Interactive Markdown Blog:** Adding a static blog section to share technical articles and findings.
-- **Enhanced Accessibility (a11y):** Comprehensive audit to ensure ARIA labels and screen-reader compatibility across the site.
-
-## [Planned for Q4 2026]
-### Features
-- **Dynamic Localization (i18n):** Support for multiple languages (English, Hindi).
-- **Package Download Stats:** Fetching and displaying live Packagist/NPM stats for all open-source libraries.
-
-## [Future Considerations]
-- Migration to Next.js for server-side rendering (SSR) to further boost SEO scores.
-- Integration with external CMS (e.g., Sanity or Strapi) for dynamic content updating without code deployments.
+This strategic roadmap outlines the future evolutionary milestones for Mradul Sharma's Portfolio repository. It focuses on elevating the stack from an SPA to a highly federated, Edge-computed Enterprise configuration.
 
 ---
-*Note: This roadmap is a living document and is subject to change based on professional priorities, feedback, and community engagement.*
+
+## 🟢 [Phase 1] Q2 2026: Frontend Hardening (Current)
+- [x] **Depcheck & Dead Code Eradication:** Complete auditing and removal of all monolithic Dashboard routes, optimizing Webpack bundle size.
+- [x] **Headless Package CI:** Node script integration to automatically crawl Laravel `composer.json` files and serialize outputs into SPA JSON states.
+- [ ] **E2E Playwright Integration:** Implementing robust End-to-End assertions testing routing boundaries and Theme injection states across WebKit, Firefox, and Chromium.
+
+## 🟡 [Phase 2] Q3 2026: Next-Gen Capabilities
+- **Web Workers & Canvas Offloading:** Migrate heavy Chart.js rendering and GitHub Contribution calculations off the main UI thread via Web Workers to hit perfect `100` Lighthouse Performance scores.
+- **RSC (React Server Components) Migration:** Incremental adoption of Next.js 15+ App Routing. Transitioning `.json` database hydration from client-side `useEffect` over to pure Server-Side fetches for `0ms` Client-side JS latency.
+- **WASM (WebAssembly) Integration:** Prototype compiling a core PHP/Laravel string parsing algorithm into Rust/WASM, enabling the frontend to execute Skywalker Labs logic directly in the browser at near-native speeds.
+
+## 🔴 [Phase 3] Q4 2026+: Infrastructure Edge
+- **Global Edge Caching:** Distribute JSON payloads via Redis Global Datastores mounted on Vercel Edge Functions, enabling sub-`10ms` dynamic payload resolution anywhere on earth.
+- **Micro-Frontend Orchestration:** Decouple the "Open Source Packages" UI layer into an isolated micro-frontend deployed via Module Federation (Webpack 5), allowing the underlying Laravel backend team to deploy UI changes independently of the main portfolio build.
+
+---
+*Note: Architectural vectors are subject to shift based on the evolution of the React ecosystem and business logic requirements.*
