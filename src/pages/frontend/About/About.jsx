@@ -13,6 +13,7 @@ import Services from "../../../components/frontend/Services/Services";
 import signature from '../../../assets/signature.webp'
 import resume from '../../../assets/resume/mradulsharma.pdf';
 import BrandButton from "../../../components/common/BrandButton";
+// import MultiResumeDownload from "../../../components/frontend/Resume/MultiResumeDownload";
 import { trackEvent } from "../../../utils/analytics/ga";
 import "../About/About.css";
 import "../../../components/frontend/Journey/Journey.css";

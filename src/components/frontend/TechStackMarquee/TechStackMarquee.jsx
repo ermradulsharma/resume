@@ -4,9 +4,10 @@ import data from "../../database/techStack.json";
 import {
     SiHtml5, SiJavascript, SiReact, SiVuedotjs, SiNodedotjs, SiPhp,
     SiLaravel, SiNextdotjs, SiMysql, SiMongodb, SiPostgresql,
-    SiAmazon, SiDocker, SiGithub,
+    SiDocker, SiGithub,
     SiStripe, SiJsonwebtokens
 } from "react-icons/si";
+import { FaAws } from "react-icons/fa";
 import { TbApi } from "react-icons/tb";
 import { VscVscode } from "react-icons/vsc";
 import { Container } from "react-bootstrap";
@@ -24,7 +25,7 @@ const iconMap = {
     "MySQL": SiMysql,
     "MongoDB": SiMongodb,
     "PostgreSQL": SiPostgresql,
-    "AWS (EC2, S3, Lambda, RDS)": SiAmazon,
+    "AWS (EC2, S3, Lambda, RDS)": FaAws,
     "Docker": SiDocker,
     "Git & GitHub": SiGithub,
     "VS Code": VscVscode,

@@ -1,0 +1,14 @@
+export { default as ModernResume } from './ModernResume';
+export { default as ClassicResume } from './ClassicResume';
+export { default as MinimalistResume } from './MinimalistResume';
+export { default as CreativeResume } from './CreativeResume';
+export { default as ProfessionalResume } from './ProfessionalResume';
+export { default as ElegantResume } from './ElegantResume';
+export { default as TechResume } from './TechResume';
+export { default as CompactResume } from './CompactResume';
+export { default as VibrantResume } from './VibrantResume';
+export { default as AnimatedWebResume } from './AnimatedWebResume';
+export { default as TwoColumnResume } from './TwoColumnResume';
+export { default as DarkResume } from './DarkResume';
+export { default as InfographicResume } from './InfographicResume';
+export { default as GeometricResume } from './GeometricResume';

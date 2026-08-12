@@ -15,6 +15,7 @@ const NotFound = React.lazy(() => import("../pages/frontend/NotFound/NotFound"))
 const PrivacyPolicy = React.lazy(() => import("../pages/frontend/PrivacyPolicy/PrivacyPolicy"));
 const TermsOfService = React.lazy(() => import("../pages/frontend/TermsOfService/TermsOfService"));
 const ContactPage = React.lazy(() => import("../pages/frontend/Contact/ContactPage"));
+const Resume = React.lazy(() => import("../components/frontend/Resume/ResumeViewer"));
 
 const LoadingFallback = () => (
     <div className="d-flex justify-content-center align-items-center" style={{ height: "100vh" }}>
@@ -28,6 +29,7 @@ const WebRoutes = () => {
     return (
         <Suspense fallback={<LoadingFallback />}>
             <Routes>
+                <Route path="/resume" element={<Resume />} />
                 <Route path="/" element={<PublicLayout />}>
                     <Route index element={<Home />} />
                     <Route path="portfolio" element={<Portfolio />} />

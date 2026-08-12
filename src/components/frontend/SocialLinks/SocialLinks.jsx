@@ -41,7 +41,7 @@ import {
     SiGeeksforgeeks,
     SiSubstack,
     SiDailymotion,
-    SiCanva
+    SiCanvas
 } from "react-icons/si";
 import data from "../../database/socialMedia.json";
 import { trackEvent } from "../../../utils/analytics/ga";
@@ -84,7 +84,7 @@ const iconMap = {
     FaBehance: FaBehance,
     FaDribbble: FaDribbble,
     FaDeviantart: FaDeviantart,
-    SiCanva: SiCanva
+    SiCanvas: SiCanvas
 };
 
 const SocialLinks = ({ withNames = false, platforms }) => {

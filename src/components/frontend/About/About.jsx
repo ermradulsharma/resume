@@ -6,19 +6,19 @@ import signature from '../../../assets/signature.webp';
 import { FaCodepen, FaPalette } from 'react-icons/fa';
 import { BsCloudCheck } from 'react-icons/bs';
 import data from "../../../components/database/about.json";
-import resume from '../../../assets/resume/mradulsharma.pdf';
-import { trackEvent } from "../../../utils/analytics/ga";
+// import MultiResumeDownload from '../Resume/MultiResumeDownload';
+// import { trackEvent } from "../../../utils/analytics/ga";
 import SectionHeader from "../../../components/common/SectionHeader";
-import BrandButton from '../../common/BrandButton';
+// import BrandButton from '../../common/BrandButton';
 import GitHub from "../ContributionCalendar/GitHub";
 import PublicCalendar from "../Calendar/Calendar";
 
 const About = () => {
     const { expandedAbout5 } = data.about;
 
-    const handleDownloadResume = () => {
-        trackEvent({ name: "download_resume", category: "Engagement", label: "PDF Download" });
-    };
+    // const handleDownloadResume = () => {
+    //     trackEvent({ name: "download_resume", category: "Engagement", label: "PDF Download" });
+    // };
 
     return (
         <Container className="about section" id="about" data-aos="fade-up" data-aos-delay="100">
@@ -32,7 +32,7 @@ const About = () => {
                         <div className="signature-section">
                             <img src={signature} alt="Signature" className="signature" loading="lazy" width="200" height="100" />
                             <p className="quote text-secondary">Building meaningful digital experiences through creative code.</p>
-                            <BrandButton className='mt-4' href={resume} download aria-label="Download Mradul Sharma Resume in PDF" onClick={handleDownloadResume}>⚡Resume PDF Download ⚡</BrandButton>
+                            {/* <MultiResumeDownload /> */}
                         </div>
                     </div>
                 </Col>
