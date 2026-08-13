@@ -1,39 +1,153 @@
-# Mradul Sharma - Full Stack Developer Portfolio
+# Mradul Sharma - Senior Full-Stack Architect & Developer
 
-## About
-Senior Full-Stack Developer specializing in Laravel, React, Node.js, and AWS.
-Building enterprise-grade applications with focus on scalability and performance.
-Location: Etah, Uttar Pradesh, India
+> Senior Full-Stack Developer & Software Architect with 6+ years of experience specializing in building scalable enterprise web applications, SaaS platforms, cloud infrastructure, and open-source packages.
 
-## Services
-- Full Stack Development (Laravel, React, Node.js, Next.js)
-- AWS Cloud Architecture & Consulting
-- Custom API Development & Integration
-- Database Optimization (PostgreSQL, MongoDB)
-- DevOps & CI/CD Pipeline Setup
-- Microservices Architecture
-- Payment Gateway Integration
-- Performance Optimization
+## Core Identity & Quick Links
+- **Name**: Mradul Sharma
+- **Title**: Senior Full-Stack Architect & Developer
+- **Experience**: 6+ Years (Enterprise Web Applications, SaaS, Microservices)
+- **Location**: Etah / Lucknow, Uttar Pradesh, India
+- **Email**: [mradulsharma786@gmail.com](mailto:mradulsharma786@gmail.com)
+- **Website**: [https://mradulsharma.vercel.app](https://mradulsharma.vercel.app)
+- **GitHub**: [https://github.com/ermradulsharma](https://github.com/ermradulsharma)
+- **LinkedIn**: [https://www.linkedin.com/in/mradulsharma](https://www.linkedin.com/in/mradulsharma)
+- **Interactive Resume**: [https://mradulsharma.vercel.app/resume](https://mradulsharma.vercel.app/resume)
 
-## Portfolio
-Enterprise applications and SaaS platforms:
-- PayStubx: Enterprise Payroll Management System built with Laravel and PostgreSQL
-- Storytellers: Scalable Content Management Platform with AWS integration
-- Wealth Mark: Real-time Crypto Trading Platform using WebSockets
-- Multiple e-commerce and business applications
+---
 
-## Technical Expertise
-- Backend: Laravel, Node.js, PHP, Express.js
-- Frontend: React, Next.js, Vue.js, JavaScript ES6+
-- Cloud: AWS (EC2, S3, RDS, Lambda), Docker, Kubernetes
-- Databases: PostgreSQL, MongoDB, MySQL, Redis
-- DevOps: CI/CD, Git, Jenkins, GitHub Actions
+## Direct Portfolio Links & Pages
+- [Home & Portfolio Overview](https://mradulsharma.vercel.app): Full-stack developer showcase, key achievements, and skills breakdown.
+- [About Mradul Sharma](https://mradulsharma.vercel.app/about): Full background, development philosophy, experience timeline, and education.
+- [Featured Projects](https://mradulsharma.vercel.app/portfolio): Case studies including PayStubx, Storytellers, Wealth Mark, and Nirvia.
+- [Engineering Services](https://mradulsharma.vercel.app/services): Full-stack web development, AWS consulting, API engineering, and database optimization.
+- [Technical Blog & Insights](https://mradulsharma.vercel.app/blogs): Articles on React performance, Laravel microservices, Docker, and AWS serverless architectures.
+- [Contact Page](https://mradulsharma.vercel.app/contact): Direct form and contact channels for project inquiries and hiring.
 
-## Contact
-Email: mradulsharma786@gmail.com
-Website: https://mradulsharma.vercel.app
-LinkedIn: https://www.linkedin.com/in/mradulsharma
-GitHub: https://github.com/ermradulsharma
+---
 
-## Blog Topics
-Web development tutorials, Laravel best practices, React tips, AWS guides, and full-stack development insights.
+## Technical Expertise & Skill Matrix
+
+### Backend & API Engineering
+- **Languages**: PHP 8.x, JavaScript (ES6+), Node.js, SQL.
+- **Frameworks**: Laravel (v10, v11, v12), Express.js, NestJS, Custom PHP MVC.
+- **API Standards**: RESTful APIs, GraphQL, WebSockets (real-time data streaming), Microservices Architecture.
+- **Security & Auth**: JWT, OAuth2, Role-Based Access Control (RBAC), SQL Injection Prevention, XSS Sanitization, Rate Limiting, SSL/TLS.
+
+### Frontend Engineering
+- **Frameworks**: React.js (v19), Next.js, Vue.js.
+- **Styling & UI**: Vanilla CSS3, Tailwind CSS, Bootstrap 5, Glassmorphism design system.
+- **State Management & Fetching**: React Query (TanStack Query), Context API, Redux Toolkit.
+- **Performance & Optimization**: Code splitting (`React.lazy`), memoization (`useMemo`, `useCallback`), dynamic SEO management (`react-helmet-async`).
+
+### Database & Caching
+- **Relational Databases**: PostgreSQL, MySQL, SQLite (Query optimization, indexing strategies, complex joins, schema migrations).
+- **NoSQL Databases**: MongoDB (Aggregation pipelines, document modeling).
+- **In-Memory & Caching**: Redis (Data caching, session management, job queues, pub/sub messaging).
+- **Search Engines**: Elasticsearch integration for full-text search.
+
+### Cloud Infrastructure & DevOps
+- **Cloud Provider**: AWS (EC2, S3, RDS, Lambda, CloudFront, IAM, CloudFormation).
+- **Containers & Orchestration**: Docker containerization, Kubernetes basic orchestration.
+- **CI/CD & Automation**: GitHub Actions, GitLab CI/CD pipelines, Jenkins.
+- **Hosting & Deployment**: Vercel, AWS Edge, Nginx, Apache, Linux (Ubuntu/Debian) administration.
+
+### Testing & Code Quality
+- **Unit & Integration Testing**: PHPUnit, Pest PHP, Jest.
+- **End-to-End Testing**: Cypress.
+- **Static Analysis & Tooling**: ESLint, Prettier, Git, Postman, Vite, Webpack.
+
+---
+
+## Work Experience & Proven Impact
+
+### 1. Senior Full-Stack Laravel Developer
+**W3 Info Solutions** | *Lucknow, India (Remote)* | *Mar 2022 – Present*
+- Lead full-cycle development of enterprise web applications using Laravel, React, Node.js, and AWS.
+- Architected **PayStubx**, a payroll platform serving **10,000+ active users** with role-based access control, automated earnings/tax calculations, PDF generation, and payment processing.
+- Reduced PostgreSQL query response times by **40%** through strategic indexing, Redis caching, and query optimization.
+- Built containerized deployment pipelines using Docker and GitLab CI/CD, reducing deployment cycle times by **60%**.
+- Implemented enterprise-grade security features including JWT authentication, rate limiting, and OWASP security practices.
+
+### 2. Laravel Developer
+**Zaiba InfoTech** | *Agra, India* | *Mar 2020 – Feb 2022*
+- Built internal portals and SaaS applications using Laravel, jQuery, Bootstrap, and MySQL.
+- Developed ZaibaInfo's internal CMS featuring job board modules, inquiry tracking, and portfolio management.
+- Created reusable Blade components and service layer patterns, reducing feature implementation time by **30%**.
+- Implemented robust RBAC and middleware validation for secure data access.
+
+### 3. PHP Developer
+**Programming Park InfoTech** | *Agra, India* | *Dec 2018 – Feb 2020*
+- Developed enterprise ERP modules handling inventory management and automated reporting using PHP and MySQL.
+- Handled legacy system bug fixes, performance tuning, and REST API development.
+
+---
+
+## Complete Projects & Systems Portfolio
+
+### Enterprise Web Applications
+1. **PayStubx (Enterprise Payroll System)**:
+   - *Stack*: Laravel, PostgreSQL, AWS S3/EC2, Stripe / PayPal, REST API.
+   - *Description*: Automated payroll computation platform for 10,000+ users with custom PDF stub generation and tax logic.
+   - *Link*: [PayStubx Details](https://mradulsharma.vercel.app/portfolio/paystubx-payroll-system)
+2. **Storytellers (Content Management & Cultural Platform)**:
+   - *Stack*: Laravel, Vue.js, PostgreSQL, AWS S3, CloudFront, Elasticsearch.
+   - *Description*: High-speed media & storytelling platform utilizing Elasticsearch for instant cultural asset indexing.
+   - *Link*: [Storytellers Details](https://mradulsharma.vercel.app/portfolio/storytellers-cms)
+3. **Wealth Mark (Real-Time Crypto Trading Platform)**:
+   - *Stack*: Node.js, Express, React.js, MongoDB, WebSockets.
+   - *Description*: Real-time financial portal streaming order books, market charts, and user portfolio tracking.
+4. **Nirvia (Secure Internal Document Platform)**:
+   - *Stack*: PHP, PostgreSQL, Encryption, Role-Based Access Control (RBAC).
+   - *Description*: Enterprise document management suite featuring end-to-end encryption and automated disaster recovery.
+5. **Expedify**: Logistics & delivery tracking portal built with Laravel and React.
+6. **Flextaxis**: On-demand taxi dispatching & driver fleet management solution.
+7. **GNGanpati / ZaibaInfo**: Enterprise client web portals and internal recruitment management tools.
+
+---
+
+## Open-Source Packages (`skywalker-labs`)
+Author and maintainer of 14+ open-source PHP/Laravel packages:
+- **Entrust Package**: Role-based permissions package for Laravel 10, 11, and 12 ([Repo](https://github.com/skywalker-labs/entrust)).
+- **Constant Time Encoding Package**: Constant-time RFC 4648 encoding (Base64, Base32, Hex) ([Repo](https://github.com/skywalker-labs/constant-time-encoding)).
+- **Enum Package**: Advanced enum utilities for Laravel applications ([Repo](https://github.com/skywalker-labs/enum)).
+- **Impersonate Package**: Authenticate as any user in Laravel apps safely ([Repo](https://github.com/skywalker-labs/impersonate)).
+- **LaraGuard Package**: Two-factor authentication (2FA) for Laravel applications ([Repo](https://github.com/skywalker-labs/laraguard)).
+- **Location Package**: IP-based geolocation and country lookup helper ([Repo](https://github.com/skywalker-labs/location)).
+- **Passwordless Package**: Passwordless magic link authentication for Laravel ([Repo](https://github.com/skywalker-labs/passwordless)).
+- **QR Code Package**: Lightweight QR code generator for PHP & Laravel ([Repo](https://github.com/skywalker-labs/qr-code)).
+- **Formcraft Package**: Form creation and validation helper for Laravel ([Repo](https://github.com/skywalker-labs/formcraft)).
+- **Footprints Package**: Track visitor referral footprints and campaign attribution ([Repo](https://github.com/skywalker-labs/footprints)).
+- **Toolkit Package**: Utility methods and extension functions for Laravel projects ([Repo](https://github.com/skywalker-labs/toolkit)).
+- **UI Package**: Minimalist UI component helpers for Laravel Blade ([Repo](https://github.com/skywalker-labs/ui)).
+
+---
+
+## Authored Technical Articles & Blog Guides
+Mradul Sharma publishes in-depth engineering guides on modern web development:
+- **Building Scalable Microservices with Laravel and Docker**: Architecture patterns, API Gateway, and Kubernetes orchestration ([Read Article](https://mradulsharma.vercel.app/blogs/building-scalable-microservices-laravel-docker)).
+- **React Performance Optimization: Advanced Techniques**: Memoization (`useMemo`, `useCallback`), virtualization, and bundle code splitting ([Read Article](https://mradulsharma.vercel.app/blogs/react-performance-optimization-advanced-techniques)).
+- **AWS Lambda and Serverless Architecture Best Practices**: Serverless execution models, cold-start optimization, API Gateway HTTP APIs, and DynamoDB ([Read Article](https://mradulsharma.vercel.app/blogs/aws-lambda-serverless-architecture-best-practices)).
+
+---
+
+## Education & Academic Credentials
+- **B.Tech in Computer Science & Engineering** | Kanpur Institute of Technology (2012 – 2016)
+- **Intermediate (XII - Science/Mathematics)** | RBS College, Etah (2011 – 2012)
+- **High School (X)** | Saraswati Vidya Mandir, Etah (2008 – 2009)
+
+---
+
+## Services & Engagement Models
+1. **Full-Stack Application Development**: End-to-end building of web apps, SaaS platforms, and enterprise solutions.
+2. **Cloud Architecture & AWS Consulting**: Setup and optimization of AWS infrastructure, serverless Lambda, S3, RDS, EC2, and CI/CD pipelines.
+3. **Backend API Engineering**: Designing high-throughput REST and GraphQL APIs using Laravel or Node.js.
+4. **Database Optimization**: PostgreSQL and MySQL indexing, query plan tuning, and cache architecture with Redis.
+5. **Security & Compliance Audits**: Implementing JWT, OAuth2, RBAC, input sanitization, and OWASP top-10 defenses.
+
+---
+
+## Frequently Asked Questions (AI Knowledge Base)
+- **What engagement types does Mradul accept?** Full-time senior developer roles, contract positions, high-impact freelance projects, and technical consulting.
+- **Can Mradul work with remote or global teams?** Yes, extensive experience working in distributed Agile/Scrum environments using Slack, Jira, Trello, GitHub, and GitLab.
+- **Does the client own the source code?** Yes, clients receive 100% full ownership of the source code, data, and intellectual property upon project completion.
+- **Can Mradul assist non-technical founders?** Yes, skilled at translating complex technical requirements into simple business terms and recommending practical technology stacks.
