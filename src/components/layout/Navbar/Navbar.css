@@ -1,0 +1,182 @@
+/* ── Navbar — Custom Styles ── */
+.main-navbar {
+    min-height: 76px;
+    padding: 0;
+    z-index: var(--z-nav);
+    background: color-mix(in srgb, var(--surface-color), transparent 4%);
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: var(--shadow-xs);
+    backdrop-filter: blur(14px);
+    transition: background-color var(--transition-base), border-color var(--transition-base);
+}
+
+.navbar-container {
+    min-height: 76px;
+}
+
+.navbar-brand-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-logo {
+    display: block;
+    width: clamp(180px, 20vw, 250px);
+    height: auto;
+    max-height: 75px;
+    object-fit: contain;
+}
+
+.navbar-links {
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.navbar-page-link {
+    position: relative;
+    padding: 0.75rem 0.65rem !important;
+    color: var(--text-primary) !important;
+    transition: color var(--transition-fast);
+}
+
+.navbar-page-link::after {
+    position: absolute;
+    right: 0.65rem;
+    bottom: 0.45rem;
+    left: 0.65rem;
+    height: 2px;
+    content: '';
+    background: var(--primary-color);
+    border-radius: var(--border-radius-pill);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform var(--transition-base);
+}
+
+.navbar-page-link:hover,
+.navbar-page-link:focus-visible,
+.navbar-page-link.active {
+    color: var(--primary-color) !important;
+}
+
+.navbar-page-link:hover::after,
+.navbar-page-link:focus-visible::after,
+.navbar-page-link.active::after {
+    transform: scaleX(1);
+}
+
+.navbar-page-link:focus-visible,
+.hire-me-btn:focus-visible,
+.main-navbar .navbar-toggler:focus-visible {
+    outline: 3px solid color-mix(in srgb, var(--primary-color), transparent 60%);
+    outline-offset: 3px;
+    box-shadow: none;
+}
+
+.navbar-cta-item {
+    display: flex;
+    align-items: center;
+    margin-left: 0.5rem;
+}
+
+/* Hire Me pulsing green button */
+@keyframes hireGlow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.55);
+    }
+
+    50% {
+        box-shadow: 0 0 0 7px rgba(34, 197, 94, 0);
+    }
+}
+
+.hire-me-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 7px 18px;
+    border-radius: 50px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    background: linear-gradient(135deg, #16a34a, #22c55e);
+    color: #fff !important;
+    border: none;
+    text-decoration: none !important;
+    animation: hireGlow 1.8s ease-in-out infinite;
+    transition: transform 0.2s ease, filter 0.2s ease;
+    white-space: nowrap;
+}
+
+.hire-me-btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+.hire-me-btn[aria-current="page"] {
+    box-shadow: 0 0 0 3px color-mix(in srgb, #22c55e, transparent 65%);
+}
+
+.hire-me-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+    display: inline-block;
+    flex-shrink: 0;
+    animation: hireGlow 1.2s ease-in-out infinite;
+}
+
+@media (max-width: 991.98px) {
+    .main-navbar .navbar-collapse {
+        padding: 0.75rem 0 1rem;
+        border-top: 1px solid var(--border-color);
+    }
+
+    .navbar-links {
+        align-items: stretch;
+        gap: 0.15rem;
+    }
+
+    .navbar-page-link {
+        padding: 0.7rem 0.5rem !important;
+        border-radius: var(--border-radius-sm);
+    }
+
+    .navbar-page-link::after {
+        display: none;
+    }
+
+    .navbar-page-link:hover,
+    .navbar-page-link:focus-visible,
+    .navbar-page-link.active {
+        padding-left: 0.8rem !important;
+        background: var(--primary-subtle);
+    }
+
+    .navbar-cta-item {
+        margin: 0.75rem 0 0;
+    }
+
+    .hire-me-btn {
+        justify-content: center;
+        width: 100%;
+        padding: 0.75rem 1.25rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .hire-me-btn,
+    .hire-me-dot {
+        animation: none;
+    }
+}

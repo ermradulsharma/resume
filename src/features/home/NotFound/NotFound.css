@@ -1,0 +1,138 @@
+.not-found-section {
+    /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+    min-height: calc(100vh - 72px - 54px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.not-found-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.not-found-content {
+    position: relative;
+    z-index: 1;
+    color: var(--white);
+}
+
+.error-code {
+    position: relative;
+    display: inline-block;
+}
+
+.error-code h1 {
+    font-size: 10rem;
+    font-weight: 900;
+    background: linear-gradient(135deg, var(--surface-color) 0%, rgba(255, 255, 255, 0.7) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+    line-height: 1;
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.error-line {
+    height: 4px;
+    background: linear-gradient(90deg, transparent 0%, var(--white) 50%, transparent 100%);
+    margin-top: 1rem;
+    border-radius: 2px;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 0.5;
+        transform: scaleX(0.8);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+
+.error-message h2 {
+    color: var(--white);
+    font-weight: 600;
+}
+
+.error-message p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+}
+
+.quick-links p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+}
+
+.error-illustration svg {
+    color: rgba(255, 255, 255, 0.3);
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .error-code h1 {
+        font-size: 6rem;
+    }
+
+    .error-message h2 {
+        font-size: 1.5rem;
+    }
+
+    .error-message p {
+        font-size: 1rem;
+    }
+
+    .quick-links .d-flex {
+        flex-direction: column;
+    }
+
+    .error-illustration svg {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    .error-code h1 {
+        font-size: 4rem;
+    }
+
+    .error-illustration svg {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .not-found-section {
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    }
+}

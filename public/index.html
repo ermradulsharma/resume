@@ -19,6 +19,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png" />
+    <link rel="alternate" type="text/plain" href="%PUBLIC_URL%/llms.txt" title="LLM Context Data" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
@@ -63,39 +64,70 @@
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
-            "@type": "Person",
-            "name": "Mradul Sharma",
-            "url": "https://mradulsharma.vercel.app/",
-            "image": "https://mradulsharma.vercel.app/preview.png",
-            "sameAs": [
-                "https://www.linkedin.com/in/mradulsharma",
-                "https://github.com/ermradulsharma"
-            ],
-            "jobTitle": "Senior Full Stack Developer",
-            "description": "Senior Full-Stack Developer with expertise in Laravel 12, React, Node.js, AWS, PostgreSQL, MongoDB, Docker, Kubernetes, and CI/CD pipelines.",
-            "knowsAbout": ["Laravel 12", "React.js", "Node.js", "AWS", "Docker", "Kubernetes", "PostgreSQL", "MongoDB", "REST APIs", "GraphQL", "CI/CD Pipelines", "Microservices", "Next.js", "Inertia.js", "Tailwind CSS", "JavaScript ES6"],
-            "email": "mailto:mradulsharma@gmail.com",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Etah",
-                "addressRegion": "Uttar Pradesh",
-                "addressCountry": "India"
-            },
-            "hasOccupation": {
-                "@type": "Occupation",
-                "name": "Software Developer",
-                "skills": "Laravel, React, Node.js, AWS, Docker, PostgreSQL, MongoDB, Microservices, CI/CD"
-            },
-            "worksFor": {
-                "@type": "Organization",
-                "name": "W3 Info Solutions",
-                "address": {
-                    "@type": "PostalAddress",
-                    "addressLocality": "Lucknow",
-                    "addressRegion": "Uttar Pradesh",
-                    "addressCountry": "India"
+            "@graph": [
+                {
+                    "@type": "Person",
+                    "@id": "https://mradulsharma.vercel.app/#person",
+                    "name": "Mradul Sharma",
+                    "url": "https://mradulsharma.vercel.app/",
+                    "image": "https://mradulsharma.vercel.app/preview.png",
+                    "sameAs": [
+                        "https://www.linkedin.com/in/mradulsharma",
+                        "https://github.com/ermradulsharma"
+                    ],
+                    "jobTitle": "Senior Full Stack Developer",
+                    "description": "Senior Full-Stack Developer with expertise in Laravel 12, React 19, Node.js, AWS, PostgreSQL, MongoDB, Docker, Kubernetes, and CI/CD pipelines.",
+                    "knowsAbout": ["Laravel 12", "React.js", "Node.js", "AWS", "Docker", "Kubernetes", "PostgreSQL", "MongoDB", "REST APIs", "GraphQL", "CI/CD Pipelines", "Microservices", "Next.js", "Inertia.js", "Tailwind CSS", "JavaScript ES6"],
+                    "email": "mailto:mradulsharma786@gmail.com",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "Etah",
+                        "addressRegion": "Uttar Pradesh",
+                        "addressCountry": "India"
+                    },
+                    "hasOccupation": {
+                        "@type": "Occupation",
+                        "name": "Software Developer",
+                        "skills": "Laravel, React, Node.js, AWS, Docker, PostgreSQL, MongoDB, Microservices, CI/CD"
+                    },
+                    "worksFor": {
+                        "@type": "Organization",
+                        "name": "W3 Info Solutions",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "addressLocality": "Lucknow",
+                            "addressRegion": "Uttar Pradesh",
+                            "addressCountry": "India"
+                        }
+                    }
+                },
+                {
+                    "@type": "WebSite",
+                    "@id": "https://mradulsharma.vercel.app/#website",
+                    "url": "https://mradulsharma.vercel.app/",
+                    "name": "Mradul Sharma Portfolio",
+                    "description": "Senior Full-Stack Developer & Software Architect Portfolio featuring enterprise applications, SaaS platforms, and open-source packages.",
+                    "publisher": {
+                        "@id": "https://mradulsharma.vercel.app/#person"
+                    },
+                    "inLanguage": "en-US"
+                },
+                {
+                    "@type": "ProfilePage",
+                    "@id": "https://mradulsharma.vercel.app/#profilepage",
+                    "url": "https://mradulsharma.vercel.app/",
+                    "name": "Mradul Sharma - Senior Full Stack Developer",
+                    "isPartOf": {
+                        "@id": "https://mradulsharma.vercel.app/#website"
+                    },
+                    "about": {
+                        "@id": "https://mradulsharma.vercel.app/#person"
+                    },
+                    "mainEntity": {
+                        "@id": "https://mradulsharma.vercel.app/#person"
+                    }
                 }
-            }
+            ]
         }
     </script>
 

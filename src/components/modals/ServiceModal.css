@@ -39,7 +39,7 @@
 }
 
 .service-modal .modal-body::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(135deg, #764ba2, #667eea);
+    background: var(--accent-gradient-reverse);
 }
 
 /* Service Details Content */
@@ -49,14 +49,14 @@
     color: var(--text-primary);
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid #667eea;
+    border-bottom: 3px solid var(--accent-indigo);
     display: inline-block;
 }
 
 .service-details h6 {
     font-size: 1.2rem;
     font-weight: 600;
-    color: #667eea;
+    color: var(--accent-indigo);
 }
 
 .service-details ul {
@@ -80,9 +80,9 @@
     top: 0;
     width: 24px;
     height: 24px;
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    color: white;
-    border-radius: 50%;
+    background: var(--accent-gradient);
+    color: var(--white);
+    border-radius: var(--border-radius-pill);
     display: flex;
     align-items: center;
     justify-content: center;

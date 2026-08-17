@@ -1,0 +1,712 @@
+/* =====================================================
+   ResumeViewer — Premium Design
+   ===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+.resume-viewer-page {
+    min-height: 100dvh;
+    background: var(--background-color);
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ── Animated Background Blobs ───────────────────── */
+.resume-bg-blob {
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(100px);
+    pointer-events: none;
+    z-index: 0;
+    animation: blobFloat 10s ease-in-out infinite;
+}
+
+.resume-bg-blob-1 {
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.18), transparent 70%);
+    top: -120px;
+    left: -120px;
+    animation-delay: 0s;
+}
+
+.resume-bg-blob-2 {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(16, 185, 129, 0.12), transparent 70%);
+    bottom: 100px;
+    right: -80px;
+    animation-delay: 4s;
+}
+
+@keyframes blobFloat {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33%       { transform: translate(30px, -20px) scale(1.05); }
+    66%       { transform: translate(-20px, 30px) scale(0.97); }
+}
+
+/* ── Inner Content Wrapper ───────────────────────── */
+.resume-viewer-inner {
+    position: relative;
+    z-index: 1;
+    padding: 100px 0 60px;
+}
+
+/* ── Hero Section ────────────────────────────────── */
+.resume-hero {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.resume-hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 18px;
+    border-radius: 50px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(16, 185, 129, 0.1));
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    color: #6366f1;
+    margin-bottom: 1.25rem;
+}
+
+.resume-hero h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, var(--heading-color) 30%, #6366f1 70%, #10b981);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.resume-hero p {
+    font-size: 1.05rem;
+    color: var(--default-color);
+    opacity: 0.6;
+    max-width: 520px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* ── Step Labels ─────────────────────────────────── */
+.resume-step-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--default-color);
+    opacity: 0.7;
+}
+
+.resume-step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6366f1, #10b981);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 800;
+    flex-shrink: 0;
+}
+
+/* ── Role Selector Grid ──────────────────────────── */
+.resume-role-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+
+.resume-role-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 18px 22px;
+    border-radius: 20px;
+    background: var(--surface-color);
+    border: 1.5px solid var(--border-color);
+    cursor: pointer;
+    min-width: 120px;
+    text-align: center;
+    transition: transform 0.25s cubic-bezier(.34,1.56,.64,1),
+                box-shadow 0.25s ease,
+                border-color 0.2s ease,
+                background 0.2s ease;
+    overflow: hidden;
+    outline: none;
+}
+
+.resume-role-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.12), rgba(16, 185, 129, 0.08));
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    border-radius: inherit;
+}
+
+.resume-role-card:hover {
+    transform: translateY(-5px) scale(1.03);
+    border-color: rgba(99, 102, 241, 0.5);
+    box-shadow: 0 12px 32px rgba(99, 102, 241, 0.18);
+}
+
+.resume-role-card:hover::before {
+    opacity: 1;
+}
+
+.resume-role-card.active {
+    background: linear-gradient(135deg, #6366f1, #10b981);
+    border-color: transparent;
+    box-shadow: 0 14px 40px rgba(99, 102, 241, 0.4);
+    transform: translateY(-6px) scale(1.04);
+    color: #fff;
+}
+
+.resume-role-card.active::before {
+    display: none;
+}
+
+.resume-role-card .role-icon {
+    font-size: 1.8rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    transition: transform 0.25s ease, color 0.2s ease;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+.resume-role-card:hover .role-icon,
+.resume-role-card.active .role-icon {
+    transform: scale(1.18);
+    color: #ffffff !important;
+}
+
+.resume-role-card .role-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    line-height: 1.3;
+    position: relative;
+    z-index: 1;
+}
+
+/* ── Layout Style Picker Grid ────────────────────── */
+.resume-layout-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin-bottom: 2.5rem;
+}
+
+.resume-layout-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 18px 20px;
+    border-radius: 20px;
+    background: var(--surface-color);
+    border: 1.5px solid var(--border-color);
+    cursor: pointer;
+    text-align: left;
+    transition: transform 0.25s cubic-bezier(.34,1.56,.64,1),
+                box-shadow 0.25s ease,
+                border-color 0.2s ease;
+    outline: none;
+    overflow: hidden;
+}
+
+.resume-layout-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(99,102,241,0.08), rgba(16,185,129,0.05));
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    border-radius: inherit;
+}
+
+.resume-layout-card:hover {
+    transform: translateY(-4px) scale(1.02);
+    border-color: rgba(99,102,241,0.4);
+    box-shadow: 0 12px 28px rgba(99,102,241,0.14);
+}
+
+.resume-layout-card:hover::before { opacity: 1; }
+
+.resume-layout-card.active {
+    border-color: var(--active-color, #6366f1);
+    box-shadow: 0 12px 32px color-mix(in srgb, var(--active-color, #6366f1) 30%, transparent);
+    transform: translateY(-4px) scale(1.02);
+    background: color-mix(in srgb, var(--active-color, #6366f1) 7%, var(--surface-color));
+}
+
+.layout-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+.layout-emoji {
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.layout-icon {
+    font-size: 1.2rem;
+    transition: color 0.2s ease;
+}
+
+.layout-label {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--heading-color);
+    position: relative;
+    z-index: 1;
+}
+
+.layout-desc {
+    font-size: 0.72rem;
+    color: var(--default-color);
+    opacity: 0.6;
+    position: relative;
+    z-index: 1;
+    line-height: 1.3;
+}
+
+.layout-tag {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 3px 10px;
+    border-radius: 50px;
+    border: 1px solid var(--border-color);
+    background: var(--surface-color);
+    color: var(--default-color);
+    margin-top: 4px;
+    position: relative;
+    z-index: 1;
+    transition: all 0.2s ease;
+}
+
+/* ── Selected Role Info Bar ──────────────────────── */
+.resume-selected-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 24px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, rgba(99,102,241,0.1), rgba(16,185,129,0.07));
+    border: 1px solid rgba(99,102,241,0.2);
+    margin: 0 auto 2rem;
+    max-width: fit-content;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--heading-color);
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(-8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.resume-selected-bar .selected-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6366f1, #10b981);
+    animation: pulse 1.8s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(99,102,241,0.4); }
+    50%       { box-shadow: 0 0 0 6px rgba(99,102,241,0); }
+}
+
+/* ── Action Buttons Row ──────────────────────────── */
+.resume-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+
+.resume-btn-view {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 28px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.92rem;
+    cursor: pointer;
+    border: 1.5px solid #6366f1;
+    background: rgba(99, 102, 241, 0.08);
+    color: #6366f1;
+    transition: all 0.2s ease;
+}
+
+.resume-btn-view:hover:not(:disabled) {
+    background: #6366f1;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(99, 102, 241, 0.35);
+}
+
+.resume-btn-view:disabled {
+    opacity: 0.7;
+    cursor: wait;
+}
+
+.resume-btn-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 30px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.92rem;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(135deg, #6366f1, #10b981);
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 8px 24px rgba(99, 102, 241, 0.35);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.resume-btn-download::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #818cf8, #34d399);
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    border-radius: inherit;
+}
+
+.resume-btn-download:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 36px rgba(99, 102, 241, 0.45);
+    color: #fff;
+    text-decoration: none;
+}
+
+.resume-btn-download:hover::after {
+    opacity: 1;
+}
+
+.resume-btn-download span {
+    position: relative;
+    z-index: 1;
+}
+
+.resume-btn-share {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 28px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.92rem;
+    cursor: pointer;
+    background: var(--surface-color);
+    color: var(--default-color);
+    border: 1.5px solid var(--border-color);
+    transition: all 0.2s ease;
+}
+
+.resume-btn-share:hover {
+    border-color: #6366f1;
+    color: #6366f1;
+    background: rgba(99, 102, 241, 0.06);
+    transform: translateY(-2px);
+}
+
+.resume-btn-print {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 26px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.92rem;
+    cursor: pointer;
+    background: var(--surface-color);
+    color: var(--default-color);
+    border: 1.5px solid var(--border-color);
+    transition: all 0.2s ease;
+}
+
+.resume-btn-print:hover {
+    border-color: #10b981;
+    color: #10b981;
+    background: rgba(16, 185, 129, 0.06);
+    transform: translateY(-2px);
+}
+
+.resume-btn-qr {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.92rem;
+    cursor: pointer;
+    background: var(--surface-color);
+    color: var(--default-color);
+    border: 1.5px solid var(--border-color);
+    transition: all 0.2s ease;
+}
+
+.resume-btn-qr:hover {
+    border-color: #8b5cf6;
+    color: #8b5cf6;
+    background: rgba(139, 92, 246, 0.06);
+    transform: translateY(-2px);
+}
+
+.resume-btn-email {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.92rem;
+    cursor: pointer;
+    background: var(--surface-color);
+    color: var(--default-color);
+    border: 1.5px solid var(--border-color);
+    transition: all 0.2s ease;
+}
+
+.resume-btn-email:hover {
+    border-color: #ec4899;
+    color: #ec4899;
+    background: rgba(236, 72, 153, 0.06);
+    transform: translateY(-2px);
+}
+
+/* ── ATS Badge ───────────────────────────────────── */
+.ats-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 0.82rem;
+    color: var(--default-color);
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+/* ── CTC / Rate Strip ────────────────────────────── */
+.resume-ctc-strip {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: var(--surface-color);
+    border: 1.5px solid rgba(34, 197, 94, 0.35);
+    box-shadow: 0 4px 20px rgba(34, 197, 94, 0.1);
+    font-size: 0.8rem;
+    justify-content: center;
+}
+
+.ctc-strip-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 0 14px;
+}
+
+.ctc-strip-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    animation: ctcPulse 1.6s ease-in-out infinite;
+}
+
+@keyframes ctcPulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(34,197,94,0.5); }
+    50%       { box-shadow: 0 0 0 5px rgba(34,197,94,0); }
+}
+
+.ctc-strip-label {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--default-color);
+    opacity: 0.6;
+    letter-spacing: 0.3px;
+}
+
+.ctc-strip-val {
+    font-size: 0.82rem;
+    font-weight: 800;
+    color: var(--heading-color);
+}
+
+.ctc-strip-val.ctc-highlight {
+    color: #16a34a;
+}
+
+.ctc-strip-divider {
+    width: 1px;
+    height: 24px;
+    background: var(--border-color);
+    opacity: 0.6;
+    flex-shrink: 0;
+}
+
+@media (max-width: 576px) {
+    .resume-ctc-strip {
+        border-radius: 16px;
+        padding: 14px 18px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .ctc-strip-divider { display: none; }
+    .ctc-strip-item { padding: 0; }
+}
+
+
+/* ── Profile Overview Card ───────────────────────── */
+.resume-overview-card {
+    border-radius: 24px;
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume-overview-card:hover {
+    box-shadow: 0 24px 60px rgba(99, 102, 241, 0.12);
+}
+
+/* ── Download Spinner ────────────────────────────── */
+.dl-spinner {
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+    flex-shrink: 0;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ── PDF Preview Frame ───────────────────────────── */
+.resume-preview-wrap {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow:
+        0 0 0 1px rgba(99,102,241,0.12),
+        0 24px 64px rgba(0, 0, 0, 0.18),
+        0 4px 16px rgba(99, 102, 241, 0.08);
+    background: #fff;
+    transition: box-shadow 0.3s ease;
+}
+
+.resume-preview-wrap:hover {
+    box-shadow:
+        0 0 0 1.5px rgba(99,102,241,0.22),
+        0 32px 80px rgba(0, 0, 0, 0.22),
+        0 6px 24px rgba(99, 102, 241, 0.12);
+}
+
+.resume-preview-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    background: var(--surface-color);
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--default-color);
+    opacity: 0.7;
+}
+
+.resume-preview-label .dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6366f1, #10b981);
+}
+
+/* ── Toast Notification ──────────────────────────── */
+.resume-toast {
+    position: fixed;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background: linear-gradient(135deg, #6366f1, #10b981);
+    color: #fff;
+    padding: 14px 32px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.88rem;
+    z-index: 9999;
+    transition: transform 0.35s cubic-bezier(.34,1.56,.64,1);
+    pointer-events: none;
+    box-shadow: 0 8px 32px rgba(99, 102, 241, 0.4);
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+}
+
+.resume-toast.show {
+    transform: translateX(-50%) translateY(0);
+}
+
+/* ── Responsive ──────────────────────────────────── */
+@media (max-width: 768px) {
+    .resume-layout-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .resume-viewer-inner { padding: 80px 0 40px; }
+    .resume-hero h1 { font-size: 2rem; }
+    .resume-role-card { min-width: 90px; padding: 14px 16px; }
+    .resume-role-card .role-icon { font-size: 1.6rem; }
+    .resume-btn-download,
+    .resume-btn-share { padding: 12px 22px; font-size: 0.86rem; }
+    .resume-layout-grid { grid-template-columns: repeat(2, 1fr); }
+}

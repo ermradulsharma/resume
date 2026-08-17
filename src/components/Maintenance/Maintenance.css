@@ -8,7 +8,7 @@
     z-index: 9999;
     opacity: 0.06;
     font-size: 5rem;
-    color: #000;
+    color: var(--text-dark);
     font-weight: bold;
     display: flex;
     align-items: center;

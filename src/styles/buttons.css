@@ -4,7 +4,7 @@
     --btn-padding-x: 1.75rem;
     --btn-padding-y: 0.3rem;
     --btn-font-weight: 600;
-    --btn-transition: all 0.3s ease;
+    --btn-transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
     --btn-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     --btn-shadow-hover: 0 8px 25px rgba(6, 92, 194, 0.25);
 }

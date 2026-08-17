@@ -1,0 +1,78 @@
+.footer-section {
+    background: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 50%, #0d0d0d 100%);
+    color: var(--surface-color);
+    border-top: 2px solid rgba(13, 110, 253, 0.3);
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+.footer-section h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.footer-section h5::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary-color), transparent);
+}
+
+.footer-link {
+    font-size: 0.9rem;
+    transition: transform var(--transition-base), color var(--transition-base), opacity var(--transition-base);
+    display: inline-block;
+    color: var(--neutral-300) !important;
+    font-weight: 500;
+}
+
+.footer-link:hover {
+    color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+    transform: translateX(5px);
+}
+
+
+
+.link-card {
+    transition: transform var(--transition-base), color var(--transition-base), opacity var(--transition-base);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.link-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(var(--bs-primary-rgb), var(--bs-text-opacity));
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-section h5 {
+        font-size: 1rem;
+    }
+
+    .footer-link {
+        font-size: 0.85rem;
+    }
+
+    /* .social-links a {
+        width: 35px;
+        height: 35px;
+    } */
+}

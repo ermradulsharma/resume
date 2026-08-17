@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { HelmetProvider } from 'react-helmet-async';
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
-import { ThemeProvider } from "./context/ThemeContext";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/buttons.css";
 
@@ -15,9 +15,7 @@ if (rootElement.hasChildNodes() && !hasSkeleton) {
         rootElement,
         <HelmetProvider>
             <BrowserRouter>
-                <ThemeProvider>
-                    <App />
-                </ThemeProvider>
+                <App />
             </BrowserRouter>
         </HelmetProvider>
     );
@@ -26,9 +24,7 @@ if (rootElement.hasChildNodes() && !hasSkeleton) {
     root.render(
         <HelmetProvider>
             <BrowserRouter>
-                <ThemeProvider>
-                    <App />
-                </ThemeProvider>
+                <App />
             </BrowserRouter>
         </HelmetProvider>
     );

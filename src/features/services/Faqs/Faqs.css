@@ -1,0 +1,104 @@
+/*--------------------------------------------------------------
+# Faq Section
+--------------------------------------------------------------*/
+.faq .faq-container .faq-item {
+    background-color: var(--surface-color);
+    position: relative;
+    padding: 20px 0px 20px 0px;
+    border-bottom: 2px solid var(--border-color);
+    overflow: hidden;
+    color: var(--text-primary);
+}
+
+.faq .faq-container .faq-item:last-child {
+    margin-bottom: 0;
+}
+
+.faq .faq-container .faq-question {
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.faq .faq-container .faq-question:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: -3px;
+}
+
+.faq .faq-container .faq-item h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 30px 0 32px;
+    transition: 0.3s;
+    color: var(--heading-color);
+}
+
+.faq .faq-container .faq-item:hover h3 {
+    color: var(--primary-color);
+}
+
+.faq .faq-container .faq-active h3 {
+    color: var(--primary-color);
+}
+
+.faq .faq-container .faq-item h3 .num {
+    color: var(--primary-color);
+    padding-right: 5px;
+}
+
+.faq .faq-container .faq-item h3:hover {
+    color: var(--primary-color);
+}
+
+.faq .faq-container .faq-item .faq-content {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.faq .faq-container .faq-item .faq-content p {
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+.faq .faq-container .faq-item .faq-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 16px;
+    line-height: 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.faq .faq-container .faq-item .faq-toggle:hover {
+    color: var(--primary-color);
+}
+
+.faq .faq-container .faq-active {
+    background-color: color-mix(in srgb, var(--primary-color), transparent 97%);
+    border-color: color-mix(in srgb, var(--primary-color), transparent 80%);
+}
+
+.faq .faq-container .faq-active h3 {
+    color: var(--primary-color);
+}
+
+.faq .faq-container .faq-active .faq-content {
+    grid-template-rows: 1fr;
+    visibility: visible;
+    opacity: 1;
+    padding: 0.5rem 2rem 0rem 2rem;
+}
+
+.faq .faq-container .faq-active .faq-toggle {
+    transform: rotate(90deg);
+    color: var(--primary-color);
+}

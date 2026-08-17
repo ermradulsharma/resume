@@ -1,6 +1,6 @@
 import React from "react";
 import { Modal } from "react-bootstrap";
-import BrandButton from "../common/BrandButton";
+import BrandButton from "../ui/BrandButton";
 import Maintenance from "../Maintenance/Maintenance";
 import "../modals/ServiceModal.css"
 

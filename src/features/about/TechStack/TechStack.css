@@ -1,0 +1,365 @@
+.skills .skills-grid .skill-card {
+    background: linear-gradient(135deg, var(--surface-color) 0%, color-mix(in srgb, var(--surface-color), var(--primary-color) 5%) 100%);
+    border-radius: 15px;
+    padding: 30px;
+    /* height: 100%; */
+    position: relative;
+    overflow: hidden;
+    border: 1px solid color-mix(in srgb, var(--primary-color), transparent 85%);
+    transition: transform var(--transition-base), box-shadow var(--transition-base), opacity var(--transition-base);
+}
+
+.skills .skills-grid .skill-card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), color-mix(in srgb, var(--primary-color), var(--heading-color) 30%));
+}
+
+.skills .skills-grid .skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px color-mix(in srgb, var(--primary-color), transparent 80%);
+    border-color: color-mix(in srgb, var(--primary-color), transparent 60%);
+}
+
+.skills .skills-grid .skill-card .skill-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    gap: 15px;
+}
+
+.skills .skills-grid .skill-card .skill-header i {
+    font-size: 28px;
+    color: var(--primary-color);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: color-mix(in srgb, var(--primary-color), transparent 90%);
+    border-radius: var(--border-radius-md);
+}
+
+.skills .skills-grid .skill-card .skill-header h3 {
+    font-size: 20px;
+    margin: 0;
+    color: var(--heading-color);
+}
+
+.skills .skills-grid .skill-card .skill-item {
+    margin-bottom: 15px;
+}
+
+.skills .skills-grid .skill-card .skill-item:last-child {
+    margin-bottom: 0;
+}
+
+.skills .skills-grid .skill-card .skill-item .skill-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.skills .skills-grid .skill-card .skill-item .skill-info .skill-name {
+    font-weight: 600;
+    color: var(--heading-color);
+    font-size: 15px;
+}
+
+.skills .skills-grid .skill-card .skill-item .skill-info .skill-percentage {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.skills .skills-grid .skill-card .skill-item .skill-bar {
+    height: 6px;
+    background: color-mix(in srgb, var(--default-color), transparent 92%);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.skills .skills-grid .skill-card .skill-item .skill-bar .progress-bar {
+    height: 100%;
+    background: linear-gradient(45deg, var(--primary-color), color-mix(in srgb, var(--primary-color), var(--heading-color) 20%));
+    border-radius: 10px;
+    width: 0;
+    transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+.skills .skills-grid .skill-card .skill-item .skill-bar .progress-bar:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    animation: shimmer 2s infinite;
+}
+
+.skills .skills-summary {
+    background: var(--surface-color);
+    padding: 40px 30px;
+    border-radius: 15px;
+    height: fit-content;
+    position: sticky;
+    top: 12%;
+    box-shadow: 0 10px 30px color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.skills .skills-summary h3 {
+    color: var(--heading-color);
+    /* font-size: 24px; */
+}
+
+
+.skills .skills-summary .summary-stats {
+    margin-bottom: 30px;
+}
+
+.skills .skills-summary .summary-stats .stat-item {
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 20px; */
+    gap: 10px;
+}
+
+.skills .skills-summary .summary-stats .stat-item:last-child {
+    margin-bottom: 0;
+}
+
+.skills .skills-summary .summary-stats .stat-item .stat-circle i {
+    color: var(--contrast-color);
+    font-size: 20px;
+}
+
+.skills .skills-summary .summary-stats .stat-item .stat-info .stat-number {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--heading-color);
+    line-height: 1;
+}
+
+.skills .skills-summary .summary-stats .stat-item .stat-info .stat-label {
+    font-size: 14px;
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+.skills .skills-summary .skills-badges h4 {
+    color: var(--heading-color);
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.skills .skills-summary .skills-badges .badge-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills .skills-summary .skills-badges .badge-list .skill-badge {
+    background: linear-gradient(45deg, var(--primary-color), color-mix(in srgb, var(--primary-color), var(--heading-color) 20%));
+    color: var(--contrast-color);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@media (max-width: 991px) {
+    .skills .skills-summary {
+        margin-top: 30px;
+        position: relative;
+        top: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .skills .skills-grid .skill-card {
+        padding: 25px 20px;
+    }
+
+    .skills .skills-grid .skill-card .skill-header h3 {
+        font-size: 18px;
+    }
+
+    .skills .skills-summary {
+        padding: 30px 20px;
+    }
+
+    .skills .skills-summary .summary-stats .stat-item .stat-circle {
+        width: 45px;
+        height: 45px;
+    }
+
+    .skills .skills-summary .summary-stats .stat-item .stat-circle i {
+        font-size: 18px;
+    }
+
+    .skills .skills-summary .summary-stats .stat-item .stat-info .stat-number {
+        font-size: 20px;
+    }
+}
+
+/* Skills Visualization Section */
+.skills-visualization {
+    background: var(--surface-color);
+    padding: 50px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px color-mix(in srgb, var(--default-color), transparent 95%);
+    border: 1px solid color-mix(in srgb, var(--primary-color), transparent 92%);
+}
+
+.custom-chart-nav.nav-pills .nav-link {
+    background: color-mix(in srgb, var(--primary-color), transparent 95%);
+    color: var(--default-color);
+    border-radius: 30px;
+    padding: 10px 25px;
+    margin: 5px;
+    font-weight: 500;
+    transition: transform var(--transition-base), box-shadow var(--transition-base), opacity var(--transition-base);
+    border: 1px solid transparent;
+}
+
+.custom-chart-nav.nav-pills .nav-link.active {
+    background: var(--primary-color);
+    color: var(--contrast-color);
+    box-shadow: 0 10px 20px color-mix(in srgb, var(--primary-color), transparent 80%);
+}
+
+.custom-chart-nav.nav-pills .nav-link:hover:not(.active) {
+    background: color-mix(in srgb, var(--primary-color), transparent 85%);
+    border-color: color-mix(in srgb, var(--primary-color), transparent 70%);
+}
+
+.chart-container-wrapper {
+    transition: opacity var(--transition-slow), transform var(--transition-slow);
+    animation: fadeInChart 0.6s ease-out;
+}
+
+@keyframes fadeInChart {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 767px) {
+    .custom-chart-nav.nav-pills .nav-link {
+        padding: 8px 15px;
+        font-size: 13px;
+    }
+
+    .skills-visualization {
+        padding: 30px 15px;
+    }
+}
+
+/* Dynamic Chart Engine Styles */
+.dynamic-chart-container {
+    background: rgba(15, 23, 42, 0.95);
+    padding: 40px;
+    border-radius: var(--border-radius-xl);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    text-align: center;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 10;
+}
+
+/* .chart-toolbar {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: inline-flex !important;
+    gap: 15px;
+    max-width: 100%;
+} */
+
+.custom-chart-switcher .btn {
+    border: none !important;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 18px;
+    transition: transform var(--transition-base), box-shadow var(--transition-base), opacity var(--transition-base);
+    color: rgba(255, 255, 255, 0.6) !important;
+    border-radius: 30px !important;
+    margin: 0 2px;
+}
+
+.custom-chart-switcher .btn:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: var(--white) !important;
+}
+
+.custom-chart-switcher .btn.active {
+    background: var(--primary-color, #6366f1) !important;
+    color: var(--white) !important;
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.4);
+}
+
+.dynamic-chart-wrapper {
+    position: relative;
+    padding: 20px;
+    min-height: 450px;
+}
+
+.chart-title-header h4 {
+    letter-spacing: 1.5px;
+    font-size: 1.25rem;
+    color: var(--white) !important;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.custom-toolbar-wrapper {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+    -webkit-overflow-scrolling: touch;
+}
+
+.custom-toolbar-wrapper::-webkit-scrollbar {
+    height: 4px;
+}
+
+.custom-toolbar-wrapper::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.custom-toolbar-wrapper::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.custom-chart-switcher .btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+}

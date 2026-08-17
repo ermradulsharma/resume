@@ -1,0 +1,81 @@
+.about-hero {
+    position: relative;
+    height: calc(80vh - 77px);
+    background: url('../../../assets/mradulsharma_banner_2.jpg') 65% 60% /cover no-repeat;
+}
+
+.about-hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+    z-index: 2;
+}
+
+.profile-image-wrapper .profile-image {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    margin: 0 auto;
+    border-radius: var(--border-radius-pill);
+    overflow: hidden;
+    border: 5px solid var(--primary-color);
+    box-shadow: var(--shadow-default);
+}
+
+.profile-image-wrapper .profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+@media (max-width: 768px) {
+    .profile-image-wrapper .profile-image {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.profile-image-wrapper .signature-section {
+    text-align: center;
+}
+
+.profile-image-wrapper .signature-section .signature {
+    max-width: 100%;
+}
+
+[data-theme="dark"] .profile-image-wrapper .signature-section .signature {
+    filter: invert(1) brightness(2);
+}
+
+.profile-image-wrapper .signature-section .quote {
+    font-style: italic;
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+    font-size: 14px;
+    margin: 0;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+
+.about-hero p.lead {
+    width: 70%;
+    margin: auto;
+}
+
+@media (max-width: 767px) {
+    .about-hero {
+        height: 20rem;
+        background: url('../../../assets/mradulsharma_banner_2.jpg') 50% 30% /cover no-repeat;
+    }
+
+    .about-hero p.lead {
+        width: 90%;
+    }
+}

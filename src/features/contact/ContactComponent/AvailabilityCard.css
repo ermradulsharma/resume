@@ -1,0 +1,144 @@
+/* ── AvailabilityCard — HR-Facing Open to Work Card ── */
+
+.availability-card {
+    background: linear-gradient(135deg,
+        rgba(22, 163, 74, 0.06) 0%,
+        var(--surface-color) 60%
+    );
+    border: 1.5px solid rgba(22, 163, 74, 0.35);
+    border-radius: 20px;
+    padding: 22px 24px;
+    margin-top: 24px;
+    box-shadow: 0 8px 32px rgba(22, 163, 74, 0.1);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.availability-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 40px rgba(22, 163, 74, 0.15);
+}
+
+/* ── Status Header ── */
+.avail-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.avail-status-dot {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #22c55e;
+    display: inline-block;
+    flex-shrink: 0;
+    animation: availPulse 1.6s ease-in-out infinite;
+}
+
+@keyframes availPulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.6); }
+    50%       { box-shadow: 0 0 0 8px rgba(34, 197, 94, 0); }
+}
+
+.avail-status-text {
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: #16a34a;
+    letter-spacing: 0.2px;
+}
+
+.avail-updated {
+    margin-left: auto;
+    font-size: 0.68rem;
+    color: var(--default-color);
+    opacity: 0.5;
+    font-weight: 500;
+}
+
+/* ── Info Grid ── */
+.avail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 16px;
+}
+
+.avail-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.avail-icon {
+    font-size: 1.1rem;
+    color: #16a34a;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.avail-item div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.avail-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--default-color);
+    opacity: 0.55;
+}
+
+.avail-value {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--heading-color);
+    line-height: 1.3;
+}
+
+/* ── Preferences Pills ── */
+.avail-preferences {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.avail-pref-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 50px;
+    background: rgba(22, 163, 74, 0.1);
+    color: #15803d;
+    border: 1px solid rgba(22, 163, 74, 0.25);
+}
+
+/* ── CTA Link ── */
+.avail-cta {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #16a34a;
+    text-decoration: none;
+    gap: 4px;
+    transition: gap 0.2s ease, opacity 0.2s ease;
+}
+
+.avail-cta:hover {
+    gap: 8px;
+    opacity: 0.85;
+    color: #16a34a;
+}
+
+/* ── Responsive ── */
+@media (max-width: 480px) {
+    .avail-grid { grid-template-columns: 1fr; }
+}

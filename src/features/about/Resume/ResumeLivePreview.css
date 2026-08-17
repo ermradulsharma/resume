@@ -1,0 +1,633 @@
+/* =====================================================
+   ResumeLivePreview — Live PDF Studio
+   ===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* ── Page Layout ─────────────────────────────────── */
+.rlp-page {
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+    background: #0f0f13;
+    font-family: 'Inter', sans-serif;
+    color: #e2e8f0;
+    overflow: hidden;
+}
+
+/* ── Top Navbar ──────────────────────────────────── */
+.rlp-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 56px;
+    min-height: 56px;
+    background: rgba(15, 15, 19, 0.98);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    z-index: 100;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.rlp-nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.rlp-nav-logo {
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(135deg, #6366f1, #06b6d4);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.rlp-nav-title {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #e2e8f0;
+    white-space: nowrap;
+}
+
+.rlp-nav-title span {
+    color: #6366f1;
+}
+
+.rlp-nav-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.rlp-nav-controls::-webkit-scrollbar {
+    display: none;
+}
+
+.rlp-select-group {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+.rlp-select-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    white-space: nowrap;
+}
+
+.rlp-select {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    color: #e2e8f0;
+    font-size: 0.78rem;
+    font-weight: 500;
+    padding: 5px 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+.rlp-select:hover,
+.rlp-select:focus {
+    border-color: #6366f1;
+    background: rgba(99, 102, 241, 0.1);
+}
+
+.rlp-select option {
+    background: #1e1e2a;
+    color: #e2e8f0;
+}
+
+.rlp-nav-divider {
+    width: 1px;
+    height: 24px;
+    background: rgba(255, 255, 255, 0.1);
+    flex-shrink: 0;
+}
+
+.rlp-nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.rlp-action-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    white-space: nowrap;
+}
+
+.rlp-btn-back {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #94a3b8;
+}
+
+.rlp-btn-back:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #e2e8f0;
+    text-decoration: none;
+}
+
+.rlp-btn-view {
+    background: rgba(99, 102, 241, 0.15);
+    border: 1px solid rgba(99, 102, 241, 0.35);
+    color: #818cf8;
+}
+
+.rlp-btn-view:hover {
+    background: rgba(99, 102, 241, 0.25);
+    color: #a5b4fc;
+}
+
+.rlp-btn-view:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.rlp-btn-download {
+    background: linear-gradient(135deg, #6366f1, #4f46e5);
+    color: #ffffff;
+    border: none;
+}
+
+.rlp-btn-download:hover {
+    background: linear-gradient(135deg, #818cf8, #6366f1);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ── Main Split Layout ───────────────────────────── */
+.rlp-body {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* ── Left Sidebar ────────────────────────────────── */
+.rlp-sidebar {
+    width: 255px;
+    min-width: 255px;
+    background: rgba(255, 255, 255, 0.015);
+    border-right: 1px solid rgba(255, 255, 255, 0.07);
+    padding: 18px 14px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(99, 102, 241, 0.3) transparent;
+}
+
+.rlp-sidebar::-webkit-scrollbar {
+    width: 4px;
+}
+
+.rlp-sidebar::-webkit-scrollbar-thumb {
+    background: rgba(99, 102, 241, 0.3);
+    border-radius: 4px;
+}
+
+.rlp-section-title {
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-bottom: 10px;
+}
+
+/* ── Role Buttons ────────────────────────────────── */
+.rlp-role-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.rlp-role-btn {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 8px 11px;
+    border-radius: 9px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    color: #94a3b8;
+    font-size: 0.77rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.18s ease;
+    text-align: left;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+.rlp-role-btn:hover {
+    background: rgba(255, 255, 255, 0.06);
+    color: #e2e8f0;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.rlp-role-btn.active {
+    background: rgba(99, 102, 241, 0.14);
+    border-color: rgba(99, 102, 241, 0.38);
+    color: #a5b4fc;
+}
+
+.rlp-role-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.rlp-role-info {
+    flex: 1;
+    overflow: hidden;
+}
+
+.rlp-role-name {
+    display: block;
+    font-weight: 600;
+    font-size: 0.77rem;
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.rlp-role-desc {
+    display: block;
+    font-size: 0.63rem;
+    color: #64748b;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.rlp-role-btn.active .rlp-role-desc {
+    color: #818cf8;
+}
+
+/* ── Template Buttons ────────────────────────────── */
+.rlp-template-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.rlp-template-btn {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 8px 11px;
+    border-radius: 9px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    color: #94a3b8;
+    font-size: 0.77rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.18s ease;
+    text-align: left;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+.rlp-template-btn:hover {
+    background: rgba(255, 255, 255, 0.06);
+    color: #e2e8f0;
+}
+
+.rlp-template-btn.active {
+    background: rgba(6, 182, 212, 0.1);
+    border-color: rgba(6, 182, 212, 0.32);
+    color: #67e8f9;
+}
+
+.rlp-template-emoji {
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.rlp-template-info {
+    flex: 1;
+    overflow: hidden;
+}
+
+.rlp-template-name {
+    display: block;
+    font-weight: 600;
+    font-size: 0.77rem;
+    line-height: 1.2;
+}
+
+.rlp-template-sub {
+    display: block;
+    font-size: 0.62rem;
+    color: #64748b;
+}
+
+.rlp-template-btn.active .rlp-template-sub {
+    color: #22d3ee;
+}
+
+.rlp-template-tag {
+    font-size: 0.58rem;
+    padding: 2px 6px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #64748b;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.rlp-template-btn.active .rlp-template-tag {
+    background: rgba(6, 182, 212, 0.14);
+    color: #22d3ee;
+}
+
+/* ── Current Selection Card ──────────────────────── */
+.rlp-current-info {
+    background: rgba(99, 102, 241, 0.07);
+    border: 1px solid rgba(99, 102, 241, 0.18);
+    border-radius: 11px;
+    padding: 13px;
+}
+
+.rlp-current-badge {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 7px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #a5b4fc;
+}
+
+.rlp-current-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #6366f1;
+    animation: pulse-dot 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.4;
+        transform: scale(0.75);
+    }
+}
+
+.rlp-current-name {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #e2e8f0;
+    margin-bottom: 2px;
+}
+
+.rlp-current-style {
+    font-size: 0.7rem;
+    color: #64748b;
+}
+
+/* ── PDF Viewer Area ─────────────────────────────── */
+.rlp-viewer-area {
+    flex: 1;
+    background: #15151e;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+/* ── Status Bar ──────────────────────────────────── */
+.rlp-statusbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 16px;
+    background: rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 0.68rem;
+    color: #64748b;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.rlp-status-left {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.rlp-status-indicator {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #22c55e;
+    flex-shrink: 0;
+}
+
+.rlp-status-indicator.loading {
+    background: #f59e0b;
+    animation: blink 0.8s ease-in-out infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+}
+
+.rlp-status-text {
+    font-weight: 500;
+    color: #94a3b8;
+}
+
+.rlp-status-right {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.rlp-status-tag {
+    padding: 2px 7px;
+    border-radius: 4px;
+    background: rgba(99, 102, 241, 0.12);
+    color: #818cf8;
+    font-weight: 600;
+    font-size: 0.63rem;
+}
+
+/* ── PDF iframe/PDFViewer ────────────────────────── */
+.rlp-pdf-frame {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+}
+
+.rlp-pdf-frame iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* PDFViewer from @react-pdf/renderer */
+.rlp-pdf-frame>div,
+.rlp-pdf-frame canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* ── Loading Overlay ─────────────────────────────── */
+.rlp-loading-overlay {
+    position: absolute;
+    inset: 0;
+    background: #15151e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    z-index: 20;
+}
+
+.rlp-loading-spinner {
+    width: 42px;
+    height: 42px;
+    border: 3px solid rgba(99, 102, 241, 0.18);
+    border-top-color: #6366f1;
+    border-radius: 50%;
+    animation: spin 0.75s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rlp-loading-text {
+    font-size: 0.82rem;
+    color: #64748b;
+    font-weight: 500;
+}
+
+.rlp-loading-sub {
+    font-size: 0.68rem;
+    color: #475569;
+}
+
+/* ── Toast Notification ──────────────────────────── */
+.rlp-toast {
+    position: fixed;
+    bottom: 26px;
+    right: 26px;
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    border: 1px solid rgba(99, 102, 241, 0.35);
+    color: #e2e8f0;
+    padding: 11px 18px;
+    border-radius: 11px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 9999;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    transform: translateY(80px);
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    pointer-events: none;
+}
+
+.rlp-toast.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* ── Spinner inside button ───────────────────────── */
+.rlp-btn-spinner {
+    width: 12px;
+    height: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+    flex-shrink: 0;
+}
+
+/* ── Responsive ──────────────────────────────────── */
+@media (max-width: 820px) {
+    .rlp-sidebar {
+        display: none;
+    }
+}
+
+@media (max-width: 540px) {
+    .rlp-nav-title {
+        display: none;
+    }
+
+    .rlp-select-label {
+        display: none;
+    }
+
+    .rlp-btn-back span,
+    .rlp-btn-view span,
+    .rlp-btn-download span {
+        display: none;
+    }
+
+    .rlp-action-btn {
+        padding: 6px 9px;
+    }
+}
