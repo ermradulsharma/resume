@@ -18,6 +18,9 @@ const ContactPage = React.lazy(() => import("../features/contact/ContactPage/Con
 const Resume = React.lazy(() => import("../features/about/Resume/ResumeViewer"));
 const ResumeLivePreview = React.lazy(() => import("../features/about/Resume/ResumeLivePreview"));
 const CompanyDocGenerator = React.lazy(() => import("../features/about/Resume/company/CompanyDocGenerator"));
+const W3InfoDocGenerator = React.lazy(() => import("../features/about/Resume/company/w3info/W3InfoDocGenerator"));
+const ZaibaDocGenerator = React.lazy(() => import("../features/about/Resume/company/zaiba/ZaibaDocGenerator"));
+const ProgrammingParkDocGenerator = React.lazy(() => import("../features/about/Resume/company/programmingpark/ProgrammingParkDocGenerator"));
 
 const LoadingFallback = () => (
     <div className="d-flex justify-content-center align-items-center" style={{ height: "100vh" }}>
@@ -35,6 +38,9 @@ const WebRoutes = () => {
                 <Route path="/resume-preview" element={<ResumeLivePreview />} />
                 <Route path="/company-docs" element={<CompanyDocGenerator />} />
                 <Route path="/resume/company" element={<CompanyDocGenerator />} />
+                <Route path="/resume/company/w3info" element={<W3InfoDocGenerator />} />
+                <Route path="/resume/company/zaiba" element={<ZaibaDocGenerator />} />
+                <Route path="/resume/company/programmingpark" element={<ProgrammingParkDocGenerator />} />
                 <Route path="/" element={<PublicLayout />}>
                     <Route index element={<Home />} />
                     <Route path="portfolio" element={<Portfolio />} />
