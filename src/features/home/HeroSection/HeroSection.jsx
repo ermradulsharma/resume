@@ -61,7 +61,7 @@ const HeroSection = () => {
                         </div>
                         <picture>
                             <source srcSet={logo} type="image/webp" />
-                            <img src={logo} alt="Portfolio Hero" className="img-fluid hero-main-image" loading="lazy" width="800" height="600" />
+                            <img src={logo} alt="Mradul Sharma - Senior FullStack Developer &amp; Software Architect Hero Showcase" className="img-fluid hero-main-image" loading="eager" fetchpriority="high" decoding="async" width="800" height="600" />
                         </picture>
                         <div className="image-overlay d-none d-md-block"></div>
                     </div>

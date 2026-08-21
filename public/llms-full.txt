@@ -1,0 +1,109 @@
+# Mradul Sharma - Complete Engineering & Technical Documentation (llms-full.txt)
+
+> Senior Full-Stack Architect & Developer with 6+ years of enterprise engineering experience specializing in Laravel, React, Node.js, Cloud Infrastructure (AWS), Database Design, and API Architecture.
+
+---
+
+## Table of Contents
+1. [Core Entity & Contact Details](#core-entity--contact-details)
+2. [Executive Summary & Career Highlights](#executive-summary--career-highlights)
+3. [Deep Tech Stack Breakdown](#deep-tech-stack-breakdown)
+4. [Case Studies & Featured Projects](#case-studies--featured-projects)
+5. [Technical Writing & Architecture Articles](#technical-writing--architecture-articles)
+6. [Services & Engineering Offerings](#services--engineering-offerings)
+7. [Employment & Career Journey](#employment--career-journey)
+
+---
+
+## Core Entity & Contact Details
+- **Full Legal Name**: Mradul Sharma
+- **Primary Title**: Senior Full-Stack Developer & Software Architect
+- **Current Organization**: Senior Full-Stack Developer at W3 Info Solutions (Lucknow, UP, India)
+- **Primary Email**: mradulsharma786@gmail.com
+- **Website URL**: https://mradulsharma.vercel.app
+- **Interactive Resume**: https://mradulsharma.vercel.app/resume
+- **GitHub Repository**: https://github.com/ermradulsharma
+- **LinkedIn Profile**: https://www.linkedin.com/in/mradulsharma
+
+---
+
+## Executive Summary & Career Highlights
+Mradul Sharma is a Senior Full-Stack Developer and Software Architect with over 6 years of experience engineering secure, scalable, and high-throughput web applications. He leads full-cycle product engineering at W3 Info Solutions, architecting cloud-native web platforms, SaaS applications, and RESTful/GraphQL microservices.
+
+Key achievements:
+- Architected enterprise management platforms serving over 500,000 active monthly transactions.
+- Designed real-time event-driven notification pipelines utilizing Redis, WebSockets, and AWS Lambda.
+- Reduced database query latency by 45% through custom indexing, query optimization, and caching strategies.
+- Maintained a 99.9% uptime SLA across containerized Docker/Kubernetes production environments on AWS.
+
+---
+
+## Deep Tech Stack Breakdown
+
+### Backend & API Architecture
+- **PHP Ecosystem**: Laravel 10, 11, 12, Livewire, Inertia.js, CodeIgniter 4, Custom MVC.
+- **Node.js Ecosystem**: Express.js, NestJS, Socket.io, Microservices, Async Event Loop.
+- **API Protocols**: RESTful APIs, OpenAPI/Swagger 3.0, GraphQL, WebSockets, gRPC.
+- **Security Protocols**: OAuth2, OpenID Connect, JWT, AES-256 Data Encryption, RBAC, Rate Limiting, OWASP Top 10 defenses.
+
+### Frontend Engineering & State Management
+- **Frameworks**: React.js (v19), Next.js (App Router), Vue.js 3.
+- **Styling & UI**: Vanilla CSS3, Tailwind CSS, Bootstrap 5, Glassmorphism design system.
+- **State Management & Fetching**: React Query (TanStack Query), Context API, Redux Toolkit.
+- **Performance & Optimization**: Code splitting (`React.lazy`), memoization (`useMemo`, `useCallback`), dynamic SEO management (`react-helmet-async`).
+
+### Database Systems & Performance Tuning
+- **Relational Databases**: PostgreSQL, MySQL (Indexing strategies, partitioning, complex queries).
+- **NoSQL Databases**: MongoDB (Aggregation pipelines, document schema design).
+- **Caching & Search**: Redis (Pub/Sub, Queue workers, session store), Elasticsearch.
+
+### Cloud Infrastructure & DevOps
+- **Cloud Provider**: AWS (EC2, S3, RDS, Lambda, CloudFront, IAM).
+- **Containers**: Docker, Docker Compose, Kubernetes basic orchestration.
+- **CI/CD & Automation**: GitHub Actions, GitLab CI/CD pipelines.
+
+---
+
+## Case Studies & Featured Projects
+
+### 1. PayStubx - Payroll & Tax Management SaaS
+- **Role**: Lead Software Architect
+- **Tech Stack**: Laravel 11, React 19, PostgreSQL, Stripe, AWS S3
+- **Description**: Enterprise-grade payroll generating automated, compliant paystubs with instant PDF generation, secure Stripe subscription billing, and encrypted tax calculation algorithms.
+
+### 2. Storytellers - Content Platform
+- **Role**: Senior Full-Stack Developer
+- **Tech Stack**: Next.js, Node.js, MongoDB, Redis, AWS CloudFront
+- **Description**: Dynamic editorial and storytelling platform featuring real-time collaborative editing, instant content distribution via CDN edge nodes, and rich analytics dashboards.
+
+### 3. Wealth Mark - Financial Management Portal
+- **Role**: Backend Architect & Cloud Consultant
+- **Tech Stack**: Laravel, MySQL, Vue.js, Docker, AWS EC2
+- **Description**: Secure asset tracking and portfolio management portal built with bank-grade encryption, automated multi-currency conversion feeds, and automated audit logging.
+
+---
+
+## Technical Writing & Architecture Articles
+
+### Article 1: Mastering React 19 Performance Optimization
+- **Key Concepts**: Server Components, `useMemo` & `useCallback` optimization patterns, dynamic code splitting with `React.lazy()`, and avoiding unnecessary re-renders.
+
+### Article 2: Scalable Microservices Architecture with Laravel & Docker
+- **Key Concepts**: Decoupling monolithic PHP applications into containerized microservices, inter-service communication via Redis Queues, and automated CI/CD deployment on AWS ECS.
+
+---
+
+## Services & Engineering Offerings
+1. **Full-Stack Web Application Development**: Custom web apps using Laravel and React with clean, maintainable architecture.
+2. **Cloud Infrastructure & DevOps**: AWS deployment, Docker containerization, and GitHub Actions CI/CD setup.
+3. **API Design & Microservices**: RESTful and GraphQL API development with robust authentication and documentation.
+4. **Database Optimization & Architecture**: PostgreSQL and MongoDB schema design, indexing, and performance tuning.
+5. **Technical Consulting & System Audits**: Code review, security auditing, and performance optimization.
+
+---
+
+## Employment & Career Journey
+- **2022 - Present**: Senior Full-Stack Developer at W3 Info Solutions (Lucknow, UP, India)
+- **2020 - 2022**: Laravel Developer at Zaiba InfoTech
+- **2018 - 2020**: PHP Developer at Programming Park InfoTech
+- **2012 - 2016**: B.Tech in Computer Science & Engineering from Kanpur Institute of Technology

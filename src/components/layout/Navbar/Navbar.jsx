@@ -27,7 +27,7 @@ function NavBar() {
     return (
         <Navbar fixed="top" expand="lg" data-bs-theme={theme} bg="white" variant="light">
             <Container>
-                <Navbar.Brand as={Link} to="/" aria-label="Mradul Sharma"><img alt="Mradul Sharma" src={logo} width="250" height="50" className="theme-aware-logo" /></Navbar.Brand>
+                <Navbar.Brand as={Link} to="/" aria-label="Mradul Sharma"><img alt="Mradul Sharma Logo - Senior FullStack Developer" src={logo} width="250" height="50" decoding="async" className="theme-aware-logo" /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="main-navbar-nav" aria-label="Toggle navigation" />
                 <Navbar.Collapse id="main-navbar-nav">
                     <Nav className="ms-auto align-items-lg-center gap-lg-3 fw-medium fs-6">

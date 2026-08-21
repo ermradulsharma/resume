@@ -24,6 +24,15 @@
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+
+    <!-- Font Preconnect & DNS Prefetch (Unblocks FCP) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" />
+
     <!-- Web App Manifest -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <meta name="theme-color" content="#0d6efd" />
@@ -31,28 +40,29 @@
     <meta name="google-adsense-account" content="ca-pub-1873769892199213">
     <meta name="yandex-verification" content="cb7bc278cbdcc330" />
 
-    <!-- Canonical URL managed by useSEO hook -->
-    <!-- <link rel="canonical" href="https://mradulsharma.vercel.app/" /> -->
-
     <!-- Open Graph Meta (LinkedIn, Facebook, WhatsApp, etc.) -->
     <meta name="type" property="og:type" content="website" />
     <meta name="url" property="og:url" content="https://mradulsharma.vercel.app/" />
-    <meta name="title" property="og:title" content="Mradul Sharma – Full Stack Developer" />
+    <meta name="title" property="og:title" content="Mradul Sharma – Full Stack Developer & Software Architect" />
     <meta name="image" property="og:image" content="https://mradulsharma.vercel.app/preview.png">
+    <meta property="og:image:secure_url" content="https://mradulsharma.vercel.app/preview.png" />
+    <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="author" property="article:author" content="Mradul Sharma" />
     <meta name="published_time" property="article:published_time" content="2025-06-23T00:00:00+05:30" />
-    <meta property="og:image:alt" content="Mradul Sharma Portfolio Banner" />
+    <meta property="og:image:alt" content="Mradul Sharma Portfolio Banner - Senior FullStack Developer" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@ermradulsharma" />
+    <meta name="twitter:site" content="@ermradulsharma" />
     <meta name="twitter:url" content="https://mradulsharma.vercel.app/" />
-    <meta name="twitter:title" content="Mradul Sharma – Full Stack Developer" />
+    <meta name="twitter:title" content="Mradul Sharma – Full Stack Developer & Software Architect" />
     <meta name="twitter:description"
         content="Explore Mradul Sharma's portfolio featuring full-stack applications built with Laravel, React, AWS, and more." />
     <meta name="twitter:image" content="https://mradulsharma.vercel.app/preview.png" />
-    <meta name="twitter:image:alt" content="Mradul Sharma Portfolio Banner" />
+    <meta name="twitter:image:alt" content="Mradul Sharma Portfolio Banner - Senior FullStack Developer" />
 
     <!-- Mobile App Capabilities (Optional) -->
     <meta name="mobile-web-app-capable" content="yes" />

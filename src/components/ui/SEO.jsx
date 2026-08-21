@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useLocation } from 'react-router-dom';
 
@@ -15,6 +15,7 @@ const SEO = ({
     canonicalUrl,
     prevUrl,
     nextUrl,
+    breadcrumbs,
     schema
 }) => {
     const location = useLocation();
@@ -44,6 +45,68 @@ const SEO = ({
     const metaOgTitle = ogTitle || metaTitle;
     const metaOgDescription = ogDescription || metaDescription;
     const metaOgImage = ogImage;
+
+    // Auto-generate breadcrumbs if not provided explicitly
+    const effectiveBreadcrumbs = useMemo(() => {
+        if (breadcrumbs) return breadcrumbs;
+        if (location.pathname === '/') return null;
+
+        const pathSegments = location.pathname.split('/').filter(Boolean);
+        const crumbs = [{ name: 'Home', url: baseUrl }];
+        let accumPath = '';
+
+        pathSegments.forEach((segment) => {
+            accumPath += `/${segment}`;
+            const formattedName = segment.charAt(0).toUpperCase() + segment.slice(1).replace(/-/g, ' ');
+            crumbs.push({
+                name: formattedName,
+                url: `${baseUrl}${accumPath}`
+            });
+        });
+
+        return crumbs;
+    }, [breadcrumbs, location.pathname]);
+
+    // Construct BreadcrumbList schema
+    const breadcrumbSchema = useMemo(() => {
+        if (!effectiveBreadcrumbs || effectiveBreadcrumbs.length === 0) return null;
+        return {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": effectiveBreadcrumbs.map((crumb, index) => ({
+                "@type": "ListItem",
+                "position": index + 1,
+                "name": crumb.name,
+                "item": crumb.url ? normalizeUrl(crumb.url) : currentUrl
+            }))
+        };
+    }, [effectiveBreadcrumbs, currentUrl]);
+
+    // Default WebSite Schema with SearchAction for homepage Sitelinks
+    const webSiteSchema = useMemo(() => {
+        if (location.pathname !== '/') return null;
+        return {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "@id": `${baseUrl}/#website`,
+            "url": baseUrl,
+            "name": "Mradul Sharma | Senior FullStack Developer & Software Architect",
+            "description": "Professional portfolio of Mradul Sharma, a Senior FullStack Developer specialized in Laravel, React, Node.js, and AWS.",
+            "publisher": {
+                "@type": "Person",
+                "name": "Mradul Sharma",
+                "url": baseUrl
+            },
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": `${baseUrl}/blogs?search={search_term_string}`
+                },
+                "query-input": "required name=search_term_string"
+            }
+        };
+    }, [location.pathname]);
 
     return (
         <Helmet>
@@ -83,6 +146,16 @@ const SEO = ({
             {schema && (
                 <script type="application/ld+json">
                     {JSON.stringify(schema)}
+                </script>
+            )}
+            {breadcrumbSchema && (
+                <script type="application/ld+json">
+                    {JSON.stringify(breadcrumbSchema)}
+                </script>
+            )}
+            {webSiteSchema && (
+                <script type="application/ld+json">
+                    {JSON.stringify(webSiteSchema)}
                 </script>
             )}
         </Helmet>

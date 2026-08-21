@@ -50,6 +50,11 @@ const ProjectDetail = () => {
                 ogUrl={`https://mradulsharma.vercel.app/portfolio/${slug}`}
                 canonicalUrl={`https://mradulsharma.vercel.app/portfolio/${slug}`}
                 ogImage={getSafeProjectImage(project.image)}
+                breadcrumbs={[
+                    { name: 'Home', url: 'https://mradulsharma.vercel.app/' },
+                    { name: 'Portfolio', url: 'https://mradulsharma.vercel.app/portfolio' },
+                    { name: title, url: `https://mradulsharma.vercel.app/portfolio/${slug}` }
+                ]}
                 schema={{
                     "@context": "https://schema.org",
                     "@type": "CreativeWork",

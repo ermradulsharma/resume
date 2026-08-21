@@ -19,10 +19,10 @@ const About = () => {
                 <Col lg={4} data-aos="fade-right" data-aos-delay="200">
                     <div className="profile-image-wrapper">
                         <div className="profile-image">
-                            <img src={about} alt="Profile" className="img-fluid" aria-label="Mradul Sharma" loading="lazy" width="300" height="400" />
+                            <img src={about} alt="Mradul Sharma Profile Picture - Senior Full-Stack Developer" className="img-fluid" aria-label="Mradul Sharma" loading="lazy" decoding="async" width="300" height="400" />
                         </div>
                         <div className="signature-section">
-                            <img src={signature} alt="Signature" className="signature" loading="lazy" width="200" height="100" />
+                            <img src={signature} alt="Mradul Sharma Digital Signature" className="signature" loading="lazy" decoding="async" width="200" height="100" />
                             <p className="quote text-secondary">Building meaningful digital experiences through creative code.</p>
                         </div>
                     </div>

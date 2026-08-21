@@ -79,6 +79,11 @@ const BlogDetail = () => {
                 ogUrl={post ? `https://mradulsharma.vercel.app/blogs/${post.slug}` : "https://mradulsharma.vercel.app/blogs"}
                 canonicalUrl={post ? `https://mradulsharma.vercel.app/blogs/${post.slug}` : "https://mradulsharma.vercel.app/blogs"}
                 ogImage={post ? `https://mradulsharma.vercel.app${post.image}` : "https://mradulsharma.vercel.app/preview.png"}
+                breadcrumbs={post ? [
+                    { name: 'Home', url: 'https://mradulsharma.vercel.app/' },
+                    { name: 'Blogs', url: 'https://mradulsharma.vercel.app/blogs' },
+                    { name: post.title, url: `https://mradulsharma.vercel.app/blogs/${post.slug}` }
+                ] : undefined}
                 schema={post ? {
                     "@context": "https://schema.org",
                     "@type": "BlogPosting",

@@ -168,26 +168,26 @@
 }
 
 .hero .floating-card.card-2 {
-    top: 100%;
-    right: -15%;
+    top: 75%;
+    right: -5%;
     animation-delay: 2s;
 }
 
 .hero .floating-card.card-3 {
-    bottom: 0;
-    left: -10%;
+    bottom: 5%;
+    left: -5%;
     animation-delay: 4s;
 }
 
 .hero .floating-card.card-4 {
-    top: 0%;
-    right: -15%;
+    top: 2%;
+    right: -5%;
     animation-delay: 2s;
 }
 
 .hero .floating-card.card-5 {
-    top: 50%;
-    right: -15%;
+    top: 40%;
+    right: -5%;
     animation-delay: 2s;
 }
 
@@ -196,16 +196,10 @@
         top: 5%;
         left: -5%;
     }
-}
 
-
-
-
-
-@media (max-width: 768px) {
     .hero .floating-card.card-2 {
-        top: 70%;
-        right: -10%;
+        top: 65%;
+        right: 0%;
     }
 }
 

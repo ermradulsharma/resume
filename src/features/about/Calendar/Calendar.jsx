@@ -59,18 +59,11 @@ const PublicCalendar = () => {
 
     return (
         <Container className="public-calendar-container">
-            <div className="calendar-header-actions my-4">
-                <InputGroup className="search-bar-wrapper shadow-sm rounded-pill overflow-hidden ms-auto" style={{ backgroundColor: 'var(--surface-color)', borderColor: 'var(--border-color)' }}>
-                    <InputGroup.Text className="border-0 ps-4" style={{ backgroundColor: 'transparent', color: 'var(--text-muted)' }}><BiSearch size={20} /></InputGroup.Text>
-                    <Form.Control placeholder="Search projects..." className="border-0 py-3 shadow-none" style={{ backgroundColor: 'transparent', color: 'var(--text-primary)' }} value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
-                    {searchTerm && <BrandButton variant="brand-outline" size="sm" className="border-0 pe-4 text-decoration-none" style={{ color: 'var(--text-muted)' }} aria-label="Clear project search" onClick={() => setSearchTerm("")}><BiX size={20} aria-hidden="true" /></BrandButton>}
-                </InputGroup>
-            </div>
-            <Row>
-                <Col lg={9} md={8}>
-                    <Card className="shadow-sm rounded-4 h-100" style={{ backgroundColor: 'var(--surface-color)', borderColor: 'var(--border-color)' }}>
-                        <Card.Body className="p-0">
-                            <div className="calendar-wrapper p-3">
+            <Row className="g-4">
+                <Col lg={8} md={7}>
+                    <Card className="shadow-sm rounded-4 h-100 border" style={{ backgroundColor: 'var(--surface-color)', borderColor: 'var(--border-color)' }}>
+                        <Card.Body className="p-3 position-relative">
+                            <div className="calendar-wrapper">
                                 <FullCalendar ref={calendarRef} plugins={[dayGridPlugin, listPlugin, classicTheme]} initialView="dayGridMonth"
                                     headerToolbar={{ left: "prev,next today", center: "title", right: "dayGridMonth,listWeek" }}
                                     events={events} height="auto" dayMaxEventRows eventClick={handleEventClick}
@@ -84,17 +77,36 @@ const PublicCalendar = () => {
                                     }}
                                 />
                             </div>
+                            {events.length === 0 && (
+                                <div className="alert alert-light border text-center p-4 my-3 rounded-3" role="status">
+                                    <p className="mb-1 fw-medium text-dark">No public projects or events found for your search.</p>
+                                    <small className="text-muted">Try adjusting your search terms or view all projects in the portfolio.</small>
+                                </div>
+                            )}
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col lg={3} md={4}>
-                    <Card className="shadow-sm rounded-4 h-100 border" style={{ backgroundColor: 'var(--surface-color)', borderColor: 'var(--border-color)' }}>
-                        <Card.Header className="py-3 ps-4" style={{ backgroundColor: 'transparent', borderBottom: '1px solid var(--border-color)' }}><h3 className="h5 fw-bold mb-0" style={{ color: 'var(--text-dark)' }}>Projects</h3></Card.Header>
-                        <Card.Body className="p-0 overflow-auto" style={{ maxHeight: 738 }}>
+                <Col lg={4} md={5}>
+                    <Card className="shadow-sm rounded-4 border overflow-hidden" style={{ backgroundColor: 'var(--surface-color)', borderColor: 'var(--border-color)' }}>
+                        <Card.Header className="py-3 px-3 border-bottom d-flex flex-column gap-2" style={{ backgroundColor: 'transparent', borderColor: 'var(--border-color)' }}>
+                            <div className="d-flex align-items-center justify-content-between">
+                                <h3 className="h5 fw-bold mb-0" style={{ color: 'var(--text-dark)' }}>Projects</h3>
+                                <Badge bg="primary-subtle" className="text-primary">{filteredProjects.length}</Badge>
+                            </div>
+                            <InputGroup className="search-bar-wrapper shadow-none rounded-pill border" style={{ backgroundColor: 'var(--surface-color)', borderColor: 'var(--border-color)' }}>
+                                <InputGroup.Text className="border-0 ps-3 py-1" style={{ backgroundColor: 'transparent', color: 'var(--text-muted)' }}><BiSearch size={16} /></InputGroup.Text>
+                                <Form.Control placeholder="Search projects..." size="sm" className="border-0 py-1 shadow-none" style={{ backgroundColor: 'transparent', color: 'var(--text-primary)' }} value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
+                                {searchTerm && <BrandButton variant="brand-outline" size="sm" className="border-0 pe-3 text-decoration-none py-0" style={{ color: 'var(--text-muted)' }} aria-label="Clear project search" onClick={() => setSearchTerm("")}><BiX size={16} aria-hidden="true" /></BrandButton>}
+                            </InputGroup>
+                        </Card.Header>
+                        <Card.Body className="p-0 overflow-auto" style={{ maxHeight: 380 }}>
                             {filteredProjects.length ? filteredProjects.map((project, idx) => (
-                                <button key={idx} type="button" className="p-2 border-0 border-bottom cursor-pointer project-sidebar-item" style={{ borderColor: 'var(--border-color)' }} onClick={() => handleJumpToProject(project)}>
-                                    <span className="fw-bold m-0 small" style={{ color: 'var(--text-primary)' }}>{project.title}</span>
-                                </button>)) : (<div className="p-4 text-center small" style={{ color: 'var(--text-muted)' }}>No projects found for "{searchTerm}"</div>)}
+                                <button key={idx} type="button" className="p-3 border-0 border-bottom cursor-pointer project-sidebar-item w-100 text-start d-flex align-items-center gap-2 transition-base" style={{ backgroundColor: 'transparent', borderColor: 'var(--border-color)' }} onClick={() => handleJumpToProject(project)}>
+                                    <span className="p-2 rounded-circle bg-primary-subtle text-primary d-inline-flex align-items-center justify-content-center flex-shrink-0" style={{ width: 28, height: 28 }}>
+                                        <BiSearch size={14} />
+                                    </span>
+                                    <span className="fw-semibold small text-truncate" style={{ color: 'var(--text-primary)' }}>{project.title}</span>
+                                </button>)) : (<div className="p-4 text-center small text-muted">No projects found matching "{searchTerm}"</div>)}
                         </Card.Body>
                     </Card>
                 </Col>
