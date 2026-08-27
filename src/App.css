@@ -29,9 +29,9 @@
     --default-color: var(--neutral-700);
     --heading-color: var(--neutral-900);
     --accent-color: var(--primary-color);
-    --text-primary: var(--neutral-800);
-    --text-secondary: var(--neutral-500);
-    --text-muted: var(--neutral-400);
+    --text-primary: var(--neutral-900);
+    --text-secondary: var(--neutral-700);
+    --text-muted: var(--neutral-700);
     --text-dark: var(--neutral-900);
     --text-brand: var(--primary-color);
     --text-policy: var(--neutral-700);
@@ -39,9 +39,22 @@
 
     --success-color: var(--primary-color);
     --success-bg: var(--primary-subtle);
-    --warning-color: #ffc107;
+    --warning-color: #d97706;
     --error-color: #dc3545;
     --info-color: #0dcaf0;
+
+/* High Contrast Accessibility Overrides (WCAG 2.1 AA 4.5:1 ratio) */
+.text-muted,
+.text-secondary,
+.text-body-secondary {
+    color: var(--neutral-700) !important;
+}
+
+[data-theme="dark"] .text-muted,
+[data-theme="dark"] .text-secondary,
+[data-theme="dark"] .text-body-secondary {
+    color: var(--neutral-200) !important;
+}
 
     --primary-gradient: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
     --accent-gradient: linear-gradient(135deg, var(--accent-indigo) 0%, var(--accent-purple) 100%);

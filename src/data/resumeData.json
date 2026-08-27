@@ -6,7 +6,7 @@
             "address": "Rani Awanti Bai Nagar, Etah, Uttar Pradesh 207001",
             "phone": "+91-7252933077",
             "email": "mradulsharma786@gmail.com",
-            "linkedin": "https://linkedin.com/in/ermradulsharma",
+            "linkedin": "https://linkedin.com/in/mradulsharma",
             "github": "https://github.com/ermradulsharma"
         },
         "summary": "With over 5 years of experience in the software industry, I am a Full-Stack Engineer who specializes in bridging the gap between robust backend architectures and dynamic frontend interfaces. My core stack revolves around Laravel, React, and Node.js, heavily supported by AWS infrastructure. Beyond enterprise client work, I am an active open-source contributor with over 10 published packages, demonstrating a deep commitment to clean code, test-driven development, and community-driven solutions.",
@@ -14,7 +14,7 @@
             {
                 "title": "Senior Full-Stack Developer",
                 "company": "W3 Info Solutions, Lucknow",
-                "date": "March 2022 – Present",
+                "date": "March 2022 – January 2026",
                 "points": [
                     "Architected and deployed highly scalable full-stack applications leveraging **Laravel, React, and Node.js**, serving thousands of active users.",
                     "Orchestrated the migration to a **microservices architecture** using Docker & Kubernetes, which reduced system downtime and deployment errors by **30%**.",
@@ -135,7 +135,7 @@
             "address": "Rani Awanti Bai Nagar, Etah, Uttar Pradesh 207001",
             "phone": "+91-7252933077",
             "email": "mradulsharma786@gmail.com",
-            "linkedin": "https://linkedin.com/in/ermradulsharma",
+            "linkedin": "https://linkedin.com/in/mradulsharma",
             "github": "https://github.com/ermradulsharma"
         },
         "summary": "Dedicated Laravel Specialist and PHP Architect with a proven track record of engineering enterprise-grade SaaS platforms. I possess deep knowledge of the Laravel ecosystem, including Horizon and Eloquent ORM optimizations. Having authored multiple open-source Laravel packages, I enforce strict SOLID principles and PSR standards in my codebases. I excel at building multi-tenant architectures, integrating complex payment gateways, and delivering maintainable, test-driven backend solutions.",

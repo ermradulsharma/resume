@@ -8,8 +8,7 @@ import {
     SiStripe, SiJsonwebtokens
 } from "react-icons/si";
 import { FaAws } from "react-icons/fa";
-import { TbApi } from "react-icons/tb";
-import { VscVscode } from "react-icons/vsc";
+import { BsCodeSlash, BsTerminal } from "react-icons/bs";
 import { Container } from "react-bootstrap";
 
 // Mapping icons to specific brands for a professional look
@@ -28,10 +27,10 @@ const iconMap = {
     "AWS (EC2, S3, Lambda, RDS)": FaAws,
     "Docker": SiDocker,
     "Git & GitHub": SiGithub,
-    "VS Code": VscVscode,
+    "VS Code": BsTerminal,
     "Stripe": SiStripe,
     "JWT": SiJsonwebtokens,
-    "RESTful API": TbApi // Clean API icon
+    "RESTful API": BsCodeSlash // Clean API icon
 };
 
 const linkMap = {
@@ -56,7 +55,7 @@ const linkMap = {
 };
 
 // Fallback icon
-const DefaultIcon = TbApi;
+const DefaultIcon = BsCodeSlash;
 
 const TechStackMarquee = () => {
     const { technology } = data.techStack;
@@ -90,7 +89,7 @@ const TechStackMarquee = () => {
                 return (
                     <div key={`${item.name}-${index}`} className="marquee-tech-card-wrapper">
                         <a href={link} target="_blank" rel="noopener noreferrer" className="marquee-tech-card marquee-tech-link" aria-label={`Visit ${item.name} documentation`}>
-                            <IconComponent className="marquee-tech-icon" />
+                            <IconComponent className="marquee-tech-icon" aria-hidden="true" />
                             <span className="marquee-tech-name">{item.name}</span>
                         </a>
                     </div>

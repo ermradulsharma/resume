@@ -286,8 +286,8 @@ const OfferLetterDocument = ({ companyInfo, offerData, logoUrl }) => {
 
                 <View style={styles.signRow}>
                     <View style={styles.signBox}>
-                        {offerData.signatureUrl ? (
-                            <Image src={offerData.signatureUrl} style={styles.signatureImage} />
+                        {finalSign ? (
+                            <Image src={finalSign} style={styles.signatureImage} />
                         ) : (
                             <Text style={styles.signatureName}>{companyInfo.hrName || "Anurag Shukla"}</Text>
                         )}

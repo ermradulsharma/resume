@@ -1,5 +1,5 @@
 import React from 'react';
-import { Document, Page, Text, View, StyleSheet, Svg, Path, Rect } from '@react-pdf/renderer';
+import { Document, Page, Text, View, StyleSheet, Svg, Path } from '@react-pdf/renderer';
 
 const styles = StyleSheet.create({
     page: { padding: 45, fontFamily: 'Helvetica', fontSize: 10, color: '#000000', lineHeight: 1.4, position: 'relative' },

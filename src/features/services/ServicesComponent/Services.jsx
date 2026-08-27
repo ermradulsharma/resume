@@ -31,7 +31,7 @@ const Services = () => {
             <div className="d-flex justify-content-center mb-4">
                 <Nav variant="pills" activeKey={activeTab} onSelect={(selectedKey) => setActiveTab(selectedKey)} role="tablist" aria-label="Services filter categories">
                     {categories.map(cat => (
-                        <Nav.Item key={cat}>
+                        <Nav.Item key={cat} role="presentation">
                             <Nav.Link eventKey={cat} className="rounded-pill px-3 py-2 mx-1 fw-medium" role="tab" aria-selected={activeTab === cat}>
                                 {cat}
                             </Nav.Link>

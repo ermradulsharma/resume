@@ -79,7 +79,7 @@ const About = () => {
                     <Col lg={3} data-aos="fade-right" data-aos-delay="200">
                         <div className="profile-image-wrapper">
                             <div className="profile-image">
-                                <img src={image} alt="Profile" className="img-fluid" aria-label="Mradul Sharma" loading="lazy" width="300" height="400" />
+                                <img src={image} alt="Mradul Sharma - Senior Full-Stack Developer" className="img-fluid" loading="lazy" width="300" height="400" />
                             </div>
                             <div className="signature-section">
                                 <img src={signature} alt="Signature" className="signature" loading="lazy" width="300" height="80" />

@@ -1,90 +1,37 @@
 import React from "react";
-// Force rebuild
 import {
     BsLinkedin,
     BsGithub,
-    BsInstagram,
-    BsTwitterX,
     BsGitlab,
     BsStackOverflow,
     BsMedium,
+    BsTwitterX,
     BsFacebook,
+    BsInstagram,
     BsYoutube,
     BsTelegram,
 } from "react-icons/bs";
-import {
-    FaTiktok,
-    FaSnapchat,
-    FaPinterest,
-    FaBitbucket,
-    FaStackExchange,
-    FaDev,
-    FaCodepen,
-    FaHackerrank,
-    FaWordpress,
-    FaBlogger,
-    FaTwitch,
-    FaVimeo,
-    FaWhatsapp,
-    FaDiscord,
-    FaSlack,
-    FaReddit,
-    FaQuora,
-    FaBehance,
-    FaDribbble,
-    FaDeviantart
-} from "react-icons/fa";
-import {
-    SiThreads,
-    SiLeetcode,
-    SiCodesignal,
-    SiGeeksforgeeks,
-    SiSubstack,
-    SiDailymotion,
-    SiCanvas
-} from "react-icons/si";
+import { FaDev, FaSlack } from "react-icons/fa";
+import { SiSubstack, SiLeetcode } from "react-icons/si";
 import data from "../../../data/socialMedia.json";
 import { trackEvent } from "../../../utils/analytics/ga";
 import "./SocialLinks.css";
 
 const iconMap = {
-    BsLinkedin: BsLinkedin,
-    BsGithub: BsGithub,
-    BsGitlab: BsGitlab,
-    BsStackOverflow: BsStackOverflow,
-    BsMedium: BsMedium,
-    BsTwitterX: BsTwitterX,
-    BsFacebook: BsFacebook,
-    BsInstagram: BsInstagram,
-    BsYoutube: BsYoutube,
-    BsTelegram: BsTelegram,
-    FaTiktok: FaTiktok,
-    FaSnapchat: FaSnapchat,
-    SiThreads: SiThreads,
-    FaPinterest: FaPinterest,
-    FaBitbucket: FaBitbucket,
-    FaStackExchange: FaStackExchange,
-    FaDev: FaDev,
-    FaCodepen: FaCodepen,
-    FaHackerrank: FaHackerrank,
-    SiLeetcode: SiLeetcode,
-    SiCodesignal: SiCodesignal,
-    SiGeeksforgeeks: SiGeeksforgeeks,
-    SiSubstack: SiSubstack,
-    FaWordpress: FaWordpress,
-    FaBlogger: FaBlogger,
-    FaTwitch: FaTwitch,
-    FaVimeo: FaVimeo,
-    SiDailymotion: SiDailymotion,
-    FaWhatsapp: FaWhatsapp,
-    FaDiscord: FaDiscord,
-    FaSlack: FaSlack,
-    FaReddit: FaReddit,
-    FaQuora: FaQuora,
-    FaBehance: FaBehance,
-    FaDribbble: FaDribbble,
-    FaDeviantart: FaDeviantart,
-    SiCanvas: SiCanvas
+    BsLinkedin,
+    BsGithub,
+    BsGitlab,
+    BsStackOverflow,
+    BsMedium,
+    BsTwitterX,
+    BsFacebook,
+    BsInstagram,
+    BsYoutube,
+    BsTelegram,
+    FaDev,
+    FaSlack,
+    SiSubstack,
+    SiLeetcode
 };
 
 const SocialLinks = ({ withNames = false, platforms }) => {

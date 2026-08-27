@@ -10,8 +10,8 @@
         "@fullcalendar/react": "7.0.2",
         "@mui/material": "^9.3.1",
         "@react-google-maps/api": "^2.20.8",
-        "@react-pdf/renderer": "^4.6.0",
-        "@tanstack/react-query": "^5.101.4",
+        "@react-pdf/renderer": "^4.8.1",
+        "@tanstack/react-query": "^5.102.7",
         "ajv": "^8.20.0",
         "ajv-keywords": "^5.1.0",
         "bootstrap": "^5.3.8",
@@ -31,7 +31,7 @@
         "react-router-dom": "^7.18.2",
         "react-scripts": "^5.0.1",
         "react-select": "^5.10.2",
-        "temporal-polyfill": "^1.0.1",
+        "temporal-polyfill": "^1.0.4",
         "typewriter-effect": "^2.22.0"
     },
     "scripts": {

@@ -6,6 +6,19 @@ import { useTheme } from "../../../store/ThemeContext";
 const GitHub = () => {
     const { theme } = useTheme();
 
+    React.useEffect(() => {
+        const svg = document.querySelector('.github-calendar-wrapper svg');
+        if (svg) {
+            svg.setAttribute('aria-label', 'GitHub contribution activity calendar for Mradul Sharma');
+            svg.setAttribute('role', 'img');
+            if (!svg.querySelector('title')) {
+                const titleEl = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+                titleEl.textContent = 'GitHub Contribution Activity Calendar';
+                svg.insertBefore(titleEl, svg.firstChild);
+            }
+        }
+    }, [theme]);
+
     return (
         <div className="github-calendar-wrapper p-4 rounded-4 shadow-sm border" style={{ backgroundColor: 'var(--surface-color)', borderColor: 'var(--border-color)' }}>
             <h3 className="h4 fw-bold mb-4" style={{ color: 'var(--text-dark)' }}>Contribution Activity</h3>

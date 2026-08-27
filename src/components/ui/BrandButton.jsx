@@ -38,7 +38,7 @@ const BrandButton = ({
     // Common content wrapper to handle icons and loading state
     const content = (
         <>
-            {loading && <Spinner as="span" animation="border" size="sm" role="status" aria-hidden="true" />}
+            {loading && <Spinner as="span" animation="border" size="sm" aria-hidden="true" />}
             {!loading && icon && <span className="d-flex align-items-center">{icon}</span>}
             <span>{children}</span>
             {withArrow && !loading && <BsArrowRight className="ms-1" />}

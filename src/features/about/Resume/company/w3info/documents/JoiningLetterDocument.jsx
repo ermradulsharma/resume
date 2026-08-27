@@ -252,22 +252,6 @@ const NumberedClause = ({ num, title, children }) => (
     </View>
 );
 
-const LetteredClause = ({ letter, title, children }) => (
-    <View style={[styles.listRow, { marginLeft: 14 }]}>
-        <Text style={styles.letterNum}>{letter}.</Text>
-        <Text style={styles.listBody}>
-            {title ? <Text style={styles.boldText}>{title}: </Text> : null}
-            {children}
-        </Text>
-    </View>
-);
-
-const BulletClause = ({ children, level = 1 }) => (
-    <View style={[styles.listRow, { marginLeft: level * 12 }]}>
-        <Text style={styles.bulletDot}>•</Text>
-        <Text style={styles.listBody}>{children}</Text>
-    </View>
-);
 
 const JoiningLetterDocument = ({ companyInfo = {}, joiningData = {}, logoUrl }) => {
     const isValidLogo = logoUrl && typeof logoUrl === 'string' && (logoUrl.startsWith('data:image/png') || logoUrl.startsWith('data:image/jpeg'));

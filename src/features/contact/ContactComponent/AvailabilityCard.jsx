@@ -10,7 +10,7 @@ const AvailabilityCard = () => {
         <div className="availability-card" data-aos="fade-up" data-aos-delay="100">
             {/* Status Header */}
             <div className="avail-header">
-                <span className="avail-status-dot" aria-label="Open to work indicator" />
+                <span className="avail-status-dot" aria-hidden="true" />
                 <span className="avail-status-text">Open to Work</span>
                 <span className="avail-updated">Updated Aug 2026</span>
             </div>

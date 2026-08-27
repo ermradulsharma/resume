@@ -25,7 +25,8 @@ const ReadingProgress = () => {
                 className="reading-progress-bar"
                 style={{ width: `${scrollProgress}%` }}
                 role="progressbar"
-                aria-valuenow={scrollProgress}
+                aria-label="Reading progress bar"
+                aria-valuenow={Math.round(scrollProgress)}
                 aria-valuemin="0"
                 aria-valuemax="100"
             />

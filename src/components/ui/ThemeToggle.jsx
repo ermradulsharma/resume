@@ -1,5 +1,4 @@
 import React from 'react';
-import Form from 'react-bootstrap/Form';
 import { useTheme } from '../../store/ThemeContext';
 
 const ThemeToggle = () => {
@@ -7,17 +6,19 @@ const ThemeToggle = () => {
 
     return (
         <div className="d-flex align-items-center gap-2">
-            <i className={`bi bi-sun-fill ${theme === 'light' ? 'text-warning' : 'text-secondary'}`} style={{ fontSize: '1.2rem' }}></i>
-            <Form.Check
-                type="switch"
-                id="theme-switch"
-                checked={theme === 'dark'}
-                onChange={toggleTheme}
-                className="custom-switch"
-                style={{ transform: 'scale(1.2)', cursor: 'pointer' }}
-                aria-label="Toggle theme"
-            />
-            <i className={`bi bi-moon-fill ${theme === 'dark' ? 'text-info' : 'text-secondary'}`} style={{ fontSize: '1rem' }}></i>
+            <i className={`bi bi-sun-fill ${theme === 'light' ? 'text-warning' : 'text-secondary'}`} style={{ fontSize: '1.2rem' }} aria-hidden="true"></i>
+            <div className="form-check form-switch custom-switch mb-0" style={{ transform: 'scale(1.2)', cursor: 'pointer' }}>
+                <input
+                    className="form-check-input"
+                    type="checkbox"
+                    role="switch"
+                    id="theme-switch"
+                    checked={theme === 'dark'}
+                    onChange={toggleTheme}
+                    aria-label="Toggle dark mode theme switch"
+                />
+            </div>
+            <i className={`bi bi-moon-fill ${theme === 'dark' ? 'text-info' : 'text-secondary'}`} style={{ fontSize: '1rem' }} aria-hidden="true"></i>
         </div>
     );
 };

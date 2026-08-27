@@ -27,7 +27,7 @@ const Testimonials = () => {
                                 <div className="testimonial-copy">
                                     <p className="testimonial-eyebrow">Client perspective</p>
                                     <blockquote className="testimonial-text">“{testimonial.comment}”</blockquote>
-                                    <div className="testimonial-rating" aria-label="5 out of 5 stars">{[1, 2, 3, 4, 5].map((star) => <FaStar key={star} aria-hidden="true" />)}</div>
+                                    <div className="testimonial-rating" role="img" aria-label="5 out of 5 stars">{[1, 2, 3, 4, 5].map((star) => <FaStar key={star} aria-hidden="true" />)}</div>
                                 </div>
                                 <footer className="testimonial-author">
                                     <img src={testimonial.image} alt="" className="author-image" width="64" height="64" />
@@ -43,9 +43,9 @@ const Testimonials = () => {
 
                 <div className="testimonial-controls">
                     <button type="button" className="testimonial-control" onClick={() => setActiveIndex((activeIndex - 1 + testimonials.length) % testimonials.length)} aria-label="Show previous testimonial"><FaArrowLeft aria-hidden="true" /></button>
-                    <div className="testimonial-indicators" role="tablist" aria-label="Choose a testimonial">
+                    <div className="testimonial-indicators" role="group" aria-label="Testimonial navigation indicators">
                         {testimonials.map((testimonial, index) => (
-                            <button key={testimonial.id} type="button" role="tab" className={`testimonial-indicator ${index === activeIndex ? 'is-active' : ''}`} onClick={() => setActiveIndex(index)} aria-selected={index === activeIndex} aria-label={`Show testimonial from ${testimonial.name}`} />
+                            <button key={testimonial.id} type="button" className={`testimonial-indicator ${index === activeIndex ? 'is-active' : ''}`} onClick={() => setActiveIndex(index)} aria-label={`Show testimonial ${index + 1} from ${testimonial.name}`} />
                         ))}
                     </div>
                     <button type="button" className="testimonial-control" onClick={() => setActiveIndex((activeIndex + 1) % testimonials.length)} aria-label="Show next testimonial"> <FaArrowRight aria-hidden="true" /> </button>
