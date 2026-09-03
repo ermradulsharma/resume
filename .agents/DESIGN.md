@@ -41,7 +41,10 @@ A refactor must not silently become a redesign. If a change can alter rendered o
   - Adhere strictly to the established palette: Primary, Secondary, Background, Surface, Text variants.
   - WCAG AA contrast ratio is mandatory: `4.5:1` for body text, `3:1` for large text.
   - Avoid saturated or jarring colors. Prefer harmonious, curated palettes.
-- **Shadows & Depth**: Preserve the existing depth treatment. For new cards, use the established shadow, border, or surface-contrast pattern. `box-shadow: none` is valid when the surrounding visual language intentionally uses flat surfaces.
+- **Shadows & Depth (Neumorphism Standard)**:
+  - **Extruded Convex Surfaces**: Soft dual shadows (`box-shadow: 8px 8px 16px var(--shadow-dark), -8px -8px 16px var(--shadow-light)`) matching base surface.
+  - **Inset / Pressed Surfaces**: Pressed states use inner dual shadows (`box-shadow: inset 4px 4px 8px var(--shadow-dark), inset -4px -4px 8px var(--shadow-light)`).
+  - **Soft Radius & Boundaries**: Prefer rounded corners (`12px`-`24px`) with soft surface contrast instead of harsh borders.
 
 ## 3. ⚡ Micro-Interactions & Performance
 - **Every Interactive Element Needs States**: New or modified interactive elements need usable `:hover`, `:focus-visible`, and `:active` states where the state is supported by the device and interaction. Preserve existing states when fixing unrelated logic.

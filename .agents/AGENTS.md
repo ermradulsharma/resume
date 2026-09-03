@@ -26,7 +26,17 @@
 - **Graceful Failures**: Global & Feature-level Error Boundaries. Always `try/catch` async operations.
 - **Accessibility & SEO**: Semantic HTML5, `aria-labels`, `alt` tags, proper heading hierarchies (`h1-h6`).
 
+## 🎨 Neumorphism Design Rules
+- **Neumorphic Aesthetic**: Build soft, tactile, 3D extruded UI components with dual directional light and dark shadows matching the base surface background.
+- **Dual Shadow Standards**:
+  - **Extruded / Convex (Cards, Buttons, Badges)**: `box-shadow: 8px 8px 16px var(--shadow-dark), -8px -8px 16px var(--shadow-light);`
+  - **Inset / Pressed (Inputs, Containers, Active States)**: `box-shadow: inset 4px 4px 8px var(--shadow-dark), inset -4px -4px 8px var(--shadow-light);`
+- **Soft Geometry**: Use rounded corners (`border-radius: 12px` to `24px`) with subtle surface gradients. Avoid harsh border outlines; use soft semi-transparent highlights instead.
+- **Micro-Interactions**: Use smooth state transitions (`transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1)`) shifting from convex to inset on hover/active.
+- **Contrast & Accessibility**: Enforce strict WCAG AA contrast (`4.5:1` ratio minimum) for text and interactive controls over soft neumorphic surfaces.
+
 ## 📝 Agent Behavior Constraints
 - **Propose Major Changes**: Always propose architecture/package changes before execution.
 - **Token Efficiency**: Write concise code. Only modify what is necessary.
 - **No Destructive Refactors**: Do not delete core files without explicit user confirmation.
+

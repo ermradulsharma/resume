@@ -2,47 +2,47 @@
     "fullstack": {
         "header": {
             "name": "Mradul Sharma",
-            "title": "Senior Full-Stack Developer",
+            "title": "Fullstack Tech Lead & Delivery Manager",
             "address": "Rani Awanti Bai Nagar, Etah, Uttar Pradesh 207001",
             "phone": "+91-7252933077",
             "email": "mradulsharma786@gmail.com",
             "linkedin": "https://linkedin.com/in/mradulsharma",
             "github": "https://github.com/ermradulsharma"
         },
-        "summary": "With over 5 years of experience in the software industry, I am a Full-Stack Engineer who specializes in bridging the gap between robust backend architectures and dynamic frontend interfaces. My core stack revolves around Laravel, React, and Node.js, heavily supported by AWS infrastructure. Beyond enterprise client work, I am an active open-source contributor with over 10 published packages, demonstrating a deep commitment to clean code, test-driven development, and community-driven solutions.",
+        "summary": "I am a passionate Fullstack Tech Lead & Delivery Manager with over 7+ years of experience in the software industry. I specialize in building robust backend architectures with Laravel and Node.js, creating dynamic frontend interfaces with React and Vue.js, and delivering scalable cloud solutions on AWS infrastructure. Beyond client delivery, I am an active open-source contributor with 10+ published packages, committed to agile leadership, clean code, test-driven development, and technical strategy.",
         "experience": [
             {
-                "title": "Senior Full-Stack Developer",
+                "title": "Senior Fullstack Developer & Strategic Lead",
                 "company": "W3 Info Solutions, Lucknow",
-                "date": "March 2022 – January 2026",
+                "date": "March 2022 – August 2026",
                 "points": [
-                    "Architected and deployed highly scalable full-stack applications leveraging **Laravel, React, and Node.js**, serving thousands of active users.",
-                    "Orchestrated the migration to a **microservices architecture** using Docker & Kubernetes, which reduced system downtime and deployment errors by **30%**.",
+                    "Spearheaded cross-functional engineering teams to architect and deploy highly scalable full-stack applications leveraging **Laravel, React, Node.js, and AWS**.",
+                    "Orchestrated the architectural migration to a **microservices architecture** using Docker & Kubernetes, reducing deployment errors by **30%** and improving platform reliability.",
                     "Engineered high-performance RESTful APIs and optimized complex **PostgreSQL & MongoDB** queries, accelerating average API response times by **40%**.",
-                    "Streamlined DevOps workflows by configuring automated CI/CD pipelines via GitHub Actions, drastically reducing release cycles from **2 hours to 15 minutes**.",
-                    "Mentored junior developers through comprehensive code reviews and pair programming, elevating overall team code quality and accelerating onboarding."
+                    "Streamlined DevOps workflows and technical delivery by configuring automated CI/CD pipelines via GitHub Actions, reducing release cycles from **2 hours to 15 minutes**.",
+                    "Mentored 10+ developers through comprehensive code reviews, agile sprint management, and technical roadmapping, elevating team code quality and delivery velocity."
                 ]
             },
             {
-                "title": "Laravel Developer",
+                "title": "Senior Laravel & Integration Specialist",
                 "company": "Zaiba InfoTech, Agra",
-                "date": "March 2020 – February 2022",
+                "date": "April 2020 – February 2022",
                 "points": [
-                    "Spearheaded the development of robust **Laravel-based web applications**, seamlessly integrating complex third-party APIs and payment gateways.",
-                    "Optimized core web vitals and rendering performance by implementing modern JavaScript practices and ensuring strict cross-browser compatibility.",
-                    "Collaborated directly with UI/UX designers and product managers in an Agile environment to translate business requirements into technical deliverables.",
-                    "Engineered secure authentication and authorization systems utilizing JWT and OAuth2, significantly enhancing user data protection.",
-                    "Designed and integrated custom middleware for role-based access control (RBAC), ensuring precise data isolation across multi-tenant architectures."
+                    "Spearheaded the architectural development of robust **Laravel-based applications**, seamlessly integrating complex third-party APIs and multi-currency payment gateways (Stripe, PayPal, Razorpay).",
+                    "Engineered secure authentication and authorization systems utilizing JWT, OAuth2, and custom RBAC middleware for multi-tenant data isolation.",
+                    "Optimized core web vitals and application rendering performance by implementing modern JavaScript practices and ensuring strict cross-browser compatibility.",
+                    "Collaborated directly with UI/UX designers and product managers in an Agile environment to translate high-level business goals into production-ready technical deliverables.",
+                    "Implemented background job processing queues using Redis and Laravel Horizon, ensuring efficient execution of heavy async tasks."
                 ]
             },
             {
-                "title": "PHP Developer (Internship & Full-Time)",
+                "title": "Fullstack PHP Developer (Core & Systems)",
                 "company": "Programming Park InfoTech, Agra",
                 "date": "December 2018 – February 2020",
                 "points": [
-                    "Rapidly transitioned from an intern to a full-time developer by engineering robust, client-centric web solutions and consistently exceeding delivery targets.",
-                    "Developed and maintained custom **PHP and JavaScript** portals, actively contributing to both frontend interfaces and backend business logic.",
-                    "Refactored legacy codebases and optimized **MySQL** database schemas, resulting in a noticeable improvement in application execution speed.",
+                    "Rapidly transitioned from an intern to a full-time developer by engineering robust, client-centric web solutions and consistently exceeding sprint targets.",
+                    "Developed and maintained core **PHP, CodeIgniter, and JavaScript** portals, actively contributing across frontend interfaces and backend business logic.",
+                    "Refactored legacy monolith codebases and optimized **MySQL** database schemas, resulting in a noticeable 35% improvement in execution speed.",
                     "Integrated external REST APIs to synchronize data between disparate enterprise systems, ensuring seamless data flow.",
                     "Actively participated in daily stand-ups and agile sprint planning, ensuring consistent alignment between technical deliverables and business objectives."
                 ]
@@ -52,9 +52,9 @@
             {
                 "title": "Bolld PM (Property Management & Rental Platform)",
                 "techStack": "Laravel, React, MySQL, AWS, Stripe",
-                "role": "Senior Full-Stack Developer",
+                "role": "Tech Lead & Senior Fullstack Developer",
                 "points": [
-                    "Developed a comprehensive SaaS property management platform to streamline rental operations and accounting workflows.",
+                    "Led the technical architecture and delivery of a comprehensive SaaS property management platform to streamline rental operations and accounting workflows.",
                     "Designed and optimized complex relational database schemas in MySQL to securely handle large-scale tenant data.",
                     "Automated monthly invoicing and subscription billing cycles via deep integration with the Stripe API."
                 ]
@@ -62,9 +62,9 @@
             {
                 "title": "Mautic (Open-Source Marketing Automation)",
                 "techStack": "Mautic, Symfony, PHP, MySQL, Marketing Analytics",
-                "role": "Lead Developer",
+                "role": "Technical Delivery Manager & Lead Developer",
                 "points": [
-                    "Customized and scaled Mautic, an open-source marketing automation platform, to orchestrate complex email campaigns and lead nurturing workflows.",
+                    "Directed the customization and scaling of Mautic open-source marketing automation platform to orchestrate complex email campaigns and lead nurturing workflows.",
                     "Engineered complex ETL pipelines to extract multi-channel marketing data (campaigns, segments, emails) into interactive reporting dashboards.",
                     "Optimized heavy MySQL database schemas, reducing massive analytics report generation times by 50% for enterprise marketing teams."
                 ]
@@ -72,11 +72,11 @@
             {
                 "title": "The Droning Company (Marketplace Platform)",
                 "techStack": "Laravel, Next.js, React, MySQL, AWS",
-                "role": "Full-Stack Developer",
+                "role": "Lead Fullstack Architect",
                 "points": [
                     "Architected a specialized marketplace platform integrating a robust Laravel backend with a high-performance Next.js frontend.",
                     "Developed secure RESTful APIs to facilitate seamless communication between the client interfaces and the core backend.",
-                    "Implemented highly secure, scalable cloud infrastructure to ensure continuous availability during peak traffic periods."
+                    "Implemented highly secure, scalable cloud infrastructure on AWS to ensure continuous availability during peak traffic periods."
                 ]
             }
         ],
