@@ -10,7 +10,7 @@
 
 ## 📏 Code Quality & Standards
 - **Pure JavaScript**: This codebase is strictly JavaScript. Do NOT use TypeScript. Use JSDoc only if complex data structures require clarity.
-- **Formatting**: Strictly follow ESLint & Prettier. No formatting bypasses.
+- **Formatting**: Strictly follow ESLint & Prettier. No formatting bypasses. Zero `!important` flags in CSS.
 - **Naming**: `PascalCase` (Components/Interfaces), `camelCase` (Vars/Functions/Hooks), `UPPER_SNAKE_CASE` (Constants).
 
 ## 🔄 State & Data Fetching
@@ -33,10 +33,12 @@
   - **Inset / Pressed (Inputs, Containers, Active States)**: `box-shadow: inset 4px 4px 8px var(--shadow-dark), inset -4px -4px 8px var(--shadow-light);`
 - **Soft Geometry**: Use rounded corners (`border-radius: 12px` to `24px`) with subtle surface gradients. Avoid harsh border outlines; use soft semi-transparent highlights instead.
 - **Micro-Interactions**: Use smooth state transitions (`transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1)`) shifting from convex to inset on hover/active.
+- **Single Unified Theme**: Project uses a single unified design system. Dual theme switching logic is NOT used.
 - **Contrast & Accessibility**: Enforce strict WCAG AA contrast (`4.5:1` ratio minimum) for text and interactive controls over soft neumorphic surfaces.
 
-## 📝 Agent Behavior Constraints
-- **Propose Major Changes**: Always propose architecture/package changes before execution.
-- **Token Efficiency**: Write concise code. Only modify what is necessary.
+## 📝 Agent Behavior Constraints & Permission Protocol
+- **Explicit User Approval Required**: NEVER modify files or refactor code when the user is asking clarifying questions. Always propose changes and wait for explicit confirmation ("Go ahead / Proceed").
+- **No Unapproved Packages**: Do NOT install heavy external UI libraries (e.g. `@mui/material`, `@emotion`) unless explicitly requested.
+- **Token Efficiency**: Write concise, minimal code and short, direct responses. Never waste tokens on redundant explanations.
 - **No Destructive Refactors**: Do not delete core files without explicit user confirmation.
 
